@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-ollamagemini"
+description = ""
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["google-generativeai", "Pillow", "requests"]
+
+[project.urls]
+Repository = "https://github.com/al-swaiti/ComfyUI-OllamaGemini"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-OllamaGemini"
+Icon = ""
