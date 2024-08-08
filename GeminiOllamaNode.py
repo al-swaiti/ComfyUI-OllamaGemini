@@ -74,7 +74,7 @@ class GeminiOllamaAPI:
 
         model = genai.GenerativeModel(model_name)
 
-        if model_name in ['gemini-pro', 'gemini-1.5-pro-latest', 'gemini-1.5-pro-exp-0801', 'gemini-1.5-flash']:
+        if model_name in ['gemini-pro', 'gemini-1.5-pro-latest',"gemini-pro-vision", 'gemini-1.5-pro-exp-0801', 'gemini-1.5-flash']:
             if image is None:
                 if stream:
                     response = model.generate_content(prompt, stream=True)
