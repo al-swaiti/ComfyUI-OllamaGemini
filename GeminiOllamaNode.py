@@ -4,6 +4,9 @@ import google.generativeai as genai
 from PIL import Image
 import requests
 import torch
+import codecs
+from  .BRIA_RMBG import BRIA_RMBG_ModelLoader, BRIA_RMBG
+from .svgnode import ConvertRasterToVector, SaveSVG
 
 def get_gemini_api_key():
     try:
@@ -141,12 +144,79 @@ class GeminiOllamaAPI:
 
         return (textoutput,)
 
-# Node class mappings
+
+class TextSplitByDelimiter:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "text": ("STRING", {"multiline": True,"dynamicPrompts": False}),
+                "delimiter":("STRING", {"multiline": False,"default":",","dynamicPrompts": False}),
+                "start_index": ("INT", {
+                    "default": 0,
+                    "min": 0, #Minimum value
+                    "max": 1000, #Maximum value
+                    "step": 1, #Slider's step
+                    "display": "number" # Cosmetic only: display as "number" or "slider"
+                }),
+                 "skip_every": ("INT", {
+                    "default": 0,
+                    "min": 0, #Minimum value
+                    "max": 10, #Maximum value
+                    "step": 1, #Slider's step
+                    "display": "number" # Cosmetic only: display as "number" or "slider"
+                }),
+                "max_count": ("INT", {
+                    "default": 10,
+                    "min": 1, #Minimum value
+                    "max": 1000, #Maximum value
+                    "step": 1, #Slider's step
+                    "display": "number" # Cosmetic only: display as "number" or "slider"
+                }),
+            }
+        }
+
+    INPUT_IS_LIST = False
+    RETURN_TYPES = ("STRING",)
+    FUNCTION = "run"
+    OUTPUT_IS_LIST = (True,)
+
+    CATEGORY = "AI API"
+
+    def run(self, text, delimiter, start_index, skip_every, max_count):
+        if delimiter == "":
+            arr = [text.strip()]
+        else:
+            delimiter = codecs.decode(delimiter, 'unicode_escape')
+            arr = [item.strip() for item in text.split(delimiter) if item.strip()]
+        
+        arr = arr[start_index:start_index + max_count * (skip_every + 1):(skip_every + 1)]
+        
+        return (arr,)
+
+
+
+
+
+# Update the mappings
+
+
+
+
 NODE_CLASS_MAPPINGS = {
-    "GeminiOllamaAPI": GeminiOllamaAPI
+    "GeminiOllamaAPI": GeminiOllamaAPI,
+    "TextSplitByDelimiter":TextSplitByDelimiter,
+    "BRIA_RMBG_ModelLoader": BRIA_RMBG_ModelLoader,
+    "BRIA_RMBG": BRIA_RMBG,
+    "ConvertRasterToVector": ConvertRasterToVector,
+    "SaveSVG": SaveSVG
 }
 
-# Node display name mappings
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "GeminiOllamaAPI": "Gemini Ollama API"
-}
+    "GeminiOllamaAPI": "Gemini Ollama API",
+    "TextSplitByDelimiter": "TextSplitByDelimiter",
+    "BRIA_RMBG_ModelLoader": "BRIA_RMBG Model Loader",
+    "BRIA_RMBG": "BRIA RMBG",
+    "ConvertRasterToVector": "Raster to Vector (SVG)",
+    "SaveSVG": "Save SVG"
+		}

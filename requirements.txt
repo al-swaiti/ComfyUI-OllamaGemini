@@ -1,4 +1,3 @@
-google-generativeai
-Pillow
+google-generative-ai
 requests
-
+vtracer
