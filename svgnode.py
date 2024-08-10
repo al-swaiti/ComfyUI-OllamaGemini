@@ -25,17 +25,14 @@ class ConvertRasterToVector:
             "required": {
                 "image": ("IMAGE",),
                 "colormode": (["color", "binary"], {"default": "color"}),
-                "hierarchical": (["stacked", "cutout"], {"default": "stacked"}),
-                "mode": (["spline", "polygon", "none"], {"default": "spline"}),
-                "filter_speckle": ("INT", {"default": 4, "min": 0, "max": 100}),
-                "color_precision": ("INT", {"default": 6, "min": 0, "max": 10}),
-                "layer_difference": ("INT", {"default": 16, "min": 0, "max": 256}),
-                "corner_threshold": ("INT", {"default": 60, "min": 0, "max": 180}),
-                "length_threshold": ("FLOAT", {"default": 4.0, "min": 0.0, "max": 10.0}),
-                "max_iterations": ("INT", {"default": 10, "min": 1, "max": 70}),
+                "mode": (["spline", "polygon"], {"default": "spline"}),
+                "filter_speckle": ("INT", {"default": 4, "min": 0, "max": 20}),
+                "color_precision": ("INT", {"default": 8, "min": 1, "max": 16}),
+                "corner_threshold": ("INT", {"default": 80, "min": 0, "max": 180}),
+                "length_threshold": ("FLOAT", {"default": 2.0, "min": 0.5, "max": 10.0}),
+                "max_iterations": ("INT", {"default": 15, "min": 1, "max": 50}),
                 "splice_threshold": ("INT", {"default": 45, "min": 0, "max": 180}),
-                "path_precision": ("INT", {"default": 3, "min": 0, "max": 10}),
-                "segment_length": ("FLOAT", {"default": 4.0, "min": 0.0, "max": 10.0}),
+                "path_precision": ("INT", {"default": 5, "min": 1, "max": 10}),
             }
         }
 
@@ -44,17 +41,16 @@ class ConvertRasterToVector:
 
     CATEGORY = "AI API"
 
-    def convert_to_svg(self, image, colormode, hierarchical, mode, filter_speckle, color_precision, layer_difference, corner_threshold, length_threshold, max_iterations, splice_threshold, path_precision, segment_length):
-        
-        svg_strings = []  
+    def convert_to_svg(self, image, colormode, mode, filter_speckle, color_precision, corner_threshold, length_threshold, max_iterations, splice_threshold, path_precision):
+        svg_strings = []
 
         for i in image:
             i = torch.unsqueeze(i, 0)
-            _image = tensor2pil(i) 
+            _image = tensor2pil(i)
             
             if _image.mode != 'RGBA':
-                alpha = Image.new('L', _image.size, 255)  
-                _image.putalpha(alpha)  
+                alpha = Image.new('L', _image.size, 255)
+                _image.putalpha(alpha)
                        
             pixels = list(_image.getdata())
             size = _image.size
@@ -63,23 +59,20 @@ class ConvertRasterToVector:
                 pixels,
                 size=size,
                 colormode=colormode,
-                hierarchical=hierarchical,
+                hierarchical="stacked",  # Fixed to "stacked" for better results
                 mode=mode,
                 filter_speckle=filter_speckle,
                 color_precision=color_precision,
-                layer_difference=layer_difference,
                 corner_threshold=corner_threshold,
                 length_threshold=length_threshold,
                 max_iterations=max_iterations,
                 splice_threshold=splice_threshold,
-                path_precision=path_precision,
-                segment_length=segment_length
+                path_precision=path_precision
             )
             
             svg_strings.append(svg_str)
 
-        return (svg_strings,)  
-
+        return (svg_strings,)
 class SaveSVG:
     def __init__(self):
         self.output_dir = folder_paths.get_output_directory()
