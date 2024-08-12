@@ -7,6 +7,7 @@ import torch
 import codecs
 from  .BRIA_RMBG import BRIA_RMBG_ModelLoader, BRIA_RMBG
 from .svgnode import ConvertRasterToVector, SaveSVG
+from .FLUXResolutions import FLUXResolutions
 
 def get_gemini_api_key():
     try:
@@ -198,10 +199,6 @@ class TextSplitByDelimiter:
 
 
 
-# Update the mappings
-
-
-
 
 NODE_CLASS_MAPPINGS = {
     "GeminiOllamaAPI": GeminiOllamaAPI,
@@ -209,7 +206,9 @@ NODE_CLASS_MAPPINGS = {
     "BRIA_RMBG_ModelLoader": BRIA_RMBG_ModelLoader,
     "BRIA_RMBG": BRIA_RMBG,
     "ConvertRasterToVector": ConvertRasterToVector,
-    "SaveSVG": SaveSVG
+    "SaveSVG": SaveSVG,
+    "FLUXResolutions": FLUXResolutions,
+
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -218,5 +217,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "BRIA_RMBG_ModelLoader": "BRIA_RMBG Model Loader",
     "BRIA_RMBG": "BRIA RMBG",
     "ConvertRasterToVector": "Raster to Vector (SVG)",
-    "SaveSVG": "Save SVG"
+    "SaveSVG": "Save SVG",
+    "FLUXResolutions": "FLUX Resolutions",
 		}
