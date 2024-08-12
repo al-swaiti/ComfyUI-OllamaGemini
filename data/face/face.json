@@ -1,0 +1,257 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "happy",
+        "prompt": "happy {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "disgust",
+        "prompt": "disgust {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "smug",
+        "prompt": "smug {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "flustered",
+        "prompt": "flustered {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "confused",
+        "prompt": "confused {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "angry",
+        "prompt": "angry {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": ":p",
+        "prompt": ":p {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": ":o",
+        "prompt": ":o {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": ":d",
+        "prompt": ":d {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "smile",
+        "prompt": "smile {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "frown",
+        "prompt": "frown {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "furled brow",
+        "prompt": "furled brow {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "grimace",
+        "prompt": "grimace {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "naughty face",
+        "prompt": "naughty face {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": ":3",
+        "prompt": ":3 {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": ":<",
+        "prompt": ":< {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": ":q",
+        "prompt": ":q {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": ":|",
+        "prompt": ":| {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": ":/",
+        "prompt": ":/ {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "sad",
+        "prompt": "sad {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "angry",
+        "prompt": "angry {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "surprised",
+        "prompt": "surprised {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "fearful",
+        "prompt": "fearful {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "neutral",
+        "prompt": "neutral {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bored",
+        "prompt": "bored {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "amused",
+        "prompt": "amused {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "curious",
+        "prompt": "curious {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "disappointed",
+        "prompt": "disappointed {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "excited",
+        "prompt": "excited {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "frustrated",
+        "prompt": "frustrated {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "guilty",
+        "prompt": "guilty {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hopeful",
+        "prompt": "hopeful {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hurt",
+        "prompt": "hurt {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "jealous",
+        "prompt": "jealous {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "joyful",
+        "prompt": "joyful {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "nervous",
+        "prompt": "nervous {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "pensive",
+        "prompt": "pensive {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "proud",
+        "prompt": "proud {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "relaxed",
+        "prompt": "relaxed {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "shocked",
+        "prompt": "shocked {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "shy",
+        "prompt": "shy {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "sleepy",
+        "prompt": "sleepy {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "stressed",
+        "prompt": "stressed {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "suspicious",
+        "prompt": "suspicious {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "thoughtful",
+        "prompt": "thoughtful {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tired",
+        "prompt": "tired {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "troubled",
+        "prompt": "troubled {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "uncertain",
+        "prompt": "uncertain {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "wary",
+        "prompt": "wary {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "worried",
+        "prompt": "worried {prompt}",
+        "negative_prompt": ""
+    }
+]

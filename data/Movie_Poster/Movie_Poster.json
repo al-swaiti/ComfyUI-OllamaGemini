@@ -1,0 +1,252 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Action Adventure",
+        "prompt": "(Create a poster for an action-adventure movie) {prompt}",
+        "negative_prompt": "Calm and peaceful"
+    },
+    {
+        "name": "Action Packed",
+        "prompt": "(Design a poster for an action-packed movie) {prompt}",
+        "negative_prompt": "Sedate and slow-paced"
+    },
+    {
+        "name": "Animated Adventure",
+        "prompt": "(Create a poster for an animated adventure movie) {prompt}",
+        "negative_prompt": "Still and motionless"
+    },
+    {
+        "name": "Animated Delight",
+        "prompt": "(Create a poster for an animated movie full of delight) {prompt}",
+        "negative_prompt": "Static and lifeless"
+    },
+    {
+        "name": "Classic Black & White",
+        "prompt": "(Create a movie poster with a classic black and white style) {prompt}",
+        "negative_prompt": "Colorful and vibrant"
+    },
+    {
+        "name": "Comedic Chaos",
+        "prompt": "(Design a poster for a comedy with chaotic humor) {prompt}",
+        "negative_prompt": "Orderly and composed"
+    },
+    {
+        "name": "Comedic Parody",
+        "prompt": "(Design a poster for a comedy that parodies popular movies) {prompt}",
+        "negative_prompt": "Serious and straightforward"
+    },
+    {
+        "name": "Crime Thriller",
+        "prompt": "(Design a poster for a crime thriller movie) {prompt}",
+        "negative_prompt": "Law-abiding and peaceful"
+    },
+    {
+        "name": "Documentary Realism",
+        "prompt": "(Design a poster for a documentary with a realistic approach) {prompt}",
+        "negative_prompt": "Abstract and surreal"
+    },
+    {
+        "name": "Epic Historical",
+        "prompt": "(Design a poster for an epic historical movie) {prompt}",
+        "negative_prompt": "Contemporary and modern"
+    },
+    {
+        "name": "Fantasy Creatures",
+        "prompt": "(Create a poster for a fantasy movie featuring mythical creatures) {prompt}",
+        "negative_prompt": "Creature-less and ordinary"
+    },
+    {
+        "name": "Fantasy Enchantment",
+        "prompt": "(Design a poster with a fantasy and enchantment theme) {prompt}",
+        "negative_prompt": "Realistic and practical"
+    },
+    {
+        "name": "Fantasy Magic",
+        "prompt": "(Design a poster for a fantasy movie with magical elements) {prompt}",
+        "negative_prompt": "Non-magical and mundane"
+    },
+    {
+        "name": "Fantasy Quest",
+        "prompt": "(Design a poster for a fantasy quest movie) {prompt}",
+        "negative_prompt": "Real-world and ordinary"
+    },
+    {
+        "name": "Film Noir",
+        "prompt": "(Create a movie poster with a film noir aesthetic) {prompt}",
+        "negative_prompt": "Bright and cheerful"
+    },
+    {
+        "name": "Gothic Horror",
+        "prompt": "(Design a poster for a gothic horror movie) {prompt}",
+        "negative_prompt": "Sunny and cheerful"
+    },
+    {
+        "name": "Historical Biopic",
+        "prompt": "(Design a poster for a historical biographical film) {prompt}",
+        "negative_prompt": "Contemporary and fictional"
+    },
+    {
+        "name": "Horror Creepiness",
+        "prompt": "(Design a poster with a creepy horror movie vibe) {prompt}",
+        "negative_prompt": "Warm and inviting"
+    },
+    {
+        "name": "Horror Psychological",
+        "prompt": "(Design a poster for a psychological horror movie) {prompt}",
+        "negative_prompt": "Mentally stable and reassuring"
+    },
+    {
+        "name": "Horror Supernatural",
+        "prompt": "(Create a poster for a supernatural horror movie) {prompt}",
+        "negative_prompt": "Natural and ordinary"
+    },
+    {
+        "name": "Minimalist Design",
+        "prompt": "(Design a minimalist movie poster) {prompt}",
+        "negative_prompt": "Elaborate and intricate"
+    },
+    {
+        "name": "Musical Adventure",
+        "prompt": "(Create a poster for a musical adventure) {prompt}",
+        "negative_prompt": "Non-musical and unadventurous"
+    },
+    {
+        "name": "Musical Extravaganza",
+        "prompt": "(Design a poster for a musical extravaganza) {prompt}",
+        "negative_prompt": "Quiet and uneventful"
+    },
+    {
+        "name": "Musical Romance",
+        "prompt": "(Design a poster for a musical romance) {prompt}",
+        "negative_prompt": "Non-musical and unromantic"
+    },
+    {
+        "name": "Mystery Suspense",
+        "prompt": "(Create a poster with a mysterious and suspenseful atmosphere) {prompt}",
+        "negative_prompt": "Transparent and obvious"
+    },
+    {
+        "name": "Post-Apocalyptic",
+        "prompt": "(Create a poster for a post-apocalyptic movie) {prompt}",
+        "negative_prompt": "Pre-apocalyptic and optimistic"
+    },
+    {
+        "name": "Psychological Drama",
+        "prompt": "(Create a poster for a psychological drama movie) {prompt}",
+        "negative_prompt": "Stable and uneventful"
+    },
+    {
+        "name": "Romantic Comedy",
+        "prompt": "(Create a poster for a romantic comedy movie) {prompt}",
+        "negative_prompt": "Action-packed and thrilling"
+    },
+    {
+        "name": "Romantic Drama",
+        "prompt": "(Design a poster for a romantic drama movie) {prompt}",
+        "negative_prompt": "Unemotional and detached"
+    },
+    {
+        "name": "Romantic Fantasy",
+        "prompt": "(Create a poster for a romantic fantasy movie) {prompt}",
+        "negative_prompt": "Unromantic and pragmatic"
+    },
+    {
+        "name": "Sci-Fi AI Revolution",
+        "prompt": "(Create a poster for a sci-fi movie about AI revolution) {prompt}",
+        "negative_prompt": "Low-tech and outdated"
+    },
+    {
+        "name": "Sci-Fi Alien Invasion",
+        "prompt": "(Design a poster for a sci-fi movie about alien invasion) {prompt}",
+        "negative_prompt": "No alien invasion"
+    },
+    {
+        "name": "Sci-Fi Dystopia",
+        "prompt": "(Create a poster for a sci-fi dystopian movie) {prompt}",
+        "negative_prompt": "Utopian and idealistic"
+    },
+    {
+        "name": "Sci-Fi Futuristic",
+        "prompt": "(Design a futuristic science fiction movie poster) {prompt}",
+        "negative_prompt": "Historical and nostalgic"
+    },
+    {
+        "name": "Sci-Fi Space Exploration",
+        "prompt": "(Design a poster for a sci-fi movie about space exploration) {prompt}",
+        "negative_prompt": "No space exploration"
+    },
+    {
+        "name": "Sci-Fi Space Odyssey",
+        "prompt": "(Create a poster for a sci-fi space odyssey) {prompt}",
+        "negative_prompt": "Grounded and down-to-earth"
+    },
+    {
+        "name": "Sci-Fi Time Travel",
+        "prompt": "(Create a poster for a sci-fi movie about time travel) {prompt}",
+        "negative_prompt": "No time travel"
+    },
+    {
+        "name": "Spy Espionage",
+        "prompt": "(Create a poster for a spy espionage thriller) {prompt}",
+        "negative_prompt": "Transparent and honest"
+    },
+    {
+        "name": "Spy Intrigue",
+        "prompt": "(Design a poster for a spy thriller filled with intrigue) {prompt}",
+        "negative_prompt": "Open and straightforward"
+    },
+    {
+        "name": "Superhero Action",
+        "prompt": "(Create a poster for a superhero action movie) {prompt}",
+        "negative_prompt": "Ordinary and mundane"
+    },
+    {
+        "name": "Superhero Origins",
+        "prompt": "(Create a poster for a superhero origin story) {prompt}",
+        "negative_prompt": "Non-super and mundane"
+    },
+    {
+        "name": "Thrilling Mystery",
+        "prompt": "(Design a poster for a thrilling mystery movie) {prompt}",
+        "negative_prompt": "Predictable and mundane"
+    },
+    {
+        "name": "Vintage Retro",
+        "prompt": "(Design a vintage retro-style movie poster) {prompt}",
+        "negative_prompt": "Modern and futuristic"
+    },
+    {
+        "name": "War Drama",
+        "prompt": "(Create a poster for a war drama movie) {prompt}",
+        "negative_prompt": "Peaceful and serene"
+    },
+    {
+        "name": "War Epic",
+        "prompt": "(Create a poster for a war epic movie) {prompt}",
+        "negative_prompt": "Peaceful and tranquil"
+    },
+    {
+        "name": "War Heroic",
+        "prompt": "(Design a poster for a war movie showcasing heroism) {prompt}",
+        "negative_prompt": "Cowardly and unremarkable"
+    },
+    {
+        "name": "Western Adventure",
+        "prompt": "(Create a poster for a western adventure movie) {prompt}",
+        "negative_prompt": "Eastern and urban"
+    },
+    {
+        "name": "Western Outlaws",
+        "prompt": "(Create a poster for a western movie about outlaws) {prompt}",
+        "negative_prompt": "Law-abiding and peaceful"
+    },
+    {
+        "name": "Western Showdown",
+        "prompt": "(Design a poster for a western movie showdown) {prompt}",
+        "negative_prompt": "Peaceful and cooperative"
+    }
+]

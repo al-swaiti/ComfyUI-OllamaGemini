@@ -1,0 +1,92 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ambient (Highlighting ambient lighting)",
+        "prompt": "ambient {prompt}",
+        "negative_prompt": "spotlight"
+    },
+    {
+        "name": "Artificial (Highlighting artificial lighting)",
+        "prompt": "artificial {prompt}",
+        "negative_prompt": "natural"
+    },
+    {
+        "name": "Backlit (Highlighting backlit lighting)",
+        "prompt": "backlit {prompt}",
+        "negative_prompt": "frontlit"
+    },
+    {
+        "name": "Diffused (Highlighting diffused lighting)",
+        "prompt": "diffused {prompt}",
+        "negative_prompt": "direct"
+    },
+    {
+        "name": "Flash (Highlighting flash lighting)",
+        "prompt": "flash {prompt}",
+        "negative_prompt": "natural"
+    },
+    {
+        "name": "Harsh (Highlighting harsh lighting)",
+        "prompt": "harsh {prompt}",
+        "negative_prompt": "soft"
+    },
+    {
+        "name": "Natural (Highlighting natural lighting)",
+        "prompt": "natural {prompt}",
+        "negative_prompt": "artificial"
+    },
+    {
+        "name": "SideLit (Highlighting side lighting)",
+        "prompt": "sidelit {prompt}",
+        "negative_prompt": "backlit"
+    },
+    {
+        "name": "Soft (Highlighting soft lighting)",
+        "prompt": "soft {prompt}",
+        "negative_prompt": "harsh"
+    },
+    {
+        "name": "Spotlight (Highlighting spotlight lighting)",
+        "prompt": "spotlight {prompt}",
+        "negative_prompt": "ambient"
+    },
+    {
+        "name": "LowKey (Highlighting low-key lighting)",
+        "prompt": "lowkey {prompt}",
+        "negative_prompt": "highkey"
+    },
+    {
+        "name": "HighKey (Highlighting high-key lighting)",
+        "prompt": "highkey {prompt}",
+        "negative_prompt": "lowkey"
+    },
+    {
+        "name": "GoldenHour (Highlighting golden hour lighting)",
+        "prompt": "goldenhour {prompt}",
+        "negative_prompt": "harsh"
+    },
+    {
+        "name": "BlueHour (Highlighting blue hour lighting)",
+        "prompt": "bluehour {prompt}",
+        "negative_prompt": "harsh"
+    },
+    {
+        "name": "Dramatic (Highlighting dramatic lighting)",
+        "prompt": "dramatic {prompt}",
+        "negative_prompt": "flat"
+    },
+    {
+        "name": "Flat (Highlighting flat lighting)",
+        "prompt": "flat {prompt}",
+        "negative_prompt": "dramatic"
+    },
+    {
+        "name": "Silhouette (Highlighting silhouette lighting)",
+        "prompt": "silhouette {prompt}",
+        "negative_prompt": "frontlit"
+    }
+]

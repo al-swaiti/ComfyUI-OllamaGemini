@@ -1,0 +1,314 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+
+    "name": "Crystal Cave",
+    "prompt": "(Inside a glittering crystal cave) (Surrounded by glowing gemstones) {prompt}",
+    "negative_prompt": "Cave without crystals"
+    },
+
+    {
+        "name": "Haunted Castle",
+        "prompt": "(In a haunted castle) (Echoes of ghostly whispers) {prompt}",
+        "negative_prompt": "Castle free of ghosts"
+    },
+    {
+        "name": "Mystic Lake",
+        "prompt": "(By a mystic lake) (Waters infused with magic) {prompt}",
+        "negative_prompt": "Ordinary lake"
+    },
+    {
+        "name": "Runic Circle",
+        "prompt": "(Within a circle of ancient runes) (Symbols glowing with power) {prompt}",
+        "negative_prompt": "No runes"
+    },
+    {
+        "name": "Skyward Citadel",
+        "prompt": "(In the floating skyward citadel) (Above the clouds) {prompt}",
+        "negative_prompt": "Grounded citadel"
+    },
+    {
+        "name": "Starry Enchantment",
+        "prompt": "(Under a starry enchantment) (Stars casting magical light) {prompt}",
+        "negative_prompt": "No starry enchantment"
+    },
+    {
+        "name": "Time-Worn Temple",
+        "prompt": "(Inside a time-worn temple) (Echoes of ancient rituals) {prompt}",
+        "negative_prompt": "Modern setting"
+    },
+    {
+        "name": "Underground Cavern",
+        "prompt": "(Exploring an underground cavern) (Hidden beneath the earth) {prompt}",
+        "negative_prompt": "Surface world"
+    },
+    {
+        "name": "Vortex of Power",
+        "prompt": "(In the midst of a vortex of power) (Magic swirling all around) {prompt}",
+        "negative_prompt": "No magical vortex"
+    },
+    {
+        "name": "Wishing Well",
+        "prompt": "(At the edge of a wishing well) (Magic infused water granting wishes) {prompt}",
+        "negative_prompt": "Ordinary well"
+    },
+    {
+        "name": "Alchemy Lab",
+        "prompt": "(In a bustling alchemy lab) (Transmuting base metals into gold) {prompt}",
+        "negative_prompt": "No alchemical transformations"
+    },
+    {
+        "name": "Ancient Runes",
+        "prompt": "(Deciphering ancient runes) (Unveiling the secrets of mystic symbols) {prompt}",
+        "negative_prompt": "No runes to decipher"
+    },
+    {
+        "name": "Arcane Portal",
+        "prompt": "(Stepping through an arcane portal) (To realms of ancient magic) {prompt}",
+        "negative_prompt": "No portals to other realms"
+    },
+    {
+        "name": "Celestial Realm",
+        "prompt": "(Within the celestial realm) (Amongst the stars and galaxies) {prompt}",
+        "negative_prompt": "Terrestrial world"
+    },
+    {
+        "name": "Cursed Forest",
+        "prompt": "(Venturing into the cursed forest) (Where the trees whisper dark secrets) {prompt}",
+        "negative_prompt": "Cursed-free zone"
+    },
+    {
+        "name": "Cursed Relic",
+        "prompt": "(Possessing a cursed relic) (Haunted by dark magic) {prompt}",
+        "negative_prompt": "Curse-free"
+    },
+    {
+        "name": "Dark Enchantment",
+        "prompt": "(Under a dark enchantment's curse) (Shrouded in malevolent magic) {prompt}",
+        "negative_prompt": "Unaffected by magic"
+    },
+    {
+        "name": "Dragon's Lair",
+        "prompt": "(Deep within the dragon's lair) (Amidst dragon's treasure hoard) {prompt}",
+        "negative_prompt": "Dragon-free zone"
+    },
+    {
+        "name": "Dreamscape",
+        "prompt": "(Lost in the dreamscape) (Navigating the realm of dreams) {prompt}",
+        "negative_prompt": "Reality-bound"
+    },
+    {
+        "name": "Dwarven Forge",
+        "prompt": "(Inside the heart of a dwarven forge) (Deep within the mines of the dwarves) {prompt}",
+        "negative_prompt": "Dwarf-free zone"
+    },
+    {
+        "name": "Eldritch Horror",
+        "prompt": "(Facing an eldritch horror) (Confronting the unspeakable) {prompt}",
+        "negative_prompt": "No eldritch terrors"
+    },
+    {
+        "name": "Elemental Guardians",
+        "prompt": "(Seeking the aid of elemental guardians) (Summoning the spirits of nature) {prompt}",
+        "negative_prompt": "Without elemental protection"
+    },
+    {
+        "name": "Elemental Power",
+        "prompt": "(Harnessing the power of elements) (In the midst of elemental chaos) {prompt}",
+        "negative_prompt": "Element-free environment"
+    },
+    {
+        "name": "Elven Kingdom",
+        "prompt": "(Within the mystical elven kingdom) (Amidst ancient elven ruins) {prompt}",
+        "negative_prompt": "Non-elven realm"
+    },
+    {
+        "name": "Enchanted Armor",
+        "prompt": "(Clad in enchanted armor) (Protected by mystical shields) {prompt}",
+        "negative_prompt": "Armorless"
+    },
+    {
+        "name": "Enchanted Artifacts",
+        "prompt": "(Seeker of enchanted artifacts) (Amidst ancient relics) {prompt}",
+        "negative_prompt": "Artifact-free zone"
+    },
+    {
+        "name": "Enchanted Creatures",
+        "prompt": "(Communing with enchanted creatures) (Amongst talking animals and mystical beasts) {prompt}",
+        "negative_prompt": "Non-talking animals"
+    },
+    {
+        "name": "Enchanted Dreams",
+        "prompt": "(Diving into enchanted dreams) (Where fantasies come to life) {prompt}",
+        "negative_prompt": "Dreamless sleep"
+    },
+    {
+        "name": "Enchanted Forest",
+        "prompt": "(An enchanted forest surrounds) (The magical woods hide) {prompt}",
+        "negative_prompt": "Barren landscape"
+    },
+    {
+        "name": "Enchanted Garden",
+        "prompt": "(Strolling through an enchanted garden) (Amidst talking flowers and sentient plants) {prompt}",
+        "negative_prompt": "Garden devoid of enchantment"
+    },
+    {
+        "name": "Enchanted Kingdom",
+        "prompt": "(Within the heart of an enchanted kingdom) (Amidst enchanted forests) {prompt}",
+        "negative_prompt": "Non-enchanted world"
+    },
+    {
+        "name": "Enchanted Vessel",
+        "prompt": "(Sailing on an enchanted vessel) (On a ship of sentient wood) {prompt}",
+        "negative_prompt": "No enchanted ships"
+    },
+    {
+        "name": "Eternal Night",
+        "prompt": "(Trapped in eternal night) (Under the gaze of a moonless sky) {prompt}",
+        "negative_prompt": "Daylight never ends"
+    },
+    {
+        "name": "Fairy Tale",
+        "prompt": "(In a classic fairy tale setting) (Once upon a time in) {prompt}",
+        "negative_prompt": "Reality"
+    },
+    {
+        "name": "Feywild",
+        "prompt": "(Venturing into the ethereal Feywild) (Amidst fey creatures and illusions) {prompt}",
+        "negative_prompt": "Outside the Feywild"
+    },
+    {
+        "name": "Magical Creatures",
+        "prompt": "(Inhabited by magical creatures) (Amongst phoenixes and gryphons) {prompt}",
+        "negative_prompt": "No magical beings"
+    },
+    {
+        "name": "Magical Eclipse",
+        "prompt": "(Witnessing a magical eclipse) (When the sun and moon align) {prompt}",
+        "negative_prompt": "Eclipse-free day"
+    },
+    {
+        "name": "Magic Carpet Ride",
+        "prompt": "(Embarking on a magic carpet ride) (Soaring through the skies) {prompt}",
+        "negative_prompt": "Grounded"
+    },
+    {
+        "name": "Magic in the Moonlight",
+        "prompt": "(Performing magic in the moonlight) (In the glow of lunar enchantment) {prompt}",
+        "negative_prompt": "Daytime"
+    },
+    {
+        "name": "Magic Mirror",
+        "prompt": "(Through the enchanted looking glass) (In the world beyond the mirror) {prompt}",
+        "negative_prompt": "No reflections"
+    },
+    {
+        "name": "Mermaid's Song",
+        "prompt": "(Under the mesmerizing mermaid's song) (In the depths of the ocean) {prompt}",
+        "negative_prompt": "Landlocked"
+    },
+    {
+        "name": "Moonlit Ritual",
+        "prompt": "(Participating in a moonlit ritual) (Conducting ancient ceremonies) {prompt}",
+        "negative_prompt": "Daylight ceremonies"
+    },
+    {
+        "name": "Mystic Creatures",
+        "prompt": "(Inhabited by mystical creatures) (Amongst unicorns and griffins) {prompt}",
+        "negative_prompt": "Devoid of magical beasts"
+    },
+    {
+        "name": "Mystic Forest Guardians",
+        "prompt": "(Seeking the aid of mystic forest guardians) (Summoning the spirits of the woods) {prompt}",
+        "negative_prompt": "Without forest protection"
+    },
+    {
+        "name": "Mystic Portal",
+        "prompt": "(Stepping through a mystical portal) (Entering realms unknown) {prompt}",
+        "negative_prompt": "No portals to other worlds"
+    },
+    {
+        "name": "Mystic Riddles",
+        "prompt": "(Solving ancient mystic riddles) (Cracking the enigmatic code) {prompt}",
+        "negative_prompt": "Riddleless world"
+    },
+    {
+        "name": "Mystical Artifacts",
+        "prompt": "(Searching for mystical artifacts) (In the ruins of a lost civilization) {prompt}",
+        "negative_prompt": "Artifact-less ruins"
+    },
+    {
+        "name": "Mystical Talisman",
+        "prompt": "(Wielding a mystical talisman) (Blessed with protective charms) {prompt}",
+        "negative_prompt": "Talismanless"
+    },
+    {
+        "name": "Mythical Beasts",
+        "prompt": "(Encountering mythical beasts) (Amongst manticores and chimeras) {prompt}",
+        "negative_prompt": "Beast-free zone"
+    },
+    {
+        "name": "Sorcerer's Apprentice",
+        "prompt": "(Aspiring sorcerer's apprentice) (Learning the secrets of dark magic) {prompt}",
+        "negative_prompt": "No sorcerous apprenticeship"
+    },
+    {
+        "name": "Sorceress's Curse",
+        "prompt": "(Bearing the sorceress's curse) (Plagued by enchanted hexes) {prompt}",
+        "negative_prompt": "Hex-free"
+    },
+    {
+        "name": "Sorcerer's Duel",
+        "prompt": "(Engaging in a sorcerer's duel) (Casting spells in a magical showdown) {prompt}",
+        "negative_prompt": "No dueling sorcerers"
+    },
+    {
+        "name": "Sorcerer's Tower",
+        "prompt": "(Within the towering sorcerer's abode) (Atop a mystical spire) {prompt}",
+        "negative_prompt": "No sorcery allowed"
+    },
+    {
+        "name": "Sword of Destiny",
+        "prompt": "(Wielder of the sword of destiny) (On a quest for legendary weapons) {prompt}",
+        "negative_prompt": "Unarmed"
+    },
+    {
+        "name": "Timeless Kingdom",
+        "prompt": "(In a timeless kingdom) (Where time stands still) {prompt}",
+        "negative_prompt": "Bound by time"
+    },
+    {
+        "name": "Time Travel",
+        "prompt": "(Time-traveling adventure) (Temporal rift opens) {prompt}",
+        "negative_prompt": "Stuck in one time"
+    },
+    {
+        "name": "Witch's Brew",
+        "prompt": "(Bubbling cauldron of a witch) (Brewing magical potions) {prompt}",
+        "negative_prompt": "No cauldron in sight"
+    },
+    {
+        "name": "Witch's Lair",
+        "prompt": "(Inside the eerie witch's lair) (Surrounded by bubbling cauldrons) {prompt}",
+        "negative_prompt": "Witch-free zone"
+    },
+    {
+        "name": "Wizard's Apprentice",
+        "prompt": "(Aspiring wizard's apprentice) (Learning the secrets of arcane magic) {prompt}",
+        "negative_prompt": "No magical apprenticeship"
+    },
+    {
+        "name": "Wizard's Library",
+        "prompt": "(Exploring the vast wizard's library) (Unraveling ancient tomes of spells) {prompt}",
+        "negative_prompt": "No library to explore"
+    },
+    {
+        "name": "Wizard's Spell",
+        "prompt": "(A wizard casts a powerful spell) (A burst of magic engulfs) {prompt}",
+        "negative_prompt": "Magicless world"
+    }
+]

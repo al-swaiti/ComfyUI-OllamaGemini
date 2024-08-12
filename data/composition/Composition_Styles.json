@@ -1,0 +1,57 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Balance (Visual equilibrium in the image)",
+        "prompt": "balance {prompt}",
+        "negative_prompt": "unbalanced"
+    },
+    {
+        "name": "Framing (Using elements to frame the subject)",
+        "prompt": "framing {prompt}",
+        "negative_prompt": "blocking"
+    },
+    {
+        "name": "LeadingLines (Lines that draw the viewer's eye)",
+        "prompt": "leadinglines {prompt}",
+        "negative_prompt": "scattered"
+    },
+    {
+        "name": "NegativeSpace (Use of empty space around the subject)",
+        "prompt": "negativespace {prompt}",
+        "negative_prompt": "positivespace"
+    },
+    {
+        "name": "Pattern (Repetition of elements)",
+        "prompt": "pattern {prompt}",
+        "negative_prompt": "random"
+    },
+    {
+        "name": "Perspective (Depth and spatial relationships)",
+        "prompt": "perspective {prompt}",
+        "negative_prompt": "flat"
+    },
+    {
+        "name": "RuleOfThirds (Composition technique placing subject off-center)",
+        "prompt": "ruleofthirds {prompt}",
+        "negative_prompt": "centered"
+    },
+    {
+        "name": "Simplicity (Minimalistic approach)",
+        "prompt": "simplicity {prompt}",
+        "negative_prompt": "complex"
+    },
+    {
+        "name": "Symmetry (Balanced and mirrored elements)",
+        "prompt": "symmetry {prompt}",
+        "negative_prompt": "asymmetry"
+    },
+    {
+        "name": "Texture (Surface quality of objects)",
+        "prompt": "texture {prompt}",
+        "negative_prompt": "smooth"
+    }
+]

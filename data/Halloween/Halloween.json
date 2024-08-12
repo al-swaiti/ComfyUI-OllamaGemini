@@ -1,0 +1,257 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Classic Haunted House",
+        "prompt": "(Create a spooky scene featuring a classic haunted house) {prompt}",
+        "negative_prompt": "Cheerful and bright"
+    },
+    {
+        "name": "Eerie Cemetery",
+        "prompt": "(Illustrate an eerie cemetery scene on a foggy night) {prompt}",
+        "negative_prompt": "Sunny and peaceful"
+    },
+    {
+        "name": "Witch's Cauldron",
+        "prompt": "(Depict a witch stirring a bubbling cauldron) {prompt}",
+        "negative_prompt": "Orderly laboratory"
+    },
+    {
+        "name": "Ghostly Apparitions",
+        "prompt": "(Create ghostly apparitions haunting an old mansion) {prompt}",
+        "negative_prompt": "Clear and ghost-free"
+    },
+    {
+        "name": "Pumpkin Patch",
+        "prompt": "(Design a scene in a vibrant pumpkin patch) {prompt}",
+        "negative_prompt": "Deserted wasteland"
+    },
+    {
+        "name": "Zombie Apocalypse",
+        "prompt": "(Imagine a chaotic zombie apocalypse scene) {prompt}",
+        "negative_prompt": "Peaceful suburban neighborhood"
+    },
+    {
+        "name": "Vampire's Lair",
+        "prompt": "(Illustrate the dark and mysterious lair of a vampire) {prompt}",
+        "negative_prompt": "Well-lit coffee shop"
+    },
+    {
+        "name": "Werewolf Transformation",
+        "prompt": "(Depict a person undergoing a dramatic werewolf transformation) {prompt}",
+        "negative_prompt": "Ordinary human"
+    },
+    {
+        "name": "Creepy Carnival",
+        "prompt": "(Design a poster for a creepy and abandoned carnival) {prompt}",
+        "negative_prompt": "Joyful circus"
+    },
+    {
+        "name": "Haunted Forest",
+        "prompt": "(Create a scene in a dense, haunted forest) {prompt}",
+        "negative_prompt": "Sunny meadow"
+    },
+    {
+        "name": "Grim Reaper",
+        "prompt": "(Illustrate the ominous figure of the Grim Reaper) {prompt}",
+        "negative_prompt": "Friendly park ranger"
+    },
+    {
+        "name": "Witch's Brew",
+        "prompt": "(Show a witch brewing a magical potion) {prompt}",
+        "negative_prompt": "Baking cookies"
+    },
+    {
+        "name": "Cursed Amulet",
+        "prompt": "(Design an amulet with a sinister curse) {prompt}",
+        "negative_prompt": "Lucky charm"
+    },
+    {
+        "name": "Frankenstein's Lab",
+        "prompt": "(Create a scene inside Frankenstein's laboratory) {prompt}",
+        "negative_prompt": "High-tech research facility"
+    },
+    {
+        "name": "Mummy's Tomb",
+        "prompt": "(Illustrate the interior of an ancient mummy's tomb) {prompt}",
+        "negative_prompt": "Clean and tidy bedroom"
+    },
+    {
+        "name": "Wicked Witches",
+        "prompt": "(Show a gathering of wicked witches plotting) {prompt}",
+        "negative_prompt": "Tea party"
+    },
+    {
+        "name": "Skeletal Warriors",
+        "prompt": "(Design an army of skeletal warriors) {prompt}",
+        "negative_prompt": "Fitness class"
+    },
+    {
+        "name": "Ghoulish Feast",
+        "prompt": "(Depict ghouls feasting on a creepy banquet) {prompt}",
+        "negative_prompt": "Vegan potluck"
+    },
+    {
+        "name": "Demon's Inferno",
+        "prompt": "(Create a scene in the fiery depths of a demon's lair) {prompt}",
+        "negative_prompt": "Cool swimming pool"
+    },
+    {
+        "name": "Wicked Queen's Castle",
+        "prompt": "(Illustrate the sinister castle of a wicked queen) {prompt}",
+        "negative_prompt": "Fairy princess castle"
+    },
+    {
+        "name": "Pirate's Curse",
+        "prompt": "(Design a cursed treasure map) {prompt}",
+        "negative_prompt": "Treasure island vacation"
+    },
+    {
+        "name": "Bewitched Forest Animals",
+        "prompt": "(Show enchanted forest animals under a spell) {prompt}",
+        "negative_prompt": "Petting zoo"
+    },
+    {
+        "name": "Sorcerer's Apprentice",
+        "prompt": "(Illustrate a young sorcerer's apprentice conjuring magic) {prompt}",
+        "negative_prompt": "High school science experiment"
+    },
+    {
+        "name": "Zombie Prom Night",
+        "prompt": "(Design a prom night with zombie attendees) {prompt}",
+        "negative_prompt": "High school dance"
+    },
+    {
+        "name": "Wicked Jester",
+        "prompt": "(Create a sinister jester character) {prompt}",
+        "negative_prompt": "Friendly clown"
+    },
+    {
+        "name": "Cursed Shipwreck",
+        "prompt": "(Illustrate a cursed shipwreck on a haunted island) {prompt}",
+        "negative_prompt": "Luxury cruise"
+    },
+    {
+        "name": "Spooky Lighthouse",
+        "prompt": "(Design a spooky lighthouse on a stormy night) {prompt}",
+        "negative_prompt": "Sunny beach resort"
+    },
+    {
+        "name": "Possessed Doll",
+        "prompt": "(Show a possessed doll with evil intentions) {prompt}",
+        "negative_prompt": "Cute plush toy"
+    },
+    {
+        "name": "Voodoo Priestess",
+        "prompt": "(Illustrate a voodoo priestess performing a ritual) {prompt}",
+        "negative_prompt": "Local healer"
+    },
+    {
+        "name": "Witch Hunt",
+        "prompt": "(Design a scene from a historical witch hunt) {prompt}",
+        "negative_prompt": "Law-abiding town"
+    },
+    {
+        "name": "Cursed Mirror",
+        "prompt": "(Create a cursed mirror reflecting terrifying images) {prompt}",
+        "negative_prompt": "Makeup vanity"
+    },
+    {
+        "name": "Horror Film Director",
+        "prompt": "(Illustrate a horror film director at work) {prompt}",
+        "negative_prompt": "Romantic comedy director"
+    },
+    {
+        "name": "Cemetery Picnic",
+        "prompt": "(Depict a spooky picnic in a cemetery) {prompt}",
+        "negative_prompt": "Picnic in a park"
+    },
+    {
+        "name": "Spectral Opera House",
+        "prompt": "(Design a spectral opera house with ghostly performers) {prompt}",
+        "negative_prompt": "Sold-out theater"
+    },
+    {
+        "name": "Witch's Familiar",
+        "prompt": "(Show a witch's familiar, a black cat, in a magical setting) {prompt}",
+        "negative_prompt": "Cute kitten"
+    },
+    {
+        "name": "Haunted Ship",
+        "prompt": "(Illustrate a haunted pirate ship on a cursed sea) {prompt}",
+        "negative_prompt": "Luxury yacht"
+    },
+    {
+        "name": "Mad Scientist's Lab",
+        "prompt": "(Create a scene inside a mad scientist's laboratory) {prompt}",
+        "negative_prompt": "High school science class"
+    },
+    {
+        "name": "Zombie Wedding",
+        "prompt": "(Design a wedding ceremony with zombie bride and groom) {prompt}",
+        "negative_prompt": "Traditional wedding"
+    },
+    {
+        "name": "Witch's Spellbook",
+        "prompt": "(Illustrate an ancient and sinister witch's spellbook) {prompt}",
+        "negative_prompt": "Cookbook"
+    },
+    {
+        "name": "Vampire's Feast",
+        "prompt": "(Show a vampire feasting on blood in a dark alley) {prompt}",
+        "negative_prompt": "Romantic dinner"
+    },
+    {
+        "name": "Grim Carnival",
+        "prompt": "(Design a grim and sinister carnival with haunted rides) {prompt}",
+        "negative_prompt": "Amusement park"
+    },
+    {
+        "name": "Cursed Castle",
+        "prompt": "(Create a cursed and foreboding castle) {prompt}",
+        "negative_prompt": "Fairy tale castle"
+    },
+    {
+        "name": "Witch's Broomstick",
+        "prompt": "(Illustrate a witch flying on her broomstick) {prompt}",
+        "negative_prompt": "Airplane"
+    },
+    {
+        "name": "Mysterious Potions",
+        "prompt": "(Show a collection of mysterious potions in a wizard's lair) {prompt}",
+        "negative_prompt": "Beverage aisle at the supermarket"
+    },
+    {
+        "name": "Haunted Asylum",
+        "prompt": "(Design a scene inside a haunted asylum) {prompt}",
+        "negative_prompt": "Hospital"
+    },
+    {
+        "name": "Zombie Apocalypse Survivors",
+        "prompt": "(Illustrate survivors of a zombie apocalypse) {prompt}",
+        "negative_prompt": "Family picnic"
+    },
+    {
+        "name": "Witch's Coven",
+        "prompt": "(Create a gathering of witches in a moonlit forest) {prompt}",
+        "negative_prompt": "Book club meeting"
+    },
+    {
+        "name": "Cursed Dollhouse",
+        "prompt": "(Show a cursed and haunted dollhouse) {prompt}",
+        "negative_prompt": "Doll collection"
+    },
+    {
+        "name": "Voodoo Doll",
+        "prompt": "(Design a voodoo doll with pins and malicious intent) {prompt}",
+        "negative_prompt": "Stuffed toy"
+    },
+    {
+        "name": "Haunted School",
+        "prompt": "(Illustrate a haunted and abandoned school building) {prompt}",
+        "negative_prompt": "Elementary school"
+    }
+]

@@ -1,0 +1,1417 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "airfield",
+        "prompt": "airfield {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "airplane interior",
+        "prompt": "airplane interior {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "airport",
+        "prompt": "airport {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "alley",
+        "prompt": "alley {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "alleyway",
+        "prompt": "alleyway {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Alphonse Mucha",
+        "prompt": "Alphonse Mucha {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "amphitheater",
+        "prompt": "amphitheater {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "amusement park",
+        "prompt": "amusement park {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "apartment",
+        "prompt": "apartment {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "aquarium",
+        "prompt": "aquarium {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "aqueduct",
+        "prompt": "aqueduct {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "arcade",
+        "prompt": "arcade {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "arena",
+        "prompt": "arena {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "armory",
+        "prompt": "armory {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "art gallery",
+        "prompt": "art gallery {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "asteroid",
+        "prompt": "asteroid {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "autumn",
+        "prompt": "autumn {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bakery",
+        "prompt": "bakery {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bamboo forest",
+        "prompt": "bamboo forest {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bar",
+        "prompt": "bar {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "barn",
+        "prompt": "barn {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bathroom",
+        "prompt": "bathroom {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bathtub",
+        "prompt": "bathtub {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "beach",
+        "prompt": "beach {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bed room",
+        "prompt": "bed room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bedroom",
+        "prompt": "bedroom {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bell tower",
+        "prompt": "bell tower {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bookstore",
+        "prompt": "bookstore {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bouncy castle",
+        "prompt": "bouncy castle {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bowling alley",
+        "prompt": "bowling alley {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bridge",
+        "prompt": "bridge {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bunker",
+        "prompt": "bunker {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bus interior",
+        "prompt": "bus interior {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bus stop",
+        "prompt": "bus stop {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "cafe",
+        "prompt": "cafe {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "cafeteria",
+        "prompt": "cafeteria {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "camp",
+        "prompt": "camp {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "canal",
+        "prompt": "canal {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "canyon",
+        "prompt": "canyon {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "capitol building",
+        "prompt": "capitol building {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "car interior",
+        "prompt": "car interior {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "carousel",
+        "prompt": "carousel {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "casino",
+        "prompt": "casino {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "castle",
+        "prompt": "castle {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "cave",
+        "prompt": "cave {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "changing room",
+        "prompt": "changing room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "chicken coop",
+        "prompt": "chicken coop {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "church",
+        "prompt": "church {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "city",
+        "prompt": "city {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "classroom",
+        "prompt": "classroom {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "cliff",
+        "prompt": "cliff {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "clock tower",
+        "prompt": "clock tower {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "closet",
+        "prompt": "closet {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "clubroom",
+        "prompt": "clubroom {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "cockpit",
+        "prompt": "cockpit {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "colosseum",
+        "prompt": "colosseum {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "conservatory",
+        "prompt": "conservatory {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "construction site",
+        "prompt": "construction site {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "control tower",
+        "prompt": "control tower {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "convenience store",
+        "prompt": "convenience store {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "convention",
+        "prompt": "convention {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "cooling tower",
+        "prompt": "cooling tower {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "corn maze",
+        "prompt": "corn maze {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "cosmic",
+        "prompt": "cosmic {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "court",
+        "prompt": "court {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "courtroom",
+        "prompt": "courtroom {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "courtyard",
+        "prompt": "courtyard {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "crosswalk",
+        "prompt": "crosswalk {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "cubicle",
+        "prompt": "cubicle {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "cyberpunk city",
+        "prompt": "cyberpunk city {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "dam",
+        "prompt": "dam {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "dark tunnel",
+        "prompt": "dark tunnel {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "desert",
+        "prompt": "desert {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "dining room",
+        "prompt": "dining room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "dirt road",
+        "prompt": "dirt road {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "dock",
+        "prompt": "dock {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "dressing room",
+        "prompt": "dressing room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "drydock",
+        "prompt": "drydock {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "dungeon",
+        "prompt": "dungeon {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "factory",
+        "prompt": "factory {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "fall",
+        "prompt": "fall {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "fantasy",
+        "prompt": "fantasy {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "fantasy city",
+        "prompt": "fantasy city {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "farm",
+        "prompt": "farm {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "ferris wheel",
+        "prompt": "ferris wheel {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "field",
+        "prompt": "field {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "field of flowers",
+        "prompt": "field of flowers {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "field of wheat",
+        "prompt": "field of wheat {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "fire",
+        "prompt": "fire {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "fitting room",
+        "prompt": "fitting room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "floating castle",
+        "prompt": "floating castle {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "floating city",
+        "prompt": "floating city {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "floating island",
+        "prompt": "floating island {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "flower field",
+        "prompt": "flower field {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "flower garden",
+        "prompt": "flower garden {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "flower shop",
+        "prompt": "flower shop {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "forest",
+        "prompt": "forest {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "fountain",
+        "prompt": "fountain {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "frozen lakeside",
+        "prompt": "frozen lakeside {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "garage",
+        "prompt": "garage {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "garden",
+        "prompt": "garden {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "gas station",
+        "prompt": "gas station {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "gazebo",
+        "prompt": "gazebo {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "geyser",
+        "prompt": "geyser {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "glacier",
+        "prompt": "glacier {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "gothic",
+        "prompt": "gothic {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "gradient",
+        "prompt": "gradient {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "graveyard",
+        "prompt": "graveyard {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "greenhouse",
+        "prompt": "greenhouse {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "guard tower",
+        "prompt": "guard tower {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "gym",
+        "prompt": "gym {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "gym storeroom",
+        "prompt": "gym storeroom {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hangar",
+        "prompt": "hangar {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "harbor",
+        "prompt": "harbor {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "haunted library",
+        "prompt": "haunted library {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hell",
+        "prompt": "hell {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hen house",
+        "prompt": "hen house {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "highway",
+        "prompt": "highway {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hill",
+        "prompt": "hill {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hospital",
+        "prompt": "hospital {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hotel",
+        "prompt": "hotel {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hotel room",
+        "prompt": "hotel room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "house",
+        "prompt": "house {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hut",
+        "prompt": "hut {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Indoor",
+        "prompt": "indoor  {prompt}",
+        "negative_prompt": "outdoor"
+    },
+    {
+        "name": "industrial",
+        "prompt": "industrial {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "infernal palace",
+        "prompt": "infernal palace {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "infirmary",
+        "prompt": "infirmary {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "island",
+        "prompt": "island {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "izakaya",
+        "prompt": "izakaya {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "jetty",
+        "prompt": "jetty {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "jewish temple",
+        "prompt": "jewish temple {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "jungle",
+        "prompt": "jungle {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "kitchen",
+        "prompt": "kitchen {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "laboratory",
+        "prompt": "laboratory {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "lake",
+        "prompt": "lake {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "library",
+        "prompt": "library {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "lighthouse",
+        "prompt": "lighthouse {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "living room",
+        "prompt": "living room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "locker room",
+        "prompt": "locker room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "lunar base",
+        "prompt": "lunar base {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "mall",
+        "prompt": "mall {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "market",
+        "prompt": "market {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "market stall",
+        "prompt": "market stall {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "meadow",
+        "prompt": "meadow {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "medieval village",
+        "prompt": "medieval village {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "megastructure",
+        "prompt": "megastructure {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "messy room",
+        "prompt": "messy room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "military base",
+        "prompt": "military base {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "minaret",
+        "prompt": "minaret {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "moon",
+        "prompt": "moon {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "mosque",
+        "prompt": "mosque {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "mountain",
+        "prompt": "mountain {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "movie theater",
+        "prompt": "movie theater {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "museum",
+        "prompt": "museum {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "mushroom forest",
+        "prompt": "mushroom forest {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "nature",
+        "prompt": "nature {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "night sky",
+        "prompt": "night sky {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "nightclub",
+        "prompt": "nightclub {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "nuclear powerplant",
+        "prompt": "nuclear powerplant {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "oasis",
+        "prompt": "oasis {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "observatory",
+        "prompt": "observatory {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "ocean",
+        "prompt": "ocean {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "ocean bottom",
+        "prompt": "ocean bottom {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "office",
+        "prompt": "office {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "onsen",
+        "prompt": "onsen {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "orchard",
+        "prompt": "orchard {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "otaku room",
+        "prompt": "otaku room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Outdoor",
+        "prompt": "outdoor  {prompt}",
+        "negative_prompt": "indoor"
+    },
+    {
+        "name": "pagoda",
+        "prompt": "pagoda {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "park",
+        "prompt": "park {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "parking lot",
+        "prompt": "parking lot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "path",
+        "prompt": "path {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "pharmacy",
+        "prompt": "pharmacy {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "phone booth",
+        "prompt": "phone booth {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "pier",
+        "prompt": "pier {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "plain",
+        "prompt": "plain {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "planet",
+        "prompt": "planet {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "planetarium",
+        "prompt": "planetarium {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "playground",
+        "prompt": "playground {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "pond",
+        "prompt": "pond {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "pool",
+        "prompt": "pool {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "poolside",
+        "prompt": "poolside {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "powerplant",
+        "prompt": "powerplant {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "prison",
+        "prompt": "prison {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "prison cell",
+        "prompt": "prison cell {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "railroad crossing",
+        "prompt": "railroad crossing {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "railroad tracks",
+        "prompt": "railroad tracks {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "ramen shop",
+        "prompt": "ramen shop {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "refinery",
+        "prompt": "refinery {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "restaurant",
+        "prompt": "restaurant {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "rice paddy",
+        "prompt": "rice paddy {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "river",
+        "prompt": "river {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "road",
+        "prompt": "road {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "roller coaster",
+        "prompt": "roller coaster {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "roman city",
+        "prompt": "roman city {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "rooftop",
+        "prompt": "rooftop {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "rope bridge",
+        "prompt": "rope bridge {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "rose garden",
+        "prompt": "rose garden {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "ruins",
+        "prompt": "ruins {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "running track",
+        "prompt": "running track {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "runway",
+        "prompt": "runway {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "rural",
+        "prompt": "rural {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "salon",
+        "prompt": "salon {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "savannah",
+        "prompt": "savannah {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "school",
+        "prompt": "school {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "sex shop",
+        "prompt": "sex shop {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "shack",
+        "prompt": "shack {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "ship",
+        "prompt": "ship {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "shipyard",
+        "prompt": "shipyard {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "shop",
+        "prompt": "shop {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "shore",
+        "prompt": "shore {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "shower",
+        "prompt": "shower {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "shrine",
+        "prompt": "shrine {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "sidewalk",
+        "prompt": "sidewalk {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "simple",
+        "prompt": "simple {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "skating rink",
+        "prompt": "skating rink {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "skyscraper",
+        "prompt": "skyscraper {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "slums",
+        "prompt": "slums {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Snow",
+        "prompt": "snow  {prompt}",
+        "negative_prompt": "summer"
+    },
+    {
+        "name": "soccer field",
+        "prompt": "soccer field {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "space",
+        "prompt": "space {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "space elevator",
+        "prompt": "space elevator {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "space station",
+        "prompt": "space station {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "spacecraft interior",
+        "prompt": "spacecraft interior {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "spring",
+        "prompt": "spring {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "stadium",
+        "prompt": "stadium {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "staff room",
+        "prompt": "staff room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "stage",
+        "prompt": "stage {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "stilt house",
+        "prompt": "stilt house {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "stone walkway",
+        "prompt": "stone walkway {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "storage room",
+        "prompt": "storage room {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "stream",
+        "prompt": "stream {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "street",
+        "prompt": "street {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Studio",
+        "prompt": "studio  {prompt}",
+        "negative_prompt": "indoor"
+    },
+    {
+        "name": "summer",
+        "prompt": "summer {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "sunset",
+        "prompt": "sunset {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "supermarket",
+        "prompt": "supermarket {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "swimming pool",
+        "prompt": "swimming pool {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tank interior",
+        "prompt": "tank interior {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tavern",
+        "prompt": "tavern {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "temple",
+        "prompt": "temple {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "theater",
+        "prompt": "theater {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "toilet stall",
+        "prompt": "toilet stall {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tower",
+        "prompt": "tower {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "town",
+        "prompt": "town {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "train interior",
+        "prompt": "train interior {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "train station",
+        "prompt": "train station {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "treehouse",
+        "prompt": "treehouse {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "trench",
+        "prompt": "trench {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tunnel",
+        "prompt": "tunnel {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "underworld",
+        "prompt": "underworld {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Urban",
+        "prompt": "urban  {prompt}",
+        "negative_prompt": "rural"
+    },
+    {
+        "name": "valley",
+        "prompt": "valley {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "vatican city",
+        "prompt": "vatican city {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "vehicle interior",
+        "prompt": "vehicle interior {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "village",
+        "prompt": "village {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "volcano",
+        "prompt": "volcano {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "war",
+        "prompt": "war {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "warehouse",
+        "prompt": "warehouse {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "wasteland",
+        "prompt": "wasteland {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "water",
+        "prompt": "water {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "waterfall",
+        "prompt": "waterfall {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "waterpark",
+        "prompt": "waterpark {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "weapon shop",
+        "prompt": "weapon shop {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "well",
+        "prompt": "well {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "wetland",
+        "prompt": "wetland {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "wheat field",
+        "prompt": "wheat field {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "windmill",
+        "prompt": "windmill {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "winter",
+        "prompt": "winter {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "wooden bridge",
+        "prompt": "wooden bridge {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "workshop",
+        "prompt": "workshop {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "wrestling ring",
+        "prompt": "wrestling ring {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "zoo",
+        "prompt": "zoo {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "amphitheater",
+        "prompt": "amphitheater {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "waterfall",
+        "prompt": "waterfall {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "watermill",
+        "prompt": "watermill {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "well",
+        "prompt": "well {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "windmill",
+        "prompt": "windmill {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "winery",
+        "prompt": "winery {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "workshop",
+        "prompt": "workshop {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "zoo",
+        "prompt": "zoo {prompt}",
+        "negative_prompt": ""
+    }
+]

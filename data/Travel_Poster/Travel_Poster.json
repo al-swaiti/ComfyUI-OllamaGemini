@@ -1,0 +1,222 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "African Safari",
+        "prompt": "(Illustrate an unforgettable African safari in your poster) {prompt}",
+        "negative_prompt": "Exoplanet colonization"
+    },
+    {
+        "name": "African Savanna",
+        "prompt": "(Create a travel poster for an African savanna adventure) {prompt}",
+        "negative_prompt": "Interdimensional relaxation"
+    },
+    {
+        "name": "Alpine Wonderland",
+        "prompt": "(Design a travel poster for an enchanting alpine wonderland) {prompt}",
+        "negative_prompt": "Underwater city"
+    },
+    {
+        "name": "Ancient Pyramids",
+        "prompt": "(Create a travel poster featuring the enigmatic ancient pyramids) {prompt}",
+        "negative_prompt": "Cyberpunk cityscape"
+    },
+    {
+        "name": "Ancient Ruins",
+        "prompt": "(Illustrate ancient ruins in your travel poster) {prompt}",
+        "negative_prompt": "High-tech futuristic city"
+    },
+    {
+        "name": "Ancient Temples",
+        "prompt": "(Design a travel poster featuring ancient temples) {prompt}",
+        "negative_prompt": "Time-traveling adventure"
+    },
+    {
+        "name": "Antarctic Expedition",
+        "prompt": "(Create a travel poster for an Antarctic expedition) {prompt}",
+        "negative_prompt": "A journey to the center of the Earth"
+    },
+    {
+        "name": "Beachfront Bliss",
+        "prompt": "(Illustrate a luxurious beachfront vacation in your poster) {prompt}",
+        "negative_prompt": "Deep-space exploration"
+    },
+    {
+        "name": "Caribbean Cruise",
+        "prompt": "(Create a travel poster for an unforgettable Caribbean cruise) {prompt}",
+        "negative_prompt": "Time travel paradox"
+    },
+    {
+        "name": "Cityscape Adventure",
+        "prompt": "(Create a vibrant cityscape adventure poster) {prompt}",
+        "negative_prompt": "Tranquil countryside escape"
+    },
+    {
+        "name": "Coastal Escape",
+        "prompt": "(Design a travel poster for a tranquil coastal escape) {prompt}",
+        "negative_prompt": "Volcano exploration"
+    },
+    {
+        "name": "Countryside Retreat",
+        "prompt": "(Create a poster for a peaceful countryside retreat) {prompt}",
+        "negative_prompt": "Industrial urban environment"
+    },
+    {
+        "name": "Cultural Exploration",
+        "prompt": "(Design a travel poster for a cultural exploration journey) {prompt}",
+        "negative_prompt": "Cybernetic world tour"
+    },
+    {
+        "name": "Desert Adventure",
+        "prompt": "(Create a travel poster for an adrenaline-pumping desert adventure) {prompt}",
+        "negative_prompt": "Quantum leap vacation"
+    },
+    {
+        "name": "Desert Oasis",
+        "prompt": "(Create a travel poster for a serene desert oasis) {prompt}",
+        "negative_prompt": "Urban cityscape"
+    },
+    {
+        "name": "European Adventure",
+        "prompt": "(Design a travel poster for a thrilling European adventure) {prompt}",
+        "negative_prompt": "Space station vacation"
+    },
+    {
+        "name": "Exotic Beach Getaway",
+        "prompt": "(Illustrate an exotic beach getaway in your travel poster) {prompt}",
+        "negative_prompt": "Desert safari expedition"
+    },
+    {
+        "name": "Island Paradise",
+        "prompt": "(Illustrate an island paradise in your travel poster) {prompt}",
+        "negative_prompt": "A bustling metropolis"
+    },
+    {
+        "name": "Jungle Paradise",
+        "prompt": "(Design a travel poster for a hidden jungle paradise) {prompt}",
+        "negative_prompt": "Subterranean adventure"
+    },
+    {
+        "name": "Jungle Safari",
+        "prompt": "(Illustrate a jungle safari adventure in your poster) {prompt}",
+        "negative_prompt": "Arctic wildlife expedition"
+    },
+    {
+        "name": "Hawaiian Paradise",
+        "prompt": "(Illustrate a heavenly Hawaiian paradise in your poster) {prompt}",
+        "negative_prompt": "Virtual reality getaway"
+    },
+    {
+        "name": "Hidden Waterfalls",
+        "prompt": "(Design a travel poster featuring hidden waterfalls) {prompt}",
+        "negative_prompt": "Parallel reality vacation"
+    },
+    {
+        "name": "Historic Asia",
+        "prompt": "(Create a travel poster featuring the rich history of Asia) {prompt}",
+        "negative_prompt": "Time travel to the future"
+    },
+    {
+        "name": "Historic Castles",
+        "prompt": "(Design a poster showcasing majestic historic castles) {prompt}",
+        "negative_prompt": "Virtual reality vacation"
+    },
+    {
+        "name": "Historic Europe",
+        "prompt": "(Illustrate the charm of historic Europe in your poster) {prompt}",
+        "negative_prompt": "Interstellar travel"
+    },
+    {
+        "name": "Historic Landmarks",
+        "prompt": "(Illustrate historic landmarks from around the world in your poster) {prompt}",
+        "negative_prompt": "Cybernetic travel"
+    },
+    {
+        "name": "Historical Wonders",
+        "prompt": "(Illustrate historical wonders from different eras in your poster) {prompt}",
+        "negative_prompt": "Virtual paradise getaway"
+    },
+    {
+        "name": "Mediterranean Beauty",
+        "prompt": "(Create a travel poster showcasing the beauty of the Mediterranean) {prompt}",
+        "negative_prompt": "Space-time rift vacation"
+    },
+    {
+        "name": "Mediterranean Dream",
+        "prompt": "(Design a travel poster for a Mediterranean dream vacation) {prompt}",
+        "negative_prompt": "Underground cave exploration"
+    },
+    {
+        "name": "Mountain Expedition",
+        "prompt": "(Design a travel poster for a thrilling mountain expedition) {prompt}",
+        "negative_prompt": "Underwater exploration"
+    },
+    {
+        "name": "Mountain Retreat",
+        "prompt": "(Illustrate a peaceful mountain retreat in your travel poster) {prompt}",
+        "negative_prompt": "Extraterrestrial tourism"
+    },
+    {
+        "name": "Mystical Forest",
+        "prompt": "(Design a travel poster for an enchanting mystical forest) {prompt}",
+        "negative_prompt": "Parallel universe exploration"
+    },
+    {
+        "name": "Northern Lights",
+        "prompt": "(Design a poster capturing the beauty of the Northern Lights) {prompt}",
+        "negative_prompt": "Alien world exploration"
+    },
+    {
+        "name": "Rainforest Adventure",
+        "prompt": "(Create a poster for a thrilling rainforest adventure) {prompt}",
+        "negative_prompt": "Mars colonization"
+    },
+    {
+        "name": "Retro Road Trip",
+        "prompt": "(Design a retro-style travel poster for a cross-country road trip) {prompt}",
+        "negative_prompt": "Futuristic space travel"
+    },
+    {
+        "name": "Sailing Adventure",
+        "prompt": "(Illustrate a thrilling sailing adventure in your poster) {prompt}",
+        "negative_prompt": "Exoplanetary escapade"
+    },
+    {
+        "name": "Savannah Safari",
+        "prompt": "(Design a poster for an exciting savannah safari) {prompt}",
+        "negative_prompt": "Deep-sea diving expedition"
+    },
+    {
+        "name": "Seaside Serenity",
+        "prompt": "(Illustrate a serene seaside escape in your travel poster) {prompt}",
+        "negative_prompt": "Asteroid mining adventure"
+    },
+    {
+        "name": "Ski Resort Getaway",
+        "prompt": "(Create a travel poster for a cozy ski resort getaway) {prompt}",
+        "negative_prompt": "Tropical island relaxation"
+    },
+    {
+        "name": "Tropical Island Hopping",
+        "prompt": "(Create a travel poster for tropical island hopping) {prompt}",
+        "negative_prompt": "Interdimensional travel"
+    },
+    {
+        "name": "Tropical Paradise",
+        "prompt": "(Create a travel poster for a tropical paradise destination) {prompt}",
+        "negative_prompt": "Snowy mountain adventure"
+    },
+    {
+        "name": "Tropical Rainforest",
+        "prompt": "(Create a travel poster for an immersive tropical rainforest experience) {prompt}",
+        "negative_prompt": "Iceberg expedition"
+    },
+    {
+        "name": "Wildlife Safari",
+        "prompt": "(Illustrate a wildlife safari adventure in your poster) {prompt}",
+        "negative_prompt": "Time travel to the past"
+    }
+]

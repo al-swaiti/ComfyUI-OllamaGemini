@@ -1,0 +1,153 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Abstract Expressionism",
+        "prompt": "(Abstract expressionism) {prompt}",
+        "negative_prompt": "Realistic Precision"
+    },
+    {
+        "name": "Art Deco Glamour",
+        "prompt": "(Glamorous art deco) {prompt}",
+        "negative_prompt": "Contemporary Simplicity"
+    },
+    {
+        "name": "Artistic Whimsy",
+        "prompt": "(Whimsically artistic) {prompt}",
+        "negative_prompt": "Sleek Monochrome"
+    },
+    {
+        "name": "Baroque Opulence",
+        "prompt": "(Opulent baroque aesthetics) {prompt}",
+        "negative_prompt": "Sleek Contemporary"
+    },
+    {
+        "name": "Bohemian Rhapsody",
+        "prompt": "(Bohemian rhapsody of colors) {prompt}",
+        "negative_prompt": "Clean and Clinical"
+    },
+    {
+        "name": "Cyberpunk Adventure",
+        "prompt": "(Adventure in a cyberpunk world) {prompt}",
+        "negative_prompt": "Natural Tranquility"
+    },
+    {
+        "name": "Cyberpunk Noir",
+        "prompt": "(Noir with a cyberpunk twist) {prompt}",
+        "negative_prompt": "Natural Harmony"
+    },
+    {
+        "name": "Dreamy Watercolor",
+        "prompt": "(Watercolor dreaminess) {prompt}",
+        "negative_prompt": "Bold Geometric"
+    },
+    {
+        "name": "Enchanted Forest",
+        "prompt": "(Enchanting forest vibes) {prompt}",
+        "negative_prompt": "Industrial Modernism"
+    },
+    {
+        "name": "Futuristic Chic",
+        "prompt": "(Chic futuristic style) {prompt}",
+        "negative_prompt": "Classic Timelessness"
+    },
+    {
+        "name": "Glamorous Vintage",
+        "prompt": "(Vintage glamour at its finest) {prompt}",
+        "negative_prompt": "Minimalist Elegance"
+    },
+    {
+        "name": "Gothic Romance",
+        "prompt": "(Romantic with a gothic twist) {prompt}",
+        "negative_prompt": "Sunny Beach Getaway"
+    },
+    {
+        "name": "Industrial Chic",
+        "prompt": "(Rustic meets industrial) {prompt}",
+        "negative_prompt": "Luxe Bohemian"
+    },
+    {
+        "name": "Mystic Beauty",
+        "prompt": "(Beautiful mystical allure) {prompt}",
+        "negative_prompt": "Everyday Routine"
+    },
+    {
+        "name": "Neon Dreams",
+        "prompt": "(Vibrant neon colors) {prompt}",
+        "negative_prompt": "Monochromatic Serenity"
+    },
+    {
+        "name": "Pastel Dreams",
+        "prompt": "(Dreamy pastel palette) {prompt}",
+        "negative_prompt": "Bold and Vibrant"
+    },
+    {
+        "name": "Retro Futurism",
+        "prompt": "(Retro with a futuristic edge) {prompt}",
+        "negative_prompt": "Past-Present Fusion"
+    },
+    {
+        "name": "Sci-Fi Noir",
+        "prompt": "(Sci-fi with a noir twist) {prompt}",
+        "negative_prompt": "Retro Nostalgia"
+    },
+    {
+        "name": "Sunset Bliss",
+        "prompt": "(Blissful sunset hues) {prompt}",
+        "negative_prompt": "Urban Grit"
+    },
+    {
+        "name": "Surreal Fantasy",
+        "prompt": "(A touch of surrealism) {prompt}",
+        "negative_prompt": "Realistic Everyday"
+    },
+    {
+        "name": "Tropical Paradise",
+        "prompt": "(Tropical island paradise) {prompt}",
+        "negative_prompt": "Frozen Tundra"
+    },
+    {
+        "name": "Urban Jungle",
+        "prompt": "(Concrete urban jungle) {prompt}",
+        "negative_prompt": "Rural Serenity"
+    },
+    {
+        "name": "Vintage Elegance",
+        "prompt": "(Elegance with a vintage touch) {prompt}",
+        "negative_prompt": "Contemporary Minimalism"
+    },
+    {
+        "name": "Zen Garden",
+        "prompt": "(Tranquil Zen garden) {prompt}",
+        "negative_prompt": "Chaotic Cityscape"
+    },
+    {
+        "name": "Whimsical Fantasy",
+        "prompt": "(Whimsical and fantastical) {prompt}",
+        "negative_prompt": "Ordinary and Mundane"
+    },
+    {
+        "name": "Vibrant Festival",
+        "prompt": "(Vibrant festival atmosphere) {prompt}",
+        "negative_prompt": "Dull and Monotone"
+    },
+    {
+        "name": "Mystical Night",
+        "prompt": "(Mystical night scene) {prompt}",
+        "negative_prompt": "Bright Daylight"
+    },
+    {
+        "name": "Retro Pop Art",
+        "prompt": "(Retro pop art style) {prompt}",
+        "negative_prompt": "Modern Minimalism"
+    },
+    {
+        "name": "Ethereal Glow",
+        "prompt": "(Ethereal glowing effects) {prompt}",
+        "negative_prompt": "Flat and Dull"
+    }
+]
+

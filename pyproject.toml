@@ -1,9 +1,9 @@
 [project]
 name = "comfyui-ollamagemini"
 description = ""
-version = "1.0.2"
+version = "1.0.3"
 license = {file = "LICENSE"}
-dependencies = ["google-generativeai", "Pillow", "requests"]
+dependencies = ["google-generativeai", "vtracer", "requests"]
 
 [project.urls]
 Repository = "https://github.com/al-swaiti/ComfyUI-OllamaGemini"

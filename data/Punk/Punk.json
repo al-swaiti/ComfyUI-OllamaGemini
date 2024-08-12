@@ -1,0 +1,252 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Anarcho-Punk Manifesto",
+        "prompt": "(Illustrate an anarcho-punk manifesto in art form) {prompt}",
+        "negative_prompt": "Government propaganda poster"
+    },
+    {
+        "name": "Anarchy Aesthetic",
+        "prompt": "(Create a punk art piece with an anarchy aesthetic) {prompt}",
+        "negative_prompt": "Orderly and organized"
+    },
+    {
+        "name": "Cyberpunk Rebellion",
+        "prompt": "(Create a cyberpunk-inspired punk art piece) {prompt}",
+        "negative_prompt": "Traditional and historical"
+    },
+    {
+        "name": "Dystopian Punk Cityscape",
+        "prompt": "(Illustrate a dystopian punk cityscape) {prompt}",
+        "negative_prompt": "Idyllic countryside landscape"
+    },
+    {
+        "name": "DIY Punk Zine Cover",
+        "prompt": "(Design a DIY punk zine cover) {prompt}",
+        "negative_prompt": "Corporate magazine cover"
+    },
+    {
+        "name": "Grunge Rebellion",
+        "prompt": "(Design a grunge-style punk poster) {prompt}",
+        "negative_prompt": "Clean and polished"
+    },
+    {
+        "name": "Punk Album Art Tribute",
+        "prompt": "(Create punk-inspired artwork as a tribute to a favorite band) {prompt}",
+        "negative_prompt": "Classical music album art tribute"
+    },
+    {
+        "name": "Punk Album Back Cover Art",
+        "prompt": "(Design back cover art for a punk album) {prompt}",
+        "negative_prompt": "Classical music album back cover art"
+    },
+    {
+        "name": "Punk Album Vinyl Art",
+        "prompt": "(Design vinyl record cover art for a punk album) {prompt}",
+        "negative_prompt": "Easy listening vinyl record art"
+    },
+    {
+        "name": "Punk Concert Flyer",
+        "prompt": "(Design a flyer for a punk concert) {prompt}",
+        "negative_prompt": "Ballet performance flyer"
+    },
+    {
+        "name": "Punk Dystopian Novel Cover",
+        "prompt": "(Design a novel cover for a dystopian punk novel) {prompt}",
+        "negative_prompt": "Romantic novel cover"
+    },
+    {
+        "name": "Punk Graffiti Wall",
+        "prompt": "(Create a graffiti wall with punk themes) {prompt}",
+        "negative_prompt": "Neat and tidy brick wall"
+    },
+    {
+        "name": "Punk Poster for Social Change",
+        "prompt": "(Design a punk poster advocating for social change) {prompt}",
+        "negative_prompt": "Corporate advertising poster"
+    },
+    {
+        "name": "Punk Protest Banner",
+        "prompt": "(Design a protest banner with punk slogans) {prompt}",
+        "negative_prompt": "Corporate conference banner"
+    },
+    {
+        "name": "Punk Rebellion Album Artwork",
+        "prompt": "(Design album artwork for a punk rebellion band) {prompt}",
+        "negative_prompt": "Smooth jazz album artwork"
+    },
+    {
+        "name": "Punk Rebellion Album Cover Illustration",
+        "prompt": "(Illustrate an album cover for a punk rebellion band) {prompt}",
+        "negative_prompt": "Classical music album cover illustration"
+    },
+    {
+        "name": "Punk Rebellion Album Poster",
+        "prompt": "(Design a poster for a punk rebellion album release) {prompt}",
+        "negative_prompt": "Classical music album poster"
+    },
+    {
+        "name": "Punk Rebellion Comic Cover",
+        "prompt": "(Design a comic book cover with a punk rebellion theme) {prompt}",
+        "negative_prompt": "Children's book cover"
+    },
+    {
+        "name": "Punk Rebellion Fashion",
+        "prompt": "(Design a punk fashion collection) {prompt}",
+        "negative_prompt": "Haute couture fashion"
+    },
+    {
+        "name": "Punk Rebellion Gig Poster",
+        "prompt": "(Design a gig poster for a punk rebellion show) {prompt}",
+        "negative_prompt": "Chamber music concert poster"
+    },
+    {
+        "name": "Punk Rebellion Graffiti Stencil",
+        "prompt": "(Create a graffiti stencil for punk rebellion art) {prompt}",
+        "negative_prompt": "Traditional pattern stencil"
+    },
+    {
+        "name": "Punk Rebellion Graffiti Tag",
+        "prompt": "(Create a graffiti tag with punk rebellion message) {prompt}",
+        "negative_prompt": "Cursive handwriting"
+    },
+    {
+        "name": "Punk Rebellion Graffiti Wall",
+        "prompt": "(Create a graffiti wall with bold punk rebellion messages) {prompt}",
+        "negative_prompt": "Blank, white wall"
+    },
+    {
+        "name": "Punk Rebellion Graffiti Wall Mural",
+        "prompt": "(Paint a mural on a graffiti wall with punk rebellion themes) {prompt}",
+        "negative_prompt": "White-washed wall"
+    },
+    {
+        "name": "Punk Rebellion Logo",
+        "prompt": "(Design a logo for a punk rebellion movement) {prompt}",
+        "negative_prompt": "Corporate branding logo"
+    },
+    {
+        "name": "Punk Rebellion Magazine Cover",
+        "prompt": "(Design a magazine cover featuring punk rebellion) {prompt}",
+        "negative_prompt": "Home and garden magazine cover"
+    },
+    {
+        "name": "Punk Rebellion Magazine Spread",
+        "prompt": "(Design a magazine spread featuring punk rebellion) {prompt}",
+        "negative_prompt": "Corporate magazine spread"
+    },
+    {
+        "name": "Punk Rebellion Mosh Pit Illustration",
+        "prompt": "(Illustrate a chaotic punk rebellion mosh pit scene) {prompt}",
+        "negative_prompt": "Tea party illustration"
+    },
+    {
+        "name": "Punk Rebellion Mural",
+        "prompt": "(Create a mural depicting punk rebellion) {prompt}",
+        "negative_prompt": "Nature-themed mural"
+    },
+    {
+        "name": "Punk Rebellion Poetry Zine Cover",
+        "prompt": "(Design a cover for a punk rebellion poetry zine) {prompt}",
+        "negative_prompt": "Scientific journal cover"
+    },
+    {
+        "name": "Punk Rebellion Poster Series",
+        "prompt": "(Create a series of punk rebellion posters) {prompt}",
+        "negative_prompt": "Corporate poster series"
+    },
+    {
+        "name": "Punk Rebellion Protest Art Installation",
+        "prompt": "(Create an art installation for a punk rebellion protest) {prompt}",
+        "negative_prompt": "Corporate art installation"
+    },
+    {
+        "name": "Punk Rebellion Protest Poster",
+        "prompt": "(Create a protest poster for a punk rebellion rally) {prompt}",
+        "negative_prompt": "Political campaign poster"
+    },
+    {
+        "name": "Punk Rebellion Protest Sign",
+        "prompt": "(Design a protest sign with bold punk rebellion slogans) {prompt}",
+        "negative_prompt": "Gentle and polite protest sign"
+    },
+    {
+        "name": "Punk Rebellion Record Label Logo",
+        "prompt": "(Design a logo for a punk rebellion record label) {prompt}",
+        "negative_prompt": "Financial institution logo"
+    },
+    {
+        "name": "Punk Rebellion Skateboard Design",
+        "prompt": "(Design a skateboard deck with punk rebellion graphics) {prompt}",
+        "negative_prompt": "Polka-dot skateboard deck design"
+    },
+    {
+        "name": "Punk Rebellion Skate Park Mural",
+        "prompt": "(Paint a mural at a skate park with punk rebellion theme) {prompt}",
+        "negative_prompt": "Floral mural at a skate park"
+    },
+    {
+        "name": "Punk Rebellion Street Art Installation",
+        "prompt": "(Create a street art installation with punk rebellion motifs) {prompt}",
+        "negative_prompt": "Museum art installation"
+    },
+    {
+        "name": "Punk Rebellion Street Art Mural",
+        "prompt": "(Create a large street art mural depicting punk rebellion) {prompt}",
+        "negative_prompt": "Pastoral countryside mural"
+    },
+    {
+        "name": "Punk Rebellion Street Art Sticker",
+        "prompt": "(Create a street art sticker with punk rebellion message) {prompt}",
+        "negative_prompt": "Elegant decorative sticker"
+    },
+    {
+        "name": "Punk Rebellion Streetwear Brand Logo",
+        "prompt": "(Design a logo for a punk rebellion streetwear brand) {prompt}",
+        "negative_prompt": "Corporate logo"
+    },
+    {
+        "name": "Punk Rebellion Tattoo Design",
+        "prompt": "(Design a punk rebellion-themed tattoo) {prompt}",
+        "negative_prompt": "Floral and delicate tattoo design"
+    },
+   {
+        "name": "Punk Rebellion Tattoo Sleeve",
+        "prompt": "(Design a full sleeve tattoo with punk rebellion theme) {prompt}",
+        "negative_prompt": "Small, discreet tattoo design"
+    },
+    {
+        "name": "Punk Rebellion T-Shirt Design",
+        "prompt": "(Design a T-shirt with a punk rebellion graphic) {prompt}",
+        "negative_prompt": "Business attire T-shirt design"
+    },
+    {
+        "name": "Punk Rock Album Cover",
+        "prompt": "(Design an album cover for a punk rock band) {prompt}",
+        "negative_prompt": "Pop music album cover"
+    },
+    {
+        "name": "Punk Rock Concert Poster",
+        "prompt": "(Create a punk rock concert poster) {prompt}",
+        "negative_prompt": "Classical music concert poster"
+    },
+    {
+        "name": "Punk Skateboard Deck Art",
+        "prompt": "(Design punk-themed skateboard deck art) {prompt}",
+        "negative_prompt": "Pastel-colored skateboard deck art"
+    },
+    {
+        "name": "Riotous Typography",
+        "prompt": "(Create typographic art with a riotous punk attitude) {prompt}",
+        "negative_prompt": "Elegant calligraphy"
+    },
+    {
+        "name": "Street Art Revolt",
+        "prompt": "(Create street art that embodies punk rebellion) {prompt}",
+        "negative_prompt": "Conservative and conventional"
+    }
+]

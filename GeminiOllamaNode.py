@@ -8,6 +8,7 @@ import codecs
 from  .BRIA_RMBG import BRIA_RMBG_ModelLoader, BRIA_RMBG
 from .svgnode import ConvertRasterToVector, SaveSVG
 from .FLUXResolutions import FLUXResolutions
+from .prompt_styler import *
 
 def get_gemini_api_key():
     try:
@@ -201,6 +202,7 @@ class TextSplitByDelimiter:
 
 
 NODE_CLASS_MAPPINGS = {
+
     "GeminiOllamaAPI": GeminiOllamaAPI,
     "TextSplitByDelimiter":TextSplitByDelimiter,
     "BRIA_RMBG_ModelLoader": BRIA_RMBG_ModelLoader,
@@ -208,6 +210,8 @@ NODE_CLASS_MAPPINGS = {
     "ConvertRasterToVector": ConvertRasterToVector,
     "SaveSVG": SaveSVG,
     "FLUXResolutions": FLUXResolutions,
+    'ComfyUIStyler': type('ComfyUIStyler', (PromptStyler,), {'menus': NODES['ComfyUI Styler']})
+
 
 }
 
@@ -219,4 +223,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ConvertRasterToVector": "Raster to Vector (SVG)",
     "SaveSVG": "Save SVG",
     "FLUXResolutions": "FLUX Resolutions",
+    'ComfyUIStyler': 'ComfyUI Styler'
+
 		}

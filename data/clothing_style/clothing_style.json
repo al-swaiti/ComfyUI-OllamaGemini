@@ -1,0 +1,252 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "argyle (A pattern of diamonds or lozenges)",
+        "prompt": "argyle {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "camouflage (Military-style pattern for blending in)",
+        "prompt": "camouflage {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "checkered (Alternating colored squares)",
+        "prompt": "checkered {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "floral print (Patterns with flowers)",
+        "prompt": "floral print {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "pinstripe pattern (Narrow, evenly spaced stripes)",
+        "prompt": "pinstripe pattern {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "plaid / tartan (Crisscrossed horizontal and vertical bands)",
+        "prompt": "plaid / tartan {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "polka dot (Pattern of large filled circles)",
+        "prompt": "polka dot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "striped (Pattern of parallel lines)",
+        "prompt": "striped {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "multicolored stripes (Stripes with multiple colors)",
+        "prompt": "multicolored stripes {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "double vertical stripe (Two vertical stripes)",
+        "prompt": "double vertical stripe {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "faded (Washed-out look)",
+        "prompt": "faded {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "stone washed (Faded and worn appearance)",
+        "prompt": "stone washed {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "monochrome (Single color or shades of one color)",
+        "prompt": "monochrome {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "neon (Bright, glowing colors)",
+        "prompt": "neon {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "pastel (Soft, light colors)",
+        "prompt": "pastel {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "earth tones (Natural colors like browns and greens)",
+        "prompt": "earth tones {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bright colors (Vivid, intense colors)",
+        "prompt": "bright colors {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "muted colors (Soft, subdued colors)",
+        "prompt": "muted colors {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "ombre (Gradient color effect)",
+        "prompt": "ombre {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "gradient (Smooth transition between colors)",
+        "prompt": "gradient {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tie-dye (Multi-colored pattern with twisted shapes)",
+        "prompt": "tie-dye {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "acid wash (Faded, patchy appearance)",
+        "prompt": "acid wash {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "distressed (Worn and torn look)",
+        "prompt": "distressed {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "asymmetric (Uneven or irregular design)",
+        "prompt": "asymmetric {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "vest (Sleeveless garment worn over clothes)",
+        "prompt": "vest {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "polo (Casual short-sleeved shirt with a collar)",
+        "prompt": "polo {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "poncho (Loose, sleeveless garment)",
+        "prompt": "poncho {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "puff sleeve (Sleeve that is gathered at the shoulder and cuff)",
+        "prompt": "puff sleeve {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "pullover (Sweater that is put on over the head)",
+        "prompt": "pullover {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "racerback (T-shaped back for athletic wear)",
+        "prompt": "racerback {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "raglan (Sleeve that extends in one piece to the collar)",
+        "prompt": "raglan {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "scoop neck (Low, U-shaped neckline)",
+        "prompt": "scoop neck {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "shawl (Wrap worn around the shoulders)",
+        "prompt": "shawl {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "shift (Straight dress that hangs from the shoulders)",
+        "prompt": "shift {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "shirt dress (Dress styled like a shirt)",
+        "prompt": "shirt dress {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "slit (Opening in a garment)",
+        "prompt": "slit {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "smocked (Gathered fabric with elastic stitching)",
+        "prompt": "smocked {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "strapless (Garment without shoulder straps)",
+        "prompt": "strapless {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "surplice (Wrap style with a diagonal overlap)",
+        "prompt": "surplice {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "sweater dress (Dress made of sweater material)",
+        "prompt": "sweater dress {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "sweetheart neckline (Neckline shaped like the top of a heart)",
+        "prompt": "sweetheart neckline {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tank top (Sleeveless, tight-fitting shirt)",
+        "prompt": "tank top {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tea length (Dress that falls between the knee and ankle)",
+        "prompt": "tea length {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tiered (Layers of fabric)",
+        "prompt": "tiered {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "trench coat (Long, double-breasted coat with a belt)",
+        "prompt": "trench coat {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tunic (Long shirt that extends to the hips or thighs)",
+        "prompt": "tunic {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "turtleneck (High, close-fitting collar)",
+        "prompt": "turtleneck {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "v-neck (Neckline shaped like a 'V')",
+        "prompt": "v-neck {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "wrap (Garment that wraps around the body)",
+        "prompt": "wrap {prompt}",
+        "negative_prompt": ""
+    }
+]
