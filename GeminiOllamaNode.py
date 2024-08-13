@@ -37,8 +37,23 @@ class GeminiOllamaAPI:
     def __init__(self):
         self.gemini_api_key = get_gemini_api_key()
         self.ollama_url = get_ollama_url()
-        if self.gemini_api_key is not None:
+        if self.gemini_api_key:
             genai.configure(api_key=self.gemini_api_key, transport='rest')
+
+    @classmethod
+    def get_ollama_models(cls):
+        ollama_url = get_ollama_url()
+        try:
+            response = requests.get(f"{ollama_url}/api/tags")
+            if response.status_code == 200:
+                models = response.json().get('models', [])
+                return [model['name'] for model in models]
+            else:
+                print(f"Failed to fetch Ollama models. Status code: {response.status_code}")
+                return ["llama2"]  # Fallback to a default model
+        except Exception as e:
+            print(f"Error fetching Ollama models: {str(e)}")
+            return ["llama2"]  # Fallback to a default model
 
     @classmethod
     def INPUT_TYPES(cls):
@@ -47,7 +62,7 @@ class GeminiOllamaAPI:
                 "api_choice": (["Gemini", "Ollama"],),
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
                 "gemini_model": (["gemini-pro", "gemini-pro-vision", "gemini-1.5-pro-latest", "gemini-1.5-pro-exp-0801", "gemini-1.5-flash"],),
-                "ollama_model": ("STRING", {"default": "llama2"}),
+                "ollama_model": (cls.get_ollama_models(),),
                 "stream": ("BOOLEAN", {"default": False}),
             },
             "optional": {
@@ -69,17 +84,16 @@ class GeminiOllamaAPI:
 
     def generate_content(self, api_choice, prompt, gemini_model, ollama_model, stream, image=None):
         if api_choice == "Gemini":
+            if not self.gemini_api_key:
+                raise ValueError("Gemini API key is required")
             return self.generate_gemini_content(prompt, gemini_model, stream, image)
         elif api_choice == "Ollama":
             return self.generate_ollama_content(prompt, ollama_model, stream, image)
 
     def generate_gemini_content(self, prompt, model_name, stream, image=None):
-        if not self.gemini_api_key:
-            raise ValueError("Gemini API key is required")
-
         model = genai.GenerativeModel(model_name)
 
-        if model_name in ['gemini-pro', 'gemini-1.5-pro-latest',"gemini-pro-vision", 'gemini-1.5-pro-exp-0801', 'gemini-1.5-flash']:
+        if model_name in ['gemini-1.5-pro-latest', 'gemini-1.5-pro-exp-0801', 'gemini-1.5-flash']:
             if image is None:
                 if stream:
                     response = model.generate_content(prompt, stream=True)
@@ -96,18 +110,7 @@ class GeminiOllamaAPI:
                     response = model.generate_content([prompt, pil_image])
                     textoutput = response.text
         
-        elif model_name == 'gemini-pro-vision':
-            if image is None:
-                raise ValueError("gemini-pro-vision needs image")
-            else:
-                pil_image = self.tensor_to_image(image)
-                if stream:
-                    response = model.generate_content([prompt, pil_image], stream=True)
-                    textoutput = "\n".join([chunk.text for chunk in response])
-                else:
-                    response = model.generate_content([prompt, pil_image])
-                    textoutput = response.text
-        
+
         return (textoutput,)
 
     def generate_ollama_content(self, prompt, model_name, stream, image=None):
@@ -197,22 +200,15 @@ class TextSplitByDelimiter:
         return (arr,)
 
 
-
-
-
-
 NODE_CLASS_MAPPINGS = {
-
     "GeminiOllamaAPI": GeminiOllamaAPI,
-    "TextSplitByDelimiter":TextSplitByDelimiter,
+    "TextSplitByDelimiter": TextSplitByDelimiter,
     "BRIA_RMBG_ModelLoader": BRIA_RMBG_ModelLoader,
     "BRIA_RMBG": BRIA_RMBG,
     "ConvertRasterToVector": ConvertRasterToVector,
     "SaveSVG": SaveSVG,
     "FLUXResolutions": FLUXResolutions,
     'ComfyUIStyler': type('ComfyUIStyler', (PromptStyler,), {'menus': NODES['ComfyUI Styler']})
-
-
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -224,5 +220,4 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "SaveSVG": "Save SVG",
     "FLUXResolutions": "FLUX Resolutions",
     'ComfyUIStyler': 'ComfyUI Styler'
-
-		}
+}

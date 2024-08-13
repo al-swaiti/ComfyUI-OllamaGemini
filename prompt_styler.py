@@ -49,7 +49,8 @@ class PromptStyler:
             "required": {
                 "text_positive": ("STRING", {"default": "", "multiline": True}),
                 "text_negative": ("STRING", {"default": "", "multiline": True}),
-                **menus
+                **menus,
+                "log_prompt": ("BOOLEAN", {"default": True, "label_on": "Yes", "label_off": "No"}),
             },
         }
 
@@ -65,6 +66,15 @@ class PromptStyler:
         for menu, selection in kwargs.items():
             text_positive_styled, text_negative_styled = styler_data[menu][selection].replace_prompts(text_positive_styled, text_negative_styled)
  
+        if log_prompt:
+            for menu, selection in kwargs.items():
+                print(f"{menu}: {selection}")
+            print(f"text_positive: {text_positive}")
+            print(f"text_negative: {text_negative}")
+            print(f"text_positive_styled: {text_positive_styled}")
+            print(f"text_negative_styled: {text_negative_styled}")
+
+        return text_positive_styled, text_negative_styled
 
 
 NODES = {
