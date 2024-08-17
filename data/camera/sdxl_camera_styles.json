@@ -173,5 +173,80 @@
         "name": "Hasselblad H5D-50c (Great for high-resolution commercial and studio photography)",
         "prompt": "Photograph of {prompt}, captured on a (Hasselblad H5D-50c)",
         "negative_prompt": "lack of detail, color inaccuracy"
+    },
+    {
+        "name": "Nikon D850 (Excellent for landscape and studio photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Nikon D850), characterized by (high resolution, wide dynamic range)",
+        "negative_prompt": "low detail, poor color accuracy, compact camera aesthetics"
+    },
+    {
+        "name": "Nikon Z7 II (Ideal for professional mirrorless photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Nikon Z7 II), featuring (high resolution, excellent low-light performance)",
+        "negative_prompt": "bulky design, slow autofocus, limited dynamic range"
+    },
+    {
+        "name": "Sony A7R IV (Perfect for high-resolution landscape and studio work)",
+        "prompt": "Photograph of {prompt}, captured on a (Sony A7R IV), showcasing (extreme detail, rich color depth)",
+        "negative_prompt": "low megapixel count, poor dynamic range, noisy images"
+    },
+    {
+        "name": "Sony A9 II (Ideal for sports and action photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Sony A9 II), displaying (fast continuous shooting, precise autofocus)",
+        "negative_prompt": "slow capture, blurry motion, poor low-light performance"
+    },
+    {
+        "name": "Leica M10-R (Excellent for street and documentary photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Leica M10-R), characterized by (classic aesthetics, exceptional sharpness)",
+        "negative_prompt": "modern camera design, automated settings, lack of character"
+    },
+    {
+        "name": "Phase One XF IQ4 150MP (Ultimate for high-end studio and landscape photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Phase One XF IQ4 150MP), featuring (unparalleled resolution, exceptional color accuracy)",
+        "negative_prompt": "low detail, limited dynamic range, consumer-grade quality"
+    },
+    {
+        "name": "Panasonic Lumix S1H (Ideal for professional videography and filmmaking)",
+        "prompt": "Photograph of {prompt}, captured on a (Panasonic Lumix S1H), showcasing (cinematic quality, excellent low-light performance)",
+        "negative_prompt": "amateur video quality, limited dynamic range, poor color grading"
+    },
+    {
+        "name": "RED DSMC2 with MONSTRO 8K VV (Perfect for high-end digital cinematography)",
+        "prompt": "Photograph of {prompt}, captured on a (RED DSMC2 with MONSTRO 8K VV), characterized by (cinematic look, extreme detail, wide dynamic range)",
+        "negative_prompt": "low resolution, limited color depth, consumer camera aesthetics"
+    },
+    {
+        "name": "ARRI ALEXA LF (Ideal for feature film production)",
+        "prompt": "Photograph of {prompt}, captured on an (ARRI ALEXA LF), featuring (cinematic quality, natural color science, excellent low-light performance)",
+        "negative_prompt": "amateur video look, limited dynamic range, poor color reproduction"
+    },
+    {
+        "name": "Blackmagic URSA Mini Pro 12K (Excellent for high-resolution digital film production)",
+        "prompt": "Photograph of {prompt}, captured on a (Blackmagic URSA Mini Pro 12K), showcasing (extreme resolution, wide dynamic range, filmic quality)",
+        "negative_prompt": "low detail, limited color depth, consumer video aesthetics"
+    },
+    {
+        "name": "Canon EOS C300 Mark III (Excellent for broadcast and documentary filmmaking)",
+        "prompt": "Photograph of {prompt}, captured on a (Canon EOS C300 Mark III), characterized by (high dynamic range, excellent low-light performance)",
+        "negative_prompt": "amateur video quality, limited color depth, consumer camera aesthetics"
+    },
+    {
+        "name": "Sony FX9 (Ideal for documentary and corporate video production)",
+        "prompt": "Photograph of {prompt}, captured on a (Sony FX9), featuring (cinematic full-frame look, advanced autofocus)",
+        "negative_prompt": "low-quality video, poor low-light performance, limited dynamic range"
+    },
+    {
+        "name": "DJI Mavic 3 Pro (Perfect for professional aerial photography and videography)",
+        "prompt": "Photograph of {prompt}, captured on a (DJI Mavic 3 Pro), showcasing (high-altitude clarity, stable footage)",
+        "negative_prompt": "shaky footage, low-resolution images, ground-level perspective"
+    },
+    {
+        "name": "Olympus OM-D E-M1X (Excellent for wildlife and sports photography)",
+        "prompt": "Photograph of {prompt}, captured on an (Olympus OM-D E-M1X), characterized by (fast continuous shooting, robust image stabilization)",
+        "negative_prompt": "slow capture, blurry motion, poor weather resistance"
+    },
+    {
+        "name": "Pentax 645Z (Ideal for medium format landscape and portrait photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Pentax 645Z), featuring (high resolution, excellent dynamic range)",
+        "negative_prompt": "low detail, limited tonal range, compact camera aesthetics"
     }
 ]

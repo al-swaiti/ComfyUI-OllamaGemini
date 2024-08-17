@@ -5,6 +5,8 @@ from PIL import Image
 import requests
 import torch
 import codecs
+import base64
+import io
 from  .BRIA_RMBG import BRIA_RMBG_ModelLoader, BRIA_RMBG
 from .svgnode import ConvertRasterToVector, SaveSVG
 from .FLUXResolutions import FLUXResolutions
@@ -32,13 +34,67 @@ def get_ollama_url():
         ollama_url = "http://localhost:11434"
     return ollama_url
 
-class GeminiOllamaAPI:
+class GeminiAPI:
 
     def __init__(self):
         self.gemini_api_key = get_gemini_api_key()
-        self.ollama_url = get_ollama_url()
         if self.gemini_api_key:
             genai.configure(api_key=self.gemini_api_key, transport='rest')
+
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
+                "gemini_model": (["gemini-1.5-pro-latest", "gemini-1.5-pro-exp-0801", "gemini-1.5-flash"],),
+                "stream": ("BOOLEAN", {"default": False}),
+            },
+            "optional": {
+                "image": ("IMAGE",),  
+            }
+        }
+
+    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ("text",)
+    FUNCTION = "generate_content"
+
+    CATEGORY = "AI API/Gemini"
+
+    def tensor_to_image(self, tensor):
+        tensor = tensor.cpu()
+        image_np = tensor.squeeze().mul(255).clamp(0, 255).byte().numpy()
+        image = Image.fromarray(image_np, mode='RGB')
+        return image
+
+    def generate_content(self, prompt, gemini_model, stream, image=None):
+        if not self.gemini_api_key:
+            raise ValueError("Gemini API key is required")
+        
+        model = genai.GenerativeModel(gemini_model)
+
+        if gemini_model in ['gemini-1.5-pro-latest', 'gemini-1.5-pro-exp-0801', 'gemini-1.5-flash']:
+            if image is None:
+                if stream:
+                    response = model.generate_content(prompt, stream=True)
+                    textoutput = "\n".join([chunk.text for chunk in response])
+                else:
+                    response = model.generate_content(prompt)
+                    textoutput = response.text
+            else:
+                pil_image = self.tensor_to_image(image)
+                if stream:
+                    response = model.generate_content([prompt, pil_image], stream=True)
+                    textoutput = "\n".join([chunk.text for chunk in response])
+                else:
+                    response = model.generate_content([prompt, pil_image])
+                    textoutput = response.text
+
+        return (textoutput,)
+
+class OllamaAPI:
+
+    def __init__(self):
+        self.ollama_url = get_ollama_url()
 
     @classmethod
     def get_ollama_models(cls):
@@ -59,11 +115,9 @@ class GeminiOllamaAPI:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "api_choice": (["Gemini", "Ollama"],),
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
-                "gemini_model": (["gemini-pro", "gemini-pro-vision", "gemini-1.5-pro-latest", "gemini-1.5-pro-exp-0801", "gemini-1.5-flash"],),
                 "ollama_model": (cls.get_ollama_models(),),
-                "stream": ("BOOLEAN", {"default": False}),
+                "keep_alive": ("INT", {"default": 0, "min": 0, "max": 60, "step": 1}),                
             },
             "optional": {
                 "image": ("IMAGE",),  
@@ -74,7 +128,7 @@ class GeminiOllamaAPI:
     RETURN_NAMES = ("text",)
     FUNCTION = "generate_content"
 
-    CATEGORY = "AI API"
+    CATEGORY = "AI API/Ollama"
 
     def tensor_to_image(self, tensor):
         tensor = tensor.cpu()
@@ -82,73 +136,28 @@ class GeminiOllamaAPI:
         image = Image.fromarray(image_np, mode='RGB')
         return image
 
-    def generate_content(self, api_choice, prompt, gemini_model, ollama_model, stream, image=None):
-        if api_choice == "Gemini":
-            if not self.gemini_api_key:
-                raise ValueError("Gemini API key is required")
-            return self.generate_gemini_content(prompt, gemini_model, stream, image)
-        elif api_choice == "Ollama":
-            return self.generate_ollama_content(prompt, ollama_model, stream, image)
-
-    def generate_gemini_content(self, prompt, model_name, stream, image=None):
-        model = genai.GenerativeModel(model_name)
-
-        if model_name in ['gemini-1.5-pro-latest', 'gemini-1.5-pro-exp-0801', 'gemini-1.5-flash']:
-            if image is None:
-                if stream:
-                    response = model.generate_content(prompt, stream=True)
-                    textoutput = "\n".join([chunk.text for chunk in response])
-                else:
-                    response = model.generate_content(prompt)
-                    textoutput = response.text
-            else:
-                pil_image = self.tensor_to_image(image)
-                if stream:
-                    response = model.generate_content([prompt, pil_image], stream=True)
-                    textoutput = "\n".join([chunk.text for chunk in response])
-                else:
-                    response = model.generate_content([prompt, pil_image])
-                    textoutput = response.text
-        
-
-        return (textoutput,)
-
-    def generate_ollama_content(self, prompt, model_name, stream, image=None):
+    def generate_content(self, prompt, ollama_model, keep_alive, image=None):
         url = f"{self.ollama_url}/api/generate"
         
         payload = {
-            "model": model_name,
+            "model": ollama_model,
             "prompt": prompt,
-            "stream": stream
+            "stream": False,
+            "keep_alive": f"{keep_alive}m"
         }
 
         if image is not None and isinstance(image, torch.Tensor) and image.numel() > 0:
             pil_image = self.tensor_to_image(image)
-            # Convert PIL image to base64
-            import base64
-            import io
             buffered = io.BytesIO()
             pil_image.save(buffered, format="PNG")
             img_str = base64.b64encode(buffered.getvalue()).decode()
             payload["images"] = [img_str]
 
-        if stream:
-            response = requests.post(url, json=payload, stream=True)
-            response.raise_for_status()
-            textoutput = ""
-            for line in response.iter_lines():
-                if line:
-                    decoded_line = line.decode('utf-8')
-                    if decoded_line.startswith('data: '):
-                        data = json.loads(decoded_line[6:])
-                        textoutput += data.get('response', '')
-        else:
-            response = requests.post(url, json=payload)
-            response.raise_for_status()
-            textoutput = response.json().get('response', '')
+        response = requests.post(url, json=payload)
+        response.raise_for_status()
+        textoutput = response.json().get('response', '')
 
         return (textoutput,)
-
 
 class TextSplitByDelimiter:
     @classmethod
@@ -201,7 +210,8 @@ class TextSplitByDelimiter:
 
 
 NODE_CLASS_MAPPINGS = {
-    "GeminiOllamaAPI": GeminiOllamaAPI,
+    "GeminiAPI": GeminiAPI,
+    "OllamaAPI": OllamaAPI,
     "TextSplitByDelimiter": TextSplitByDelimiter,
     "BRIA_RMBG_ModelLoader": BRIA_RMBG_ModelLoader,
     "BRIA_RMBG": BRIA_RMBG,
@@ -212,7 +222,8 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "GeminiOllamaAPI": "Gemini Ollama API",
+    "GeminiAPI": "Gemini API",
+    "OllamaAPI": "Ollama API",
     "TextSplitByDelimiter": "TextSplitByDelimiter",
     "BRIA_RMBG_ModelLoader": "BRIA_RMBG Model Loader",
     "BRIA_RMBG": "BRIA RMBG",
