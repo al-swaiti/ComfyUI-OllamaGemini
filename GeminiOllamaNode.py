@@ -6,6 +6,8 @@ import requests
 import torch
 import codecs
 import base64
+import folder_paths
+
 import io
 from  .BRIA_RMBG import BRIA_RMBG_ModelLoader, BRIA_RMBG
 from .svgnode import ConvertRasterToVector, SaveSVG
@@ -209,10 +211,109 @@ class TextSplitByDelimiter:
         return (arr,)
 
 
+import os
+from datetime import datetime
+
+class Save_text_File:
+    """
+    This class is responsible for saving text content to a file.
+
+    It provides a standardized way to save text data, ensuring that the necessary directories are created if they don't exist, and handling empty or missing input data gracefully.
+    """
+
+    def __init__(self):
+        self.output_dir = folder_paths.output_directory
+
+    @classmethod
+    def INPUT_TYPES(cls):
+        """
+        Defines the input types and default values for the class.
+
+        Returns:
+            dict: A dictionary with the required input parameters and their types/defaults.
+        """
+        return {
+            "required": {
+                "filename": ("STRING", {"default": 'info', "multiline": False}),
+                "path": ("STRING", {"default": '', "multiline": False}),
+                "text": ("STRING", {"default": '', "multiline": True, "forceInput": True}),
+            }
+        }
+
+    OUTPUT_NODE = True
+    RETURN_TYPES = ()
+    FUNCTION = "save_text_file"
+    CATEGORY = "AI API"
+
+    def save_text_file(self, text="", path="", filename=""):
+        """
+        Saves the provided text content to a file.
+
+        If the specified output path doesn't exist, it will create the necessary directories.
+        If the filename is empty, it will use a timestamp-based filename.
+        If the positive text is empty, it will save a default message.
+
+        Args:
+            positive (str): The text content to be saved.
+            path (str): The relative path where the file should be saved.
+            filename (str): The name of the file to be saved (without the .txt extension).
+
+        Returns:
+            tuple: A tuple containing the saved text content.
+        """
+        output_path = os.path.join(self.output_dir, path)
+
+        # Check if the output path exists, and create it if it doesn't
+        if output_path.strip() != '':
+            if not os.path.exists(output_path.strip()):
+                print(f'The path `{output_path.strip()}` specified doesn\'t exist! Creating directory.')
+                os.makedirs(output_path, exist_ok=True)
+
+        # If the filename is empty, use a timestamp-based filename
+        if filename.strip() == '':
+            print(f'Warning: There is no filename specified! Saving file with timestamp.')
+            filename = get_timestamp('%Y%m%d%H%M%S')
+
+        # If the positive text is empty, use a default message
+        if text == "":
+            text = "No prompt data"
+
+        # Save the text content to the file
+        self.writeTextFile(os.path.join(output_path, filename + '.txt'), text)
+        return (text,)
+
+    def writeTextFile(self, file, content):
+        """
+        Writes the provided content to the specified file.
+
+        Args:
+            file (str): The full path and filename of the file to be written.
+            content (str): The text content to be written to the file.
+        """
+        try:
+            with open(file, 'w') as f:
+                f.write(content)
+        except OSError:
+            print(f'Error: Unable to save file `{file}`')
+
+def get_timestamp(fmt):
+    """
+    Generates a timestamp string based on the provided format.
+
+    Args:
+        fmt (str): The format string for the timestamp.
+
+    Returns:
+        str: The timestamp string.
+    """
+    return datetime.now().strftime(fmt)
+
+
 NODE_CLASS_MAPPINGS = {
     "GeminiAPI": GeminiAPI,
     "OllamaAPI": OllamaAPI,
     "TextSplitByDelimiter": TextSplitByDelimiter,
+    "Save text": Save_text_File,
     "BRIA_RMBG_ModelLoader": BRIA_RMBG_ModelLoader,
     "BRIA_RMBG": BRIA_RMBG,
     "ConvertRasterToVector": ConvertRasterToVector,
@@ -225,6 +326,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "GeminiAPI": "Gemini API",
     "OllamaAPI": "Ollama API",
     "TextSplitByDelimiter": "TextSplitByDelimiter",
+    "Save text": "Save_text_File",
     "BRIA_RMBG_ModelLoader": "BRIA_RMBG Model Loader",
     "BRIA_RMBG": "BRIA RMBG",
     "ConvertRasterToVector": "Raster to Vector (SVG)",
