@@ -19,7 +19,7 @@ This extension integrates Google's Gemini API and Ollama into ComfyUI, allowing 
 
 2. Install the required dependencies:
    ```
-   pip install google-generativeai Pillow requests torch
+   pip install google-generativeai requests vtracer
    ```
 
 ## Configuration
