@@ -50,10 +50,42 @@ Provides advanced image resolution and sizing options:
 
 Extensive styling options for various creative needs:
 
-- Advertising styles (e.g., automotive, corporate, fashion editorial)
-- Art styles (e.g., abstract, art deco, cubist, impressionist)
-- Futuristic styles (e.g., biomechanical, cyberpunk)
-- Additional categories like composition, environment, and texture
+🎨 General Arts – A broad spectrum of traditional and modern art styles
+🌸 Anime – Bring your designs to life with anime-inspired aesthetics
+🎨 Artist – Channel the influence of world-class artists
+📷 Camera – Fine-tune focal lengths, angles, and setups
+📐 Camera Angles – Add dynamic perspectives with a range of angles
+🌟 Aesthetic – Define unique artistic vibes and styles
+🎞️ Color Grading – Achieve rich cinematic tones and palettes
+🎬 Movies – Get inspired by different cinematic worlds
+🖌️ Digital Artform – From vector art to abstract digital styles
+💪 Body Type – Customize different body shapes and dimensions
+😲 Reactions – Capture authentic emotional expressions
+💭 Feelings – Set the emotional tone for each creation
+📸 Photographers – Infuse the style of renowned photographers
+💇 Hair Style – Wide variety of hair designs for your characters
+🏛️ Architecture Style – Classical to modern architectural themes
+🛠️ Architect – Designs inspired by notable architects
+🚗 Vehicle – Add cars, planes, or futuristic transportation
+🕺 Poses – Customize dynamic body positions
+🔬 Science – Add futuristic, scientific elements
+👗 Clothing State – Define the wear and tear of clothing
+👠 Clothing Style – Wide range of fashion styles
+🎨 Composition – Control the layout and arrangement of elements
+📏 Depth – Add dimensionality and focus to your scenes
+🌍 Environment – From nature to urban settings, create rich backdrops
+😊 Face – Customize facial expressions and emotions
+🦄 Fantasy – Bring magical and surreal elements into your visuals
+🎃 Filter – Apply unique visual filters for artistic effects
+🖤 Gothic – Channel dark, mysterious, and dramatic themes
+👻 Halloween – Get spooky with Halloween-inspired designs
+✏️ Line Art – Incorporate clean, bold lines into your creations
+💡 Lighting – Set the mood with dramatic lighting effects
+✈️ Milehigh – Capture the essence of aviation and travel
+🎭 Mood – Set the emotional tone and atmosphere
+🎞️ Movie Poster – Create dramatic, story-driven poster designs
+🎸 Punk – Channel bold, rebellious aesthetics
+🌍 Travel Poster – Design vintage travel posters with global vibes
 
 ### 5. Raster to Vector (SVG) and Save SVG
 
