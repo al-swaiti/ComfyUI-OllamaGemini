@@ -1,0 +1,197 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bold Color Grading",
+        "prompt": "Bold color grading style",
+        "negative_prompt": "Muted color grading"
+    },
+    {
+        "name": "Bright Color Grading",
+        "prompt": "Bright color grading style",
+        "negative_prompt": "Dark color grading"
+    },
+    {
+        "name": "Cool Color Grading",
+        "prompt": "Cool color grading style",
+        "negative_prompt": "Warm color grading"
+    },
+    {
+        "name": "Cool-Toned Color Grading",
+        "prompt": "Cool-toned color grading style",
+        "negative_prompt": "Warm-toned color grading"
+    },
+    {
+        "name": "Cross-Processed Color Grading",
+        "prompt": "Cross-processed color grading style",
+        "negative_prompt": "Traditional color grading"
+    },
+    {
+        "name": "Day-for-Night Color Grading",
+        "prompt": "Day-for-night color grading style",
+        "negative_prompt": "Natural daylight color grading"
+    },
+    {
+        "name": "Desaturated Color Grading",
+        "prompt": "Desaturated color grading style",
+        "negative_prompt": "Saturated color grading"
+    },
+    {
+        "name": "Duotone Color Grading",
+        "prompt": "Duotone color grading style",
+        "negative_prompt": "Single-tone color grading"
+    },
+    {
+        "name": "Earthy Color Grading",
+        "prompt": "Earthy color grading style",
+        "negative_prompt": "Artificial color grading"
+    },
+    {
+        "name": "Faded Color Grading",
+        "prompt": "Faded color grading style",
+        "negative_prompt": "Sharp contrast color grading"
+    },
+    {
+        "name": "Film Noir Color Grading",
+        "prompt": "Film noir color grading style",
+        "negative_prompt": "Bright and vibrant color grading"
+    },
+    {
+        "name": "Filmic Color Grading",
+        "prompt": "Filmic color grading style",
+        "negative_prompt": "Standard color grading"
+    },
+    {
+        "name": "Hard Light",
+        "prompt": "Hard light color grading style",
+        "negative_prompt": "Soft light color grading"
+    },
+    {
+        "name": "Haze",
+        "prompt": "Hazy color grading style",
+        "negative_prompt": "Clear and sharp color grading"
+    },
+    {
+        "name": "HDR",
+        "prompt": "High dynamic range (HDR) color grading style",
+        "negative_prompt": "Low dynamic range"
+    },
+    {
+        "name": "High-Key Color Grading",
+        "prompt": "High-key color grading style",
+        "negative_prompt": "Low-key color grading"
+    },
+    {
+        "name": "Low-Key Color Grading",
+        "prompt": "Low-key color grading style",
+        "negative_prompt": "High-key color grading"
+    },
+    {
+        "name": "Monochromatic Color Grading",
+        "prompt": "Monochromatic color grading style",
+        "negative_prompt": "Multicolored grading"
+    },
+    {
+        "name": "Muted Color Grading",
+        "prompt": "Muted color grading style",
+        "negative_prompt": "Bold and bright color grading"
+    },
+    {
+        "name": "Neon Color Grading",
+        "prompt": "Neon color grading style",
+        "negative_prompt": "Earthy and muted color grading"
+    },
+    {
+        "name": "Night-for-Day Color Grading",
+        "prompt": "Night-for-day color grading style",
+        "negative_prompt": "Daylight color grading"
+    },
+    {
+        "name": "Pastel Color Grading",
+        "prompt": "Pastel color grading style",
+        "negative_prompt": "Saturated and vibrant colors"
+    },
+    {
+        "name": "Quadtone Color Grading",
+        "prompt": "Quadtone color grading style",
+        "negative_prompt": "Monotone color grading"
+    },
+    {
+        "name": "Saturated Color Grading",
+        "prompt": "Saturated color grading style",
+        "negative_prompt": "Desaturated color grading"
+    },
+    {
+        "name": "Soft Light",
+        "prompt": "Soft light color grading style",
+        "negative_prompt": "Harsh and hard light color grading"
+    },
+    {
+        "name": "Split-Tone Color Grading",
+        "prompt": "Split-tone color grading style",
+        "negative_prompt": "Single-tone color grading"
+    },
+    {
+        "name": "Sunset Color Grading",
+        "prompt": "Sunset color grading style",
+        "negative_prompt": "Daylight color grading"
+    },
+    {
+        "name": "Traditional Color Grading",
+        "prompt": "Traditional color grading style",
+        "negative_prompt": "Experimental color grading"
+    },
+    {
+        "name": "Tritone Color Grading",
+        "prompt": "Tritone color grading style",
+        "negative_prompt": "Monochrome color grading"
+    },
+    {
+        "name": "Vibrant Color Grading",
+        "prompt": "Vibrant color grading style",
+        "negative_prompt": "Muted and desaturated color grading"
+    },
+    {
+        "name": "Warm Color Grading",
+        "prompt": "Warm color grading style",
+        "negative_prompt": "Cool color grading"
+    },
+    {
+        "name": "Warm-Toned Color Grading",
+        "prompt": "Warm-toned color grading style",
+        "negative_prompt": "Cool-toned color grading"
+    },
+    {
+        "name": "Bleach Bypass Color Grading",
+        "prompt": "Bleach bypass color grading style",
+        "negative_prompt": "Standard color grading"
+    },
+    {
+        "name": "Technicolor",
+        "prompt": "Technicolor color grading style",
+        "negative_prompt": "Black and white"
+    },
+    {
+        "name": "Teal and Orange",
+        "prompt": "Teal and orange color grading style",
+        "negative_prompt": "No teal and orange tones"
+    },
+    {
+        "name": "Sepia Tone",
+        "prompt": "Sepia tone color grading style",
+        "negative_prompt": "Full color grading"
+    },
+    {
+        "name": "Vintage Color Grading",
+        "prompt": "Vintage color grading style",
+        "negative_prompt": "Modern color grading"
+    },
+    {
+        "name": "Black and White",
+        "prompt": "Black and white color grading style",
+        "negative_prompt": "Full color grading"
+    }
+]

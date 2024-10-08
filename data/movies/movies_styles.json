@@ -1,0 +1,237 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "2001: A Space Odyssey",
+        "prompt": "2001: A Space Odyssey (1968) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Amélie",
+        "prompt": "Amélie (2001) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Blade Runner",
+        "prompt": "Blade Runner (1982) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Grand Budapest Hotel",
+        "prompt": "The Grand Budapest Hotel (2014) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Matrix",
+        "prompt": "The Matrix (1999) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mad Max: Fury Road",
+        "prompt": "Mad Max: Fury Road (2015) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Inception",
+        "prompt": "Inception (2010) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pulp Fiction",
+        "prompt": "Pulp Fiction (1994) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sin City",
+        "prompt": "Sin City (2005) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Scott Pilgrim vs. the World",
+        "prompt": "Scott Pilgrim vs. the World (2010) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Eternal Sunshine of the Spotless Mind",
+        "prompt": "Eternal Sunshine of the Spotless Mind (2004) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Donnie Darko",
+        "prompt": "Donnie Darko (2001) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Fall",
+        "prompt": "The Fall (2006) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Cabinet of Dr. Caligari",
+        "prompt": "The Cabinet of Dr. Caligari (1920) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Shape of Water",
+        "prompt": "The Shape of Water (2017) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "A Clockwork Orange",
+        "prompt": "A Clockwork Orange (1971) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Brazil",
+        "prompt": "Brazil (1985) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Her",
+        "prompt": "Her (2013) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Akira",
+        "prompt": "Akira (1988) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Fountain",
+        "prompt": "The Fountain (2006) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Neon Demon",
+        "prompt": "The Neon Demon (2016) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Memento",
+        "prompt": "Memento (2000) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Waking Life",
+        "prompt": "Waking Life (2001) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Paprika",
+        "prompt": "Paprika (2006) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Holy Mountain",
+        "prompt": "The Holy Mountain (1973) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pan's Labyrinth",
+        "prompt": "Pan's Labyrinth (2006) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Metropolis",
+        "prompt": "Metropolis (1927) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Spirited Away",
+        "prompt": "Spirited Away (2001) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ghost in the Shell",
+        "prompt": "Ghost in the Shell (1995) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Alice in Wonderland",
+        "prompt": "Alice in Wonderland (1951) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fight Club",
+        "prompt": "Fight Club (1999) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Seventh Seal",
+        "prompt": "The Seventh Seal (1957) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Nightmare Before Christmas",
+        "prompt": "The Nightmare Before Christmas (1993) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Breaking Bad",
+        "prompt": "Breaking Bad (2008-2013) series likeness",
+        "negative_prompt": "No series references"
+    },
+    {
+        "name": "Game of Thrones",
+        "prompt": "Game of Thrones (2011-2019) series likeness",
+        "negative_prompt": "No series references"
+    },
+    {
+        "name": "Big Fish",
+        "prompt": "Big Fish (2003) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Stranger Things",
+        "prompt": "Stranger Things (2016-present) series likeness",
+        "negative_prompt": "No series references"
+    },
+    {
+        "name": "Friends",
+        "prompt": "Friends (1994-2004) series likeness",
+        "negative_prompt": "No series references"
+    },
+    {
+        "name": "Harry Potter",
+        "prompt": "Harry Potter series (2001-2011) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Star Wars",
+        "prompt": "Star Wars: Episode IV - A New Hope (1977) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Mandalorian",
+        "prompt": "The Mandalorian (2019-present) series likeness",
+        "negative_prompt": "No series references"
+    },
+    {
+        "name": "The Office",
+        "prompt": "The Office (2005-2013) series likeness",
+        "negative_prompt": "No series references"
+    },
+    {
+        "name": "Sherlock",
+        "prompt": "Sherlock (2010-2017) series likeness",
+        "negative_prompt": "No series references"
+    },
+    {
+        "name": "The Lord of the Rings",
+        "prompt": "The Lord of the Rings Trilogy (2001-2003) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Godfather",
+        "prompt": "The Godfather (1972) movie likeness",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Dark Knight",
+        "prompt": "The Dark Knight (2008) movie likeness",
+        "negative_prompt": ""
+    }
+]

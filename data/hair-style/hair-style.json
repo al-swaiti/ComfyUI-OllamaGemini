@@ -1,0 +1,127 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bob Cut",
+        "prompt": "{prompt}, bob haircut, chin-length hair, blunt cut, classic short hairstyle",
+        "negative_prompt": "long hair, layered cut, messy style"
+    },
+    {
+        "name": "Pixie Cut",
+        "prompt": "{prompt}, pixie haircut, very short hair, cropped style, feminine short cut",
+        "negative_prompt": "long hair, elaborate styling, heavy volume"
+    },
+    {
+        "name": "Long Layers",
+        "prompt": "{prompt}, long layered hair, flowing tresses, cascading layers, natural movement",
+        "negative_prompt": "short hair, blunt cut, uniform length"
+    },
+    {
+        "name": "Buzz Cut",
+        "prompt": "{prompt}, buzz cut hairstyle, very short all over, military-inspired cut, low maintenance",
+        "negative_prompt": "long hair, styled coiffure, complex hairdo"
+    },
+    {
+        "name": "Afro",
+        "prompt": "{prompt}, afro hairstyle, natural kinky hair, rounded shape, voluminous curls",
+        "negative_prompt": "straight hair, sleek style, flat hair"
+    },
+    {
+        "name": "Mohawk",
+        "prompt": "{prompt}, mohawk hairstyle, central strip of longer hair, shaved sides, punk rock style",
+        "negative_prompt": "conservative cut, even length all over, traditional styling"
+    },
+    {
+        "name": "Braids",
+        "prompt": "{prompt}, braided hairstyle, intricate plaits, woven hair patterns, protective style",
+        "negative_prompt": "loose hair, unstructured style, short haircut"
+    },
+    {
+        "name": "Pompadour",
+        "prompt": "{prompt}, pompadour hairstyle, volume on top, slicked back sides, retro-inspired look",
+        "negative_prompt": "flat hair, messy style, even length all over"
+    },
+    {
+        "name": "Dreadlocks",
+        "prompt": "{prompt}, dreadlocks, rope-like strands of hair, matted coils, natural or formed locks",
+        "negative_prompt": "straight hair, short haircut, loose curls"
+    },
+    {
+        "name": "Undercut",
+        "prompt": "{prompt}, undercut hairstyle, shaved lower half, longer top section, edgy contrast",
+        "negative_prompt": "even length all over, conservative style, no visible contrast"
+    },
+    {
+        "name": "Beehive",
+        "prompt": "{prompt}, beehive hairstyle, high rounded dome shape, retro 1960s style, elegant updo",
+        "negative_prompt": "loose hair, modern cut, flat top"
+    },
+    {
+        "name": "Mullet",
+        "prompt": "{prompt}, mullet haircut, short on top and sides, long in back, iconic 80s style",
+        "negative_prompt": "even length all over, modern cut, conservative style"
+    },
+    {
+        "name": "French Braid",
+        "prompt": "{prompt}, french braid hairstyle, three-strand braid close to scalp, elegant woven pattern",
+        "negative_prompt": "loose hair, short haircut, messy style"
+    },
+    {
+        "name": "Side Part",
+        "prompt": "{prompt}, side part hairstyle, hair divided to one side, classic and versatile look",
+        "negative_prompt": "center part, no visible parting, messy uncombed style"
+    },
+    {
+        "name": "Quiff",
+        "prompt": "{prompt}, quiff hairstyle, volume at the front, shorter back and sides, modern pompadour",
+        "negative_prompt": "flat hair, even length all over, conservative cut"
+    },
+    {
+        "name": "Cornrows",
+        "prompt": "{prompt}, cornrow braids, tight braids close to scalp, geometric patterns, African-inspired style",
+        "negative_prompt": "loose hair, voluminous curls, Western hairstyles"
+    },
+    {
+        "name": "Faux Hawk",
+        "prompt": "{prompt}, faux hawk hairstyle, central strip styled upwards, softer version of mohawk",
+        "negative_prompt": "shaved sides, full mohawk, conservative cut"
+    },
+    {
+        "name": "Top Knot",
+        "prompt": "{prompt}, top knot hairstyle, hair gathered high on head, modern bun style, sleek look",
+        "negative_prompt": "loose flowing hair, short haircut, elaborate styling"
+    },
+    {
+        "name": "Finger Waves",
+        "prompt": "{prompt}, finger waves hairstyle, S-shaped waves close to scalp, 1920s flapper style",
+        "negative_prompt": "straight hair, modern cut, messy look"
+    },
+    {
+        "name": "Feathered",
+        "prompt": "{prompt}, feathered hair, layered cut with ends turned back, 1970s inspired style",
+        "negative_prompt": "blunt cut, modern sharp edges, sleek straight style"
+    },
+    {
+        "name": "Shag",
+        "prompt": "{prompt}, shag haircut, lots of layers, choppy ends, rock and roll inspired",
+        "negative_prompt": "sleek hair, blunt cut, conservative style"
+    },
+    {
+        "name": "Curtain Bangs",
+        "prompt": "{prompt}, curtain bangs, parted fringe, face-framing layers, 70s inspired look",
+        "negative_prompt": "straight across bangs, no bangs, short forehead hair"
+    },
+    {
+        "name": "Two-Block Cut",
+        "prompt": "{prompt}, two-block haircut, disconnected undercut, longer top shorter sides, K-pop inspired",
+        "negative_prompt": "even length all over, Western hairstyles, conservative cut"
+    },
+    {
+        "name": "Twist Out",
+        "prompt": "{prompt}, twist out hairstyle, defined curls from unraveled twists, voluminous natural hair",
+        "negative_prompt": "straight hair, sleek style, non-textured hair"
+    }
+]

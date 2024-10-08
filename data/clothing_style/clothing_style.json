@@ -5,6 +5,11 @@
         "negative_prompt": ""
     },
     {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
         "name": "argyle (A pattern of diamonds or lozenges)",
         "prompt": "argyle {prompt}",
         "negative_prompt": ""
@@ -247,6 +252,46 @@
     {
         "name": "wrap (Garment that wraps around the body)",
         "prompt": "wrap {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hip-hop style (Streetwear, baggy clothes, and vibrant accessories)",
+        "prompt": "hip-hop style {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Arabic style (Traditional Arab clothing, such as thobes and abayas)",
+        "prompt": "Arabic style {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "sportswear (Athletic clothing like tracksuits, jerseys, and shorts)",
+        "prompt": "sportswear {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "business dress (Formal clothing such as suits, blazers, and dress shirts)",
+        "prompt": "business dress {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "casual style (Comfortable and relaxed outfits like jeans, t-shirts, and sneakers)",
+        "prompt": "casual style {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "bohemian style (Flowy and natural clothing with earthy tones and textures)",
+        "prompt": "bohemian style {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "preppy style (Polished and neat clothing, like polos, blazers, and chinos)",
+        "prompt": "preppy style {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "goth style (Dark and mysterious clothing, including leather, lace, and dramatic accessories)",
+        "prompt": "goth style {prompt}",
         "negative_prompt": ""
     }
 ]

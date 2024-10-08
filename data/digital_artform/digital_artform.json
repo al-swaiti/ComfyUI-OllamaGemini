@@ -1,0 +1,402 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Glitch Art",
+        "prompt": "A piece of {prompt}, featuring (digital distortion, pixel sorting, compression artifacts, vibrant colors, chaotic aesthetic)",
+        "negative_prompt": "clear image, realistic depiction, traditional art styles"
+    },
+    {
+        "name": "Digital Painting",
+        "prompt": "A {prompt}, showcasing (digital brushstrokes, vibrant colors, detailed rendering, painterly effects)",
+        "negative_prompt": "traditional painting techniques, physical brushstrokes, canvas texture"
+    },
+    {
+        "name": "Acrylic Painting",
+        "prompt": "An {prompt}, featuring (bold colors, thick impasto, textured surfaces, expressive brushstrokes)",
+        "negative_prompt": "watercolor effects, delicate lines, smooth surfaces"
+    },
+    {
+        "name": "Algorithmic Art",
+        "prompt": "An {prompt} piece, showcasing (mathematical patterns, generated forms, complex geometry, abstract aesthetic)",
+        "negative_prompt": "hand-drawn elements, organic shapes, traditional art styles"
+    },
+    {
+        "name": "Animation",
+        "prompt": "An {prompt}, featuring (moving images, frame-by-frame sequences, character animation, storytelling)",
+        "negative_prompt": "still images, static compositions, realistic depiction"
+    },
+    {
+        "name": "Art Glass",
+        "prompt": "A piece of {prompt}, showcasing (blown glass, stained glass, fused glass, colorful designs, translucent beauty)",
+        "negative_prompt": "opaque materials, traditional painting, sculptural forms"
+    },
+    {
+        "name": "Assemblage",
+        "prompt": "An {prompt}, featuring (three-dimensional objects, found materials, mixed media, textural complexity)",
+        "negative_prompt": "traditional sculpture, single material, smooth surfaces"
+    },
+    {
+        "name": "Augmented Reality Art",
+        "prompt": "An {prompt} experience, showcasing (digital overlays, interactive elements, virtual objects, immersive technology)",
+        "negative_prompt": "traditional art forms, static images, physical installations"
+    },
+    {
+        "name": "Batik",
+        "prompt": "A {prompt} piece, featuring (wax-resist dyeing, intricate patterns, vibrant colors, textile art)",
+        "negative_prompt": "painting techniques, digital art, sculptural forms"
+    },
+    {
+        "name": "Beadwork",
+        "prompt": "An {prompt} creation, showcasing (intricate beading, colorful patterns, handcrafted details, textile or jewelry art)",
+        "negative_prompt": "painting techniques, digital art, sculptural forms"
+    },
+    {
+        "name": "Body Painting",
+        "prompt": "A {prompt} artwork, featuring (paint on skin, temporary designs, vibrant colors, human canvas)",
+        "negative_prompt": "traditional painting, digital art, clothing or accessories"
+    },
+    {
+        "name": "Bookbinding",
+        "prompt": "An example of {prompt}, showcasing (handcrafted books, leather covers, decorative elements, preservation of knowledge)",
+        "negative_prompt": "mass-produced books, digital media, plain covers"
+    },
+    {
+        "name": "Cast Paper",
+        "prompt": "A {prompt} sculpture, featuring (molded paper pulp, textured surfaces, three-dimensional forms, recycled materials)",
+        "negative_prompt": "traditional sculpture, smooth surfaces, metallic or stone materials"
+    },
+    {
+        "name": "Ceramics",
+        "prompt": "A piece of {prompt}, showcasing (clay pottery, glazed surfaces, functional or decorative objects, handcrafted techniques)",
+        "negative_prompt": "metalwork, woodwork, digital art"
+    },
+    {
+        "name": "Bronze Sculpture",
+        "prompt": "A {prompt}, featuring (cast bronze, metallic patina, three-dimensional forms, classical or contemporary styles)",
+        "negative_prompt": "stone sculpture, marble carving, digital art"
+    },
+    {
+        "name": "Charcoal Drawing",
+        "prompt": "A {prompt}, showcasing (charcoal strokes, black and white tones, expressive lines, atmospheric effects)",
+        "negative_prompt": "color, digital art, painting techniques"
+    },
+    {
+        "name": "Collage",
+        "prompt": "A {prompt}, featuring (paper fragments, mixed media, layered textures, abstract or representational imagery)",
+        "negative_prompt": "painting techniques, digital art, sculptural forms"
+    },
+    {
+        "name": "Collagraphy",
+        "prompt": "A {prompt} print, showcasing (textured plates, embossed surfaces, unique prints, mixed media techniques)",
+        "negative_prompt": "smooth prints, digital art, traditional painting"
+    },
+    {
+        "name": "Colored Pencil Drawing",
+        "prompt": "A {prompt}, featuring (colored pencil strokes, blended colors, detailed rendering, vibrant hues)",
+        "negative_prompt": "digital art, painting techniques, black and white"
+    },
+    {
+        "name": "Computer-Generated Imagery (CGI)",
+        "prompt": "A {prompt} artwork, showcasing (3D models, digital environments, realistic rendering, visual effects)",
+        "negative_prompt": "photography, traditional art forms, hand-drawn elements"
+    },
+    {
+        "name": "Crochet",
+        "prompt": "A {prompt} piece, featuring (yarn, crocheted stitches, textured patterns, textile art)",
+        "negative_prompt": "knitting, weaving, digital art"
+    },
+    {
+        "name": "Decoupage",
+        "prompt": "A {prompt} artwork, showcasing (paper cutouts, layered designs, decorative surfaces, vintage aesthetic)",
+        "negative_prompt": "painting techniques, digital art, sculptural forms"
+    },
+    {
+        "name": "Digital Sculpture",
+        "prompt": "A {prompt}, featuring (3D modeling software, virtual forms, intricate details, futuristic aesthetic)",
+        "negative_prompt": "traditional sculpture, physical materials, classical styles"
+    },
+    {
+        "name": "Foam Carving",
+        "prompt": "A {prompt} sculpture, showcasing (carved foam, lightweight material, large-scale forms, abstract or representational designs)",
+        "negative_prompt": "traditional sculpture, heavy materials, delicate details"
+    },
+    {
+        "name": "Found Object Art",
+        "prompt": "An artwork made from {prompt}, featuring (repurposed materials, everyday objects, unconventional assemblages)",
+        "negative_prompt": "traditional art materials, new objects, conventional art forms"
+    },
+    {
+        "name": "Fresco",
+        "prompt": "A {prompt}, showcasing (pigment on wet plaster, mural painting, Renaissance art, historical technique)",
+        "negative_prompt": "oil painting, acrylic painting, modern art styles"
+    },
+    {
+        "name": "Glass Art",
+        "prompt": "A piece of {prompt}, featuring (blown glass, stained glass, fused glass, translucent beauty, colorful designs)",
+        "negative_prompt": "opaque materials, traditional painting, sculptural forms"
+    },
+    {
+        "name": "Gouache Painting",
+        "prompt": "A {prompt}, showcasing (opaque watercolor, vibrant colors, matte finish, illustrative style)",
+        "negative_prompt": "transparent watercolor, oil painting, acrylic painting"
+    },
+    {
+        "name": "Graffiti Art",
+        "prompt": "A {prompt} mural, featuring (spray paint, bold colors, urban art, street style, expressive lettering)",
+        "negative_prompt": "fine art, traditional painting, realistic depiction"
+    },
+    {
+        "name": "Ice Sculpture",
+        "prompt": "An {prompt}, showcasing (carved ice, intricate details, temporary art, ephemeral beauty)",
+        "negative_prompt": "permanent sculptures, traditional materials, warm climates"
+    },
+    {
+        "name": "Ink Wash Painting",
+        "prompt": "An {prompt}, featuring (black ink, washes of tone, expressive brushstrokes, East Asian art)",
+        "negative_prompt": "color, oil painting, acrylic painting"
+    },
+    {
+        "name": "Installation Art",
+        "prompt": "An {prompt}, showcasing (site-specific artwork, mixed media, immersive experience, environmental interaction)",
+        "negative_prompt": "traditional art forms, two-dimensional art, static displays"
+    },
+    {
+        "name": "Interactive Media Art",
+        "prompt": "An {prompt} piece, featuring (digital technology, user interaction, responsive elements, immersive experience)",
+        "negative_prompt": "traditional art forms, static displays, passive viewing"
+    },
+    {
+        "name": "Lenticular Printing",
+        "prompt": "A {prompt} image, showcasing (multiple images, changing perspectives, 3D effect, optical illusion)",
+        "negative_prompt": "flat images, single perspective, traditional printing techniques"
+    },
+    {
+        "name": "Light Projection Art",
+        "prompt": "A {prompt} installation, featuring (projected light, dynamic patterns, immersive experience, ephemeral beauty)",
+        "negative_prompt": "static images, physical sculptures, traditional art forms"
+    },
+    {
+        "name": "Lithography",
+        "prompt": "A {prompt} print, showcasing (stone or metal plate, greasy ink, fine lines, traditional printmaking technique)",
+        "negative_prompt": "digital art, woodcut prints, etching techniques"
+    },
+    {
+        "name": "Marble Sculpture",
+        "prompt": "A {prompt}, featuring (carved marble, classical or contemporary styles, smooth surfaces, elegant forms)",
+        "negative_prompt": "bronze sculpture, metalwork, digital art"
+    },
+    {
+        "name": "Metal Art",
+        "prompt": "A piece of {prompt}, showcasing (welded metal, hammered metal, cast metal, industrial aesthetic, abstract or representational forms)",
+        "negative_prompt": "woodwork, ceramics, digital art"
+    },
+    {
+        "name": "Metalpoint Drawing",
+        "prompt": "A {prompt}, featuring (metal stylus, prepared surface, fine lines, delicate details, Renaissance technique)",
+        "negative_prompt": "charcoal drawing, pencil drawing, digital art"
+    },
+    {
+        "name": "Miniature Painting",
+        "prompt": "A {prompt}, showcasing (small scale, intricate details, fine brushwork, historical or contemporary subjects)",
+        "negative_prompt": "large-scale paintings, abstract art, minimalist aesthetic"
+    },
+    {
+        "name": "Mixed Media Art",
+        "prompt": "A {prompt} piece, featuring (various materials, combined techniques, textural complexity, experimental approach)",
+        "negative_prompt": "single medium, traditional art forms, minimalist aesthetic"
+    },
+    {
+        "name": "Monotype Printing",
+        "prompt": "A {prompt}, showcasing (unique prints, painterly effects, textured surfaces, experimental printmaking technique)",
+        "negative_prompt": "multiple prints, digital art, traditional painting"
+    },
+    {
+        "name": "Neon Art",
+        "prompt": "A {prompt} installation, featuring (glowing neon tubes, vibrant colors, urban aesthetic, nighttime art)",
+        "negative_prompt": "natural light, traditional art forms, daytime displays"
+    },
+    {
+        "name": "Oil Painting",
+        "prompt": "An {prompt}, showcasing (oil paints, layered brushstrokes, rich colors, realistic or abstract styles)",
+        "negative_prompt": "watercolor effects, acrylic painting, digital art"
+    },
+    {
+        "name": "Origami",
+        "prompt": "An {prompt} creation, featuring (folded paper, intricate designs, geometric shapes, Japanese art form)",
+        "negative_prompt": "digital art, sculpture, painting techniques"
+    },
+    {
+        "name": "Papier-Mâché",
+        "prompt": "A {prompt} sculpture, featuring (molded paper pulp, layered construction, colorful designs, lightweight material)",
+        "negative_prompt": "traditional sculpture, heavy materials, minimalist aesthetic"
+    },
+    {
+        "name": "Pastel Drawing",
+        "prompt": "A {prompt}, showcasing (pastel sticks, soft colors, blended tones, delicate details)",
+        "negative_prompt": "oil painting, acrylic painting, digital art"
+    },
+    {
+        "name": "Pen and Ink Drawing",
+        "prompt": "A {prompt}, featuring (pen strokes, ink washes, fine lines, detailed rendering, black and white or sepia tones)",
+        "negative_prompt": "color, digital art, painting techniques"
+    },
+    {
+        "name": "Plastic Arts",
+        "prompt": "A work of {prompt}, showcasing (sculptural forms, molded plastic, industrial materials, modern aesthetic)",
+        "negative_prompt": "traditional sculpture, natural materials, classical styles"
+    },
+    {
+        "name": "Polymer Clay Art",
+        "prompt": "A {prompt} creation, featuring (molded polymer clay, colorful designs, miniature sculptures, handcrafted details)",
+        "negative_prompt": "traditional sculpture, ceramics, metalwork"
+    },
+    {
+        "name": "Printmaking",
+        "prompt": "A {prompt} artwork, showcasing (printed images, various techniques, multiple editions, artistic reproduction)",
+        "negative_prompt": "unique artworks, digital art, painting techniques"
+    },
+    {
+        "name": "Puppetry",
+        "prompt": "A {prompt} performance, featuring (puppets, storytelling, animation, theatrical art form)",
+        "negative_prompt": "live actors, digital animation, static displays"
+    },
+    {
+        "name": "Pyrography",
+        "prompt": "A {prompt} artwork, showcasing (wood burning, intricate designs, decorative patterns, rustic aesthetic)",
+        "negative_prompt": "painting techniques, digital art, metalwork"
+    },
+    {
+        "name": "Quilling",
+        "prompt": "A {prompt} artwork, featuring (rolled paper strips, intricate designs, decorative patterns, delicate craftsmanship)",
+        "negative_prompt": "painting techniques, digital art, sculpture"
+    },
+    {
+        "name": "Quilting",
+        "prompt": "A {prompt} artwork, showcasing (fabric pieces, stitched patterns, textile art, traditional craft)",
+        "negative_prompt": "painting techniques, digital art, sculpture"
+    },
+    {
+        "name": "Recycled Art",
+        "prompt": "An artwork made from {prompt}, featuring (repurposed materials, environmental awareness, sustainable art)",
+        "negative_prompt": "traditional art materials, new objects, wasteful practices"
+    },
+    {
+        "name": "Resin Art",
+        "prompt": "A {prompt} artwork, showcasing (epoxy resin, layered colors, glossy finish, abstract or representational designs)",
+        "negative_prompt": "painting techniques, digital art, traditional sculpture"
+    },
+    {
+        "name": "Sand Art",
+        "prompt": "A {prompt} creation, featuring (colored sand, temporary designs, intricate patterns, ephemeral beauty)",
+        "negative_prompt": "permanent artworks, traditional materials, indoor displays"
+    },
+    {
+        "name": "Sound Art",
+        "prompt": "A {prompt} piece, showcasing (recorded sounds, manipulated audio, experimental compositions, auditory experience)",
+        "negative_prompt": "visual art, traditional music, silent displays"
+    },
+    {
+        "name": "Silverpoint Drawing",
+        "prompt": "A {prompt}, featuring (silver stylus, prepared surface, fine lines, delicate details, Renaissance technique)",
+        "negative_prompt": "charcoal drawing, pencil drawing, digital art"
+    },
+    {
+        "name": "Spray Paint Art",
+        "prompt": "A {prompt} mural, featuring (spray paint, bold colors, urban art, street style, expressive designs)",
+        "negative_prompt": "fine art, traditional painting, realistic depiction"
+    },
+    {
+        "name": "Stone Sculpture",
+        "prompt": "A {prompt}, featuring (carved stone, ancient or modern styles, monumental scale, natural textures)",
+        "negative_prompt": "bronze sculpture, metalwork, digital art"
+    },
+    {
+        "name": "Tempera Painting",
+        "prompt": "A {prompt}, showcasing (egg tempera, vibrant colors, matte finish, Medieval and Renaissance art)",
+        "negative_prompt": "oil painting, acrylic painting, modern art styles"
+    },
+    {
+        "name": "Tattoo Art",
+        "prompt": "A {prompt} design, featuring (ink on skin, permanent body art, symbolic imagery, personal expression)",
+        "negative_prompt": "temporary tattoos, traditional painting, digital art"
+    },
+    {
+        "name": "Video Art",
+        "prompt": "A {prompt} installation, featuring (moving images, sound, experimental storytelling, multimedia experience)",
+        "negative_prompt": "traditional film, static images, passive viewing"
+    },
+    {
+        "name": "Watercolor Painting",
+        "prompt": "A {prompt}, showcasing (transparent watercolor, washes of color, delicate details, expressive brushstrokes)",
+        "negative_prompt": "oil painting, acrylic painting, digital art"
+    },
+    {
+        "name": "Wax Art",
+        "prompt": "A {prompt} sculpture, featuring (molded wax, lost-wax casting, intricate details, lifelike forms)",
+        "negative_prompt": "bronze sculpture, stone carving, digital art"
+    },
+    {
+        "name": "Wood Art",
+        "prompt": "A piece of {prompt}, showcasing (carved wood, sculpted wood, natural textures, rustic or contemporary styles)",
+        "negative_prompt": "metalwork, ceramics, digital art"
+    },
+    {
+        "name": "Pixel Art",
+        "prompt": "A piece of {prompt}, showcasing (pixelated graphics, retro video game aesthetic, 8-bit or 16-bit style)",
+        "negative_prompt": "high-resolution images, realistic rendering, smooth curves" 
+    },
+    {
+        "name": "Vector Art",
+        "prompt": "A piece of {prompt}, showcasing (scalable graphics, clean lines, geometric shapes, digital illustration)",
+        "negative_prompt": "pixelated images, hand-drawn sketches, realistic textures"
+    },
+    {
+        "name": "Photorealistic Art",
+        "prompt": "A piece of {prompt}, showcasing (digital painting or rendering, highly detailed, lifelike imagery, almost indistinguishable from a photograph)",
+        "negative_prompt": "abstract art, stylized imagery, cartoonish visuals"
+    },
+    {
+        "name": "Concept Art",
+        "prompt": "A piece of {prompt}, showcasing (ideas for characters, environments, objects, often used in film, video games, or other media)",
+        "negative_prompt": "finished artwork, photorealistic rendering, abstract concepts"
+    },
+    {
+        "name": "Matte Painting",
+        "prompt": "A {prompt}, showcasing (digital painting, realistic background, often used to extend or create environments in film or video)",
+        "negative_prompt": "abstract art, character design, real-life photography"
+    },
+    {
+        "name": "Fantasy Art",
+        "prompt": "A piece of {prompt}, showcasing (mythical creatures, magical worlds, epic scenes, often depicting dragons, fairies, or wizards)",
+        "negative_prompt": "realistic art, everyday life, mundane settings"
+    },
+    {
+        "name": "Science Fiction Art",
+        "prompt": "A piece of {prompt}, showcasing (futuristic technology, space exploration, alien worlds, often depicting robots, spaceships, or advanced civilizations)",
+        "negative_prompt": "historical art, fantasy elements, traditional settings"
+    },
+    {
+        "name": "Abstract Expressionism",
+        "prompt": "A piece of {prompt}, showcasing (non-representational art, gestural brushstrokes, emotional expression, often using bold colors and textures)",
+        "negative_prompt": "realistic art, figurative imagery, detailed rendering"
+    },
+    {
+        "name": "Surrealism",
+        "prompt": "A {prompt} artwork, showcasing (dreamlike imagery, unexpected juxtapositions, subconscious exploration, often depicting bizarre creatures or landscapes)",
+        "negative_prompt": "realistic art, logical compositions, ordinary scenes"
+    },
+    {
+        "name": "Pop Art",
+        "prompt": "A piece of {prompt}, showcasing (popular culture imagery, mass media influences, bold colors, often depicting celebrities, consumer products, or comic book characters)",
+        "negative_prompt": "fine art, traditional subjects, realistic depiction"
+    },
+    {
+        "name": "Street Art",
+        "prompt": "A piece of {prompt}, showcasing (urban art, graffiti, murals, stencils, often found in public spaces and conveying social or political messages)",
+        "negative_prompt": "gallery art, traditional art forms, indoor displays"
+    }
+]

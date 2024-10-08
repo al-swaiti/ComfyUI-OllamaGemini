@@ -1,3 +1,4 @@
+    
 [
     {
         "name": "None",
@@ -5,149 +6,5104 @@
         "negative_prompt": ""
     },
     {
-        "name": "Abstract Expressionism",
-        "prompt": "(Abstract expressionism) {prompt}",
-        "negative_prompt": "Realistic Precision"
+        "name": "2 Tone",
+        "prompt": "2 Tone style, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Art Deco Glamour",
-        "prompt": "(Glamorous art deco) {prompt}",
-        "negative_prompt": "Contemporary Simplicity"
+        "name": "2000s Virtual Singer",
+        "prompt": "2000s Virtual Singer aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Artistic Whimsy",
-        "prompt": "(Whimsically artistic) {prompt}",
-        "negative_prompt": "Sleek Monochrome"
+        "name": "2010s Internet",
+        "prompt": "2010s Internet aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Baroque Opulence",
-        "prompt": "(Opulent baroque aesthetics) {prompt}",
-        "negative_prompt": "Sleek Contemporary"
+        "name": "2014 Girly",
+        "prompt": "2014 Girly aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Bohemian Rhapsody",
-        "prompt": "(Bohemian rhapsody of colors) {prompt}",
-        "negative_prompt": "Clean and Clinical"
+        "name": "2014 Tumblr",
+        "prompt": "2014 Tumblr aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Cyberpunk Adventure",
-        "prompt": "(Adventure in a cyberpunk world) {prompt}",
-        "negative_prompt": "Natural Tranquility"
+        "name": "2020s E-Kid",
+        "prompt": "2020s E-Kid aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Cyberpunk Noir",
-        "prompt": "(Noir with a cyberpunk twist) {prompt}",
-        "negative_prompt": "Natural Harmony"
+        "name": "2020s Gamer",
+        "prompt": "2020s Gamer aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Dreamy Watercolor",
-        "prompt": "(Watercolor dreaminess) {prompt}",
-        "negative_prompt": "Bold Geometric"
+        "name": "2K1",
+        "prompt": "2K1 aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Enchanted Forest",
-        "prompt": "(Enchanting forest vibes) {prompt}",
-        "negative_prompt": "Industrial Modernism"
+        "name": "2K5",
+        "prompt": "2K5 aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Futuristic Chic",
-        "prompt": "(Chic futuristic style) {prompt}",
-        "negative_prompt": "Classic Timelessness"
+        "name": "2K7",
+        "prompt": "2K7 aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Glamorous Vintage",
-        "prompt": "(Vintage glamour at its finest) {prompt}",
-        "negative_prompt": "Minimalist Elegance"
+        "name": "50s Suburbia",
+        "prompt": "50s Suburbia aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Gothic Romance",
-        "prompt": "(Romantic with a gothic twist) {prompt}",
-        "negative_prompt": "Sunny Beach Getaway"
+        "name": "7 HD",
+        "prompt": "7 HD aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Industrial Chic",
-        "prompt": "(Rustic meets industrial) {prompt}",
-        "negative_prompt": "Luxe Bohemian"
+        "name": "8-Bit",
+        "prompt": "8-Bit style, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Mystic Beauty",
-        "prompt": "(Beautiful mystical allure) {prompt}",
-        "negative_prompt": "Everyday Routine"
+        "name": "80 Thousand",
+        "prompt": "80 Thousand aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Neon Dreams",
-        "prompt": "(Vibrant neon colors) {prompt}",
-        "negative_prompt": "Monochromatic Serenity"
+        "name": "808 Volt Mix",
+        "prompt": "808 Volt Mix aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Pastel Dreams",
-        "prompt": "(Dreamy pastel palette) {prompt}",
-        "negative_prompt": "Bold and Vibrant"
+        "name": "80s Heartthrob",
+        "prompt": "80s Heartthrob aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Retro Futurism",
-        "prompt": "(Retro with a futuristic edge) {prompt}",
-        "negative_prompt": "Past-Present Fusion"
+        "name": "90s Cool",
+        "prompt": "90s Cool aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Sci-Fi Noir",
-        "prompt": "(Sci-fi with a noir twist) {prompt}",
-        "negative_prompt": "Retro Nostalgia"
+        "name": "Abstract Tech",
+        "prompt": "Abstract Tech style, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Sunset Bliss",
-        "prompt": "(Blissful sunset hues) {prompt}",
-        "negative_prompt": "Urban Grit"
+        "name": "Acid Design",
+        "prompt": "Acid Design style, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Surreal Fantasy",
-        "prompt": "(A touch of surrealism) {prompt}",
-        "negative_prompt": "Realistic Everyday"
+        "name": "Acid Pixie",
+        "prompt": "Acid Pixie aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Tropical Paradise",
-        "prompt": "(Tropical island paradise) {prompt}",
-        "negative_prompt": "Frozen Tundra"
+        "name": "Acidwave",
+        "prompt": "Acidwave aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Urban Jungle",
-        "prompt": "(Concrete urban jungle) {prompt}",
-        "negative_prompt": "Rural Serenity"
+        "name": "Adventurecore",
+        "prompt": "Adventurecore aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Vintage Elegance",
-        "prompt": "(Elegance with a vintage touch) {prompt}",
-        "negative_prompt": "Contemporary Minimalism"
+        "name": "Adventure Pulp",
+        "prompt": "Adventure Pulp style, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Zen Garden",
-        "prompt": "(Tranquil Zen garden) {prompt}",
-        "negative_prompt": "Chaotic Cityscape"
+        "name": "Aeropittura",
+        "prompt": "Aeropittura style, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Whimsical Fantasy",
-        "prompt": "(Whimsical and fantastical) {prompt}",
-        "negative_prompt": "Ordinary and Mundane"
+        "name": "Aestheticism",
+        "prompt": "Aestheticism style, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Vibrant Festival",
-        "prompt": "(Vibrant festival atmosphere) {prompt}",
-        "negative_prompt": "Dull and Monotone"
+        "name": "Aetherpunk",
+        "prompt": "Aetherpunk aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Mystical Night",
-        "prompt": "(Mystical night scene) {prompt}",
-        "negative_prompt": "Bright Daylight"
+        "name": "Afrofuturism",
+        "prompt": "Afrofuturism aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Retro Pop Art",
-        "prompt": "(Retro pop art style) {prompt}",
-        "negative_prompt": "Modern Minimalism"
+        "name": "Afropunk",
+        "prompt": "Afropunk aesthetic, {prompt}",
+        "negative_prompt": ""
     },
     {
-        "name": "Ethereal Glow",
-        "prompt": "(Ethereal glowing effects) {prompt}",
-        "negative_prompt": "Flat and Dull"
+        "name": "Afro-Victorian",
+        "prompt": "Afro-Victorian aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "After Hours",
+        "prompt": "After Hours aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Agropeople",
+        "prompt": "Agropeople aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ah Beng",
+        "prompt": "Ah Beng aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Alien",
+        "prompt": "Alien aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Alternative",
+        "prompt": "Alternative aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Amateur Photography",
+        "prompt": "Amateur Photography style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Americana",
+        "prompt": "Americana aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "American Gothic",
+        "prompt": "American Gothic style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "American Kitsch",
+        "prompt": "American Kitsch aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "American Pioneers",
+        "prompt": "American Pioneers aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "American Revolution",
+        "prompt": "American Revolution aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "American Thanksgiving",
+        "prompt": "American Thanksgiving aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "American Tourist Traps",
+        "prompt": "American Tourist Traps aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Analog Horror",
+        "prompt": "Analog Horror style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ancient Egypt",
+        "prompt": "Ancient Egypt aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ancient Y2K",
+        "prompt": "Ancient Y2K aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Androgynous",
+        "prompt": "Androgynous aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Angelcore",
+        "prompt": "Angelcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Anglo Gothic",
+        "prompt": "Anglo Gothic style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Angura",
+        "prompt": "Angura aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Animecore",
+        "prompt": "Animecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Anime New Moon",
+        "prompt": "Anime New Moon aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Anti-Fashion",
+        "prompt": "Anti-Fashion aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Antique Grunge",
+        "prompt": "Antique Grunge aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Appalachian Gothic",
+        "prompt": "Appalachian Gothic style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Arabfunny",
+        "prompt": "Arabfunny aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Arabian Nights",
+        "prompt": "Arabian Nights aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Arcadecore",
+        "prompt": "Arcadecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Aristocrat",
+        "prompt": "Aristocrat aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Art Academia",
+        "prompt": "Art Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Artcore",
+        "prompt": "Artcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Art Deco",
+        "prompt": "Art Deco style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Art Hoe",
+        "prompt": "Art Hoe aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Artificial Nature",
+        "prompt": "Artificial Nature aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Art in the Chapels",
+        "prompt": "Art in the Chapels aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Art Nouveau",
+        "prompt": "Art Nouveau style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Arts and Crafts Movement",
+        "prompt": "Arts and Crafts Movement style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Asian Baby Girl",
+        "prompt": "Asian Baby Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Athlete",
+        "prompt": "Athlete aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Atompunk",
+        "prompt": "Atompunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Auroracore",
+        "prompt": "Auroracore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Australiana",
+        "prompt": "Australiana aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Australian Outback",
+        "prompt": "Australian Outback aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Autumn",
+        "prompt": "Autumn aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Autumn Academia",
+        "prompt": "Autumn Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Avant Apocalypse",
+        "prompt": "Avant Apocalypse aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Avant-garde",
+        "prompt": "Avant-garde style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Babycore",
+        "prompt": "Babycore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Babygirl",
+        "prompt": "Babygirl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Back-to-School",
+        "prompt": "Back-to-School aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Baddie",
+        "prompt": "Baddie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bakala",
+        "prompt": "Bakala aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Balkan Violence Tumblr",
+        "prompt": "Balkan Violence Tumblr aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ballet Academia",
+        "prompt": "Ballet Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Balletcore",
+        "prompt": "Balletcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ballroom culture",
+        "prompt": "Ballroom culture aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bankara",
+        "prompt": "Bankara aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Barbiecore",
+        "prompt": "Barbiecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bardcore",
+        "prompt": "Bardcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Baroque",
+        "prompt": "Baroque style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Basic Girl",
+        "prompt": "Basic Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Basque Radical Rock",
+        "prompt": "Basque Radical Rock aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bastardcore",
+        "prompt": "Bastardcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bauhaus",
+        "prompt": "Bauhaus style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Beach Bunny",
+        "prompt": "Beach Bunny aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Beach Day",
+        "prompt": "Beach Day aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Beach Girl",
+        "prompt": "Beach Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Beatnik",
+        "prompt": "Beatnik aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Belgian New Beat",
+        "prompt": "Belgian New Beat aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Biker",
+        "prompt": "Biker aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bimbocore",
+        "prompt": "Bimbocore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Biopunk",
+        "prompt": "Biopunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bizarro Fiction",
+        "prompt": "Bizarro Fiction style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Black-Holed Meme",
+        "prompt": "Black-Holed Meme aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Black Metal",
+        "prompt": "Black Metal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bleak Crush",
+        "prompt": "Bleak Crush aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Blingeecore",
+        "prompt": "Blingeecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Blokecore",
+        "prompt": "Blokecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Blokette",
+        "prompt": "Blokette aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bloomcore",
+        "prompt": "Bloomcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Blue Night",
+        "prompt": "Blue Night aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "B-Movie Horror",
+        "prompt": "B-Movie Horror style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bodikon",
+        "prompt": "Bodikon aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bohemian",
+        "prompt": "Bohemian aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bombardier",
+        "prompt": "Bombardier aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bon Chic, Bon Genre",
+        "prompt": "Bon Chic, Bon Genre aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bondage",
+        "prompt": "Bondage aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bookstore Girl",
+        "prompt": "Bookstore Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bootleg Game",
+        "prompt": "Bootleg Game aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bosozoku",
+        "prompt": "Bosozoku aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Boujee",
+        "prompt": "Boujee aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Boy Next Door",
+        "prompt": "Boy Next Door aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Boystyle",
+        "prompt": "Boystyle aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Brazilian Pop Bar",
+        "prompt": "Brazilian Pop Bar aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Breakcore",
+        "prompt": "Breakcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bright Tertiaries",
+        "prompt": "Bright Tertiaries aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Britpop",
+        "prompt": "Britpop aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bro",
+        "prompt": "Bro aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bronzepunk",
+        "prompt": "Bronzepunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Brutal Industrial",
+        "prompt": "Brutal Industrial aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bubble Bujo",
+        "prompt": "Bubble Bujo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bubbleglam",
+        "prompt": "Bubbleglam aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bubble Goth",
+        "prompt": "Bubble Goth aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bubblegum Bitch",
+        "prompt": "Bubblegum Bitch aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bubblegum Coquette",
+        "prompt": "Bubblegum Coquette aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bubblegum Dance",
+        "prompt": "Bubblegum Dance aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bubblegum Witch",
+        "prompt": "Bubblegum Witch aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Buckle Bunny",
+        "prompt": "Buckle Bunny aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Burlesque",
+        "prompt": "Burlesque aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Busukawaii",
+        "prompt": "Busukawaii aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cabincore",
+        "prompt": "Cabincore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cagole",
+        "prompt": "Cagole aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Camp",
+        "prompt": "Camp aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Campcore",
+        "prompt": "Campcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Candyland",
+        "prompt": "Candyland aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cani",
+        "prompt": "Cani aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Captchacore",
+        "prompt": "Captchacore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Caricaturism",
+        "prompt": "Caricaturism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cartelcore",
+        "prompt": "Cartelcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cartooncore",
+        "prompt": "Cartooncore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Casino",
+        "prompt": "Casino aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cassette Futurism",
+        "prompt": "Cassette Futurism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Catholic Horror",
+        "prompt": "Catholic Horror style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cayetana",
+        "prompt": "Cayetana aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Changelingcore",
+        "prompt": "Changelingcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Chaotic Academia",
+        "prompt": "Chaotic Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Chav",
+        "prompt": "Chav aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cheiron Crush",
+        "prompt": "Cheiron Crush aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cherry Emoji Twitter",
+        "prompt": "Cherry Emoji Twitter aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Chicano Lowrider",
+        "prompt": "Chicano Lowrider aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Chicha",
+        "prompt": "Chicha aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Chic Modernist",
+        "prompt": "Chic Modernist aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Chinese New Year",
+        "prompt": "Chinese New Year aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Choco Girl",
+        "prompt": "Choco Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cholo",
+        "prompt": "Cholo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Chonga",
+        "prompt": "Chonga aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Choni",
+        "prompt": "Choni aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Christian Girl Autumn",
+        "prompt": "Christian Girl Autumn aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Christian Hardcore",
+        "prompt": "Christian Hardcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Christmas",
+        "prompt": "Christmas aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Chromecore",
+        "prompt": "Chromecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Chunyu",
+        "prompt": "Chunyu aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cinnamon Girl",
+        "prompt": "Cinnamon Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "City Pop",
+        "prompt": "City Pop aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Classic Academia",
+        "prompt": "Classic Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Classicism",
+        "prompt": "Classicism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Classic Lolita",
+        "prompt": "Classic Lolita aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cleancore",
+        "prompt": "Cleancore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Clean Girl",
+        "prompt": "Clean Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Clockpunk",
+        "prompt": "Clockpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Clowncore",
+        "prompt": "Clowncore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Club",
+        "prompt": "Club aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Club Kids",
+        "prompt": "Club Kids aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cluttercore",
+        "prompt": "Cluttercore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Coastal Cowgirl",
+        "prompt": "Coastal Cowgirl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Coastal Grandmother",
+        "prompt": "Coastal Grandmother aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cocalar",
+        "prompt": "Cocalar aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Coconut Girl",
+        "prompt": "Coconut Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Coffee House/Cafe",
+        "prompt": "Coffee House/Cafe aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Coffinwood",
+        "prompt": "Coffinwood aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Comfy/Cozy",
+        "prompt": "Comfy/Cozy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Communist Chic",
+        "prompt": "Communist Chic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Color Pop",
+        "prompt": "Color Pop aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Constructivism",
+        "prompt": "Constructivism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Corporate",
+        "prompt": "Corporate aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Corporate Grunge",
+        "prompt": "Corporate Grunge aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Corporate Memphis",
+        "prompt": "Corporate Memphis aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Corporate Punk",
+        "prompt": "Corporate Punk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cottagecore",
+        "prompt": "Cottagecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cottagegore",
+        "prompt": "Cottagegore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Coquette",
+        "prompt": "Coquette aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Coquette Academia",
+        "prompt": "Coquette Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Corporate Hippie",
+        "prompt": "Corporate Hippie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Country",
+        "prompt": "Country aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cozy Childhood Hideaway",
+        "prompt": "Cozy Childhood Hideaway aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "C-Pop",
+        "prompt": "C-Pop aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Crackhead",
+        "prompt": "Crackhead aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Craftcore",
+        "prompt": "Craftcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cripplepunk",
+        "prompt": "Cripplepunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Crowcore",
+        "prompt": "Crowcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Crustpunk",
+        "prompt": "Crustpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cryptid Academia",
+        "prompt": "Cryptid Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cryptidcore",
+        "prompt": "Cryptidcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cubism",
+        "prompt": "Cubism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cuddle Party",
+        "prompt": "Cuddle Party aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cultcore",
+        "prompt": "Cultcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cult Party Kei",
+        "prompt": "Cult Party Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cutecore",
+        "prompt": "Cutecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cyberdelic",
+        "prompt": "Cyberdelic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cyber Grunge",
+        "prompt": "Cyber Grunge aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cybergrunge",
+        "prompt": "Cybergrunge aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cybergoth",
+        "prompt": "Cybergoth aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cyberminimalism",
+        "prompt": "Cyberminimalism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cyberneticpunk",
+        "prompt": "Cyberneticpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cyberparadism",
+        "prompt": "Cyberparadism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cyberpop",
+        "prompt": "Cyberpop aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cyberprep",
+        "prompt": "Cyberprep aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cyberpunk",
+        "prompt": "Cyberpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cyberspace Webrooms",
+        "prompt": "Cyberspace Webrooms aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cyber Stylin'",
+        "prompt": "Cyber Stylin' aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cybervillain",
+        "prompt": "Cybervillain aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dandy",
+        "prompt": "Dandy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Danish Pastel",
+        "prompt": "Danish Pastel aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dank Meme Voyage",
+        "prompt": "Dank Meme Voyage aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dark Academia",
+        "prompt": "Dark Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dark Aero",
+        "prompt": "Dark Aero aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Darkcore",
+        "prompt": "Darkcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "DarkErrorcore",
+        "prompt": "DarkErrorcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Darkest Academia",
+        "prompt": "Darkest Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dark Fantasy",
+        "prompt": "Dark Fantasy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dark Gatsby",
+        "prompt": "Dark Gatsby aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dark Naturalism",
+        "prompt": "Dark Naturalism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dark Nautical",
+        "prompt": "Dark Nautical aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dark Nymphet",
+        "prompt": "Dark Nymphet aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dark Paradise",
+        "prompt": "Dark Paradise aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dark Royaltycore",
+        "prompt": "Dark Royaltycore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dark Y2K",
+        "prompt": "Dark Y2K aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dau al Set",
+        "prompt": "Dau al Set aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Daydreampunk",
+        "prompt": "Daydreampunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dazecore",
+        "prompt": "Dazecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dead Inside",
+        "prompt": "Dead Inside aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Deathcore",
+        "prompt": "Deathcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Death Metal",
+        "prompt": "Death Metal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Deathrock",
+        "prompt": "Deathrock aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Decopunk",
+        "prompt": "Decopunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Decora",
+        "prompt": "Decora aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Deep Fried Meme",
+        "prompt": "Deep Fried Meme aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Deep TikTok",
+        "prompt": "Deep TikTok aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Delicate Sweet",
+        "prompt": "Delicate Sweet aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Denpa",
+        "prompt": "Denpa aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Desertwave",
+        "prompt": "Desertwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Desi Romantic Academia",
+        "prompt": "Desi Romantic Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "De Stijl",
+        "prompt": "De Stijl style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dethereal",
+        "prompt": "Dethereal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Devilcore",
+        "prompt": "Devilcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Día De Los Muertos",
+        "prompt": "Día De Los Muertos aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dieselpunk",
+        "prompt": "Dieselpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Digital Horror",
+        "prompt": "Digital Horror style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Digital Oddity",
+        "prompt": "Digital Oddity aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Diner",
+        "prompt": "Diner aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dionysism",
+        "prompt": "Dionysism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Disco",
+        "prompt": "Disco aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Disco Polo",
+        "prompt": "Disco Polo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dizelaši",
+        "prompt": "Dizelaši aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dirty Girl",
+        "prompt": "Dirty Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dokukawaii",
+        "prompt": "Dokukawaii aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dollar Store Vernacular",
+        "prompt": "Dollar Store Vernacular aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dollcore",
+        "prompt": "Dollcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dollette",
+        "prompt": "Dollette aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dolly Girl",
+        "prompt": "Dolly Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dolly Kei",
+        "prompt": "Dolly Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Doodlecore",
+        "prompt": "Doodlecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Doomer",
+        "prompt": "Doomer aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dopamine",
+        "prompt": "Dopamine aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "DORFic",
+        "prompt": "DORFic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Downtown Girl",
+        "prompt": "Downtown Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dracopunk",
+        "prompt": "Dracopunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dragoncore",
+        "prompt": "Dragoncore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Drain",
+        "prompt": "Drain aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dreamcore",
+        "prompt": "Dreamcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dream Punk",
+        "prompt": "Dream Punk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dreamy",
+        "prompt": "Dreamy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dresiarz",
+        "prompt": "Dresiarz aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Driftcore",
+        "prompt": "Driftcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Drugcore",
+        "prompt": "Drugcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dual Kawaii",
+        "prompt": "Dual Kawaii aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dullcore",
+        "prompt": "Dullcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dungeoncore",
+        "prompt": "Dungeoncore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dungeonpunk",
+        "prompt": "Dungeonpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dungeon Synth",
+        "prompt": "Dungeon Synth aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dutch Golden Age",
+        "prompt": "Dutch Golden Age aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Earthcore",
+        "prompt": "Earthcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Earthy Black Girl",
+        "prompt": "Earthy Black Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "E-Boy",
+        "prompt": "E-Boy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Eccentric",
+        "prompt": "Eccentric aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Edgy",
+        "prompt": "Edgy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Edgy Meme",
+        "prompt": "Edgy Meme aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "E-Girl",
+        "prompt": "E-Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Electropop 08",
+        "prompt": "Electropop 08 aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Electro-Eclectic",
+        "prompt": "Electro-Eclectic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Electro Swing",
+        "prompt": "Electro Swing aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Elizabethan England",
+        "prompt": "Elizabethan England aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "ElsaGate",
+        "prompt": "ElsaGate aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Emo",
+        "prompt": "Emo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "English Major",
+        "prompt": "English Major aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "English Southern Girl",
+        "prompt": "English Southern Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Equestrian",
+        "prompt": "Equestrian aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ero-Guro",
+        "prompt": "Ero-Guro aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Erokawa",
+        "prompt": "Erokawa aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Eshay",
+        "prompt": "Eshay aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Españolada",
+        "prompt": "Españolada aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ethereal",
+        "prompt": "Ethereal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ethereal Death",
+        "prompt": "Ethereal Death aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ethno-Chic",
+        "prompt": "Ethno-Chic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Europunk",
+        "prompt": "Europunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "EXEcore",
+        "prompt": "EXEcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Expressionism",
+        "prompt": "Expressionism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Factory Pomo",
+        "prompt": "Factory Pomo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fairy Academia",
+        "prompt": "Fairy Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fairycore",
+        "prompt": "Fairycore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fairy Grunge",
+        "prompt": "Fairy Grunge aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fairy Kei",
+        "prompt": "Fairy Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fairy Tale",
+        "prompt": "Fairy Tale aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fanfare",
+        "prompt": "Fanfare aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fantasy",
+        "prompt": "Fantasy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fantasy Astronomy",
+        "prompt": "Fantasy Astronomy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "FantasY2K",
+        "prompt": "FantasY2K aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Farmer's Daughter",
+        "prompt": "Farmer's Daughter aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fauvism",
+        "prompt": "Fauvism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Feísmo",
+        "prompt": "Feísmo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Female Horror Game Protagonist Fashion",
+        "prompt": "Female Horror Game Protagonist Fashion aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Femboy",
+        "prompt": "Femboy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Femcel Weeaboo",
+        "prompt": "Femcel Weeaboo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Femme Fatale",
+        "prompt": "Femme Fatale aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Feralcore",
+        "prompt": "Feralcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fieldcore",
+        "prompt": "Fieldcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Figuration Narrative",
+        "prompt": "Figuration Narrative style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Film Noir",
+        "prompt": "Film Noir style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Flamenco",
+        "prompt": "Flamenco aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Flapper",
+        "prompt": "Flapper aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Flat Design",
+        "prompt": "Flat Design style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Flop TikTok",
+        "prompt": "Flop TikTok aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Floral Academia",
+        "prompt": "Floral Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Folk Punk",
+        "prompt": "Folk Punk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Foodie",
+        "prompt": "Foodie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Forestpunk",
+        "prompt": "Forestpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Fotonight Web",
+        "prompt": "Fotonight Web aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Four Colors",
+        "prompt": "Four Colors aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Freedomcore",
+        "prompt": "Freedomcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "French It Girl",
+        "prompt": "French It Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "French Girly",
+        "prompt": "French Girly aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "French Provincial Style",
+        "prompt": "French Provincial Style aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Frutiger Aero",
+        "prompt": "Frutiger Aero aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Frutiger Aurora",
+        "prompt": "Frutiger Aurora aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Frutiger Eco",
+        "prompt": "Frutiger Eco aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Frutiger Metro",
+        "prompt": "Frutiger Metro aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Funwaacore",
+        "prompt": "Funwaacore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Furry",
+        "prompt": "Furry aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Future Funk",
+        "prompt": "Future Funk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gabber",
+        "prompt": "Gabber aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gachimuchi",
+        "prompt": "Gachimuchi aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gadgetpunk",
+        "prompt": "Gadgetpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gamblecore",
+        "prompt": "Gamblecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Game Night",
+        "prompt": "Game Night aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gamercore",
+        "prompt": "Gamercore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gamine",
+        "prompt": "Gamine aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gangstæxtemism",
+        "prompt": "Gangstæxtemism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gangsta Rap",
+        "prompt": "Gangsta Rap aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Galician Sentimentalism",
+        "prompt": "Galician Sentimentalism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gardencore",
+        "prompt": "Gardencore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Geek",
+        "prompt": "Geek aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gesugao",
+        "prompt": "Gesugao aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gen X Soft Club",
+        "prompt": "Gen X Soft Club aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gen Z Maximalism",
+        "prompt": "Gen Z Maximalism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ghostcore",
+        "prompt": "Ghostcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Girl Crush",
+        "prompt": "Girl Crush aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Girl-Next-Door",
+        "prompt": "Girl-Next-Door aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Girly Girl",
+        "prompt": "Girly Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Girly (Japanese)",
+        "prompt": "Girly (Japanese) aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "GiscardPunk",
+        "prompt": "GiscardPunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Glam Girl",
+        "prompt": "Glam Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Glamorous Los Angeles",
+        "prompt": "Glamorous Los Angeles aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Glam Rock",
+        "prompt": "Glam Rock aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Glassmorphism",
+        "prompt": "Glassmorphism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Glitchcore",
+        "prompt": "Glitchcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Global Village Coffeehouse",
+        "prompt": "Global Village Coffeehouse aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gloomcore",
+        "prompt": "Gloomcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Glowwave",
+        "prompt": "Glowwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Goblin Academia",
+        "prompt": "Goblin Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Goblincore",
+        "prompt": "Goblincore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Golden Age of Detective Fiction",
+        "prompt": "Golden Age of Detective Fiction style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Golden Hour",
+        "prompt": "Golden Hour aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Goofcore",
+        "prompt": "Goofcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Googie",
+        "prompt": "Googie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gopnik",
+        "prompt": "Gopnik aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gorecore",
+        "prompt": "Gorecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gorpcore",
+        "prompt": "Gorpcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Goth",
+        "prompt": "Goth aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gothcore",
+        "prompt": "Gothcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gothic",
+        "prompt": "Gothic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gothic Lolita",
+        "prompt": "Gothic Lolita aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Goth Punk",
+        "prompt": "Goth Punk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Grandmillenial",
+        "prompt": "Grandmillenial aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Grandparentcore",
+        "prompt": "Grandparentcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Grasscore",
+        "prompt": "Grasscore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Grażynacore",
+        "prompt": "Grażynacore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Greaser",
+        "prompt": "Greaser aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Green Academia",
+        "prompt": "Green Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Grifes",
+        "prompt": "Grifes aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Grime Art",
+        "prompt": "Grime Art style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Grindhouse",
+        "prompt": "Grindhouse aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gross-Out Horror",
+        "prompt": "Gross-Out Horror style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Grotesque",
+        "prompt": "Grotesque aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Groundcore",
+        "prompt": "Groundcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Grunge",
+        "prompt": "Grunge aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gurokawa",
+        "prompt": "Gurokawa aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Gyaru",
+        "prompt": "Gyaru aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hacker",
+        "prompt": "Hacker aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Harajuku Fashion",
+        "prompt": "Harajuku Fashion aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hair Metal",
+        "prompt": "Hair Metal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hands Up",
+        "prompt": "Hands Up aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Halloween",
+        "prompt": "Halloween aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hallyu",
+        "prompt": "Hallyu aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Happycore",
+        "prompt": "Happycore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hatecore",
+        "prompt": "Hatecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hauntology",
+        "prompt": "Hauntology aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Haute Couture",
+        "prompt": "Haute Couture aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Haussmann Paris",
+        "prompt": "Haussmann Paris aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Heatwave",
+        "prompt": "Heatwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Heisei Retro",
+        "prompt": "Heisei Retro aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Heistcore",
+        "prompt": "Heistcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hellenic",
+        "prompt": "Hellenic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Helvetica Aqua Aero",
+        "prompt": "Helvetica Aqua Aero aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hermaphroditus",
+        "prompt": "Hermaphroditus aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hermitpunk",
+        "prompt": "Hermitpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Heroic Realism",
+        "prompt": "Heroic Realism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Heroin Chic",
+        "prompt": "Heroin Chic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hexatron",
+        "prompt": "Hexatron aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "HexD",
+        "prompt": "HexD aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "High School Dream",
+        "prompt": "High School Dream aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hikecore",
+        "prompt": "Hikecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hime Lolita",
+        "prompt": "Hime Lolita aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hi-NRG",
+        "prompt": "Hi-NRG aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hip-Hop",
+        "prompt": "Hip-Hop aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hipness Purgatory",
+        "prompt": "Hipness Purgatory aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hippie",
+        "prompt": "Hippie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hipster",
+        "prompt": "Hipster aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Historical Americana",
+        "prompt": "Historical Americana aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Himbocore",
+        "prompt": "Himbocore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Holo",
+        "prompt": "Holo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Holosexual",
+        "prompt": "Holosexual aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hollywood Regency",
+        "prompt": "Hollywood Regency aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Home 2K",
+        "prompt": "Home 2K aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Honeycore",
+        "prompt": "Honeycore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Horror",
+        "prompt": "Horror aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Horror Academia",
+        "prompt": "Horror Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hot Topic",
+        "prompt": "Hot Topic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hydrogen",
+        "prompt": "Hydrogen aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hypebeast",
+        "prompt": "Hypebeast aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hyperborean",
+        "prompt": "Hyperborean aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Hyperpop",
+        "prompt": "Hyperpop aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Icepunk",
+        "prompt": "Icepunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Imaginarium",
+        "prompt": "Imaginarium aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Imperial Aztec",
+        "prompt": "Imperial Aztec aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Imperial Romanov",
+        "prompt": "Imperial Romanov aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Impressionism",
+        "prompt": "Impressionism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Incel",
+        "prompt": "Incel aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Indicolite",
+        "prompt": "Indicolite aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Indie",
+        "prompt": "Indie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Indiecraft",
+        "prompt": "Indiecraft aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Indie Kid",
+        "prompt": "Indie Kid aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Indie Sleaze",
+        "prompt": "Indie Sleaze aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Internet Academia",
+        "prompt": "Internet Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Internet Awesomesauce",
+        "prompt": "Internet Awesomesauce aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Isocore",
+        "prompt": "Isocore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "I-Spy",
+        "prompt": "I-Spy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Italian Futurism",
+        "prompt": "Italian Futurism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Italian Mafia",
+        "prompt": "Italian Mafia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Italian Renaissance",
+        "prompt": "Italian Renaissance aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Italo Disco",
+        "prompt": "Italo Disco aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Itasha",
+        "prompt": "Itasha aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Japanese New Left",
+        "prompt": "Japanese New Left aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Jejemon",
+        "prompt": "Jejemon aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Jersey Shore",
+        "prompt": "Jersey Shore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Jirai Kei",
+        "prompt": "Jirai Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Jock",
+        "prompt": "Jock aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Joyride",
+        "prompt": "Joyride aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Juggalo",
+        "prompt": "Juggalo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Jumpstyle",
+        "prompt": "Jumpstyle aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Junglecore",
+        "prompt": "Junglecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Jungle Grunge",
+        "prompt": "Jungle Grunge aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Karasu Zoku",
+        "prompt": "Karasu Zoku aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Kawaii",
+        "prompt": "Kawaii aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Kawaii Gamer",
+        "prompt": "Kawaii Gamer aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Kawaii Warrior",
+        "prompt": "Kawaii Warrior aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Kidcore",
+        "prompt": "Kidcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Kid Science",
+        "prompt": "Kid Science aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Kimoicore",
+        "prompt": "Kimoicore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Kingcore",
+        "prompt": "Kingcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "King Gas",
+        "prompt": "King Gas aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Kitschy",
+        "prompt": "Kitschy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Kiwiana",
+        "prompt": "Kiwiana aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Knightcore",
+        "prompt": "Knightcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Kogal",
+        "prompt": "Kogal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Korean Cozy Beige",
+        "prompt": "Korean Cozy Beige aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Krushclub",
+        "prompt": "Krushclub aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Kuromicore",
+        "prompt": "Kuromicore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Labcore",
+        "prompt": "Labcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lagenlook",
+        "prompt": "Lagenlook aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Larme Kei",
+        "prompt": "Larme Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Larpercore",
+        "prompt": "Larpercore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "La Sape",
+        "prompt": "La Sape aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Las Movidas",
+        "prompt": "Las Movidas aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Laser Grid",
+        "prompt": "Laser Grid aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Late 2000s Elementary School",
+        "prompt": "Late 2000s Elementary School aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lichencore",
+        "prompt": "Lichencore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Light Academia",
+        "prompt": "Light Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lightcore",
+        "prompt": "Lightcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ligne Claire",
+        "prompt": "Ligne Claire style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lilac Femme",
+        "prompt": "Lilac Femme aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lil Girl",
+        "prompt": "Lil Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Liminal Space",
+        "prompt": "Liminal Space aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lit Kid",
+        "prompt": "Lit Kid aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Live Laugh Love",
+        "prompt": "Live Laugh Love aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lobotomy Chic",
+        "prompt": "Lobotomy Chic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lo-Fi",
+        "prompt": "Lo-Fi aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lolailo",
+        "prompt": "Lolailo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "LOLcore",
+        "prompt": "LOLcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lolita",
+        "prompt": "Lolita aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Long Island",
+        "prompt": "Long Island aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lounge",
+        "prompt": "Lounge aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lovecore",
+        "prompt": "Lovecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Low Poly",
+        "prompt": "Low Poly style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Lunarpunk",
+        "prompt": "Lunarpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Luxury",
+        "prompt": "Luxury aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mad Scientist",
+        "prompt": "Mad Scientist aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Magical Girl",
+        "prompt": "Magical Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Maid",
+        "prompt": "Maid aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Major League Gaming",
+        "prompt": "Major League Gaming aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mallgoth",
+        "prompt": "Mallgoth aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mall Ninja",
+        "prompt": "Mall Ninja aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mallsoft",
+        "prompt": "Mallsoft aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Malwarecore",
+        "prompt": "Malwarecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Manguebeat",
+        "prompt": "Manguebeat aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Manly Men",
+        "prompt": "Manly Men aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mary Sue",
+        "prompt": "Mary Sue aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Maximalism",
+        "prompt": "Maximalism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "McBling",
+        "prompt": "McBling aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Meatcore",
+        "prompt": "Meatcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Med-Tech Visions",
+        "prompt": "Med-Tech Visions aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Medicalcore",
+        "prompt": "Medicalcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Medieval",
+        "prompt": "Medieval aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Medieval Fantasy",
+        "prompt": "Medieval Fantasy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Melodycore",
+        "prompt": "Melodycore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Memphis Design",
+        "prompt": "Memphis Design style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Memphis Lite",
+        "prompt": "Memphis Lite aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Memphis Rap",
+        "prompt": "Memphis Rap aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mermaid",
+        "prompt": "Mermaid aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Messy French It Girl",
+        "prompt": "Messy French It Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Metal",
+        "prompt": "Metal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Metalcore",
+        "prompt": "Metalcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Metalheart",
+        "prompt": "Metalheart aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Metrosexual",
+        "prompt": "Metrosexual aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Miami Metro",
+        "prompt": "Miami Metro aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mid-Century Modern",
+        "prompt": "Mid-Century Modern aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Midwest Emo",
+        "prompt": "Midwest Emo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Midwest Gothic",
+        "prompt": "Midwest Gothic style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Milipili",
+        "prompt": "Milipili aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Military",
+        "prompt": "Military aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Milk",
+        "prompt": "Milk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mind Murder",
+        "prompt": "Mind Murder aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Miniature",
+        "prompt": "Miniature aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Minimalism",
+        "prompt": "Minimalism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Minivan Rock",
+        "prompt": "Minivan Rock aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Minivoid",
+        "prompt": "Minivoid aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Miscellaneous Academia",
+        "prompt": "Miscellaneous Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mizuiro",
+        "prompt": "Mizuiro aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mob Wife",
+        "prompt": "Mob Wife aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mod",
+        "prompt": "Mod aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Modernism",
+        "prompt": "Modernism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Modernisme",
+        "prompt": "Modernisme style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Moe",
+        "prompt": "Moe aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Moe Swag",
+        "prompt": "Moe Swag aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Monstercore",
+        "prompt": "Monstercore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Monumentality",
+        "prompt": "Monumentality aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mori Kei",
+        "prompt": "Mori Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Morute",
+        "prompt": "Morute aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mothcore",
+        "prompt": "Mothcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Motomami",
+        "prompt": "Motomami aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mossy",
+        "prompt": "Mossy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mote Kei",
+        "prompt": "Mote Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "MS Paint",
+        "prompt": "MS Paint style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "MTV Green Sky",
+        "prompt": "MTV Green Sky aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "MTV 2 Overcast",
+        "prompt": "MTV 2 Overcast aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mudéjar",
+        "prompt": "Mudéjar aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mulchcore",
+        "prompt": "Mulchcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Musical Academia",
+        "prompt": "Musical Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Mythpunk",
+        "prompt": "Mythpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nanchatte Seifuku",
+        "prompt": "Nanchatte Seifuku aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nanopunk",
+        "prompt": "Nanopunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Naturecore",
+        "prompt": "Naturecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nautical",
+        "prompt": "Nautical aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nautical Fantasy",
+        "prompt": "Nautical Fantasy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nazi Chic",
+        "prompt": "Nazi Chic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neon Noir",
+        "prompt": "Neon Noir aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Necrotrap",
+        "prompt": "Necrotrap aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neko",
+        "prompt": "Neko aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neo Baroque",
+        "prompt": "Neo Baroque style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neoclassicism",
+        "prompt": "Neoclassicism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neo-Breton Style",
+        "prompt": "Neo-Breton Style aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neo-Celtic",
+        "prompt": "Neo-Celtic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neo-Pop",
+        "prompt": "Neo-Pop aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neo-Romanism",
+        "prompt": "Neo-Romanism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neo-Tokyo",
+        "prompt": "Neo-Tokyo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neo-Tribal",
+        "prompt": "Neo-Tribal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neo-Vikings",
+        "prompt": "Neo-Vikings aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nerdcore",
+        "prompt": "Nerdcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neubrutalism",
+        "prompt": "Neubrutalism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Neumorphism",
+        "prompt": "Neumorphism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "New Age",
+        "prompt": "New Age aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "New England",
+        "prompt": "New England aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "New England Gothic",
+        "prompt": "New England Gothic style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "New Figuration",
+        "prompt": "New Figuration style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "New Hollywood",
+        "prompt": "New Hollywood aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "New Money",
+        "prompt": "New Money aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "New Romantic",
+        "prompt": "New Romantic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "New Spanish Catholic Girl",
+        "prompt": "New Spanish Catholic Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "New Wave",
+        "prompt": "New Wave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Night Luxe",
+        "prompt": "Night Luxe aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nintencore",
+        "prompt": "Nintencore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Normcore",
+        "prompt": "Normcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Northern Irish Muralism",
+        "prompt": "Northern Irish Muralism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Northerness",
+        "prompt": "Northerness aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nostalgiacore",
+        "prompt": "Nostalgiacore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Noucentisme",
+        "prompt": "Noucentisme aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nouveau Réalisme",
+        "prompt": "Nouveau Réalisme style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nuclear",
+        "prompt": "Nuclear aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nu-Goth",
+        "prompt": "Nu-Goth aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nu-Metal",
+        "prompt": "Nu-Metal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nu-Punk",
+        "prompt": "Nu-Punk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Nymphet",
+        "prompt": "Nymphet aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ocean Academia",
+        "prompt": "Ocean Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ocean Grunge",
+        "prompt": "Ocean Grunge aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Oceanpunk",
+        "prompt": "Oceanpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Office Siren",
+        "prompt": "Office Siren aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Offlinecore",
+        "prompt": "Offlinecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Olderbrothercore",
+        "prompt": "Olderbrothercore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Old Hollywood",
+        "prompt": "Old Hollywood aesthetic, {prompt}",
+        "negative_prompt": ""
+    }, 
+    {
+        "name": "Old Money",
+        "prompt": "Old Money aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Onii Kei",
+        "prompt": "Onii Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Opium",
+        "prompt": "Opium aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Oshare Kei",
+        "prompt": "Oshare Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Otaku",
+        "prompt": "Otaku aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "OtoMAD",
+        "prompt": "OtoMAD aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pachuco",
+        "prompt": "Pachuco aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pale Grunge",
+        "prompt": "Pale Grunge aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Paleocore",
+        "prompt": "Paleocore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Palewave",
+        "prompt": "Palewave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Paramilitary",
+        "prompt": "Paramilitary aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Party Animal",
+        "prompt": "Party Animal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pastel Academia",
+        "prompt": "Pastel Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pastel Gore",
+        "prompt": "Pastel Gore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pastel Goth",
+        "prompt": "Pastel Goth aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pastel Punk",
+        "prompt": "Pastel Punk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Peach",
+        "prompt": "Peach aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Peaky Blinders",
+        "prompt": "Peaky Blinders aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pearly",
+        "prompt": "Pearly aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "PEEPS",
+        "prompt": "PEEPS aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Peoplehood",
+        "prompt": "Peoplehood aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Petcore",
+        "prompt": "Petcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Phony Bureaucracy",
+        "prompt": "Phony Bureaucracy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Photorealism",
+        "prompt": "Photorealism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Picniccore",
+        "prompt": "Picniccore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pig in Jacuzzicore",
+        "prompt": "Pig in Jacuzzicore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pijo",
+        "prompt": "Pijo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pink Parisian",
+        "prompt": "Pink Parisian aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pink Pilates Princess",
+        "prompt": "Pink Pilates Princess aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pink Princess",
+        "prompt": "Pink Princess aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pin-up",
+        "prompt": "Pin-up aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pirate",
+        "prompt": "Pirate aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pixelboard",
+        "prompt": "Pixelboard aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pixel Cutie",
+        "prompt": "Pixel Cutie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pixel Medieval Fantasy",
+        "prompt": "Pixel Medieval Fantasy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pixel UI",
+        "prompt": "Pixel UI aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pixelscape",
+        "prompt": "Pixelscape aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pixiecore",
+        "prompt": "Pixiecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Plaguecore",
+        "prompt": "Plaguecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Plant Mom",
+        "prompt": "Plant Mom aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Playboy",
+        "prompt": "Playboy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Poetcore",
+        "prompt": "Poetcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pokemón",
+        "prompt": "Pokemón aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pont-Aven School",
+        "prompt": "Pont-Aven School style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Politicalwave",
+        "prompt": "Politicalwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Poolcore",
+        "prompt": "Poolcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pop Art",
+        "prompt": "Pop Art style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pop Kei",
+        "prompt": "Pop Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Poppare",
+        "prompt": "Poppare aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Post-Apocalyptic",
+        "prompt": "Post-Apocalyptic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Post-Impressionism",
+        "prompt": "Post-Impressionism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Post-Punk",
+        "prompt": "Post-Punk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Post-Rock",
+        "prompt": "Post-Rock aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Poster Gal",
+        "prompt": "Poster Gal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Powwow Step",
+        "prompt": "Powwow Step aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Prairie",
+        "prompt": "Prairie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Precisionism",
+        "prompt": "Precisionism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Prehistoric",
+        "prompt": "Prehistoric aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Preppy",
+        "prompt": "Preppy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pre-Raphaelite",
+        "prompt": "Pre-Raphaelite style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pretty Preppy",
+        "prompt": "Pretty Preppy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pride flags",
+        "prompt": "Pride flags aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Princecore",
+        "prompt": "Princecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Princesscore",
+        "prompt": "Princesscore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Printcore",
+        "prompt": "Printcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Prisoncore",
+        "prompt": "Prisoncore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Progressive Academia",
+        "prompt": "Progressive Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Proto-Flat Web",
+        "prompt": "Proto-Flat Web aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Psychedelica",
+        "prompt": "Psychedelica aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Psychonaut",
+        "prompt": "Psychonaut aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "PSY-OP Girl",
+        "prompt": "PSY-OP Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Punk",
+        "prompt": "Punk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Purism",
+        "prompt": "Purism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Quality Tumblr",
+        "prompt": "Quality Tumblr aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Queencore",
+        "prompt": "Queencore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Queer Academia",
+        "prompt": "Queer Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Queercore",
+        "prompt": "Queercore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Queer Villainy",
+        "prompt": "Queer Villainy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "R&B",
+        "prompt": "R&B aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Racaille",
+        "prompt": "Racaille aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rage HD",
+        "prompt": "Rage HD aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rainbowcore",
+        "prompt": "Rainbowcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rainy Day",
+        "prompt": "Rainy Day aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Randumb",
+        "prompt": "Randumb aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rangercore",
+        "prompt": "Rangercore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ravencore",
+        "prompt": "Ravencore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Raver",
+        "prompt": "Raver aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Raxet",
+        "prompt": "Raxet aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Raygun Gothic",
+        "prompt": "Raygun Gothic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Real Life Super Hero",
+        "prompt": "Real Life Super Hero aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Realism",
+        "prompt": "Realism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rebel Academia",
+        "prompt": "Rebel Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Red Academia",
+        "prompt": "Red Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Reefwave",
+        "prompt": "Reefwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Regency",
+        "prompt": "Regency aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Reggaetonero",
+        "prompt": "Reggaetonero aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Regional Gothic",
+        "prompt": "Regional Gothic style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Renewable Corporate Futurism",
+        "prompt": "Renewable Corporate Futurism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Retro Fairycore",
+        "prompt": "Retro Fairycore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Retro-Futurism",
+        "prompt": "Retro-Futurism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Revcore",
+        "prompt": "Revcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Revengecore",
+        "prompt": "Revengecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Riot Grrrl",
+        "prompt": "Riot Grrrl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Riotwave",
+        "prompt": "Riotwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rivethead",
+        "prompt": "Rivethead aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Roaring 20s",
+        "prompt": "Roaring 20s aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Robotcore",
+        "prompt": "Robotcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Robotics Kids",
+        "prompt": "Robotics Kids aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rock",
+        "prompt": "Rock aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rockabilly",
+        "prompt": "Rockabilly aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rocketpunk",
+        "prompt": "Rocketpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rockstar GF",
+        "prompt": "Rockstar GF aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rococo",
+        "prompt": "Rococo style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Roguecore",
+        "prompt": "Roguecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rollerwave",
+        "prompt": "Rollerwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Romanesque",
+        "prompt": "Romanesque style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Romantic Academia",
+        "prompt": "Romantic Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Romantic Chinese Village",
+        "prompt": "Romantic Chinese Village aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Romantic Goth",
+        "prompt": "Romantic Goth aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Romanticism",
+        "prompt": "Romanticism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Romantic Italian",
+        "prompt": "Romantic Italian aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rotcore",
+        "prompt": "Rotcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Royalcore",
+        "prompt": "Royalcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rubberhose",
+        "prompt": "Rubberhose style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Rustic",
+        "prompt": "Rustic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sacricore",
+        "prompt": "Sacricore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sad Beige",
+        "prompt": "Sad Beige aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sadpeople",
+        "prompt": "Sadpeople aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Saint Patrick's Day",
+        "prompt": "Saint Patrick's Day aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Salon Kei",
+        "prompt": "Salon Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Salvagepunk",
+        "prompt": "Salvagepunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sandalpunk",
+        "prompt": "Sandalpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sanriocore",
+        "prompt": "Sanriocore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Scandi Girl Winter",
+        "prompt": "Scandi Girl Winter aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Scandinavian Design",
+        "prompt": "Scandinavian Design aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Scene",
+        "prompt": "Scene aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Scene Tween",
+        "prompt": "Scene Tween aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "School Anti-Bullying Positivity Reinforcement",
+        "prompt": "School Anti-Bullying Positivity Reinforcement aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Science Academia",
+        "prompt": "Science Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Scottish Highlands",
+        "prompt": "Scottish Highlands aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Scoutcore",
+        "prompt": "Scoutcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Scrapbook",
+        "prompt": "Scrapbook aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Scrapper",
+        "prompt": "Scrapper aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Seapunk",
+        "prompt": "Seapunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sega Uranus",
+        "prompt": "Sega Uranus aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Seiz Breur",
+        "prompt": "Seiz Breur aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Selkiecore",
+        "prompt": "Selkiecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sextrance",
+        "prompt": "Sextrance aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Shabby Chic",
+        "prompt": "Shabby Chic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Shamate",
+        "prompt": "Shamate aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Shanzhai",
+        "prompt": "Shanzhai aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sharpies",
+        "prompt": "Sharpies aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Shibuya Punk",
+        "prompt": "Shibuya Punk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Shiny Suit 97",
+        "prompt": "Shiny Suit 97 aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Shironuri",
+        "prompt": "Shironuri aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Shoe Diva",
+        "prompt": "Shoe Diva aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Shoegaze",
+        "prompt": "Shoegaze aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Shoujo",
+        "prompt": "Shoujo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sigilkore",
+        "prompt": "Sigilkore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sigma",
+        "prompt": "Sigma aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Signalism",
+        "prompt": "Signalism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "SK8",
+        "prompt": "SK8 aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Silicon Dreams",
+        "prompt": "Silicon Dreams aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Silkpunk",
+        "prompt": "Silkpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Simplecore",
+        "prompt": "Simplecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Silly",
+        "prompt": "Silly aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sizz",
+        "prompt": "Sizz aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Skater",
+        "prompt": "Skater aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Skeuomorphism",
+        "prompt": "Skeuomorphism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Skinheads",
+        "prompt": "Skinheads aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Slam Pop",
+        "prompt": "Slam Pop aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Slimepunk",
+        "prompt": "Slimepunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sloanie",
+        "prompt": "Sloanie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sleepycore",
+        "prompt": "Sleepycore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Slutcore",
+        "prompt": "Slutcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Snackwave",
+        "prompt": "Snackwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Snow Bunny",
+        "prompt": "Snow Bunny aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Snowdrop",
+        "prompt": "Snowdrop aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Social Science Academia",
+        "prompt": "Social Science Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Socialist Realism",
+        "prompt": "Socialist Realism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Soft Apocalypse",
+        "prompt": "Soft Apocalypse aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Soft Colonial Wanderlust",
+        "prompt": "Soft Colonial Wanderlust aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Soft Countriana",
+        "prompt": "Soft Countriana aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Soft Grunge",
+        "prompt": "Soft Grunge aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Softie",
+        "prompt": "Softie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Soft Indie",
+        "prompt": "Soft Indie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Soft Macabre",
+        "prompt": "Soft Macabre aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Soft Morningcore",
+        "prompt": "Soft Morningcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Soggy",
+        "prompt": "Soggy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Solarpunk",
+        "prompt": "Solarpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "So Retro",
+        "prompt": "So Retro aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Southern Belle",
+        "prompt": "Southern Belle aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Southern Gothic",
+        "prompt": "Southern Gothic style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Soviet Bloc School",
+        "prompt": "Soviet Bloc School aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Soviet Brutalism",
+        "prompt": "Soviet Brutalism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Soviet Nostalgia",
+        "prompt": "Soviet Nostalgia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sovietwave",
+        "prompt": "Sovietwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Spacecore",
+        "prompt": "Spacecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Spanish Golden Age",
+        "prompt": "Spanish Golden Age aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sparklecore",
+        "prompt": "Sparklecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Spiritcore",
+        "prompt": "Spiritcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Spriggancore",
+        "prompt": "Spriggancore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Spring",
+        "prompt": "Spring aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Spy Fiction",
+        "prompt": "Spy Fiction style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Stargirl",
+        "prompt": "Stargirl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Starrflesh",
+        "prompt": "Starrflesh aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Steampunk",
+        "prompt": "Steampunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Steelpunk",
+        "prompt": "Steelpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Stellar Scholar",
+        "prompt": "Stellar Scholar aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Stilyagi",
+        "prompt": "Stilyagi aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Stimwave",
+        "prompt": "Stimwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Stonepunk",
+        "prompt": "Stonepunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Stoner",
+        "prompt": "Stoner aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Strega",
+        "prompt": "Strega aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Stripcore",
+        "prompt": "Stripcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Studyblr",
+        "prompt": "Studyblr aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Studyplace",
+        "prompt": "Studyplace aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Suburban Gothic",
+        "prompt": "Suburban Gothic style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sukeban",
+        "prompt": "Sukeban aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Summer",
+        "prompt": "Summer aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+   
+   {
+        "name": "Suprematism",
+        "prompt": "Suprematism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Surf Crush",
+        "prompt": "Surf Crush aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Surfer",
+        "prompt": "Surfer aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Surrealism",
+        "prompt": "Surrealism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Surreal Memer",
+        "prompt": "Surreal Memer aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Sweet Lolita",
+        "prompt": "Sweet Lolita aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Swenkas",
+        "prompt": "Swenkas aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Swordpunk",
+        "prompt": "Swordpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Synthwave",
+        "prompt": "Synthwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tacticool",
+        "prompt": "Tacticool aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Taisho Roman",
+        "prompt": "Taisho Roman aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Takenokozoku",
+        "prompt": "Takenokozoku aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tango",
+        "prompt": "Tango aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Teamer",
+        "prompt": "Teamer aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Technical Scene",
+        "prompt": "Technical Scene aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Technocore",
+        "prompt": "Technocore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Technoneko2000",
+        "prompt": "Technoneko2000 aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Technozen",
+        "prompt": "Technozen aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Techwear",
+        "prompt": "Techwear aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tecktonik",
+        "prompt": "Tecktonik aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Teddy Boys",
+        "prompt": "Teddy Boys aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Teenage Dream",
+        "prompt": "Teenage Dream aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Teenagers in the Woods",
+        "prompt": "Teenagers in the Woods aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Teenpunk",
+        "prompt": "Teenpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Teenqueen",
+        "prompt": "Teenqueen aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Telstracore",
+        "prompt": "Telstracore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tendercore",
+        "prompt": "Tendercore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Terrorwave",
+        "prompt": "Terrorwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Teslapunk",
+        "prompt": "Teslapunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "TGIF Crush",
+        "prompt": "TGIF Crush aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "That Girl",
+        "prompt": "That Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Theatre Academia",
+        "prompt": "Theatre Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Theatre Kid",
+        "prompt": "Theatre Kid aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The Box 96",
+        "prompt": "The Box 96 aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "The WB Crush",
+        "prompt": "The WB Crush aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Thrasher",
+        "prompt": "Thrasher aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Thriftcore",
+        "prompt": "Thriftcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tiki",
+        "prompt": "Tiki aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tinkercore",
+        "prompt": "Tinkercore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tinycore",
+        "prompt": "Tinycore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tomato Girl Summer",
+        "prompt": "Tomato Girl Summer aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tomboy",
+        "prompt": "Tomboy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Total Afternoon Live",
+        "prompt": "Total Afternoon Live aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Toxiccore",
+        "prompt": "Toxiccore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Trad Goth",
+        "prompt": "Trad Goth aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Trailer Park Princess",
+        "prompt": "Trailer Park Princess aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tranquil Spa Graphics",
+        "prompt": "Tranquil Spa Graphics aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Trap Metal",
+        "prompt": "Trap Metal aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Trashcore",
+        "prompt": "Trashcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Trashy Raver",
+        "prompt": "Trashy Raver aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Traumacore",
+        "prompt": "Traumacore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Trenchcore",
+        "prompt": "Trenchcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Trillwave",
+        "prompt": "Trillwave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Triple Chic",
+        "prompt": "Triple Chic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tropical",
+        "prompt": "Tropical aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tropicalcore",
+        "prompt": "Tropicalcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tropical Disco",
+        "prompt": "Tropical Disco aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tumblewave",
+        "prompt": "Tumblewave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tupinipunk",
+        "prompt": "Tupinipunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tuscan Rustic",
+        "prompt": "Tuscan Rustic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Twee",
+        "prompt": "Twee aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tweencore",
+        "prompt": "Tweencore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Twilightcore",
+        "prompt": "Twilightcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ukiyo-e",
+        "prompt": "Ukiyo-e style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ukrainian New Wave",
+        "prompt": "Ukrainian New Wave aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ultra-Realistic Meme",
+        "prompt": "Ultra-Realistic Meme aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ultraviolet Crush",
+        "prompt": "Ultraviolet Crush aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Ulzzang",
+        "prompt": "Ulzzang aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Unicorncore",
+        "prompt": "Unicorncore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Uptown Girl",
+        "prompt": "Uptown Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Urbancore",
+        "prompt": "Urbancore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Urban Fantasy",
+        "prompt": "Urban Fantasy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "UrBling",
+        "prompt": "UrBling aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Utopian Scholastic",
+        "prompt": "Utopian Scholastic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Victorian Urban Poverty",
+        "prompt": "Victorian Urban Poverty aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Viking",
+        "prompt": "Viking aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Villagecore",
+        "prompt": "Villagecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Villaincore",
+        "prompt": "Villaincore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Vintage Americana",
+        "prompt": "Vintage Americana aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Vintage British Sportsman",
+        "prompt": "Vintage British Sportsman aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Vintage Hero",
+        "prompt": "Vintage Hero aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Violencecore",
+        "prompt": "Violencecore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Virgo's Tears",
+        "prompt": "Virgo's Tears aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Visual Kei",
+        "prompt": "Visual Kei aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Visual Pollution",
+        "prompt": "Visual Pollution aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Voidcore",
+        "prompt": "Voidcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Void-Meme",
+        "prompt": "Void-Meme aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Voidpunk",
+        "prompt": "Voidpunk aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Vorticism",
+        "prompt": "Vorticism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "VSCO",
+        "prompt": "VSCO aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "VSCO Preppy",
+        "prompt": "VSCO Preppy aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Vulture Culture",
+        "prompt": "Vulture Culture aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wabi-Sabi",
+        "prompt": "Wabi-Sabi aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Waif",
+        "prompt": "Waif aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Waldorf",
+        "prompt": "Waldorf aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wanderlust",
+        "prompt": "Wanderlust aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Warmcore",
+        "prompt": "Warmcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Weathercore",
+        "prompt": "Weathercore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Webcore",
+        "prompt": "Webcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Web Creep",
+        "prompt": "Web Creep aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Weeaboo",
+        "prompt": "Weeaboo aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Weirdcore",
+        "prompt": "Weirdcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Welwitschia Goth",
+        "prompt": "Welwitschia Goth aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Werewolf",
+        "prompt": "Werewolf aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Western",
+        "prompt": "Western aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wetcore",
+        "prompt": "Wetcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Whimsical Coquette",
+        "prompt": "Whimsical Coquette aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Whimsicraft",
+        "prompt": "Whimsicraft aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Whimsigothic",
+        "prompt": "Whimsigothic aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wholesome Meme",
+        "prompt": "Wholesome Meme aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wild Child",
+        "prompt": "Wild Child aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wimmelbilderbuch",
+        "prompt": "Wimmelbilderbuch style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Winter",
+        "prompt": "Winter aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Winter Academia",
+        "prompt": "Winter Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Winter Fairy Coquette",
+        "prompt": "Winter Fairy Coquette aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Witchcore",
+        "prompt": "Witchcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Witch House",
+        "prompt": "Witch House aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Witchy Academia",
+        "prompt": "Witchy Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wixa",
+        "prompt": "Wixa aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wizardcore",
+        "prompt": "Wizardcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wizardposting",
+        "prompt": "Wizardposting aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wonderland",
+        "prompt": "Wonderland aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Word Cloud",
+        "prompt": "Word Cloud aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wormcore",
+        "prompt": "Wormcore aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wota",
+        "prompt": "Wota aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Writer Academia",
+        "prompt": "Writer Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wuxia",
+        "prompt": "Wuxia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "XO",
+        "prompt": "XO aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Xpiritualism",
+        "prompt": "Xpiritualism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Y2K",
+        "prompt": "Y2K aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Y2K Futurism",
+        "prompt": "Y2K Futurism aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Yakuza",
+        "prompt": "Yakuza aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Yami Kawaii",
+        "prompt": "Yami Kawaii aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Yandere",
+        "prompt": "Yandere aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Yanki",
+        "prompt": "Yanki aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Yellow Academia",
+        "prompt": "Yellow Academia aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Yé-yé Girl",
+        "prompt": "Yé-yé Girl aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Yōkai",
+        "prompt": "Yōkai aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Youthquake",
+        "prompt": "Youthquake aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Yume Kawaii",
+        "prompt": "Yume Kawaii aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Yuppie",
+        "prompt": "Yuppie aesthetic, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Zenitism",
+        "prompt": "Zenitism style, {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Zombie Apocalypse",
+        "prompt": "Zombie Apocalypse aesthetic, {prompt}",
+        "negative_prompt": ""
     }
 ]
-

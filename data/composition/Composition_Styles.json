@@ -53,5 +53,685 @@
         "name": "Texture (Surface quality of objects)",
         "prompt": "texture {prompt}",
         "negative_prompt": "smooth"
+    },
+    {
+        "name": "Lush Greenery",
+        "prompt": "A composition featuring {prompt}, highlighting (vibrant green foliage, blurred leaves, natural light)",
+        "negative_prompt": "arid landscapes, barren environments, artificial plants"
+    },
+    {
+        "name": "Geometric Tiles",
+        "prompt": "A composition showcasing {prompt}, featuring (repeating geometric patterns, contrasting colors, modern aesthetic)",
+        "negative_prompt": "organic shapes, irregular patterns, chaotic arrangements"
+    },
+    {
+        "name": "Urban Grit",
+        "prompt": "A composition capturing {prompt}, highlighting (graffiti art, weathered surfaces, industrial elements, urban decay)",
+        "negative_prompt": "pristine environments, manicured landscapes, rural settings"
+    },
+    {
+        "name": "Empty Arena",
+        "prompt": "A composition featuring an {prompt}, highlighting (vast, empty space, echoing silence, anticipation, sporting venue)",
+        "negative_prompt": "crowded spaces, lively atmosphere, bustling activity"
+    },
+    {
+        "name": "Textured White",
+        "prompt": "A composition showcasing a {prompt} wall, highlighting (subtle textures, interplay of light and shadow, minimalist aesthetic)",
+        "negative_prompt": "smooth surfaces, vibrant colors, busy patterns"
+    },
+    {
+        "name": "Yacht Interior",
+        "prompt": "A composition featuring a {prompt}, highlighting (luxurious cabin, nautical details, neutral colors, serene ambiance)",
+        "negative_prompt": "rustic interiors, cluttered spaces, dark colors"
+    },
+    {
+        "name": "Luxurious Bathroom",
+        "prompt": "A composition showcasing a {prompt}, highlighting (marble surfaces, elegant bathtub, opulent décor, spa-like atmosphere)",
+        "negative_prompt": "simple bathrooms, utilitarian fixtures, cluttered spaces"
+    },
+    {
+        "name": "White Brick Serenity",
+        "prompt": "A composition featuring a {prompt} wall, highlighting (classic texture, soft shadows, peaceful ambiance)",
+        "negative_prompt": "vibrant colors, bold patterns, chaotic arrangements"
+    },
+    {
+        "name": "Waterfront View",
+        "prompt": "A composition showcasing a {prompt}, highlighting (blurred marina, wooden cabinetry, nautical details, sense of tranquility)",
+        "negative_prompt": "urban landscapes, industrial settings, cluttered interiors"
+    },
+    {
+        "name": "Black and White Architecture",
+        "prompt": "A composition featuring a {prompt} door and wall, highlighting (stark contrast, bold geometry, minimalist aesthetic)",
+        "negative_prompt": "vibrant colors, organic shapes, chaotic arrangements"
+    },
+    {
+        "name": "Boxing Gym",
+        "prompt": "A composition capturing the energy of a {prompt}, highlighting (hanging punching bags, scattered equipment, gritty atmosphere)",
+        "negative_prompt": "pristine gyms, modern equipment, sterile environments"
+    },
+    {
+        "name": "Tropical Paradise",
+        "prompt": "A composition showcasing a {prompt}, highlighting (sunlit waterfront, architectural columns, lush tropical plants, exotic ambiance)",
+        "negative_prompt": "urban landscapes, industrial settings, cold climates"
+    },
+    {
+        "name": "Neon Nights",
+        "prompt": "A composition featuring a {prompt}, highlighting (graphic door sign, vibrant neon lights, moody ambiance, urban nightlife)",
+        "negative_prompt": "natural light, pastel colors, serene settings"
+    },
+    {
+        "name": "Wooden Retreat",
+        "prompt": "A composition showcasing {prompt}, highlighting (natural textures, blurred furnishings, soft natural light, tranquil ambiance)",
+        "negative_prompt": "modern interiors, metallic surfaces, harsh lighting"
+    },
+    {
+        "name": "White Archway",
+        "prompt": "A composition featuring a {prompt}, highlighting (elegant architecture, outdoor setting, framed view, sense of grandeur)",
+        "negative_prompt": "modern structures, cluttered backgrounds, chaotic compositions"
+    },
+    {
+        "name": "Minimalist Architecture",
+        "prompt": "A composition showcasing {prompt}, highlighting (clean lines, white walls, open spaces, uncluttered aesthetic)",
+        "negative_prompt": "ornate details, excessive decoration, cluttered environments"
+    },
+    {
+        "name": "Rocky Wilderness",
+        "prompt": "A composition featuring {prompt}, highlighting (rugged terrain, blurred foliage, natural beauty)",
+        "negative_prompt": "urban landscapes, manicured gardens, artificial environments"
+    },
+    {
+        "name": "Open Invitation",
+        "prompt": "A composition showcasing an {prompt}, highlighting (transitional space, blurred background, inviting atmosphere, sense of mystery)",
+        "negative_prompt": "closed doors, barriers, obstructed views"
+    },
+    {
+        "name": "Coastal Serenity",
+        "prompt": "A composition featuring a {prompt}, highlighting (clear sky, expansive ocean, lush landscape, tranquil ambiance)",
+        "negative_prompt": "urban landscapes, industrial settings, chaotic compositions"
+    },
+    {
+        "name": "Yoga Sanctuary",
+        "prompt": "A composition showcasing a {prompt}, highlighting (pale wall, potted plant, yoga mat, tranquil atmosphere, minimalist aesthetic)",
+        "negative_prompt": "cluttered spaces, vibrant colors, busy patterns"
+    },
+    {
+        "name": "Overcast Marina",
+        "prompt": "A composition featuring an {prompt}, highlighting (moody atmosphere, soft light, blurred boats, tranquil waterfront)",
+        "negative_prompt": "bright sunshine, clear skies, vibrant colors"
+    },
+    {
+        "name": "Soft Hues",
+        "prompt": "A composition showcasing {prompt}, highlighting (sheer curtains, diffused lighting, muted colors, peaceful ambiance)",
+        "negative_prompt": "vibrant colors, harsh lighting, cluttered spaces"
+    },
+    {
+        "name": "Green Oasis",
+        "prompt": "A composition featuring a {prompt}, highlighting (lush foliage, blurred leaves, natural beauty, sense of tranquility)",
+        "negative_prompt": "arid landscapes, barren environments, artificial plants"
+    },
+    {
+        "name": "Snowy Cabin",
+        "prompt": "A composition showcasing a {prompt}, highlighting (snowy landscape, pine trees, rustic charm, winter wonderland)",
+        "negative_prompt": "tropical settings, urban landscapes, summer scenes"
+    },
+    {
+        "name": "Minimalist Interior",
+        "prompt": "A composition featuring a {prompt}, highlighting (neutral walls, simple furnishings, uncluttered space, sense of calm)",
+        "negative_prompt": "ornate décor, cluttered spaces, vibrant colors"
+    },
+    {
+        "name": "Window View",
+        "prompt": "A composition showcasing a {prompt}, highlighting (blurred indoors, muted colors, glimpse of the outside world)",
+        "negative_prompt": "expansive landscapes, clear views, vibrant colors"
+    },
+    {
+        "name": "Beach Pier",
+        "prompt": "A composition featuring a {prompt}, highlighting (sandy beach, ocean waves, pier structure, coastal ambiance)",
+        "negative_prompt": "mountain landscapes, urban settings, enclosed spaces"
+    },
+    {
+        "name": "Cloudy Beach",
+        "prompt": "A composition showcasing a {prompt}, highlighting (overcast sky, calm sea, muted colors, peaceful ambiance)",
+        "negative_prompt": "bright sunshine, clear skies, vibrant colors"
+    },
+    {
+        "name": "City Reflections",
+        "prompt": "A composition featuring {prompt}, highlighting (nighttime cityscape, window reflections, urban glow, contemplative mood)",
+        "negative_prompt": "natural landscapes, daytime scenes, vibrant colors"
+    },
+    {
+        "name": "Purple Pool",
+        "prompt": "A composition showcasing an {prompt}, highlighting (illuminated pool, purple lighting, nighttime ambiance, luxurious setting)",
+        "negative_prompt": "natural light, daytime scenes, simple pools"
+    },
+    {
+        "name": "Modern Living",
+        "prompt": "A composition featuring a {prompt}, highlighting (neutral colors, framed artwork, minimalist furniture, sophisticated ambiance)",
+        "negative_prompt": "rustic interiors, cluttered spaces, vibrant colors"
+    },
+    {
+        "name": "Textured Minimalism",
+        "prompt": "A composition showcasing a {prompt} wall, highlighting (subtle textures, outdoor lighting, minimalist aesthetic)",
+        "negative_prompt": "smooth surfaces, vibrant colors, busy patterns"
+    },
+    {
+        "name": "Calm Beach",
+        "prompt": "A composition featuring a {prompt}, highlighting (tranquil water, overcast sky, sandy beach, distant sunshades, peaceful ambiance)",
+        "negative_prompt": "rough seas, stormy weather, bustling beach scenes"
+    },
+    {
+        "name": "Artistic Space",
+        "prompt": "A composition showcasing an {prompt}, highlighting (white sculptures, classical columns, diffuse natural light, creative atmosphere)",
+        "negative_prompt": "cluttered studios, industrial settings, harsh lighting"
+    },
+    {
+        "name": "Urban Geometry",
+        "prompt": "A composition featuring {prompt}, highlighting (geometric structures, blurred background, overcast lighting, urban landscape)",
+        "negative_prompt": "natural landscapes, organic shapes, vibrant colors"
+    },
+    {
+        "name": "Modern Sculpture",
+        "prompt": "A composition showcasing a {prompt}, highlighting (clear sky, reflective water, angular architecture, urban setting, artistic statement)",
+        "negative_prompt": "classical sculptures, natural landscapes, rustic settings"
+    },
+    {
+        "name": "Blue Gym",
+        "prompt": "A composition featuring a {prompt}, highlighting (blurred equipment, blue lighting, dark ambiance, focused energy)",
+        "negative_prompt": "brightly lit gyms, natural light, colorful settings"
+    },
+    {
+        "name": "Glowing Edge",
+        "prompt": "A composition showcasing a {prompt}, highlighting (dark blue backdrop, subtle texture, abstract design, minimalist aesthetic)",
+        "negative_prompt": "vibrant colors, complex patterns, cluttered compositions"
+    },
+    {
+        "name": "Minimalist Art",
+        "prompt": "A composition featuring {prompt}, highlighting (white walls, simple artwork, clean lines, uncluttered aesthetic)",
+        "negative_prompt": "ornate décor, vibrant colors, cluttered spaces"
+    },
+    {
+        "name": "Relaxed Interior",
+        "prompt": "A composition showcasing an {prompt}, highlighting (patterned walls, wooden furniture, soft lighting, tranquil ambiance)",
+        "negative_prompt": "minimalist interiors, metallic surfaces, harsh lighting"
+    },
+    {
+        "name": "Coastal Vista",
+        "prompt": "A composition featuring a {prompt}, highlighting (lush greenery, terracotta roofs, hazy skyline, Mediterranean charm)",
+        "negative_prompt": "urban landscapes, industrial settings, cold climates"
+    },
+    {
+        "name": "Green Living",
+        "prompt": "A composition showcasing {prompt}, highlighting (indoor plants, dark couch, tiled floor, bright lighting, natural elements)",
+        "negative_prompt": "sterile interiors, minimalist décor, artificial plants"
+    },
+    {
+        "name": "Parking Garage",
+        "prompt": "A composition featuring a {prompt}, highlighting (concrete pillars, shadow patterns, industrial aesthetic, urban infrastructure)",
+        "negative_prompt": "natural landscapes, open spaces, vibrant colors"
+    },
+    {
+        "name": "Urban Steps",
+        "prompt": "A composition showcasing {prompt}, highlighting (building facade, flowering plants, urban architecture, outdoor space)",
+        "negative_prompt": "natural landscapes, rural settings, indoor spaces"
+    },
+    {
+        "name": "Blurred Outdoors",
+        "prompt": "A composition featuring a {prompt}, highlighting (muted colors, soft focus, natural elements, tranquil ambiance)",
+        "negative_prompt": "sharp details, vibrant colors, urban settings"
+    },
+    {
+        "name": "Floral Embrace",
+        "prompt": "A composition showcasing {prompt}, highlighting (blossoming flowers, blurred greenery, natural beauty, romantic ambiance)",
+        "negative_prompt": "arid landscapes, barren environments, artificial plants"
+    },
+    {
+        "name": "Tropical Gateway",
+        "prompt": "A composition featuring {prompt}, highlighting (glass doors, lush tropical trees, clear sky, inviting entrance)",
+        "negative_prompt": "urban landscapes, industrial settings, closed doors"
+    },
+    {
+        "name": "Neutral Simplicity",
+        "prompt": "A composition showcasing a {prompt}, highlighting (minimal shadows, muted colors, uncluttered aesthetic)",
+        "negative_prompt": "vibrant colors, busy patterns, chaotic arrangements"
+    },
+    {
+        "name": "Stairway Ascent",
+        "prompt": "A composition featuring a {prompt}, highlighting (indoor lighting, neutral colors, upward movement, architectural detail)",
+        "negative_prompt": "outdoor settings, chaotic compositions, vibrant colors"
+    },
+    {
+        "name": "Soft Illumination",
+        "prompt": "A composition showcasing a {prompt}, highlighting (neutral color, minimal shadows, soft lighting, serene ambiance)",
+        "negative_prompt": "harsh lighting, vibrant colors, busy patterns"
+    },
+    {
+        "name": "Industrial Night",
+        "prompt": "A composition featuring an {prompt}, highlighting (nighttime ambiance, artificial lighting, parking area, urban infrastructure)",
+        "negative_prompt": "natural landscapes, daytime scenes, rural settings"
+    },
+    {
+        "name": "Minimalist Plant",
+        "prompt": "A composition showcasing a {prompt}, highlighting (neutral walls, minimalistic décor, potted plant, simple elegance)",
+        "negative_prompt": "ornate décor, cluttered spaces, vibrant colors"
+    },
+    {
+        "name": "Green Accent",
+        "prompt": "A composition featuring {prompt}, highlighting (neutral-colored walls, indoor setting, plant on side, touch of nature)",
+        "negative_prompt": "outdoor settings, barren environments, artificial plants"
+    },
+    {
+        "name": "Sunlit Boat",
+        "prompt": "A composition showcasing a {prompt}, highlighting (clear skies, sparkling water, sunlit scene, sense of freedom)",
+        "negative_prompt": "overcast skies, stormy seas, enclosed spaces"
+    },
+    {
+        "name": "Indoor Greenery",
+        "prompt": "A composition featuring {prompt}, highlighting (plain wall, wooden floor, potted plant, natural element, indoor setting)",
+        "negative_prompt": "outdoor settings, barren environments, artificial plants"
+    },
+    {
+        "name": "Surf's Up",
+        "prompt": "A composition showcasing {prompt}, highlighting (white stairs, surfboard overhead, outdoor setting, beach lifestyle)",
+        "negative_prompt": "urban landscapes, indoor settings, winter scenes"
+    },
+    {
+        "name": "Green Hues",
+        "prompt": "A composition featuring {prompt}, highlighting (decorative artwork, ambient lighting, moody ambiance)",
+        "negative_prompt": "vibrant colors, bright lighting, minimalist décor"
+    },
+    {
+        "name": "Neutral Minimalism",
+        "prompt": "A composition showcasing a {prompt}, highlighting (indoor setting, minimal detail, uncluttered aesthetic)",
+        "negative_prompt": "ornate décor, vibrant colors, cluttered spaces"
+    },
+    {
+        "name": "Green Retreat",
+        "prompt": "A composition featuring {prompt}, highlighting (outdoor setting, foliage, shaded area, tranquil ambiance)",
+        "negative_prompt": "urban landscapes, indoor settings, bustling environments"
+    },
+    {
+        "name": "Wooden Serenity",
+        "prompt": "A composition showcasing {prompt}, highlighting (outdoor setting, blurred greenery, natural textures, peaceful ambiance)",
+        "negative_prompt": "urban landscapes, industrial settings, chaotic compositions"
+    },
+    {
+        "name": "Ocean Horizon",
+        "prompt": "A composition featuring the {prompt}, highlighting (blue sky, calm sea, boat deck, sense of freedom)",
+        "negative_prompt": "overcast skies, stormy seas, enclosed spaces"
+    },
+    {
+        "name": "Stone and Curtains",
+        "prompt": "A composition showcasing a {prompt}, highlighting (rustic textures, soft drapery, indoor lighting, cozy ambiance)",
+        "negative_prompt": "minimalist interiors, metallic surfaces, harsh lighting"
+    },
+    {
+        "name": "Red Car",
+        "prompt": "A composition featuring a {prompt}, highlighting (blurred movement, sunlit ambiance, sense of speed and energy)",
+        "negative_prompt": "static cars, dark interiors, dull colors"
+    },
+    {
+        "name": "White Structure",
+        "prompt": "A composition showcasing a {prompt}, highlighting (sunny sky, outdoor setting, partially cloudy, architectural details)",
+        "negative_prompt": "indoor settings, nighttime scenes, cluttered backgrounds"
+    },
+    {
+        "name": "Yacht View",
+        "prompt": "A composition featuring a {prompt}, highlighting (blue sky, ocean view, seated pose, sense of relaxation and luxury)",
+        "negative_prompt": "urban landscapes, indoor settings, crowded spaces"
+    },
+    {
+        "name": "White Minimalism",
+        "prompt": "A composition showcasing a {prompt}, highlighting (sheer curtains, window blinds, minimalist style, serene ambiance)",
+        "negative_prompt": "vibrant colors, ornate décor, cluttered spaces"
+    },
+    {
+        "name": "Daylight Minimalism",
+        "prompt": "A composition featuring {prompt}, highlighting (large windows, minimalist décor, outdoor view, bright and airy space)",
+        "negative_prompt": "dark interiors, cluttered spaces, artificial light"
+    },
+    {
+        "name": "Natural Foliage",
+        "prompt": "A composition showcasing {prompt}, highlighting (outdoor setting, blurred greenery, natural light, organic beauty)",
+        "negative_prompt": "urban landscapes, indoor settings, artificial plants"
+    },
+    {
+        "name": "Leather Interior",
+        "prompt": "A composition featuring a {prompt}, highlighting (black leather seats, diamond pattern stitching, luxurious details)",
+        "negative_prompt": "fabric seats, simple interiors, dull colors"
+    },
+    {
+        "name": "Neutral Tranquility",
+        "prompt": "A composition showcasing {prompt}, highlighting (indoor setting, minimalist décor, soft lighting, peaceful ambiance)",
+        "negative_prompt": "vibrant colors, ornate décor, cluttered spaces"
+    },
+    {
+        "name": "Arched Foliage",
+        "prompt": "A composition featuring an {prompt}, highlighting (blurred foliage, outdoor setting, sense of depth and perspective)",
+        "negative_prompt": "modern structures, indoor settings, cluttered backgrounds"
+    },
+    {
+        "name": "Outdoor Luxury",
+        "prompt": "A composition showcasing {prompt}, highlighting (white umbrellas, patio chairs, Moët & Chandon bottle, luxurious setting)",
+        "negative_prompt": "indoor settings, simple furniture, casual ambiance"
+    },
+    {
+        "name": "Mirrored Reflections",
+        "prompt": "A composition featuring {prompt}, highlighting (indoor setting, soft lighting, sense of spaciousness and illusion)",
+        "negative_prompt": "outdoor settings, harsh lighting, minimalist décor"
+    },
+    {
+        "name": "Sunny Beach",
+        "prompt": "A composition showcasing a {prompt}, highlighting (blurred waves, clear sky, vibrant colors, summer vibes)",
+        "negative_prompt": "overcast skies, stormy seas, winter scenes"
+    },
+    {
+        "name": "Blurred Interior",
+        "prompt": "A composition featuring a {prompt}, highlighting (neutral tones, soft lighting, calming atmosphere)",
+        "negative_prompt": "vibrant colors, harsh lighting, cluttered spaces"
+    },
+    {
+        "name": "City Lights",
+        "prompt": "A composition showcasing {prompt}, highlighting (nighttime cityscape, blurred lights, urban glow, energetic ambiance)",
+        "negative_prompt": "natural landscapes, daytime scenes, serene settings"
+    },
+    {
+        "name": "Sunlit Branches",
+        "prompt": "A composition featuring {prompt}, highlighting (outdoor setting, bright sunlight, natural textures, playful shadows)",
+        "negative_prompt": "indoor settings, overcast skies, muted colors"
+    },
+    {
+        "name": "Tropical Refreshment",
+        "prompt": "A composition showcasing a {prompt}, highlighting (blue umbrella, outdoor seating, beverage can, tropical setting, relaxing vibe)",
+        "negative_prompt": "urban landscapes, indoor settings, winter scenes"
+    },
+    {
+        "name": "Cluttered Table",
+        "prompt": "A composition featuring a {prompt}, highlighting (indoor setting, chairs visible, neutral colors, everyday life)",
+        "negative_prompt": "minimalist interiors, empty spaces, formal settings"
+    },
+    {
+        "name": "Urban Contrast",
+        "prompt": "A composition showcasing {prompt}, highlighting (modern structure, blue sections, clear sky, old building, juxtaposition of styles)",
+        "negative_prompt": "uniform architecture, single style, natural landscapes"
+    },
+    {
+        "name": "Soft White",
+        "prompt": "A composition featuring {prompt} walls, highlighting (soft lighting, indoor setting, serene ambiance)",
+        "negative_prompt": "vibrant colors, harsh lighting, cluttered spaces"
+    },
+    {
+        "name": "Minimalist Doorway",
+        "prompt": "A composition showcasing a {prompt}, highlighting (light-colored building, dark doorway, urban setting, minimalist aesthetic)",
+        "negative_prompt": "ornate décor, vibrant colors, cluttered backgrounds"
+    },
+    {
+        "name": "White Simplicity",
+        "prompt": "A composition featuring a {prompt} wall, highlighting (indoor setting, minimalist décor, uncluttered aesthetic)",
+        "negative_prompt": "vibrant colors, busy patterns, chaotic arrangements"
+    },
+    {
+        "name": "Winged Mural",
+        "prompt": "A composition showcasing {prompt}, highlighting (painted wings, indoor setting, casual ambiance, artistic expression)",
+        "negative_prompt": "minimalist interiors, blank walls, formal settings"
+    },
+    {
+        "name": "Car Window",
+        "prompt": "A composition featuring a {prompt}, highlighting (leather seats, car door, slightly blurred, sense of motion)",
+        "negative_prompt": "static cars, outdoor settings, sharp details"
+    },
+    {
+        "name": "TV Glow",
+        "prompt": "A composition showcasing an {prompt}, highlighting (television on, modern décor, blurred details, evening ambiance)",
+        "negative_prompt": "natural light, minimalist décor, empty rooms"
+    },
+    {
+        "name": "Dim Greenery",
+        "prompt": "A composition featuring {prompt}, highlighting (dim lighting, blurred plants, warm tones, intimate atmosphere)",
+        "negative_prompt": "brightly lit spaces, sharp details, cool tones"
+    },
+    {
+        "name": "Warm Ambiance",
+        "prompt": "A composition showcasing a {prompt}, highlighting (dim lighting, blurred décor, warm tones, cozy atmosphere)",
+        "negative_prompt": "brightly lit spaces, sharp details, cool tones"
+    },
+    {
+        "name": "Dark Contrast",
+        "prompt": "A composition featuring a {prompt}, highlighting (black and white wall art, contrast lighting, minimalist décor, dramatic effect)",
+        "negative_prompt": "vibrant colors, soft lighting, cluttered spaces"
+    },
+    {
+        "name": "Sunrise Serenity",
+        "prompt": "A composition showcasing a {prompt}, highlighting (calm water, anchored boats, hilly landscape, clear sky, peaceful ambiance)",
+        "negative_prompt": "urban landscapes, nighttime scenes, stormy weather"
+    },
+    {
+        "name": "Blurred Indoors",
+        "prompt": "A composition featuring {prompt}, highlighting (indistinct shapes, soft focus, muted colors, abstract aesthetic)",
+        "negative_prompt": "sharp details, vibrant colors, outdoor settings"
+    },
+    {
+        "name": "Outdoor Dining",
+        "prompt": "A composition showcasing {prompt}, highlighting (green plants, restaurant ambiance, daylight conditions, inviting atmosphere)",
+        "negative_prompt": "indoor settings, formal dining, empty tables"
+    },
+    {
+        "name": "Mountain View",
+        "prompt": "A composition featuring a {prompt}, highlighting (clear blue sky, lush greenery, architectural structure, breathtaking scenery)",
+        "negative_prompt": "urban landscapes, indoor settings, enclosed spaces"
+    },
+    {
+        "name": "Modern Window",
+        "prompt": "A composition showcasing a {prompt}, highlighting (bright room, modern furniture, large window, natural light)",
+        "negative_prompt": "dark interiors, traditional furniture, small windows"
+    },
+    {
+        "name": "Neutral Blur",
+        "prompt": "A composition featuring {prompt}, highlighting (indoor setting, blurred décor, muted colors, calming atmosphere)",
+        "negative_prompt": "vibrant colors, sharp details, outdoor settings"
+    },
+    {
+        "name": "Window Glimpse",
+        "prompt": "A composition showcasing {prompt}, highlighting (indoor setting, blurred room details, soft focus, abstract aesthetic)",
+        "negative_prompt": "clear views, sharp details, outdoor settings"
+    },
+    {
+        "name": "White Wall",
+        "prompt": "A composition featuring a {prompt}, highlighting (plain white surface, indoor setting, soft lighting, minimalist aesthetic)",
+        "negative_prompt": "vibrant colors, busy patterns, chaotic arrangements"
+    },
+    {
+        "name": "Poolside Paradise",
+        "prompt": "A composition showcasing {prompt}, highlighting (blue sky, swimming pool, lush plants, sunny day, tropical ambiance)",
+        "negative_prompt": "indoor settings, cold climates, barren environments"
+    },
+    {
+        "name": "Blurred Comfort",
+        "prompt": "A composition featuring {prompt}, highlighting (indoor setting, muted colors, soft focus, relaxing atmosphere)",
+        "negative_prompt": "brightly lit spaces, sharp details, vibrant colors"
+    },
+    {
+        "name": "Tropical Cafe",
+        "prompt": "A composition showcasing an {prompt}, highlighting (green plants, outdoor seating, tropical setting, casual ambiance)",
+        "negative_prompt": "indoor settings, formal dining, urban landscapes"
+    },
+    {
+        "name": "Stage Setup",
+        "prompt": "A composition featuring {prompt}, highlighting (greenery, daytime, speakers, cables, yellow tennis balls, event preparation)",
+        "negative_prompt": "empty stages, nighttime scenes, audience present"
+    },
+    {
+        "name": "Wooden Structure",
+        "prompt": "A composition showcasing a {prompt}, highlighting (blurred greenery, natural daylight, rustic charm)",
+        "negative_prompt": "modern architecture, urban landscapes, indoor settings"
+    },
+    {
+        "name": "Mountain Haze",
+        "prompt": "A composition featuring a {prompt}, highlighting (hazy sky, mountainous terrain, balcony railing, atmospheric perspective)",
+        "negative_prompt": "clear skies, close-up views, urban landscapes"
+    },
+    {
+        "name": "Green Getaway",
+        "prompt": "A composition showcasing {prompt}, highlighting (outdoor setting, sports car, lush greenery, scenic drive)",
+        "negative_prompt": "urban landscapes, indoor settings, winter scenes"
+    },
+    {
+        "name": "Sunset Ocean",
+        "prompt": "A composition featuring an {prompt}, highlighting (cloudy sky, outdoor setting, sunset lighting, romantic ambiance)",
+        "negative_prompt": "clear skies, daytime scenes, indoor settings"
+    },
+    {
+        "name": "Curtained Window",
+        "prompt": "A composition showcasing {prompt}, highlighting (indoor setting, neutral colors, soft lighting, intimate atmosphere)",
+        "negative_prompt": "outdoor settings, brightly lit spaces, vibrant colors"
+    },
+    {
+        "name": "Floral Elegance",
+        "prompt": "A composition featuring an {prompt}, highlighting (ornate mirror, floral wallpaper, neutral tones, classic décor)",
+        "negative_prompt": "minimalist interiors, modern furniture, vibrant colors"
+    },
+    {
+        "name": "Teal Backdrop",
+        "prompt": "A composition showcasing a {prompt}, highlighting (solid teal color, soft shadows, minimalist aesthetic)",
+        "negative_prompt": "vibrant colors, busy patterns, cluttered compositions"
+    },
+    {
+        "name": "Evening Entrance",
+        "prompt": "A composition featuring a {prompt}, highlighting (evening lighting, brick column, window, warm glow)",
+        "negative_prompt": "daytime scenes, minimalist décor, modern architecture"
+    },
+    {
+        "name": "Poolside Relaxation",
+        "prompt": "A composition showcasing a {prompt}, highlighting (green lawn, outdoor setting, blue sky, refreshing ambiance)",
+        "negative_prompt": "indoor settings, cold climates, barren environments"
+    },
+    {
+        "name": "Sunlit Greenery",
+        "prompt": "A composition featuring {prompt}, highlighting (natural lighting, sunny day, vibrant colors, lush foliage)",
+        "negative_prompt": "overcast skies, artificial plants, dull colors"
+    },
+    {
+        "name": "Neutral Minimalism",
+        "prompt": "A composition showcasing a {prompt} wall, highlighting (indoor setting, minimalist décor, uncluttered aesthetic)",
+        "negative_prompt": "vibrant colors, busy patterns, chaotic arrangements"
+    },
+    {
+        "name": "Tropical Foliage",
+        "prompt": "A composition featuring {prompt}, highlighting (blurred greenery, sunny daylight, exotic ambiance)",
+        "negative_prompt": "urban landscapes, indoor settings, winter scenes"
+    },
+    {
+        "name": "Ambient Interior",
+        "prompt": "A composition showcasing an {prompt}, highlighting (neutral colors, ambient lighting, calming atmosphere)",
+        "negative_prompt": "brightly lit spaces, vibrant colors, chaotic arrangements"
+    },
+    {
+        "name": "Soft White",
+        "prompt": "A composition featuring {prompt}, highlighting (plain background, soft shadow, minimalist aesthetic)",
+        "negative_prompt": "vibrant colors, busy patterns, cluttered compositions"
+    },
+    {
+        "name": "Indoor Plants",
+        "prompt": "A composition showcasing {prompt}, highlighting (indoor room, potted plants, textured floor, natural elements)",
+        "negative_prompt": "outdoor settings, barren environments, artificial plants"
+    },
+    {
+        "name": "Overcast Creek",
+        "prompt": "A composition featuring an {prompt}, highlighting (blurred foliage, overcast sky, natural light, tranquil ambiance)",
+        "negative_prompt": "bright sunshine, clear skies, urban landscapes"
+    },
+    {
+        "name": "Monochromatic Mood",
+        "prompt": "A composition showcasing {prompt}, highlighting (blurred setting, dark ambiance, dramatic effect)",
+        "negative_prompt": "vibrant colors, brightly lit spaces, cheerful atmosphere"
+    },
+    {
+        "name": "Crowded Venue",
+        "prompt": "A composition featuring an {prompt}, highlighting (blurred figures, indoor setting, sense of energy and excitement)",
+        "negative_prompt": "empty spaces, quiet settings, static compositions"
+    },
+    {
+        "name": "White Cyclorama",
+        "prompt": "A composition showcasing a {prompt}, highlighting (minimalist setting, studio environment, blank canvas)",
+        "negative_prompt": "cluttered backgrounds, outdoor settings, vibrant colors"
+    },
+    {
+        "name": "Sunlit Greenery",
+        "prompt": "A composition featuring {prompt}, highlighting (clear blue sky, lush green plants, sunlit ambiance, vibrant nature)",
+        "negative_prompt": "overcast skies, barren environments, artificial plants"
+    },
+    {
+        "name": "Palm Trees",
+        "prompt": "A composition showcasing {prompt}, highlighting (blue sky, sunny day, tropical setting, exotic ambiance)",
+        "negative_prompt": "urban landscapes, indoor settings, winter scenes"
+    },
+    {
+        "name": "Underpass Shadows",
+        "prompt": "A composition featuring an {prompt}, highlighting (concrete columns, shadow patterns, urban infrastructure, geometric abstraction)",
+        "negative_prompt": "natural landscapes, open spaces, vibrant colors"
+    },
+    {
+        "name": "Concrete Patterns",
+        "prompt": "A composition showcasing a {prompt}, highlighting (shadow patterns, sunlit area, urban textures, abstract geometry)",
+        "negative_prompt": "natural landscapes, organic shapes, vibrant colors"
+    },
+    {
+        "name": "Starry Space",
+        "prompt": "A composition featuring {prompt}, highlighting (distant Earth, hexagonal pattern floor, metallic surface, futuristic setting)",
+        "negative_prompt": "terrestrial landscapes, natural environments, familiar objects"
+    },
+    {
+        "name": "Earth from Space",
+        "prompt": "A composition showcasing {prompt}, highlighting (starry sky, Earth visible, metallic floor, hexagonal pattern, futuristic setting)",
+        "negative_prompt": "terrestrial landscapes, natural environments, familiar objects"
+    },
+    {
+        "name": "Tropical Serenity",
+        "prompt": "A composition featuring a {prompt}, highlighting (green foliage, palm tree, blurred background, serene setting, exotic ambiance)",
+        "negative_prompt": "urban landscapes, indoor settings, chaotic compositions"
+    },
+    {
+        "name": "Beach Foliage",
+        "prompt": "A composition showcasing {prompt}, highlighting (sandy beach, green foliage, natural beauty, coastal landscape)",
+        "negative_prompt": "urban environments, artificial structures, enclosed spaces"
+    },
+    {
+        "name": "Gym Reflections",
+        "prompt": "A composition featuring {prompt}, highlighting (blurred lights, reflective surfaces, energetic atmosphere, fitness focus)",
+        "negative_prompt": "natural landscapes, outdoor settings, tranquil ambiance"
+    },
+    {
+        "name": "Sunlit Architecture",
+        "prompt": "A composition showcasing {prompt}, highlighting (green grass, shadow patterns, late afternoon light, urban landscape)",
+        "negative_prompt": "nighttime scenes, indoor settings, cluttered backgrounds"
+    },
+    {
+        "name": "Soft Furnishings",
+        "prompt": "A composition featuring {prompt}, highlighting (neutral tones, indoor setting, blurred textures, cozy ambiance)",
+        "negative_prompt": "minimalist décor, vibrant colors, outdoor settings"
+    },
+    {
+        "name": "Evening Vista",
+        "prompt": "A composition showcasing an {prompt}, highlighting (blurred greenery, distant water view, tranquil atmosphere, dusk light)",
+        "negative_prompt": "urban landscapes, daytime scenes, brightly lit spaces"
+    },
+    {
+        "name": "Basketball Court",
+        "prompt": "A composition featuring a {prompt}, highlighting (lush greenery, bright sunlight, colorful flowers, outdoor activity)",
+        "negative_prompt": "indoor settings, urban landscapes, nighttime scenes"
+    },
+    {
+        "name": "Window Light",
+        "prompt": "A composition showcasing {prompt}, highlighting (white walls, large window, indoor setting, natural illumination)",
+        "negative_prompt": "dark interiors, small windows, artificial light"
+    },
+    {
+        "name": "Beach Horizon",
+        "prompt": "A composition featuring the {prompt}, highlighting (sandy beach, ocean horizon, clear sky, distant figures, sense of vastness)",
+        "negative_prompt": "urban landscapes, indoor settings, enclosed spaces"
+    },
+    {
+        "name": "Snowy Trees",
+        "prompt": "A composition showcasing a {prompt}, highlighting (blurred trees, natural light, winter ambiance, serene atmosphere)",
+        "negative_prompt": "tropical settings, urban landscapes, summer scenes"
     }
 ]

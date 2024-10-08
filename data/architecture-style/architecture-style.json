@@ -1,0 +1,502 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "American Foursquare",
+        "prompt": "An {prompt} house, featuring (a square, symmetrical shape, a hipped roof, and a large front porch)",
+        "negative_prompt": "asymmetry, complex rooflines, curved walls"
+    },
+    {
+        "name": "Ancient Egyptian",
+        "prompt": "An {prompt} temple, showcasing (massive stone columns, hieroglyphics, monumental scale, and symmetrical layouts)",
+        "negative_prompt": "delicate structures, asymmetry, rounded arches, gothic elements"
+    },
+    {
+        "name": "Art Brut",
+        "prompt": "An {prompt} sculpture, featuring (raw, unrefined materials, found objects, and an outsider art aesthetic)",
+        "negative_prompt": "polished surfaces, refined craftsmanship, traditional art styles"
+    },
+    {
+        "name": "Art Deco",
+        "prompt": "An {prompt} building, highlighting (geometric patterns, streamlined forms, decorative motifs, and vibrant colors)",
+        "negative_prompt": "organic shapes, excessive ornamentation, gothic elements, dull colors"
+    },
+    {
+        "name": "Art Nouveau",
+        "prompt": "An {prompt} building, showcasing (organic, flowing lines, floral motifs, and intricate details)",
+        "negative_prompt": "geometric shapes, sharp angles, minimalist aesthetic"
+    },
+    {
+        "name": "Baroque",
+        "prompt": "A {prompt} palace, featuring (ornate details, grandeur, theatrical elements, and dramatic curves)",
+        "negative_prompt": "simplicity, minimalist aesthetic, straight lines, functionalism"
+    },
+    {
+        "name": "Bauhaus",
+        "prompt": "A {prompt} building, highlighting (functional design, minimal ornamentation, geometric shapes, and industrial materials)",
+        "negative_prompt": "excessive decoration, ornate details, classical elements"
+    },
+    {
+        "name": "Bay-and-Gable",
+        "prompt": "A {prompt} house, featuring (a steeply pitched roof with dormers, decorative woodwork, and a picturesque appearance)",
+        "negative_prompt": "flat roofs, minimalist aesthetic, modern materials"
+    },
+    {
+        "name": "Beaux Arts Classicism",
+        "prompt": "A {prompt} building, showcasing (grand scale, ornate details, classical elements, and a monumental presence)",
+        "negative_prompt": "simplicity, minimalist aesthetic, asymmetry, modern materials"
+    },
+    {
+        "name": "Beaux Arts",
+        "prompt": "A {prompt} building, featuring (grand scale, classical elements, ornate details, and a sense of monumentality)",
+        "negative_prompt": "simplicity, minimalist aesthetic, asymmetry, modern materials"
+    },
+    {
+        "name": "Brutalism",
+        "prompt": "A {prompt} building, highlighting (raw concrete construction, massive forms, and a minimalist aesthetic)",
+        "negative_prompt": "delicate details, ornamentation, classical elements, vibrant colors"
+    },
+    {
+        "name": "Châteauesque",
+        "prompt": "A {prompt} mansion, featuring (towers, turrets, steep roofs, and ornate details inspired by French castles)",
+        "negative_prompt": "simplicity, minimalist aesthetic, modern materials, symmetrical facades"
+    },
+    {
+        "name": "Chinoiserie Revival",
+        "prompt": "A {prompt} garden, showcasing (Chinese-inspired elements, pagodas, decorative bridges, and exotic plants)",
+        "negative_prompt": "European garden styles, minimalist aesthetic, modern materials"
+    },
+    {
+        "name": "Churrigueresque",
+        "prompt": "A {prompt} church, featuring (exaggerated ornamentation, intricate details, and a dramatic, theatrical style)",
+        "negative_prompt": "simplicity, minimalist aesthetic, classical proportions, restrained decoration"
+    },
+    {
+        "name": "Churrigueresque Baroque Revival",
+        "prompt": "A {prompt} building, showcasing (exaggerated ornamentation, intricate details, and a dramatic, theatrical style)",
+        "negative_prompt": "simplicity, minimalist aesthetic, classical proportions, restrained decoration"
+    },
+    {
+        "name": "Classicism",
+        "prompt": "A {prompt} building, featuring (symmetrical facades, classical orders, and a sense of balance and harmony)",
+        "negative_prompt": "asymmetry, excessive ornamentation, gothic elements, modern materials"
+    },
+    {
+        "name": "Collegiate Gothic",
+        "prompt": "A {prompt} university building, showcasing (pointed arches, vaulted ceilings, stained glass windows, and an academic atmosphere)",
+        "negative_prompt": "modernist architecture, minimalist aesthetic, classical elements"
+    },
+    {
+        "name": "Colonial",
+        "prompt": "A {prompt} house, featuring (simple, symmetrical design, traditional materials, and a sense of practicality)",
+        "negative_prompt": "asymmetry, complex rooflines, modern materials, excessive ornamentation"
+    },
+    {
+        "name": "Constructivist",
+        "prompt": "A {prompt} monument, highlighting (geometric shapes, abstract forms, and a dynamic, avant-garde aesthetic)",
+        "negative_prompt": "classical elements, ornamentation, traditional materials, static forms"
+    },
+    {
+        "name": "Deconstructivism",
+        "prompt": "A {prompt} building, featuring (fragmented forms, distorted shapes, and a sense of controlled chaos)",
+        "negative_prompt": "symmetry, classical elements, traditional materials, order and balance"
+    },
+    {
+        "name": "Desert Modernism",
+        "prompt": "A {prompt} house, showcasing (clean lines, low-slung profiles, natural materials, and an integration with the desert landscape)",
+        "negative_prompt": "traditional housing styles, ornate details, vibrant colors"
+    },
+    {
+        "name": "Dutch Colonial",
+        "prompt": "A {prompt} house, featuring (a gambrel roof, flared eaves, and a symmetrical facade)",
+        "negative_prompt": "asymmetry, complex rooflines, modern materials"
+    },
+    {
+        "name": "Early Christian",
+        "prompt": "An {prompt} basilica, showcasing (a long, rectangular nave, rounded arches, and a simple, austere aesthetic)",
+        "negative_prompt": "gothic elements, pointed arches, excessive ornamentation"
+    },
+    {
+        "name": "Eclectic",
+        "prompt": "An {prompt} house, featuring (a mix of architectural styles, unconventional elements, and a sense of individuality)",
+        "negative_prompt": "strict adherence to a single style, minimalist aesthetic, uniformity"
+    },
+    {
+        "name": "Egyptian Revival",
+        "prompt": "An {prompt} building, highlighting (massive columns, hieroglyphics, and a monumental scale inspired by ancient Egypt)",
+        "negative_prompt": "delicate structures, asymmetry, rounded arches, gothic elements"
+    },
+    {
+        "name": "Elizabethan",
+        "prompt": "An {prompt} manor, featuring (timber framing, decorative half-timbering, and a picturesque, asymmetrical design)",
+        "negative_prompt": "symmetry, minimalist aesthetic, modern materials, classical elements"
+    },
+    {
+        "name": "Exotic Revival",
+        "prompt": "An {prompt} building, showcasing (a blend of exotic architectural styles, ornate details, and a sense of fantasy)",
+        "negative_prompt": "strict adherence to a single style, minimalist aesthetic, uniformity"
+    },
+    {
+        "name": "Expressionism",
+        "prompt": "An {prompt} building, highlighting (distorted forms, organic shapes, and an emotionally charged aesthetic)",
+        "negative_prompt": "classical elements, ornamentation, traditional materials, rational design"
+    },
+    {
+        "name": "Farmhouse",
+        "prompt": "A {prompt}, featuring (a simple, functional design, traditional materials, and a connection to rural life)",
+        "negative_prompt": "complex rooflines, modern materials, excessive ornamentation, urban elements"
+    },
+    {
+        "name": "Fascist",
+        "prompt": "A building designed in the {prompt} style, highlighting (monumental scale, symmetry, and a stripped-down classical aesthetic)",
+        "negative_prompt": "ornamentation, playful elements, organic forms, vibrant colors"
+    },
+    {
+        "name": "Fascist Modernism",
+        "prompt": "A building designed in the {prompt} style, highlighting (monumental scale, symmetry, and a stripped-down classical aesthetic)",
+        "negative_prompt": "ornamentation, playful elements, organic forms, vibrant colors"
+    },
+    {
+        "name": "Federal",
+        "prompt": "A {prompt} house, featuring (a symmetrical facade, a Palladian window, and classical details)",
+        "negative_prompt": "asymmetry, complex rooflines, gothic elements, modern materials"
+    },
+    {
+        "name": "Federal Revival",
+        "prompt": "A {prompt} house, showcasing (a symmetrical facade, a Palladian window, and classical details inspired by Federal architecture)",
+        "negative_prompt": "asymmetry, complex rooflines, gothic elements, modern materials"
+    },
+    {
+        "name": "French Provincial",
+        "prompt": "A {prompt} house, featuring (a steeply pitched hipped roof, symmetrical facade, and ornate details)",
+        "negative_prompt": "asymmetry, complex rooflines, modern materials, minimalist aesthetic"
+    },
+    {
+        "name": "Functionalism",
+        "prompt": "A {prompt} building, highlighting (functional design, minimal ornamentation, and an emphasis on practicality)",
+        "negative_prompt": "excessive decoration, ornate details, classical elements, emotional expression"
+    },
+    {
+        "name": "Futurist",
+        "prompt": "A {prompt} building, showcasing (dynamic forms, a sense of speed and movement, and an embrace of technology)",
+        "negative_prompt": "static forms, traditional materials, classical elements, ornamentation"
+    },
+    {
+        "name": "Georgian Revival",
+        "prompt": "A {prompt} house, featuring (a symmetrical facade, a paneled front door, and classical details inspired by Georgian architecture)",
+        "negative_prompt": "asymmetry, complex rooflines, gothic elements, modern materials"
+    },
+    {
+        "name": "Gothic",
+        "prompt": "A {prompt} cathedral, showcasing (pointed arches, ribbed vaults, stained glass windows, and a sense of verticality)",
+        "negative_prompt": "rounded arches, classical elements, minimalist aesthetic, modern materials"
+    },
+    {
+        "name": "Gothic Revival",
+        "prompt": "A {prompt} building, featuring (pointed arches, ribbed vaults, and ornate details inspired by Gothic architecture)",
+        "negative_prompt": "rounded arches, classical elements, minimalist aesthetic, modern materials"
+    },
+    {
+        "name": "Greek Revival",
+        "prompt": "A {prompt} building, showcasing (classical columns, pediments, and a sense of balance and harmony inspired by ancient Greece)",
+        "negative_prompt": "rounded arches, gothic elements, excessive ornamentation, modern materials"
+    },
+    {
+        "name": "International Brutalism",
+        "prompt": "An {prompt} building, highlighting (raw concrete construction, massive forms, and a minimalist aesthetic)",
+        "negative_prompt": "delicate details, ornamentation, classical elements, vibrant colors"
+    },
+    {
+        "name": "International Gothic",
+        "prompt": "An {prompt} artwork, featuring (elegant figures, flowing lines, and ornate details)",
+        "negative_prompt": "geometric shapes, abstract forms, minimalist aesthetic, modern materials"
+    },
+    {
+        "name": "International Gothic Revival",
+        "prompt": "A {prompt} building, showcasing (elegant forms, ornate details, and a sense of verticality inspired by International Gothic architecture)",
+        "negative_prompt": "geometric shapes, abstract forms, minimalist aesthetic, modern materials"
+    },
+    {
+        "name": "International Style",
+        "prompt": "An {prompt} building, highlighting (minimal ornamentation, geometric shapes, and an emphasis on functionality)",
+        "negative_prompt": "excessive decoration, ornate details, classical elements, historical references"
+    },
+    {
+        "name": "International Style Modernism",
+        "prompt": "An {prompt} building, highlighting (minimal ornamentation, geometric shapes, and an emphasis on functionality)",
+        "negative_prompt": "excessive decoration, ornate details, classical elements, historical references"
+    },
+    {
+        "name": "Italianate",
+        "prompt": "An {prompt} villa, featuring (a low-pitched roof, wide eaves, and arched windows inspired by Italian Renaissance architecture)",
+        "negative_prompt": "gothic elements, pointed arches, excessive ornamentation, modern materials"
+    },
+    {
+        "name": "Japanese",
+        "prompt": "A {prompt} garden, showcasing (natural elements, minimalist design, and a sense of tranquility)",
+        "negative_prompt": "European garden styles, ornate details, vibrant colors"
+    },
+    {
+        "name": "Late Gothic Revival",
+        "prompt": "A {prompt} building, featuring (elaborate ornamentation, pointed arches, and a dramatic, vertical emphasis)",
+        "negative_prompt": "rounded arches, classical elements, minimalist aesthetic, modern materials"
+    },
+    {
+        "name": "Late Modernism",
+        "prompt": "A {prompt} building, highlighting (functional design, minimal ornamentation, and an emphasis on simplicity)",
+        "negative_prompt": "excessive decoration, ornate details, classical elements, historical references"
+    },
+    {
+        "name": "Late Renaissance",
+        "prompt": "A {prompt} palace, featuring (ornate details, classical elements, and a sense of grandeur)",
+        "negative_prompt": "simplicity, minimalist aesthetic, gothic elements, modern materials"
+    },
+    {
+        "name": "Late Victorian",
+        "prompt": "A {prompt} house, showcasing (elaborate ornamentation, colorful details, and a picturesque appearance)",
+        "negative_prompt": "simplicity, minimalist aesthetic, modern materials, classical elements"
+    },
+    {
+        "name": "Mayan Revival",
+        "prompt": "A {prompt} building, highlighting (geometric patterns, stepped pyramids, and a monumental scale inspired by Mayan architecture)",
+        "negative_prompt": "classical elements, European architectural styles, minimalist aesthetic"
+    },
+    {
+        "name": "Mediterranean Revival",
+        "prompt": "A {prompt} house, featuring (low-pitched red tile roofs, stucco walls, and arched doorways and windows)",
+        "negative_prompt": "gothic elements, pointed arches, excessive ornamentation, modern materials"
+    },
+    {
+        "name": "Metabolist",
+        "prompt": "A {prompt} cityscape, showcasing (modular units, interconnected structures, and a futuristic vision of urban growth)",
+        "negative_prompt": "static buildings, traditional city layouts, historical architectural styles"
+    },
+    {
+        "name": "Mission",
+        "prompt": "A {prompt} church, featuring (simple, rustic design, stucco walls, and a red tile roof)",
+        "negative_prompt": "gothic elements, pointed arches, excessive ornamentation, modern materials"
+    },
+    {
+        "name": "Mission Moderne",
+        "prompt": "A {prompt} house, showcasing (a blend of Mission Revival and Modernist styles, featuring stucco walls, a low-pitched roof, and clean lines)",
+        "negative_prompt": "gothic elements, Victorian ornamentation, excessive details"
+    },
+    {
+        "name": "Mission Revival",
+        "prompt": "A {prompt} building, highlighting (stucco walls, red tile roofs, and arched doorways and windows inspired by Spanish missions)",
+        "negative_prompt": "gothic elements, pointed arches, excessive ornamentation, modern materials"
+    },
+    {
+        "name": "Modernism",
+        "prompt": "A {prompt} building, featuring (clean lines, geometric shapes, and a minimalist aesthetic)",
+        "negative_prompt": "excessive decoration, ornate details, classical elements, historical references"
+    },
+    {
+        "name": "Moorish Revival",
+        "prompt": "A {prompt} building, showcasing (horseshoe arches, intricate tilework, and decorative details inspired by Moorish architecture)",
+        "negative_prompt": "gothic elements, pointed arches, European architectural styles, minimalist aesthetic"
+    },
+    {
+        "name": "Nautical",
+        "prompt": "A {prompt} house, featuring (a simple, functional design, nautical-themed décor, and a connection to the sea)",
+        "negative_prompt": "ornate details, Victorian elements, gothic architecture, landlocked settings"
+    },
+    {
+        "name": "Neo-Baroque",
+        "prompt": "A {prompt} building, showcasing (grand scale, ornate details, and a dramatic, sculptural style inspired by Baroque architecture)",
+        "negative_prompt": "simplicity, minimalist aesthetic, classical proportions, restrained decoration"
+    },
+    {
+        "name": "Neo-Classical Revival",
+        "prompt": "A {prompt} building, featuring (classical columns, pediments, and a sense of balance and harmony inspired by Neoclassical architecture)",
+        "negative_prompt": "rounded arches, gothic elements, excessive ornamentation, modern materials"
+    },
+    {
+        "name": "Neoclassical",
+        "prompt": "A {prompt} building, showcasing (classical columns, pediments, and a sense of balance and harmony inspired by ancient Greece and Rome)",
+        "negative_prompt": "rounded arches, gothic elements, excessive ornamentation, modern materials"
+    },
+    {
+        "name": "Neomodern",
+        "prompt": "A {prompt} building, featuring (clean lines, geometric shapes, and a minimalist aesthetic with a contemporary twist)",
+        "negative_prompt": "excessive decoration, ornate details, classical elements, historical references"
+    },
+    {
+        "name": "New Classical",
+        "prompt": "A {prompt} building, showcasing (classical columns, pediments, and a sense of balance and harmony with a contemporary interpretation)",
+        "negative_prompt": "rounded arches, gothic elements, excessive ornamentation, modern materials"
+    },
+    {
+        "name": "New Urbanism",
+        "prompt": "A {prompt} neighborhood, featuring (walkable streets, mixed-use development, and a focus on community)",
+        "negative_prompt": "car-centric design, suburban sprawl, isolated buildings, lack of public spaces"
+    },
+    {
+        "name": "Organic",
+        "prompt": "An {prompt} building, highlighting (natural forms, flowing lines, and an integration with the surrounding environment)",
+        "negative_prompt": "geometric shapes, sharp angles, minimalist aesthetic, artificial materials"
+    },
+    {
+        "name": "Postmodernism",
+        "prompt": "A {prompt} building, featuring (a mix of styles, playful elements, and a rejection of modernist principles)",
+        "negative_prompt": "strict adherence to a single style, minimalist aesthetic, functionalism"
+    },
+    {
+        "name": "Prairie School",
+        "prompt": "A {prompt} house, showcasing (horizontal lines, low-pitched roofs, and an integration with the surrounding landscape)",
+        "negative_prompt": "vertical emphasis, ornate details, complex rooflines, European architectural styles"
+    },
+    {
+        "name": "Pre-Romanesque",
+        "prompt": "A {prompt} church, featuring (simple forms, thick walls, and small windows)",
+        "negative_prompt": "gothic elements, pointed arches, excessive ornamentation, large windows"
+    },
+    {
+        "name": "Pueblo Revival",
+        "prompt": "A {prompt} house, showcasing (adobe walls, flat roofs, and rounded edges inspired by Pueblo architecture)",
+        "negative_prompt": "gothic elements, Victorian ornamentation, excessive details, modern materials"
+    },
+    {
+        "name": "Renaissance",
+        "prompt": "A {prompt} palace, featuring (classical orders, symmetrical facades, and a sense of balance and harmony)",
+        "negative_prompt": "gothic elements, pointed arches, excessive ornamentation, modern materials"
+    },
+    {
+        "name": "Renaissance Revival",
+        "prompt": "A {prompt} building, highlighting (classical orders, symmetrical facades, and ornate details inspired by Renaissance architecture)",
+        "negative_prompt": "gothic elements, pointed arches, excessive ornamentation, modern materials"
+    },
+    {
+        "name": "Richardsonian Romanesque",
+        "prompt": "A {prompt} building, featuring (massive stone construction, rounded arches, and a sense of solidity and strength)",
+        "negative_prompt": "gothic elements, pointed arches, delicate details, modern materials"
+    },
+    {
+        "name": "Rococo",
+        "prompt": "A {prompt} interior, showcasing (ornate details, delicate curves, and a playful, lighthearted aesthetic)",
+        "negative_prompt": "simplicity, minimalist aesthetic, straight lines, functionalism"
+    },
+    {
+        "name": "Rococo Revival",
+        "prompt": "A {prompt} building, featuring (ornate details, delicate curves, and a playful aesthetic inspired by Rococo architecture)",
+        "negative_prompt": "simplicity, minimalist aesthetic, straight lines, functionalism"
+    },
+    {
+        "name": "Romanesque",
+        "prompt": "A {prompt} church, showcasing (rounded arches, massive walls, and a sense of solidity and strength)",
+        "negative_prompt": "gothic elements, pointed arches, delicate details, modern materials"
+    },
+    {
+        "name": "Russian Byzantine Revival",
+        "prompt": "A {prompt} church, featuring (onion domes, colorful details, and a blend of Byzantine and Russian architectural elements)",
+        "negative_prompt": "gothic elements, pointed arches, Western European architectural styles, minimalist aesthetic"
+    },
+    {
+        "name": "Second Empire",
+        "prompt": "A {prompt} house, featuring (a mansard roof, ornate details, and a symmetrical facade)",
+        "negative_prompt": "asymmetry, complex rooflines, gothic elements, modern materials"
+    },
+    {
+        "name": "Sgraffito",
+        "prompt": "A building facade decorated with {prompt}, showcasing (a decorative technique where layers of plaster are scratched to reveal different colors)",
+        "negative_prompt": "smooth surfaces, minimalist aesthetic, lack of texture"
+    },
+    {
+        "name": "Shingle Style",
+        "prompt": "A {prompt} house, featuring (shingle cladding, asymmetrical massing, and a natural, informal appearance)",
+        "negative_prompt": "smooth surfaces, symmetrical facades, formal design, classical elements"
+    },
+    {
+        "name": "Spanish Colonial",
+        "prompt": "A {prompt} house, showcasing (stucco walls, red tile roofs, and a courtyard layout)",
+        "negative_prompt": "gothic elements, Victorian ornamentation, excessive details, modern materials"
+    },
+    {
+        "name": "Streamline Moderne",
+        "prompt": "A {prompt} building, highlighting (streamlined forms, rounded edges, and a sleek, aerodynamic aesthetic)",
+        "negative_prompt": "ornate details, classical elements, historical references, angular shapes"
+    },
+    {
+        "name": "Swiss Chalet",
+        "prompt": "A {prompt} house, featuring (a gabled roof, exposed wooden beams, and a cozy, rustic appearance)",
+        "negative_prompt": "modernist architecture, minimalist aesthetic, urban settings, flat roofs"
+    },
+    {
+        "name": "Traditional Chinese",
+        "prompt": "A {prompt} temple, showcasing (curved roofs, intricate carvings, and a colorful, decorative aesthetic)",
+        "negative_prompt": "Western architectural styles, minimalist aesthetic, modern materials"
+    },
+    {
+        "name": "Tudor Revival",
+        "prompt": "A {prompt} house, featuring (half-timbering, steeply pitched roofs, and a picturesque, asymmetrical design)",
+        "negative_prompt": "symmetry, minimalist aesthetic, modern materials, classical elements"
+    },
+    {
+        "name": "Tudorbethan",
+        "prompt": "A {prompt} house, showcasing (a blend of Tudor and Elizabethan architectural styles, featuring half-timbering, tall chimneys, and a grand, picturesque appearance)",
+        "negative_prompt": "symmetry, minimalist aesthetic, modern materials, classical elements"
+    },
+    {
+        "name": "Usonian",
+        "prompt": "A {prompt} house, featuring (a simple, functional design, natural materials, and an emphasis on affordability)",
+        "negative_prompt": "ornate details, excessive ornamentation, classical elements, extravagant features"
+    },
+    {
+        "name": "Victorian",
+        "prompt": "A {prompt} house, showcasing (ornate details, colorful paint schemes, and a variety of architectural elements)",
+        "negative_prompt": "simplicity, minimalist aesthetic, modern materials, uniformity"
+    },
+    {
+        "name": "Bio-Tech",
+        "prompt": "A {prompt} structure, featuring (organic shapes, living systems integration, sustainable materials, futuristic technology)",
+        "negative_prompt": "traditional architecture, rigid forms, industrial materials"
+    },
+    {
+        "name": "Cyberpunk",
+        "prompt": "A {prompt} cityscape, showcasing (neon lights, towering megastructures, gritty urban decay, advanced technology)",
+        "negative_prompt": "clean, utopian architecture, natural landscapes, pastel colors"
+    },
+    {
+        "name": "Parametricism",
+        "prompt": "A {prompt} building, featuring (complex, flowing curves, algorithmic design, advanced materials, intricate detailing)",
+        "negative_prompt": "traditional forms, boxy shapes, simple geometry, minimalist aesthetic"
+    },
+    {
+        "name": "Neo-futurism",
+        "prompt": "A {prompt} building, showcasing (sleek, aerodynamic forms, innovative materials, technological integration, utopian vision)",
+        "negative_prompt": "retrofuturism, traditional architecture, ornamentation, historical references"
+    },
+    {
+        "name": "Post-Apocalyptic",
+        "prompt": "A {prompt} structure, featuring (ruined buildings, repurposed materials, makeshift shelters, overgrown vegetation)",
+        "negative_prompt": "pristine architecture, modern materials, sleek design, urban order"
+    },
+    {
+        "name": "Space Architecture",
+        "prompt": "A {prompt} habitat, featuring (modular design, artificial gravity, life support systems, views of Earth or other planets)",
+        "negative_prompt": "terrestrial architecture, gravity-dependent structures, natural landscapes"
+    },
+    {
+        "name": "Ancient Greek",
+        "prompt": "An {prompt} temple, featuring (Doric, Ionic, or Corinthian columns, marble construction, pediments, symmetrical layouts)",
+        "negative_prompt": "arches, vaults, gothic elements, modern materials"
+    },
+    {
+        "name": "Roman",
+        "prompt": "A {prompt} building, showcasing (arches, vaults, concrete construction, monumental scale, grandeur)",
+        "negative_prompt": "pointed arches, gothic elements, minimalist aesthetic, modern materials"
+    },
+    {
+        "name": "Byzantine",
+        "prompt": "A {prompt} church, featuring (domes, mosaics, pendentives, rich ornamentation, religious iconography)",
+        "negative_prompt": "gothic elements, pointed arches, minimalist aesthetic, modern materials"
+    },
+    {
+        "name": "Islamic",
+        "prompt": "An {prompt} mosque, featuring (domes, minarets, arches, intricate geometric patterns, calligraphy)",
+        "negative_prompt": "figurative imagery, gothic elements, minimalist aesthetic, modern materials"
+    }
+]

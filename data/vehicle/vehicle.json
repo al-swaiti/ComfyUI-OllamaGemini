@@ -1,0 +1,918 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+    "name": "Aircraft",
+    "prompt": "An image of a {prompt}, featuring (wings, fuselage, jet engines or propellers)",
+    "negative_prompt": "missing parts, unrealistic design, ground vehicles"
+    },
+    {
+    "name": "Airplane",
+    "prompt": "A photograph of a {prompt}, highlighting (commercial or private jet, cockpit windows, passenger cabin)",
+    "negative_prompt": "damaged plane, military aircraft, blurry image"
+    },
+    {
+    "name": "Amphibious Vehicle",
+    "prompt": "A picture of a {prompt}, showcasing (ability to travel on land and water, wheels or tracks, boat-like hull)",
+    "negative_prompt": "only land or water vehicle, unrealistic design, poor quality image"
+    },
+    {
+    "name": "ATV",
+    "prompt": "An image of a {prompt}, featuring (off-road capabilities, knobby tires, handlebars)",
+    "negative_prompt": "on-road vehicle, smooth tires, enclosed cabin"
+    },
+    {
+    "name": "Backhoe",
+    "prompt": "A photograph of a {prompt}, highlighting (excavation arm, digging bucket, operator's cabin)",
+    "negative_prompt": "damaged equipment, blurry image, missing parts"
+    },
+    {
+    "name": "Barge",
+    "prompt": "A picture of a {prompt}, showcasing (flat-bottomed hull, cargo carrying capacity, river or ocean transport)",
+    "negative_prompt": "other types of boats, unrealistic design, poor quality image"
+    },
+    {
+    "name": "Bicycle",
+    "prompt": "An image of a {prompt}, featuring (two wheels, pedals, handlebars, frame)",
+    "negative_prompt": "broken bicycle, blurry image, missing parts"
+    },
+    {
+    "name": "Blimp",
+    "prompt": "A photograph of a {prompt}, highlighting (large inflatable envelope, gondola, advertising or passenger transport)",
+    "negative_prompt": "hot air balloon, airplane, blurry image"
+    },
+    {
+    "name": "Boat",
+    "prompt": "A picture of a {prompt}, showcasing (hull, deck, motor or sails, navigation equipment)",
+    "negative_prompt": "land vehicle, unrealistic design, poor quality image"
+    },
+    {
+    "name": "Bulldozer",
+    "prompt": "An image of a {prompt}, featuring (heavy blade, tracks, operator's cabin)",
+    "negative_prompt": "damaged equipment, blurry image, missing parts"
+    },
+    {
+    "name": "Bus",
+    "prompt": "A photograph of a {prompt}, highlighting (passenger seats, large windows, destination sign)",
+    "negative_prompt": "damaged bus, blurry image, empty interior"
+    },
+    {
+    "name": "Cable Car",
+    "prompt": "A picture of a {prompt}, showcasing (suspended cabin, cable system, mountain or urban transport)",
+    "negative_prompt": "tram, train, blurry image"
+    },
+    {
+    "name": "Camper",
+    "prompt": "An image of a {prompt}, featuring (living space, sleeping area, kitchenette, bathroom)",
+    "negative_prompt": "regular van or truck, damaged vehicle, blurry image"
+    },
+    {
+    "name": "Canoe",
+    "prompt": "A photograph of a {prompt}, highlighting (narrow hull, paddles, open or enclosed design)",
+    "negative_prompt": "kayak, other types of boats, blurry image"
+    },
+    {
+    "name": "Car",
+    "prompt": "A picture of a {prompt}, showcasing (body style, wheels, headlights, taillights)",
+    "negative_prompt": "damaged car, blurry image, unrealistic design"
+    },
+    {
+    "name": "Carriage",
+    "prompt": "An image of a {prompt}, featuring (horse-drawn, enclosed or open design, wheels, ornate decoration)",
+    "negative_prompt": "car, wagon, blurry image"
+    },
+    {
+    "name": "Cart",
+    "prompt": "A photograph of a {prompt}, highlighting (two or four wheels, hand-pulled or animal-drawn, cargo carrying capacity)",
+    "negative_prompt": "truck, car, blurry image"
+    },
+    {
+    "name": "Cement Mixer",
+    "prompt": "A picture of a {prompt}, showcasing (rotating drum, mixing blades, truck chassis)",
+    "negative_prompt": "damaged truck, blurry image, other types of trucks"
+    },
+    {
+    "name": "Coach",
+    "prompt": "An image of a {prompt}, featuring (horse-drawn, enclosed passenger compartment, driver's seat, ornate decoration)",
+    "negative_prompt": "bus, carriage, blurry image"
+    },
+    {
+    "name": "Crane",
+    "prompt": "A photograph of a {prompt}, highlighting (lifting arm, hook, operator's cabin, construction site)",
+    "negative_prompt": "damaged equipment, blurry image, other types of construction vehicles"
+    },
+    {
+    "name": "Dog Sled",
+    "prompt": "A picture of a {prompt}, showcasing (sled, dog team, snow-covered terrain)",
+    "negative_prompt": "other types of sleds, blurry image, unrealistic setting"
+    },
+    {
+    "name": "Double-decker Bus",
+    "prompt": "An image of a {prompt}, featuring (two levels of passenger seating, large windows, iconic design)",
+    "negative_prompt": "regular bus, blurry image, damaged vehicle"
+    },
+    {
+    "name": "Dump Truck",
+    "prompt": "A photograph of a {prompt}, highlighting (open-box bed, hydraulic lifting mechanism, heavy-duty chassis)",
+    "negative_prompt": "other types of trucks, damaged vehicle, blurry image"
+    },
+    {
+    "name": "Electric Bicycle",
+    "prompt": "A picture of an {prompt}, showcasing (electric motor, battery, pedals, handlebars)",
+    "negative_prompt": "regular bicycle, motorcycle, blurry image"
+    },
+    {
+    "name": "Electric Car",
+    "prompt": "An image of an {prompt}, featuring (charging port, electric motor, battery, modern design)",
+    "negative_prompt": "gasoline car, damaged vehicle, blurry image"
+    },
+    {
+    "name": "Electric Scooter",
+    "prompt": "A photograph of an {prompt}, highlighting (electric motor, battery, handlebars, footboard)",
+    "negative_prompt": "motorcycle, kick scooter, blurry image"
+    },
+    {
+    "name": "Excavator",
+    "prompt": "A picture of an {prompt}, showcasing (excavation arm, digging bucket, tracks, operator's cabin)",
+    "negative_prompt": "damaged equipment, blurry image, other types of construction vehicles"
+    },
+    {
+    "name": "Fifth Wheel",
+    "prompt": "An image of a {prompt}, featuring (tow hitch, large living space, separate sleeping area, kitchenette)",
+    "negative_prompt": "travel trailer, camper van, blurry image"
+    },
+    {
+    "name": "Forklift",
+    "prompt": "A photograph of a {prompt}, highlighting (lifting forks, operator's cabin, warehouse setting)",
+    "negative_prompt": "damaged equipment, blurry image, other types of warehouse vehicles"
+    },
+    {
+    "name": "Front-end Loader",
+    "prompt": "A picture of a {prompt}, showcasing (large bucket, articulated frame, operator's cabin)",
+    "negative_prompt": "damaged equipment, blurry image, other types of construction vehicles"
+    },
+    {
+    "name": "Funicular",
+    "prompt": "An image of a {prompt}, featuring (inclined track, cable system, passenger cars, mountain transport)",
+    "negative_prompt": "cable car, train, blurry image"
+    },
+    {
+    "name": "Glider",
+    "prompt": "A photograph of a {prompt}, highlighting (long wings, narrow fuselage, lack of engine, soaring flight)",
+    "negative_prompt": "airplane, helicopter, blurry image"
+    },
+    {
+    "name": "Go-Kart",
+    "prompt": "A picture of a {prompt}, showcasing (open-wheel design, small engine, racing or recreational use)",
+    "negative_prompt": "car, motorcycle, blurry image"
+    },
+    {
+    "name": "Golf Cart",
+    "prompt": "An image of a {prompt}, featuring (electric motor, small size, golf course setting)",
+    "negative_prompt": "car, ATV, blurry image"
+    },
+    {
+    "name": "Grader",
+    "prompt": "A photograph of a {prompt}, highlighting (long blade, articulated frame, operator's cabin, road construction)",
+    "negative_prompt": "damaged equipment, blurry image, other types of construction vehicles"
+    },
+    {
+    "name": "Hang Glider",
+    "prompt": "A picture of a {prompt}, showcasing (triangular wing, pilot harness, hang gliding flight)",
+    "negative_prompt": "paraglider, airplane, blurry image"
+    },
+    {
+    "name": "Helicopter",
+    "prompt": "An image of a {prompt}, featuring (rotor blades, fuselage, tail rotor, vertical takeoff and landing)",
+    "negative_prompt": "airplane, drone, blurry image"
+    },
+    {
+    "name": "Horse Trailer",
+    "prompt": "A photograph of a {prompt}, highlighting (enclosed space for horses, ramp, towing vehicle)",
+    "negative_prompt": "other types of trailers, damaged trailer, blurry image"
+    },
+    {
+    "name": "Hot Air Balloon",
+    "prompt": "A picture of a {prompt}, showcasing (large inflatable envelope, wicker basket, propane burner, hot air flight)",
+    "negative_prompt": "blimp, airplane, blurry image"
+    },
+    {
+    "name": "Hovercraft",
+    "prompt": "An image of a {prompt}, featuring (air cushion, lift fan, propeller, travel over land and water)",
+    "negative_prompt": "boat, airplane, blurry image"
+    },
+    {
+    "name": "Hybrid Car",
+    "prompt": "A photograph of a {prompt}, highlighting (gasoline engine, electric motor, battery, fuel efficiency)",
+    "negative_prompt": "gasoline car, electric car, blurry image"
+    },
+    {
+    "name": "Hydrogen Fuel Cell Vehicle",
+    "prompt": "A picture of a {prompt}, showcasing (hydrogen tank, fuel cell stack, electric motor, zero emissions)",
+    "negative_prompt": "gasoline car, electric car, blurry image"
+    },
+    {
+    "name": "Jet Ski",
+    "prompt": "An image of a {prompt}, featuring (personal watercraft, handlebars, water jet propulsion)",
+    "negative_prompt": "boat, motorcycle, blurry image"
+    },
+    {
+    "name": "Kayak",
+    "prompt": "A photograph of a {prompt}, highlighting (narrow hull, enclosed cockpit, paddle, kayaking)",
+    "negative_prompt": "canoe, other types of boats, blurry image"
+    },
+    {
+    "name": "Lawn Mower",
+    "prompt": "A picture of a {prompt}, showcasing (cutting blades, engine or electric motor, grass cutting)",
+    "negative_prompt": "damaged equipment, blurry image, other types of gardening tools"
+    },
+    {
+    "name": "Light Rail",
+    "prompt": "An image of a {prompt}, featuring (electrically powered train, multiple cars, urban transport)",
+    "negative_prompt": "train, subway, blurry image"
+    },
+    {
+    "name": "Limousine",
+    "prompt": "A photograph of a {prompt}, highlighting (long wheelbase, luxurious interior, chauffeur-driven)",
+    "negative_prompt": "regular car, taxi, blurry image"
+    },
+    {
+    "name": "Lunar Module",
+    "prompt": "A picture of a {prompt}, showcasing (lunar landing craft, descent stage, ascent stage, Apollo missions)",
+    "negative_prompt": "spacecraft, rocket, blurry image"
+    },
+    {
+    "name": "Mars Rover",
+    "prompt": "An image of a {prompt}, featuring (robotic vehicle, wheels, scientific instruments, Mars exploration)",
+    "negative_prompt": "lunar rover, car, blurry image"
+    },
+    {
+    "name": "Microcar",
+    "prompt": "A photograph of a {prompt}, highlighting (small size, fuel efficiency, city driving)",
+    "negative_prompt": "regular car, motorcycle, blurry image"
+    },
+    {
+    "name": "Monorail",
+    "prompt": "A picture of a {prompt}, showcasing (single rail track, elevated or suspended train, urban transport)",
+    "negative_prompt": "train, subway, blurry image"
+    },
+    {
+    "name": "Monster Truck",
+    "prompt": "An image of a {prompt}, featuring (oversized tires, powerful engine, car crushing capabilities)",
+    "negative_prompt": "regular truck, off-road vehicle, blurry image"
+    },
+    {
+    "name": "Moon Buggy",
+    "prompt": "A photograph of a {prompt}, highlighting (lunar roving vehicle, wheels, Apollo missions)",
+    "negative_prompt": "Mars rover, car, blurry image"
+    },
+    {
+    "name": "Motorcoach",
+    "prompt": "A picture of a {prompt}, showcasing (passenger seats, large windows, luggage compartment, long-distance travel)",
+    "negative_prompt": "bus, train, blurry image"
+    },
+    {
+    "name": "Motorcycle",
+    "prompt": "An image of a {prompt}, featuring (two wheels, engine, handlebars, rider)",
+    "negative_prompt": "bicycle, scooter, blurry image"
+    },
+    {
+    "name": "Motorhome",
+    "prompt": "A photograph of a {prompt}, highlighting (living space, sleeping area, kitchenette, bathroom, self-contained travel)",
+    "negative_prompt": "camper van, truck, blurry image"
+    },
+    {
+    "name": "Paddleboard",
+    "prompt": "A picture of a {prompt}, showcasing (stand-up paddleboarding, paddle, water sport)",
+    "negative_prompt": "surfboard, kayak, blurry image"
+    },
+    {
+    "name": "Paraglider",
+    "prompt": "An image of a {prompt}, featuring (paragliding wing, pilot harness, paragliding flight)",
+    "negative_prompt": "hang glider, airplane, blurry image"
+    },
+    {
+    "name": "Pop-up Camper",
+    "prompt": "A photograph of a {prompt}, highlighting (collapsible design, canvas tent, sleeping area, compact size)",
+    "negative_prompt": "travel trailer, camper van, blurry image"
+    },
+    {
+    "name": "Raft",
+    "prompt": "A picture of a {prompt}, showcasing (inflatable or rigid construction, paddles, river rafting)",
+    "negative_prompt": "boat, kayak, blurry image"
+    },
+    {
+    "name": "Rickshaw",
+    "prompt": "An image of a {prompt}, featuring (two or three wheels, hand-pulled or cycle-pulled, passenger transport)",
+    "negative_prompt": "bicycle, cart, blurry image"
+    },
+    {
+    "name": "Rocket",
+    "prompt": "A photograph of a {prompt}, highlighting (launch vehicle, rocket engines, space travel)",
+    "negative_prompt": "spacecraft, missile, blurry image"
+    },
+    {
+    "name": "Roller Skates",
+    "prompt": "A picture of a pair of {prompt}, showcasing (wheels, boots, roller skating)",
+    "negative_prompt": "inline skates, ice skates, blurry image"
+    },
+    {
+    "name": "Rowboat",
+    "prompt": "An image of a {prompt}, featuring (oars, rowing, small boat)",
+    "negative_prompt": "sailboat, motorboat, blurry image"
+    },
+    {
+    "name": "RV",
+    "prompt": "A photograph of an {prompt}, highlighting (recreational vehicle, living space, sleeping area, kitchenette, bathroom)",
+    "negative_prompt": "camper van, motorhome, blurry image"
+    },
+    {
+    "name": "Sailboat",
+    "prompt": "A picture of a {prompt}, showcasing (sails, mast, hull, sailing)",
+    "negative_prompt": "motorboat, rowboat, blurry image"
+    },
+    {
+    "name": "School Bus",
+    "prompt": "An image of a {prompt}, featuring (yellow color, flashing lights, stop sign, student transport)",
+    "negative_prompt": "regular bus, damaged vehicle, blurry image"
+    },
+    {
+    "name": "Scooter",
+    "prompt": "A photograph of a {prompt}, highlighting (two wheels, engine or electric motor, step-through frame)",
+    "negative_prompt": "motorcycle, bicycle, blurry image"
+    },
+    {
+    "name": "Scraper",
+    "prompt": "A picture of a {prompt}, showcasing (large blade, earth-moving, road construction)",
+    "negative_prompt": "bulldozer, grader, blurry image"
+    },
+    {
+    "name": "Segway",
+    "prompt": "An image of a {prompt}, featuring (two-wheeled self-balancing personal transporter, handlebars, electric motor)",
+    "negative_prompt": "scooter, bicycle, blurry image"
+    },
+    {
+    "name": "Self-driving Car",
+    "prompt": "A photograph of a {prompt}, highlighting (autonomous driving technology, sensors, cameras, no driver)",
+    "negative_prompt": "regular car, taxi, blurry image"
+    },
+    {
+    "name": "Semi-trailer",
+    "prompt": "A picture of a {prompt}, showcasing (tractor unit, trailer, cargo transport)",
+    "negative_prompt": "truck, bus, blurry image"
+    },
+    {
+    "name": "Ship",
+    "prompt": "An image of a {prompt}, featuring (large vessel, cargo or passenger transport, ocean or sea travel)",
+    "negative_prompt": "boat, submarine, blurry image"
+    },
+    {
+    "name": "Shuttle Bus",
+    "prompt": "A photograph of a {prompt}, highlighting (passenger transport, airport or hotel shuttle, frequent stops)",
+    "negative_prompt": "regular bus, taxi, blurry image"
+    },
+    {
+    "name": "Skateboard",
+    "prompt": "A picture of a {prompt}, showcasing (deck, wheels, skateboarding)",
+    "negative_prompt": "longboard, scooter, blurry image"
+    },
+    {
+    "name": "Skid Steer",
+    "prompt": "An image of a {prompt}, featuring (compact loader, lift arms, bucket or other attachments)",
+    "negative_prompt": "backhoe, tractor, blurry image"
+    },
+    {
+    "name": "Sleigh",
+    "prompt": "A photograph of a {prompt}, highlighting (runners, horse-drawn or reindeer-drawn, winter travel)",
+    "negative_prompt": "cart, wagon, blurry image"
+    },
+    {
+    "name": "Snow Plow",
+    "prompt": "A picture of a {prompt}, showcasing (snow removal, attached to truck or tractor, winter road maintenance)",
+    "negative_prompt": "damaged equipment, blurry image, other types of snow removal equipment"
+    },
+    {
+    "name": "Snowmobile",
+    "prompt": "An image of a {prompt}, featuring (track, skis, engine, snow travel)",
+    "negative_prompt": "ATV, motorcycle, blurry image"
+    },
+    {
+    "name": "Solar-powered Car",
+    "prompt": "A photograph of a {prompt}, highlighting (solar panels, electric motor, battery, sustainable transportation)",
+    "negative_prompt": "gasoline car, electric car, blurry image"
+    },
+    {
+    "name": "Spacecraft",
+    "prompt": "A picture of a {prompt}, showcasing (space travel, rocket engines, astronauts, scientific instruments)",
+    "negative_prompt": "airplane, rocket, blurry image"
+    },
+    {
+    "name": "Stagecoach",
+    "prompt": "An image of a {prompt}, featuring (horse-drawn, enclosed passenger compartment, driver's seat, Wild West transport)",
+    "negative_prompt": "coach, wagon, blurry image"
+    },
+    {
+    "name": "Streetcar",
+    "prompt": "A photograph of a {prompt}, highlighting (electrically powered, tracks, urban transport)",
+    "negative_prompt": "tram, train, blurry image"
+    },
+    {
+    "name": "Subway",
+    "prompt": "A picture of a {prompt}, showcasing (underground train, multiple cars, urban transport)",
+    "negative_prompt": "train, light rail, blurry image"
+    },
+    {
+    "name": "SUV",
+    "prompt": "An image of an {prompt}, featuring (sport utility vehicle, four-wheel drive, spacious interior, off-road capabilities)",
+    "negative_prompt": "car, truck, blurry image"
+    },
+    {
+    "name": "Taxi",
+    "prompt": "A photograph of a {prompt}, highlighting (passenger transport, taxi sign, meter, city driving)",
+    "negative_prompt": "regular car, limousine, blurry image"
+    },
+    {
+    "name": "Tour Bus",
+    "prompt": "A picture of a {prompt}, showcasing (passenger seats, large windows, luggage compartment, guided tours)",
+    "negative_prompt": "regular bus, motorcoach, blurry image"
+    },
+    {
+    "name": "Tractor",
+    "prompt": "An image of a {prompt}, featuring (agricultural vehicle, large wheels, towing capacity, farming)",
+    "negative_prompt": "truck, bulldozer, blurry image"
+    },
+    {
+    "name": "Trailer",
+    "prompt": "A photograph of a {prompt}, highlighting (cargo or utility trailer, towed by vehicle, various sizes and types)",
+    "negative_prompt": "truck, semi-trailer, blurry image"
+    },
+    {
+    "name": "Train",
+    "prompt": "A picture of a {prompt}, showcasing (locomotive, passenger or freight cars, railway transport)",
+    "negative_prompt": "subway, light rail, blurry image"
+    },
+    {
+    "name": "Tram",
+    "prompt": "An image of a {prompt}, featuring (electrically powered, tracks, urban transport)",
+    "negative_prompt": "streetcar, train, blurry image"
+    },
+    {
+    "name": "Tricycle",
+    "prompt": "A photograph of a {prompt}, highlighting (three wheels, pedals, handlebars, child's or adult's tricycle)",
+    "negative_prompt": "bicycle, motorcycle, blurry image"
+    },
+    {
+    "name": "Truck",
+    "prompt": "A picture of a {prompt}, showcasing (cargo bed, engine, various sizes and types)",
+    "negative_prompt": "car, van, blurry image"
+    },
+    {
+    "name": "Truck Camper",
+    "prompt": "An image of a {prompt}, featuring (camper unit mounted on truck bed, living space, sleeping area)",
+    "negative_prompt": "camper van, fifth wheel, blurry image"
+    },
+    {
+    "name": "Tugboat",
+    "prompt": "A photograph of a {prompt}, highlighting (powerful engine, towing capabilities, harbor or river work)",
+    "negative_prompt": "other types of boats, damaged boat, blurry image"
+    },
+    {
+    "name": "Van",
+    "prompt": "A picture of a {prompt}, showcasing (sliding doors, cargo or passenger space, commercial or personal use)",
+    "negative_prompt": "car, truck, blurry image"
+    },
+    {
+    "name": "Wagon",
+    "prompt": "An image of a {prompt}, featuring (four wheels, horse-drawn or pulled by other animals, cargo or passenger transport)",
+    "negative_prompt": "car, cart, blurry image"
+    },
+    {
+    "name": "Watercraft",
+    "prompt": "A photograph of a {prompt}, highlighting (any vehicle designed for travel on water, boats, ships, personal watercraft)",
+    "negative_prompt": "land vehicle, aircraft, blurry image"
+    },
+    {
+    "name": "Yacht",
+    "prompt": "A picture of a {prompt}, showcasing (luxury boat, sailing or motor yacht, recreational use)",
+    "negative_prompt": "sailboat, motorboat, blurry image"
+    },
+    {
+    "name": "Zamboni",
+    "prompt": "An image of a {prompt}, featuring (ice resurfacing machine, water tank, snow removal blade, ice rink maintenance)",
+    "negative_prompt": "damaged equipment, blurry image, other types of ice rink equipment"
+    },
+    {
+    "name": "Aston Martin DB11",
+    "prompt": "A photograph of an {prompt}, showcasing its (sleek design, powerful engine, luxurious interior)",
+    "negative_prompt": "damaged car, other Aston Martin models, blurry image"
+    },
+    {
+    "name": "Aston Martin DB11 AMR",
+    "prompt": "A picture of an {prompt}, highlighting its (sport-tuned suspension, enhanced aerodynamics, performance upgrades)",
+    "negative_prompt": "regular DB11, other Aston Martin models, blurry image"
+    },
+    {
+    "name": "Aston Martin DB7",
+    "prompt": "An image of an {prompt}, featuring its (classic design, grand touring capabilities, luxurious interior)",
+    "negative_prompt": "damaged car, other Aston Martin models, blurry image"
+    },
+    {
+    "name": "Aston Martin One-77",
+    "prompt": "A photograph of an {prompt}, showcasing its (limited production, powerful engine, carbon fiber body)",
+    "negative_prompt": "other Aston Martin models, damaged car, blurry image"
+    },
+    {
+    "name": "Aston Martin Vanquish",
+    "prompt": "A picture of an {prompt}, highlighting its (grand touring capabilities, powerful engine, luxurious interior)",
+    "negative_prompt": "damaged car, other Aston Martin models, blurry image"
+    },
+    {
+    "name": "Aston Martin Vantage",
+    "prompt": "An image of an {prompt}, featuring its (sporty handling, agile performance, aggressive styling)",
+    "negative_prompt": "damaged car, other Aston Martin models, blurry image"
+    },
+    {
+    "name": "Audi R8",
+    "prompt": "A photograph of an {prompt}, showcasing its (mid-engine layout, quattro all-wheel drive, supercar performance)",
+    "negative_prompt": "damaged car, other Audi models, blurry image"
+    },
+    {
+    "name": "Audi R8 V10 Plus",
+    "prompt": "A picture of an {prompt}, highlighting its (increased horsepower, enhanced aerodynamics, track-focused performance)",
+    "negative_prompt": "regular R8, other Audi models, blurry image"
+    },
+    {
+    "name": "Audi RS6 Avant",
+    "prompt": "An image of an {prompt}, featuring its (high-performance wagon, powerful engine, all-wheel drive)",
+    "negative_prompt": "damaged car, other Audi models, blurry image"
+    },
+    {
+    "name": "Audi RS7",
+    "prompt": "A photograph of an {prompt}, showcasing its (sportback design, powerful engine, all-wheel drive)",
+    "negative_prompt": "damaged car, other Audi models, blurry image"
+    },
+    {
+    "name": "Audi TT RS",
+    "prompt": "A picture of an {prompt}, highlighting its (sporty coupe, powerful engine, all-wheel drive)",
+    "negative_prompt": "regular TT, other Audi models, blurry image"
+    },
+    {
+    "name": "Bentley Bentayga",
+    "prompt": "An image of a {prompt}, featuring its (luxury SUV, powerful engine, off-road capabilities)",
+    "negative_prompt": "damaged car, other Bentley models, blurry image"
+    },
+    {
+    "name": "Bentley Bentayga Mulliner",
+    "prompt": "A photograph of a {prompt}, showcasing its (bespoke interior, handcrafted details, luxurious features)",
+    "negative_prompt": "regular Bentayga, other Bentley models, blurry image"
+    },
+    {
+    "name": "Bentley Continental GT",
+    "prompt": "A picture of a {prompt}, highlighting its (grand touring capabilities, powerful engine, luxurious interior)",
+    "negative_prompt": "damaged car, other Bentley models, blurry image"
+    },
+    {
+    "name": "Bentley Continental Supersports",
+    "prompt": "An image of a {prompt}, featuring its (high-performance grand tourer, powerful engine, enhanced aerodynamics)",
+    "negative_prompt": "regular Continental GT, other Bentley models, blurry image"
+    },
+    {
+    "name": "Bentley Mulsanne",
+    "prompt": "A photograph of a {prompt}, showcasing its (flagship sedan, luxurious interior, handcrafted details)",
+    "negative_prompt": "damaged car, other Bentley models, blurry image"
+    },
+    {
+    "name": "Bugatti Chiron",
+    "prompt": "A picture of a {prompt}, highlighting its (quad-turbocharged engine, record-breaking top speed, luxurious interior)",
+    "negative_prompt": "damaged car, other Bugatti models, blurry image"
+    },
+    {
+    "name": "Bugatti EB110 SS",
+    "prompt": "An image of a {prompt}, featuring its (classic supercar, quad-turbocharged engine, all-wheel drive)",
+    "negative_prompt": "damaged car, other Bugatti models, blurry image"
+    },
+    {
+    "name": "Bugatti Veyron",
+    "prompt": "A photograph of a {prompt}, showcasing its (quad-turbocharged engine, record-breaking top speed, luxurious interior)",
+    "negative_prompt": "damaged car, other Bugatti models, blurry image"
+    },
+    {
+    "name": "Chevrolet Camaro ZL1",
+    "prompt": "A picture of a {prompt}, highlighting its (supercharged V8 engine, high-performance capabilities, track-focused features)",
+    "negative_prompt": "regular Camaro, other Chevrolet models, blurry image"
+    },
+    {
+    "name": "Chevrolet Corvette ZR1",
+    "prompt": "An image of a {prompt}, featuring its (supercharged V8 engine, high-performance capabilities, track-focused features)",
+    "negative_prompt": "regular Corvette, other Chevrolet models, blurry image"
+    },
+    {
+    "name": "Dodge Challenger SRT Demon",
+    "prompt": "A photograph of a {prompt}, showcasing its (supercharged V8 engine, drag racing capabilities, widebody design)",
+    "negative_prompt": "regular Challenger, other Dodge models, blurry image"
+    },
+    {
+    "name": "Dodge Charger SRT Hellcat",
+    "prompt": "A picture of a {prompt}, highlighting its (supercharged V8 engine, high-performance sedan, muscle car heritage)",
+    "negative_prompt": "regular Charger, other Dodge models, blurry image"
+    },
+    {
+    "name": "Dodge Viper GTS",
+    "prompt": "An image of a {prompt}, featuring its (V10 engine, sporty handling, aggressive styling)",
+    "negative_prompt": "damaged car, other Dodge models, blurry image"
+    },
+    {
+    "name": "Dodge Viper SRT10 ACR",
+    "prompt": "A photograph of a {prompt}, showcasing its (track-focused performance, aerodynamic enhancements, lightweight construction)",
+    "negative_prompt": "regular Viper, other Dodge models, blurry image"
+    },
+    {
+    "name": "Ferrari 458 Italia",
+    "prompt": "A picture of a {prompt}, highlighting its (naturally aspirated V8 engine, sporty handling, Italian design)",
+    "negative_prompt": "damaged car, other Ferrari models, blurry image"
+    },
+    {
+    "name": "Ferrari 488 GTB",
+    "prompt": "An image of a {prompt}, featuring its (turbocharged V8 engine, high-performance capabilities, aerodynamic design)",
+    "negative_prompt": "damaged car, other Ferrari models, blurry image"
+    },
+    {
+    "name": "Ferrari 812 Superfast",
+    "prompt": "A photograph of a {prompt}, showcasing its (naturally aspirated V12 engine, grand touring capabilities, luxurious interior)",
+    "negative_prompt": "damaged car, other Ferrari models, blurry image"
+    },
+    {
+    "name": "Ferrari Enzo",
+    "prompt": "A picture of a {prompt}, highlighting its (limited production, V12 engine, Formula One-inspired technology)",
+    "negative_prompt": "damaged car, other Ferrari models, blurry image"
+    },
+    {
+    "name": "Ferrari F40",
+    "prompt": "An image of a {prompt}, featuring its (twin-turbocharged V8 engine, iconic design, classic supercar)",
+    "negative_prompt": "damaged car, other Ferrari models, blurry image"
+    },
+    {
+    "name": "Ferrari FXX Evoluzione",
+    "prompt": "A photograph of a {prompt}, showcasing its (track-only hypercar, V12 engine, advanced aerodynamics)",
+    "negative_prompt": "other Ferrari models, damaged car, blurry image"
+    },
+    {
+    "name": "Ferrari GTC4Lusso",
+    "prompt": "A picture of a {prompt}, highlighting its (shooting brake design, all-wheel drive, V12 engine)",
+    "negative_prompt": "damaged car, other Ferrari models, blurry image"
+    },
+    {
+    "name": "Ferrari LaFerrari",
+    "prompt": "An image of a {prompt}, featuring its (hybrid powertrain, V12 engine, KERS system)",
+    "negative_prompt": "damaged car, other Ferrari models, blurry image"
+    },
+    {
+    "name": "Ford GT40",
+    "prompt": "A photograph of a {prompt}, showcasing its (Le Mans-winning race car, mid-engine layout, V8 engine)",
+    "negative_prompt": "damaged car, other Ford models, blurry image"
+    },
+    {
+    "name": "Ford Mustang GT350",
+    "prompt": "A picture of a {prompt}, highlighting its (flat-plane crank V8 engine, high-performance capabilities, track-focused features)",
+    "negative_prompt": "regular Mustang, other Ford models, blurry image"
+    },
+    {
+    "name": "Hennessey Venom GT",
+    "prompt": "An image of a {prompt}, featuring its (twin-turbocharged V8 engine, record-breaking top speed, limited production)",
+    "negative_prompt": "damaged car, other Hennessey models, blurry image"
+    },
+    {
+    "name": "Jaguar F-Type SVR",
+    "prompt": "A photograph of a {prompt}, showcasing its (supercharged V8 engine, high-performance capabilities, sporty handling)",
+    "negative_prompt": "regular F-Type, other Jaguar models, blurry image"
+    },
+    {
+    "name": "Jaguar XJ220",
+    "prompt": "A picture of a {prompt}, highlighting its (twin-turbocharged V6 engine, classic supercar, limited production)",
+    "negative_prompt": "damaged car, other Jaguar models, blurry image"
+    },
+    {
+    "name": "Jaguar XJR-15",
+    "prompt": "An image of a {prompt}, featuring its (V12 engine, racing heritage, limited production)",
+    "negative_prompt": "damaged car, other Jaguar models, blurry image"
+    },
+    {
+    "name": "Koenigsegg Agera",
+    "prompt": "A photograph of a {prompt}, showcasing its (twin-turbocharged V8 engine, high-performance capabilities, aerodynamic design)",
+    "negative_prompt": "damaged car, other Koenigsegg models, blurry image"
+    },
+    {
+    "name": "Koenigsegg CCXR Trevita",
+    "prompt": "A picture of a {prompt}, highlighting its (diamond-weave carbon fiber body, limited production, twin-turbocharged V8 engine)",
+    "negative_prompt": "other Koenigsegg models, damaged car, blurry image"
+    },
+    {
+    "name": "Koenigsegg Regera",
+    "prompt": "An image of a {prompt}, featuring its (hybrid powertrain, direct drive transmission, innovative technology)",
+    "negative_prompt": "damaged car, other Koenigsegg models, blurry image"
+    },
+    {
+    "name": "Lamborghini Aventador",
+    "prompt": "A photograph of a {prompt}, showcasing its (V12 engine, scissor doors, aggressive styling)",
+    "negative_prompt": "damaged car, other Lamborghini models, blurry image"
+    },
+    {
+    "name": "Lamborghini Aventador SV",
+    "prompt": "A picture of a {prompt}, highlighting its (enhanced aerodynamics, increased horsepower, track-focused performance)",
+    "negative_prompt": "regular Aventador, other Lamborghini models, blurry image"
+    },
+    {
+    "name": "Lamborghini Centenario",
+    "prompt": "An image of a {prompt}, featuring its (limited production, V12 engine, advanced aerodynamics)",
+    "negative_prompt": "damaged car, other Lamborghini models, blurry image"
+    },
+    {
+    "name": "Lamborghini Diablo",
+    "prompt": "A photograph of a {prompt}, showcasing its (V12 engine, classic supercar, iconic design)",
+    "negative_prompt": "damaged car, other Lamborghini models, blurry image"
+    },
+    {
+    "name": "Lamborghini Gallardo",
+    "prompt": "A picture of a {prompt}, highlighting its (V10 engine, all-wheel drive, sporty handling)",
+    "negative_prompt": "damaged car, other Lamborghini models, blurry image"
+    },
+    {
+        "name": "Pininfarina Design",
+        "prompt": "A car showcasing the signature {prompt} elements, featuring (flowing lines, elegant curves, Italian flair)",
+        "negative_prompt": "sharp edges, boxy design, German aesthetic"
+    },
+    {
+        "name": "Italdesign Giugiaro",
+        "prompt": "A car designed by {prompt}, highlighting (geometric shapes, sharp lines, futuristic aesthetic)",
+        "negative_prompt": "smooth curves, retro styling, American design"
+    },
+    {
+        "name": "Zagato Design",
+        "prompt": "A car with the distinct {prompt} touch, featuring (double-bubble roof, Kamm tail, sporty character)",
+        "negative_prompt": "conventional roofline, boxy rear end, conservative styling"
+    },
+    {
+        "name": "Bertone Design",
+        "prompt": "A car embodying the {prompt} style, showcasing (bold angles, wedge-shaped profile, dramatic proportions)",
+        "negative_prompt": "rounded shapes, traditional silhouette, understated design"
+    },
+    {
+        "name": "Giorgetto Giugiaro",
+        "prompt": "A car designed by {prompt}, highlighting (iconic wedge shape, clean lines, timeless elegance)",
+        "negative_prompt": "retro styling, excessive ornamentation, futuristic elements"
+    },
+    {
+        "name": "Marcello Gandini",
+        "prompt": "A car reflecting the {prompt} design language, featuring (angular lines, geometric shapes, futuristic vision)",
+        "negative_prompt": "soft curves, classic proportions, understated appearance"
+    },
+    {
+        "name": "Battista Pininfarina",
+        "prompt": "A car designed by {prompt}, showcasing (elegant curves, flowing lines, timeless beauty)",
+        "negative_prompt": "sharp angles, boxy design, modernistic approach"
+    },
+    {
+        "name": "Nuccio Bertone",
+        "prompt": "A car bearing the mark of {prompt}, featuring (bold shapes, innovative concepts, aerodynamic forms)",
+        "negative_prompt": "traditional styling, conservative lines, retro influences"
+    },
+    {
+        "name": "Flaminio Bertoni",
+        "prompt": "A car designed by {prompt}, highlighting (unconventional shapes, aerodynamic efficiency, futuristic vision)",
+        "negative_prompt": "classic proportions, boxy design, conventional styling"
+    },
+    {
+        "name": "Harley Earl",
+        "prompt": "A car showcasing the {prompt} influence, featuring (tailfins, chrome accents, American optimism)",
+        "negative_prompt": "European minimalism, understated design, modern aesthetics"
+    },
+    {
+        "name": "Raymond Loewy",
+        "prompt": "A car reflecting the {prompt} design philosophy, featuring (streamlined forms, aerodynamic efficiency, modern aesthetics)",
+        "negative_prompt": "retro styling, excessive ornamentation, boxy design"
+    },
+    {
+        "name": "Virgil Exner",
+        "prompt": "A car designed by {prompt}, highlighting (forward look, tailfins, futuristic styling)",
+        "negative_prompt": "conservative design, classic proportions, European minimalism"
+    },
+    {
+        "name": "Ian Callum",
+        "prompt": "A car showcasing the {prompt} design language, featuring (elegant lines, sporty character, modern British aesthetic)",
+        "negative_prompt": "retro styling, excessive ornamentation, German design"
+    },
+    {
+        "name": "Gérard Welter",
+        "prompt": "A car designed by {prompt}, highlighting (clean lines, functional design, French elegance)",
+        "negative_prompt": "aggressive styling, excessive details, Italian flair"
+    },
+    {
+        "name": "Walter de Silva",
+        "prompt": "A car reflecting the {prompt} design philosophy, featuring (clean surfaces, sharp lines, understated elegance)",
+        "negative_prompt": "retro styling, excessive curves, American design"
+    },
+    {
+        "name": "J Mays",
+        "prompt": "A car showcasing the {prompt} design language, featuring (new edge design, kinetic design, American dynamism)",
+        "negative_prompt": "retro styling, European minimalism, conservative design"
+    },
+    {
+        "name": "Adrian van Hooydonk",
+        "prompt": "A car designed by {prompt}, highlighting (flame surfacing, dynamic lines, modern German aesthetic)",
+        "negative_prompt": "retro styling, boxy design, Italian elegance"
+    },
+    {
+        "name": "Marek Reichman",
+        "prompt": "A car reflecting the {prompt} design philosophy, featuring (muscular lines, sporty elegance, British sophistication)",
+        "negative_prompt": "retro styling, excessive ornamentation, American design"
+    },
+    {
+        "name": "SangYup Lee",
+        "prompt": "A car showcasing the {prompt} design language, featuring (fluidic sculpture, bold lines, Korean dynamism)",
+        "negative_prompt": "retro styling, European minimalism, conservative design"
+    },
+    {
+        "name": "Classic American Muscle Car",
+        "prompt": "A {prompt}, featuring (chromed details, powerful engine,  V8 rumble)",
+        "negative_prompt": "dull paint, small engine, modern design" 
+    },
+    {
+        "name": "Vintage European Sports Car",
+        "prompt": "A {prompt}, highlighting (sleek design, agile handling, open-top driving)",
+        "negative_prompt": "boxy design, poor handling, modern technology"
+    },
+    {
+        "name": "JDM Tuner Car",
+        "prompt": "A {prompt} with (body kit, aftermarket parts, lowered suspension, drifting)",
+        "negative_prompt": "stock appearance, high ride height, factory standard"
+    },
+    {
+        "name": "Luxurious Sedan",
+        "prompt": "A {prompt}, showcasing (premium leather interior, advanced technology, smooth ride)",
+        "negative_prompt": "cloth interior, basic features, bumpy ride"
+    },
+    {
+        "name": "Rugged Off-Road Vehicle",
+        "prompt": "A {prompt} tackling (challenging terrain, mud splashes,  four-wheel drive)",
+        "negative_prompt": "smooth roads, clean exterior, low ground clearance"
+    },
+    {
+        "name": "Futuristic Concept Car",
+        "prompt": "A {prompt}, featuring (aerodynamic design, autonomous driving, innovative materials)",
+        "negative_prompt": "conventional design, manual controls, traditional materials"
+    },
+    {
+        "name": "Formula 1 Race Car",
+        "prompt": "A {prompt} speeding on a racetrack, highlighting (downforce, speed, high-performance engineering)",
+        "negative_prompt": "slow speed, street driving, basic design"
+    },
+    {
+        "name": "Cyberpunk-inspired Vehicle",
+        "prompt": "A {prompt} in a dystopian setting, featuring (neon lights, modifications, gritty aesthetic)",
+        "negative_prompt": "bright colors, clean design, pristine condition"
+    },
+    {
+        "name": "Lowrider",
+        "prompt": "A {prompt} with (hydraulic suspension, bouncing, detailed paint job)",
+        "negative_prompt": "stock suspension, static display, plain paint"
+    },
+    {
+        "name": "Rat Rod",
+        "prompt": "A {prompt}, showcasing (exposed engine, rusty patina, vintage parts)",
+        "negative_prompt": "polished chrome, modern paint, new components"
+    },
+    {
+        "name": "Hot Air Balloon",
+        "prompt": "A {prompt} floating in the sky, featuring (bright colors, wicker basket, propane burner)",
+        "negative_prompt": "grounded, dull colors, lack of basket"
+    },
+    {
+        "name": "Monster Truck",
+        "prompt": "A {prompt} crushing cars, highlighting (oversized tires, powerful engine, loud roar)",
+        "negative_prompt": "small tires, quiet engine, street driving"
+    },
+    {
+        "name": "VW Beetle",
+        "prompt": "A classic {prompt}, featuring (round headlights, air-cooled engine, iconic shape)",
+        "negative_prompt": "modern design, water-cooled engine, non-VW car"
+    },
+    {
+        "name": "Ford Mustang",
+        "prompt": "A {prompt}, highlighting (long hood, galloping horse logo, muscle car legacy)",
+        "negative_prompt": "short hood, non-Ford car, economy car design" 
+    },
+    {
+        "name": "Tesla Cybertruck",
+        "prompt": "A {prompt}, showcasing its (angular design, stainless steel body, electric powertrain)",
+        "negative_prompt": "curved design, traditional materials, gasoline engine"
+    },
+    {
+        "name": "1959 Cadillac Eldorado",
+        "prompt": "A {prompt}, featuring its (iconic tailfins, luxurious interior, chrome accents)",
+        "negative_prompt": "modern design, minimalist interior, dull exterior" 
+    }
+
+]
