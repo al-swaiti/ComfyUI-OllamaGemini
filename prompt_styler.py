@@ -20,7 +20,7 @@ class StylerData:
 
         for j in datadir.glob('*/*.json'):
             try:
-                with j.open('r') as f:
+                with j.open('r', encoding='utf-8') as f:
                     content = json.load(f)
                     group = j.parent.name
                     for template in content:
