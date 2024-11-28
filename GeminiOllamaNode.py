@@ -48,7 +48,7 @@ class GeminiAPI:
         return {
             "required": {
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
-                "gemini_model": (["gemini-1.5-pro-latest", "gemini-1.5-pro-exp-0801", "gemini-1.5-flash","gemini-1.5-flash-exp-0827","gemini-1.5-flash-8b-exp-0827"],),
+                "gemini_model": (["gemini-1.5-pro", "gemini-1.5-flash", "gemini-1.5-flash-8b","learnlm-1.5-pro-experimental","gemini-exp-1114","gemini-exp-1121"],),
                 "stream": ("BOOLEAN", {"default": False}),
             },
             "optional": {
@@ -74,7 +74,7 @@ class GeminiAPI:
         
         model = genai.GenerativeModel(gemini_model)
 
-        if gemini_model in ['gemini-1.5-pro-latest', 'gemini-1.5-pro-exp-0801', 'gemini-1.5-flash', "gemini-1.5-flash-exp-0827","gemini-1.5-flash-8b-exp-0827"]:
+        if gemini_model in ["gemini-1.5-pro", "gemini-1.5-flash", "gemini-1.5-flash-8b","learnlm-1.5-pro-experimental","gemini-exp-1114","gemini-exp-1121"]:
             if image is None:
                 if stream:
                     response = model.generate_content(prompt, stream=True)
