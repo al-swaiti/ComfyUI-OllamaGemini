@@ -5,11 +5,13 @@ from PIL import Image
 import requests
 import torch
 import codecs
+from openai import OpenAI
 import base64
 import folder_paths
-
+import anthropic
 import io
-from  .BRIA_RMBG import BRIA_RMBG_ModelLoader, BRIA_RMBG
+from .clipseg import CLIPSeg, CombineMasks
+from .BRIA_RMBG import BRIA_RMBG_ModelLoader, BRIA_RMBG
 from .svgnode import ConvertRasterToVector, SaveSVG
 from .FLUXResolutions import FLUXResolutions
 from .prompt_styler import *
@@ -36,6 +38,183 @@ def get_ollama_url():
         ollama_url = "http://localhost:11434"
     return ollama_url
 
+class OpenAIAPI:
+    def __init__(self):
+        self.openai_api_key = self.get_openai_api_key()
+        self.nvidia_api_key = self.get_nvidia_api_key()
+        if self.openai_api_key:
+            self.openai_client = OpenAI(api_key=self.openai_api_key)
+        if self.nvidia_api_key:
+            self.nvidia_client = OpenAI(
+                base_url="https://integrate.api.nvidia.com/v1",
+                api_key=self.nvidia_api_key
+            )
+    
+    def get_openai_api_key(self):
+        try:
+            config_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.json')
+            with open(config_path, 'r') as f:  
+                config = json.load(f)
+            return config["OPENAI_API_KEY"]
+        except:
+            print("Error: OpenAI API key is required")
+            return ""
+
+    def get_nvidia_api_key(self):
+        try:
+            config_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.json')
+            with open(config_path, 'r') as f:  
+                config = json.load(f)
+            return config.get("NVIDIA_API_KEY")
+        except:
+            print("Error: NVIDIA API key is required")
+            return ""
+
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
+                "model": ([
+                    "gpt-4o-mini",
+                    "gpt-4o",
+                    "gpt-3.5-turbo",
+                    "gpt-3.5-turbo-0125",
+                    "gpt-3.5-turbo-16k",
+                    "gpt-3.5-turbo-1106",
+                    "o1-preview",
+                    "o1-mini",  # Latest GPT-3.5 Turbo
+                    "deepseek-ai/deepseek-r1"  # NVIDIA model
+                ],),
+                "max_tokens": ("INT", {"default": 1024, "min": 1, "max": 4096, "step": 1}),
+                "temperature": ("FLOAT", {"default": 0.7, "min": 0.0, "max": 2.0, "step": 0.1}),
+                "top_p": ("FLOAT", {"default": 0.7, "min": 0.0, "max": 1.0, "step": 0.1}),
+                "stream": ("BOOLEAN", {"default": False}),
+            },
+            "optional": {
+                "image": ("IMAGE",),
+            }
+        }
+
+    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ("text",)
+    FUNCTION = "generate_content"
+    CATEGORY = "AI API/OpenAI"
+
+    def tensor_to_base64(self, tensor):
+        tensor = tensor.cpu()
+        image_np = tensor.squeeze().mul(255).clamp(0, 255).byte().numpy()
+        image = Image.fromarray(image_np, mode='RGB')
+        buffered = io.BytesIO()
+        image.save(buffered, format="PNG")
+        return base64.b64encode(buffered.getvalue()).decode()
+
+    def generate_content(self, prompt, model, max_tokens, temperature, top_p, stream, image=None):
+        messages = [{"role": "user", "content": prompt}]
+        
+        if image is not None:
+            image_b64 = self.tensor_to_base64(image)
+            messages[0]["content"] = [
+                {"type": "text", "text": prompt},
+                {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image_b64}"}}
+            ]
+
+        # Determine which client to use based on the model
+        if model.startswith("deepseek"):
+            if not hasattr(self, 'nvidia_client') or not self.nvidia_api_key:
+                raise ValueError("NVIDIA API key is required for NVIDIA models")
+            client = self.nvidia_client
+        else:
+            if not hasattr(self, 'openai_client') or not self.openai_api_key:
+                raise ValueError("OpenAI API key is required")
+            client = self.openai_client
+
+        # Prepare generation parameters
+        generation_params = {
+            "model": model,
+            "messages": messages,
+            "max_tokens": max_tokens,
+            "temperature": temperature,
+            "top_p": top_p
+        }
+
+        # Handle streaming and non-streaming responses
+        if stream:
+            response = client.chat.completions.create(**generation_params, stream=True)
+            textoutput = ""
+            for chunk in response:
+                if chunk.choices[0].delta.content is not None:
+                    textoutput += chunk.choices[0].delta.content
+        else:
+            response = client.chat.completions.create(**generation_params)
+            textoutput = response.choices[0].message.content
+        
+        return (textoutput,)
+
+class ClaudeAPI:
+    def __init__(self):
+        self.claude_api_key = self.get_claude_api_key()
+        if self.claude_api_key:
+            self.client = anthropic.Client(api_key=self.claude_api_key)
+    
+    def get_claude_api_key(self):
+        try:
+            config_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.json')
+            with open(config_path, 'r') as f:  
+                config = json.load(f)
+            api_key = config["CLAUDE_API_KEY"]
+        except:
+            print("Error: Claude API key is required")
+            return ""
+        return api_key
+
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
+                "model": (["claude-3-opus-20240229", "claude-3-sonnet-20240229", "claude-3-haiku-20240307"],),
+                "max_tokens": ("INT", {"default": 1024, "min": 1, "max": 4096, "step": 1}),
+            },
+            "optional": {
+                "image": ("IMAGE",),
+            }
+        }
+
+    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ("text",)
+    FUNCTION = "generate_content"
+    CATEGORY = "AI API/Claude"
+
+    def tensor_to_base64(self, tensor):
+        tensor = tensor.cpu()
+        image_np = tensor.squeeze().mul(255).clamp(0, 255).byte().numpy()
+        image = Image.fromarray(image_np, mode='RGB')
+        buffered = io.BytesIO()
+        image.save(buffered, format="PNG")
+        return base64.b64encode(buffered.getvalue()).decode()
+
+    def generate_content(self, prompt, model, max_tokens, image=None):
+        if not self.claude_api_key:
+            raise ValueError("Claude API key is required")
+
+        messages = [{"role": "user", "content": prompt}]
+        
+        if image is not None:
+            image_b64 = self.tensor_to_base64(image)
+            messages[0]["content"] = [
+                {"type": "text", "text": prompt},
+                {"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": image_b64}}
+            ]
+
+        response = self.client.messages.create(
+            model=model,
+            max_tokens=max_tokens,
+            messages=messages
+        )
+        
+        return (response.content[0].text,)
+
 class GeminiAPI:
 
     def __init__(self):
@@ -48,7 +227,7 @@ class GeminiAPI:
         return {
             "required": {
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
-                "gemini_model": (["gemini-1.5-pro", "gemini-1.5-flash", "gemini-1.5-flash-8b","learnlm-1.5-pro-experimental","gemini-exp-1114","gemini-exp-1121"],),
+                "gemini_model": (["gemini-1.5-pro-002", "gemini-1.5-flash", "gemini-1.5-flash-8b","learnlm-1.5-pro-experimental","gemini-exp-1114","gemini-exp-1121"],),
                 "stream": ("BOOLEAN", {"default": False}),
             },
             "optional": {
@@ -74,7 +253,7 @@ class GeminiAPI:
         
         model = genai.GenerativeModel(gemini_model)
 
-        if gemini_model in ["gemini-1.5-pro", "gemini-1.5-flash", "gemini-1.5-flash-8b","learnlm-1.5-pro-experimental","gemini-exp-1114","gemini-exp-1121"]:
+        if gemini_model in ["gemini-1.5-pro-002", "gemini-1.5-flash", "gemini-1.5-flash-8b","learnlm-1.5-pro-experimental","gemini-exp-1114","gemini-exp-1121"]:
             if image is None:
                 if stream:
                     response = model.generate_content(prompt, stream=True)
@@ -310,6 +489,10 @@ def get_timestamp(fmt):
 
 
 NODE_CLASS_MAPPINGS = {
+    "CLIPSeg": CLIPSeg,
+    "CombineSegMasks": CombineMasks,
+    "OpenAIAPI": OpenAIAPI,
+    "ClaudeAPI": ClaudeAPI,
     "GeminiAPI": GeminiAPI,
     "OllamaAPI": OllamaAPI,
     "TextSplitByDelimiter": TextSplitByDelimiter,
@@ -323,6 +506,10 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
+    "CLIPSeg": "CLIPSeg",
+    "CombineSegMasks": "CombineMasks",
+    "OpenAIAPI": "OpenAI API",
+    "ClaudeAPI": "Claude API",
     "GeminiAPI": "Gemini API",
     "OllamaAPI": "Ollama API",
     "TextSplitByDelimiter": "TextSplitByDelimiter",
