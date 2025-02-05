@@ -1,6 +1,6 @@
 # ComfyUI GeminiOllama Extension
 
-This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Claude, Ollama, and various image processing tools into ComfyUI, allowing users to leverage these powerful models and features directly within their ComfyUI workflows.
+This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Claude, Ollama, Qwen, and various image processing tools into ComfyUI, allowing users to leverage these powerful models and features directly within their ComfyUI workflows.
 
 ## Features
 
@@ -9,6 +9,7 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
   - OpenAI (ChatGPT)
   - Anthropic Claude
   - Ollama
+  - Alibaba Qwen
 - Text and image input capabilities
 - Streaming option for real-time responses
 - FLUX Resolution tools for image sizing
@@ -64,19 +65,31 @@ Integrate local language models running via Ollama:
 - Dropdown for selecting Ollama models
 - Customizable model options
 
-### 5. FLUX Resolutions
+  ### 5. Qwen API
+
+Access Alibaba's Qwen language models:
+
+- Text input field for prompts
+- Model selection:
+  - qwen-turbo
+  - qwen-plus
+  - qwen-max
+- Temperature control
+- Streaming capability
+
+### 6. FLUX Resolutions
 
 [Previous FLUX Resolutions content remains the same]
 
-### 6. ComfyUI Styler
+### 7. ComfyUI Styler
 
 [Previous ComfyUI Styler content remains the same]
 
-### 7. Raster to Vector (SVG) and Save SVG
+### 8. Raster to Vector (SVG) and Save SVG
 
 [Previous Raster to Vector content remains the same]
 
-### 8. TextSplitByDelimiter
+### 9. TextSplitByDelimiter
 
 [Previous TextSplitByDelimiter content remains the same]
 
@@ -103,7 +116,8 @@ Integrate local language models running via Ollama:
      "GEMINI_API_KEY": "your_gemini_api_key_here",
      "OPENAI_API_KEY": "your_openai_api_key_here",
      "ANTHROPIC_API_KEY": "your_claude_api_key_here",
-     "OLLAMA_URL": "http://localhost:11434"
+     "OLLAMA_URL": "http://localhost:11434",
+     "QWEN_API_KEY": "your_qwen_api_key_here"
    }
    ```
 
@@ -111,10 +125,7 @@ Integrate local language models running via Ollama:
    - Gemini: [Google AI Studio](https://makersuite.google.com/app/apikey)
    - OpenAI: [OpenAI Platform](https://platform.openai.com/api-keys)
    - Claude: [Anthropic Console](https://console.anthropic.com/)
-
-### Ollama Setup
-
-[Previous Ollama Setup content remains the same]
+   - Qwen: [DashScope Console](https://dashscope.console.aliyun.com/)
 
 ## Usage
 
