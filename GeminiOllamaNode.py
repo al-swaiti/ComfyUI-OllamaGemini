@@ -10,12 +10,45 @@ import base64
 import folder_paths
 import anthropic
 import io
+import numpy as np
 from .clipseg import CLIPSeg, CombineMasks
 from .BRIA_RMBG import BRIA_RMBG_ModelLoader, BRIA_RMBG
 from .svgnode import ConvertRasterToVector, SaveSVG
 from .FLUXResolutions import FLUXResolutions
 from .prompt_styler import *
+from datetime import datetime
 
+# ================== UNIVERSAL IMAGE UTILITIES ==================
+def rgba_to_rgb(image):
+    """Convert RGBA image to RGB with white background"""
+    if image.mode == 'RGBA':
+        background = Image.new("RGB", image.size, (255, 255, 255))
+        image = Image.alpha_composite(background.convert("RGBA"), image).convert("RGB")
+    return image
+
+def tensor_to_pil_image(tensor):
+    """Convert tensor to PIL Image with RGBA support"""
+    tensor = tensor.cpu()
+    image_np = tensor.squeeze().mul(255).clamp(0, 255).byte().numpy()
+    
+    # Handle different channel counts
+    if len(image_np.shape) == 2:  # Grayscale
+        image_np = np.expand_dims(image_np, axis=-1)
+    if image_np.shape[-1] == 1:   # Single channel
+        image_np = np.repeat(image_np, 3, axis=-1)
+        
+    channels = image_np.shape[-1]
+    mode = 'RGBA' if channels == 4 else 'RGB'
+    
+    image = Image.fromarray(image_np, mode=mode)
+    return rgba_to_rgb(image)
+
+def tensor_to_base64(tensor):
+    """Convert tensor to base64 encoded PNG"""
+    image = tensor_to_pil_image(tensor)
+    buffered = io.BytesIO()
+    image.save(buffered, format="PNG")
+    return base64.b64encode(buffered.getvalue()).decode()
 def get_gemini_api_key():
     try:
         config_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.json')
@@ -38,6 +71,126 @@ def get_ollama_url():
         ollama_url = "http://localhost:11434"
     return ollama_url
 
+# ================== API SERVICES ==================
+import os
+import json
+from openai import OpenAI
+import requests
+import base64
+import numpy as np
+from PIL import Image
+import io
+import torch
+
+class QwenAPI:
+    def __init__(self):
+        self.qwen_api_key = self.get_qwen_api_key()
+        if not self.qwen_api_key:
+            print("Error: Qwen API key is required")
+        self.client = OpenAI(
+            api_key=self.qwen_api_key,
+            base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
+        )
+
+    def get_qwen_api_key(self):
+        try:
+            config_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.json')
+            with open(config_path, 'r') as f:
+                config = json.load(f)
+                return config.get("QWEN_API_KEY", "")
+        except Exception as e:
+            print(f"Error loading Qwen API key: {str(e)}")
+            return ""
+
+    def tensor_to_base64(self, image_tensor):
+        # Ensure the tensor is on CPU and convert to numpy
+        if torch.is_tensor(image_tensor):
+            if image_tensor.ndim == 4:
+                image_tensor = image_tensor[0]
+            image_tensor = (image_tensor * 255).clamp(0, 255)
+            image_tensor = image_tensor.cpu().numpy().astype(np.uint8)
+            if image_tensor.shape[0] == 3:  # If channels are first
+                image_tensor = image_tensor.transpose(1, 2, 0)
+        
+        # Convert numpy array to PIL Image
+        image = Image.fromarray(image_tensor)
+        
+        # Convert PIL Image to base64
+        buffered = io.BytesIO()
+        image.save(buffered, format="PNG")
+        img_str = base64.b64encode(buffered.getvalue()).decode()
+        return img_str
+
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
+                "qwen_model": (
+                    [
+                        "qwen-max", "qwen-max-latest", "qwen-max-2025-01-25",
+                        "qwen-plus", "qwen-plus-latest", "qwen-plus-2025-01-25",
+                        "qwen-turbo", "qwen-turbo-latest", "qwen-turbo-2024-11-01",
+                        "qwen-vl-max", "qwen-vl-plus",
+                        "qwen2.5-vl-72b-instruct", "qwen2.5-vl-7b-instruct", "qwen2.5-vl-3b-instruct",
+                        "qwen2.5-7b-instruct-1m", "qwen2.5-14b-instruct-1m", "qwen2.5-72b-instruct",
+                        "qwen2.5-32b-instruct", "qwen2.5-14b-instruct", "qwen2.5-7b-instruct",
+                        "qwen2-72b-instruct", "qwen2-57b-a14b-instruct", "qwen2-7b-instruct",
+                        "qwen1.5-110b-chat", "qwen1.5-7b-chat", "qwen1.5-72b-chat",
+                        "qwen1.5-32b-chat", "qwen1.5-14b-chat",
+                        "text-embedding-v3"
+                    ],
+                    {"default": "qwen-max"}
+                ),
+                "max_tokens": ("INT", {"default": 1024, "min": 1, "max": 8192, "step": 1}),
+                "temperature": ("FLOAT", {"default": 0.7, "min": 0.0, "max": 2.0, "step": 0.1}),
+                "top_p": ("FLOAT", {"default": 0.7, "min": 0.0, "max": 1.0, "step": 0.1}),
+            },
+            "optional": {
+                "image": ("IMAGE",),
+            }
+        }
+
+    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ("text",)
+    FUNCTION = "generate_content"
+    CATEGORY = "AI API/Qwen"
+
+    def generate_content(self, prompt, qwen_model, max_tokens, temperature, top_p, image=None):
+        if not self.qwen_api_key:
+            return ("Qwen API key missing",)
+
+        try:
+            messages = [
+                {"role": "system", "content": "You are a helpful assistant."},
+            ]
+
+            if image is not None:
+                image_b64 = self.tensor_to_base64(image)
+                messages.append({
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": prompt},
+                        {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image_b64}"}}
+                    ]
+                })
+            else:
+                messages.append({"role": "user", "content": prompt})
+
+            completion = self.client.chat.completions.create(
+                model=qwen_model,
+                messages=messages,
+                max_tokens=max_tokens,
+                temperature=temperature,
+                top_p=top_p
+            )
+
+            # Extract the response text from the completion
+            response_text = completion.choices[0].message.content
+            return (response_text,)
+
+        except Exception as e:
+            return (f"API Error: {str(e)}",)
 class OpenAIAPI:
     def __init__(self):
         self.openai_api_key = self.get_openai_api_key()
@@ -83,8 +236,8 @@ class OpenAIAPI:
                     "gpt-3.5-turbo-16k",
                     "gpt-3.5-turbo-1106",
                     "o1-preview",
-                    "o1-mini",  # Latest GPT-3.5 Turbo
-                    "deepseek-ai/deepseek-r1"  # NVIDIA model
+                    "o1-mini",
+                    "deepseek-ai/deepseek-r1"
                 ],),
                 "max_tokens": ("INT", {"default": 1024, "min": 1, "max": 4096, "step": 1}),
                 "temperature": ("FLOAT", {"default": 0.7, "min": 0.0, "max": 2.0, "step": 0.1}),
@@ -101,54 +254,39 @@ class OpenAIAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/OpenAI"
 
-    def tensor_to_base64(self, tensor):
-        tensor = tensor.cpu()
-        image_np = tensor.squeeze().mul(255).clamp(0, 255).byte().numpy()
-        image = Image.fromarray(image_np, mode='RGB')
-        buffered = io.BytesIO()
-        image.save(buffered, format="PNG")
-        return base64.b64encode(buffered.getvalue()).decode()
-
     def generate_content(self, prompt, model, max_tokens, temperature, top_p, stream, image=None):
         messages = [{"role": "user", "content": prompt}]
         
         if image is not None:
-            image_b64 = self.tensor_to_base64(image)
+            image_b64 = tensor_to_base64(image)
             messages[0]["content"] = [
                 {"type": "text", "text": prompt},
                 {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image_b64}"}}
             ]
 
-        # Determine which client to use based on the model
-        if model.startswith("deepseek"):
-            if not hasattr(self, 'nvidia_client') or not self.nvidia_api_key:
-                raise ValueError("NVIDIA API key is required for NVIDIA models")
-            client = self.nvidia_client
-        else:
-            if not hasattr(self, 'openai_client') or not self.openai_api_key:
-                raise ValueError("OpenAI API key is required")
-            client = self.openai_client
+        try:
+            client = self.nvidia_client if model.startswith("deepseek") else self.openai_client
+            if not client:
+                raise ValueError("API client not initialized")
 
-        # Prepare generation parameters
-        generation_params = {
-            "model": model,
-            "messages": messages,
-            "max_tokens": max_tokens,
-            "temperature": temperature,
-            "top_p": top_p
-        }
+            generation_params = {
+                "model": model,
+                "messages": messages,
+                "max_tokens": max_tokens,
+                "temperature": temperature,
+                "top_p": top_p
+            }
 
-        # Handle streaming and non-streaming responses
-        if stream:
-            response = client.chat.completions.create(**generation_params, stream=True)
-            textoutput = ""
-            for chunk in response:
-                if chunk.choices[0].delta.content is not None:
-                    textoutput += chunk.choices[0].delta.content
-        else:
-            response = client.chat.completions.create(**generation_params)
-            textoutput = response.choices[0].message.content
-        
+            if stream:
+                response = client.chat.completions.create(**generation_params, stream=True)
+                textoutput = "".join([chunk.choices[0].delta.content for chunk in response if chunk.choices[0].delta.content])
+            else:
+                response = client.chat.completions.create(**generation_params)
+                textoutput = response.choices[0].message.content
+
+        except Exception as e:
+            textoutput = f"API Error: {str(e)}"
+
         return (textoutput,)
 
 class ClaudeAPI:
@@ -162,11 +300,10 @@ class ClaudeAPI:
             config_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.json')
             with open(config_path, 'r') as f:  
                 config = json.load(f)
-            api_key = config["CLAUDE_API_KEY"]
+            return config["CLAUDE_API_KEY"]
         except:
             print("Error: Claude API key is required")
             return ""
-        return api_key
 
     @classmethod
     def INPUT_TYPES(cls):
@@ -186,37 +323,30 @@ class ClaudeAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Claude"
 
-    def tensor_to_base64(self, tensor):
-        tensor = tensor.cpu()
-        image_np = tensor.squeeze().mul(255).clamp(0, 255).byte().numpy()
-        image = Image.fromarray(image_np, mode='RGB')
-        buffered = io.BytesIO()
-        image.save(buffered, format="PNG")
-        return base64.b64encode(buffered.getvalue()).decode()
-
     def generate_content(self, prompt, model, max_tokens, image=None):
         if not self.claude_api_key:
-            raise ValueError("Claude API key is required")
+            return ("Claude API key missing",)
 
         messages = [{"role": "user", "content": prompt}]
         
-        if image is not None:
-            image_b64 = self.tensor_to_base64(image)
-            messages[0]["content"] = [
-                {"type": "text", "text": prompt},
-                {"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": image_b64}}
-            ]
+        try:
+            if image is not None:
+                image_b64 = tensor_to_base64(image)
+                messages[0]["content"] = [
+                    {"type": "text", "text": prompt},
+                    {"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": image_b64}}
+                ]
 
-        response = self.client.messages.create(
-            model=model,
-            max_tokens=max_tokens,
-            messages=messages
-        )
-        
-        return (response.content[0].text,)
+            response = self.client.messages.create(
+                model=model,
+                max_tokens=max_tokens,
+                messages=messages
+            )
+            return (response.content[0].text,)
+        except Exception as e:
+            return (f"API Error: {str(e)}",)
 
 class GeminiAPI:
-
     def __init__(self):
         self.gemini_api_key = get_gemini_api_key()
         if self.gemini_api_key:
@@ -238,42 +368,32 @@ class GeminiAPI:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("text",)
     FUNCTION = "generate_content"
-
     CATEGORY = "AI API/Gemini"
-
-    def tensor_to_image(self, tensor):
-        tensor = tensor.cpu()
-        image_np = tensor.squeeze().mul(255).clamp(0, 255).byte().numpy()
-        image = Image.fromarray(image_np, mode='RGB')
-        return image
 
     def generate_content(self, prompt, gemini_model, stream, image=None):
         if not self.gemini_api_key:
-            raise ValueError("Gemini API key is required")
-        
-        model = genai.GenerativeModel(gemini_model)
+            return ("Gemini API key missing",)
 
-        if gemini_model in ["gemini-1.5-pro-002", "gemini-1.5-flash", "gemini-1.5-flash-8b","learnlm-1.5-pro-experimental","gemini-exp-1114","gemini-exp-1121"]:
-            if image is None:
-                if stream:
-                    response = model.generate_content(prompt, stream=True)
-                    textoutput = "\n".join([chunk.text for chunk in response])
-                else:
-                    response = model.generate_content(prompt)
-                    textoutput = response.text
+        try:
+            model = genai.GenerativeModel(gemini_model)
+            content = [prompt]
+
+            if image is not None:
+                pil_image = tensor_to_pil_image(image)
+                content.append(pil_image)
+
+            if stream:
+                response = model.generate_content(content, stream=True)
+                textoutput = "\n".join([chunk.text for chunk in response])
             else:
-                pil_image = self.tensor_to_image(image)
-                if stream:
-                    response = model.generate_content([prompt, pil_image], stream=True)
-                    textoutput = "\n".join([chunk.text for chunk in response])
-                else:
-                    response = model.generate_content([prompt, pil_image])
-                    textoutput = response.text
+                response = model.generate_content(content)
+                textoutput = response.text
 
-        return (textoutput,)
+            return (textoutput,)
+        except Exception as e:
+            return (f"API Error: {str(e)}",)
 
 class OllamaAPI:
-
     def __init__(self):
         self.ollama_url = get_ollama_url()
 
@@ -285,12 +405,10 @@ class OllamaAPI:
             if response.status_code == 200:
                 models = response.json().get('models', [])
                 return [model['name'] for model in models]
-            else:
-                print(f"Failed to fetch Ollama models. Status code: {response.status_code}")
-                return ["llama2"]  # Fallback to a default model
+            return ["llama2"]
         except Exception as e:
             print(f"Error fetching Ollama models: {str(e)}")
-            return ["llama2"]  # Fallback to a default model
+            return ["llama2"]
 
     @classmethod
     def INPUT_TYPES(cls):
@@ -308,18 +426,10 @@ class OllamaAPI:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("text",)
     FUNCTION = "generate_content"
-
     CATEGORY = "AI API/Ollama"
-
-    def tensor_to_image(self, tensor):
-        tensor = tensor.cpu()
-        image_np = tensor.squeeze().mul(255).clamp(0, 255).byte().numpy()
-        image = Image.fromarray(image_np, mode='RGB')
-        return image
 
     def generate_content(self, prompt, ollama_model, keep_alive, image=None):
         url = f"{self.ollama_url}/api/generate"
-        
         payload = {
             "model": ollama_model,
             "prompt": prompt,
@@ -327,19 +437,20 @@ class OllamaAPI:
             "keep_alive": f"{keep_alive}m"
         }
 
-        if image is not None and isinstance(image, torch.Tensor) and image.numel() > 0:
-            pil_image = self.tensor_to_image(image)
-            buffered = io.BytesIO()
-            pil_image.save(buffered, format="PNG")
-            img_str = base64.b64encode(buffered.getvalue()).decode()
-            payload["images"] = [img_str]
+        try:
+            if image is not None:
+                pil_image = tensor_to_pil_image(image)
+                buffered = io.BytesIO()
+                pil_image.save(buffered, format="PNG")
+                payload["images"] = [base64.b64encode(buffered.getvalue()).decode()]
 
-        response = requests.post(url, json=payload)
-        response.raise_for_status()
-        textoutput = response.json().get('response', '')
+            response = requests.post(url, json=payload)
+            response.raise_for_status()
+            return (response.json().get('response', ''),)
+        except Exception as e:
+            return (f"API Error: {str(e)}",)
 
-        return (textoutput,)
-
+# ================== SUPPORTING NODES ==================
 class TextSplitByDelimiter:
     @classmethod
     def INPUT_TYPES(s):
@@ -347,27 +458,9 @@ class TextSplitByDelimiter:
             "required": {
                 "text": ("STRING", {"multiline": True,"dynamicPrompts": False}),
                 "delimiter":("STRING", {"multiline": False,"default":",","dynamicPrompts": False}),
-                "start_index": ("INT", {
-                    "default": 0,
-                    "min": 0, #Minimum value
-                    "max": 1000, #Maximum value
-                    "step": 1, #Slider's step
-                    "display": "number" # Cosmetic only: display as "number" or "slider"
-                }),
-                 "skip_every": ("INT", {
-                    "default": 0,
-                    "min": 0, #Minimum value
-                    "max": 10, #Maximum value
-                    "step": 1, #Slider's step
-                    "display": "number" # Cosmetic only: display as "number" or "slider"
-                }),
-                "max_count": ("INT", {
-                    "default": 10,
-                    "min": 1, #Minimum value
-                    "max": 1000, #Maximum value
-                    "step": 1, #Slider's step
-                    "display": "number" # Cosmetic only: display as "number" or "slider"
-                }),
+                "start_index": ("INT", {"default": 0, "min": 0, "max": 1000}),
+                "skip_every": ("INT", {"default": 0, "min": 0, "max": 10}),
+                "max_count": ("INT", {"default": 10, "min": 1, "max": 1000}),
             }
         }
 
@@ -375,42 +468,20 @@ class TextSplitByDelimiter:
     RETURN_TYPES = ("STRING",)
     FUNCTION = "run"
     OUTPUT_IS_LIST = (True,)
-
     CATEGORY = "AI API"
 
     def run(self, text, delimiter, start_index, skip_every, max_count):
-        if delimiter == "":
-            arr = [text.strip()]
-        else:
-            delimiter = codecs.decode(delimiter, 'unicode_escape')
-            arr = [item.strip() for item in text.split(delimiter) if item.strip()]
-        
+        delimiter = codecs.decode(delimiter, 'unicode_escape')
+        arr = [item.strip() for item in text.split(delimiter) if item.strip()]
         arr = arr[start_index:start_index + max_count * (skip_every + 1):(skip_every + 1)]
-        
         return (arr,)
 
-
-import os
-from datetime import datetime
-
 class Save_text_File:
-    """
-    This class is responsible for saving text content to a file.
-
-    It provides a standardized way to save text data, ensuring that the necessary directories are created if they don't exist, and handling empty or missing input data gracefully.
-    """
-
     def __init__(self):
         self.output_dir = folder_paths.output_directory
 
     @classmethod
     def INPUT_TYPES(cls):
-        """
-        Defines the input types and default values for the class.
-
-        Returns:
-            dict: A dictionary with the required input parameters and their types/defaults.
-        """
         return {
             "required": {
                 "filename": ("STRING", {"default": 'info', "multiline": False}),
@@ -425,71 +496,25 @@ class Save_text_File:
     CATEGORY = "AI API"
 
     def save_text_file(self, text="", path="", filename=""):
-        """
-        Saves the provided text content to a file.
-
-        If the specified output path doesn't exist, it will create the necessary directories.
-        If the filename is empty, it will use a timestamp-based filename.
-        If the positive text is empty, it will save a default message.
-
-        Args:
-            positive (str): The text content to be saved.
-            path (str): The relative path where the file should be saved.
-            filename (str): The name of the file to be saved (without the .txt extension).
-
-        Returns:
-            tuple: A tuple containing the saved text content.
-        """
         output_path = os.path.join(self.output_dir, path)
-
-        # Check if the output path exists, and create it if it doesn't
-        if output_path.strip() != '':
-            if not os.path.exists(output_path.strip()):
-                print(f'The path `{output_path.strip()}` specified doesn\'t exist! Creating directory.')
-                os.makedirs(output_path, exist_ok=True)
-
-        # If the filename is empty, use a timestamp-based filename
-        if filename.strip() == '':
-            print(f'Warning: There is no filename specified! Saving file with timestamp.')
-            filename = get_timestamp('%Y%m%d%H%M%S')
-
-        # If the positive text is empty, use a default message
-        if text == "":
-            text = "No prompt data"
-
-        # Save the text content to the file
-        self.writeTextFile(os.path.join(output_path, filename + '.txt'), text)
+        os.makedirs(output_path, exist_ok=True)
+        
+        if not filename:
+            filename = datetime.now().strftime('%Y%m%d%H%M%S')
+            
+        file_path = os.path.join(output_path, f"{filename}.txt")
+        try:
+            with open(file_path, 'w') as f:
+                f.write(text)
+        except OSError:
+            print(f'Error saving file: {file_path}')
+            
         return (text,)
 
-    def writeTextFile(self, file, content):
-        """
-        Writes the provided content to the specified file.
-
-        Args:
-            file (str): The full path and filename of the file to be written.
-            content (str): The text content to be written to the file.
-        """
-        try:
-            with open(file, 'w') as f:
-                f.write(content)
-        except OSError:
-            print(f'Error: Unable to save file `{file}`')
-
-def get_timestamp(fmt):
-    """
-    Generates a timestamp string based on the provided format.
-
-    Args:
-        fmt (str): The format string for the timestamp.
-
-    Returns:
-        str: The timestamp string.
-    """
-    return datetime.now().strftime(fmt)
-
-
+# ================== NODE REGISTRATION ==================
 NODE_CLASS_MAPPINGS = {
     "CLIPSeg": CLIPSeg,
+    "QwenAPI": QwenAPI,
     "CombineSegMasks": CombineMasks,
     "OpenAIAPI": OpenAIAPI,
     "ClaudeAPI": ClaudeAPI,
@@ -507,6 +532,7 @@ NODE_CLASS_MAPPINGS = {
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "CLIPSeg": "CLIPSeg",
+    "QwenAPI": "Qwen API",
     "CombineSegMasks": "CombineMasks",
     "OpenAIAPI": "OpenAI API",
     "ClaudeAPI": "Claude API",
