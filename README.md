@@ -65,7 +65,7 @@ Integrate local language models running via Ollama:
 - Dropdown for selecting Ollama models
 - Customizable model options
 
-  ### 5. Qwen API
+### 5. Qwen API
 
 Access Alibaba's Qwen language models:
 
@@ -79,19 +79,82 @@ Access Alibaba's Qwen language models:
 
 ### 6. FLUX Resolutions
 
-[Previous FLUX Resolutions content remains the same]
+Provides advanced image resolution and sizing options:
+
+- Predefined resolution presets (e.g., 768x1024, 1024x768, 1152x768)
+- Custom sizing parameters:
+  - size_selected
+  - multiply_factor
+  - manual_width
+  - manual_height
 
 ### 7. ComfyUI Styler
 
-[Previous ComfyUI Styler content remains the same]
+Extensive styling options for various creative needs:
+
+🎨 General Arts – A broad spectrum of traditional and modern art styles
+🌸 Anime – Bring your designs to life with anime-inspired aesthetics
+🎨 Artist – Channel the influence of world-class artists
+📷 Camera – Fine-tune focal lengths, angles, and setups
+📐 Camera Angles – Add dynamic perspectives with a range of angles
+🌟 Aesthetic – Define unique artistic vibes and styles
+🎞️ Color Grading – Achieve rich cinematic tones and palettes
+🎬 Movies – Get inspired by different cinematic worlds
+🖌️ Digital Artform – From vector art to abstract digital styles
+💪 Body Type – Customize different body shapes and dimensions
+😲 Reactions – Capture authentic emotional expressions
+💭 Feelings – Set the emotional tone for each creation
+📸 Photographers – Infuse the style of renowned photographers
+💇 Hair Style – Wide variety of hair designs for your characters
+🏛️ Architecture Style – Classical to modern architectural themes
+🛠️ Architect – Designs inspired by notable architects
+🚗 Vehicle – Add cars, planes, or futuristic transportation
+🕺 Poses – Customize dynamic body positions
+🔬 Science – Add futuristic, scientific elements
+👗 Clothing State – Define the wear and tear of clothing
+👠 Clothing Style – Wide range of fashion styles
+🎨 Composition – Control the layout and arrangement of elements
+📏 Depth – Add dimensionality and focus to your scenes
+🌍 Environment – From nature to urban settings, create rich backdrops
+😊 Face – Customize facial expressions and emotions
+🦄 Fantasy – Bring magical and surreal elements into your visuals
+🎃 Filter – Apply unique visual filters for artistic effects
+🖤 Gothic – Channel dark, mysterious, and dramatic themes
+👻 Halloween – Get spooky with Halloween-inspired designs
+✏️ Line Art – Incorporate clean, bold lines into your creations
+💡 Lighting – Set the mood with dramatic lighting effects
+✈️ Milehigh – Capture the essence of aviation and travel
+🎭 Mood – Set the emotional tone and atmosphere
+🎞️ Movie Poster – Create dramatic, story-driven poster designs
+🎸 Punk – Channel bold, rebellious aesthetics
+🌍 Travel Poster – Design vintage travel posters with global vibes
 
 ### 8. Raster to Vector (SVG) and Save SVG
 
-[Previous Raster to Vector content remains the same]
+Convert raster images to vector graphics and save them:
+
+**Raster to Vector node parameters:**
+
+- colormode
+- filter_speckle
+- corner_threshold
+- ... (and more)
+
+**Save SVG node options:**
+
+- filename_prefix
+- overwrite_existing
 
 ### 9. TextSplitByDelimiter
 
-[Previous TextSplitByDelimiter content remains the same]
+Split text based on specified delimiters:
+
+- Input text field
+- Delimiter options:
+  - split_regex
+  - split_every
+  - split_count
+
 
 ## Installation
 
