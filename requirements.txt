@@ -1,3 +1,5 @@
 google-generativeai 
 requests
 vtracer
+anthropic
+openai

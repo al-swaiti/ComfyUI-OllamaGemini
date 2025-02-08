@@ -229,15 +229,26 @@ class OpenAIAPI:
             "required": {
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
                 "model": ([
+                    # GPT-4 Family
                     "gpt-4o-mini",
-                    "gpt-4o",
+                    "gpt-4o-mini-2024-07-18",
+                    # GPT-3.5 Family
                     "gpt-3.5-turbo",
                     "gpt-3.5-turbo-0125",
                     "gpt-3.5-turbo-16k",
                     "gpt-3.5-turbo-1106",
+                    "gpt-3.5-turbo-instruct",
+                    "gpt-3.5-turbo-instruct-0914",
+                    # O1 Family
                     "o1-preview",
+                    "o1-preview-2024-09-12",
                     "o1-mini",
-                    "deepseek-ai/deepseek-r1"
+                    "o1-mini-2024-09-12",
+                    # DeepSeek Models
+                    "deepseek-ai/deepseek-r1",
+                    # Legacy Models
+                    "babbage-002",
+                    "davinci-002"
                 ],),
                 "max_tokens": ("INT", {"default": 1024, "min": 1, "max": 4096, "step": 1}),
                 "temperature": ("FLOAT", {"default": 0.7, "min": 0.0, "max": 2.0, "step": 0.1}),
@@ -357,7 +368,23 @@ class GeminiAPI:
         return {
             "required": {
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
-                "gemini_model": (["gemini-1.5-pro-002", "gemini-1.5-flash", "gemini-1.5-flash-8b","learnlm-1.5-pro-experimental","gemini-exp-1114","gemini-exp-1121"],),
+                "gemini_model": ([
+                    # Gemini 2.0 Models
+                    "gemini-2.0-flash",
+                    "gemini-2.0-flash-lite-preview-02-05",
+                    "gemini-2.0-pro-exp-02-05",
+                    "gemini-2.0-flash-thinking-exp-01-21",
+                    "gemini-2.0-flash-exp",
+                    # Gemini 1.5 Models
+                    "gemini-1.5-pro",
+                    "gemini-1.5-flash-8b",
+                    "gemini-1.5-pro-experimental",
+                    "learnlm-1.5-pro-experimental",
+                    # Gemma Models
+                    "gemma-2-2b-it",
+                    "gemma-2-9b-it",
+                    "gemma-2-27b-it"
+                ],),
                 "stream": ("BOOLEAN", {"default": False}),
             },
             "optional": {
