@@ -21,29 +21,26 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 ## Nodes
 
 ### 1. Gemini API
+- Models:
+  - gemini-2.0-pro
+  - gemini-2.0-flash
+  - gemini-2.0-flash-lite-preview-02-05
+  - gemini-2.0-pro-experimental-02-05
+  - gemini-1.5-pro
+  - gemini-1.5-flash-8b
+  - gemini-1.5-pro-experimental
+  - learnlm-1.5-pro-experimental
 
-The Gemini API node allows you to interact with Google's Gemini models:
-
-- Text input field for prompts
-- Model selection:
-  - gemini-1.5-pro-latest
-  - gemini-1.5-pro-exp-0801
-  - gemini-1.5-flash
-- Streaming option for real-time responses
-
-### 2. OpenAI (ChatGPT) API
-
-Integrate with OpenAI's powerful language models:
-
-- Text input field for prompts
-- Model selection:
-  - gpt-4-turbo
-  - gpt-4
+### 2. OpenAI API
+- Models:
+  - gpt-4o-mini
   - gpt-3.5-turbo
-- Temperature and max tokens settings
-- System message configuration
-- Streaming support
-
+  - gpt-3.5-turbo-0125
+  - gpt-3.5-turbo-16k
+  - gpt-3.5-turbo-1106
+  - o1-preview/mini
+  - deepseek-ai/deepseek-r1
+    
 ### 3. Claude API
 
 Access Anthropic's Claude models for advanced language tasks:
@@ -173,16 +170,16 @@ Split text based on specified delimiters:
 
 ### API Key Setup
 
-1. Create a `config.json` file in the extension directory with the following content:
-   ```json
-   {
-     "GEMINI_API_KEY": "your_gemini_api_key_here",
-     "OPENAI_API_KEY": "your_openai_api_key_here",
-     "ANTHROPIC_API_KEY": "your_claude_api_key_here",
-     "OLLAMA_URL": "http://localhost:11434",
-     "QWEN_API_KEY": "your_qwen_api_key_here"
-   }
-   ```
+Edit  `config.json`: with your fav AI provider
+```json
+{
+  "GEMINI_API_KEY": "your_gemini_api_key",
+  "OPENAI_API_KEY": "your_openai_api_key",
+  "ANTHROPIC_API_KEY": "your_claude_api_key",
+  "OLLAMA_URL": "http://localhost:11434",
+  "QWEN_API_KEY": "your_qwen_api_key"
+}
+```
 
 2. Obtain API keys from:
    - Gemini: [Google AI Studio](https://makersuite.google.com/app/apikey)
