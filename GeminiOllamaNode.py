@@ -12,7 +12,7 @@ import anthropic
 import io
 import numpy as np
 from .clipseg import CLIPSeg, CombineMasks
-from .BRIA_RMBG import BRIA_RMBG_ModelLoader, BRIA_RMBG
+from .BRIA_RMBG import  BRIA_RMBG
 from .svgnode import ConvertRasterToVector, SaveSVG
 from .FLUXResolutions import FLUXResolutions
 from .prompt_styler import *
@@ -549,7 +549,6 @@ NODE_CLASS_MAPPINGS = {
     "OllamaAPI": OllamaAPI,
     "TextSplitByDelimiter": TextSplitByDelimiter,
     "Save text": Save_text_File,
-    "BRIA_RMBG_ModelLoader": BRIA_RMBG_ModelLoader,
     "BRIA_RMBG": BRIA_RMBG,
     "ConvertRasterToVector": ConvertRasterToVector,
     "SaveSVG": SaveSVG,
@@ -567,7 +566,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "OllamaAPI": "Ollama API",
     "TextSplitByDelimiter": "TextSplitByDelimiter",
     "Save text": "Save_text_File",
-    "BRIA_RMBG_ModelLoader": "BRIA_RMBG Model Loader",
     "BRIA_RMBG": "BRIA RMBG",
     "ConvertRasterToVector": "Raster to Vector (SVG)",
     "SaveSVG": "Save SVG",
