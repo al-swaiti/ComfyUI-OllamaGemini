@@ -72,15 +72,7 @@ def get_ollama_url():
     return ollama_url
 
 # ================== API SERVICES ==================
-import os
-import json
-from openai import OpenAI
-import requests
-import base64
-import numpy as np
-from PIL import Image
-import io
-import torch
+
 
 class QwenAPI:
     def __init__(self):
