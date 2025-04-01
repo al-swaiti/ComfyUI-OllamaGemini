@@ -346,7 +346,7 @@ QWEN_API_KEY=your_qwen_api_key
 5. For enhanced prompts, enable "structure_output" and select a prompt structure template
 6. Connect the output to other nodes in your workflow
 
-<img src="examples/1.jpg" width="500">
+<img src="examples/1.png" width="500">
 </details>
 
 <details>
@@ -357,7 +357,7 @@ QWEN_API_KEY=your_qwen_api_key
 3. Optionally add a negative prompt to exclude unwanted elements
 4. Connect the output to a preview node to see the generated image
 
-<img src="examples/3.jpg" width="500">
+<img src="examples/3.png" width="500">
 </details>
 
 <details>
@@ -369,7 +369,7 @@ QWEN_API_KEY=your_qwen_api_key
 4. Connect the image output to see the transparent result
 5. Connect the mask output to see the generated mask
 
-<img src="examples/6.jpg" width="500">
+<img src="examples/6.png" width="500">
 </details>
 
 <details>
@@ -381,7 +381,7 @@ QWEN_API_KEY=your_qwen_api_key
 4. Connect the output to the "Save SVG File" node
 5. Set a filename prefix and enable preview
 
-<img src="examples/9.jpg" width="500">
+<img src="examples/9.gif" width="500">
 </details>
 
 ## 🎬 Showcase
@@ -390,39 +390,39 @@ QWEN_API_KEY=your_qwen_api_key
 
 ### 🧠 AI API Services with Prompt Enhancement
 
-<img src="examples/1.jpg" width="700">
+<img src="examples/1.png" width="700">
 
 *Transform simple prompts into detailed, model-specific instructions with multiple template options*
 
 ### 🖼️ Gemini Image Generation
 
-<img src="examples/3.jpg" width="700">
-<img src="examples/4.jpg" width="700">
-<img src="examples/5.jpg" width="700">
+<img src="examples/3.png" width="700">
+<img src="examples/4.png" width="700">
+<img src="examples/5.png" width="700">
 
 *Generate stunning images directly with Google's Gemini 2.0 Flash model*
 
 ### 🪄 Background Removal with BRIA RMBG
 
-<img src="examples/6.jpg" width="700">
+<img src="examples/6.png" width="700">
 
 *Remove backgrounds with precision while preserving fine details*
 
 ### 🎨 ComfyUI Styler
 
-<img src="examples/7.jpg" width="700">
+<img src="examples/7.png" width="700">
 
 *Access hundreds of artistic styles and parameters for creative control*
 
 ### 📐 FLUX Resolutions
 
-<img src="examples/8.jpg" width="700">
+<img src="examples/8.png" width="700">
 
 *Optimize image dimensions with predefined and custom resolution options*
 
 ### ✒️ SVG Conversion
 
-<img src="examples/9.jpg" width="700">
+<img src="examples/9.gif" width="700">
 
 *Convert raster images to high-quality SVG vector graphics*
 
