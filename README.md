@@ -104,12 +104,6 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
    pip install google-generativeai>=0.3.0 openai>=1.3.0 anthropic>=0.8.0 requests>=2.31.0 vtracer>=0.6.0
    ```
 
-   Optional dependencies for enhanced functionality:
-   ```bash
-   # For additional SVG conversion methods (if needed)
-   pip install pyautotrace cairosvg
-   ```
-
 3. Restart ComfyUI
 </details>
 
