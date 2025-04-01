@@ -65,7 +65,7 @@ class PromptStyler:
         text_positive_styled, text_negative_styled = text_positive, text_negative
         for menu, selection in kwargs.items():
             text_positive_styled, text_negative_styled = styler_data[menu][selection].replace_prompts(text_positive_styled, text_negative_styled)
- 
+
         if log_prompt:
             for menu, selection in kwargs.items():
                 print(f"{menu}: {selection}")
