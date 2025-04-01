@@ -11,7 +11,14 @@ vtracer>=0.6.0
 # Image processing
 numpy>=1.24.0
 Pillow>=10.0.0
+scipy>=1.10.0  # For gaussian_filter
+opencv-python>=4.6.0  # OpenCV for image processing
+
+# Machine learning
+transformers>=4.30.0  # For CLIPSeg and BRIA_RMBG
 
 # For ComfyUI integration - these are usually provided by ComfyUI itself
 # torch>=2.0.0
 # torchvision>=0.15.0
+
+# Note: folder_paths is provided by ComfyUI
