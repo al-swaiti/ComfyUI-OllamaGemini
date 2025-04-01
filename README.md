@@ -14,26 +14,69 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 ## Features
 
-### Multiple AI API Integrations
+<div align="center">
+
+### 1️⃣ Multiple AI API Integrations
+
+<img src="examples/1.png" width="700">
+
 - **Google Gemini**: Access gemini-2.0-pro, gemini-2.0-flash, gemini-1.5-pro and more
 - **OpenAI**: Use gpt-4o, gpt-4-turbo, gpt-3.5-turbo, and DeepSeek models
 - **Anthropic Claude**: Leverage claude-3.7-sonnet, claude-3.5-sonnet, claude-3-opus and more
 - **Alibaba Qwen**: Access qwen-max, qwen-plus, qwen-turbo models
 - **Ollama**: Run local models with customizable parameters
 
-### Gemini Image Generation
+### 2️⃣ Gemini Image Generation
+
+<img src="examples/3.png" width="700">
+<img src="examples/4.png" width="700">
+<img src="examples/5.png" width="700">
+
 - Generate images directly with Google's Gemini 2.0 Flash model
 - Customize with prompts and negative prompts
 - Automatic saving to ComfyUI's output directory
 
-### Advanced Tools
-- **Prompt Enhancement**: Transform simple prompts into detailed instructions with specialized templates
-- **BRIA RMBG**: High-quality background removal with fine detail preservation
-- **SVG Conversion**: Convert raster images to high-quality vector graphics
-- **FLUX Resolutions**: Precise image sizing with predefined and custom options
-- **ComfyUI Styler**: Hundreds of artistic styles for creative control
-- **Text Splitting**: Process and manipulate text with various delimiter options
-- **Streaming Responses**: Get real-time feedback from AI models
+### 3️⃣ Prompt Enhancement
+
+<img src="examples/1.png" width="700">
+
+- Transform simple prompts into detailed, model-specific instructions
+- Multiple specialized templates (SDXL, Wan2.1, FLUX.1-dev, HunyuanVideo)
+- Returns only the enhanced prompt without additional commentary
+
+### 4️⃣ Background Removal (BRIA RMBG)
+
+<img src="examples/6.png" width="700">
+
+- High-quality background removal with fine detail preservation
+- Preserves complex edges, hair, thin stems, and transparent elements
+- Generates both transparent images and alpha masks
+
+### 5️⃣ SVG Conversion
+
+<img src="examples/9.gif" width="700">
+
+- Convert raster images to high-quality vector graphics
+- Multiple vectorization parameters for precise control
+- Save and preview SVG files directly in ComfyUI
+
+### 6️⃣ FLUX Resolutions
+
+<img src="examples/8.png" width="700">
+
+- Precise image sizing with predefined and custom options
+- Multiple resolution presets for various use cases
+- Custom sizing parameters for complete control
+
+### 7️⃣ ComfyUI Styler
+
+<img src="examples/7.png" width="700">
+
+- Hundreds of artistic styles for creative control
+- Categories include art styles, camera settings, moods, and more
+- Easily combine multiple style elements
+
+</div>
 
 ## Nodes
 
@@ -356,52 +399,8 @@ QWEN_API_KEY=your_qwen_api_key
 4. Connect the output to the "Save SVG File" node
 5. Set a filename prefix and enable preview
 
-<img src="examples/9.png" width="500">
+<img src="examples/9.gif" width="500">
 </details>
-
-## 🎬 Showcase
-
-<div align="center">
-
-### 🧠 AI API Services with Prompt Enhancement
-
-<img src="examples/1.png" width="700">
-
-*Transform simple prompts into detailed, model-specific instructions with multiple template options*
-
-### 🖼️ Gemini Image Generation
-
-<img src="examples/3.png" width="700">
-<img src="examples/4.png" width="700">
-<img src="examples/5.png" width="700">
-
-*Generate stunning images directly with Google's Gemini 2.0 Flash model*
-
-### 🪄 Background Removal with BRIA RMBG
-
-<img src="examples/6.png" width="700">
-
-*Remove backgrounds with precision while preserving fine details*
-
-### 🎨 ComfyUI Styler
-
-<img src="examples/7.png" width="700">
-
-*Access hundreds of artistic styles and parameters for creative control*
-
-### 📐 FLUX Resolutions
-
-<img src="examples/8.png" width="700">
-
-*Optimize image dimensions with predefined and custom resolution options*
-
-### ✒️ SVG Conversion
-
-<img src="examples/9.png" width="700">
-
-*Convert raster images to high-quality SVG vector graphics*
-
-</div>
 
 ## 🌟 Why Choose This Extension?
 
