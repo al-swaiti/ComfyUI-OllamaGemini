@@ -31,7 +31,11 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 ## Nodes
 
-### 1. Gemini API
+<div align="center">
+
+### 1. 🧠 Gemini API
+
+<img src="examples/1.png" width="700">
 
 Access Google's powerful Gemini models with advanced prompt enhancement:
 
@@ -55,30 +59,46 @@ Access Google's powerful Gemini models with advanced prompt enhancement:
     - Custom: Create your own prompt structure
   - Returns only the enhanced prompt without additional commentary
 
-### 2. OpenAI API
-- Models:
+### 2. 🤖 OpenAI API
+
+Access OpenAI's powerful language models:
+
+- **Models:**
+  - gpt-4o
   - gpt-4o-mini
+  - gpt-4-turbo
+  - gpt-4
   - gpt-3.5-turbo
   - gpt-3.5-turbo-0125
   - gpt-3.5-turbo-16k
   - gpt-3.5-turbo-1106
   - o1-preview/mini
   - deepseek-ai/deepseek-r1
+  - deepseek-ai/deepseek-chat
 
-### 3. Claude API
+### 3. 🧿 Claude API
+
+<img src="examples/1.png" width="700">
 
 Access Anthropic's Claude models for advanced language tasks:
 
-- Text input field for prompts
-- Model selection:
-  - claude-3-opus
-  - claude-3-sonnet
-  - claude-3-haiku
+- **Models:**
+  - claude-3-opus-20240229
+  - claude-3-sonnet-20240229
+  - claude-3-haiku-20240307
+  - claude-3.5-sonnet-20240620
+  - claude-3-5-sonnet-20240620
+  - claude-3-7-sonnet-20240620
+  - claude-3.7-sonnet-20240620
 - Temperature control
 - System prompt configuration
 - Streaming capability
 
-### 4. Gemini Image Generator
+### 4. 🖼️ Gemini Image Generator
+
+<img src="examples/3.png" width="700">
+<img src="examples/4.png" width="700">
+<img src="examples/5.png" width="700">
 
 Generate images directly with Google's Gemini 2.0 Flash model:
 
@@ -89,27 +109,30 @@ Generate images directly with Google's Gemini 2.0 Flash model:
 - Returns both the generated image and any text response
 - Uses the experimental image generation endpoint `gemini-2.0-flash-exp-image-generation`
 
-### 5. Ollama API
+### 5. 🦙 Ollama API
 
 Integrate local language models running via Ollama:
 
 - Text input field for prompts
 - Dropdown for selecting Ollama models
 - Customizable model options
+- Run models locally without API keys
 
-### 6. Qwen API
+### 6. 🔄 Qwen API
 
 Access Alibaba's Qwen language models:
 
-- Text input field for prompts
-- Model selection:
+- **Models:**
   - qwen-turbo
   - qwen-plus
   - qwen-max
+  - qwen-max-longcontext
 - Temperature control
 - Streaming capability
 
-### 7. FLUX Resolutions
+### 7. 📐 FLUX Resolutions
+
+<img src="examples/8.png" width="700">
 
 Provides advanced image resolution and sizing options:
 
@@ -120,7 +143,9 @@ Provides advanced image resolution and sizing options:
   - manual_width
   - manual_height
 
-### 8. ComfyUI Styler
+### 8. 🎨 ComfyUI Styler
+
+<img src="examples/7.png" width="700">
 
 Extensive styling options for various creative needs:
 
@@ -161,7 +186,9 @@ Extensive styling options for various creative needs:
 🎸 Punk – Channel bold, rebellious aesthetics
 🌍 Travel Poster – Design vintage travel posters with global vibes
 
-### 9. Raster to Vector (SVG) Conversion
+### 9. ✒️ Raster to Vector (SVG) Conversion
+
+<img src="examples/9.png" width="700">
 
 Convert raster images to high-quality SVG vector graphics using vtracer:
 
@@ -202,7 +229,9 @@ Convert raster images to high-quality SVG vector graphics using vtracer:
 
 > The SVG conversion feature uses vtracer for high-quality vectorization, producing clean and scalable vector graphics from raster images.
 
-### 10. BRIA RMBG (Background Removal)
+### 10. 🪄 BRIA RMBG (Background Removal)
+
+<img src="examples/6.png" width="700">
 
 High-quality background removal tool that produces clean masks and transparent images:
 
@@ -225,7 +254,7 @@ High-quality background removal tool that produces clean masks and transparent i
 
 > The BRIA RMBG tool excels at preserving fine details like hair, thin stems, and complex edges while producing clean masks without artifacts.
 
-### 11. TextSplitByDelimiter
+### 11. 📝 TextSplitByDelimiter
 
 Split text based on specified delimiters:
 
@@ -234,6 +263,8 @@ Split text based on specified delimiters:
   - split_regex
   - split_every
   - split_count
+
+</div>
 
 
 ## 💻 Installation & Setup
