@@ -4,7 +4,7 @@
 
 **Supercharge your ComfyUI workflows with AI superpowers**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/ComfyUI-OllamaGemini?style=social)](https://github.com/yourusername/ComfyUI-OllamaGemini/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/ComfyUI-OllamaGemini?style=social)](https://github.com/al-swaiti/ComfyUI-OllamaGemini/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
@@ -14,20 +14,26 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 ## Features
 
-- Support for multiple AI APIs:
-  - Google Gemini
-  - OpenAI (ChatGPT)
-  - Anthropic Claude
-  - Ollama
-  - Alibaba Qwen
-- Text and image input capabilities
-- Streaming option for real-time responses
-- FLUX Resolution tools for image sizing
-- ComfyUI Styler for advanced styling options
-- Raster to Vector (SVG) conversion
-- High-quality background removal (BRIA RMBG)
-- Text splitting and processing
-- Easy integration with ComfyUI workflows
+### Multiple AI API Integrations
+- **Google Gemini**: Access gemini-2.0-pro, gemini-2.0-flash, gemini-1.5-pro and more
+- **OpenAI**: Use gpt-4o, gpt-4-turbo, gpt-3.5-turbo, and DeepSeek models
+- **Anthropic Claude**: Leverage claude-3.7-sonnet, claude-3.5-sonnet, claude-3-opus and more
+- **Alibaba Qwen**: Access qwen-max, qwen-plus, qwen-turbo models
+- **Ollama**: Run local models with customizable parameters
+
+### Gemini Image Generation
+- Generate images directly with Google's Gemini 2.0 Flash model
+- Customize with prompts and negative prompts
+- Automatic saving to ComfyUI's output directory
+
+### Advanced Tools
+- **Prompt Enhancement**: Transform simple prompts into detailed instructions with specialized templates
+- **BRIA RMBG**: High-quality background removal with fine detail preservation
+- **SVG Conversion**: Convert raster images to high-quality vector graphics
+- **FLUX Resolutions**: Precise image sizing with predefined and custom options
+- **ComfyUI Styler**: Hundreds of artistic styles for creative control
+- **Text Splitting**: Process and manipulate text with various delimiter options
+- **Streaming Responses**: Get real-time feedback from AI models
 
 ## Nodes
 
@@ -39,60 +45,15 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 Access Google's powerful Gemini models with advanced prompt enhancement:
 
-- **Models:**
-  - gemini-2.0-pro
-  - gemini-2.0-flash
-  - gemini-2.0-flash-lite-preview-02-05
-  - gemini-2.0-pro-experimental-02-05
-  - gemini-1.5-pro
-  - gemini-1.5-flash-8b
-  - gemini-1.5-pro-experimental
-  - learnlm-1.5-pro-experimental
 
-- **Prompt Enhancement:**
-  - Automatically enhance basic prompts into detailed, model-specific instructions
-  - Multiple prompt structure templates:
-    - SDXL: Optimized for Stable Diffusion XL
-    - Wan2.1: Specialized format for specific models
-    - FLUX.1-dev: Enhanced format for FLUX models
-    - HunyuanVideo: Specialized for video generation
-    - Custom: Create your own prompt structure
-  - Returns only the enhanced prompt without additional commentary
+
 
 ### 2. 🤖 OpenAI API
 
-Access OpenAI's powerful language models:
-
-- **Models:**
-  - gpt-4o
-  - gpt-4o-mini
-  - gpt-4-turbo
-  - gpt-4
-  - gpt-3.5-turbo
-  - gpt-3.5-turbo-0125
-  - gpt-3.5-turbo-16k
-  - gpt-3.5-turbo-1106
-  - o1-preview/mini
-  - deepseek-ai/deepseek-r1
-  - deepseek-ai/deepseek-chat
 
 ### 3. 🧿 Claude API
 
-<img src="examples/1.png" width="700">
 
-Access Anthropic's Claude models for advanced language tasks:
-
-- **Models:**
-  - claude-3-opus-20240229
-  - claude-3-sonnet-20240229
-  - claude-3-haiku-20240307
-  - claude-3.5-sonnet-20240620
-  - claude-3-5-sonnet-20240620
-  - claude-3-7-sonnet-20240620
-  - claude-3.7-sonnet-20240620
-- Temperature control
-- System prompt configuration
-- Streaming capability
 
 ### 4. 🖼️ Gemini Image Generator
 
@@ -109,26 +70,9 @@ Generate images directly with Google's Gemini 2.0 Flash model:
 - Returns both the generated image and any text response
 - Uses the experimental image generation endpoint `gemini-2.0-flash-exp-image-generation`
 
-### 5. 🦙 Ollama API
 
-Integrate local language models running via Ollama:
 
-- Text input field for prompts
-- Dropdown for selecting Ollama models
-- Customizable model options
-- Run models locally without API keys
 
-### 6. 🔄 Qwen API
-
-Access Alibaba's Qwen language models:
-
-- **Models:**
-  - qwen-turbo
-  - qwen-plus
-  - qwen-max
-  - qwen-max-longcontext
-- Temperature control
-- Streaming capability
 
 ### 7. 📐 FLUX Resolutions
 
