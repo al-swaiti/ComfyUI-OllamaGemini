@@ -8,24 +8,10 @@ dashscope>=1.13.6  # For Qwen API
 # SVG conversion
 vtracer>=0.6.0
 
-# Optional SVG dependencies
-# pyautotrace>=0.2.1  # Uncomment if needed
-# cairosvg>=2.7.1     # Uncomment if needed
-
 # Image processing
 numpy>=1.24.0
 Pillow>=10.0.0
-scipy>=1.10.0
-matplotlib>=3.7.0
 
-# For background removal
-# Note: BRIA RMBG models should be downloaded separately
-
-# For ComfyUI integration
-torch>=2.0.0
-torchvision>=0.15.0
-
-# Additional utilities
-tqdm>=4.65.0  # Progress bars
-requests-toolbelt>=1.0.0  # For multipart uploads
-PyYAML>=6.0  # For configuration files
+# For ComfyUI integration - these are usually provided by ComfyUI itself
+# torch>=2.0.0
+# torchvision>=0.15.0
