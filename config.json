@@ -1,7 +1,7 @@
 {
-    "CLAUDE_API_KEY": "sk-ant-api03-fake keysdc5LeXTApvETadC33GYKjqMoYnQSPhJmkOjcEptLypEDnep5lSKG25af6pLTTZl3p1c6w7nDsE4hvouQ-XHxRaAAA",
-    "QWEN_API_KEY": "sk-08fedddddddfake-put-urs ddddd4dd8aa6d63cbe7a3d701",
-    "GEMINI_API_KEY": "AIzaSyDiQeucccccccfakeputyoursccstfRjlvh6dotWmr3-kdSPj4",
-    "NVIDIA_API_KEY": "sk-b165ee13be86ccc917bfake-puturs8c117e05d6c1",
-    "OPENAI_API_KEY": "sk-proj-wE8-DybccE9shQ_NgGtsQAqRWKL5ZYVJZBmP4Uc7kyEKeWbfoltldwU4h4SoeRyF1QWgLIPiRGT3BlbkFJXGwlzLHDrKiZWQDiejv4ccc1mVZDfBV26yJE3U5WeLcZowznDg_8c8ZSSmhFUyJYFPhXAA"
+    "CLAUDE_API_KEY": "your_claude_api_key_here",
+    "QWEN_API_KEY": "your_qwen_api_key_here",
+    "GEMINI_API_KEY": "your_gemini_api_key_here",
+    "OPENAI_API_KEY": "your_openai_api_key_here",
+    "OLLAMA_URL": "http://localhost:11434"
 }
