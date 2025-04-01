@@ -109,33 +109,6 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 <details open>
 <summary><b>🔑 API Key Setup</b></summary>
-
-### Option 1: Using the Config File
-
-Create or edit `config.json` in the extension directory:
-
-```json
-{
-  "GEMINI_API_KEY": "your_gemini_api_key",
-  "OPENAI_API_KEY": "your_openai_api_key",
-  "ANTHROPIC_API_KEY": "your_claude_api_key",
-  "OLLAMA_URL": "http://localhost:11434",
-  "QWEN_API_KEY": "your_qwen_api_key"
-}
-```
-
-### Option 2: Using Environment Variables
-
-Set the following environment variables:
-
-```bash
-GEMINI_API_KEY=your_gemini_api_key
-OPENAI_API_KEY=your_openai_api_key
-ANTHROPIC_API_KEY=your_claude_api_key
-OLLAMA_URL=http://localhost:11434
-QWEN_API_KEY=your_qwen_api_key
-```
-
 ### Obtaining API Keys
 
 <table>
@@ -171,6 +144,21 @@ QWEN_API_KEY=your_qwen_api_key
 </tr>
 </table>
 </details>
+
+### Option 1: Using the Config File
+
+Create or edit `config.json` in the extension directory:
+
+```json
+{
+  "GEMINI_API_KEY": "your_gemini_api_key",
+  "OPENAI_API_KEY": "your_openai_api_key",
+  "ANTHROPIC_API_KEY": "your_claude_api_key",
+  "OLLAMA_URL": "http://localhost:11434",
+  "QWEN_API_KEY": "your_qwen_api_key"
+}
+```
+
 
 ## 🔹 Quick Start Guide
 
