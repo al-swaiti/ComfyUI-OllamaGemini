@@ -4,7 +4,7 @@
 
 **Supercharge your ComfyUI workflows with AI superpowers**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/ComfyUI-OllamaGemini?style=social)](https://github.com/al-swaiti/ComfyUI-OllamaGemini/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/al-swait/ComfyUI-OllamaGemini?style=social)](https://github.com/al-swaiti/ComfyUI-OllamaGemini/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
