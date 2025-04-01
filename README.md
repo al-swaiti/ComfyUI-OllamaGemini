@@ -139,7 +139,7 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 </tr>
 <tr>
   <td>Alibaba Qwen</td>
-  <td><a href="https://dashscope.console.aliyun.com/">DashScope Console</a></td>
+  <td><a href="[https://dashscope.console.aliyun.com/](https://www.alibabacloud.com/help/en/model-studio/developer-reference/get-api-key)">DashScope Console</a></td>
   <td>✅ Limited</td>
 </tr>
 </table>
