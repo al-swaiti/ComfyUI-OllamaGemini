@@ -461,11 +461,32 @@ QWEN_API_KEY=your_qwen_api_key
 
 ## 🌟 Why Choose This Extension?
 
-- **All-in-One Solution**: Access multiple AI APIs and image processing tools in one extension
-- **Enhanced Prompts**: Transform simple prompts into detailed, model-specific instructions
-- **High-Quality Tools**: Best-in-class background removal and SVG conversion
-- **Flexible Integration**: Easily combine with other ComfyUI nodes and workflows
-- **Regular Updates**: Continuously updated with the latest AI models and features
+### Comprehensive API Integration
+
+Access the most powerful AI models through a single interface:
+
+- **Google Gemini**: gemini-2.0-pro, gemini-2.0-flash, gemini-1.5-pro, and more
+- **OpenAI**: gpt-4o, gpt-4-turbo, gpt-3.5-turbo, and DeepSeek models
+- **Anthropic Claude**: claude-3.7-sonnet, claude-3.5-sonnet, claude-3-opus, and more
+- **Alibaba Qwen**: qwen-max, qwen-plus, qwen-turbo, qwen-max-longcontext
+- **Ollama**: Run any local model with customizable parameters
+
+### Advanced Prompt Enhancement
+
+Transform simple prompts into detailed, model-specific instructions with specialized templates:
+
+- **SDXL**: Optimized for Stable Diffusion XL with detailed artistic parameters
+- **Wan2.1**: Specialized format with subject, setting, and style elements
+- **FLUX.1-dev**: Enhanced format with depth effects and camera details
+- **HunyuanVideo**: Specialized for video generation with cohesive descriptions
+- **Custom**: Create your own prompt structure for specific needs
+
+### High-Quality Tools
+
+- **BRIA RMBG**: Best-in-class background removal with fine detail preservation
+- **SVG Conversion**: High-quality vectorization with vtracer
+- **FLUX Resolutions**: Precise image sizing with predefined and custom options
+- **ComfyUI Styler**: Hundreds of artistic styles for creative control
 
 ## 👨‍💻 Contributing
 
