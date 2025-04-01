@@ -96,7 +96,7 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 1. Clone this repository into your ComfyUI's `custom_nodes` directory:
    ```bash
    cd /path/to/ComfyUI/custom_nodes
-   git clone https://github.com/yourusername/ComfyUI-OllamaGemini.git
+   git clone https://github.com/al-swaiti/ComfyUI-OllamaGemini.git
    ```
 
 2. Install the required dependencies:
