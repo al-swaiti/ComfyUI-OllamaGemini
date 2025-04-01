@@ -381,7 +381,7 @@ QWEN_API_KEY=your_qwen_api_key
 4. Connect the output to the "Save SVG File" node
 5. Set a filename prefix and enable preview
 
-<img src="examples/9.gif" width="500">
+<img src="examples/9.png" width="500">
 </details>
 
 ## 🎬 Showcase
@@ -422,7 +422,7 @@ QWEN_API_KEY=your_qwen_api_key
 
 ### ✒️ SVG Conversion
 
-<img src="examples/9.gif" width="700">
+<img src="examples/9.png" width="700">
 
 *Convert raster images to high-quality SVG vector graphics*
 
