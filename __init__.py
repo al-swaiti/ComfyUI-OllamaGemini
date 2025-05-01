@@ -26,6 +26,13 @@ from .GeminiOllamaNode import NODE_DISPLAY_NAME_MAPPINGS as GEMINI_OLLAMA_DISPLA
 from .GeminiImageGenerationNode import NODE_CLASS_MAPPINGS as GEMINI_IMAGE_MAPPINGS
 from .GeminiImageGenerationNode import NODE_DISPLAY_NAME_MAPPINGS as GEMINI_IMAGE_DISPLAY_MAPPINGS
 
+# Import Smart Prompt Generator node
+from .SmartPromptGenerator import NODE_CLASS_MAPPINGS as SMART_PROMPT_MAPPINGS
+from .SmartPromptGenerator import NODE_DISPLAY_NAME_MAPPINGS as SMART_PROMPT_DISPLAY_MAPPINGS
+
+# Import model listing functionality
+from .list_models import get_gemini_models, get_openai_models, get_gemini_image_models
+
 # GeminiTextToPrompt module is missing, creating empty mappings
 GEMINI_PROMPT_MAPPINGS = {}
 GEMINI_PROMPT_DISPLAY_MAPPINGS = {}
@@ -48,6 +55,7 @@ NODE_CLASS_MAPPINGS = {
     **GEMINI_PROMPT_MAPPINGS,
     **SIMPLE_GEMINI_MAPPINGS,
     **STRUCTURED_TEMPLATE_MAPPINGS,
+    **SMART_PROMPT_MAPPINGS,
 
     # Prompt styler nodes
     'ComfyUIStyler': type('ComfyUIStyler', (PromptStyler,), {'menus': NODES['ComfyUI Styler']})
@@ -59,6 +67,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     **GEMINI_PROMPT_DISPLAY_MAPPINGS,
     **SIMPLE_GEMINI_DISPLAY_MAPPINGS,
     **STRUCTURED_TEMPLATE_DISPLAY_MAPPINGS,
+    **SMART_PROMPT_DISPLAY_MAPPINGS,
 
     # Prompt styler nodes
     'ComfyUIStyler': 'ComfyUI Styler'

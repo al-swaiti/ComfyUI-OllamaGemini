@@ -76,6 +76,17 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 - Categories include art styles, camera settings, moods, and more
 - Easily combine multiple style elements
 
+### 8️⃣ Smart Prompt Generator
+
+<img src="examples/smart_prompt.png" width="700">
+
+- Create highly detailed, creative prompts by combining multiple style categories
+- AI-powered enhancement using Gemini API to refine and expand prompts
+- **Completely random prompt generation** with four different randomization modes
+- Control creativity level and focus areas for targeted results
+- Auto-generate appropriate negative prompts
+- Seamlessly combines styles from artists, movies, art styles, and more
+
 </div>
 
 
@@ -198,7 +209,35 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 4. Connect the image output to see the transparent result
 5. Connect the mask output to see the generated mask
 
-<img src="examples/6.png" width="500">
+<details>
+<summary><b>✨ Using the Smart Prompt Generator</b></summary>
+
+1. Add the "Smart Prompt Generator" node to your workflow
+2. Choose your preferred randomization mode:
+   - **Disabled**: Use your own prompt and manually select styles
+   - **Random Styles Only**: Keep your base prompt but apply random styles
+   - **Random Base+Styles**: Generate a random base prompt with random styles
+   - **Fully Random**: Let the AI create a completely random prompt from scratch
+3. Set the number of random styles to apply and optionally set a randomize seed
+4. Set your preferred "creativity_level" (Low, Medium, High, Extreme)
+5. Choose a "focus_on" option to guide the AI enhancement:
+   - Realism: Focuses on photorealistic details
+   - Fantasy: Emphasizes fantastical and imaginative elements
+   - Abstract: Highlights abstract artistic concepts
+   - Artistic: Prioritizes artistic techniques and expression
+   - Cinematic: Adds film-like qualities and composition
+6. Connect the output to a Text node or directly to image generation nodes
+
+The Smart Prompt Generator works in four modes:
+- **Manual Mode**: Combine styles you manually select with your own base prompt
+- **Random Styles Mode**: Apply random style combinations to your base prompt
+- **Random Base+Styles Mode**: Generate a random prompt and apply random styles
+- **Fully Random Mode**: Let the AI create a completely new prompt from scratch
+
+Using a randomize_seed of 0 will generate different results every time you run the node, while setting a specific seed will produce consistent results that can be reproduced.
+
+<img src="examples/smart_prompt_workflow.png" width="500">
+</details>
 </details>
 
 <details>

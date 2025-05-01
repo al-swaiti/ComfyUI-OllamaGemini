@@ -301,6 +301,10 @@ class OpenAIAPI:
                 base_url="https://integrate.api.nvidia.com/v1",
                 api_key=self.nvidia_api_key
             )
+        
+        # Import model list from list_models.py
+        from .list_models import get_openai_models
+        self.available_models = get_openai_models()
 
     def get_openai_api_key(self):
         try:
@@ -321,34 +325,17 @@ class OpenAIAPI:
         except:
             print("Error: NVIDIA API key is required")
             return ""
-
+    
     @classmethod
     def INPUT_TYPES(cls):
+        # Create an instance to get the models
+        instance = cls()
+        available_models = instance.available_models
+        
         return {
             "required": {
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
-                "model": ([
-                    # GPT-4 Family
-                    "gpt-4o-mini",
-                    "gpt-4o-mini-2024-07-18",
-                    # GPT-3.5 Family
-                    "gpt-3.5-turbo",
-                    "gpt-3.5-turbo-0125",
-                    "gpt-3.5-turbo-16k",
-                    "gpt-3.5-turbo-1106",
-                    "gpt-3.5-turbo-instruct",
-                    "gpt-3.5-turbo-instruct-0914",
-                    # O1 Family
-                    "o1-preview",
-                    "o1-preview-2024-09-12",
-                    "o1-mini",
-                    "o1-mini-2024-09-12",
-                    # DeepSeek Models
-                    "deepseek-ai/deepseek-r1",
-                    # Legacy Models
-                    "babbage-002",
-                    "davinci-002"
-                ],),
+                "model": (available_models,),
                 "max_tokens": ("INT", {"default": 1024, "min": 1, "max": 4096, "step": 1}),
                 "temperature": ("FLOAT", {"default": 0.7, "min": 0.0, "max": 2.0, "step": 0.1}),
                 "top_p": ("FLOAT", {"default": 0.7, "min": 0.0, "max": 1.0, "step": 0.1}),
@@ -630,23 +617,21 @@ class GeminiAPI:
         self.gemini_api_key = get_gemini_api_key()
         if self.gemini_api_key:
             genai.configure(api_key=self.gemini_api_key, transport='rest')
+            
+        # Import model list from list_models.py
+        from .list_models import get_gemini_models
+        self.available_models = get_gemini_models()
 
     @classmethod
     def INPUT_TYPES(cls):
+        # Create an instance to get the models
+        instance = cls()
+        available_models = instance.available_models
+        
         return {
             "required": {
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
-                "gemini_model": ([
-                    # Gemini 2.5 Models
-                    "gemini-2.5-pro-exp-03-25",
-                    # Gemini 2.0 Models
-                    "gemini-2.0-flash",
-                    "gemini-2.0-flash-lite",
-                    # Gemini 1.5 Models
-                    "gemini-1.5-pro",
-                    "gemini-1.5-flash",
-                    "gemini-1.5-flash-8b"
-                ],),
+                "gemini_model": (available_models,),
                 "stream": ("BOOLEAN", {"default": False}),
                 "structure_output": ("BOOLEAN", {"default": False}),
                 "prompt_structure": ([
@@ -1006,37 +991,75 @@ class Save_text_File:
 
         return (text,)
 
+# Add a node to display available models
+class ListAvailableModels:
+    def __init__(self):
+        pass
+        
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "display_gemini": ("BOOLEAN", {"default": True}),
+                "display_openai": ("BOOLEAN", {"default": True})
+            }
+        }
+    
+    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ("model_list",)
+    FUNCTION = "list_models"
+    CATEGORY = "AI API/Utils"
+    
+    def list_models(self, display_gemini, display_openai):
+        from .list_models import get_gemini_models, get_openai_models
+        model_list = []
+        
+        if display_gemini:
+            gemini_models = get_gemini_models()
+            model_list.append("=== Gemini Models ===")
+            model_list.extend(gemini_models)
+            model_list.append("")
+            
+        if display_openai:
+            openai_models = get_openai_models()
+            model_list.append("=== OpenAI Models ===")
+            model_list.extend(openai_models)
+        
+        return ("\n".join(model_list),)
+
 # ================== NODE REGISTRATION ==================
 NODE_CLASS_MAPPINGS = {
-    "CLIPSeg": CLIPSeg,
-    "QwenAPI": QwenAPI,
-    "CombineSegMasks": CombineMasks,
-    "OpenAIAPI": OpenAIAPI,
-    "ClaudeAPI": ClaudeAPI,
     "GeminiAPI": GeminiAPI,
     "OllamaAPI": OllamaAPI,
+    "OpenAIAPI": OpenAIAPI,
+    "ClaudeAPI": ClaudeAPI,
+    "QwenAPI": QwenAPI,
     "TextSplitByDelimiter": TextSplitByDelimiter,
-    "Save text": Save_text_File,
+    "SaveTextFile": Save_text_File,
+    "CLIPSeg": CLIPSeg,
+    "CombineMasks": CombineMasks,
     "BRIA_RMBG": BRIA_RMBG,
     "ConvertRasterToVector": ConvertRasterToVector,
     "SaveSVG": SaveSVG,
     "FLUXResolutions": FLUXResolutions,
-    'ComfyUIStyler': type('ComfyUIStyler', (PromptStyler,), {'menus': NODES['ComfyUI Styler']})
+    'ComfyUIStyler': type('ComfyUIStyler', (PromptStyler,), {'menus': NODES['ComfyUI Styler']}),
+    "ListAvailableModels": ListAvailableModels
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "CLIPSeg": "CLIPSeg",
-    "QwenAPI": "Qwen API",
-    "CombineSegMasks": "CombineMasks",
-    "OpenAIAPI": "OpenAI API",
-    "ClaudeAPI": "Claude API",
     "GeminiAPI": "Gemini API",
     "OllamaAPI": "Ollama API",
-    "TextSplitByDelimiter": "TextSplitByDelimiter",
-    "Save text": "Save_text_File",
+    "OpenAIAPI": "OpenAI API",
+    "ClaudeAPI": "Claude API",
+    "QwenAPI": "Qwen API",
+    "TextSplitByDelimiter": "Text Split By Delimiter",
+    "SaveTextFile": "Save Text File",
+    "CLIPSeg": "CLIPSeg",
+    "CombineMasks": "Combine Masks",
     "BRIA_RMBG": "BRIA RMBG",
-    "ConvertRasterToVector": "Raster to Vector (SVG)",
+    "ConvertRasterToVector": "Convert Raster to Vector",
     "SaveSVG": "Save SVG",
     "FLUXResolutions": "FLUX Resolutions",
-    'ComfyUIStyler': 'ComfyUI Styler'
+    'ComfyUIStyler': 'ComfyUI Styler',
+    "ListAvailableModels": "List Available Models"
 }

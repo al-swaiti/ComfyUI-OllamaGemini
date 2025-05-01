@@ -9,6 +9,7 @@ from google import genai
 from google.genai import types
 import folder_paths
 import json
+from .list_models import get_gemini_image_models
 
 class GeminiImageGenerator:
     @classmethod
@@ -16,7 +17,7 @@ class GeminiImageGenerator:
         return {
             "required": {
                 "prompt": ("STRING", {"multiline": True, "default": "A cute cartoon animal in a forest landscape"}),
-                "model": (["gemini-2.0-flash-exp-image-generation", "imagen-3.0-generate-002"], {"default": "gemini-2.0-flash-exp-image-generation"}),
+                "model": (get_gemini_image_models(), {"default": "gemini-2.0-flash-exp-image-generation"}),
                 "file_prefix": ("STRING", {"default": "gemini_image"}),
             },
             "optional": {
