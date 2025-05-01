@@ -1,5 +1,7 @@
-
 # Ignore the Git workflow instructions text file
 git_workflow_instructions.txt
 __pycache__
 *.pth
+
+# Ignore config files containing API keys
+config.json

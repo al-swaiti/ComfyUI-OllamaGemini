@@ -147,7 +147,8 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 ### Option 1: Using the Config File
 
-Create or edit `config.json` in the extension directory:
+1. Rename the `config.json.example` file in the extension directory to `config.json`
+2. Edit the file to add your API keys:
 
 ```json
 {
@@ -158,6 +159,8 @@ Create or edit `config.json` in the extension directory:
   "QWEN_API_KEY": "your_qwen_api_key"
 }
 ```
+
+> ⚠️ **Important**: Never commit your `config.json` file with real API keys to public repositories! The file is added to `.gitignore` to prevent accidental commits.
 
 
 ## 🔹 Quick Start Guide
