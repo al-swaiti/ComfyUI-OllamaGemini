@@ -122,18 +122,11 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
    pip install pip install google-genai google-generativeai openai>=1.3.0 anthropic>=0.8.0 requests>=2.31.0 vtracer>=0.6.0 dashscope>=1.13.6 Pillow>=10.0.0 scipy>=1.10.0 opencv-python transformers>=4.30.0 torch torchaudio
    ```
 
-   For full audio processing support (especially MP3 files), you may need additional codecs:
-   - **Linux**: `sudo apt-get install ffmpeg libavcodec-extra`
-   - **macOS**: `brew install ffmpeg --with-libvorbis --with-sdl2 --with-theora`
-   - **Windows**: Install ffmpeg from [ffmpeg.org](https://ffmpeg.org/download.html)
+
 
 3. Restart ComfyUI
 
-### Note on Examples
-The examples folder is excluded from the repository clone by default to reduce download size. If you want to see the example images and videos, you can:
 
-1. View them directly on the [GitHub repository page](https://github.com/al-swaiti/ComfyUI-OllamaGemini)
-2. Download individual examples from the [examples folder](https://github.com/al-swaiti/ComfyUI-OllamaGemini/tree/main/examples) as needed
 </details>
 
 <details open>
@@ -176,8 +169,7 @@ The examples folder is excluded from the repository clone by default to reduce d
 
 ### Option 1: Using the Config File
 
-1. Rename the `config.json.example` file in the extension directory to `config.json`
-2. Edit the file to add your API keys:
+1. Edit the  `config.json` to add your API keys:
 
 ```json
 {
@@ -282,10 +274,6 @@ For video inputs:
 - The system automatically samples frames from the video for analysis
 - Works best with models that support multimodal inputs
 
-For audio inputs:
-- Supports various audio formats including MP3 (with proper codecs installed)
-- Automatically converts and processes audio for AI analysis
-- Requires torchaudio (installed automatically with the extension)
 
 </details>
 
