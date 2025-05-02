@@ -18,7 +18,7 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 ### 1️⃣ Multiple AI API Integrations
 
-<video src="examples/8.mp4" width="700" autoplay loop controls></video>
+<video src="examples/8_compressed.mp4" width="700" autoplay loop controls></video>
 
 - **Google Gemini**: Access gemini-2.0-pro, gemini-2.0-flash, gemini-1.5-pro and more with dynamic model list updates
 - **OpenAI**: Use gpt-4o, gpt-4-turbo, gpt-3.5-turbo, and DeepSeek models with automatic model discovery
