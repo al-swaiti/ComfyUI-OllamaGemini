@@ -20,11 +20,12 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 <img src="examples/1.png" width="700">
 
-- **Google Gemini**: Access gemini-2.0-pro, gemini-2.0-flash, gemini-1.5-pro and more
-- **OpenAI**: Use gpt-4o, gpt-4-turbo, gpt-3.5-turbo, and DeepSeek models
+- **Google Gemini**: Access gemini-2.0-pro, gemini-2.0-flash, gemini-1.5-pro and more with dynamic model list updates
+- **OpenAI**: Use gpt-4o, gpt-4-turbo, gpt-3.5-turbo, and DeepSeek models with automatic model discovery
 - **Anthropic Claude**: Leverage claude-3.7-sonnet, claude-3.5-sonnet, claude-3-opus and more
 - **Alibaba Qwen**: Access qwen-max, qwen-plus, qwen-turbo models
 - **Ollama**: Run local models with customizable parameters
+- **Video & Audio Support**: Process video frames and audio inputs with Gemini and Ollama
 
 ### 2️⃣ Gemini Image Generation
 
@@ -36,12 +37,16 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 - Customize with prompts and negative prompts
 - Automatic saving to ComfyUI's output directory
 
-### 3️⃣ Prompt Enhancement
+### 3️⃣ Advanced Prompt Engineering
 
 <img src="examples/1.png" width="700">
 
 - Transform simple prompts into detailed, model-specific instructions
-- Multiple specialized templates (SDXL, Wan2.1, FLUX.1-dev, HunyuanVideo)
+- Extensively researched prompt templates optimized for different models:
+  - **SDXL**: Premium tag-based prompts with precise artistic control, structured in order of importance
+  - **FLUX.1-dev**: Hyper-detailed cinematographic prompts with technical precision and artistic vision
+  - **VideoGen**: Professional video generation prompts with subject, context, action, cinematography, and style
+- AI-powered prompt enhancement with expert-level guidance
 - Returns only the enhanced prompt without additional commentary
 
 ### 4️⃣ Background Removal (BRIA RMBG)
@@ -83,9 +88,11 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 - Create highly detailed, creative prompts by combining multiple style categories
 - AI-powered enhancement using Gemini API to refine and expand prompts
 - **Completely random prompt generation** with four different randomization modes
+- Automatic random seed generation for unique results on every run
 - Control creativity level and focus areas for targeted results
 - Auto-generate appropriate negative prompts
 - Seamlessly combines styles from artists, movies, art styles, and more
+- Supports reproducible results with manual seed setting
 
 </div>
 
@@ -112,8 +119,13 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 2. Install the required dependencies:
    ```bash
-   pip install pip install google-genai google-generativeai openai>=1.3.0 anthropic>=0.8.0 requests>=2.31.0 vtracer>=0.6.0  dashscope>=1.13.6  Pillow>=10.0.0 scipy>=1.10.0  opencv-python transformers>=4.30.0 
+   pip install pip install google-genai google-generativeai openai>=1.3.0 anthropic>=0.8.0 requests>=2.31.0 vtracer>=0.6.0 dashscope>=1.13.6 Pillow>=10.0.0 scipy>=1.10.0 opencv-python transformers>=4.30.0 torch torchaudio
    ```
+
+   For full audio processing support (especially MP3 files), you may need additional codecs:
+   - **Linux**: `sudo apt-get install ffmpeg libavcodec-extra`
+   - **macOS**: `brew install ffmpeg --with-libvorbis --with-sdl2 --with-theora`
+   - **Windows**: Install ffmpeg from [ffmpeg.org](https://ffmpeg.org/download.html)
 
 3. Restart ComfyUI
 </details>
@@ -170,8 +182,6 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
   "QWEN_API_KEY": "your_qwen_api_key"
 }
 ```
-
-> ⚠️ **Important**: Never commit your `config.json` file with real API keys to public repositories! The file is added to `.gitignore` to prevent accidental commits.
 
 
 ## 🔹 Quick Start Guide
@@ -252,34 +262,59 @@ Using a randomize_seed of 0 will generate different results every time you run t
 <img src="examples/9.gif" width="500">
 </details>
 
+<details>
+<summary><b>🎬 Using Video and Audio Inputs</b></summary>
+
+1. Add the "GeminiAPI" or "OllamaAPI" node to your workflow
+2. Set "input_type" to "video" or "audio" depending on your media
+3. Connect a video tensor (sequence of frames) to the "video" input or an audio file to the "audio" input
+4. Enter your prompt describing what you want to analyze about the media
+5. Select the desired model from the dropdown
+6. The AI will analyze the video frames or audio and provide a detailed response
+
+For video inputs:
+- The system automatically samples frames from the video for analysis
+- Works best with models that support multimodal inputs
+
+For audio inputs:
+- Supports various audio formats including MP3 (with proper codecs installed)
+- Automatically converts and processes audio for AI analysis
+- Requires torchaudio (installed automatically with the extension)
+
+</details>
+
 ## 🌟 Why Choose This Extension?
 
 ### Comprehensive API Integration
 
 Access the most powerful AI models through a single interface:
 
-- **Google Gemini**: gemini-2.0-pro, gemini-2.0-flash, gemini-1.5-pro, and more
-- **OpenAI**: gpt-4o, gpt-4-turbo, gpt-3.5-turbo, and DeepSeek models
+- **Google Gemini**: gemini-2.0-pro, gemini-2.0-flash, gemini-1.5-pro, and more with dynamic model list updates
+- **OpenAI**: gpt-4o, gpt-4-turbo, gpt-3.5-turbo, and DeepSeek models with automatic model discovery
 - **Anthropic Claude**: claude-3.7-sonnet, claude-3.5-sonnet, claude-3-opus, and more
 - **Alibaba Qwen**: qwen-max, qwen-plus, qwen-turbo, qwen-max-longcontext
 - **Ollama**: Run any local model with customizable parameters
+- **Multimodal Support**: Process text, images, video frames, and audio inputs
 
-### Advanced Prompt Enhancement
+### Advanced Prompt Engineering
 
-Transform simple prompts into detailed, model-specific instructions with specialized templates:
+Transform simple prompts into detailed, model-specific instructions with extensively researched templates:
 
-- **SDXL**: Optimized for Stable Diffusion XL with detailed artistic parameters
-- **Wan2.1**: Specialized format with subject, setting, and style elements
-- **FLUX.1-dev**: Enhanced format with depth effects and camera details
-- **HunyuanVideo**: Specialized for video generation with cohesive descriptions
+- **SDXL**: Premium tag-based prompts with precise artistic control, structured in order of importance with professional terminology
+- **FLUX.1-dev**: Hyper-detailed cinematographic prompts with technical precision, artistic vision, and professional lighting/camera specifications
+- **VideoGen**: Professional video generation prompts with subject, context, action, cinematography, and style elements optimized for modern video models
 - **Custom**: Create your own prompt structure for specific needs
+
+Each template is the result of deep research into model-specific optimization techniques and professional terminology from photography, cinematography, and visual arts.
 
 ### High-Quality Tools
 
+- **Smart Prompt Generator**: Advanced prompt creation with automatic random seed generation for unique results every time
 - **BRIA RMBG**: Best-in-class background removal with fine detail preservation
 - **SVG Conversion**: High-quality vectorization with vtracer
 - **FLUX Resolutions**: Precise image sizing with predefined and custom options
 - **ComfyUI Styler**: Hundreds of artistic styles for creative control
+- **Video & Audio Processing**: Analyze and extract insights from video frames and audio files
 
 ## 👨‍💻 Contributing
 
@@ -299,6 +334,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 <div align="center">
 
 ### ⭐ If you find this extension useful, please consider giving it a star! ⭐
+
+### 💖 Support This Project
+If you enjoy using this extension and would like to support continued development, please consider [buying me a coffee](https://paypal.me/abdallalswaiti). Every contribution helps keep this project going and enables new features!
 
 </div>
 
