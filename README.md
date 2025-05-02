@@ -18,7 +18,7 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 ### 1️⃣ Multiple AI API Integrations
 
-<img src="examples/1.png" width="700">
+<video src="examples/8.mp4" width="700" autoplay loop controls></video>
 
 - **Google Gemini**: Access gemini-2.0-pro, gemini-2.0-flash, gemini-1.5-pro and more with dynamic model list updates
 - **OpenAI**: Use gpt-4o, gpt-4-turbo, gpt-3.5-turbo, and DeepSeek models with automatic model discovery
@@ -128,6 +128,12 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
    - **Windows**: Install ffmpeg from [ffmpeg.org](https://ffmpeg.org/download.html)
 
 3. Restart ComfyUI
+
+### Note on Examples
+The examples folder is excluded from the repository clone by default to reduce download size. If you want to see the example images and videos, you can:
+
+1. View them directly on the [GitHub repository page](https://github.com/al-swaiti/ComfyUI-OllamaGemini)
+2. Download individual examples from the [examples folder](https://github.com/al-swaiti/ComfyUI-OllamaGemini/tree/main/examples) as needed
 </details>
 
 <details open>
@@ -196,7 +202,7 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 5. For enhanced prompts, enable "structure_output" and select a prompt structure template
 6. Connect the output to other nodes in your workflow
 
-<img src="examples/1.png" width="500">
+
 </details>
 
 <details>
