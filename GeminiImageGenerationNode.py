@@ -9,6 +9,7 @@ from google import genai
 from google.genai import types
 import folder_paths
 import json
+from .list_models import get_gemini_image_models
 
 class GeminiImageGenerator:
     @classmethod
@@ -16,6 +17,7 @@ class GeminiImageGenerator:
         return {
             "required": {
                 "prompt": ("STRING", {"multiline": True, "default": "A cute cartoon animal in a forest landscape"}),
+                "model": (get_gemini_image_models(), {"default": "gemini-2.0-flash-exp-image-generation"}),
                 "file_prefix": ("STRING", {"default": "gemini_image"}),
             },
             "optional": {
@@ -30,10 +32,20 @@ class GeminiImageGenerator:
     FUNCTION = "generate_image"
     CATEGORY = "AI API/Gemini"
     
-    DESCRIPTION = """Generate images using Google's Gemini 2.0 Flash experimental image generation API.
+    DESCRIPTION = """Generate images using Google's AI models for image generation:
     
-This node uses a direct approach to the Gemini API that has been confirmed to work for image generation.
-If an input image is provided, it will be used as a reference for the generated image.
+- gemini-2.0-flash-exp-image-generation: Experimental Gemini model for image generation. 
+  Fast model that can generate images from text prompts with good accuracy.
+  
+- imagen-3.0-generate-002: Google's Imagen 3.0 model for high-quality image generation.
+  A more advanced model for detailed, high-fidelity image generation with stronger prompt following.
+
+Both models support reference images to guide the generation process. 
+When using reference images, the model will try to generate content that's visually similar 
+or stylistically aligned with the provided images.
+
+Note: These models require proper API access and may have usage limitations or costs associated 
+with them. Check your Google Cloud/Vertex AI account for details.
     """
 
     def get_gemini_api_key(self):
@@ -81,7 +93,7 @@ If an input image is provided, it will be used as a reference for the generated 
         # Create black RGB image with shape [batch, height, width, channels]
         return torch.zeros((1, height, width, 3), dtype=torch.float32)
 
-    def generate_image(self, prompt, file_prefix, negative_prompt=None, image=None, image2=None, **kwargs):
+    def generate_image(self, prompt, model, file_prefix, negative_prompt=None, image=None, image2=None, **kwargs):
         """Handle image generation with flexible inputs - text only, single image, or multiple images"""
         api_key = self.get_gemini_api_key()
         if not api_key:
@@ -99,8 +111,8 @@ If an input image is provided, it will be used as a reference for the generated 
             # Add a specific request for a colored image (more explicit now)
             full_prompt = f"{full_prompt} (colorful image, vibrant colors, not black and white, not grayscale)" 
                 
-            # Configure the model request based on whether we have input images
-            model = "gemini-2.0-flash-exp-image-generation"
+            # Configure the model request based on model selection
+            # model is now passed as a parameter from the UI
             
             # Prepare content parts
             parts = []
@@ -187,7 +199,7 @@ If an input image is provided, it will be used as a reference for the generated 
             image_tensor = None
             response_text = ""
             
-            print(f"Generating image with Gemini for prompt: {full_prompt}")
+            print(f"Generating image with {model} for prompt: {full_prompt}")
             
             # Stream the response and process chunks
             for chunk in client.models.generate_content_stream(
@@ -266,7 +278,7 @@ If an input image is provided, it will be used as a reference for the generated 
             return (image_tensor, response_text)
             
         except Exception as e:
-            error_message = f"Error generating image with Gemini: {str(e)}"
+            error_message = f"Error generating image with {model}: {str(e)}"
             print(error_message)
             import traceback
             traceback.print_exc()
