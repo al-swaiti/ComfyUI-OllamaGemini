@@ -338,5 +338,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ### 💖 Support This Project
 If you enjoy using this extension and would like to support continued development, please consider [buying me a coffee](https://paypal.me/abdallalswaiti). Every contribution helps keep this project going and enables new features!
 
+### 🔗 Connect With Me
+- **Models & LoRAs**: [Civitai](https://civitai.com/user/AbdallahAlswa80) | [Hugging Face](https://huggingface.co/ABDALLALSWAITI)
+- **Image Gallery**: [DeviantArt](https://www.deviantart.com/abdallahalswaiti)
+- **Professional Profile**: [LinkedIn](https://www.linkedin.com/in/abdallah-issac/) (Open for work and collaborations)
+
 </div>
 
