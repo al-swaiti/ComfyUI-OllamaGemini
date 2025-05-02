@@ -17,17 +17,35 @@ from .svgnode import ConvertRasterToVector, SaveSVG
 from .FLUXResolutions import FLUXResolutions
 from .prompt_styler import *
 
+# Try to import torchaudio for audio processing
+try:
+    import torchaudio
+    TORCHAUDIO_AVAILABLE = True
+except ImportError:
+    TORCHAUDIO_AVAILABLE = False
+    print("torchaudio not available. Audio processing will be limited.")
+
+# Note for users about audio processing dependencies
+"""
+For full audio processing support, especially for MP3 files, install these dependencies:
+1. torchaudio - Basic audio processing: pip install torchaudio
+2. ffmpeg - For converting audio formats: sudo apt-get install ffmpeg (Linux) or brew install ffmpeg (macOS)
+3. pydub - Alternative audio processing: pip install pydub
+
+If you encounter MP3 loading issues, make sure you have the necessary codecs:
+- Linux: sudo apt-get install libavcodec-extra
+- macOS: brew install ffmpeg --with-libvorbis --with-sdl2 --with-theora
+"""
+
 # Common function to apply prompt structure templates
 def apply_prompt_template(prompt, prompt_structure="Custom"):
     # Define prompt structure templates
     prompt_templates = {
-        "HunyuanVideo": "Create a single cohesive paragraph prompt for HunyuanVideo based on my description. Include the subject, setting, action, camera movements, and style. Return ONLY the prompt text itself.",
+        "VideoGen": "Create a professional cinematic video generation prompt based on my description. Structure your prompt in this precise order: (1) SUBJECT: Define main character(s)/object(s) with specific, vivid details (appearance, expressions, attributes); (2) CONTEXT/SCENE: Establish the detailed environment with atmosphere, time of day, weather, and spatial relationships; (3) ACTION: Describe precise movements and temporal flow using dynamic verbs and sequential language ('first... then...'); (4) CINEMATOGRAPHY: Specify exact camera movements (dolly, pan, tracking), shot types (close-up, medium, wide), lens choice (35mm, telephoto), and professional lighting terminology (Rembrandt, golden hour, backlit); (5) STYLE: Define the visual aesthetic using specific references to film genres, directors, or animation styles. For realistic scenes, emphasize photorealism with natural lighting and physics. For abstract/VFX, include stylistic terms (surreal, psychedelic) and dynamic descriptors (swirling, morphing). For animation, specify the exact style (anime, 3D cartoon, hand-drawn). Craft a single cohesive paragraph that flows naturally while maintaining technical precision. Return ONLY the prompt text itself.",
 
-        "Wan2.1": "Create a single concise paragraph prompt for Wan2.1 based on my description. Include the subject, setting, action, camera movements, and style. Return ONLY the prompt text itself.",
+        "FLUX.1-dev": "As an elite text-to-image prompt engineer, craft an exceptional FLUX.1-dev prompt from my description. Create a hyper-detailed, cinematographic paragraph that includes: (1) precise subject characterization with emotional undertones, (2) specific artistic influences from legendary painters/photographers, (3) technical camera specifications (lens, aperture, perspective), (4) sophisticated lighting setup with exact quality and direction, (5) atmospheric elements and depth effects, (6) composition techniques, and (7) post-processing styles. Use language that balances technical precision with artistic vision. Return ONLY the prompt text itself - no explanations or formatting.",
 
-        "FLUX.1-dev": "Create a detailed paragraph prompt for FLUX.1-dev based on my description. Include subject, artistic style, depth effects, camera details, and lighting. Return ONLY the prompt text itself.",
-
-        "SDXL": "Create a comma-separated tag prompt for SDXL based on my description. Include subject, medium, art style, lighting, environment, camera settings, and artist influences. Return ONLY the prompt text itself."
+        "SDXL": "Create a premium comma-separated tag prompt for SDXL based on my description. Structure the prompt with these elements in order of importance: (1) main subject with precise descriptors, (2) high-impact artistic medium (oil painting, digital art, photography, etc.), (3) specific art movement or style with named influences, (4) professional lighting terminology (rembrandt, cinematic, golden hour, etc.), (5) detailed environment/setting, (6) exact camera specifications (35mm, telephoto, macro, etc.), (7) composition techniques, (8) color palette/mood, and (9) post-processing effects. Use 20-30 tags maximum, prioritizing quality descriptors over quantity. Include 2-3 relevant artist references whose style matches the desired aesthetic. Return ONLY the comma-separated tags without explanations or formatting."
     }
 
     # Apply template based on prompt_structure parameter
@@ -47,7 +65,7 @@ def apply_prompt_template(prompt, prompt_structure="Custom"):
     return modified_prompt
 from datetime import datetime
 
-# ================== UNIVERSAL IMAGE UTILITIES ==================
+# ================== UNIVERSAL MEDIA UTILITIES ==================
 def rgba_to_rgb(image):
     """Convert RGBA image to RGB with white background"""
     if image.mode == 'RGBA':
@@ -78,6 +96,131 @@ def tensor_to_base64(tensor):
     buffered = io.BytesIO()
     image.save(buffered, format="PNG")
     return base64.b64encode(buffered.getvalue()).decode()
+
+def sample_video_frames(video_tensor, num_samples=6):
+    """Sample frames evenly from video tensor"""
+    if len(video_tensor.shape) != 4:
+        return None
+
+    total_frames = video_tensor.shape[0]
+    if total_frames <= num_samples:
+        indices = range(total_frames)
+    else:
+        indices = np.linspace(0, total_frames - 1, num_samples, dtype=int)
+
+    frames = []
+    for idx in indices:
+        frame = tensor_to_pil_image(video_tensor[idx])
+        frames.append(frame)
+    return frames
+
+def process_audio(audio_data, target_sample_rate=16000):
+    """Process audio data for API submission with robust error handling"""
+    if not TORCHAUDIO_AVAILABLE:
+        print("Warning: torchaudio not available, cannot process audio")
+        return None
+
+    try:
+        # Check if we received a path or a tensor
+        if isinstance(audio_data, str):
+            # It's a file path
+            try:
+                print(f"Loading audio from path: {audio_data}")
+                # Try to load with torchaudio
+                try:
+                    waveform, sample_rate = torchaudio.load(audio_data)
+                except RuntimeError as e:
+                    print(f"Error loading with torchaudio: {str(e)}")
+                    # If MP3 loading fails, try using alternative methods
+                    if audio_data.lower().endswith('.mp3'):
+                        print("Attempting to load MP3 with alternative method...")
+                        try:
+                            # Try to use ffmpeg if available
+                            import subprocess
+                            import tempfile
+
+                            # Create a temporary WAV file
+                            with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as temp_wav:
+                                temp_wav_path = temp_wav.name
+
+                            # Convert MP3 to WAV using ffmpeg
+                            cmd = ["ffmpeg", "-i", audio_data, "-ar", str(target_sample_rate), "-ac", "1", temp_wav_path]
+                            subprocess.run(cmd, check=True, capture_output=True)
+
+                            # Load the WAV file
+                            waveform, sample_rate = torchaudio.load(temp_wav_path)
+
+                            # Clean up
+                            os.remove(temp_wav_path)
+                            print("Successfully converted and loaded MP3 file")
+                        except Exception as ffmpeg_error:
+                            print(f"Failed to use ffmpeg: {str(ffmpeg_error)}")
+                            # If ffmpeg fails, try one more fallback
+                            try:
+                                from pydub import AudioSegment
+                                import numpy as np
+
+                                print("Attempting to load with pydub...")
+                                sound = AudioSegment.from_mp3(audio_data)
+                                sound = sound.set_frame_rate(target_sample_rate).set_channels(1)
+                                samples = np.array(sound.get_array_of_samples())
+                                waveform = torch.tensor(samples).float().div_(32768.0).unsqueeze(0)
+                                sample_rate = target_sample_rate
+                                print("Successfully loaded MP3 with pydub")
+                            except Exception as pydub_error:
+                                print(f"Failed to use pydub: {str(pydub_error)}")
+                                raise RuntimeError("All methods to load MP3 failed")
+                    else:
+                        # For non-MP3 files, re-raise the original error
+                        raise
+            except Exception as load_error:
+                print(f"All methods to load audio file failed: {str(load_error)}")
+                return None
+        else:
+            # It's a tensor or dictionary
+            try:
+                waveform = audio_data["waveform"]
+                sample_rate = audio_data["sample_rate"]
+            except (TypeError, KeyError):
+                # If it's just a tensor
+                if torch.is_tensor(audio_data):
+                    waveform = audio_data
+                    sample_rate = target_sample_rate  # Assume target sample rate
+                else:
+                    print(f"Unsupported audio data format: {type(audio_data)}")
+                    return None
+
+        # Handle different dimensions
+        if waveform.dim() == 3:  # [batch, channels, time]
+            waveform = waveform.squeeze(0)
+        elif waveform.dim() == 1:  # [time]
+            waveform = waveform.unsqueeze(0)
+
+        # Convert stereo to mono if needed
+        if waveform.shape[0] > 1:
+            waveform = torch.mean(waveform, dim=0, keepdim=True)
+
+        # Resample if needed
+        if sample_rate != target_sample_rate:
+            waveform = torchaudio.functional.resample(waveform, sample_rate, target_sample_rate)
+
+        # Normalize audio if needed
+        if waveform.abs().max() > 1.0:
+            waveform = waveform / waveform.abs().max()
+
+        # Convert to WAV format
+        buffer = io.BytesIO()
+        try:
+            torchaudio.save(buffer, waveform, target_sample_rate, format="WAV")
+            audio_bytes = buffer.getvalue()
+            return base64.b64encode(audio_bytes).decode('utf-8')
+        except Exception as save_error:
+            print(f"Error saving audio to buffer: {str(save_error)}")
+            return None
+
+    except Exception as e:
+        print(f"Error processing audio: {str(e)}")
+        return None
 def get_gemini_api_key():
     try:
         config_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.json')
@@ -301,7 +444,7 @@ class OpenAIAPI:
                 base_url="https://integrate.api.nvidia.com/v1",
                 api_key=self.nvidia_api_key
             )
-        
+
         # Import model list from list_models.py
         from .list_models import get_openai_models
         self.available_models = get_openai_models()
@@ -325,13 +468,13 @@ class OpenAIAPI:
         except:
             print("Error: NVIDIA API key is required")
             return ""
-    
+
     @classmethod
     def INPUT_TYPES(cls):
         # Create an instance to get the models
         instance = cls()
         available_models = instance.available_models
-        
+
         return {
             "required": {
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
@@ -617,7 +760,7 @@ class GeminiAPI:
         self.gemini_api_key = get_gemini_api_key()
         if self.gemini_api_key:
             genai.configure(api_key=self.gemini_api_key, transport='rest')
-            
+
         # Import model list from list_models.py
         from .list_models import get_gemini_models
         self.available_models = get_gemini_models()
@@ -627,17 +770,17 @@ class GeminiAPI:
         # Create an instance to get the models
         instance = cls()
         available_models = instance.available_models
-        
+
         return {
             "required": {
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
+                "input_type": (["text", "image", "video", "audio"], {"default": "text"}),
                 "gemini_model": (available_models,),
                 "stream": ("BOOLEAN", {"default": False}),
                 "structure_output": ("BOOLEAN", {"default": False}),
                 "prompt_structure": ([
                     "Custom",
-                    "HunyuanVideo",
-                    "Wan2.1",
+                    "VideoGen",
                     "FLUX.1-dev",
                     "SDXL"
                 ], {"default": "Custom"}),
@@ -646,10 +789,11 @@ class GeminiAPI:
                     "raw_text",
                     "json"
                 ], {"default": "raw_text"}),
-
             },
             "optional": {
                 "image": ("IMAGE",),
+                "video": ("IMAGE",),  # Video is represented as a tensor with shape [frames, height, width, channels]
+                "audio": ("AUDIO",),  # Audio input
             }
         }
 
@@ -658,7 +802,7 @@ class GeminiAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Gemini"
 
-    def generate_content(self, prompt, gemini_model, stream, structure_output, prompt_structure, structure_format, output_format, image=None):
+    def generate_content(self, prompt, input_type, gemini_model, stream, structure_output, prompt_structure, structure_format, output_format, image=None, video=None, audio=None):
         if not self.gemini_api_key:
             return ("Gemini API key missing",)
 
@@ -670,8 +814,6 @@ class GeminiAPI:
                 "top_k": 40
             }
 
-            # We'll use the common apply_prompt_template function instead of defining templates here
-
             # Apply prompt template
             modified_prompt = apply_prompt_template(prompt, prompt_structure)
 
@@ -682,14 +824,133 @@ class GeminiAPI:
                 modified_prompt = f"{modified_prompt}\n\n{structure_format}"
                 print(f"Modified prompt with structure format")
 
-            # Create the model and content
+            # Create the model
             model = genai.GenerativeModel(gemini_model)
-            content = [modified_prompt]
 
-            if image is not None:
-                print("Processing image for Gemini API")
+            # Process different input types
+            if input_type == "text":
+                # Text-only input
+                print(f"Processing text input for Gemini API")
+                content = [modified_prompt]
+
+            elif input_type == "image" and image is not None:
+                # Process image input
+                print(f"Processing image input for Gemini API")
                 pil_image = tensor_to_pil_image(image)
-                content.append(pil_image)
+                content = [modified_prompt, pil_image]
+
+            elif input_type == "video" and video is not None:
+                # Process video input (extract frames)
+                print(f"Processing video input for Gemini API")
+                frames = sample_video_frames(video)
+                if frames:
+                    # Create content with text and frames
+                    content = [modified_prompt]
+                    for frame in frames:
+                        content.append(frame)
+
+                    # Update prompt to indicate video analysis
+                    frame_count = len(frames)
+                    modified_prompt = f"Analyze these {frame_count} frames from a video: {modified_prompt}"
+                    content[0] = modified_prompt
+                else:
+                    print("Error: Could not extract frames from video")
+                    return ("Error: Could not extract frames from video",)
+
+            elif input_type == "audio" and audio is not None:
+                # Process audio input
+                print(f"Processing audio input for Gemini API")
+                if not TORCHAUDIO_AVAILABLE:
+                    return ("Error: torchaudio not available for audio processing",)
+
+                try:
+                    # Check different audio input formats
+                    if isinstance(audio, dict):
+                        if "path" in audio:
+                            # Direct path format
+                            audio_path = audio["path"]
+                            print(f"Processing audio from path: {audio_path}")
+                            audio_b64 = process_audio(audio_path)
+                        elif "waveform" in audio and "sample_rate" in audio:
+                            # ComfyUI audio node format
+                            print(f"Processing audio from waveform tensor")
+                            audio_b64 = process_audio(audio)
+                        else:
+                            # Unknown dictionary format
+                            print(f"Unknown audio dictionary format: {list(audio.keys())}")
+                            return ("Error: Unsupported audio format",)
+                    elif isinstance(audio, str) and os.path.exists(audio):
+                        # Direct file path
+                        print(f"Processing audio from direct path: {audio}")
+                        audio_b64 = process_audio(audio)
+                    else:
+                        # Try to process as tensor or other format
+                        print(f"Attempting to process audio as tensor")
+                        audio_b64 = process_audio(audio)
+
+                    if audio_b64:
+                        # Gemini doesn't directly support audio in the Python SDK
+                        # We'll use the REST API directly for audio
+                        try:
+                            import requests
+
+                            # Prepare the request
+                            url = f"https://generativelanguage.googleapis.com/v1beta/models/{gemini_model}:generateContent"
+                            headers = {
+                                "Content-Type": "application/json",
+                                "x-goog-api-key": self.gemini_api_key
+                            }
+
+                            # Create the request body
+                            request_body = {
+                                "contents": [{
+                                    "parts": [
+                                        {"text": modified_prompt},
+                                        {
+                                            "inline_data": {
+                                                "mime_type": "audio/wav",
+                                                "data": audio_b64
+                                            }
+                                        }
+                                    ]
+                                }],
+                                "generation_config": generation_config,
+                                "safety_settings": [
+                                    {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+                                    {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+                                    {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+                                    {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"}
+                                ]
+                            }
+
+                            # Send the request
+                            print(f"Sending audio request to Gemini API REST endpoint")
+                            response = requests.post(url, json=request_body, headers=headers)
+                            response.raise_for_status()
+
+                            # Extract the response text
+                            response_json = response.json()
+                            if "candidates" in response_json and len(response_json["candidates"]) > 0:
+                                candidate = response_json["candidates"][0]
+                                if "content" in candidate and "parts" in candidate["content"]:
+                                    parts = candidate["content"]["parts"]
+                                    text_parts = [part.get("text", "") for part in parts if "text" in part]
+                                    textoutput = " ".join(text_parts)
+                                    return (textoutput,)
+
+                            return ("Error: Could not parse Gemini API response for audio",)
+                        except Exception as e:
+                            print(f"Error using REST API for audio: {str(e)}")
+                            # Fallback to text-only with a note about audio
+                            content = [f"[This prompt was supposed to include audio data, but audio processing failed: {str(e)}] {modified_prompt}"]
+                    else:
+                        return ("Error: Failed to process audio data",)
+                except Exception as e:
+                    print(f"Error processing audio for Gemini: {str(e)}")
+                    return (f"Error processing audio: {str(e)}",)
+            else:
+                # Default to text-only
+                content = [modified_prompt]
 
             print(f"Sending request to Gemini API with model: {gemini_model}")
             try:
@@ -817,13 +1078,13 @@ class OllamaAPI:
         return {
             "required": {
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
+                "input_type": (["text", "image", "video", "audio"], {"default": "text"}),
                 "ollama_model": (cls.get_ollama_models(),),
                 "keep_alive": ("INT", {"default": 0, "min": 0, "max": 60, "step": 1}),
                 "structure_output": ("BOOLEAN", {"default": False}),
                 "prompt_structure": ([
                     "Custom",
-                    "HunyuanVideo",
-                    "Wan2.1",
+                    "VideoGen",
                     "FLUX.1-dev",
                     "SDXL"
                 ], {"default": "Custom"}),
@@ -835,6 +1096,8 @@ class OllamaAPI:
             },
             "optional": {
                 "image": ("IMAGE",),
+                "video": ("IMAGE",),  # Video is represented as a tensor with shape [frames, height, width, channels]
+                "audio": ("AUDIO",),  # Audio input
             }
         }
 
@@ -843,7 +1106,7 @@ class OllamaAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Ollama"
 
-    def generate_content(self, prompt, ollama_model, keep_alive, structure_output, prompt_structure, structure_format, output_format, image=None):
+    def generate_content(self, prompt, input_type, ollama_model, keep_alive, structure_output, prompt_structure, structure_format, output_format, image=None, video=None, audio=None):
         url = f"{self.ollama_url}/api/generate"
 
         # Apply prompt template
@@ -864,12 +1127,92 @@ class OllamaAPI:
         }
 
         try:
-            if image is not None:
+            # Process different input types
+            if input_type == "text":
+                # Text-only input, no additional processing needed
+                print(f"Processing text input for Ollama API")
+
+            elif input_type == "image" and image is not None:
+                # Process image input
+                print(f"Processing image input for Ollama API")
                 pil_image = tensor_to_pil_image(image)
                 buffered = io.BytesIO()
                 pil_image.save(buffered, format="PNG")
                 payload["images"] = [base64.b64encode(buffered.getvalue()).decode()]
 
+                # Update prompt to indicate image analysis
+                modified_prompt = f"Analyze this image: {modified_prompt}"
+                payload["prompt"] = modified_prompt
+
+            elif input_type == "video" and video is not None:
+                # Process video input (extract frames)
+                print(f"Processing video input for Ollama API")
+                frames = sample_video_frames(video)
+                if frames:
+                    # Convert frames to base64
+                    frame_data = []
+                    for frame in frames:
+                        buffered = io.BytesIO()
+                        frame.save(buffered, format="PNG")
+                        frame_data.append(base64.b64encode(buffered.getvalue()).decode())
+
+                    # Add frames to payload
+                    payload["images"] = frame_data
+
+                    # Update prompt to indicate video analysis
+                    frame_count = len(frames)
+                    modified_prompt = f"Analyze these {frame_count} frames from a video: {modified_prompt}"
+                    payload["prompt"] = modified_prompt
+                else:
+                    print("Error: Could not extract frames from video")
+                    return ("Error: Could not extract frames from video",)
+
+            elif input_type == "audio" and audio is not None:
+                # Process audio input
+                print(f"Processing audio input for Ollama API")
+                if not TORCHAUDIO_AVAILABLE:
+                    return ("Error: torchaudio not available for audio processing",)
+
+                try:
+                    # Check different audio input formats
+                    if isinstance(audio, dict):
+                        if "path" in audio:
+                            # Direct path format
+                            audio_path = audio["path"]
+                            print(f"Processing audio from path: {audio_path}")
+                            audio_b64 = process_audio(audio_path)
+                        elif "waveform" in audio and "sample_rate" in audio:
+                            # ComfyUI audio node format
+                            print(f"Processing audio from waveform tensor")
+                            audio_b64 = process_audio(audio)
+                        else:
+                            # Unknown dictionary format
+                            print(f"Unknown audio dictionary format: {list(audio.keys())}")
+                            return ("Error: Unsupported audio format",)
+                    elif isinstance(audio, str) and os.path.exists(audio):
+                        # Direct file path
+                        print(f"Processing audio from direct path: {audio}")
+                        audio_b64 = process_audio(audio)
+                    else:
+                        # Try to process as tensor or other format
+                        print(f"Attempting to process audio as tensor")
+                        audio_b64 = process_audio(audio)
+
+                    if audio_b64:
+                        # Ollama doesn't directly support audio, so we'll include a note in the prompt
+                        modified_prompt = f"[This prompt includes audio data that has been processed] {modified_prompt}"
+                        payload["prompt"] = modified_prompt
+
+                        # Some Ollama models might support base64 encoded audio as an image
+                        # This is experimental and may not work with all models
+                        payload["images"] = [audio_b64]
+                    else:
+                        return ("Error: Failed to process audio data",)
+                except Exception as e:
+                    print(f"Error processing audio for Ollama: {str(e)}")
+                    return (f"Error processing audio: {str(e)}",)
+
+            # Send request to Ollama API
             response = requests.post(url, json=payload)
             response.raise_for_status()
 
@@ -995,7 +1338,7 @@ class Save_text_File:
 class ListAvailableModels:
     def __init__(self):
         pass
-        
+
     @classmethod
     def INPUT_TYPES(cls):
         return {
@@ -1004,27 +1347,27 @@ class ListAvailableModels:
                 "display_openai": ("BOOLEAN", {"default": True})
             }
         }
-    
+
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("model_list",)
     FUNCTION = "list_models"
     CATEGORY = "AI API/Utils"
-    
+
     def list_models(self, display_gemini, display_openai):
         from .list_models import get_gemini_models, get_openai_models
         model_list = []
-        
+
         if display_gemini:
             gemini_models = get_gemini_models()
             model_list.append("=== Gemini Models ===")
             model_list.extend(gemini_models)
             model_list.append("")
-            
+
         if display_openai:
             openai_models = get_openai_models()
             model_list.append("=== OpenAI Models ===")
             model_list.extend(openai_models)
-        
+
         return ("\n".join(model_list),)
 
 # ================== NODE REGISTRATION ==================
