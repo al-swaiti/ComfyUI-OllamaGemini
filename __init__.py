@@ -18,7 +18,7 @@ if not config_file.exists():
 else:
     config = json.loads(config_file.read_text())
 
-# Import node mappings from original node
+# Import node mappings from renamed node classes
 from .GeminiOllamaNode import NODE_CLASS_MAPPINGS as GEMINI_OLLAMA_MAPPINGS
 from .GeminiOllamaNode import NODE_DISPLAY_NAME_MAPPINGS as GEMINI_OLLAMA_DISPLAY_MAPPINGS
 
@@ -32,6 +32,18 @@ from .SmartPromptGenerator import NODE_DISPLAY_NAME_MAPPINGS as SMART_PROMPT_DIS
 
 # Import model listing functionality
 from .list_models import get_gemini_models, get_openai_models, get_gemini_image_models
+
+# Import from BRIA_RMBG
+from .BRIA_RMBG import GeminiBRIA_RMBG
+
+# Import from clipseg
+from .clipseg import GeminiCLIPSeg, GeminiCombineMasks
+
+# Import from svgnode
+from .svgnode import ConvertRasterToVector, GeminiSaveSVG, GeminiSVGPreview
+
+# Import from FLUXResolutions
+from .FLUXResolutions import FLUXResolutions
 
 # GeminiTextToPrompt module is missing, creating empty mappings
 GEMINI_PROMPT_MAPPINGS = {}
@@ -57,8 +69,17 @@ NODE_CLASS_MAPPINGS = {
     **STRUCTURED_TEMPLATE_MAPPINGS,
     **SMART_PROMPT_MAPPINGS,
 
+    # Additional nodes
+    "GeminiBRIA_RMBG": GeminiBRIA_RMBG,
+    "GeminiCLIPSeg": GeminiCLIPSeg,
+    "GeminiCombineMasks": GeminiCombineMasks,
+    "ConvertRasterToVector": ConvertRasterToVector,
+    "GeminiSaveSVG": GeminiSaveSVG,
+    "GeminiSVGPreview": GeminiSVGPreview,
+    "FLUXResolutions": FLUXResolutions,
+    
     # Prompt styler nodes
-    'ComfyUIStyler': type('ComfyUIStyler', (PromptStyler,), {'menus': NODES['ComfyUI Styler']})
+    'GeminiComfyUIStyler': type('GeminiComfyUIStyler', (PromptStyler,), {'menus': NODES['Gemini ComfyUI Styler']})
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -69,8 +90,17 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     **STRUCTURED_TEMPLATE_DISPLAY_MAPPINGS,
     **SMART_PROMPT_DISPLAY_MAPPINGS,
 
+    # Additional nodes
+    "GeminiBRIA_RMBG": "Gemini BRIA RMBG",
+    "GeminiCLIPSeg": "Gemini CLIPSeg",
+    "GeminiCombineMasks": "Gemini Combine Masks",
+    "ConvertRasterToVector": "Convert Raster to Vector",
+    "GeminiSaveSVG": "Gemini Save SVG",
+    "GeminiSVGPreview": "Gemini SVG Preview",
+    "FLUXResolutions": "FLUX Resolutions",
+    
     # Prompt styler nodes
-    'ComfyUIStyler': 'ComfyUI Styler'
+    'GeminiComfyUIStyler': 'Gemini ComfyUI Styler'
 }
 
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']

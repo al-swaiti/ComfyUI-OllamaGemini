@@ -262,7 +262,8 @@ class ConvertRasterToVector:
                 print(f"Error during SVG conversion: {str(e)}")
 
         return (svg_strings,)
-class SaveSVG:
+
+class GeminiSaveSVG:
     def __init__(self):
         self.output_dir = folder_paths.get_output_directory()
 
@@ -537,7 +538,7 @@ class SaveSVG:
         # Return the preview image tensor and the list of saved file paths
         return (preview_tensor, "\n".join(saved_paths))
 
-class SVGPreview:
+class GeminiSVGPreview:
     @classmethod
     def INPUT_TYPES(cls):
         return {
@@ -774,12 +775,12 @@ class SVGPreview:
 # Register nodes
 NODE_CLASS_MAPPINGS = {
     "ConvertRasterToVector": ConvertRasterToVector,
-    "SaveSVG": SaveSVG,
-    "SVGPreview": SVGPreview
+    "GeminiSaveSVG": GeminiSaveSVG,
+    "GeminiSVGPreview": GeminiSVGPreview
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "ConvertRasterToVector": "Convert Image to SVG",
-    "SaveSVG": "Save SVG File",
-    "SVGPreview": "Preview SVG"
+    "GeminiSaveSVG": "Save SVG File",
+    "GeminiSVGPreview": "Preview SVG"
 }

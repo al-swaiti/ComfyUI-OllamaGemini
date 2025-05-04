@@ -11,9 +11,9 @@ import folder_paths
 import anthropic
 import io
 import numpy as np
-from .clipseg import CLIPSeg, CombineMasks
-from .BRIA_RMBG import  BRIA_RMBG
-from .svgnode import ConvertRasterToVector, SaveSVG
+from .clipseg import GeminiCLIPSeg, GeminiCombineMasks
+from .BRIA_RMBG import GeminiBRIA_RMBG
+from .svgnode import ConvertRasterToVector, GeminiSaveSVG
 from .FLUXResolutions import FLUXResolutions
 from .prompt_styler import *
 
@@ -246,7 +246,7 @@ def get_ollama_url():
 # ================== API SERVICES ==================
 
 
-class QwenAPI:
+class GeminiQwenAPI:
     def __init__(self):
         self.qwen_api_key = self.get_qwen_api_key()
         if not self.qwen_api_key:
@@ -433,7 +433,8 @@ class QwenAPI:
 
         except Exception as e:
             return (f"API Error: {str(e)}",)
-class OpenAIAPI:
+
+class GeminiOpenAIAPI:
     def __init__(self):
         self.openai_api_key = self.get_openai_api_key()
         self.nvidia_api_key = self.get_nvidia_api_key()
@@ -604,7 +605,7 @@ class OpenAIAPI:
 
         return (textoutput,)
 
-class ClaudeAPI:
+class GeminiClaudeAPI:
     def __init__(self):
         self.claude_api_key = self.get_claude_api_key()
         if self.claude_api_key:
@@ -755,7 +756,7 @@ class ClaudeAPI:
         except Exception as e:
             return (f"API Error: {str(e)}",)
 
-class GeminiAPI:
+class GeminiLLMAPI:
     def __init__(self):
         self.gemini_api_key = get_gemini_api_key()
         if self.gemini_api_key:
@@ -1056,7 +1057,7 @@ class GeminiAPI:
         except Exception as e:
             return (f"API Error: {str(e)}",)
 
-class OllamaAPI:
+class GeminiOllamaAPI:
     def __init__(self):
         self.ollama_url = get_ollama_url()
 
@@ -1274,7 +1275,7 @@ class OllamaAPI:
             return (f"API Error: {str(e)}",)
 
 # ================== SUPPORTING NODES ==================
-class TextSplitByDelimiter:
+class GeminiTextSplitByDelimiter:
     @classmethod
     def INPUT_TYPES(s):
         return {
@@ -1299,7 +1300,7 @@ class TextSplitByDelimiter:
         arr = arr[start_index:start_index + max_count * (skip_every + 1):(skip_every + 1)]
         return (arr,)
 
-class Save_text_File:
+class GeminiSaveTextFile:
     def __init__(self):
         self.output_dir = folder_paths.output_directory
 
@@ -1335,7 +1336,7 @@ class Save_text_File:
         return (text,)
 
 # Add a node to display available models
-class ListAvailableModels:
+class GeminiListAvailableModels:
     def __init__(self):
         pass
 
@@ -1372,21 +1373,14 @@ class ListAvailableModels:
 
 # ================== NODE REGISTRATION ==================
 NODE_CLASS_MAPPINGS = {
-    "GeminiAPI": GeminiAPI,
-    "OllamaAPI": OllamaAPI,
-    "OpenAIAPI": OpenAIAPI,
-    "ClaudeAPI": ClaudeAPI,
-    "QwenAPI": QwenAPI,
-    "TextSplitByDelimiter": TextSplitByDelimiter,
-    "SaveTextFile": Save_text_File,
-    "CLIPSeg": CLIPSeg,
-    "CombineMasks": CombineMasks,
-    "BRIA_RMBG": BRIA_RMBG,
-    "ConvertRasterToVector": ConvertRasterToVector,
-    "SaveSVG": SaveSVG,
-    "FLUXResolutions": FLUXResolutions,
-    'ComfyUIStyler': type('ComfyUIStyler', (PromptStyler,), {'menus': NODES['ComfyUI Styler']}),
-    "ListAvailableModels": ListAvailableModels
+    "GeminiAPI": GeminiLLMAPI,
+    "OllamaAPI": GeminiOllamaAPI,
+    "OpenAIAPI": GeminiOpenAIAPI,
+    "ClaudeAPI": GeminiClaudeAPI,
+    "QwenAPI": GeminiQwenAPI,
+    "TextSplitByDelimiter": GeminiTextSplitByDelimiter,
+    "SaveTextFile": GeminiSaveTextFile,
+    "ListAvailableModels": GeminiListAvailableModels
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -1397,12 +1391,5 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "QwenAPI": "Qwen API",
     "TextSplitByDelimiter": "Text Split By Delimiter",
     "SaveTextFile": "Save Text File",
-    "CLIPSeg": "CLIPSeg",
-    "CombineMasks": "Combine Masks",
-    "BRIA_RMBG": "BRIA RMBG",
-    "ConvertRasterToVector": "Convert Raster to Vector",
-    "SaveSVG": "Save SVG",
-    "FLUXResolutions": "FLUX Resolutions",
-    'ComfyUIStyler': 'ComfyUI Styler',
-    "ListAvailableModels": "List Available Models"
+    "ListAvailableModels": "List Available Models",
 }

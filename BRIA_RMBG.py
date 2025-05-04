@@ -20,7 +20,7 @@ def resize_image(image: Image.Image, size=(1024, 1024)) -> Image.Image:
     image = image.convert('RGB')
     return image.resize(size, Image.BILINEAR)
 
-class BRIA_RMBG:
+class GeminiBRIA_RMBG:
     def __init__(self):
         self.model = None
         self.current_version = None

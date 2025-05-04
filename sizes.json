@@ -25,10 +25,15 @@
       "height": 1152,
       "name": "Portrait Medium"
     },
+    "1366x768 (16:9)": {
+      "width": 1366,
+      "height": 768,
+      "name": "Laptop Standard"
+    },
     "1536x768 (2:1)": {
       "width": 1536,
       "height": 768,
-      "name": "Ultra Wide Small"
+      "name": "Cinematic Wide"
     },
     "768x1536 (1:2)": {
       "width": 768,
@@ -60,10 +65,15 @@
       "height": 1536,
       "name": "Portrait HD"
     },
+    "1600x900 (16:9)": {
+      "width": 1600,
+      "height": 900,
+      "name": "Laptop HD"
+    },
     "2048x896 (8:7)": {
       "width": 2048,
       "height": 896,
-      "name": "Ultra Wide Medium"
+      "name": "Widescreen HD"
     },
     "896x2048 (7:8)": {
       "width": 896,
@@ -85,20 +95,55 @@
       "height": 1152,
       "name": "Landscape Medium Plus"
     },
+    "1920x1080 (16:9)": {
+      "width": 1920,
+      "height": 1080,
+      "name": "FullHD (16:9)"
+    },
     "1920x1152 (5:3)": {
       "width": 1920,
       "height": 1152,
       "name": "Wide Large"
+    },
+    "1920x1200 (16:10)": {
+      "width": 1920,
+      "height": 1200,
+      "name": "Professional (16:10)"
     },
     "1152x1920 (3:5)": {
       "width": 1152,
       "height": 1920,
       "name": "Portrait Large HD"
     },
-    "2560x1152 (16:9)": {
+    "1536x640 (21:9)": {
+      "width": 1536,
+      "height": 640,
+      "name": "Ultrawide Small"
+    },
+    "2560x1080 (21:9)": {
       "width": 2560,
-      "height": 1152,
-      "name": "Ultra Wide Large"
+      "height": 1080,
+      "name": "Ultrawide Standard"
+    },
+    "2560x1440 (16:9)": {
+      "width": 2560,
+      "height": 1440,
+      "name": "QHD (16:9)"
+    },
+    "2560x1600 (16:10)": {
+      "width": 2560,
+      "height": 1600,
+      "name": "Professional QHD"
+    },
+    "3440x1440 (21:9)": {
+      "width": 3440,
+      "height": 1440,
+      "name": "Ultrawide Large"
+    },
+    "3840x1600 (21:9)": {
+      "width": 3840,
+      "height": 1600,
+      "name": "Ultrawide Premium"
     },
     "1152x2560 (9:16)": {
       "width": 1152,
@@ -130,20 +175,25 @@
       "height": 2304,
       "name": "Portrait Super HD"
     },
-    "3072x1408 (16:9)": {
-      "width": 3072,
-      "height": 1408,
-      "name": "Ultra Wide Extra Large"
+    "3840x1080 (32:9)": {
+      "width": 3840,
+      "height": 1080,
+      "name": "Super Ultrawide"
+    },
+    "3840x2160 (16:9)": {
+      "width": 3840,
+      "height": 2160,
+      "name": "4K UHD (16:9)"
+    },
+    "5120x1440 (32:9)": {
+      "width": 5120,
+      "height": 1440,
+      "name": "Super Ultrawide Large"
     },
     "1408x3072 (9:16)": {
       "width": 1408,
       "height": 3072,
       "name": "Portrait Super Ultra HD"
-    },
-    "3840x2160 (16:9)": {
-      "width": 3840,
-      "height": 2160,
-      "name": "4K UHD"
     },
     "2160x3840 (9:16)": {
       "width": 2160,

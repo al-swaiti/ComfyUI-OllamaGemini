@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module="safetensors")
 _model = None
 _processor = None
 
-class CLIPSeg:
+class GeminiCLIPSeg:
     def __init__(self):
         pass
     
@@ -107,7 +107,7 @@ class CLIPSeg:
 
         return (mask_dilated, hard_mask)
 
-class CombineMasks:
+class GeminiCombineMasks:
     def __init__(self):
         pass
 
@@ -133,6 +133,6 @@ class CombineMasks:
         return (combined_mask,)
 
 NODE_CLASS_MAPPINGS = {
-    "CLIPSeg": CLIPSeg,
-    "CombineSegMasks": CombineMasks,
+    "GeminiCLIPSeg": GeminiCLIPSeg,
+    "GeminiCombineSegMasks": GeminiCombineMasks,
 }

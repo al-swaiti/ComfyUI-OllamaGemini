@@ -4,4 +4,4 @@ __pycache__
 *.pth
 
 # Ignore config files containing API keys
-config.json
+
