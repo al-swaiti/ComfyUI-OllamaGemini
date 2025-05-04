@@ -1,7 +1,7 @@
 import os
 import json
 
-class FLUXResolutions:
+class GeminiFLUXResolutions:
     def __init__(self):
         pass
     

@@ -27,9 +27,9 @@ except ImportError:
     GEMINI_AVAILABLE = False
     print("Google Generative AI module not available. Smart Prompt Generator will work without AI enhancement.")
 
-from .prompt_styler import StylerData, Template
+from .prompt_stylerx import StylerData, Template
 
-class SmartPromptGenerator:
+class GeminiSmartPromptGenerator:
     """
     A node that intelligently combines multiple style elements from different categories
     and uses Gemini API to create enhanced, creative prompts.
@@ -631,9 +631,9 @@ class SmartPromptGenerator:
 
 # Node class mappings for registration
 NODE_CLASS_MAPPINGS = {
-    "SmartPromptGenerator": SmartPromptGenerator
+    "GeminiSmartPromptGenerator": GeminiSmartPromptGenerator
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "SmartPromptGenerator": "Smart Prompt Generator"
+    "GeminiSmartPromptGenerator": "Gemini Smart Prompt Generator"
 }

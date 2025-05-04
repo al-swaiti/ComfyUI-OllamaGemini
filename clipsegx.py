@@ -107,7 +107,7 @@ class GeminiCLIPSeg:
 
         return (mask_dilated, hard_mask)
 
-class GeminiCombineMasks:
+class GeminiCombineSegMasks:
     def __init__(self):
         pass
 
@@ -134,5 +134,5 @@ class GeminiCombineMasks:
 
 NODE_CLASS_MAPPINGS = {
     "GeminiCLIPSeg": GeminiCLIPSeg,
-    "GeminiCombineSegMasks": GeminiCombineMasks,
+    "GeminiCombineSegMasks": GeminiCombineSegMasks,
 }

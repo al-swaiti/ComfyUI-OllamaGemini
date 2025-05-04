@@ -168,7 +168,7 @@ def convert_with_vtracer(image, colormode, mode, filter_speckle, color_precision
 
 # We're focusing only on vtracer for the best quality
 
-class ConvertRasterToVector:
+class GeminiConvertRasterToVector:
     @classmethod
     def INPUT_TYPES(cls):
         return {
@@ -774,13 +774,13 @@ class GeminiSVGPreview:
 
 # Register nodes
 NODE_CLASS_MAPPINGS = {
-    "ConvertRasterToVector": ConvertRasterToVector,
+    "GeminiConvertRasterToVector": GeminiConvertRasterToVector,
     "GeminiSaveSVG": GeminiSaveSVG,
     "GeminiSVGPreview": GeminiSVGPreview
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "ConvertRasterToVector": "Convert Image to SVG",
-    "GeminiSaveSVG": "Save SVG File",
-    "GeminiSVGPreview": "Preview SVG"
+    "GeminiConvertRasterToVector": "Gemini Convert Image to SVG",
+    "GeminiSaveSVG": "Gemini Save SVG File",
+    "GeminiSVGPreview": "Gemini Preview SVG"
 }

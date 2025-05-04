@@ -11,11 +11,11 @@ import folder_paths
 import anthropic
 import io
 import numpy as np
-from .clipseg import GeminiCLIPSeg, GeminiCombineMasks
-from .BRIA_RMBG import GeminiBRIA_RMBG
-from .svgnode import ConvertRasterToVector, GeminiSaveSVG
-from .FLUXResolutions import FLUXResolutions
-from .prompt_styler import *
+from .clipsegx import GeminiCLIPSeg, GeminiCombineSegMasks
+from .BRIA_RMBGx import GeminiBRIA_RMBG
+from .svgnodex import GeminiConvertRasterToVector, GeminiSaveSVG
+from .FLUXResolutions import GeminiFLUXResolutions
+from .prompt_stylerx import *
 
 # Try to import torchaudio for audio processing
 try:
