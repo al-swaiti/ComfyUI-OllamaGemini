@@ -27,17 +27,7 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 - **Ollama**: Run local models with customizable parameters
 - **Video & Audio Support**: Process video frames and audio inputs with Gemini and Ollama
 
-### 2️⃣ Gemini Image Generation
-
-<img src="examples/3.png" width="700">
-<img src="examples/4.png" width="700">
-<img src="examples/5.png" width="700">
-
-- Generate images directly with Google's Gemini 2.0 Flash model
-- Customize with prompts and negative prompts
-- Automatic saving to ComfyUI's output directory
-
-### 3️⃣ Advanced Prompt Engineering
+### 2️⃣ Advanced Prompt Engineering
 
 <img src="examples/1.png" width="700">
 
@@ -48,6 +38,17 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
   - **VideoGen**: Professional video generation prompts with subject, context, action, cinematography, and style
 - AI-powered prompt enhancement with expert-level guidance
 - Returns only the enhanced prompt without additional commentary
+
+### 3️⃣ - Gemini Image Generation
+<img src="examples/3.png" width="700">
+<img src="examples/4.png" width="700">
+<img src="examples/5.png" width="700">
+
+- Generate images directly with Google's Gemini 2.0 Flash model
+- Customize with prompts and negative prompts
+- Automatic saving to ComfyUI's output directory
+
+
 
 ### 4️⃣ Background Removal (BRIA RMBG)
 
