@@ -29,7 +29,6 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 
 ### 2️⃣ Advanced Prompt Engineering
 
-<img src="examples/1.png" width="700">
 
 - Transform simple prompts into detailed, model-specific instructions
 - Extensively researched prompt templates optimized for different models:
