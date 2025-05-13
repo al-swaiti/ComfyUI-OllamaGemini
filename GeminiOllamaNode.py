@@ -15,7 +15,7 @@ from .clipsegx import GeminiCLIPSeg, GeminiCombineSegMasks
 from .BRIA_RMBGx import GeminiBRIA_RMBG
 from .svgnodex import GeminiConvertRasterToVector, GeminiSaveSVG
 from .FLUXResolutions import GeminiFLUXResolutions
-from .prompt_stylerx import *
+from .prompt_stylerx import NODES
 
 # Try to import torchaudio for audio processing
 try:
@@ -1378,8 +1378,8 @@ NODE_CLASS_MAPPINGS = {
     "OpenAIAPI": GeminiOpenAIAPI,
     "ClaudeAPI": GeminiClaudeAPI,
     "QwenAPI": GeminiQwenAPI,
-    "TextSplitByDelimiter": GeminiTextSplitByDelimiter,
-    "SaveTextFile": GeminiSaveTextFile,
+    "GeminiTextSplitter": GeminiTextSplitByDelimiter,
+    "GeminiSaveText": GeminiSaveTextFile,
     "ListAvailableModels": GeminiListAvailableModels
 }
 
@@ -1389,7 +1389,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "OpenAIAPI": "OpenAI API",
     "ClaudeAPI": "Claude API",
     "QwenAPI": "Qwen API",
-    "TextSplitByDelimiter": "Text Split By Delimiter",
-    "SaveTextFile": "Save Text File",
+    "GeminiTextSplitter": "Gemini Text Splitter",
+    "GeminiSaveText": "Gemini Save Text",
     "ListAvailableModels": "List Available Models",
 }

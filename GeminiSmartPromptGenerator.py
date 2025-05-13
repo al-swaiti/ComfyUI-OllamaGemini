@@ -163,7 +163,7 @@ class GeminiSmartPromptGenerator:
     RETURN_TYPES = ("STRING", "STRING")
     RETURN_NAMES = ("enhanced_prompt", "negative_prompt")
     FUNCTION = "generate_smart_prompt"
-    CATEGORY = "Prompt"
+    CATEGORY = "AI API"
 
     def generate_random_base_prompt(self):
         """Generate a random base prompt idea"""

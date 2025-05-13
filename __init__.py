@@ -79,7 +79,7 @@ NODE_CLASS_MAPPINGS = {
     "GeminiFLUXResolutions": GeminiFLUXResolutions, # Renamed
     
     # Prompt styler nodes
-    'GeminiComfyUIStyler': type('GeminiComfyUIStyler', (PromptStyler,), {'menus': NODES['Gemini ComfyUI Styler']})
+    'GeminiComfyUIStyler': type('GeminiComfyUIStyler', (PromptStyler,), {'style_menus': NODES['Gemini ComfyUI Styler']})
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
