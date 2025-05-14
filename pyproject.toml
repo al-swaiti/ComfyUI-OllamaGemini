@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-ollamagemini"
 description = "ComfyUI extension for Ollama, Gemini, OpenAI, Claude, and Qwen with video and audio support"
-version = "2.0.9"
+version = "2.1"
 license = {file = "LICENSE"}
 dependencies = [
     "google-generativeai",
