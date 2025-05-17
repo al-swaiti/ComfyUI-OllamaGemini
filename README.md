@@ -14,7 +14,7 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 ## Features
 
-<div align="center">
+<div align="left">
 
 ### 1️⃣ Multiple AI API Integrations
 
