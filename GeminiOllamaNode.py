@@ -45,7 +45,8 @@ def apply_prompt_template(prompt, prompt_structure="Custom"):
 
         "FLUX.1-dev": "As an elite text-to-image prompt engineer, craft an exceptional FLUX.1-dev prompt from my description. Create a hyper-detailed, cinematographic paragraph that includes: (1) precise subject characterization with emotional undertones, (2) specific artistic influences from legendary painters/photographers, (3) technical camera specifications (lens, aperture, perspective), (4) sophisticated lighting setup with exact quality and direction, (5) atmospheric elements and depth effects, (6) composition techniques, and (7) post-processing styles. Use language that balances technical precision with artistic vision. Return ONLY the prompt text itself - no explanations or formatting no more 200 tokens.",
 
-        "SDXL": "Create a premium comma-separated tag prompt for SDXL based on my description. Structure the prompt with these elements in order of importance: (1) main subject with precise descriptors, (2) high-impact artistic medium (oil painting, digital art, photography, etc.), (3) specific art movement or style with named influences, (4) professional lighting terminology (rembrandt, cinematic, golden hour, etc.), (5) detailed environment/setting, (6) exact camera specifications (35mm, telephoto, macro, etc.), (7) composition techniques, (8) color palette/mood, and (9) post-processing effects. Use 20-30 tags maximum, prioritizing quality descriptors over quantity. Include 2-3 relevant artist references whose style matches the desired aesthetic. Return ONLY the comma-separated tags without explanations or formatting."
+        "SDXL": "Create a premium comma-separated tag prompt for SDXL based on my description. Structure the prompt with these elements in order of importance: (1) main subject with precise descriptors, (2) high-impact artistic medium (oil painting, digital art, photography, etc.), (3) specific art movement or style with named influences, (4) professional lighting terminology (rembrandt, cinematic, golden hour, etc.), (5) detailed environment/setting, (6) exact camera specifications (35mm, telephoto, macro, etc.), (7) composition techniques, (8) color palette/mood, and (9) post-processing effects. Use 20-30 tags maximum, prioritizing quality descriptors over quantity. Include 2-3 relevant artist references whose style matches the desired aesthetic. Return ONLY the comma-separated tags without explanations or formatting.",
+        "FLUXKontext": "You are a Flux Kontext prompt generator. Transform user descriptions into precise Flux Kontext editing instructions following this structure: (1) action verb with specific target object, (2) exact modification details, (3) style preservation clauses using 'while maintaining', (4) character consistency with specific descriptors (never use pronouns), (5) precise style names for transformations, (6) quoted text for replacements, and (7) step-by-step approach for complex edits. Use clear, direct language with specific visual descriptors. For style changes, include medium characteristics and named art movements. For character edits, preserve facial features, expressions, and poses explicitly. Return ONLY the Flux Kontext instruction without explanations or formatting."
     }
 
     # Apply template based on prompt_structure parameter
@@ -243,6 +244,27 @@ def get_ollama_url():
         ollama_url = "http://localhost:11434"
     return ollama_url
 
+def update_config_key(key, value):
+    config_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.json')
+    try:
+        # Read existing config
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        # If file doesn't exist or is empty/corrupt, start with a new dict
+        config = {}
+    
+    # Update the key
+    config[key] = value
+    
+    # Write the updated config back
+    try:
+        with open(config_path, 'w') as f:
+            json.dump(config, f, indent=4)
+        print(f"Successfully updated {key} in config.json")
+    except Exception as e:
+        print(f"Error writing to config.json: {str(e)}")
+
 # ================== API SERVICES ==================
 
 
@@ -313,7 +335,8 @@ class GeminiQwenAPI:
                     "HunyuanVideo",
                     "Wan2.1",
                     "FLUX.1-dev",
-                    "SDXL"
+                    "SDXL",
+                    "FLUXKontext"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
@@ -322,6 +345,7 @@ class GeminiQwenAPI:
                 ], {"default": "raw_text"}),
             },
             "optional": {
+                "api_key": ("STRING", {"default": "", "multiline": False}),
                 "image": ("IMAGE",),
             }
         }
@@ -331,9 +355,18 @@ class GeminiQwenAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Qwen"
 
-    def generate_content(self, prompt, qwen_model, max_tokens, temperature, top_p, structure_output, prompt_structure, structure_format, output_format, image=None):
+    def generate_content(self, prompt, qwen_model, max_tokens, temperature, top_p, structure_output, prompt_structure, structure_format, output_format, api_key="", image=None):
+        if api_key:
+            update_config_key("QWEN_API_KEY", api_key)
+            self.qwen_api_key = api_key
+            # Re-initialize the client with the new key
+            self.client = OpenAI(
+                api_key=self.qwen_api_key,
+                base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
+            )
+
         if not self.qwen_api_key:
-            return ("Qwen API key missing",)
+            return ("Qwen API key missing. Please provide it in the node's api_key input.",)
 
         try:
             # Apply prompt template
@@ -490,7 +523,8 @@ class GeminiOpenAIAPI:
                     "HunyuanVideo",
                     "Wan2.1",
                     "FLUX.1-dev",
-                    "SDXL"
+                    "SDXL",
+                    "FLUXKontext"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
@@ -499,6 +533,8 @@ class GeminiOpenAIAPI:
                 ], {"default": "raw_text"}),
             },
             "optional": {
+                "openai_api_key": ("STRING", {"default": "", "multiline": False}),
+                "nvidia_api_key": ("STRING", {"default": "", "multiline": False}),
                 "image": ("IMAGE",),
             }
         }
@@ -508,7 +544,19 @@ class GeminiOpenAIAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/OpenAI"
 
-    def generate_content(self, prompt, model, max_tokens, temperature, top_p, stream, structure_output, prompt_structure, structure_format, output_format, image=None):
+    def generate_content(self, prompt, model, max_tokens, temperature, top_p, stream, structure_output, prompt_structure, structure_format, output_format, openai_api_key="", nvidia_api_key="", image=None):
+        if openai_api_key:
+            update_config_key("OPENAI_API_KEY", openai_api_key)
+            self.openai_api_key = openai_api_key
+            self.openai_client = OpenAI(api_key=self.openai_api_key)
+        if nvidia_api_key:
+            update_config_key("NVIDIA_API_KEY", nvidia_api_key)
+            self.nvidia_api_key = nvidia_api_key
+            self.nvidia_client = OpenAI(
+                base_url="https://integrate.api.nvidia.com/v1",
+                api_key=self.nvidia_api_key
+            )
+
         # Apply prompt template
         modified_prompt = apply_prompt_template(prompt, prompt_structure)
 
@@ -645,7 +693,8 @@ class GeminiClaudeAPI:
                     "HunyuanVideo",
                     "Wan2.1",
                     "FLUX.1-dev",
-                    "SDXL"
+                    "SDXL",
+                    "FLUXKontext"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
@@ -654,6 +703,7 @@ class GeminiClaudeAPI:
                 ], {"default": "raw_text"}),
             },
             "optional": {
+                "api_key": ("STRING", {"default": "", "multiline": False}),
                 "image": ("IMAGE",),
             }
         }
@@ -663,9 +713,14 @@ class GeminiClaudeAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Claude"
 
-    def generate_content(self, prompt, model, max_tokens, structure_output, prompt_structure, structure_format, output_format, image=None):
+    def generate_content(self, prompt, model, max_tokens, structure_output, prompt_structure, structure_format, output_format, api_key="", image=None):
+        if api_key:
+            update_config_key("CLAUDE_API_KEY", api_key)
+            self.claude_api_key = api_key
+            self.client = anthropic.Client(api_key=self.claude_api_key)
+
         if not self.claude_api_key:
-            return ("Claude API key missing",)
+            return ("Claude API key missing. Please provide it in the node's api_key input.",)
 
         # Apply prompt template
         modified_prompt = apply_prompt_template(prompt, prompt_structure)
@@ -783,7 +838,8 @@ class GeminiLLMAPI:
                     "Custom",
                     "VideoGen",
                     "FLUX.1-dev",
-                    "SDXL"
+                    "SDXL",
+                    "FLUXKontext"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
@@ -792,6 +848,7 @@ class GeminiLLMAPI:
                 ], {"default": "raw_text"}),
             },
             "optional": {
+                "api_key": ("STRING", {"default": "", "multiline": False}),
                 "image": ("IMAGE",),
                 "video": ("IMAGE",),  # Video is represented as a tensor with shape [frames, height, width, channels]
                 "audio": ("AUDIO",),  # Audio input
@@ -803,9 +860,14 @@ class GeminiLLMAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Gemini"
 
-    def generate_content(self, prompt, input_type, gemini_model, stream, structure_output, prompt_structure, structure_format, output_format, image=None, video=None, audio=None):
+    def generate_content(self, prompt, input_type, gemini_model, stream, structure_output, prompt_structure, structure_format, output_format, api_key="", image=None, video=None, audio=None):
+        if api_key:
+            update_config_key("GEMINI_API_KEY", api_key)
+            self.gemini_api_key = api_key
+            genai.configure(api_key=self.gemini_api_key, transport='rest')
+
         if not self.gemini_api_key:
-            return ("Gemini API key missing",)
+            return ("Gemini API key missing. Please provide it in the node's api_key input.",)
 
         try:
             # Configure generation parameters
@@ -1087,7 +1149,8 @@ class GeminiOllamaAPI:
                     "Custom",
                     "VideoGen",
                     "FLUX.1-dev",
-                    "SDXL"
+                    "SDXL",
+                    "FLUXKontext"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
