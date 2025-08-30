@@ -18,7 +18,7 @@ if not config_file.exists():
 else:
     config = json.loads(config_file.read_text())
 
-# Import node mappings from original node
+# Import node mappings from renamed node classes
 from .GeminiOllamaNode import NODE_CLASS_MAPPINGS as GEMINI_OLLAMA_MAPPINGS
 from .GeminiOllamaNode import NODE_DISPLAY_NAME_MAPPINGS as GEMINI_OLLAMA_DISPLAY_MAPPINGS
 
@@ -27,11 +27,23 @@ from .GeminiImageGenerationNode import NODE_CLASS_MAPPINGS as GEMINI_IMAGE_MAPPI
 from .GeminiImageGenerationNode import NODE_DISPLAY_NAME_MAPPINGS as GEMINI_IMAGE_DISPLAY_MAPPINGS
 
 # Import Smart Prompt Generator node
-from .SmartPromptGenerator import NODE_CLASS_MAPPINGS as SMART_PROMPT_MAPPINGS
-from .SmartPromptGenerator import NODE_DISPLAY_NAME_MAPPINGS as SMART_PROMPT_DISPLAY_MAPPINGS
+from .GeminiSmartPromptGenerator import NODE_CLASS_MAPPINGS as SMART_PROMPT_MAPPINGS
+from .GeminiSmartPromptGenerator import NODE_DISPLAY_NAME_MAPPINGS as SMART_PROMPT_DISPLAY_MAPPINGS
 
 # Import model listing functionality
 from .list_models import get_gemini_models, get_openai_models, get_gemini_image_models
+
+# Import from BRIA_RMBG
+from .BRIA_RMBGx import GeminiBRIA_RMBG
+
+# Import from clipseg
+from .clipsegx import GeminiCLIPSeg, GeminiCombineSegMasks
+
+# Import from svgnode
+from .svgnodex import GeminiConvertRasterToVector, GeminiSaveSVG, GeminiSVGPreview
+
+# Import from FLUXResolutions
+from .FLUXResolutions import GeminiFLUXResolutions
 
 # GeminiTextToPrompt module is missing, creating empty mappings
 GEMINI_PROMPT_MAPPINGS = {}
@@ -46,7 +58,7 @@ STRUCTURED_TEMPLATE_MAPPINGS = {}
 STRUCTURED_TEMPLATE_DISPLAY_MAPPINGS = {}
 
 # Import prompt styler nodes
-from .prompt_styler import NODES, PromptStyler
+from .prompt_stylerx import NODES, PromptStyler
 
 # Combine node mappings
 NODE_CLASS_MAPPINGS = {
@@ -57,8 +69,17 @@ NODE_CLASS_MAPPINGS = {
     **STRUCTURED_TEMPLATE_MAPPINGS,
     **SMART_PROMPT_MAPPINGS,
 
+    # Additional nodes - renamed to avoid conflicts
+    "GeminiBRIA_RMBG": GeminiBRIA_RMBG,
+    "GeminiCLIPSeg": GeminiCLIPSeg,
+    "GeminiCombineSegMasks": GeminiCombineSegMasks, # Renamed from GeminiCombineMasks
+    "GeminiConvertRasterToVector": GeminiConvertRasterToVector, # Renamed
+    "GeminiSaveSVG": GeminiSaveSVG,
+    "GeminiSVGPreview": GeminiSVGPreview,
+    "GeminiFLUXResolutions": GeminiFLUXResolutions, # Renamed
+    
     # Prompt styler nodes
-    'ComfyUIStyler': type('ComfyUIStyler', (PromptStyler,), {'menus': NODES['ComfyUI Styler']})
+    'GeminiComfyUIStyler': type('GeminiComfyUIStyler', (PromptStyler,), {'style_menus': NODES['Gemini ComfyUI Styler']})
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -69,8 +90,17 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     **STRUCTURED_TEMPLATE_DISPLAY_MAPPINGS,
     **SMART_PROMPT_DISPLAY_MAPPINGS,
 
+    # Additional nodes - renamed to avoid conflicts
+    "GeminiBRIA_RMBG": "Gemini BRIA RMBG",
+    "GeminiCLIPSeg": "Gemini CLIPSeg",
+    "GeminiCombineSegMasks": "Gemini Combine Seg Masks", # Renamed from GeminiCombineMasks
+    "GeminiConvertRasterToVector": "Gemini Convert Raster to Vector", # Renamed
+    "GeminiSaveSVG": "Gemini Save SVG",
+    "GeminiSVGPreview": "Gemini SVG Preview",
+    "GeminiFLUXResolutions": "Gemini FLUX Resolutions", # Renamed
+    
     # Prompt styler nodes
-    'ComfyUIStyler': 'ComfyUI Styler'
+    'GeminiComfyUIStyler': 'Gemini ComfyUI Styler'
 }
 
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']

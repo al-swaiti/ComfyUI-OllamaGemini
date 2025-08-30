@@ -32,12 +32,12 @@ def get_gemini_models():
         # Image Generation Models
         "imagen-3.0-generate-002"
     ]
-    
+
     gemini_api_key, _ = get_api_keys()
     if not gemini_api_key:
         print("Gemini API key is missing. Using default model list.")
         return default_gemini_models
-    
+
     try:
         genai.configure(api_key=gemini_api_key)
         models = genai.list_models()
@@ -45,7 +45,7 @@ def get_gemini_models():
         # Extract just the model name from the full path
         model_names = [name.split('/')[-1] for name in model_names]
         print(f"Gemini models fetched: {len(model_names)} models available")
-        
+
         # Include common and image generation models that might not be returned by API
         for model in default_gemini_models:
             if model not in model_names:
@@ -74,18 +74,18 @@ def get_openai_models():
         # DeepSeek Models
         "deepseek-ai/deepseek-r1"
     ]
-    
+
     _, openai_api_key = get_api_keys()
     if not openai_api_key:
         print("OpenAI API key is missing. Using default model list.")
         return default_openai_models
-    
+
     try:
         client = OpenAI(api_key=openai_api_key)
         models = client.models.list()
         model_ids = [model.id for model in models.data]
         print(f"OpenAI models fetched: {len(model_ids)} models available")
-        
+
         # Include common models that might not be returned by API
         for model in default_openai_models:
             if model not in model_ids:
@@ -97,8 +97,44 @@ def get_openai_models():
         return default_openai_models
 
 def get_gemini_image_models():
-    """Get models specifically for image generation"""
-    return ["gemini-2.0-flash-exp-image-generation", "imagen-3.0-generate-002"]
+    """
+    Dynamically fetches a list of Gemini models that support image generation.
+    """
+    gemini_api_key, _ = get_api_keys()
+    fallback_models = ["gemini-2.5-flash-image-preview", "imagen-4.0-generate-001"]
+
+    if not gemini_api_key:
+        print("Gemini API key is missing. Using default image model list.")
+        return fallback_models
+
+    try:
+        genai.configure(api_key=gemini_api_key)
+        all_models = genai.list_models()
+        image_models = []
+
+        # Simplified logic: Trust models with 'image' in the name, as the API
+        # is not returning the full list of supported methods.
+        for model in all_models:
+            model_name = model.name.split('/')[-1]
+            if 'image' in model_name:
+                image_models.append(model_name)
+        
+        # Ensure fallback models are always available
+        for model in fallback_models:
+            if model not in image_models:
+                image_models.append(model)
+
+        if not image_models:
+            print("Could not dynamically find any image models. Using a default list.")
+            return fallback_models
+
+        print(f"Final Gemini image models list: {image_models}")
+        return sorted(list(set(image_models)))
+    except Exception as e:
+        print(f"Error fetching Gemini image models: {str(e)}")
+        print("Using default image model list.")
+        return fallback_models
+
 
 if __name__ == "__main__":
     print("\n=== Gemini Models ===")
@@ -106,9 +142,9 @@ if __name__ == "__main__":
     for model in gemini_models:
         print(f"Name: {model}")
         print("")
-    
+
     print("\n=== OpenAI Models ===")
     openai_models = get_openai_models()
     for model in openai_models:
         print(f"ID: {model}")
-        print("") 
+        print("")

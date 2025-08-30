@@ -14,11 +14,11 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 
 ## Features
 
-<div align="center">
+<div align="left">
 
 ### 1️⃣ Multiple AI API Integrations
 
-<video src="examples/8_compressed.mp4" width="700" autoplay loop controls></video>
+https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 
 - **Google Gemini**: Access gemini-2.0-pro, gemini-2.0-flash, gemini-1.5-pro and more with dynamic model list updates
 - **OpenAI**: Use gpt-4o, gpt-4-turbo, gpt-3.5-turbo, and DeepSeek models with automatic model discovery
@@ -27,19 +27,8 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
 - **Ollama**: Run local models with customizable parameters
 - **Video & Audio Support**: Process video frames and audio inputs with Gemini and Ollama
 
-### 2️⃣ Gemini Image Generation
+### 2️⃣ Advanced Prompt Engineering
 
-<img src="examples/3.png" width="700">
-<img src="examples/4.png" width="700">
-<img src="examples/5.png" width="700">
-
-- Generate images directly with Google's Gemini 2.0 Flash model
-- Customize with prompts and negative prompts
-- Automatic saving to ComfyUI's output directory
-
-### 3️⃣ Advanced Prompt Engineering
-
-<img src="examples/1.png" width="700">
 
 - Transform simple prompts into detailed, model-specific instructions
 - Extensively researched prompt templates optimized for different models:
@@ -48,6 +37,17 @@ This extension integrates Google's Gemini API, OpenAI (ChatGPT), Anthropic's Cla
   - **VideoGen**: Professional video generation prompts with subject, context, action, cinematography, and style
 - AI-powered prompt enhancement with expert-level guidance
 - Returns only the enhanced prompt without additional commentary
+
+### 3️⃣ - Gemini Image Generation
+<img src="examples/3.png" width="700">
+<img src="examples/4.png" width="700">
+<img src="examples/5.png" width="700">
+
+- Generate images directly with Google's Gemini 2.0 Flash model
+- Customize with prompts and negative prompts
+- Automatic saving to ComfyUI's output directory
+
+
 
 ### 4️⃣ Background Removal (BRIA RMBG)
 
