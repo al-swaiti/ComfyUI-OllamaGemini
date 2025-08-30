@@ -6,4 +6,4 @@ GEMINI.md
 .ropeproject/
 
 # Ignore config files containing API keys
-config.json
+
