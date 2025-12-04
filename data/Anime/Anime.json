@@ -1,0 +1,262 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Animal Transformation",
+        "prompt": "(Animal transformation anime style) {prompt}",
+        "negative_prompt": "Isekai adventure style"
+    },
+    {
+        "name": "Artistic and Abstract",
+        "prompt": "(Artistic and abstract anime style) {prompt}",
+        "negative_prompt": "Sports anime style"
+    },
+    {
+        "name": "Chibi Style",
+        "prompt": "(Chibi anime style) {prompt}",
+        "negative_prompt": "Realistic style"
+    },
+    {
+        "name": "Criminal Underworld",
+        "prompt": "(Criminal underworld anime style) {prompt}",
+        "negative_prompt": "Sports anime style"
+    },
+    {
+        "name": "Cultural Festival",
+        "prompt": "(Cultural festival anime style) {prompt}",
+        "negative_prompt": "Realistic drama style"
+    },
+    {
+        "name": "Cute and Fluffy",
+        "prompt": "(Cute and fluffy anime style) {prompt}",
+        "negative_prompt": "Shonen battle style"
+    },
+    {
+        "name": "Cybernetic Augmentation",
+        "prompt": "(Cybernetic augmentation anime style) {prompt}",
+        "negative_prompt": "Psychological thriller style"
+    },
+    {
+        "name": "Cyberpunk Anime",
+        "prompt": "(Cyberpunk anime style) {prompt}",
+        "negative_prompt": "Fantasy anime style"
+    },
+    {
+        "name": "Drama and Tears",
+        "prompt": "(Drama and tears anime style) {prompt}",
+        "negative_prompt": "Historical anime style"
+    },
+    {
+        "name": "Dystopian Future",
+        "prompt": "(Dystopian future anime style) {prompt}",
+        "negative_prompt": "Mecha anime style"
+    },
+    {
+        "name": "Ecchi and Fanservice",
+        "prompt": "(Ecchi and fanservice anime style) {prompt}",
+        "negative_prompt": "Magical girl transformation style"
+    },
+    {
+        "name": "Fairy Tale Anime",
+        "prompt": "(Fairy tale anime style) {prompt}",
+        "negative_prompt": "Post-apocalyptic style"
+    },
+    {
+        "name": "Family and Bonds",
+        "prompt": "(Family and bonds anime style) {prompt}",
+        "negative_prompt": "Fairy tale anime style"
+    },
+    {
+        "name": "Fantasy Adventure",
+        "prompt": "(Fantasy adventure anime style) {prompt}",
+        "negative_prompt": "Mystery anime style"
+    },
+    {
+        "name": "Gender Bender",
+        "prompt": "(Gender bender anime style) {prompt}",
+        "negative_prompt": "Psychological thriller style"
+    },
+    {
+        "name": "Ghibli-esque",
+        "prompt": "(Ghibli-esque anime style) {prompt}",
+        "negative_prompt": "Dark and gritty style"
+    },
+    {
+        "name": "Harem Anime",
+        "prompt": "(Harem anime style) {prompt}",
+        "negative_prompt": "Cyberpunk anime style"
+    },
+    {
+        "name": "Historical Anime",
+        "prompt": "(Historical anime style) {prompt}",
+        "negative_prompt": "Psychological thriller style"
+    },
+    {
+        "name": "Horror Anime",
+        "prompt": "(Horror anime style) {prompt}",
+        "negative_prompt": "Isekai adventure style"
+    },
+    {
+        "name": "Idol Music",
+        "prompt": "(Idol music anime style) {prompt}",
+        "negative_prompt": "Steampunk anime style"
+    },
+    {
+        "name": "Isekai Adventure",
+        "prompt": "(Isekai adventure anime style) {prompt}",
+        "negative_prompt": "Slice-of-life style"
+    },
+    {
+        "name": "Magical Girl Transformation",
+        "prompt": "(Magical girl transformation anime style) {prompt}",
+        "negative_prompt": "Mystery anime style"
+    },
+    {
+        "name": "Martial Arts",
+        "prompt": "(Martial arts anime style) {prompt}",
+        "negative_prompt": "Comedy anime style"
+    },
+    {
+        "name": "Mecha Anime",
+        "prompt": "(Mecha anime style) {prompt}",
+        "negative_prompt": "Historical anime style"
+    },
+    {
+        "name": "Music Band Anime",
+        "prompt": "(Music band anime style) {prompt}",
+        "negative_prompt": "Slice-of-life style"
+    },
+    {
+        "name": "Mystery Anime",
+        "prompt": "(Mystery anime style) {prompt}",
+        "negative_prompt": "Fairy tale anime style"
+    },
+    {
+        "name": "Political Intrigue",
+        "prompt": "(Political intrigue anime style) {prompt}",
+        "negative_prompt": "Historical anime style"
+    },
+    {
+        "name": "Post-Apocalyptic Anime",
+        "prompt": "(Post-apocalyptic anime style) {prompt}",
+        "negative_prompt": "Magical girl transformation style"
+    },
+    {
+        "name": "Psychological Thriller",
+        "prompt": "(Psychological thriller anime style) {prompt}",
+        "negative_prompt": "Sports anime style"
+    },
+    {
+        "name": "Romantic Comedy",
+        "prompt": "(Romantic comedy anime style) {prompt}",
+        "negative_prompt": "Samurai anime style"
+    },
+    {
+        "name": "Samurai Anime",
+        "prompt": "(Samurai anime style) {prompt}",
+        "negative_prompt": "Comedy anime style"
+    },
+    {
+        "name": "Science Fiction",
+        "prompt": "(Science fiction anime style) {prompt}",
+        "negative_prompt": "Mystery anime style"
+    },
+    {
+        "name": "School Romance",
+        "prompt": "(School romance anime style) {prompt}",
+        "negative_prompt": "Space opera style"
+    },
+    {
+        "name": "Shonen Battle",
+        "prompt": "(Shonen battle anime style) {prompt}",
+        "negative_prompt": "Shojo romance style"
+    },
+    {
+        "name": "Slice-of-Life Anime",
+        "prompt": "(Slice-of-life anime style) {prompt}",
+        "negative_prompt": "Gritty crime style"
+    },
+    {
+        "name": "Space Exploration",
+        "prompt": "(Space exploration anime style) {prompt}",
+        "negative_prompt": "Mecha anime style"
+    },
+    {
+        "name": "Space Opera",
+        "prompt": "(Space opera anime style) {prompt}",
+        "negative_prompt": "Chibi anime style"
+    },
+    {
+        "name": "Space Pirates",
+        "prompt": "(Space pirates anime style) {prompt}",
+        "negative_prompt": "Isekai adventure style"
+    },
+    {
+        "name": "Space Romance",
+        "prompt": "(Space romance anime style) {prompt}",
+        "negative_prompt": "Samurai anime style"
+    },
+    {
+        "name": "Space Western",
+        "prompt": "(Space western anime style) {prompt}",
+        "negative_prompt": "Realistic drama style"
+    },
+    {
+        "name": "Sports Anime",
+        "prompt": "(Sports anime style) {prompt}",
+        "negative_prompt": "Horror anime style"
+    },
+    {
+        "name": "Steampunk Anime",
+        "prompt": "(Steampunk anime style) {prompt}",
+        "negative_prompt": "Shonen battle style"
+    },
+    {
+        "name": "Superhero Anime",
+        "prompt": "(Superhero anime style) {prompt}",
+        "negative_prompt": "Fairy tale anime style"
+    },
+    {
+        "name": "Supernatural Powers",
+        "prompt": "(Anime with supernatural powers) {prompt}",
+        "negative_prompt": "Realistic drama style"
+    },
+    {
+        "name": "Superpowers",
+        "prompt": "(Anime with superpowers) {prompt}",
+        "negative_prompt": "Slice-of-life style"
+    },
+    {
+        "name": "Time Travel Anime",
+        "prompt": "(Time travel anime style) {prompt}",
+        "negative_prompt": "Comedy anime style"
+    },
+    {
+        "name": "Vampire Anime",
+        "prompt": "(Vampire anime style) {prompt}",
+        "negative_prompt": "Horror anime style"
+    },
+    {
+        "name": "War and Military",
+        "prompt": "(War and military anime style) {prompt}",
+        "negative_prompt": "Fairy tale anime style"
+    },
+    {
+        "name": "Western Anime",
+        "prompt": "(Western anime style) {prompt}",
+        "negative_prompt": "Fantasy adventure anime style"
+    },
+    {
+        "name": "Shoujo Romance",
+        "prompt": "(Shoujo romance anime style) {prompt}",
+        "negative_prompt": "Shonen battle style"
+    },
+    {
+        "name": "Gritty Crime",
+        "prompt": "(Gritty crime anime style) {prompt}",
+        "negative_prompt": "Slice-of-life anime style"
+    }
+]

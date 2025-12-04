@@ -1,0 +1,97 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Canon EOS R5 (Professional photography and videography)",
+        "prompt": "Photograph of {prompt}, captured on a (Canon EOS R5)",
+        "negative_prompt": "inferior capture, lack of stabilization, amateur use"
+    },
+    {
+        "name": "Canon EOS 90D (Ideal for wildlife and sports photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Canon EOS 90D)",
+        "negative_prompt": "slow shooting, inaccurate capture, static subjects"
+    },
+    {
+        "name": "Canon EOS-1D X Mark III (Perfect for sports and wildlife photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Canon EOS-1D X Mark III)",
+        "negative_prompt": "slow speed, inaccuracy"
+    },
+    {
+        "name": "Fujifilm GFX 100 (High-end commercial and studio photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Fujifilm GFX 100)",
+        "negative_prompt": "low resolution, color inconsistency, amateurish quality"
+    },
+    {
+        "name": "Sony A7R IV (High-resolution landscape and studio work)",
+        "prompt": "Photograph of {prompt}, captured on a (Sony A7R IV), showcasing (extreme detail, rich color depth)",
+        "negative_prompt": "low megapixel count, poor dynamic range, noisy images"
+    },
+    {
+        "name": "Sony A9 II (Ideal for sports and action photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Sony A9 II), displaying (fast continuous shooting, precise autofocus)",
+        "negative_prompt": "slow capture, blurry motion, poor low-light performance"
+    },
+    {
+        "name": "Nikon D850 (Landscape and studio photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Nikon D850), characterized by (high resolution, wide dynamic range)",
+        "negative_prompt": "low detail, poor color accuracy, compact camera aesthetics"
+    },
+    {
+        "name": "Nikon Z7 II (Professional mirrorless photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Nikon Z7 II), featuring (high resolution, excellent low-light performance)",
+        "negative_prompt": "bulky design, slow autofocus, limited dynamic range"
+    },
+    {
+        "name": "DJI Mavic 3 Pro (Professional aerial photography and videography)",
+        "prompt": "Photograph of {prompt}, captured on a (DJI Mavic 3 Pro), showcasing (high-altitude clarity, stable footage)",
+        "negative_prompt": "shaky footage, low-resolution images, ground-level perspective"
+    },
+    {
+        "name": "RED DSMC2 with MONSTRO 8K VV (High-end digital cinematography)",
+        "prompt": "Photograph of {prompt}, captured on a (RED DSMC2 with MONSTRO 8K VV), characterized by (cinematic look, extreme detail, wide dynamic range)",
+        "negative_prompt": "low resolution, limited color depth, consumer camera aesthetics"
+    },
+    {
+        "name": "ARRI ALEXA LF (Feature film production)",
+        "prompt": "Photograph of {prompt}, captured on an (ARRI ALEXA LF), featuring (cinematic quality, natural color science, excellent low-light performance)",
+        "negative_prompt": "amateur video look, limited dynamic range, poor color reproduction"
+    },
+    {
+        "name": "Blackmagic URSA Mini Pro 12K (High-resolution digital film production)",
+        "prompt": "Photograph of {prompt}, captured on a (Blackmagic URSA Mini Pro 12K), showcasing (extreme resolution, wide dynamic range, filmic quality)",
+        "negative_prompt": "low detail, limited color depth, consumer video aesthetics"
+    },
+    {
+        "name": "Leica M10-R (Street and documentary photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Leica M10-R), characterized by (classic aesthetics, exceptional sharpness)",
+        "negative_prompt": "modern camera design, automated settings, lack of character"
+    },
+    {
+        "name": "Phase One XF IQ4 150MP (High-end studio and landscape photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Phase One XF IQ4 150MP), featuring (unparalleled resolution, exceptional color accuracy)",
+        "negative_prompt": "low detail, limited dynamic range, consumer-grade quality"
+    },
+    {
+        "name": "Olympus Tough TG-6 (Underwater and adventure photography)",
+        "prompt": "Photograph of {prompt}, captured on an (Olympus Tough TG-6), showcasing (waterproof design, shockproof body)",
+        "negative_prompt": "limited resolution, slow shutter speed"
+    },
+    {
+        "name": "Panasonic Lumix GH5 (Hybrid photography and videography)",
+        "prompt": "Photograph of {prompt}, captured on a (Panasonic Lumix GH5), featuring (excellent video quality, strong stabilization)",
+        "negative_prompt": "poor autofocus, low image resolution, amateurs"
+    },
+    {
+        "name": "Sony RX100 VII (Compact travel photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Sony RX100 VII), characterized by (small form factor, excellent zoom range)",
+        "negative_prompt": "limited dynamic range, compact camera limitations"
+    },
+    {
+        "name": "Canon EOS Rebel T8i (Beginner and hobbyist photography)",
+        "prompt": "Photograph of {prompt}, captured on a (Canon EOS Rebel T8i), featuring (intuitive controls, vibrant colors)",
+        "negative_prompt": "professional-level quality, complex setups"
+    }
+]

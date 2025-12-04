@@ -1,0 +1,1533 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Adoring Someone",
+        "prompt": "{prompt}, adoring gaze, loving touch, affectionate words",
+        "negative_prompt": "indifference, disgust, anger"
+    },
+    {
+        "name": "Argument",
+        "prompt": "{prompt}, raised voices, heated discussion, conflicting opinions",
+        "negative_prompt": "agreement, calm discussion, peaceful resolution"
+    },
+    {
+        "name": "Assistance",
+        "prompt": "{prompt}, helping hand, supportive gesture, guidance and advice",
+        "negative_prompt": "neglect, refusal to help, hindering actions" 
+    },
+    {
+        "name": "Being Intimate",
+        "prompt": "{prompt}, close embrace, passionate kiss, loving touch",
+        "negative_prompt": "distance, avoidance, coldness"
+    },
+    {
+        "name": "Being Rejected",
+        "prompt": "{prompt}, sad expression, tears, feeling of dejection",
+        "negative_prompt": "acceptance, happiness, joy"
+    },
+    {
+        "name": "Betrayal",
+        "prompt": "{prompt}, shocked expression, feeling of hurt and anger, sense of broken trust",
+        "negative_prompt": "loyalty, faithfulness, trust"
+    },
+    {
+        "name": "Bonding",
+        "prompt": "{prompt}, shared laughter, deep conversation, feeling of connection",
+        "negative_prompt": "distance, awkwardness, disinterest"
+    },
+    {
+        "name": "Building a Partnership",
+        "prompt": "{prompt}, handshake, collaborative discussion, shared goals",
+        "negative_prompt": "disagreement, conflict, competition"
+    },
+    {
+        "name": "Building Trust",
+        "prompt": "{prompt}, open communication, honesty, reliability",
+        "negative_prompt": "deception, lies, broken promises"
+    },
+    {
+        "name": "Collaborating on a Project", 
+        "prompt": "{prompt}, brainstorming, shared ideas, teamwork",
+        "negative_prompt": "individual work, conflict, lack of communication"
+    },
+    {
+        "name": "Collaboration",
+        "prompt": "{prompt}, teamwork, shared ideas, joint effort",
+        "negative_prompt": "individual work, competition, conflict"
+    },
+    {
+        "name": "Compassion",
+        "prompt": "{prompt}, empathetic gaze, comforting touch, words of support",
+        "negative_prompt": "indifference, coldness, cruelty"
+    },
+    {
+        "name": "Competing with Each Other",
+        "prompt": "{prompt}, striving to win, focused determination, rivalry",
+        "negative_prompt": "cooperation, collaboration, shared success"
+    },
+    {
+        "name": "Competition",
+        "prompt": "{prompt}, striving for victory, determination, rivalry",
+        "negative_prompt": "cooperation, collaboration, shared goals"
+    },
+    {
+        "name": "Conflict",
+        "prompt": "{prompt}, disagreement, argument, tension",
+        "negative_prompt": "agreement, harmony, peace"
+    },
+    {
+        "name": "Conversation",
+        "prompt": "{prompt}, engaged expressions, active listening, exchange of ideas",
+        "negative_prompt": "silence, disinterest, interruption"
+    },
+    {
+        "name": "Engaging in a Tug-of-War",
+        "prompt": "{prompt}, pulling with force, determined expressions, struggle for dominance",
+        "negative_prompt": "letting go, cooperation, giving up"
+    },
+    {
+        "name": "Engaging in Seduction",
+        "prompt": "{prompt}, alluring gaze, flirtatious smile, suggestive touch",
+        "negative_prompt": "disinterest, rejection, repulsion"
+    },
+    {
+        "name": "Enmity",
+        "prompt": "{prompt}, hostile glares, angry expressions, feelings of hatred",
+        "negative_prompt": "friendship, love, respect"
+    },
+    {
+        "name": "Experiencing Nostalgia",
+        "prompt": "{prompt}, wistful expression, reminiscing about the past, sentimental feelings",
+        "negative_prompt": "focus on the present, disinterest in the past, indifference"
+    },
+    {
+        "name": "Facing Betrayal",
+        "prompt": "{prompt}, shocked expression, tears, feeling of hurt and anger",
+        "negative_prompt": "trust, loyalty, forgiveness"
+    },
+    {
+        "name": "Feeling Jealousy",
+        "prompt": "{prompt}, envious gaze, possessive behavior, feelings of insecurity",
+        "negative_prompt": "trust, security, confidence"
+    },
+    {
+        "name": "Feeling Pity",
+        "prompt": "{prompt}, sympathetic expression, sadness, desire to help",
+        "negative_prompt": "indifference, cruelty, disdain"
+    },
+    {
+        "name": "Having a Bonding Experience",
+        "prompt": "{prompt}, shared laughter, deep conversation, creating memories",
+        "negative_prompt": "awkwardness, distance, disinterest"
+    },
+    {
+        "name": "Having a Conflict",
+        "prompt": "{prompt}, disagreement, argument, clashing opinions",
+        "negative_prompt": "agreement, harmony, compromise"
+    },
+    {
+        "name": "Having a Conversation",
+        "prompt": "{prompt}, engaged expressions, active listening, exchange of words",
+        "negative_prompt": "silence, disinterest, interruption"
+    },
+    {
+        "name": "Having a Romance",
+        "prompt": "{prompt}, loving gaze, hand-holding, romantic gestures",
+        "negative_prompt": "distance, indifference, rejection"
+    },
+    {
+        "name": "Having an Argument",
+        "prompt": "{prompt}, raised voices, angry expressions, disagreement",
+        "negative_prompt": "calm discussion, agreement, compromise"
+    },
+    {
+        "name": "Having Tension",
+        "prompt": "{prompt}, awkward silence, strained expressions, unspoken conflict",
+        "negative_prompt": "relaxation, ease, open communication"
+    },
+    {
+        "name": "Holding a Grudge",
+        "prompt": "{prompt}, resentful expression, unwillingness to forgive, bitterness",
+        "negative_prompt": "forgiveness, letting go, moving on"
+    },
+    {
+        "name": "Inspiring Someone",
+        "prompt": "{prompt}, motivational words, encouraging gestures, sense of empowerment",
+        "negative_prompt": "discouragement, negativity, criticism"
+    },
+    {
+        "name": "Intimacy",
+        "prompt": "{prompt}, close embrace, passionate kiss, deep connection",
+        "negative_prompt": "distance, avoidance, coldness"
+    },
+    {
+        "name": "Making a Confession",
+        "prompt": "{prompt}, nervous expression, revealing a secret, seeking forgiveness",
+        "negative_prompt": "secrecy, dishonesty, hiding the truth"
+    },
+    {
+        "name": "Mentoring a Protégé",
+        "prompt": "{prompt}, guidance, advice, sharing knowledge and experience",
+        "negative_prompt": "neglect, withholding information, lack of support"
+    },
+    {
+        "name": "Mentorship", 
+        "prompt": "{prompt}, guidance, advice, knowledge transfer",
+        "negative_prompt": "neglect, lack of support, hindering progress"
+    },
+    {
+        "name": "Negotiating a Deal",
+        "prompt": "{prompt}, discussion, compromise, reaching an agreement",
+        "negative_prompt": "stalemate, disagreement, failure to compromise"
+    },
+    {
+        "name": "Offering Support",
+        "prompt": "{prompt}, comforting words, helping hand, empathy",
+        "negative_prompt": "indifference, criticism, negativity"
+    },
+    {
+        "name": "Partnership",
+        "prompt": "{prompt}, collaboration, shared goals, mutual respect",
+        "negative_prompt": "competition, conflict, mistrust"
+    },
+    {
+        "name": "Persuading Someone",
+        "prompt": "{prompt}, convincing arguments, passionate delivery, influencing others",
+        "negative_prompt": "failure to convince, resistance, disagreement"
+    },
+    {
+        "name": "Providing Assistance",
+        "prompt": "{prompt}, helping hand, guidance, support",
+        "negative_prompt": "neglect, refusal to help, hindering actions"
+    },
+    {
+        "name": "Reconciliation",
+        "prompt": "{prompt}, apology, forgiveness, renewed trust",
+        "negative_prompt": "continued conflict, resentment, unforgiveness"
+    },
+    {
+        "name": "Reconciling Differences",
+        "prompt": "{prompt}, compromise, understanding, finding common ground",
+        "negative_prompt": "inflexibility, stubbornness, continued disagreement"
+    },
+    {
+        "name": "Romance",
+        "prompt": "{prompt}, loving gaze, affectionate touch, romantic gestures",
+        "negative_prompt": "distance, indifference, rejection"
+    },
+    {
+        "name": "Sharing Wisdom",
+        "prompt": "{prompt}, offering advice, imparting knowledge, guidance",
+        "negative_prompt": "withholding information, ignorance, misinformation"
+    },
+    {
+        "name": "Showing Compassion",
+        "prompt": "{prompt}, empathy, kindness, understanding",
+        "negative_prompt": "indifference, cruelty, harshness"
+    },
+    {
+        "name": "Support",
+        "prompt": "{prompt}, encouragement, assistance, comfort",
+        "negative_prompt": "neglect, criticism, hindering actions"
+    },
+    {
+        "name": "Tension",
+        "prompt": "{prompt}, awkward silence, strained expressions, unspoken conflict",
+        "negative_prompt": "relaxation, ease, open communication"
+    },
+    {
+        "name": "Trust",
+        "prompt": "{prompt}, honesty, reliability, faith in each other",
+        "negative_prompt": "deception, betrayal, broken promises"
+    },
+    {
+        "name": "Wisdom Transfer",
+        "prompt": "{prompt}, sharing knowledge, imparting experience, guidance",
+        "negative_prompt": "withholding information, ignorance, misinformation"
+    },
+
+
+    {
+        "name": "Accusing Each Other",
+        "prompt": "{prompt}, pointing fingers, blaming, angry expressions",
+        "negative_prompt": "understanding, forgiveness, taking responsibility"
+    },
+    {
+        "name": "Bickering with Each Other",
+        "prompt": "{prompt}, petty arguments, disagreements, raised voices",
+        "negative_prompt": "peaceful discussion, agreement, compromise"
+    },
+    {
+        "name": "Blaming Each Other",
+        "prompt": "{prompt}, pointing fingers, accusations, defensiveness",
+        "negative_prompt": "taking responsibility, accepting fault, apologizing"
+    },
+    {
+        "name": "Complaining to Each Other",
+        "prompt": "{prompt}, expressing dissatisfaction, negativity, whining",
+        "negative_prompt": "gratitude, positivity, finding solutions"
+    },
+    {
+        "name": "Criticizing Each Other", 
+        "prompt": "{prompt}, negative comments, disapproval, judgmental tone",
+        "negative_prompt": "encouragement, praise, positive feedback"
+    },
+    {
+        "name": "Displaying Condescension Towards Each Other",
+        "prompt": "{prompt}, patronizing tone, arrogance, superiority complex",
+        "negative_prompt": "respect, humility, equality"
+    },
+    {
+        "name": "Disrespecting Each Other",
+        "prompt": "{prompt}, insults, rude behavior, disregard for feelings",
+        "negative_prompt": "respect, politeness, consideration"
+    },
+    {
+        "name": "Engaging in a Fight",
+        "prompt": "{prompt}, physical altercation, violence, aggression",
+        "negative_prompt": "peaceful resolution, de-escalation, communication"
+    },
+    {
+        "name": "Exchanging Cross Words",
+        "prompt": "{prompt}, angry words, insults, heated argument",
+        "negative_prompt": "calm discussion, respectful communication, understanding"
+    },
+    {
+        "name": "Experiencing Anxiety with Each Other",
+        "prompt": "{prompt}, nervous fidgeting, worried expressions, shared fear",
+        "negative_prompt": "calmness, reassurance, comfort"
+    },
+    {
+        "name": "Experiencing Depression with Each Other",
+        "prompt": "{prompt}, shared sadness, lack of motivation, feeling of hopelessness",
+        "negative_prompt": "joy, hope, support"
+    },
+    {
+        "name": "Experiencing Despair with Each Other",
+        "prompt": "{prompt}, hopelessness, loss of faith, giving up",
+        "negative_prompt": "hope, resilience, determination"
+    },
+    {
+        "name": "Experiencing Impatience with Each Other", 
+        "prompt": "{prompt}, frustration, annoyance, rushing each other",
+        "negative_prompt": "patience, understanding, tolerance"
+    },
+    {
+        "name": "Experiencing Rejection from Each Other",
+        "prompt": "{prompt}, hurt feelings, sadness, feeling unwanted",
+        "negative_prompt": "acceptance, love, belonging"
+    },
+    {
+        "name": "Experiencing Self-Doubt with Each Other",
+        "prompt": "{prompt}, insecurity, lack of confidence, questioning abilities",
+        "negative_prompt": "confidence, self-assurance, encouragement"
+    },
+    {
+        "name": "Expressing Disapproval Towards Each Other",
+        "prompt": "{prompt}, frowns, critical comments, negative feedback",
+        "negative_prompt": "approval, praise, positive reinforcement"
+    },
+    {
+        "name": "Expressing Displeasure Towards Each Other",
+        "prompt": "{prompt}, angry expressions, complaints, dissatisfaction",
+        "negative_prompt": "happiness, contentment, satisfaction"
+    },
+    {
+        "name": "Feeling Abandoned by Each Other",
+        "prompt": "{prompt}, loneliness, isolation, feeling unwanted",
+        "negative_prompt": "connection, belonging, support"
+    },
+    {
+        "name": "Feeling Afraid with Each Other",
+        "prompt": "{prompt}, shared fear, anxiety, clinging to each other",
+        "negative_prompt": "courage, bravery, security"
+    },
+    {
+        "name": "Feeling Annoyed with Each Other",
+        "prompt": "{prompt}, frustration, irritation, impatience",
+        "negative_prompt": "patience, understanding, tolerance"
+    },
+    {
+        "name": "Feeling Ashamed with Each Other",
+        "prompt": "{prompt}, shared embarrassment, guilt, hiding faces",
+        "negative_prompt": "pride, confidence, acceptance"
+    },
+    {
+        "name": "Feeling Defeated with Each Other", 
+        "prompt": "{prompt}, slumped shoulders, sadness, giving up",
+        "negative_prompt": "determination, resilience, hope"
+    },
+    {
+        "name": "Feeling Dejected with Each Other",
+        "prompt": "{prompt}, sadness, disappointment, low spirits",
+        "negative_prompt": "joy, happiness, optimism"
+    },
+    {
+        "name": "Feeling Disappointed with Each Other",
+        "prompt": "{prompt}, frowns, sadness, unmet expectations",
+        "negative_prompt": "happiness, satisfaction, exceeding expectations"
+    },
+    {
+        "name": "Feeling Discouraged with Each Other",
+        "prompt": "{prompt}, loss of motivation, hopelessness, giving up",
+        "negative_prompt": "encouragement, hope, perseverance"
+    },
+    {
+        "name": "Feeling Exasperated with Each Other",
+        "prompt": "{prompt}, frustration, annoyance, impatience",
+        "negative_prompt": "patience, understanding, tolerance"
+    },
+    {
+        "name": "Feeling Frustrated with Each Other", 
+        "prompt": "{prompt}, anger, annoyance, blocked goals",
+        "negative_prompt": "patience, success, achieving goals"
+    },
+    {
+        "name": "Feeling Guilty with Each Other",
+        "prompt": "{prompt}, remorse, shame, regret",
+        "negative_prompt": "innocence, forgiveness, self-acceptance"
+    },
+    {
+        "name": "Feeling Helpless with Each Other", 
+        "prompt": "{prompt}, despair, lack of control, inability to help",
+        "negative_prompt": "empowerment, resourcefulness, finding solutions"
+    },
+    {
+        "name": "Feeling Hopeless with Each Other",
+        "prompt": "{prompt}, despair, lack of faith, giving up",
+        "negative_prompt": "hope, optimism, determination"
+    },
+    {
+        "name": "Feeling Insecure with Each Other",
+        "prompt": "{prompt}, anxiety, jealousy, lack of trust",
+        "negative_prompt": "confidence, security, trust"
+    },
+    {
+        "name": "Feeling Irritated with Each Other", 
+        "prompt": "{prompt}, annoyance, frustration, impatience",
+        "negative_prompt": "patience, understanding, tolerance"
+    },
+    {
+        "name": "Feeling Isolated from Each Other",
+        "prompt": "{prompt}, distance, lack of connection, loneliness",
+        "negative_prompt": "closeness, connection, belonging"
+    },
+    {
+        "name": "Feeling Like a Failure with Each Other",
+        "prompt": "{prompt}, shame, disappointment, self-doubt",
+        "negative_prompt": "pride, accomplishment, self-acceptance"
+    },
+    {
+        "name": "Feeling Lonely with Each Other", 
+        "prompt": "{prompt}, isolation, lack of connection, sadness",
+        "negative_prompt": "togetherness, belonging, support"
+    },
+    {
+        "name": "Feeling Powerless with Each Other",
+        "prompt": "{prompt}, lack of control, inability to influence, despair",
+        "negative_prompt": "empowerment, agency, hope"
+    },
+    {
+        "name": "Feeling Regretful with Each Other",
+        "prompt": "{prompt}, remorse, wishing things were different, sadness",
+        "negative_prompt": "acceptance, moving on, contentment"
+    },
+    {
+        "name": "Feeling Remorseful with Each Other",
+        "prompt": "{prompt}, guilt, shame, regret for past actions",
+        "negative_prompt": "forgiveness, self-acceptance, moving on"
+    },
+    {
+        "name": "Feeling Sad with Each Other",
+        "prompt": "{prompt}, shared sadness, tears, low spirits",
+        "negative_prompt": "joy, happiness, comfort"
+    },
+    {
+        "name": "Feeling Stressed with Each Other",
+        "prompt": "{prompt}, anxiety, tension, pressure",
+        "negative_prompt": "relaxation, calmness, support"
+    },
+    {
+        "name": "Feeling Vulnerable with Each Other",
+        "prompt": "{prompt}, sharing secrets, emotional openness, trust",
+        "negative_prompt": "guardedness, secrecy, emotional distance"
+    },
+    {
+        "name": "Feeling Weak with Each Other",
+        "prompt": "{prompt}, lack of strength, vulnerability, needing support",
+        "negative_prompt": "strength, resilience, independence"
+    },
+    {
+        "name": "Giving Each Other the Cold Shoulder",
+        "prompt": "{prompt}, ignoring, avoiding eye contact, silence",
+        "negative_prompt": "communication, engagement, warmth"
+    },
+    {
+        "name": "Having a Shouting Match", 
+        "prompt": "{prompt}, yelling, anger, lack of control",
+        "negative_prompt": "calm discussion, respectful communication, listening"
+    },
+    {
+        "name": "Having an Argument", 
+        "prompt": "{prompt}, disagreement, conflict, raised voices",
+        "negative_prompt": "agreement, compromise, peaceful resolution"
+    },
+    {
+        "name": "Insulting Each Other",
+        "prompt": "{prompt}, hurtful words, name-calling, disrespect",
+        "negative_prompt": "respect, kindness, compliments"
+    },
+    {
+        "name": "Name-Calling", 
+        "prompt": "{prompt}, insults, derogatory terms, hurtful language",
+        "negative_prompt": "respectful language, kindness, understanding"
+    },
+    {
+        "name": "Showing Contempt Towards Each Other",
+        "prompt": "{prompt}, disdain, disrespect, scornful expressions",
+        "negative_prompt": "respect, admiration, appreciation"
+    },
+    {
+        "name": "Using Sarcasm Towards Each Other",
+        "prompt": "{prompt}, mocking tone, insincere compliments, veiled insults",
+        "negative_prompt": "sincerity, honesty, direct communication"
+    },
+    {
+        "name": "Using the Silent Treatment", 
+        "prompt": "{prompt}, refusing to speak, ignoring, emotional distance",
+        "negative_prompt": "communication, engagement, resolving conflict"
+    },
+
+
+    {
+        "name": "Attending a Concert",
+        "prompt": "{prompt}, crowd, music, cheering",
+        "negative_prompt": "silence, emptiness, boredom"
+    },
+    {
+        "name": "Attending a Festival", 
+        "prompt": "{prompt}, colorful decorations, lively atmosphere, celebration",
+        "negative_prompt": "boredom, emptiness, sadness"
+    },
+    {
+        "name": "Attending a March", 
+        "prompt": "{prompt}, crowd, signs, chanting",
+        "negative_prompt": "silence, apathy, inaction"
+    },
+    {
+        "name": "Attending a Memorial Service", 
+        "prompt": "{prompt}, somber atmosphere, remembrance, grief",
+        "negative_prompt": "celebration, joy, laughter"
+    },
+    {
+        "name": "Attending a Parade",
+        "prompt": "{prompt}, floats, marching band, cheering crowd",
+        "negative_prompt": "emptiness, silence, boredom"
+    },
+    {
+        "name": "Attending a Religious Ceremony",
+        "prompt": "{prompt}, reverence, prayer, spiritual rituals",
+        "negative_prompt": "disrespect, irreverence, chaos"
+    },
+    {
+        "name": "Attending a Sporting Event", 
+        "prompt": "{prompt}, cheering crowd, competition, excitement",
+        "negative_prompt": "emptiness, silence, boredom"
+    },
+    {
+        "name": "Celebrating a Birthday", 
+        "prompt": "{prompt}, cake, presents, happy birthday song",
+        "negative_prompt": "sadness, grief, mourning"
+    },
+    {
+        "name": "Celebrating a Cultural Tradition",
+        "prompt": "{prompt}, traditional clothing, rituals, customs",
+        "negative_prompt": "modernity, rejection of tradition, disrespect"
+    },
+    {
+        "name": "Celebrating a Holiday",
+        "prompt": "{prompt}, decorations, festive food, traditions",
+        "negative_prompt": "ordinary day, sadness, grief"
+    },
+    {
+        "name": "Celebrating a Milestone",
+        "prompt": "{prompt}, achievement, recognition, congratulations",
+        "negative_prompt": "failure, disappointment, regret"
+    },
+    {
+        "name": "Celebrating a Victory",
+        "prompt": "{prompt}, cheers, joy, triumph",
+        "negative_prompt": "defeat, sadness, disappointment"
+    },
+    {
+        "name": "Commemorating a Tragedy", 
+        "prompt": "{prompt}, remembrance, grief, respect",
+        "negative_prompt": "celebration, joy, forgetting"
+    },
+    {
+        "name": "Commemorating a Victory", 
+        "prompt": "{prompt}, remembrance, pride, celebration",
+        "negative_prompt": "defeat, shame, forgetting"
+    },
+    {
+        "name": "Gathering for a Celebration", 
+        "prompt": "{prompt}, festive atmosphere, joy, shared happiness",
+        "negative_prompt": "sadness, grief, isolation"
+    },
+    {
+        "name": "Gathering for a Commemoration",
+        "prompt": "{prompt}, remembrance, respect, reflection",
+        "negative_prompt": "celebration, forgetting, disrespect"
+    },
+    {
+        "name": "Gathering for a Festival",
+        "prompt": "{prompt}, lively atmosphere, music, food",
+        "negative_prompt": "boredom, emptiness, quiet"
+    },
+    {
+        "name": "Gathering for a Memorial", 
+        "prompt": "{prompt}, somber atmosphere, remembrance, grief",
+        "negative_prompt": "celebration, joy, laughter"
+    },
+    {
+        "name": "Gathering for a Town Hall Meeting", 
+        "prompt": "{prompt}, discussion, debate, civic engagement",
+        "negative_prompt": "apathy, disengagement, silence"
+    },
+    {
+        "name": "Having a Rally",
+        "prompt": "{prompt}, crowd, signs, chanting slogans",
+        "negative_prompt": "silence, apathy, inaction"
+    },
+    {
+        "name": "Holding a Candlelight Vigil", 
+        "prompt": "{prompt}, candles, silence, remembrance",
+        "negative_prompt": "noise, celebration, forgetting"
+    },
+    {
+        "name": "Holding a Concert", 
+        "prompt": "{prompt}, music, stage, audience",
+        "negative_prompt": "silence, emptiness, boredom"
+    },
+    {
+        "name": "Holding a Memorial", 
+        "prompt": "{prompt}, remembrance, speeches, honoring the deceased",
+        "negative_prompt": "celebration, forgetting, disrespect"
+    },
+    {
+        "name": "Holding a Peaceful Assembly", 
+        "prompt": "{prompt}, gathering, speeches, shared purpose",
+        "negative_prompt": "violence, chaos, disunity"
+    },
+    {
+        "name": "Holding a Peaceful Protest",
+        "prompt": "{prompt}, signs, chanting, non-violent demonstration",
+        "negative_prompt": "violence, aggression, destruction"
+    },
+    {
+        "name": "Holding a Protest", 
+        "prompt": "{prompt}, signs, chanting, demonstration",
+        "negative_prompt": "silence, apathy, inaction"
+    },
+    {
+        "name": "Holding a Rally", 
+        "prompt": "{prompt}, crowd, speeches, support for a cause",
+        "negative_prompt": "apathy, opposition, disinterest"
+    },
+    {
+        "name": "Honoring a Hero",
+        "prompt": "{prompt}, respect, admiration, recognition of bravery",
+        "negative_prompt": "disrespect, criticism, condemnation"
+    },
+    {
+        "name": "Joining a Demonstration",
+        "prompt": "{prompt}, protest, marching, showing solidarity",
+        "negative_prompt": "apathy, inaction, opposition"
+    },
+    {
+        "name": "Joining a Flash Mob",
+        "prompt": "{prompt}, surprise performance, coordinated dance, public spectacle",
+        "negative_prompt": "ordinary event, boredom, predictability"
+    },
+    {
+        "name": "Mourning a Loss", 
+        "prompt": "{prompt}, sadness, grief, remembrance",
+        "negative_prompt": "celebration, joy, forgetting"
+    },
+    {
+        "name": "Observing a Cultural Tradition",
+        "prompt": "{prompt}, rituals, customs, respect for heritage",
+        "negative_prompt": "disrespect, rejection of tradition, modernity"
+    },
+    {
+        "name": "Observing a Tradition",
+        "prompt": "{prompt}, rituals, customs, passing down knowledge",
+        "negative_prompt": "innovation, change, rejection of the past"
+    },
+    {
+        "name": "Participating in a Demonstration",
+        "prompt": "{prompt}, protest, marching, expressing opinions",
+        "negative_prompt": "apathy, silence, inaction"
+    },
+    {
+        "name": "Participating in a March", 
+        "prompt": "{prompt}, walking in a group, carrying signs, chanting",
+        "negative_prompt": "standing still, silence, apathy"
+    },
+    {
+        "name": "Participating in a Parade",
+        "prompt": "{prompt}, marching, costumes, floats",
+        "negative_prompt": "standing still, silence, emptiness"
+    },
+    {
+        "name": "Participating in a Sit-In",
+        "prompt": "{prompt}, occupying a space, protest, non-violent resistance",
+        "negative_prompt": "leaving, giving up, violence"
+    },
+    {
+        "name": "Participating in a Tradition", 
+        "prompt": "{prompt}, following customs, rituals, cultural heritage",
+        "negative_prompt": "breaking tradition, disrespect, innovation"
+    },
+    {
+        "name": "Protesting Against Injustice", 
+        "prompt": "{prompt}, signs, chanting, demanding change",
+        "negative_prompt": "silence, acceptance, inaction"
+    },
+    {
+        "name": "Rallying for a Change", 
+        "prompt": "{prompt}, gathering, speeches, advocating for a cause",
+        "negative_prompt": "apathy, opposition, status quo"
+    },
+    {
+        "name": "Supporting a Cause",
+        "prompt": "{prompt}, donations, volunteering, advocacy",
+        "negative_prompt": "opposition, indifference, inaction"
+    },
+    {
+        "name": "Taking Part in a Demonstration", 
+        "prompt": "{prompt}, protest, marching, expressing solidarity",
+        "negative_prompt": "apathy, inaction, opposition"
+    },
+    {
+        "name": "Watching a Performance", 
+        "prompt": "{prompt}, audience, stage, applause",
+        "negative_prompt": "emptiness, silence, boredom"
+    },
+    {
+        "name": "Watching a Play", 
+        "prompt": "{prompt}, audience, stage, actors",
+        "negative_prompt": "emptiness, silence, boredom"
+    },
+
+
+    {
+        "name": "Adjusts a Tie",
+        "prompt": "{prompt}, adjusts a tie, looks in the mirror, nods in satisfaction",
+        "negative_prompt": "frowning, struggling with the tie, looking disheveled"
+    },
+    {
+        "name": "Adjusts Glasses", 
+        "prompt": "{prompt}, adjusts glasses, squints at something, nods in understanding",
+        "negative_prompt": "frowning, struggling to see, looking confused"
+    },
+    {
+        "name": "Adjusts Hat",
+        "prompt": "{prompt}, adjusts hat, looks in the mirror, nods in satisfaction",
+        "negative_prompt": "frowning, hat falling off, looking disheveled"
+    },
+    {
+        "name": "Adjusts Rearview Mirror",
+        "prompt": "{prompt}, adjusts rearview mirror, checks blind spot, changes lanes",
+        "negative_prompt": "driving recklessly, ignoring traffic, causing an accident"
+    },
+    {
+        "name": "Adjusts Headphones", 
+        "prompt": "{prompt}, adjusts headphones, nods to the beat, closes eyes",
+        "negative_prompt": "frowning, struggling with headphones, looking annoyed"
+    },
+    {
+        "name": "Balances on One Foot", 
+        "prompt": "{prompt}, balances on one foot, hops, switches to the other foot",
+        "negative_prompt": "falling over, losing balance, looking clumsy"
+    },
+    {
+        "name": "Bites into an Apple", 
+        "prompt": "{prompt}, bites into an apple, wipes juice, takes another bite",
+        "negative_prompt": "making a disgusted face, spitting out the apple, throwing it away"
+    },
+    {
+        "name": "Bites into a Sandwich", 
+        "prompt": "{prompt}, bites into a sandwich, wipes mouth, takes another bite",
+        "negative_prompt": "making a disgusted face, spitting out the sandwich, throwing it away"
+    },
+    {
+        "name": "Bites Lip Uncertainly",
+        "prompt": "{prompt}, bites lip uncertainly, takes a deep breath, speaks up",
+        "negative_prompt": "remaining silent, looking scared, avoiding eye contact"
+    },
+    {
+        "name": "Blows a Bubble",
+        "prompt": "{prompt}, blows a bubble with gum, pops it, chews again",
+        "negative_prompt": "gum getting stuck, making a mess, looking frustrated"
+    },
+    {
+        "name": "Blows Nose Loudly", 
+        "prompt": "{prompt}, blows nose loudly, crumples tissue, tosses it",
+        "negative_prompt": "tissue ripping, nose bleeding, looking embarrassed"
+    },
+    {
+        "name": "Blows on Soup", 
+        "prompt": "{prompt}, blows on soup, sips carefully, nods in approval",
+        "negative_prompt": "burning mouth, spilling soup, making a mess"
+    },
+    {
+        "name": "Blows Out a Candle", 
+        "prompt": "{prompt}, blows out a candle, watches the smoke, waves hand",
+        "negative_prompt": "candle relighting, fire starting, looking panicked"
+    },
+    {
+        "name": "Bounces Leg Nervously", 
+        "prompt": "{prompt}, bounces leg nervously, takes a deep breath, stands up",
+        "negative_prompt": "remaining seated, looking scared, avoiding eye contact"
+    },
+    {
+        "name": "Brushes Crumbs", 
+        "prompt": "{prompt}, brushes crumbs, wipes table, sets the table",
+        "negative_prompt": "making a bigger mess, breaking dishes, looking frustrated"
+    },
+    {
+        "name": "Brushes Dirt", 
+        "prompt": "{prompt}, brushes dirt off pants, stands up, continues hiking",
+        "negative_prompt": "falling down, getting injured, looking lost"
+    },
+    {
+        "name": "Brushes Hair", 
+        "prompt": "{prompt}, brushes hair, pulls it back, secures it",
+        "negative_prompt": "hair getting tangled, brush breaking, looking frustrated"
+    },
+    {
+        "name": "Brushes Lint", 
+        "prompt": "{prompt}, brushes lint off sleeve, straightens posture, enters confidently",
+        "negative_prompt": "tripping, stumbling, looking nervous"
+    },
+    {
+        "name": "Buttons Up a Coat",
+        "prompt": "{prompt}, buttons up a coat, wraps a scarf, puts on gloves",
+        "negative_prompt": "buttons getting stuck, scarf getting tangled, looking cold"
+    },
+    {
+        "name": "Buttons Up a Shirt", 
+        "prompt": "{prompt}, buttons up a shirt, looks in the mirror, adjusts the collar",
+        "negative_prompt": "buttons getting stuck, shirt ripping, looking disheveled"
+    },
+    {
+        "name": "Chews on a Pencil", 
+        "prompt": "{prompt}, chews on a pencil, furrows brow, jots down a note",
+        "negative_prompt": "breaking the pencil, getting lead on clothes, looking distracted"
+    },
+    {
+        "name": "Claps Hands in Applause",
+        "prompt": "{prompt}, claps hands in applause, stands up, cheers loudly",
+        "negative_prompt": "remaining silent, looking bored, booing"
+    },
+    {
+        "name": "Clasps Hands Behind Back", 
+        "prompt": "{prompt}, clasps hands behind back, rocks on heels, starts to whistle",
+        "negative_prompt": "fidgeting, looking nervous, pacing anxiously"
+    },
+    {
+        "name": "Clears Throat",
+        "prompt": "{prompt}, clears throat, takes a sip of water, begins to speak",
+        "negative_prompt": "coughing uncontrollably, losing voice, looking flustered"
+    },
+    {
+        "name": "Clicks a Pen Open", 
+        "prompt": "{prompt}, clicks a pen open, jots down a note, clicks the pen closed",
+        "negative_prompt": "pen running out of ink, breaking the pen, looking frustrated"
+    },
+    {
+        "name": "Clicks Tongue",
+        "prompt": "{prompt}, clicks tongue, shakes head, tries again",
+        "negative_prompt": "giving up, looking defeated, walking away"
+    },
+    {
+        "name": "Closes Book", 
+        "prompt": "{prompt}, closes book, sets it aside, stretches arms",
+        "negative_prompt": "ripping pages, throwing the book, looking frustrated"
+    },
+    {
+        "name": "Closes Eyes",
+        "prompt": "{prompt}, closes eyes, massages temples, opens eyes with focus",
+        "negative_prompt": "looking tired, falling asleep, looking stressed"
+    },
+    {
+        "name": "Coughs into Fist",
+        "prompt": "{prompt}, coughs into fist, takes a deep breath, continues speaking",
+        "negative_prompt": "coughing uncontrollably, losing voice, looking ill"
+    },
+    {
+        "name": "Cracks an Egg", 
+        "prompt": "{prompt}, cracks an egg, tosses the shell, reaches for another",
+        "negative_prompt": "dropping the egg, getting shell in the bowl, making a mess"
+    },
+    {
+        "name": "Cracks Knuckles", 
+        "prompt": "{prompt}, cracks knuckles, flexes fingers, begins typing",
+        "negative_prompt": "injuring hand, struggling to type, looking frustrated"
+    },
+    {
+        "name": "Cracks Open a Book", 
+        "prompt": "{prompt}, cracks open a book, flips through the pages, settles on a chapter",
+        "negative_prompt": "ripping pages, slamming the book shut, looking bored"
+    },
+    {
+        "name": "Crosses Arms", 
+        "prompt": "{prompt}, crosses arms, leans back, raises an eyebrow skeptically",
+        "negative_prompt": "slouching, looking disinterested, nodding in agreement"
+    },
+    {
+        "name": "Crosses Legs",
+        "prompt": "{prompt}, crosses legs, uncrosses them, crosses them again",
+        "negative_prompt": "looking uncomfortable, struggling to sit still, fidgeting"
+    },
+    {
+        "name": "Crosses Out a Word", 
+        "prompt": "{prompt}, crosses out a word, writes a new one, continues writing",
+        "negative_prompt": "ripping the paper, crumpling the paper, throwing it away"
+    },
+    {
+        "name": "Cuts a Piece of Paper", 
+        "prompt": "{prompt}, cuts a piece of paper, folds it, cuts it again",
+        "negative_prompt": "cutting oneself, making a crooked cut, looking frustrated"
+    },
+    {
+        "name": "Dabs at a Stain",
+        "prompt": "{prompt}, dabs at a stain, frowns, heads to the bathroom",
+        "negative_prompt": "stain spreading, making the stain worse, looking helpless"
+    },
+    {
+        "name": "Doodles in a Notebook",
+        "prompt": "{prompt}, doodles in a notebook, pauses to think, continues drawing",
+        "negative_prompt": "ripping the page, scribbling angrily, throwing the notebook"
+    },
+    {
+        "name": "Drums Fingers",
+        "prompt": "{prompt}, drums fingers, looks around, checks the time",
+        "negative_prompt": "tapping loudly, looking agitated, pacing impatiently"
+    },
+    {
+        "name": "Erases a Word", 
+        "prompt": "{prompt}, erases a word, blows away shavings, rewrites the word",
+        "negative_prompt": "ripping the paper, making a hole in the paper, looking frustrated"
+    },
+    {
+        "name": "Fidgets with an Object",
+        "prompt": "{prompt}, fidgets with an object, sets it down, clasps hands together",
+        "negative_prompt": "dropping the object, breaking the object, looking anxious"
+    },
+    {
+        "name": "Flips a Coin",
+        "prompt": "{prompt}, flips a coin, catches it, slaps it on hand",
+        "negative_prompt": "dropping the coin, losing the coin, looking frustrated"
+    },
+    {
+        "name": "Flips Through a Book",
+        "prompt": "{prompt}, flips through a book, finds the page, begins reading",
+        "negative_prompt": "ripping pages, slamming the book shut, looking bored"
+    },
+    {
+        "name": "Folds a Blanket", 
+        "prompt": "{prompt}, folds a blanket, smooths out wrinkles, places it on couch",
+        "negative_prompt": "blanket getting tangled, dropping the blanket, looking clumsy"
+    },
+    {
+        "name": "Folds a Paper Airplane",
+        "prompt": "{prompt}, folds a paper airplane, throws it, watches it glide",
+        "negative_prompt": "airplane not flying, tearing the paper, looking disappointed"
+    },
+    {
+        "name": "Folds Arms Across Chest", 
+        "prompt": "{prompt}, folds arms across chest, leans back, raises an eyebrow",
+        "negative_prompt": "slouching, looking disinterested, nodding in agreement"
+    },
+    {
+        "name": "Furrows Brow",
+        "prompt": "{prompt}, furrows brow, rubs chin thoughtfully, nods in agreement",
+        "negative_prompt": "smiling, looking carefree, shaking head in disagreement"
+    },
+    {
+        "name": "Gazes Out the Window",
+        "prompt": "{prompt}, gazes out the window, smiles softly, turns back to the conversation",
+        "negative_prompt": "frowning, looking bored, ignoring the conversation"
+    },
+    {
+        "name": "Giggles", 
+        "prompt": "{prompt}, giggles, covers mouth, tries to compose oneself",
+        "negative_prompt": "laughing uncontrollably, making a scene, looking embarrassed"
+    },
+    {
+        "name": "Gives a Thumbs Up",
+        "prompt": "{prompt}, gives a thumbs up, grins widely, returns to work",
+        "negative_prompt": "giving a thumbs down, frowning, looking disapproving"
+    },
+    {
+        "name": "Hiccups Unexpectedly", 
+        "prompt": "{prompt}, hiccups unexpectedly, covers mouth, laughs embarrassedly",
+        "negative_prompt": "hiccuping uncontrollably, looking distressed, running away"
+    },
+    {
+        "name": "Hums a Song", 
+        "prompt": "{prompt}, hums a song, taps foot to the beat, starts to sing",
+        "negative_prompt": "singing off-key, forgetting the lyrics, looking self-conscious"
+    },
+    {
+        "name": "Interlocks Fingers", 
+        "prompt": "{prompt}, interlocks fingers, stretches arms, releases with a sigh",
+        "negative_prompt": "wincing in pain, looking stiff, holding breath"
+    },
+    {
+        "name": "Juggles Three Balls",
+        "prompt": "{prompt}, juggles three balls, drops one, picks it up, continues juggling",
+        "negative_prompt": "dropping all the balls, making a mess, looking frustrated"
+    },
+    {
+        "name": "Kicks Off Shoes",
+        "prompt": "{prompt}, kicks off shoes, wiggles toes, curls up on the couch",
+        "negative_prompt": "shoes hitting something, stubbing a toe, looking uncomfortable"
+    },
+    {
+        "name": "Knits Brow",
+        "prompt": "{prompt}, knits brow, purses lips, shakes head in disagreement",
+        "negative_prompt": "smiling, nodding in agreement, looking pleased"
+    },
+    {
+        "name": "Knocks on a Door", 
+        "prompt": "{prompt}, knocks on a door, waits for a response, knocks again",
+        "negative_prompt": "banging on the door, breaking the door down, looking impatient"
+    },
+    {
+        "name": "Knocks Over a Glass", 
+        "prompt": "{prompt}, knocks over a glass, quickly rights it, wipes up the spill",
+        "negative_prompt": "glass breaking, cutting oneself, making a bigger mess"
+    },
+    {
+        "name": "Leans Against a Wall",
+        "prompt": "{prompt}, leans against a wall, crosses ankles, stuffs hands in pockets",
+        "negative_prompt": "falling over, losing balance, looking unsteady"
+    },
+    {
+        "name": "Leans Back in a Chair", 
+        "prompt": "{prompt}, leans back in a chair, balances on two legs, lets the chair fall forward",
+        "negative_prompt": "falling out of the chair, breaking the chair, looking clumsy"
+    },
+    {
+        "name": "Leans Forward",
+        "prompt": "{prompt}, leans forward, rests elbows on knees, listens intently",
+        "negative_prompt": "slouching, looking disinterested, interrupting the speaker"
+    },
+    {
+        "name": "Licks an Ice Cream Cone", 
+        "prompt": "{prompt}, licks an ice cream cone, catches a drip, takes another lick",
+        "negative_prompt": "dropping the ice cream, getting it on clothes, making a mess"
+    },
+    {
+        "name": "Massages Temples",
+        "prompt": "{prompt}, massages temples, closes eyes, takes a deep breath",
+        "negative_prompt": "grimacing in pain, looking stressed, holding breath"
+    },
+    {
+        "name": "Nods Head in Agreement", 
+        "prompt": "{prompt}, nods head in agreement, smiles, adds a comment",
+        "negative_prompt": "shaking head in disagreement, frowning, looking confused"
+    },
+    {
+        "name": "Opens a Can of Soda", 
+        "prompt": "{prompt}, opens a can of soda, takes a sip, sets it aside",
+        "negative_prompt": "soda spilling, can exploding, looking frustrated"
+    },
+    {
+        "name": "Opens a Door Cautiously", 
+        "prompt": "{prompt}, opens a door cautiously, peeks inside, enters the room",
+        "negative_prompt": "slamming the door open, bursting into the room, looking aggressive"
+    },
+    {
+        "name": "Opens a Jar",
+        "prompt": "{prompt}, opens a jar, sniffs the contents, nods in approval",
+        "negative_prompt": "jar breaking, dropping the lid, looking disgusted"
+    },
+    {
+        "name": "Paces Back and Forth", 
+        "prompt": "{prompt}, paces back and forth, stops abruptly, sits down heavily",
+        "negative_prompt": "tripping, stumbling, looking agitated"
+    },
+    {
+        "name": "Peels a Banana", 
+        "prompt": "{prompt}, peels a banana, takes a bite, sets the peel aside",
+        "negative_prompt": "banana breaking, slipping on the peel, making a mess"
+    },
+    {
+        "name": "Peels a Sticker",
+        "prompt": "{prompt}, peels a sticker, balls it up, tosses it in the trash",
+        "negative_prompt": "sticker ripping, leaving residue, looking frustrated"
+    },
+    {
+        "name": "Picks at a Hangnail",
+        "prompt": "{prompt}, picks at a hangnail, frowns, reaches for a nail file",
+        "negative_prompt": "making the hangnail bleed, causing pain, looking anxious"
+    },
+    {
+        "name": "Picks at a Loose Thread",
+        "prompt": "{prompt}, picks at a loose thread, tugs at it, smooths out the fabric",
+        "negative_prompt": "ripping the fabric, making a hole, looking frustrated"
+    },
+    {
+        "name": "Picks Up a Book", 
+        "prompt": "{prompt}, picks up a book, flips through the pages, sets it back down",
+        "negative_prompt": "dropping the book, ripping pages, looking bored"
+    },
+    {
+        "name": "Picks Up a Remote", 
+        "prompt": "{prompt}, picks up a remote, points it at the TV, presses a button",
+        "negative_prompt": "dropping the remote, breaking the remote, looking frustrated"
+    },
+    {
+        "name": "Pins Hair Up",
+        "prompt": "{prompt}, pins hair up in a bun, secures it, shakes head to test it",
+        "negative_prompt": "hair falling out, pins poking scalp, looking disheveled"
+    },
+    {
+        "name": "Places a Bookmark",
+        "prompt": "{prompt}, places a bookmark in a book, closes it, sets it aside",
+        "negative_prompt": "losing the bookmark, damaging the book, looking careless"
+    },
+    {
+        "name": "Plucks a Flower", 
+        "prompt": "{prompt}, plucks a flower, sniffs it, tucks it behind an ear",
+        "negative_prompt": "flower breaking, getting pricked by thorns, looking allergic"
+    },
+    {
+        "name": "Plucks a Guitar String", 
+        "prompt": "{prompt}, plucks a string on a guitar, adjusts the tuning, strums a chord",
+        "negative_prompt": "string breaking, guitar falling out of tune, looking frustrated"
+    },
+    {
+        "name": "Points at Something",
+        "prompt": "{prompt}, points at something, gestures animatedly, laughs",
+        "negative_prompt": "pointing rudely, making offensive gestures, looking angry"
+    },
+    {
+        "name": "Pops a Piece of Gum", 
+        "prompt": "{prompt}, pops a piece of gum into mouth, chews it, blows a bubble",
+        "negative_prompt": "gum falling out, choking on gum, looking embarrassed"
+    },
+    {
+        "name": "Pops Knuckles", 
+        "prompt": "{prompt}, pops knuckles, flexes fingers, begins to type",
+        "negative_prompt": "injuring hand, struggling to type, looking frustrated"
+    },
+    {
+        "name": "Pulls a Hat Down", 
+        "prompt": "{prompt}, pulls a hat down over ears, adjusts it, nods in satisfaction",
+        "negative_prompt": "hat falling off, looking uncomfortable, struggling to adjust it"
+    },
+    {
+        "name": "Pulls a Tissue",
+        "prompt": "{prompt}, pulls a tissue, blows nose, crumples it, tosses it",
+        "negative_prompt": "tissue ripping, nose bleeding, looking embarrassed"
+    },
+    {
+        "name": "Pulls on Gloves", 
+        "prompt": "{prompt}, pulls on gloves, flexes fingers, picks up a tool",
+        "negative_prompt": "gloves ripping, struggling to put them on, dropping the tool"
+    },
+    {
+        "name": "Purses Lips in Concentration", 
+        "prompt": "{prompt}, purses lips, applies lipstick, blots with a tissue",
+        "negative_prompt": "getting lipstick on teeth, smudging lipstick, looking frustrated"
+    },
+    {
+        "name": "Pushes a Button", 
+        "prompt": "{prompt}, pushes a button, waits for the light, crosses the street",
+        "negative_prompt": "button not working, walking against the light, getting hit by a car"
+    },
+    {
+        "name": "Pushes Hair Out of Eyes", 
+        "prompt": "{prompt}, pushes hair out of eyes, tucks it behind ears, continues reading",
+        "negative_prompt": "hair falling back in eyes, ripping the book, looking distracted"
+    },
+    {
+        "name": "Pushes Up Sleeves", 
+        "prompt": "{prompt}, pushes up sleeves, rubs hands together, gets to work",
+        "negative_prompt": "sleeves falling down, looking lazy, procrastinating"
+    },
+    {
+        "name": "Raises an Eyebrow", 
+        "prompt": "{prompt}, raises an eyebrow, tilts head, asks a question",
+        "negative_prompt": "frowning, looking confused, remaining silent"
+    },
+    {
+        "name": "Rolls Eyes", 
+        "prompt": "{prompt}, rolls eyes, shakes head, changes the subject",
+        "negative_prompt": "agreeing, continuing the conversation, looking interested"
+    },
+    {
+        "name": "Rubs Eyes", 
+        "prompt": "{prompt}, rubs eyes, blinks a few times, focuses on the task",
+        "negative_prompt": "falling asleep, looking distracted, complaining of tiredness"
+    },
+    {
+        "name": "Rubs Hands Together", 
+        "prompt": "{prompt}, rubs hands together, blows on them, tucks them into pockets",
+        "negative_prompt": "shivering uncontrollably, complaining of coldness, looking miserable"
+    },
+    {
+        "name": "Runs a Hand Through Hair",
+        "prompt": "{prompt}, runs a hand through hair, pauses, does it again",
+        "negative_prompt": "pulling hair out, looking stressed, making a mess of hair"
+    },
+    {
+        "name": "Scoops Up Sand", 
+        "prompt": "{prompt}, scoops up sand, lets it trickle, brushes off hands",
+        "negative_prompt": "throwing sand, getting sand in eyes, looking frustrated"
+    },
+    {
+        "name": "Scratches an Itch", 
+        "prompt": "{prompt}, scratches an itch on the neck, shrugs, returns to work",
+        "negative_prompt": "scratching uncontrollably, looking uncomfortable, complaining of itchiness"
+    },
+    {
+        "name": "Scratches Chin", 
+        "prompt": "{prompt}, scratches chin, looks up in thought, snaps fingers",
+        "negative_prompt": "looking confused, frowning, giving up"
+    },
+    {
+        "name": "Scribbles a Note",
+        "prompt": "{prompt}, scribbles a note, folds it up, passes it to a friend",
+        "negative_prompt": "ripping the paper, crumpling the note, throwing it away"
+    },
+    {
+        "name": "Scuffs a Shoe", 
+        "prompt": "{prompt}, scuffs a shoe on the ground, looks down at it, keeps walking",
+        "negative_prompt": "tripping, falling down, looking embarrassed"
+    },
+    {
+        "name": "Shakes a Snow Globe",
+        "prompt": "{prompt}, shakes a snow globe, watches the snow settle, sets it back",
+        "negative_prompt": "dropping the snow globe, breaking it, looking upset"
+    },
+    {
+        "name": "Shakes Head in Disbelief",
+        "prompt": "{prompt}, shakes head in disbelief, sighs heavily, tries to explain",
+        "negative_prompt": "nodding in agreement, looking convinced, accepting the situation"
+    },
+    {
+        "name": "Sharpens a Knife",
+        "prompt": "{prompt}, sharpens a knife, tests the edge, nods in satisfaction",
+        "negative_prompt": "cutting oneself, dropping the knife, looking frustrated"
+    },
+    {
+        "name": "Sharpens a Pencil",
+        "prompt": "{prompt}, sharpens a pencil, blows off the shavings, begins to write",
+        "negative_prompt": "breaking the pencil, lead breaking, looking annoyed"
+    },
+    {
+        "name": "Shrugs Off a Jacket",
+        "prompt": "{prompt}, shrugs off a jacket, hangs it up, rolls up sleeves",
+        "negative_prompt": "jacket getting stuck, throwing the jacket, looking frustrated"
+    },
+    {
+        "name": "Shrugs Shoulders", 
+        "prompt": "{prompt}, shrugs shoulders, spreads hands wide, offers a suggestion",
+        "negative_prompt": "frowning, looking confused, staying silent"
+    },
+    {
+        "name": "Sighs Deeply",
+        "prompt": "{prompt}, sighs deeply, rubs forehead, looks up with a forced smile",
+        "negative_prompt": "crying, breaking down, looking genuinely happy"
+    },
+    {
+        "name": "Sips from a Straw", 
+        "prompt": "{prompt}, sips from a straw, swallows, sets the drink aside",
+        "negative_prompt": "spilling the drink, straw falling out, making a mess"
+    },
+    {
+        "name": "Sits Cross-Legged",
+        "prompt": "{prompt}, sits cross-legged, rests hands on knees, closes eyes to meditate",
+        "negative_prompt": "looking uncomfortable, fidgeting, looking distracted"
+    },
+    {
+        "name": "Slides a Bookmark", 
+        "prompt": "{prompt}, slides a bookmark into a book, closes it, places it on a shelf",
+        "negative_prompt": "losing the bookmark, damaging the book, looking careless"
+    },
+    {
+        "name": "Slips on Sunglasses",
+        "prompt": "{prompt}, slips on sunglasses, looks in the mirror, nods in approval",
+        "negative_prompt": "sunglasses breaking, looking silly, frowning"
+    },
+    {
+        "name": "Smiles Widely",
+        "prompt": "{prompt}, smiles widely, laughs, covers mouth in embarrassment",
+        "negative_prompt": "frowning, looking sad, crying"
+    },
+    {
+        "name": "Smooths Out a Shirt", 
+        "prompt": "{prompt}, smooths out a wrinkled shirt, buttons it up, adjusts the collar",
+        "negative_prompt": "shirt ripping, buttons getting stuck, looking disheveled"
+    },
+    {
+        "name": "Snaps a Rubber Band", 
+        "prompt": "{prompt}, snaps a rubber band, stretches it out, snaps it again",
+        "negative_prompt": "rubber band breaking, snapping it at someone, looking mischievous"
+    },
+    {
+        "name": "Snaps Fingers", 
+        "prompt": "{prompt}, snaps fingers to a tune, taps foot, starts to hum",
+        "negative_prompt": "looking bored, not keeping rhythm, stopping abruptly"
+    },
+    {
+        "name": "Sneezes Loudly",
+        "prompt": "{prompt}, sneezes loudly, sniffles, reaches for a tissue",
+        "negative_prompt": "sneezing uncontrollably, looking ill, spreading germs"
+    },
+    {
+        "name": "Sniffs a Flower", 
+        "prompt": "{prompt}, sniffs a flower, smiles, places it in a vase",
+        "negative_prompt": "sneezing, flower breaking, looking allergic"
+    },
+    {
+        "name": "Spins a Globe",
+        "prompt": "{prompt}, spins a globe, stops it with a finger, leans in to look",
+        "negative_prompt": "globe falling off stand, breaking the globe, looking bored"
+    },
+    {
+        "name": "Spins a Pencil", 
+        "prompt": "{prompt}, spins a pencil around fingers, drops it, picks it back up",
+        "negative_prompt": "pencil breaking, stabbing oneself, looking clumsy"
+    },
+    {
+        "name": "Spins in a Circle", 
+        "prompt": "{prompt}, spins in a circle, stops, marches forward",
+        "negative_prompt": "getting dizzy, falling over, looking disoriented"
+    },
+    {
+        "name": "Sprays Cleaning Solution",
+        "prompt": "{prompt}, sprays cleaning solution, wipes it down, admires the shine",
+        "negative_prompt": "solution spilling, slipping on the wet floor, looking frustrated"
+    },
+    {
+        "name": "Spreads Out a Map",
+        "prompt": "{prompt}, spreads out a map, traces a route, folds the map back up",
+        "negative_prompt": "map ripping, getting lost, looking confused"
+    },
+    {
+        "name": "Sprinkles Salt",
+        "prompt": "{prompt}, sprinkles salt on food, takes a bite, adds a bit more",
+        "negative_prompt": "spilling salt, making the food too salty, looking disgusted"
+    },
+    {
+        "name": "Squints at Something",
+        "prompt": "{prompt}, squints at something, leans closer, nods in understanding",
+        "negative_prompt": "frowning, looking confused, shaking head"
+    },
+    {
+        "name": "Stacks Papers",
+        "prompt": "{prompt}, stacks papers together, taps them to align, sets them aside",
+        "negative_prompt": "papers falling over, making a mess, looking disorganized"
+    },
+    {
+        "name": "Starts to Speak",
+        "prompt": "{prompt}, starts to say something, pauses, shakes head, stays silent",
+        "negative_prompt": "speaking confidently, finishing the sentence, looking eager"
+    },
+    {
+        "name": "Steps Back from Painting",
+        "prompt": "{prompt}, steps back from a painting, tilts head, nods in approval",
+        "negative_prompt": "touching the painting, criticizing the art, looking bored"
+    },
+    {
+        "name": "Stirs a Pot of Soup",
+        "prompt": "{prompt}, stirs a pot of soup, tastes a spoonful, adds a pinch of salt",
+        "negative_prompt": "soup burning, spilling the soup, making a mess"
+    },
+    {
+        "name": "Straightens a Stack of Papers",
+        "prompt": "{prompt}, straightens papers, aligns them, paperclips them together",
+        "negative_prompt": "papers falling over, making a mess, looking disorganized"
+    },
+    {
+        "name": "Straightens Posture",
+        "prompt": "{prompt}, straightens posture, takes a deep breath, knocks on the door",
+        "negative_prompt": "slouching, looking nervous, avoiding eye contact"
+    },
+    {
+        "name": "Stretches Arms",
+        "prompt": "{prompt}, stretches arms overhead, yawns, settles back into the chair",
+        "negative_prompt": "pulling a muscle, falling out of the chair, looking uncomfortable"
+    },
+    {
+        "name": "Stretches on the Couch",
+        "prompt": "{prompt}, stretches out on the couch, yawns, reaches for the remote",
+        "negative_prompt": "falling off the couch, looking uncomfortable, struggling to reach the remote"
+    },
+    {
+        "name": "Stretches Rubber Band", 
+        "prompt": "{prompt}, stretches rubber band between fingers, aims, releases it",
+        "negative_prompt": "rubber band breaking, snapping it at someone, looking mischievous"
+    },
+    {
+        "name": "Takes a Deep Breath",
+        "prompt": "{prompt}, takes a deep breath, holds it, exhales slowly",
+        "negative_prompt": "gasping for air, coughing, looking stressed"
+    },
+    {
+        "name": "Taps a Pencil",
+        "prompt": "{prompt}, taps a pencil on the desk, looks up in thought, jots down a note",
+        "negative_prompt": "breaking the pencil, making loud noises, looking distracted"
+    },
+    {
+        "name": "Taps a Rhythm",
+        "prompt": "{prompt}, taps a rhythm on the desk, nods to the beat, hums along",
+        "negative_prompt": "tapping loudly, making annoying noises, looking bored"
+    },
+    {
+        "name": "Taps a Spoon", 
+        "prompt": "{prompt}, taps a spoon on the bowl, sets the spoon down, picks up the bowl",
+        "negative_prompt": "spoon falling in the bowl, making a mess, looking clumsy"
+    },
+    {
+        "name": "Taps Fingers",
+        "prompt": "{prompt}, taps fingers on the desk, looks at the clock, returns to work",
+        "negative_prompt": "tapping loudly, looking impatient, getting distracted"
+    },
+    {
+        "name": "Taps Foot Impatiently",
+        "prompt": "{prompt}, taps foot impatiently, checks watch, sighs",
+        "negative_prompt": "looking relaxed, smiling, patiently waiting"
+    },
+    {
+        "name": "Tears Off Paper Towel",
+        "prompt": "{prompt}, tears off paper towel, wipes up a spill, tosses it in the trash",
+        "negative_prompt": "paper towel ripping, making a bigger mess, looking frustrated"
+    },
+    {
+        "name": "Tears Open an Envelope",
+        "prompt": "{prompt}, tears open an envelope, unfolds the letter, begins to read",
+        "negative_prompt": "ripping the letter, dropping the contents, looking bored"
+    },
+    {
+        "name": "Tosses a Ball", 
+        "prompt": "{prompt}, tosses a ball in the air, catches it, tosses it again",
+        "negative_prompt": "dropping the ball, throwing it too hard, hitting someone"
+    },
+    {
+        "name": "Tosses a Frisbee", 
+        "prompt": "{prompt}, tosses a frisbee, watches it sail, runs to catch it",
+        "negative_prompt": "frisbee hitting someone, getting stuck in a tree, looking frustrated"
+    },
+    {
+        "name": "Traces a Pattern",
+        "prompt": "{prompt}, traces a pattern on a window, admires it, wipes it away",
+        "negative_prompt": "breaking the window, drawing something offensive, looking bored"
+    },
+    {
+        "name": "Tucks Hair Behind Ear",
+        "prompt": "{prompt}, tucks hair behind ear, leans forward, speaks in a whisper",
+        "negative_prompt": "hair falling back in face, shouting, looking aggressive"
+    },
+    {
+        "name": "Tugs at a Loose Thread",
+        "prompt": "{prompt}, tugs at a loose thread, frowns, tries to tuck it back in",
+        "negative_prompt": "ripping the fabric, making a hole, looking frustrated"
+    },
+    {
+        "name": "Tugs at a Necklace", 
+        "prompt": "{prompt}, tugs at a necklace, twirls it, lets it drop",
+        "negative_prompt": "necklace breaking, getting tangled, looking frustrated"
+    },
+    {
+        "name": "Tugs at Collar",
+        "prompt": "{prompt}, tugs at collar, loosens tie, unbuttons top button",
+        "negative_prompt": "ripping shirt, struggling with buttons, looking uncomfortable"
+    },
+    {
+        "name": "Turns Page in a Book", 
+        "prompt": "{prompt}, turns page in a book, smooths it down, continues reading",
+        "negative_prompt": "ripping the page, dog-earing the page, looking bored"
+    },
+    {
+        "name": "Twirls a Lock of Hair",
+        "prompt": "{prompt}, twirls a lock of hair, bites lip, lets the hair unwind",
+        "negative_prompt": "pulling hair out, looking nervous, making a mess of hair"
+    },
+    {
+        "name": "Types a Message", 
+        "prompt": "{prompt}, types a message, reads it over, hits send",
+        "negative_prompt": "making typos, deleting the message, looking frustrated"
+    },
+    {
+        "name": "Types on a Calculator", 
+        "prompt": "{prompt}, types on a calculator, frowns at the result, tries a different calculation",
+        "negative_prompt": "calculator breaking, getting the wrong answer, looking confused"
+    },
+    {
+        "name": "Walks Backwards",
+        "prompt": "{prompt}, walks backwards, turns around, continues walking forward",
+        "negative_prompt": "tripping, bumping into something, looking clumsy"
+    },
+    {
+        "name": "Walks Briskly",
+        "prompt": "{prompt}, walks briskly, checks watch, quickens pace",
+        "negative_prompt": "walking slowly, stopping frequently, looking tired"
+    },
+    {
+        "name": "Walks in a Circle",
+        "prompt": "{prompt}, walks in a circle, pauses to stretch, continues walking",
+        "negative_prompt": "getting dizzy, falling over, looking lost"
+    },
+    {
+        "name": "Waves Goodbye", 
+        "prompt": "{prompt}, waves goodbye, turns to leave, turns back for one more hug",
+        "negative_prompt": "walking away abruptly, ignoring the person, looking cold"
+    },
+    {
+        "name": "Whistles a Tune", 
+        "prompt": "{prompt}, whistles a tune, pauses to remember, continues whistling",
+        "negative_prompt": "whistling off-key, forgetting the tune, looking embarrassed"
+    },
+    {
+        "name": "Wiggles a Loose Tooth", 
+        "prompt": "{prompt}, wiggles a loose tooth, frowns, resolves to make a dentist appointment",
+        "negative_prompt": "tooth falling out prematurely, bleeding, looking scared"
+    },
+    {
+        "name": "Wipes Brow",
+        "prompt": "{prompt}, wipes brow, takes a deep breath, continues working",
+        "negative_prompt": "sweating profusely, looking exhausted, giving up"
+    },
+    {
+        "name": "Wraps a Gift", 
+        "prompt": "{prompt}, wraps a gift, ties a bow, attaches a gift tag",
+        "negative_prompt": "paper ripping, bow falling off, looking clumsy"
+    },
+    {
+        "name": "Wraps a Towel",
+        "prompt": "{prompt}, wraps a towel around wet hair, tucks in the end, starts to get dressed",
+        "negative_prompt": "towel falling off, dripping water, looking cold"
+    },
+    {
+        "name": "Wrings Hands Nervously", 
+        "prompt": "{prompt}, wrings hands nervously, takes a deep breath, steps up to the podium",
+        "negative_prompt": "fumbling with notes, looking panicked, running away"
+    },
+    {
+        "name": "Writes a Message in the Sand",
+        "prompt": "{prompt}, writes a message in the sand, admires it, watches as a wave washes it away",
+        "negative_prompt": "tide coming in too quickly, writing getting destroyed, looking frustrated"
+    }
+]

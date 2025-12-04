@@ -1,0 +1,197 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "dutch angle - Creates a tilted horizon for a dynamic, unsettling effect.",
+        "prompt": "dutch angle {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "fisheye - Produces a wide panoramic or hemispherical image, useful for extreme wide-angle shots.",
+        "prompt": "fisheye {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "from above - Captures the scene from a high vantage point.",
+        "prompt": "from above {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "from behind - Shows the subject from behind.",
+        "prompt": "from behind {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "from below - Captures the subject from a low angle.",
+        "prompt": "from below {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "panorama - Produces a wide-angle view.",
+        "prompt": "panorama {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "from below upskirt - A controversial and typically inappropriate angle capturing from below.",
+        "prompt": "from below upskirt {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "perspective - Emphasizes depth and spatial relationships.",
+        "prompt": "perspective {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "pov - Point of view, shows what the subject sees.",
+        "prompt": "pov {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "sideways - Captures the scene from a side angle.",
+        "prompt": "sideways {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "upside-down - Inverts the scene for a dramatic effect.",
+        "prompt": "upside-down {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "vanishing point - Emphasizes lines converging at a single point.",
+        "prompt": "vanishing point {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Overhead Shot - Captures the scene from directly above.",
+        "prompt": "Overhead Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dutch Angle - Creates a tilted horizon for a dynamic, unsettling effect.",
+        "prompt": "Dutch Angle {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tracking Shot - Follows the subject as it moves.",
+        "prompt": "Tracking Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Crane Shot - Captures the scene from a high, sweeping angle using a crane.",
+        "prompt": "Crane Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Handheld Shot - Uses a handheld camera for a shaky, realistic effect.",
+        "prompt": "Handheld Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Tilt Shot - Tilts the camera up or down.",
+        "prompt": "Tilt Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Pan Shot - Moves the camera horizontally.",
+        "prompt": "Pan Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Static Shot - Keeps the camera fixed in one position.",
+        "prompt": "Static Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Close-Up Shot - Captures the subject tightly, often showing detail.",
+        "prompt": "Close-Up Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Wide Shot - Captures a wide view of the scene.",
+        "prompt": "Wide Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Establishing Shot - Sets the scene, often a wide shot.",
+        "prompt": "Establishing Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Aerial Shot - Captures the scene from the air.",
+        "prompt": "Aerial Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Point of View Shot - Shows what the subject sees.",
+        "prompt": "Point of View Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Reverse Shot - Captures the scene from the opposite direction.",
+        "prompt": "Reverse Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Low Angle Shot - Captures the subject from a low angle.",
+        "prompt": "Low Angle Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "High Angle Shot - Captures the subject from a high angle.",
+        "prompt": "High Angle Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Cutaway Shot - Cuts to a different scene or detail.",
+        "prompt": "Cutaway Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Reaction Shot - Shows the reaction of a character.",
+        "prompt": "Reaction Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Two Shot - Captures two subjects in the frame.",
+        "prompt": "Two Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Long Shot - Captures the subject from a distance.",
+        "prompt": "Long Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Medium Shot - Captures the subject from a medium distance.",
+        "prompt": "Medium Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Whip Pan - Quickly moves the camera horizontally, blurring the image.",
+        "prompt": "Whip Pan {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Dolly Shot - Moves the camera towards or away from the subject.",
+        "prompt": "Dolly Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Zoom Shot - Changes the focal length to zoom in or out.",
+        "prompt": "Zoom Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Insert Shot - Captures a detail of the scene.",
+        "prompt": "Insert Shot {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Bird's-Eye View - Captures the scene from directly above.",
+        "prompt": "Bird's-Eye View {prompt}",
+        "negative_prompt": ""
+    }
+]

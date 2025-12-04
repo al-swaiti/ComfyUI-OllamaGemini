@@ -1,0 +1,458 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Chiaroscuro Masterpiece",
+        "prompt": "(Create a Gothic-style chiaroscuro masterpiece) {prompt}",
+        "negative_prompt": "High-key, well-lit painting"
+    },
+    {
+        "name": "Creepy Castle Keep",
+        "prompt": "(Sketch the creepy interior of a Gothic castle keep) {prompt}",
+        "negative_prompt": "Cozy and well-lit castle keep"
+    },
+    {
+        "name": "Creepy Crypt Keeper",
+        "prompt": "(Create a Gothic-style depiction of a creepy crypt keeper) {prompt}",
+        "negative_prompt": "Create a friendly and approachable crypt keeper"
+    },
+    {
+        "name": "Crypt of Shadows",
+        "prompt": "(Design a Gothic crypt with eerie shadows) {prompt}",
+        "negative_prompt": "Bright and inviting crypt"
+    },
+    {
+        "name": "Cryptic Gothic Symbols",
+        "prompt": "(Create cryptic Gothic symbols and motifs) {prompt}",
+        "negative_prompt": "Create simple and straightforward symbols"
+    },
+    {
+        "name": "Cursed Castle Courtyard",
+        "prompt": "(Paint a cursed Gothic castle courtyard at night) {prompt}",
+        "negative_prompt": "Blessed and peaceful courtyard"
+    },
+    {
+        "name": "Cursed Painting",
+        "prompt": "(Paint a cursed Gothic-style painting) {prompt}",
+        "negative_prompt": "Paint a happy and uplifting painting"
+    },
+    {
+        "name": "Dark Castle",
+        "prompt": "(Create a Gothic poster featuring a sinister and foreboding dark castle) {prompt}",
+        "negative_prompt": "Sunny and cheerful"
+    },
+    {
+        "name": "Dark Cathedral",
+        "prompt": "(Create a Gothic-style artwork featuring a dark cathedral) {prompt}",
+        "negative_prompt": "Bright and sunny landscape"
+    },
+    {
+        "name": "Dark Elegance",
+        "prompt": "(Design a Gothic-style elegant ballroom) {prompt}",
+        "negative_prompt": "Design a modern and casual ballroom"
+    },
+    {
+        "name": "Dark Fantasy Cathedral",
+        "prompt": "(Design a dark fantasy Gothic cathedral) {prompt}",
+        "negative_prompt": "Design a bright and fantasy-inspired cathedral"
+    },
+    {
+        "name": "Dark Romance",
+        "prompt": "(Illustrate a scene from a dark Gothic romance) {prompt}",
+        "negative_prompt": "Light-hearted romantic scene"
+    },
+    {
+        "name": "Dilapidated Castle",
+        "prompt": "(Paint a Gothic-style dilapidated castle in a storm) {prompt}",
+        "negative_prompt": "Well-preserved castle in sunshine"
+    },
+    {
+        "name": "Doomed Love",
+        "prompt": "(Illustrate a scene from a story of doomed love in a Gothic setting) {prompt}",
+        "negative_prompt": "Illustrate a scene from a heartwarming love story"
+    },
+    {
+        "name": "Eerie Cathedral Choir",
+        "prompt": "(Illustrate an eerie scene in a Gothic cathedral choir) {prompt}",
+        "negative_prompt": "Illustrate a joyful scene in a cathedral choir"
+    },
+    {
+        "name": "Eerie Forest",
+        "prompt": "(Design a Gothic scene set in a haunted, foggy forest) {prompt}",
+        "negative_prompt": "Bright and clear"
+    },
+    {
+        "name": "Epic Cathedral Interior",
+        "prompt": "(Design the interior of an epic Gothic cathedral) {prompt}",
+        "negative_prompt": "Modern and minimalistic interior"
+    },
+    {
+        "name": "Eternal Nightfall",
+        "prompt": "(Paint a Gothic landscape with an eternal nightfall) {prompt}",
+        "negative_prompt": "Bright and sunny day"
+    },
+    {
+        "name": "Ethereal Nuns",
+        "prompt": "(Illustrate ethereal nuns in a Gothic cathedral) {prompt}",
+        "negative_prompt": "Earthly and mundane depiction"
+    },
+    {
+        "name": "Gargoyles of the Night",
+        "prompt": "(Capture the eerie beauty of Gothic gargoyles at night) {prompt}",
+        "negative_prompt": "Cheerful and lighthearted"
+    },
+    {
+        "name": "Gothic Architecture",
+        "prompt": "(Illustrate the intricate details of a Gothic cathedral's architecture) {prompt}",
+        "negative_prompt": "Contemporary building design"
+    },
+    {
+        "name": "Gothic Archways",
+        "prompt": "(Illustrate a scene with intricate Gothic archways) {prompt}",
+        "negative_prompt": "Simple and contemporary design"
+    },
+    {
+        "name": "Gothic Artifacts",
+        "prompt": "(Illustrate a collection of ancient Gothic artifacts and relics) {prompt}",
+        "negative_prompt": "Modern technology and gadgets"
+    },
+    {
+        "name": "Gothic Asylum",
+        "prompt": "(Illustrate a scene in a Gothic asylum with eerie hallways and tormented souls) {prompt}",
+        "negative_prompt": "Modern hospital"
+    },
+    {
+        "name": "Gothic Blacksmith",
+        "prompt": "(Create a scene in a Gothic blacksmith's workshop with dark tools and glowing embers) {prompt}",
+        "negative_prompt": "Modern metalworking shop"
+    },
+    {
+        "name": "Gothic Book Cover",
+        "prompt": "(Design a book cover for a Gothic novel) {prompt}",
+        "negative_prompt": "Design a book cover for a light-hearted romance novel"
+    },
+    {
+        "name": "Gothic Castle Interior",
+        "prompt": "(Create the interior of a Gothic castle with dimly lit halls and grand tapestries) {prompt}",
+        "negative_prompt": "Modern office interior"
+    },
+    {
+        "name": "Gothic Castle Ruins",
+        "prompt": "(Illustrate the ruins of a Gothic castle with ivy-covered walls and ancient mysteries) {prompt}",
+        "negative_prompt": "Modern building ruins"
+    },
+    {
+        "name": "Gothic Cathedral",
+        "prompt": "(Create a Gothic-inspired artwork featuring an imposing cathedral) {prompt}",
+        "negative_prompt": "Contemporary and modest"
+    },
+    {
+        "name": "Gothic Cemetery",
+        "prompt": "(Illustrate a Gothic cemetery at night with eerie tombstones and ghostly figures) {prompt}",
+        "negative_prompt": "Well-maintained park"
+    },
+    {
+        "name": "Gothic Clock Tower",
+        "prompt": "(Create a Gothic clock tower with ancient gears and a haunting chime) {prompt}",
+        "negative_prompt": "Modern digital clock"
+    },
+    {
+        "name": "Gothic Crypt",
+        "prompt": "(Create a Gothic crypt with eerie lighting and ancient tombstones) {prompt}",
+        "negative_prompt": "Cheerful garden"
+    },
+    {
+        "name": "Gothic Dungeon",
+        "prompt": "(Illustrate a Gothic dungeon with chains, torture devices, and flickering torches) {prompt}",
+        "negative_prompt": "Playroom"
+    },
+    {
+        "name": "Gothic Fairy",
+        "prompt": "(Create a Gothic fairy character with dark wings and an enchanting aura) {prompt}",
+        "negative_prompt": "Friendly cartoon fairy"
+    },
+    {
+        "name": "Gothic Fairytale",
+        "prompt": "(Create a Gothic-inspired fairytale scene with dark twists) {prompt}",
+        "negative_prompt": "Happy and predictable fairytale"
+    },
+    {
+        "name": "Gothic Fantasy Art",
+        "prompt": "(Create a Gothic-inspired fantasy world filled with dark magic) {prompt}",
+        "negative_prompt": "Bright and whimsical fantasy world"
+    },
+    {
+        "name": "Gothic Fantasy Book Cover",
+        "prompt": "(Design a book cover for a Gothic fantasy novel) {prompt}",
+        "negative_prompt": "Textbook cover"
+    },
+    {
+        "name": "Gothic Fashion",
+        "prompt": "(Design a Gothic fashion ensemble with lace, leather, and chains) {prompt}",
+        "negative_prompt": "Casual and plain"
+    },
+    {
+        "name": "Gothic Fortune Teller",
+        "prompt": "(Illustrate a mysterious Gothic fortune teller with a crystal ball and dark predictions) {prompt}",
+        "negative_prompt": "Friendly psychic reader"
+    },
+    {
+        "name": "Gothic Fountain",
+        "prompt": "(Sculpt a Gothic-style fountain with intricate details) {prompt}",
+        "negative_prompt": "Sculpt a modern and abstract fountain"
+    },
+    {
+        "name": "Gothic Horror",
+        "prompt": "(Illustrate a horrifying scene with monsters and blood in a Gothic setting) {prompt}",
+        "negative_prompt": "Soothing and comforting"
+    },
+    {
+        "name": "Gothic Horror Comic Cover",
+        "prompt": "(Create a comic book cover for a Gothic horror comic series) {prompt}",
+        "negative_prompt": "Comic cover for a children's story"
+    },
+    {
+        "name": "Gothic Horror Movie Poster",
+        "prompt": "(Design a poster for a Gothic horror movie with terrifying creatures) {prompt}",
+        "negative_prompt": "Comedic movie poster"
+    },
+    {
+        "name": "Gothic Horror Storybook",
+        "prompt": "(Illustrate a page from a Gothic horror storybook) {prompt}",
+        "negative_prompt": "Illustrate a page from a children's storybook"
+    },
+    {
+        "name": "Gothic Horror Tale",
+        "prompt": "(Illustrate a scene from a chilling Gothic horror tale) {prompt}",
+        "negative_prompt": "Upbeat and heartwarming story"
+    },
+    {
+        "name": "Gothic Horror Video Game Art",
+        "prompt": "(Design artwork for a Gothic horror video game with eerie landscapes and terrifying creatures) {prompt}",
+        "negative_prompt": "Children's video game artwork"
+    },
+    {
+        "name": "Gothic Jewelry",
+        "prompt": "(Design intricate Gothic-style jewelry with skulls and gemstones) {prompt}",
+        "negative_prompt": "Simple and everyday accessories"
+    },
+    {
+        "name": "Gothic Knight",
+        "prompt": "(Illustrate a formidable Gothic knight in dark armor) {prompt}",
+        "negative_prompt": "Friendly security guard"
+    },
+    {
+        "name": "Gothic Landscapes",
+        "prompt": "(Illustrate eerie Gothic landscapes with twisted trees and hidden secrets) {prompt}",
+        "negative_prompt": "Idyllic countryside"
+    },
+    {
+        "name": "Gothic Lighthouse",
+        "prompt": "(Illustrate a Gothic lighthouse on a stormy night with crashing waves and a haunting glow) {prompt}",
+        "negative_prompt": "Functional modern lighthouse"
+    },
+    {
+        "name": "Gothic Literature",
+        "prompt": "(Design a book cover for a classic Gothic novel) {prompt}",
+        "negative_prompt": "Textbook cover"
+    },
+    {
+        "name": "Gothic Manuscript Illumination",
+        "prompt": "(Create a Gothic-style illumination for a manuscript) {prompt}",
+        "negative_prompt": "Create a modern and abstract illumination"
+    },
+    {
+        "name": "Gothic Mausoleum",
+        "prompt": "(Design a Gothic-style mausoleum) {prompt}",
+        "negative_prompt": "Design a modern and unassuming mausoleum"
+    },
+    {
+        "name": "Gothic Music",
+        "prompt": "(Design an album cover for a Gothic music band) {prompt}",
+        "negative_prompt": "Pop music album cover"
+    },
+    {
+        "name": "Gothic Novella Cover",
+        "prompt": "(Design a cover for a Gothic novella) {prompt}",
+        "negative_prompt": "Design a cover for a cheerful novella"
+    },
+    {
+        "name": "Gothic Poetry",
+        "prompt": "(Write a Gothic poem filled with dark and melancholic imagery) {prompt}",
+        "negative_prompt": "Upbeat and cheerful poetry"
+    },
+    {
+        "name": "Gothic Portraits",
+        "prompt": "(Create Gothic-style portraits of mysterious characters) {prompt}",
+        "negative_prompt": "Simple and straightforward headshots"
+    },
+    {
+        "name": "Gothic Romance",
+        "prompt": "(Create a Gothic-themed romantic scene with a brooding hero and a mysterious heroine) {prompt}",
+        "negative_prompt": "Light-hearted and comedic"
+    },
+    {
+        "name": "Gothic Romance Book Cover",
+        "prompt": "(Design a book cover for a Gothic romance novel) {prompt}",
+        "negative_prompt": "Textbook cover"
+    },
+    {
+        "name": "Gothic Rose Garden",
+        "prompt": "(Paint a Gothic-style rose garden with black roses) {prompt}",
+        "negative_prompt": "Paint a vibrant and colorful rose garden"
+    },
+    {
+        "name": "Gothic Ruins",
+        "prompt": "(Sketch the haunting beauty of Gothic ruins) {prompt}",
+        "negative_prompt": "Intact and bustling ruins"
+    },
+    {
+        "name": "Gothic Sculpture",
+        "prompt": "(Sculpt a Gothic-style sculpture with intricate details) {prompt}",
+        "negative_prompt": "Sculpt a modern and abstract piece"
+    },
+    {
+        "name": "Gothic Stained Glass",
+        "prompt": "(Design a Gothic-style stained glass window) {prompt}",
+        "negative_prompt": "Contemporary and plain window"
+    },
+    {
+        "name": "Gothic Steampunk",
+        "prompt": "(Design a Steampunk-style Gothic invention with gears and Victorian elements) {prompt}",
+        "negative_prompt": "Ultra-modern technology"
+    },
+    {
+        "name": "Gothic Steampunk Airship",
+        "prompt": "(Design a Gothic Steampunk airship with intricate gears and Victorian styling) {prompt}",
+        "negative_prompt": "Modern aircraft design"
+    },
+    {
+        "name": "Gothic Tapestry",
+        "prompt": "(Weave a Gothic-style tapestry with intricate patterns) {prompt}",
+        "negative_prompt": "Weave a contemporary and plain tapestry"
+    },
+    {
+        "name": "Gothic Tarot Cards",
+        "prompt": "(Design a set of Gothic tarot cards with dark and mysterious symbols) {prompt}",
+        "negative_prompt": "Regular playing cards"
+    },
+    {
+        "name": "Gothic Tattoo Art",
+        "prompt": "(Design intricate Gothic tattoos with dark themes) {prompt}",
+        "negative_prompt": "Simple and plain tattoos"
+    },
+    {
+        "name": "Gothic Theater Poster",
+        "prompt": "(Design a poster for a Gothic theater production with a dark and dramatic theme) {prompt}",
+        "negative_prompt": "Children's play poster"
+    },
+    {
+        "name": "Gothic Throne Room",
+        "prompt": "(Create a Gothic throne room for a sinister ruler) {prompt}",
+        "negative_prompt": "Plain and functional office space"
+    },
+    {
+        "name": "Gothic Underworld",
+        "prompt": "(Create a Gothic underworld scene with dark caverns and sinister creatures) {prompt}",
+        "negative_prompt": "Colorful underground theme park"
+    },
+    {
+        "name": "Gothic Vampire",
+        "prompt": "(Illustrate a charismatic Gothic vampire character) {prompt}",
+        "negative_prompt": "Friendly neighbor"
+    },
+    {
+        "name": "Gothic Wedding",
+        "prompt": "(Illustrate a Gothic-themed wedding with dark and elegant decor) {prompt}",
+        "negative_prompt": "Casual beach wedding"
+    },
+    {
+        "name": "Gothic Witch's Hut",
+        "prompt": "(Design a Gothic witch's hut deep in a dark forest with bubbling cauldrons) {prompt}",
+        "negative_prompt": "Cozy suburban home"
+    },
+    {
+        "name": "Gothic Wizard's Tower",
+        "prompt": "(Design a Gothic wizard's tower with mystical symbols and swirling clouds) {prompt}",
+        "negative_prompt": "Contemporary science lab"
+    },
+    {
+        "name": "Haunted Castle",
+        "prompt": "(Paint a Gothic-style haunted castle on a hill) {prompt}",
+        "negative_prompt": "Cheerful and colorful castle"
+    },
+    {
+        "name": "Haunted Forest Path",
+        "prompt": "(Paint a Gothic-style forest path with a haunted atmosphere) {prompt}",
+        "negative_prompt": "Paint a sunny and inviting forest path"
+    },
+    {
+        "name": "Haunted Mansion",
+        "prompt": "(Illustrate a Gothic haunted mansion with creeping vines and broken windows) {prompt}",
+        "negative_prompt": "Meticulously maintained estate"
+    },
+    {
+        "name": "Macabre Artifacts",
+        "prompt": "(Create a Gothic still life with macabre artifacts) {prompt}",
+        "negative_prompt": "Bright and cheerful still life"
+    },
+    {
+        "name": "Medieval Manuscript",
+        "prompt": "(Illustrate a page from a Gothic-style medieval manuscript) {prompt}",
+        "negative_prompt": "Modern and digital design"
+    },
+    {
+        "name": "Moonlit Catacombs",
+        "prompt": "(Paint the eerie atmosphere of moonlit catacombs) {prompt}",
+        "negative_prompt": "Well-lit and organized catacombs"
+    },
+    {
+        "name": "Mysterious Forest",
+        "prompt": "(Create a Gothic-inspired forest scene shrouded in mist) {prompt}",
+        "negative_prompt": "Open and sunny forest"
+    },
+    {
+        "name": "Sinister Manor",
+        "prompt": "(Design a Gothic-style sinister manor) {prompt}",
+        "negative_prompt": "Friendly and welcoming manor"
+    },
+    {
+        "name": "Sinister Monastery",
+        "prompt": "(Paint a Gothic monastery with an ominous atmosphere) {prompt}",
+        "negative_prompt": "Serene and tranquil monastery"
+    },
+    {
+        "name": "Spectral Apparitions",
+        "prompt": "(Create a Gothic painting featuring spectral apparitions) {prompt}",
+        "negative_prompt": "Create a painting with happy, non-spectral figures"
+    },
+
+    {
+        "name": "Phantom Opera",
+        "prompt": "(Create a Gothic-style scene from The Phantom of the Opera) {prompt}",
+        "negative_prompt": "Upbeat and comedic scene"
+    },
+    {
+        "name": "Vampire's Lair",
+        "prompt": "(Illustrate a Gothic vampire's lair with dripping candles and ancient books) {prompt}",
+        "negative_prompt": "Modern and sterile"
+    },
+    {
+        "name": "Victorian Mourning",
+        "prompt": "(Create a Gothic-style portrait of a Victorian mourning scene) {prompt}",
+        "negative_prompt": "Joyous Victorian celebration"
+    },
+    {
+        "name": "Witches' Coven",
+        "prompt": "(Design a Gothic witches' coven gathering with potions and spells) {prompt}",
+        "negative_prompt": "Ordinary neighborhood gathering"
+    },
+    {
+        "name": "Witching Hour",
+        "prompt": "(Paint a Gothic scene during the witching hour) {prompt}",
+        "negative_prompt": "Daytime and mundane scene"
+    }
+]

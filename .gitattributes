@@ -1,0 +1,13 @@
+# Exclude examples folder and related content from git archive/export
+
+*.mp4 export-ignore
+*.gif export-ignore
+
+# Treat mp4 files as binary
+*.mp4 binary
+
+# Treat large media files as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary

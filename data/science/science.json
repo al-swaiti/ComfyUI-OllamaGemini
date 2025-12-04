@@ -1,0 +1,707 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Andromeda (Spiral galaxy)",
+        "prompt": "Astronomical image of {prompt}, featuring (spiral structure, vast star fields)",
+        "negative_prompt": "terrestrial scene, small scale, non-galactic objects"
+    },
+    {
+        "name": "Big Bang (Origin of the universe theory)",
+        "prompt": "Conceptual representation of {prompt}, showcasing (cosmic expansion, primordial energy)",
+        "negative_prompt": "modern universe, formed structures, lack of chaos"
+    },
+    {
+        "name": "Black hole (Gravitational singularity)",
+        "prompt": "Astronomical visualization of {prompt}, highlighting (event horizon, gravitational lensing)",
+        "negative_prompt": "visible interior, lack of gravitational effects, bright emission"
+    },
+    {
+        "name": "Comet (Icy small solar system body)",
+        "prompt": "Astronomical image of {prompt}, featuring (icy nucleus, glowing coma)",
+        "negative_prompt": "stationary object, lack of tail, terrestrial background"
+    },
+    {
+        "name": "Comet trail (Debris left by a comet)",
+        "prompt": "Astronomical visualization of {prompt}, showcasing (dust and gas trail, solar wind interaction)",
+        "negative_prompt": "meteor shower, planetary rings, lack of directionality"
+    },
+    {
+        "name": "Dark energy (Hypothetical form of energy)",
+        "prompt": "Conceptual representation of {prompt}, illustrating (cosmic expansion, large-scale structure)",
+        "negative_prompt": "visible energy, small scale effects, gravitational contraction"
+    },
+    {
+        "name": "Dark matter (Unobservable matter)",
+        "prompt": "Scientific visualization of {prompt}, featuring (gravitational effects, galaxy rotation curves)",
+        "negative_prompt": "visible matter, bright emission, lack of gravitational influence"
+    },
+    {
+        "name": "Exoplanet (Planet outside the solar system)",
+        "prompt": "Astronomical visualization of {prompt}, showcasing (alien world, host star)",
+        "negative_prompt": "Earth-like features, solar system planets, lack of alien characteristics"
+    },
+    {
+        "name": "Galaxy (Large system of stars)",
+        "prompt": "Astronomical image of {prompt}, highlighting (spiral or elliptical structure, diverse star populations)",
+        "negative_prompt": "single star system, small scale, terrestrial objects"
+    },
+    {
+        "name": "Jupiter (Largest planet in our solar system)",
+        "prompt": "Astronomical visualization of {prompt}, featuring (great red spot, banded atmosphere)",
+        "negative_prompt": "rocky surface, thin atmosphere, small size"
+    },
+    {
+        "name": "Mars (Fourth planet from the Sun)",
+        "prompt": "Astronomical image of {prompt}, showcasing (red surface, polar ice caps)",
+        "negative_prompt": "lush vegetation, blue oceans, thick atmosphere"
+    },
+    {
+        "name": "Mercury (Smallest planet in our solar system)",
+        "prompt": "Astronomical visualization of {prompt}, highlighting (cratered surface, extreme temperature variations)",
+        "negative_prompt": "thick atmosphere, surface water, large size"
+    },
+    {
+        "name": "Messier (Catalogue of astronomical objects)",
+        "prompt": "Composite image of {prompt} objects, featuring (diverse celestial bodies, deep-sky objects)",
+        "negative_prompt": "single object focus, solar system planets, stellar foreground"
+    },
+    {
+        "name": "Meteor (Small body entering Earth's atmosphere)",
+        "prompt": "Astronomical visualization of {prompt}, showcasing (bright trail, atmospheric entry)",
+        "negative_prompt": "stationary object, space environment, lack of atmosphere"
+    },
+    {
+        "name": "Meteorite (Meteor that reaches Earth's surface)",
+        "prompt": "Scientific image of {prompt}, featuring (fusion crust, impact characteristics)",
+        "negative_prompt": "celestial environment, glowing trail, atmospheric phenomena"
+    },
+    {
+        "name": "Milky Way (Our galaxy)",
+        "prompt": "Astronomical image of {prompt}, highlighting (galactic core, spiral arms, star fields)",
+        "negative_prompt": "external galaxy view, empty space, single star system"
+    },
+    {
+        "name": "Nebula (Interstellar cloud of gas and dust)",
+        "prompt": "Astronomical visualization of {prompt}, showcasing (colorful gas clouds, star formation regions)",
+        "negative_prompt": "empty space, terrestrial clouds, lack of cosmic scale"
+    },
+    {
+        "name": "Nebulae (Multiple interstellar clouds)",
+        "prompt": "Composite image of {prompt}, featuring (diverse nebula types, vast cosmic landscapes)",
+        "negative_prompt": "single nebula, planetary surfaces, stellar foreground"
+    },
+    {
+        "name": "Neptune (Eighth planet from the Sun)",
+        "prompt": "Astronomical visualization of {prompt}, highlighting (blue color, dynamic atmosphere)",
+        "negative_prompt": "rocky surface, rings like Saturn, small size"
+    },
+    {
+        "name": "Planet (Celestial body orbiting a star)",
+        "prompt": "Astronomical image of {prompt}, showcasing (diverse planetary characteristics, orbital context)",
+        "negative_prompt": "stellar features, interstellar medium, lack of defined surface"
+    },
+    {
+        "name": "Pleiades (Star cluster)",
+        "prompt": "Astronomical visualization of {prompt}, featuring (bright blue stars, surrounding nebulosity)",
+        "negative_prompt": "single star, galaxy structure, deep space objects"
+    },
+    {
+        "name": "Pluto (Dwarf planet)",
+        "prompt": "Astronomical image of {prompt}, highlighting (icy surface, small size, distant orbit)",
+        "negative_prompt": "large gas giant features, close solar proximity, thick atmosphere"
+    },
+    {
+        "name": "Ringed planet (Planet with prominent rings)",
+        "prompt": "Astronomical visualization of {prompt}, showcasing (complex ring system, planetary body)",
+        "negative_prompt": "lack of rings, asteroid belt, comet-like features"
+    },
+    {
+        "name": "Saturn (Sixth planet from the Sun)",
+        "prompt": "Astronomical image of {prompt}, featuring (prominent ring system, hexagonal pole)",
+        "negative_prompt": "rocky surface, lack of rings, small size"
+    },
+    {
+        "name": "Spiral galaxy (Galaxy with spiral structure)",
+        "prompt": "Astronomical visualization of {prompt}, highlighting (spiral arms, central bulge, star-forming regions)",
+        "negative_prompt": "elliptical shape, small star cluster, planetary system"
+    },
+    {
+        "name": "Star (Luminous sphere of plasma)",
+        "prompt": "Astronomical image of {prompt}, showcasing (stellar characteristics, energy emission)",
+        "negative_prompt": "planet-like features, solid surface, lack of luminosity"
+    },
+    {
+        "name": "Star cluster (Group of stars)",
+        "prompt": "Astronomical visualization of {prompt}, featuring (dense collection of stars, shared motion)",
+        "negative_prompt": "single star, galaxy structure, interstellar medium"
+    },
+    {
+        "name": "Uranus (Seventh planet from the Sun)",
+        "prompt": "Astronomical image of {prompt}, highlighting (blue-green color, tilted axis)",
+        "negative_prompt": "prominent rings, great red spot, small size"
+    },
+    {
+        "name": "Venus (Second planet from the Sun)",
+        "prompt": "Astronomical visualization of {prompt}, showcasing (thick atmosphere, surface hidden by clouds)",
+        "negative_prompt": "visible surface features, thin atmosphere, Earth-like appearance"
+    },
+    {
+        "name": "Worm hole (Hypothetical topological feature of spacetime)",
+        "prompt": "Conceptual visualization of {prompt}, highlighting (spacetime curvature, connection between distant points)",
+        "negative_prompt": "flat space, simple tunnel, lack of exotic physics"
+    },
+    {
+        "name": "Actinium (Radioactive metal)",
+        "prompt": "Scientific visualization of {prompt}, featuring (atomic structure, radioactive decay)",
+        "negative_prompt": "stable element, non-metallic properties, lack of radioactive symbols"
+    },
+    {
+        "name": "Aluminum (Lightweight metal)",
+        "prompt": "Scientific illustration of {prompt}, showcasing (metallic structure, lightweight properties)",
+        "negative_prompt": "heavy metal appearance, non-metallic characteristics, complex compound"
+    },
+    {
+        "name": "Americium (Synthetic radioactive element)",
+        "prompt": "Scientific visualization of {prompt}, highlighting (atomic structure, radioactive properties)",
+        "negative_prompt": "naturally occurring element, stable isotope, non-metallic appearance"
+    },
+    {
+        "name": "Antimony (Metalloid element)",
+        "prompt": "Scientific illustration of {prompt}, featuring (crystalline structure, semi-metallic properties)",
+        "negative_prompt": "pure metal appearance, gaseous state, organic compound"
+    },
+    {
+        "name": "Argon (Noble gas)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (atomic structure, inert properties)",
+        "negative_prompt": "reactive behavior, solid form, complex molecular structure"
+    },
+    {
+        "name": "Arsenic (Metalloid element)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (atomic structure, toxicity symbols)",
+        "negative_prompt": "benign substance, pure metal appearance, gaseous state"
+    },
+    {
+        "name": "Astatine (Radioactive halogen)",
+        "prompt": "Scientific visualization of {prompt}, featuring (atomic structure, radioactive decay)",
+        "negative_prompt": "stable element, abundant material, non-radioactive properties"
+    },
+    {
+        "name": "Barium (Alkaline earth metal)",
+        "prompt": "Scientific illustration of {prompt}, showcasing (atomic structure, reactivity with water)",
+        "negative_prompt": "inert behavior, non-metallic properties, gaseous state"
+    },
+    {
+        "name": "Berkelium (Synthetic actinide element)",
+        "prompt": "Scientific visualization of {prompt}, highlighting (atomic structure, radioactive properties)",
+        "negative_prompt": "naturally occurring element, stable isotope, non-metallic appearance"
+    },
+    {
+        "name": "Beryllium (Alkaline earth metal)",
+        "prompt": "Scientific illustration of {prompt}, featuring (atomic structure, lightweight properties)",
+        "negative_prompt": "heavy metal appearance, liquid state, complex compound"
+    },
+    {
+        "name": "Bismuth (Post-transition metal)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (crystalline structure, iridescent oxidation)",
+        "negative_prompt": "non-metallic appearance, radioactive properties, gaseous state"
+    },
+    {
+        "name": "Bohrium (Synthetic chemical element)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (atomic structure, periodic table position)",
+        "negative_prompt": "naturally occurring element, stable isotope, macroscopic sample"
+    },
+    {
+        "name": "Boron (Metalloid element)",
+        "prompt": "Scientific visualization of {prompt}, featuring (atomic structure, semiconductor properties)",
+        "negative_prompt": "pure metal appearance, liquid state, noble gas configuration"
+    },
+    {
+        "name": "Bromine (Halogen element)",
+        "prompt": "Scientific illustration of {prompt}, showcasing (diatomic molecule, reddish-brown color)",
+        "negative_prompt": "colorless gas, solid metal, non-reactive properties"
+    },
+    {
+        "name": "Cadmium (Transition metal)",
+        "prompt": "Scientific visualization of {prompt}, highlighting (atomic structure, toxicity symbols)",
+        "negative_prompt": "non-toxic substance, non-metallic properties, gaseous state"
+    },
+    {
+        "name": "Calcium (Alkaline earth metal)",
+        "prompt": "Scientific illustration of {prompt}, featuring (atomic structure, reactivity with water)",
+        "negative_prompt": "inert behavior, non-metallic properties, liquid state"
+    },
+    {
+        "name": "Californium (Synthetic actinide element)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (atomic structure, radioactive properties)",
+        "negative_prompt": "naturally occurring element, stable isotope, non-metallic appearance"
+    },
+    {
+        "name": "Carbon (Versatile non-metal element)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (various allotropes, bonding capabilities)",
+        "negative_prompt": "metallic appearance, single allotrope, lack of organic context"
+    },
+    {
+        "name": "Cerium (Lanthanide element)",
+        "prompt": "Scientific visualization of {prompt}, featuring (atomic structure, rare earth properties)",
+        "negative_prompt": "common element appearance, non-metallic properties, gaseous state"
+    },
+    {
+        "name": "Cesium (Alkali metal)",
+        "prompt": "Scientific illustration of {prompt}, showcasing (atomic structure, extreme reactivity)",
+        "negative_prompt": "inert behavior, non-metallic properties, high melting point"
+    },
+    {
+        "name": "Chlorine (Halogen element)",
+        "prompt": "Scientific visualization of {prompt}, highlighting (diatomic molecule, yellowish-green color)",
+        "negative_prompt": "colorless gas, solid metal, non-reactive properties"
+    },
+    {
+        "name": "Chromium (Transition metal)",
+        "prompt": "Scientific illustration of {prompt}, featuring (atomic structure, shiny metallic appearance)",
+        "negative_prompt": "dull surface, non-metallic properties, liquid state"
+    },
+    {
+        "name": "Cobalt (Transition metal)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (atomic structure, magnetic properties)",
+        "negative_prompt": "non-magnetic behavior, non-metallic appearance, gaseous state"
+    },
+    {
+        "name": "Copernicium (Synthetic chemical element)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (atomic structure, periodic table position)",
+        "negative_prompt": "naturally occurring element, stable isotope, macroscopic sample"
+    },
+    {
+        "name": "Copper (Transition metal)",
+        "prompt": "Scientific visualization of {prompt}, featuring (atomic structure, reddish-orange color)",
+        "negative_prompt": "non-metallic appearance, poor conductivity, colorless material"
+    },
+    {
+        "name": "Curium (Synthetic actinide element)",
+        "prompt": "Scientific illustration of {prompt}, showcasing (atomic structure, radioactive properties)",
+        "negative_prompt": "naturally occurring element, stable isotope, non-metallic appearance"
+    },
+    {
+        "name": "Darmstadtium (Synthetic chemical element)",
+        "prompt": "Scientific visualization of {prompt}, highlighting (atomic structure, periodic table position)",
+        "negative_prompt": "naturally occurring element, stable isotope, macroscopic sample"
+    },
+    {
+        "name": "Dubnium (Synthetic chemical element)",
+        "prompt": "Scientific illustration of {prompt}, featuring (atomic structure, periodic table position)",
+        "negative_prompt": "naturally occurring element, stable isotope, macroscopic sample"
+    },
+    {
+        "name": "Dysprosium (Lanthanide element)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (atomic structure, rare earth properties)",
+        "negative_prompt": "common element appearance, non-metallic properties, gaseous state"
+    },
+    {
+        "name": "Einsteinium (Synthetic actinide element)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (atomic structure, radioactive properties)",
+        "negative_prompt": "naturally occurring element, stable isotope, non-metallic appearance"
+    },
+    {
+        "name": "Dysprosium (Lanthanide element)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (atomic structure, rare earth properties)",
+        "negative_prompt": "common element appearance, non-metallic properties, gaseous state"
+    },
+    {
+        "name": "Einsteinium (Synthetic actinide element)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (atomic structure, radioactive properties)",
+        "negative_prompt": "naturally occurring element, stable isotope, non-metallic appearance"
+    },
+    {
+        "name": "Element 113 (Nihonium)",
+        "prompt": "Scientific visualization of {prompt}, featuring (atomic structure, synthetic properties)",
+        "negative_prompt": "naturally occurring element, stable isotope, macroscopic sample"
+    },
+    {
+        "name": "Neuron (Nerve cell)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (cell body, axon, dendrites)",
+        "negative_prompt": "non-cellular structure, plant cell, blood cell"
+    },
+    {
+        "name": "Red Blood Cell (Erythrocyte)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (biconcave shape, lack of nucleus)",
+        "negative_prompt": "nucleated cell, white color, angular shape"
+    },
+    {
+        "name": "Stem Cell (Undifferentiated cell)",
+        "prompt": "Scientific illustration of {prompt}, featuring (cell division, differentiation potential)",
+        "negative_prompt": "fully differentiated cell, specialized structures, aged appearance"
+    },
+    {
+        "name": "Circulatory System",
+        "prompt": "Anatomical illustration of {prompt}, highlighting (heart, blood vessels, blood flow)",
+        "negative_prompt": "single organ focus, skeletal structure, nervous system"
+    },
+    {
+        "name": "Respiratory System",
+        "prompt": "Scientific visualization of {prompt}, showcasing (lungs, airways, gas exchange)",
+        "negative_prompt": "digestive organs, circulatory focus, skeletal structure"
+    },
+    {
+        "name": "Immune System",
+        "prompt": "Conceptual representation of {prompt}, featuring (white blood cells, lymph nodes, antibodies)",
+        "negative_prompt": "single organ focus, skeletal structure, nervous system"
+    },
+    {
+        "name": "Theory of Evolution",
+        "prompt": "Conceptual illustration of {prompt}, showcasing (natural selection, species diversity, adaptation)",
+        "negative_prompt": "static environment, single species focus, non-biological elements"
+    },
+    {
+        "name": "Theory of Relativity",
+        "prompt": "Scientific visualization of {prompt}, highlighting (spacetime curvature, time dilation)",
+        "negative_prompt": "Newtonian physics, flat space, absolute time"
+    },
+    {
+        "name": "Quantum Theory",
+        "prompt": "Conceptual representation of {prompt}, featuring (wave-particle duality, uncertainty principle)",
+        "negative_prompt": "classical physics, deterministic model, macroscopic objects"
+    },
+    {
+        "name": "Electron Microscope",
+        "prompt": "Scientific illustration of {prompt}, showcasing (electron beam, magnetic lenses, sample chamber)",
+        "negative_prompt": "optical microscope, large scale view, non-scientific setting"
+    },
+    {
+        "name": "Particle Accelerator",
+        "prompt": "Technical visualization of {prompt}, highlighting (acceleration tunnel, magnets, collision point)",
+        "negative_prompt": "small laboratory equipment, non-scientific setting, organic structures"
+    },
+    {
+        "name": "DNA Sequencer",
+        "prompt": "Scientific representation of {prompt}, featuring (sample preparation, sequencing chips, data output)",
+        "negative_prompt": "old technology, non-biological equipment, large scale machinery"
+    },
+    {
+        "name": "Platypus (Monotreme mammal)",
+        "prompt": "Natural history illustration of {prompt}, highlighting (duck-like bill, webbed feet, fur)",
+        "negative_prompt": "scales, feathers, typical mammalian features"
+    },
+    {
+        "name": "Giant Squid (Deep-sea cephalopod)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (elongated body, large eyes, tentacles)",
+        "negative_prompt": "shallow water setting, small size, fish-like features"
+    },
+    {
+        "name": "Tardigrade (Microscopic water bear)",
+        "prompt": "Microscopic view of {prompt}, featuring (segmented body, eight legs, resilient nature)",
+        "negative_prompt": "large size, insect-like appearance, aquatic setting"
+    },
+    {
+        "name": "Photosynthesis (Plant energy production)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (chloroplasts, light absorption, glucose production)",
+        "negative_prompt": "animal cells, darkness, industrial process"
+    },
+    {
+        "name": "Plate Tectonics (Earth's crust movement)",
+        "prompt": "Geological visualization of {prompt}, showcasing (continental drift, seafloor spreading, subduction zones)",
+        "negative_prompt": "static earth, single continent, non-geological features"
+    },
+    {
+        "name": "Carbon Cycle (Biogeochemical cycle)",
+        "prompt": "Conceptual representation of {prompt}, featuring (atmospheric CO2, oceanic absorption, biological processes)",
+        "negative_prompt": "single ecosystem focus, non-carbon elements, industrial setting"
+    },
+    {
+        "name": "X-ray (High-energy electromagnetic radiation)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (high-frequency waves, electromagnetic spectrum)",
+        "negative_prompt": "visible light, low-frequency waves, lack of ionizing energy"
+    },
+    {
+        "name": "Yeast cell (Single-celled fungi)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (cell membrane, budding reproduction)",
+        "negative_prompt": "multicellular structure, lack of cell wall, non-living object"
+    },
+    {
+        "name": "Zygote (Fertilized egg cell)",
+        "prompt": "Scientific visualization of {prompt}, featuring (cell division, early embryonic stage)",
+        "negative_prompt": "unfertilized egg, single nucleus, fully developed organism"
+    },
+    {
+        "name": "DNA replication (Process of copying DNA)",
+        "prompt": "Scientific illustration of {prompt}, showcasing (DNA polymerase, double helix structure)",
+        "negative_prompt": "non-biological structure, static DNA, lack of replication activity"
+    },
+    {
+        "name": "Photosynthesis (Conversion of light energy into chemical energy)",
+        "prompt": "Scientific illustration of {prompt}, featuring (chloroplasts, light absorption)",
+        "negative_prompt": "lack of chlorophyll, animal cells, absence of light source"
+    },
+    {
+        "name": "Cell division (Process of cell replication)",
+        "prompt": "Scientific visualization of {prompt}, highlighting (mitosis, cytokinesis, chromosome segregation)",
+        "negative_prompt": "single cell state, non-replicating cells, absence of chromosomes"
+    },
+    {
+        "name": "Electromagnetic wave (Wave propagation of electric and magnetic fields)",
+        "prompt": "Scientific illustration of {prompt}, featuring (electric and magnetic field interactions, wave propagation)",
+        "negative_prompt": "non-wave structure, static field, low frequency"
+    },
+    {
+        "name": "Gravitational wave (Ripples in spacetime caused by massive objects)",
+        "prompt": "Scientific visualization of {prompt}, highlighting (spacetime curvature, wave propagation)",
+        "negative_prompt": "static spacetime, lack of curvature, lack of motion"
+    },
+    {
+        "name": "Black hole (Region of spacetime with strong gravitational effects)",
+        "prompt": "Astronomical visualization of {prompt}, featuring (event horizon, gravitational pull)",
+        "negative_prompt": "lack of gravitational distortion, visible surface, terrestrial structure"
+    },
+    {
+        "name": "Neutrino (Subatomic particle with extremely low mass)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (subatomic scale, weak interactions)",
+        "negative_prompt": "macroscopic particles, strong interactions, visible structure"
+    },
+    {
+        "name": "Dark matter (Hypothetical form of matter)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (gravitational effects, lack of interaction with electromagnetic radiation)",
+        "negative_prompt": "visible matter, electromagnetic interaction, non-hypothetical substance"
+    },
+    {
+        "name": "Dark energy (Hypothetical form of energy causing universe expansion)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (universe expansion, cosmological constant)",
+        "negative_prompt": "visible energy source, stationary universe, lack of expansion"
+    },
+    {
+        "name": "Exoplanet (Planet outside the solar system)",
+        "prompt": "Astronomical image of {prompt}, featuring (distant star system, unique planetary atmosphere)",
+        "negative_prompt": "solar system planets, terrestrial view, absence of star"
+    },
+    {
+        "name": "Galaxy (Massive system of stars, gas, and dust)",
+        "prompt": "Astronomical visualization of {prompt}, showcasing (spiral structure, star clusters)",
+        "negative_prompt": "single star, lack of galactic structure, absence of clusters"
+    },
+    {
+        "name": "Galaxy cluster (Group of galaxies bound by gravity)",
+        "prompt": "Astronomical image of {prompt}, highlighting (massive structures, intergalactic gas)",
+        "negative_prompt": "single galaxy, absence of gas, small scale"
+    },
+    {
+        "name": "Cosmic microwave background (CMB radiation)",
+        "prompt": "Astronomical visualization of {prompt}, featuring (early universe, thermal radiation map)",
+        "negative_prompt": "terrestrial radiation, visible light, small scale"
+    },
+    {
+        "name": "Quantum entanglement (Quantum state linking particles)",
+        "prompt": "Scientific visualization of {prompt}, highlighting (non-local interactions, entangled states)",
+        "negative_prompt": "classical particle interactions, single particle, lack of non-locality"
+    },
+    {
+        "name": "Photon (Quantum of light)",
+        "prompt": "Scientific illustration of {prompt}, featuring (wave-particle duality, electromagnetic interactions)",
+        "negative_prompt": "non-quantized light, macroscopic structure, classical wave"
+    },
+    {
+        "name": "Positron (Antiparticle of electron)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (opposite charge, particle-antiparticle annihilation)",
+        "negative_prompt": "electron, lack of annihilation interaction, visible structure"
+    },
+    {
+        "name": "Higgs boson (Particle responsible for mass)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (mass interactions, Higgs field)",
+        "negative_prompt": "non-Higgs particle, macroscopic structure, classical physics"
+    },
+    {
+    "name": "Neuron (Nerve cell)",
+    "prompt": "Scientific illustration of {prompt}, highlighting (axon, dendrites, synapse connections)",
+    "negative_prompt": "non-biological structure, lack of neural network, large scale"
+    },
+    {
+    "name": "Neuron network (Group of interconnected neurons)",
+    "prompt": "Scientific visualization of {prompt}, showcasing (complex connections, neural pathways)",
+    "negative_prompt": "single neuron, simple structure, lack of connections"
+    },
+    {
+    "name": "Nuclear fission (Splitting of atomic nuclei)",
+    "prompt": "Scientific illustration of {prompt}, highlighting (energy release, chain reaction)",
+    "negative_prompt": "lack of atomic structure, stable atom, lack of energy emission"
+    },
+    {
+    "name": "Nuclear fusion (Combining atomic nuclei)",
+    "prompt": "Scientific visualization of {prompt}, featuring (energy release, plasma state)",
+    "negative_prompt": "lack of atomic structure, stable atom, lack of energy emission"
+    },
+    {
+    "name": "Particle accelerator (Device that accelerates subatomic particles)",
+    "prompt": "Scientific image of {prompt}, showcasing (beamline, electromagnetic fields)",
+    "negative_prompt": "stationary object, lack of motion, macroscopic structure"
+    },
+    {
+    "name": "Plasma (Fourth state of matter)",
+    "prompt": "Scientific visualization of {prompt}, highlighting (ionized gas, high temperature)",
+    "negative_prompt": "solid state, non-ionized state, lack of energy"
+    },
+    {
+    "name": "Protein (Biological macromolecule)",
+    "prompt": "Scientific illustration of {prompt}, showcasing (amino acid chains, folded structures)",
+    "negative_prompt": "non-biological molecules, simple shapes, single atom"
+    },
+    {
+    "name": "Quantum field (Underlying field of particle physics)",
+    "prompt": "Scientific visualization of {prompt}, featuring (quantum fluctuations, particle interactions)",
+    "negative_prompt": "classical field, lack of wave-particle duality, macroscopic objects"
+    },
+    {
+    "name": "Quark (Fundamental particle)",
+    "prompt": "Scientific illustration of {prompt}, highlighting (subatomic properties, quark interactions)",
+    "negative_prompt": "macroscopic structure, lack of subatomic scale, classical physics behavior"
+    },
+    {
+    "name": "RNA (Ribonucleic acid)",
+    "prompt": "Scientific visualization of {prompt}, showcasing (single-stranded structure, nucleotide sequence)",
+    "negative_prompt": "double-stranded structure, lack of nucleotide components, large scale"
+    },
+    {
+    "name": "Solar flare (Burst of solar radiation)",
+    "prompt": "Astronomical image of {prompt}, highlighting (intense radiation, magnetic field interactions)",
+    "negative_prompt": "terrestrial light source, lack of radiation, static appearance"
+    },
+    {
+    "name": "Solar system (System of planets around a star)",
+    "prompt": "Astronomical visualization of {prompt}, featuring (planetary orbits, central star)",
+    "negative_prompt": "single planet, lack of star, isolated celestial objects"
+    },
+    {
+    "name": "Space station (Habitat in outer space)",
+    "prompt": "Scientific image of {prompt}, showcasing (modular structure, solar panels)",
+    "negative_prompt": "terrestrial structure, lack of space environment, small size"
+    },
+    {
+    "name": "Star formation (Birth of stars from gas clouds)",
+    "prompt": "Astronomical image of {prompt}, highlighting (collapsing gas clouds, protostar formation)",
+    "negative_prompt": "empty space, formed star, lack of gas and dust"
+    },
+    {
+    "name": "Supernova (Explosion of a massive star)",
+    "prompt": "Astronomical image of {prompt}, showcasing (stellar explosion, shockwave expansion)",
+    "negative_prompt": "stable star, small scale, lack of energy release"
+    },
+    {
+    "name": "Telescope (Instrument for observing distant objects)",
+    "prompt": "Scientific image of {prompt}, featuring (optical lenses, observational equipment)",
+    "negative_prompt": "non-optical device, lack of precision, terrestrial focus"
+    },
+    {
+    "name": "Transistor (Semiconductor device)",
+    "prompt": "Scientific illustration of {prompt}, highlighting (semiconductor properties, electronic circuits)",
+    "negative_prompt": "lack of conductivity, non-electronic material, single structure"
+    },
+    {
+    "name": "Volcano (Opening in Earth's crust)",
+    "prompt": "Scientific image of {prompt}, featuring (lava flow, volcanic eruption)",
+    "negative_prompt": "calm landscape, lack of eruption, non-volcanic structure"
+    },
+    {
+    "name": "Wormhole (Hypothetical spacetime structure)",
+    "prompt": "Scientific visualization of {prompt}, highlighting (spacetime curvature, exotic matter interactions)",
+    "negative_prompt": "flat spacetime, lack of curvature, simple space structure"
+    },
+    {
+        "name": "Neutron star (Collapsed core of a massive star)",
+        "prompt": "Astronomical visualization of {prompt}, highlighting (dense matter, neutron-rich composition)",
+        "negative_prompt": "regular star, lack of density, visible surface features"
+    },
+    {
+        "name": "Supernova (Explosion of a massive star)",
+        "prompt": "Astronomical image of {prompt}, featuring (explosive energy release, bright nebula)",
+        "negative_prompt": "stationary star, lack of luminosity, absence of nebula"
+    },
+    {
+        "name": "White dwarf (Remnant of a low-mass star)",
+        "prompt": "Astronomical visualization of {prompt}, showcasing (small, dense structure, stellar remnant)",
+        "negative_prompt": "main-sequence star, large size, non-dense object"
+    },
+    {
+        "name": "Pulsar (Rapidly rotating neutron star)",
+        "prompt": "Astronomical image of {prompt}, highlighting (pulsing radio emissions, strong magnetic field)",
+        "negative_prompt": "steady radio emissions, lack of magnetic field, non-rotating star"
+    },
+    {
+        "name": "Quasar (Highly luminous active galactic nucleus)",
+        "prompt": "Astronomical visualization of {prompt}, featuring (bright core, massive black hole)",
+        "negative_prompt": "dim core, absence of black hole, terrestrial structure"
+    },
+    {
+        "name": "Planetary nebula (Emission nebula formed by ejected gas)",
+        "prompt": "Astronomical image of {prompt}, showcasing (ionized gas, colorful shell structures)",
+        "negative_prompt": "lack of ionized gas, static star, absence of shell"
+    },
+    {
+        "name": "Binary star (Two stars orbiting a common center)",
+        "prompt": "Astronomical visualization of {prompt}, highlighting (mutual orbit, shared gravitational influence)",
+        "negative_prompt": "single star, lack of orbital motion, terrestrial view"
+    },
+    {
+        "name": "Asteroid (Small rocky body orbiting the sun)",
+        "prompt": "Astronomical image of {prompt}, featuring (rocky texture, irregular shape)",
+        "negative_prompt": "smooth surface, spherical shape, lack of rocky texture"
+    },
+    {
+        "name": "Comet (Icy body with a tail when near the sun)",
+        "prompt": "Astronomical visualization of {prompt}, highlighting (glowing coma, extended tail structure)",
+        "negative_prompt": "absence of coma, no tail, rocky structure"
+    },
+    {
+        "name": "Aurora (Natural light display in Earth's sky)",
+        "prompt": "Astronomical image of {prompt}, showcasing (vibrant colors, magnetic field interactions)",
+        "negative_prompt": "lack of colors, daytime sky, absence of magnetic influence"
+    },
+    {
+        "name": "Blackbody radiation (Idealized physical body absorbing all incident light)",
+        "prompt": "Scientific illustration of {prompt}, featuring (thermal radiation spectrum, absorption-emission dynamics)",
+        "negative_prompt": "lack of radiation, visible light absorption only, non-idealized surface"
+    },
+    {
+        "name": "Electron (Subatomic particle with negative charge)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (quantum orbitals, electric field interactions)",
+        "negative_prompt": "macroscopic structure, non-quantized orbit, lack of charge"
+    },
+    {
+        "name": "Proton (Subatomic particle with positive charge)",
+        "prompt": "Scientific illustration of {prompt}, highlighting (nucleus composition, strong interactions)",
+        "negative_prompt": "absence of strong interaction, non-subatomic scale, lack of charge"
+    },
+    {
+        "name": "Neutron (Subatomic particle with no charge)",
+        "prompt": "Scientific visualization of {prompt}, showcasing (nucleus stability, neutral charge)",
+        "negative_prompt": "charged particle, lack of stability, absence of nucleus"
+    },
+    {
+        "name": "Tachyon (Hypothetical particle traveling faster than light)",
+        "prompt": "Scientific illustration of {prompt}, featuring (faster-than-light motion, negative mass implications)",
+        "negative_prompt": "light-speed or slower particles, classical motion, lack of hypothetical nature"
+    },
+    {
+        "name": "Neural network (Computational model mimicking brain structure)",
+        "prompt": "Visual representation of {prompt}, highlighting (artificial neurons, interconnected layers)",
+        "negative_prompt": "biological brain structure, absence of layers, non-computational"
+    },
+    {
+        "name": "Neural synapse (Connection between two neurons)",
+        "prompt": "Scientific illustration of {prompt}, showcasing (neurotransmitter exchange, synaptic cleft)",
+        "negative_prompt": "absence of cleft, lack of connection, non-neuronal interaction"
+    },
+    {
+        "name": "Fractal pattern (Self-similar geometrical shape)",
+        "prompt": "Visual representation of {prompt}, featuring (self-repetition, fractal geometry)",
+        "negative_prompt": "non-repeating pattern, lack of self-similarity, absence of geometry"
+    },
+    {
+        "name": "Fractal dimension (Measure of pattern complexity)",
+        "prompt": "Visual representation of {prompt}, showcasing (geometric complexity, scale invariance)",
+        "negative_prompt": "simple patterns, non-complex shapes, lack of scale invariance"
+    },
+    {
+        "name": "Turing machine (Theoretical computing device)",
+        "prompt": "Scientific illustration of {prompt}, featuring (state transitions, tape head movement)",
+        "negative_prompt": "lack of states, non-computational device, absence of tape"
+    }
+]

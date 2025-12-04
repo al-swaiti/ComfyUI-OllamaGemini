@@ -1,0 +1,732 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "A. Quincy Jones",
+        "prompt": "A building in the style of {prompt}, featuring (mid-century modernism, California modernism, indoor-outdoor living)",
+        "negative_prompt": "traditional architecture, ornate details, gothic style"
+    },
+    {
+        "name": "Aldo Rossi",
+        "prompt": "An architectural design by {prompt}, highlighting (neo-rationalism, geometric forms, historical references)",
+        "negative_prompt": "organic architecture, deconstructivism, postmodernism"
+    },
+    {
+        "name": "Aldo van Eyck",
+        "prompt": "A structure designed by {prompt}, showcasing (structuralism, playfulness, human scale)",
+        "negative_prompt": "monumentalism, brutalism, neoclassicism"
+    },
+    {
+        "name": "Alvar Aalto",
+        "prompt": "A building in the style of {prompt}, featuring (organic architecture, Finnish modernism, use of natural materials)",
+        "negative_prompt": "brutalism, high-tech architecture, postmodernism"
+    },
+    {
+        "name": "Álvaro Siza Vieira",
+        "prompt": "An architectural work by {prompt}, highlighting (regionalism, sensitivity to context, minimalist aesthetic)",
+        "negative_prompt": "international style, postmodernism, deconstructivism"
+    },
+    {
+        "name": "Antoni Gaudí",
+        "prompt": "A building designed by {prompt}, showcasing (Catalan modernism, Art Nouveau influences, organic forms)",
+        "negative_prompt": "minimalist architecture, neoclassicism, brutalism"
+    },
+    {
+        "name": "Arata Isozaki",
+        "prompt": "An architectural design by {prompt}, highlighting (postmodernism, metabolism, bold geometric forms)",
+        "negative_prompt": "traditional architecture, minimalist aesthetic, art deco"
+    },
+    {
+        "name": "Archigram",
+        "prompt": "An architectural vision by {prompt}, featuring (futurism, radical design, megastructures)",
+        "negative_prompt": "traditional architecture, vernacular architecture, historicism"
+    },
+    {
+        "name": "Arthur Erickson",
+        "prompt": "A building in the style of {prompt}, showcasing (West Coast modernism, integration with landscape, use of concrete)",
+        "negative_prompt": "classical architecture, Victorian architecture, postmodernism"
+    },
+    {
+        "name": "Arthur Korn",
+        "prompt": "An architectural design by {prompt}, highlighting (expressionism, brick architecture, sculptural forms)",
+        "negative_prompt": "minimalist architecture, international style, neoclassicism"
+    },
+    {
+        "name": "Asymptote Architecture",
+        "prompt": "A structure designed by {prompt}, featuring (digital architecture, parametric design, complex geometries)",
+        "negative_prompt": "traditional architecture, vernacular architecture, minimalist aesthetic"
+    },
+    {
+        "name": "Atelier Bow-Wow",
+        "prompt": "A building in the style of {prompt}, showcasing (pet architecture, micro-architecture, urban interventions)",
+        "negative_prompt": "monumental architecture, brutalism, high-tech architecture"
+    },
+    {
+        "name": "Auguste Perret",
+        "prompt": "An architectural work by {prompt}, highlighting (reinforced concrete, Art Deco influences, structural clarity)",
+        "negative_prompt": "traditional architecture, gothic architecture, postmodernism"
+    },
+    {
+        "name": "B.V. Doshi",
+        "prompt": "A building designed by {prompt}, featuring (Indian modernism, brutalism, sensitivity to climate)",
+        "negative_prompt": "classical architecture, Victorian architecture, art nouveau"
+    },
+    {
+        "name": "Benthem Crouwel Architects",
+        "prompt": "A structure designed by {prompt}, showcasing (Dutch structuralism, functionalism, high-tech architecture)",
+        "negative_prompt": "traditional architecture, postmodernism, deconstructivism"
+    },
+    {
+        "name": "Bernard Khoury",
+        "prompt": "A building in the style of {prompt}, featuring (Lebanese architecture, contextual design, experimental forms)",
+        "negative_prompt": "international style, minimalist aesthetic, neoclassicism"
+    },
+    {
+        "name": "Bernard Tschumi",
+        "prompt": "An architectural work by {prompt}, highlighting (deconstructivism, event architecture, fragmented forms)",
+        "negative_prompt": "traditional architecture, classical architecture, postmodernism"
+    },
+    {
+        "name": "BIG (Bjarke Ingels Group)",
+        "prompt": "A building designed by {prompt}, showcasing (hedonistic sustainability, playful design, contextual integration)",
+        "negative_prompt": "minimalist architecture, brutalism, traditional architecture"
+    },
+    {
+        "name": "Bjarne Mastenbroek",
+        "prompt": "A structure designed by {prompt}, featuring (Dutch architecture, experimental forms, sustainable design)",
+        "negative_prompt": "traditional architecture, classical architecture, postmodernism"
+    },
+    {
+        "name": "C.F. Møller Architects",
+        "prompt": "A building in the style of {prompt}, showcasing (Scandinavian modernism, functionalism, social housing)",
+        "negative_prompt": "art deco, art nouveau, postmodernism"
+    },
+    {
+        "name": "Carlo Mollino",
+        "prompt": "An architectural work by {prompt}, highlighting (Italian modernism, organic forms, eclectic style)",
+        "negative_prompt": "minimalist architecture, international style, brutalism"
+    },
+    {
+        "name": "Carlo Scarpa",
+        "prompt": "A building designed by {prompt}, featuring (Italian modernism, attention to detail, craftsmanship)",
+        "negative_prompt": "brutalism, high-tech architecture, deconstructivism"
+    },
+    {
+        "name": "César Manrique",
+        "prompt": "A structure designed by {prompt}, showcasing (integration with landscape, vernacular architecture, Canarian style)",
+        "negative_prompt": "international style, postmodernism, high-tech architecture"
+    },
+    {
+        "name": "Cesar Pelli",
+        "prompt": "A building in the style of {prompt}, featuring (postmodernism, skyscrapers, glass curtain walls)",
+        "negative_prompt": "traditional architecture, art deco, brutalism"
+    },
+    {
+        "name": "Charles and Ray Eames",
+        "prompt": "A design by {prompt}, highlighting (mid-century modernism, furniture design, industrial design)",
+        "negative_prompt": "traditional design, Victorian design, art nouveau"
+    },
+    {
+        "name": "Charles Gwathmey",
+        "prompt": "An architectural work by {prompt}, showcasing (modernism, geometric forms, minimalist aesthetic)",
+        "negative_prompt": "postmodernism, deconstructivism, classical architecture"
+    },
+    {
+        "name": "Charles Moore",
+        "prompt": "A building designed by {prompt}, featuring (postmodernism, vernacular influences, playful design)",
+        "negative_prompt": "modernism, international style, brutalism"
+    },
+    {
+        "name": "Charles Rennie Mackintosh",
+        "prompt": "A structure designed by {prompt}, showcasing (Art Nouveau, Glasgow Style, geometric patterns)",
+        "negative_prompt": "Victorian architecture, Gothic architecture, neoclassicism"
+    },
+    {
+        "name": "Christian de Portzamparc",
+        "prompt": "A building in the style of {prompt}, featuring (French architecture, urban planning, contextual design)",
+        "negative_prompt": "international style, brutalism, deconstructivism"
+    },
+    {
+        "name": "Claude Parent",
+        "prompt": "An architectural work by {prompt}, highlighting (oblique architecture, function follows form, experimental spaces)",
+        "negative_prompt": "traditional architecture, classical architecture, vernacular architecture"
+    },
+    {
+        "name": "Coop Himmelb(l)au",
+        "prompt": "A building designed by {prompt}, showcasing (deconstructivism, avant-garde design, fragmented forms)",
+        "negative_prompt": "minimalist architecture, international style, postmodernism"
+    },
+    {
+        "name": "Daniel Burnham",
+        "prompt": "A structure designed by {prompt}, featuring (Beaux-Arts architecture, neoclassical style, urban planning)",
+        "negative_prompt": "modernism, art deco, deconstructivism"
+    },
+    {
+        "name": "Daniel Libeskind",
+        "prompt": "A building in the style of {prompt}, showcasing (deconstructivism, angular forms, symbolic meaning)",
+        "negative_prompt": "minimalist architecture, international style, postmodernism"
+    },
+    {
+        "name": "David Adjaye",
+        "prompt": "An architectural work by {prompt}, highlighting (contemporary architecture, use of materials, cultural influences)",
+        "negative_prompt": "traditional architecture, classical architecture, Victorian architecture"
+    },
+    {
+        "name": "David Chipperfield",
+        "prompt": "A building designed by {prompt}, featuring (minimalist aesthetic, attention to detail, contextual sensitivity)",
+        "negative_prompt": "postmodernism, deconstructivism, high-tech architecture"
+    },
+    {
+        "name": "Diébédo Francis Kéré",
+        "prompt": "A structure designed by {prompt}, showcasing (sustainable architecture, vernacular materials, community involvement)",
+        "negative_prompt": "high-tech architecture, international style, brutalism"
+    },
+    {
+        "name": "Dominique Coulon",
+        "prompt": "A building in the style of {prompt}, featuring (French architecture, use of color, materiality)",
+        "negative_prompt": "minimalist aesthetic, international style, neoclassicism"
+    },
+    {
+        "name": "Dominique Perrault",
+        "prompt": "An architectural work by {prompt}, highlighting (French architecture, minimalist aesthetic, use of metal and glass)",
+        "negative_prompt": "traditional architecture, postmodernism, art deco"
+    },
+    {
+        "name": "Eero Saarinen",
+        "prompt": "A building designed by {prompt}, showcasing (mid-century modernism, sculptural forms, futuristic aesthetic)",
+        "negative_prompt": "traditional architecture, classical architecture, Victorian architecture"
+    },
+    {
+        "name": "Eileen Gray",
+        "prompt": "A design by {prompt}, highlighting (Art Deco, furniture design, modernist aesthetic)",
+        "negative_prompt": "traditional design, Victorian design, art nouveau"
+    },
+    {
+        "name": "Eliel Saarinen",
+        "prompt": "An architectural work by {prompt}, featuring (Finnish architecture, Art Nouveau influences, National Romantic style)",
+        "negative_prompt": "minimalist architecture, international style, brutalism"
+    },
+    {
+        "name": "Emilio Ambasz",
+        "prompt": "A building designed by {prompt}, showcasing (green architecture, integration with nature, underground buildings)",
+        "negative_prompt": "traditional architecture, high-tech architecture, deconstructivism"
+    },
+    {
+        "name": "Enric Miralles",
+        "prompt": "A structure designed by {prompt}, featuring (Catalan architecture, organic forms, expressive structures)",
+        "negative_prompt": "minimalist architecture, international style, neoclassicism"
+    },
+    {
+        "name": "Enrique Norten",
+        "prompt": "A building in the style of {prompt}, showcasing (Mexican architecture, contemporary design, contextual sensitivity)",
+        "negative_prompt": "traditional architecture, colonial architecture, postmodernism"
+    },
+    {
+        "name": "Erik Gunnar Asplund",
+        "prompt": "An architectural work by {prompt}, highlighting (Swedish modernism, classicism, functionalism)",
+        "negative_prompt": "art deco, art nouveau, postmodernism"
+    },
+    {
+        "name": "Eva Jiricna",
+        "prompt": "A building designed by {prompt}, featuring (high-tech architecture, use of glass and steel, interior design)",
+        "negative_prompt": "traditional architecture, vernacular architecture, brutalism"
+    },
+    {
+        "name": "F.L. Wright",
+        "prompt": "A building in the style of {prompt}, showcasing (Prairie School, organic architecture, integration with nature)",
+        "negative_prompt": "classical architecture, Victorian architecture, international style"
+    },
+    {
+        "name": "Frank Gehry",
+        "prompt": "An architectural work by {prompt}, highlighting (deconstructivism, titanium cladding, sculptural forms)",
+        "negative_prompt": "minimalist architecture, international style, postmodernism"
+    },
+    {
+        "name": "Frank Lloyd Wright",
+        "prompt": "A building designed by {prompt}, featuring (Prairie School, organic architecture, Usonian houses)",
+        "negative_prompt": "traditional architecture, Victorian architecture, international style"
+    },
+    {
+        "name": "Frederick Law Olmsted",
+        "prompt": "A landscape design by {prompt}, showcasing (landscape architecture, urban parks, public spaces)",
+        "negative_prompt": "formal gardens, French gardens, Italian gardens"
+    },
+    {
+        "name": "Fumihiko Maki",
+        "prompt": "A building in the style of {prompt}, featuring (Japanese architecture, metabolism, contextual sensitivity)",
+        "negative_prompt": "traditional Japanese architecture, postmodernism, deconstructivism"
+    },
+    {
+        "name": "Gae Aulenti",
+        "prompt": "An architectural work by {prompt}, highlighting (Italian design, adaptive reuse, industrial aesthetic)",
+        "negative_prompt": "traditional architecture, classical architecture, Victorian architecture"
+    },
+    {
+        "name": "Gio Ponti",
+        "prompt": "A building designed by {prompt}, showcasing (Italian modernism, eclectic style, decorative details)",
+        "negative_prompt": "minimalist architecture, international style, brutalism"
+    },
+    {
+        "name": "Glenn Murcutt",
+        "prompt": "A structure designed by {prompt}, featuring (Australian architecture, vernacular influences, sustainable design)",
+        "negative_prompt": "international style, postmodernism, high-tech architecture"
+    },
+    {
+        "name": "Gottfried Böhm",
+        "prompt": "A building in the style of {prompt}, showcasing (German Expressionism, sculptural forms, use of concrete)",
+        "negative_prompt": "minimalist architecture, international style, neoclassicism"
+    },
+    {
+        "name": "Hans Scharoun",
+        "prompt": "An architectural work by {prompt}, highlighting (organic architecture, expressionism, flowing spaces)",
+        "negative_prompt": "traditional architecture, classical architecture, postmodernism"
+    },
+    {
+        "name": "Henry Hobson Richardson",
+        "prompt": "A building designed by {prompt}, featuring (Richardsonian Romanesque, Romanesque revival, heavy stone construction)",
+        "negative_prompt": "Gothic architecture, Victorian architecture, modernism"
+    },
+    {
+        "name": "Henry N. Cobb",
+        "prompt": "A structure designed by {prompt}, showcasing (modernism, skyscrapers, Pei Cobb Freed & Partners)",
+        "negative_prompt": "traditional architecture, classical architecture, postmodernism"
+    },
+    {
+        "name": "Herzog & de Meuron",
+        "prompt": "A building in the style of {prompt}, featuring (minimalist aesthetic, materiality, contextual sensitivity)",
+        "negative_prompt": "postmodernism, deconstructivism, high-tech architecture"
+    },
+    {
+        "name": "Hugh Newell Jacobsen",
+        "prompt": "An architectural work by {prompt}, highlighting (modernism, residential architecture, use of light and shadow)",
+        "negative_prompt": "traditional architecture, Victorian architecture, art deco"
+    },
+    {
+        "name": "I.M. Pei",
+        "prompt": "A building designed by {prompt}, showcasing (modernism, geometric forms, use of glass and steel)",
+        "negative_prompt": "postmodernism, deconstructivism, classical architecture"
+    },
+    {
+        "name": "James Stirling",
+        "prompt": "A structure designed by {prompt}, featuring (postmodernism, contextualism, bold forms)",
+        "negative_prompt": "minimalist architecture, international style, brutalism"
+    },
+    {
+        "name": "Jean Nouvel",
+        "prompt": "A building in the style of {prompt}, showcasing (high-tech architecture, innovative materials, contextual sensitivity)",
+        "negative_prompt": "traditional architecture, vernacular architecture, postmodernism"
+    },
+    {
+        "name": "Jean Prouvé",
+        "prompt": "An architectural work by {prompt}, highlighting (prefabrication, metal construction, functionalism)",
+        "negative_prompt": "traditional architecture, classical architecture, art deco"
+    },
+    {
+        "name": "Jean-Marie Tjibaou",
+        "prompt": "A building designed by {prompt}, featuring (Kanak architecture, vernacular influences, cultural center)",
+        "negative_prompt": "international style, postmodernism, high-tech architecture"
+    },
+    {
+        "name": "Jeanne Gang",
+        "prompt": "A structure designed by {prompt}, showcasing (sustainable architecture, innovative materials, social responsibility)",
+        "negative_prompt": "traditional architecture, classical architecture, Victorian architecture"
+    },
+    {
+        "name": "John Andrews",
+        "prompt": "A building in the style of {prompt}, featuring (brutalism, concrete architecture, megastructures)",
+        "negative_prompt": "minimalist architecture, international style, neoclassicism"
+    },
+    {
+        "name": "John Lautner",
+        "prompt": "An architectural work by {prompt}, highlighting (organic architecture, Googie architecture, futuristic forms)",
+        "negative_prompt": "traditional architecture, classical architecture, postmodernism"
+    },
+    {
+        "name": "John Pawson",
+        "prompt": "A building designed by {prompt}, featuring (minimalist aesthetic, natural light, simplicity)",
+        "negative_prompt": "postmodernism, deconstructivism, high-tech architecture"
+    },
+    {
+        "name": "John Portman",
+        "prompt": "A structure designed by {prompt}, showcasing (hotel architecture, atriums, interior spaces)",
+        "negative_prompt": "traditional architecture, classical architecture, Victorian architecture"
+    },
+    {
+        "name": "Jørn Utzon",
+        "prompt": "A building in the style of {prompt}, featuring (organic architecture, expressionism, Sydney Opera House)",
+        "negative_prompt": "minimalist architecture, international style, brutalism"
+    },
+    {
+        "name": "Jun Aoki",
+        "prompt": "An architectural work by {prompt}, highlighting (Japanese architecture, minimalist aesthetic, innovative facades)",
+        "negative_prompt": "traditional Japanese architecture, postmodernism, deconstructivism"
+    },
+    {
+        "name": "Kazuyo Sejima",
+        "prompt": "A building designed by {prompt}, featuring (minimalist aesthetic, transparency, lightness)",
+        "negative_prompt": "postmodernism, deconstructivism, high-tech architecture"
+    },
+    {
+        "name": "Kengo Kuma",
+        "prompt": "A structure designed by {prompt}, showcasing (Japanese architecture, natural materials, contextual sensitivity)",
+        "negative_prompt": "international style, postmodernism, high-tech architecture"
+    },
+    {
+        "name": "Kevin Roche",
+        "prompt": "A building in the style of {prompt}, featuring (postmodernism, contextualism, corporate architecture)",
+        "negative_prompt": "minimalist architecture, international style, brutalism"
+    },
+    {
+        "name": "Kisho Kurokawa",
+        "prompt": "An architectural work by {prompt}, highlighting (metabolism, capsule architecture, futuristic design)",
+        "negative_prompt": "traditional architecture, classical architecture, postmodernism"
+    },
+    {
+        "name": "Le Corbusier",
+        "prompt": "A building designed by {prompt}, showcasing (modernism, five points of architecture, reinforced concrete)",
+        "negative_prompt": "traditional architecture, Victorian architecture, art deco"
+    },
+    {
+        "name": "Lebbeus Woods",
+        "prompt": "An architectural vision by {prompt}, featuring (experimental architecture, drawings, theoretical projects)",
+        "negative_prompt": "built architecture, traditional architecture, vernacular architecture"
+    },
+    {
+        "name": "Lina Bo Bardi",
+        "prompt": "A building in the style of {prompt}, showcasing (Brazilian modernism, social housing, cultural centers)",
+        "negative_prompt": "international style, postmodernism, high-tech architecture"
+    },
+    {
+        "name": "Louis Kahn",
+        "prompt": "An architectural work by {prompt}, highlighting (monumentality, use of light and shadow, materiality)",
+        "negative_prompt": "traditional architecture, classical architecture, Victorian architecture"
+    },
+    {
+        "name": "Louis Sullivan",
+        "prompt": "A building designed by {prompt}, featuring (Chicago School, skyscrapers, ornamentation)",
+        "negative_prompt": "traditional architecture, Victorian architecture, art deco"
+    },
+    {
+        "name": "Ludwig Mies van der Rohe",
+        "prompt": "A structure designed by {prompt}, showcasing (modernism, less is more, glass and steel)",
+        "negative_prompt": "traditional architecture, classical architecture, postmodernism"
+    },
+    {
+        "name": "Marcel Breuer",
+        "prompt": "A building in the style of {prompt}, featuring (Bauhaus, modernism, use of concrete and stone)",
+        "negative_prompt": "traditional architecture, Victorian architecture, art deco"
+    },
+    {
+        "name": "Mario Bellini",
+        "prompt": "An architectural work by {prompt}, highlighting (Italian design, furniture design, industrial design)",
+        "negative_prompt": "traditional design, Victorian design, art nouveau"
+    },
+    {
+        "name": "Mario Botta",
+        "prompt": "A building designed by {prompt}, showcasing (Swiss architecture, geometric forms, use of brick and stone)",
+        "negative_prompt": "minimalist architecture, international style, deconstructivism"
+    },
+    {
+        "name": "Mark Mack",
+        "prompt": "A structure designed by {prompt}, featuring (California architecture, regionalism, sustainable design)",
+        "negative_prompt": "international style, postmodernism, high-tech architecture"
+    },
+    {
+        "name": "Mecanoo",
+        "prompt": "A building in the style of {prompt}, showcasing (Dutch architecture, human scale, contextual sensitivity)",
+        "negative_prompt": "international style, brutalism, deconstructivism"
+    },
+    {
+        "name": "Michael Arad",
+        "prompt": "An architectural work by {prompt}, highlighting (memorial architecture, World Trade Center Memorial, public spaces)",
+        "negative_prompt": "traditional architecture, classical architecture, Victorian architecture"
+    },
+    {
+        "name": "Michael Graves",
+        "prompt": "A building designed by {prompt}, featuring (postmodernism, historical references, playful design)",
+        "negative_prompt": "modernism, international style, brutalism"
+    },
+    {
+        "name": "Michel Rojkind",
+        "prompt": "A structure designed by {prompt}, showcasing (Mexican architecture, contemporary design, bold forms)",
+        "negative_prompt": "traditional architecture, colonial architecture, postmodernism"
+    },
+    {
+        "name": "Mies van der Rohe",
+        "prompt": "A building in the style of {prompt}, featuring (modernism, less is more, Barcelona Pavilion)",
+        "negative_prompt": "traditional architecture, Victorian architecture, art deco"
+    },
+    {
+        "name": "Morphosis",
+        "prompt": "An architectural work by {prompt}, highlighting (deconstructivism, experimental forms, urban interventions)",
+        "negative_prompt": "minimalist architecture, international style, postmodernism"
+    },
+    {
+        "name": "Moshe Safdie",
+        "prompt": "A building designed by {prompt}, showcasing (brutalism, Habitat 67, megastructures)",
+        "negative_prompt": "minimalist architecture, international style, neoclassicism"
+    },
+    {
+        "name": "NBBJ",
+        "prompt": "A structure designed by {prompt}, featuring (architecture, urban design, healthcare design)",
+        "negative_prompt": "traditional architecture, classical architecture, Victorian architecture"
+    },
+    {
+        "name": "Norman Foster",
+        "prompt": "A building in the style of {prompt}, showcasing (high-tech architecture, sustainable design, glass and steel)",
+        "negative_prompt": "traditional architecture, vernacular architecture, postmodernism"
+    },
+    {
+        "name": "OMA (Office for Metropolitan Architecture)",
+        "prompt": "An architectural work by {prompt}, highlighting (deconstructivism, urbanism, cultural projects)",
+        "negative_prompt": "minimalist architecture, international style, postmodernism"
+    },
+    {
+        "name": "Oscar Niemeyer",
+        "prompt": "A building designed by {prompt}, featuring (Brazilian modernism, reinforced concrete, curvilinear forms)",
+        "negative_prompt": "traditional architecture, classical architecture, Victorian architecture"
+    },
+    {
+        "name": "Paolo Soleri",
+        "prompt": "An arcology designed by {prompt}, showcasing (urban planning, environmental design, Arcosanti)",
+        "negative_prompt": "traditional urban planning, suburban sprawl, modernist architecture"
+    },
+    {
+        "name": "Patrick Geddes",
+        "prompt": "A city plan influenced by {prompt}, featuring (urban planning, regional planning, civic surveys)",
+        "negative_prompt": "modernist urban planning, suburban sprawl, car-centric design"
+    },
+    {
+        "name": "Paul Andreu",
+        "prompt": "A building designed by {prompt}, showcasing (airport architecture, high-tech architecture, large-scale structures)",
+        "negative_prompt": "traditional architecture, vernacular architecture, residential architecture"
+    },
+    {
+        "name": "Paul Rudolph",
+        "prompt": "A structure designed by {prompt}, featuring (brutalism, concrete architecture, expressive forms)",
+        "negative_prompt": "minimalist architecture, international style, neoclassicism"
+    },
+    {
+        "name": "Pei Partnership Architects",
+        "prompt": "A building in the style of {prompt}, showcasing (modernism, geometric forms, use of glass and steel)",
+        "negative_prompt": "postmodernism, deconstructivism, classical architecture"
+    },
+    {
+        "name": "Peter Behrens",
+        "prompt": "An architectural work by {prompt}, highlighting (German Werkbund, industrial design, AEG Turbine Factory)",
+        "negative_prompt": "Art Nouveau, Art Deco, postmodernism"
+    },
+    {
+        "name": "Peter Cook",
+        "prompt": "An architectural vision by {prompt}, featuring (Archigram, Plug-in City, experimental architecture)",
+        "negative_prompt": "built architecture, traditional architecture, vernacular architecture"
+    },
+    {
+        "name": "Peter Eisenman",
+        "prompt": "A building designed by {prompt}, showcasing (deconstructivism, fragmentation, conceptual architecture)",
+        "negative_prompt": "minimalist architecture, international style, postmodernism"
+    },
+    {
+        "name": "Peter Zumthor",
+        "prompt": "A structure designed by {prompt}, featuring (minimalist aesthetic, materiality, phenomenology)",
+        "negative_prompt": "postmodernism, deconstructivism, high-tech architecture"
+    },
+    {
+        "name": "Pezo von Ellrichshausen",
+        "prompt": "A building in the style of {prompt}, showcasing (Chilean architecture, abstract forms, geometric rigor)",
+        "negative_prompt": "traditional architecture, vernacular architecture, postmodernism"
+    },
+    {
+        "name": "Philip Johnson",
+        "prompt": "An architectural work by {prompt}, highlighting (postmodernism, Glass House, AT&T Building)",
+        "negative_prompt": "modernism, international style, brutalism"
+    },
+    {
+        "name": "Pier Luigi Nervi",
+        "prompt": "A building designed by {prompt}, featuring (reinforced concrete, structural expressionism, large-span structures)",
+        "negative_prompt": "traditional architecture, classical architecture, Victorian architecture"
+    },
+    {
+        "name": "R. Buckminster Fuller",
+        "prompt": "A geodesic dome designed by {prompt}, showcasing (geodesic domes, tensegrity structures, futuristic design)",
+        "negative_prompt": "traditional architecture, vernacular architecture, rectangular buildings"
+    },
+    {
+        "name": "Rafael Moneo",
+        "prompt": "A building in the style of {prompt}, featuring (Spanish architecture, contextualism, historical references)",
+        "negative_prompt": "international style, postmodernism, deconstructivism"
+    },
+    {
+        "name": "Rafael Viñoly",
+        "prompt": "An architectural work by {prompt}, highlighting (large-scale projects, urban planning, mixed-use developments)",
+        "negative_prompt": "traditional architecture, classical architecture, Victorian architecture"
+    },
+    {
+        "name": "Ralph Erskine",
+        "prompt": "A building designed by {prompt}, showcasing (Swedish architecture, humanistic architecture, social housing)",
+        "negative_prompt": "international style, postmodernism, high-tech architecture"
+    },
+    {
+        "name": "Rem Koolhaas",
+        "prompt": "A structure designed by {prompt}, featuring (OMA, deconstructivism, urbanism)",
+        "negative_prompt": "minimalist architecture, international style, postmodernism"
+    },
+    {
+        "name": "Renzo Piano",
+        "prompt": "A building in the style of {prompt}, showcasing (high-tech architecture, sustainable design, The Shard)",
+        "negative_prompt": "traditional architecture, vernacular architecture, postmodernism"
+    },
+    {
+        "name": "Ricardo Bofill",
+        "prompt": "An architectural work by {prompt}, highlighting (postmodernism, classical references, monumental scale)",
+        "negative_prompt": "modernism, international style, brutalism"
+    },
+    {
+        "name": "Richard Horden",
+        "prompt": "A building designed by {prompt}, featuring (lightweight structures, prefabrication, micro-architecture)",
+        "negative_prompt": "traditional architecture, heavy construction, monumental architecture"
+    },
+    {
+        "name": "Richard Meier",
+        "prompt": "A structure designed by {prompt}, showcasing (modernism, white architecture, geometric forms)",
+        "negative_prompt": "postmodernism, deconstructivism, classical architecture"
+    },
+    {
+        "name": "Richard Neutra",
+        "prompt": "A building in the style of {prompt}, featuring (mid-century modernism, California modernism, steel-frame construction)",
+        "negative_prompt": "traditional architecture, Victorian architecture, art deco"
+    },
+    {
+        "name": "Richard Rogers",
+        "prompt": "An architectural work by {prompt}, highlighting (high-tech architecture, exposed structure, Pompidou Centre)",
+        "negative_prompt": "traditional architecture, classical architecture, postmodernism"
+    },
+    {
+        "name": "Rob Krier",
+        "prompt": "A building designed by {prompt}, featuring (New Urbanism, traditional architecture, urban planning)",
+        "negative_prompt": "modernism, international style, deconstructivism"
+    },
+    {
+        "name": "Robert A.M. Stern",
+        "prompt": "A structure designed by {prompt}, showcasing (postmodernism, traditional influences, contextual design)",
+        "negative_prompt": "minimalist architecture, international style, brutalism"
+    },
+    {
+        "name": "Robert Venturi",
+        "prompt": "A building in the style of {prompt}, featuring (postmodernism, Learning from Las Vegas, complexity and contradiction)",
+        "negative_prompt": "modernism, international style, minimalist aesthetic"
+    },
+    {
+        "name": "Rolf Disch",
+        "prompt": "A solar house designed by {prompt}, showcasing (sustainable architecture, solar energy, Heliotrope)",
+        "negative_prompt": "traditional architecture, conventional energy sources, non-sustainable design"
+    },
+    {
+        "name": "Rudolf Steiner",
+        "prompt": "A building influenced by {prompt}, featuring (anthroposophy, Waldorf architecture, Goetheanum)",
+        "negative_prompt": "modernist architecture, international style, brutalism"
+    },
+    {
+        "name": "SANAA",
+        "prompt": "A building designed by {prompt}, showcasing (minimalist aesthetic, transparency, lightness)",
+        "negative_prompt": "postmodernism, deconstructivism, high-tech architecture"
+    },
+    {
+        "name": "Santiago Calatrava",
+        "prompt": "A structure designed by {prompt}, featuring (expressionism, biomorphic forms, structural engineering)",
+        "negative_prompt": "minimalist architecture, international style, vernacular architecture"
+    },
+    {
+        "name": "Shigeru Ban",
+        "prompt": "A building in the style of {prompt}, showcasing (paper architecture, humanitarian architecture, disaster relief shelters)",
+        "negative_prompt": "traditional architecture, concrete construction, monumental architecture"
+    },
+    {
+        "name": "Shuhei Endo",
+        "prompt": "An architectural work by {prompt}, highlighting (Japanese architecture, organic forms, experimental structures)",
+        "negative_prompt": "traditional Japanese architecture, postmodernism, deconstructivism"
+    },
+    {
+        "name": "Sigurd Lewerentz",
+        "prompt": "A building designed by {prompt}, featuring (Swedish modernism, brick architecture, church architecture)",
+        "negative_prompt": "international style, postmodernism, high-tech architecture"
+    },
+    {
+        "name": "Skidmore, Owings & Merrill",
+        "prompt": "A skyscraper designed by {prompt}, showcasing (modernism, structural engineering, corporate architecture)",
+        "negative_prompt": "traditional architecture, Victorian architecture, art deco"
+    },
+    {
+        "name": "Snøhetta",
+        "prompt": "A building in the style of {prompt}, featuring (Scandinavian architecture, landscape integration, contextual sensitivity)",
+        "negative_prompt": "international style, postmodernism, high-tech architecture"
+    },
+    {
+        "name": "Sou Fujimoto",
+        "prompt": "An architectural work by {prompt}, highlighting (Japanese architecture, minimalist aesthetic, innovative structures)",
+        "negative_prompt": "traditional Japanese architecture, postmodernism, deconstructivism"
+    },
+    {
+        "name": "Steven Ehrlich",
+        "prompt": "A building designed by {prompt}, featuring (California architecture, regionalism, sustainable design)",
+        "negative_prompt": "international style, postmodernism, high-tech architecture"
+    },
+    {
+        "name": "Steven Holl",
+        "prompt": "A structure designed by {prompt}, showcasing (phenomenology, use of light and shadow, contextual sensitivity)",
+        "negative_prompt": "minimalist architecture, international style, postmodernism"
+    },
+    {
+        "name": "Antti Lovag",
+        "prompt": "An organic and unconventional building by {prompt}, featuring (bubble architecture, free-flowing spaces, rejection of straight lines)",
+        "negative_prompt": "boxy architecture, traditional layouts, sharp angles"
+    },
+    {
+        "name": "Buckminster Fuller",
+        "prompt": "A futuristic structure by {prompt}, showcasing (geodesic domes, tensegrity, sustainable design principles)",
+        "negative_prompt": "conventional building materials, traditional architectural styles, unsustainable practices"
+    },
+    {
+        "name": "Frei Otto",
+        "prompt": "A lightweight and tensile structure by {prompt}, featuring (minimal surface structures, tensile architecture, biomimicry)",
+        "negative_prompt": "heavy materials, traditional building methods, rigid forms"
+    },
+    {
+        "name": "Hassan Fathy",
+        "prompt": "A vernacular and sustainable building by {prompt}, showcasing (earth architecture, traditional Nubian techniques, climate-responsive design)",
+        "negative_prompt": "modernist architecture, unsustainable materials, disregard for local context"
+    },
+    {
+        "name": "Laurie Baker",
+        "prompt": "A cost-effective and sustainable building by {prompt}, featuring (local materials, participatory design, vernacular architecture of Kerala)",
+        "negative_prompt": "expensive materials, top-down design, disregard for local context"
+    },
+    {
+        "name": "Luis Barragán",
+        "prompt": "A colorful and emotionally resonant building by {prompt}, showcasing (Mexican modernism, emotional architecture, use of light and color)",
+        "negative_prompt": "monochromatic palettes, purely functional designs, lack of emotional depth"
+    },
+    {
+        "name": "Minoru Yamasaki",
+        "prompt": "A building with delicate and intricate details by {prompt}, featuring (Gothic modernism, decorative screens, slender structural elements)",
+        "negative_prompt": "brutalist architecture, heavy forms, lack of ornamentation"
+    },
+    {
+        "name": "Pierre Koenig",
+        "prompt": "A steel-framed modernist house by {prompt}, showcasing (Case Study Houses, open-plan living, integration with the California landscape)",
+        "negative_prompt": "traditional housing styles, closed-off rooms, disregard for the surrounding environment"
+    },
+    {
+        "name": "Rural Studio",
+        "prompt": "A socially conscious and community-driven project by {prompt}, featuring (low-cost housing, sustainable materials, participatory design process)",
+        "negative_prompt": "expensive architecture, unsustainable practices, top-down design approaches"
+    },
+    {
+        "name": "Samuel Mockbee",
+        "prompt": "A building reflecting the philosophy of {prompt}, showcasing (vernacular architecture, social justice, use of found materials)",
+        "negative_prompt": "elitist architecture, disregard for social context, reliance on expensive materials"
+    }
+]

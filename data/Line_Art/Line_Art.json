@@ -1,0 +1,238 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Abstract Geometric Shapes",
+        "prompt": "(Design an abstract line-art pattern using geometric shapes) {prompt}",
+        "negative_prompt": "Organic and fluid"
+    },
+    {
+        "name": "Abstract Line Dance",
+        "prompt": "(Choreograph a dance inspired by abstract line-art) {prompt}",
+        "negative_prompt": "Traditional ballet performance"
+    },
+    {
+        "name": "Abstract Line Haiku",
+        "prompt": "(Write a haiku inspired by an abstract line-art piece) {prompt}",
+        "negative_prompt": "Epic poetry"
+    },
+    {
+        "name": "Abstract Line Meditation",
+        "prompt": "(Practice a guided meditation inspired by abstract line-art) {prompt}",
+        "negative_prompt": "Structured yoga session"
+    },
+    {
+        "name": "Abstract Line Poetry",
+        "prompt": "(Compose a poem inspired by an abstract line-art piece) {prompt}",
+        "negative_prompt": "Narrative storytelling"
+    },
+    {
+        "name": "Abstract Line Sculpture",
+        "prompt": "(Sculpt an abstract line-art sculpture using digital tools) {prompt}",
+        "negative_prompt": "Traditional figurative sculpture"
+    },
+    {
+        "name": "Abstract Line Symphony",
+        "prompt": "(Compose a musical piece inspired by abstract line-art) {prompt}",
+        "negative_prompt": "Classical orchestral composition"
+    },
+    {
+        "name": "Animal Line Drawing",
+        "prompt": "(Draw a line-art portrait of your favorite animal) {prompt}",
+        "negative_prompt": "Photorealistic wildlife illustration"
+    },
+    {
+        "name": "Architectural Blueprint",
+        "prompt": "(Design a line-art blueprint for a futuristic city) {prompt}",
+        "negative_prompt": "Natural and organic"
+    },
+    {
+        "name": "Botanical Illustration",
+        "prompt": "(Create a line-art illustration of a botanical garden) {prompt}",
+        "negative_prompt": "Mechanical and industrial"
+    },
+    {
+        "name": "Botanical Line Art",
+        "prompt": "(Illustrate a line-art representation of a rare plant species) {prompt}",
+        "negative_prompt": "Colorful botanical garden illustration"
+    },
+    {
+        "name": "Fantasy Line Creature",
+        "prompt": "(Design a line-art fantasy creature) {prompt}",
+        "negative_prompt": "Fantasy creature in full color"
+    },
+    {
+        "name": "Fantasy Line Map",
+        "prompt": "(Create a line-art map of a fantasy world) {prompt}",
+        "negative_prompt": "Realistic geographic map"
+    },
+    {
+        "name": "Fashion Sketch",
+        "prompt": "(Create a line-art sketch of a high-fashion outfit) {prompt}",
+        "negative_prompt": "Photographic fashion editorial"
+    },
+    {
+        "name": "Futuristic Line Sculpture",
+        "prompt": "(Sculpt a futuristic line-art sculpture) {prompt}",
+        "negative_prompt": "Traditional marble statue"
+    },
+    {
+        "name": "Intricate Mandala",
+        "prompt": "(Create an intricate line-art mandala) {prompt}",
+        "negative_prompt": "Simple circle drawing"
+    },
+    {
+        "name": "Line Art Calligraphy",
+        "prompt": "(Write a phrase using line-art calligraphy) {prompt}",
+        "negative_prompt": "Fancy cursive handwriting"
+    },
+    {
+        "name": "Line Art Crossword",
+        "prompt": "(Create a challenging line-art crossword puzzle) {prompt}",
+        "negative_prompt": "Word search puzzle"
+    },
+    {
+        "name": "Line Art Data Visualization",
+        "prompt": "(Create a line-art data visualization chart) {prompt}",
+        "negative_prompt": "Colorful infographic"
+    },
+    {
+        "name": "Line Art Fantasy Map",
+        "prompt": "(Design a line-art map for a fantasy novel) {prompt}",
+        "negative_prompt": "Realistic topographic map"
+    },
+    {
+        "name": "Line Art Food Illustration",
+        "prompt": "(Illustrate a line-art representation of your favorite meal) {prompt}",
+        "negative_prompt": "Food photography"
+    },
+    {
+        "name": "Line Art Haiku",
+        "prompt": "(Write a haiku inspired by a line-art landscape) {prompt}",
+        "negative_prompt": "Epic poetry"
+    },
+    {
+        "name": "Line Art Logo",
+        "prompt": "(Design a line-art logo for a new brand) {prompt}",
+        "negative_prompt": "Colorful and elaborate brand logo"
+    },
+    {
+        "name": "Line Art Logo Animation",
+        "prompt": "(Create a line-art animated logo) {prompt}",
+        "negative_prompt": "Colorful and dynamic logo animation"
+    },
+    {
+        "name": "Line Art Mosaic",
+        "prompt": "(Create a line-art mosaic pattern) {prompt}",
+        "negative_prompt": "Colorful mosaic art"
+    },
+    {
+        "name": "Line Art Mythology",
+        "prompt": "(Illustrate a scene from a mythological story in a line-art style) {prompt}",
+        "negative_prompt": "Mythological scene with vivid colors"
+    },
+    {
+        "name": "Line Art Poetry",
+        "prompt": "(Write a poem using only line-art symbols) {prompt}",
+        "negative_prompt": "Rhyming poetry"
+    },
+    {
+        "name": "Line Art Portraiture",
+        "prompt": "(Create a line-art portrait of a famous historical figure) {prompt}",
+        "negative_prompt": "Colorful pop art portrait"
+    },
+    {
+        "name": "Line Art Origami",
+        "prompt": "(Fold an origami figure using line-art paper) {prompt}",
+        "negative_prompt": "Colorful origami art"
+    },
+    {
+        "name": "Line Art Puzzle",
+        "prompt": "(Design a challenging line-art puzzle) {prompt}",
+        "negative_prompt": "Colorful jigsaw puzzle"
+    },
+    {
+        "name": "Line Art Puzzle Game",
+        "prompt": "(Develop a line-art puzzle game) {prompt}",
+        "negative_prompt": "3D action video game"
+    },
+    {
+        "name": "Line Art Science Illustration",
+        "prompt": "(Create a line-art illustration of a scientific concept) {prompt}",
+        "negative_prompt": "Detailed scientific illustration"
+    },
+    {
+        "name": "Line Art Street Photography",
+        "prompt": "(Take street photographs in a line-art style) {prompt}",
+        "negative_prompt": "Colorful street photography"
+    },
+    {
+        "name": "Line Art Surrealist Landscape",
+        "prompt": "(Paint a surrealist landscape in a line-art style) {prompt}",
+        "negative_prompt": "Realistic landscape painting"
+    },
+    {
+        "name": "Line Art Tarot Card",
+        "prompt": "(Design a line-art tarot card) {prompt}",
+        "negative_prompt": "Colorful tarot card design"
+    },
+    {
+        "name": "Line Art Urban Sketch",
+        "prompt": "(Sketch a line-art urban scene) {prompt}",
+        "negative_prompt": "Colorful urban sketch"
+    },
+    {
+        "name": "Manga Character Sketch",
+        "prompt": "(Sketch a line-art character in a manga style) {prompt}",
+        "negative_prompt": "Realistic portrait"
+    },
+    {
+        "name": "Medical Illustration",
+        "prompt": "(Create a line-art medical illustration of the human anatomy) {prompt}",
+        "negative_prompt": "Abstract medical art"
+    },
+    {
+        "name": "Mythological Line Drawing",
+        "prompt": "(Draw a line-art representation of a mythological creature) {prompt}",
+        "negative_prompt": "Mythological creature in full color"
+    },
+    {
+        "name": "Sci-Fi Line Cityscape",
+        "prompt": "(Create a line-art cityscape of a futuristic metropolis) {prompt}",
+        "negative_prompt": "Realistic urban landscape painting"
+    },
+    {
+        "name": "Sci-Fi Line Vehicle",
+        "prompt": "(Design a line-art concept for a futuristic vehicle) {prompt}",
+        "negative_prompt": "Vintage car restoration"
+    },
+    {
+        "name": "Sci-Fi Spaceship Blueprint",
+        "prompt": "(Design a line-art blueprint for a futuristic spaceship) {prompt}",
+        "negative_prompt": "Historical sailing ship illustration"
+    },
+    {
+        "name": "Simple Line Art",
+        "prompt": "(Create a line-art illustration of a) {prompt}",
+        "negative_prompt": "Detailed and realistic"
+    },
+
+    {
+        "name": "Tribal Tattoo Design",
+        "prompt": "(Design a line-art tribal tattoo pattern) {prompt}",
+        "negative_prompt": "Watercolor tattoo design"
+    },
+    {
+        "name": "Vehicle Technical Drawing",
+        "prompt": "(Produce a line-art technical drawing of a vehicle) {prompt}",
+        "negative_prompt": "Surreal dreamlike vehicle"
+    },
+    {
+        "name": "Zentangle-Inspired Art",
+        "prompt": "(Create a zentangle-inspired line-art masterpiece) {prompt}",
+        "negative_prompt": "Colorful and chaotic"
+    }
+]

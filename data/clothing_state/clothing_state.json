@@ -1,0 +1,257 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "clothing aside (Garment moved to the side)",
+        "prompt": "clothing aside {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "clothes down (Garment lowered or pulled down)",
+        "prompt": "clothes down {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "open clothes (Garment opened)",
+        "prompt": "open clothes {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "revealing clothes (Garment that exposes skin)",
+        "prompt": "revealing clothes {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "see-through (Garment made of transparent material)",
+        "prompt": "see-through {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "unbuttoned (Garment with buttons undone)",
+        "prompt": "unbuttoned {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "undressing (Process of taking off clothes)",
+        "prompt": "undressing {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "unfastened (Garment with fasteners undone)",
+        "prompt": "unfastened {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "untied (Garment with ties undone)",
+        "prompt": "untied {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "untying (Process of undoing ties)",
+        "prompt": "untying {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "unzipped (Garment with zipper undone)",
+        "prompt": "unzipped {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "unzipping (Process of undoing a zipper)",
+        "prompt": "unzipping {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "buttoned up (Garment with buttons fastened)",
+        "prompt": "buttoned up {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "unbuttoned (Garment with buttons undone)",
+        "prompt": "unbuttoned {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "zipped up (Garment with zipper fastened)",
+        "prompt": "zipped up {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "unzipped (Garment with zipper undone)",
+        "prompt": "unzipped {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tucked in (Garment tucked into pants or skirt)",
+        "prompt": "tucked in {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "untucked (Garment not tucked in)",
+        "prompt": "untucked {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "rolled up sleeves (Sleeves rolled up)",
+        "prompt": "rolled up sleeves {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "folded cuffs (Cuffs of sleeves folded)",
+        "prompt": "folded cuffs {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "loose fit (Garment with a relaxed fit)",
+        "prompt": "loose fit {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "tight fit (Garment with a snug fit)",
+        "prompt": "tight fit {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "layered clothing (Multiple layers of garments)",
+        "prompt": "layered clothing {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "ruffled (Garment with ruffles)",
+        "prompt": "ruffled {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "pleated (Garment with pleats)",
+        "prompt": "pleated {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "fringed (Garment with fringes)",
+        "prompt": "fringed {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "knotted (Garment with knots)",
+        "prompt": "knotted {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "draped (Garment draped over the body)",
+        "prompt": "draped {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "belted (Garment with a belt)",
+        "prompt": "belted {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hood up (Garment with hood worn up)",
+        "prompt": "hood up {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "hood down (Garment with hood worn down)",
+        "prompt": "hood down {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "sleeveless (Garment without sleeves)",
+        "prompt": "sleeveless {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "long sleeves (Garment with long sleeves)",
+        "prompt": "long sleeves {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "short sleeves (Garment with short sleeves)",
+        "prompt": "short sleeves {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "folded collar (Collar folded down)",
+        "prompt": "folded collar {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "popped collar (Collar popped up)",
+        "prompt": "popped collar {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "one shoulder exposed (Garment exposing one shoulder)",
+        "prompt": "one shoulder exposed {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "straps visible (Garment with visible straps)",
+        "prompt": "straps visible {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "no straps (Garment without straps)",
+        "prompt": "no straps {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "high-waisted (Garment with a high waist)",
+        "prompt": "high-waisted {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "low-waisted (Garment with a low waist)",
+        "prompt": "low-waisted {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "cropped (Garment cut short)",
+        "prompt": "cropped {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "full length (Garment extending to full length)",
+        "prompt": "full length {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "distressed (Garment with a worn look)",
+        "prompt": "distressed {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "neatly pressed (Garment that is neatly ironed)",
+        "prompt": "neatly pressed {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "wrinkled (Garment with wrinkles)",
+        "prompt": "wrinkled {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "starched (Garment with a stiff, starched finish)",
+        "prompt": "starched {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "faded (Garment with faded colors)",
+        "prompt": "faded {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "freshly laundered (Garment that is freshly cleaned)",
+        "prompt": "freshly laundered {prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "dirty (Garment that is dirty)",
+        "prompt": "dirty {prompt}",
+        "negative_prompt": ""
+    }
+]

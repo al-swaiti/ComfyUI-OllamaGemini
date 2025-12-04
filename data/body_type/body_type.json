@@ -1,0 +1,242 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Athletic",
+        "prompt": "An {prompt} physique, featuring (toned muscles, defined physique, active lifestyle)",
+        "negative_prompt": "sedentary, overweight, underdeveloped muscles"
+    },
+    {
+        "name": "Average",
+        "prompt": "An {prompt} body type, showcasing (proportional features, neither skinny nor overweight, typical build)",
+        "negative_prompt": "extreme body types, exaggerated features, unconventional proportions"
+    },
+    {
+        "name": "Curvy",
+        "prompt": "A {prompt} figure, highlighting (full hips and bust, defined waist, hourglass silhouette)",
+        "negative_prompt": "straight figure, boyish build, lack of curves"
+    },
+    {
+        "name": "Lean",
+        "prompt": "A {prompt} build, featuring (low body fat, visible muscle definition, toned physique)",
+        "negative_prompt": "overweight, flabby, excessive body fat"
+    },
+    {
+        "name": "Muscular",
+        "prompt": "A {prompt} physique, showcasing (developed muscles, significant muscle mass, powerful build)",
+        "negative_prompt": "skinny, underdeveloped muscles, lack of definition"
+    },
+    {
+        "name": "Petite",
+        "prompt": "A {prompt} frame, featuring (small stature, delicate bone structure, slender build)",
+        "negative_prompt": "tall, large frame, heavy build"
+    },
+    {
+        "name": "Plus-Size",
+        "prompt": "A {prompt} figure, highlighting (fuller figure, curvy silhouette, body positivity)",
+        "negative_prompt": "skinny, thin, underweight"
+    },
+    {
+        "name": "Slender",
+        "prompt": "A {prompt} build, showcasing (thin frame, long limbs, graceful silhouette)",
+        "negative_prompt": "stocky, bulky, overweight"
+    },
+    {
+        "name": "Soft",
+        "prompt": "A {prompt} body type, featuring (rounded features, less muscle definition, gentle curves)",
+        "negative_prompt": "toned, muscular, angular"
+    },
+    {
+        "name": "Stocky",
+        "prompt": "A {prompt} build, highlighting (broad shoulders, sturdy frame, compact physique)",
+        "negative_prompt": "tall, lanky, thin"
+    },
+    {
+        "name": "Tall",
+        "prompt": "A {prompt} stature, showcasing (above average height, long legs, elongated silhouette)",
+        "negative_prompt": "short, petite, small stature"
+    },
+    {
+        "name": "Thin",
+        "prompt": "A {prompt} frame, featuring (low body weight, slender physique, minimal body fat)",
+        "negative_prompt": "overweight, muscular, curvy"
+    },
+    {
+        "name": "Chubby",
+        "prompt": "A {prompt} figure, featuring (soft roundness, noticeable body fat, endearing plumpness)",
+        "negative_prompt": "thin, muscular, bony"
+    },
+    {
+        "name": "Midweight",
+        "prompt": "A {prompt} build, showcasing (neither too thin nor too heavy, average weight, balanced proportions)",
+        "negative_prompt": "extremely thin, obese, unusually proportioned"
+    },
+    {
+        "name": "Overweight",
+        "prompt": "An {prompt} individual, featuring (excess body weight, noticeable fat deposits, larger frame)",
+        "negative_prompt": "thin, fit, athletic"
+    },
+    {
+        "name": "Fat",
+        "prompt": "A {prompt} person, highlighting (significant excess body fat, rounded physique, large size)",
+        "negative_prompt": "thin, slim, muscular"
+    },
+    {
+        "name": "Flabby",
+        "prompt": "A {prompt} physique, featuring (loose skin, lack of muscle tone, soft texture)",
+        "negative_prompt": "toned, firm, muscular"
+    },
+    {
+        "name": "Buxom",
+        "prompt": "A {prompt} woman, showcasing (full, ample breasts, voluptuous chest, curvaceous figure)",
+        "negative_prompt": "flat-chested, small breasts, boyish figure"
+    },
+    {
+        "name": "Voluptuous",
+        "prompt": "A {prompt} figure, highlighting (full, generous curves, ample bosom and hips, sensual physique)",
+        "negative_prompt": "thin, slender, boyish"
+    },
+    {
+        "name": "Hefty",
+        "prompt": "A {prompt} build, featuring (large and heavy frame, considerable weight, powerful presence)",
+        "negative_prompt": "small, thin, delicate"
+    },
+    {
+        "name": "Pudgy",
+        "prompt": "A {prompt} physique, showcasing (soft, rounded body, short and plump limbs, childlike chubbiness)",
+        "negative_prompt": "thin, muscular, defined"
+    },
+    {
+        "name": "Plump",
+        "prompt": "A {prompt} figure, featuring (full, rounded shape, well-nourished appearance, soft curves)",
+        "negative_prompt": "thin, bony, angular"
+    },
+    {
+        "name": "Obese",
+        "prompt": "An {prompt} individual, highlighting (excessive body fat, health concerns related to weight, large body mass)",
+        "negative_prompt": "thin, healthy weight, fit"
+    },
+    {
+        "name": "Morbidly Obese",
+        "prompt": "A {prompt} person, showcasing (extreme obesity, severe health risks, significantly impaired mobility)",
+        "negative_prompt": "healthy weight, mobile, fit"
+    },
+    {
+        "name": "Stout",
+        "prompt": "A {prompt} build, featuring (thickset frame, broad and heavy body, sturdy appearance)",
+        "negative_prompt": "thin, fragile, delicate"
+    },
+    {
+        "name": "Rotund",
+        "prompt": "A {prompt} figure, showcasing (round and plump physique, full-bodied, ample curves)",
+        "negative_prompt": "thin, angular, slender"
+    },
+    {
+        "name": "Thick-bodied",
+        "prompt": "A {prompt} individual, featuring (solid, substantial build, wide frame, powerful physique)",
+        "negative_prompt": "thin, delicate, fragile"
+    },
+    {
+        "name": "Thicc",
+        "prompt": "A {prompt} figure, highlighting (full, curvy hips and thighs, voluptuous backside, hourglass shape)",
+        "negative_prompt": "thin, boyish, straight figure"
+    },
+    {
+        "name": "Thick",
+        "prompt": "A {prompt} physique, showcasing (full, substantial build, noticeable curves, strong frame)",
+        "negative_prompt": "thin, slender, delicate"
+    },
+    {
+        "name": "Beefy",
+        "prompt": "A {prompt} build, featuring (muscular and bulky physique, strong and imposing, solid frame)",
+        "negative_prompt": "thin, weak, slender"
+    },
+    {
+        "name": "Portly",
+        "prompt": "A {prompt} gentleman, showcasing (stout and somewhat round physique, dignified plumpness, larger belly)",
+        "negative_prompt": "thin, athletic, youthful"
+    },
+    {
+        "name": "Tubby",
+        "prompt": "A {prompt} physique, featuring (short and plump, rounded body shape, childlike chubbiness)",
+        "negative_prompt": "tall, slender, muscular"
+    },
+    {
+        "name": "Slightly Overweight",
+        "prompt": "An individual who is {prompt}, featuring (a few extra pounds, a slightly larger frame, minimal fat deposits)",
+        "negative_prompt": "thin, underweight, obese"
+    },
+    {
+        "name": "Buff",
+        "prompt": "A {prompt} physique, showcasing (well-defined muscles, toned and fit body, athletic build)",
+        "negative_prompt": "flabby, skinny, overweight"
+    },
+    {
+        "name": "Burly",
+        "prompt": "A {prompt} build, featuring (large, strong, and muscular physique, broad shoulders, imposing presence)",
+        "negative_prompt": "small, thin, delicate"
+    },
+    {
+        "name": "Fit",
+        "prompt": "A {prompt} individual, showcasing (healthy and toned physique, active lifestyle, good physical condition)",
+        "negative_prompt": "unhealthy, sedentary, overweight"
+    },
+    {
+        "name": "Well-built",
+        "prompt": "A {prompt} physique, featuring (strong and sturdy frame, muscular build, attractive proportions)",
+        "negative_prompt": "skinny, weak, flabby"
+    },
+    {
+        "name": "Well-endowed",
+        "prompt": "A woman with a {prompt} figure, highlighting (large breasts, ample bosom, curvaceous physique)",
+        "negative_prompt": "small breasts, flat-chested, boyish figure"
+    },
+    {
+        "name": "Big-boned",
+        "prompt": "A {prompt} individual, featuring (large frame, broad shoulders, sturdy skeletal structure)",
+        "negative_prompt": "small frame, delicate bones, thin build"
+    },
+    {
+        "name": "Flyweight",
+        "prompt": "A {prompt} build, showcasing (extremely light weight, thin and wiry physique, agile and quick)",
+        "negative_prompt": "heavy, muscular, bulky"
+    },
+    {
+        "name": "Skinny",
+        "prompt": "A {prompt} frame, featuring (very thin, low body weight, lack of curves or muscle definition)",
+        "negative_prompt": "overweight, curvy, muscular"
+    },
+    {
+        "name": "Too Skinny",
+        "prompt": "A person who is {prompt}, showcasing (unhealthily thin, bony appearance, concerningly low body weight)",
+        "negative_prompt": "healthy weight, curvy, muscular"
+    },
+    {
+        "name": "Anorexic",
+        "prompt": "An individual with {prompt}, highlighting (extremely low body weight, emaciated appearance, serious health concerns)",
+        "negative_prompt": "healthy weight, curvy, muscular"
+    },
+    {
+        "name": "Not Skinny",
+        "prompt": "A person who is {prompt}, featuring (average or above average weight, fuller figure, noticeable curves)",
+        "negative_prompt": "thin, slender, bony"
+    },
+    {
+        "name": "Lanky",
+        "prompt": "A {prompt} build, showcasing (tall and thin, long limbs, awkward and ungainly movements)",
+        "negative_prompt": "short, stocky, graceful"
+    },
+    {
+        "name": "Slim",
+        "prompt": "A {prompt} figure, featuring (thin and slender, graceful and elegant, low body fat)",
+        "negative_prompt": "overweight, bulky, muscular"
+    },
+    {
+        "name": "Slight",
+        "prompt": "A {prompt} build, showcasing (small and delicate frame, thin and fragile appearance, light weight)",
+        "negative_prompt": "large, heavy, muscular"
+    }
+]

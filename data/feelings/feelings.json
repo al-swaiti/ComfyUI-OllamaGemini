@@ -1,0 +1,817 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Admired",
+        "prompt": "{prompt}, admired, appreciated, respected, valued",
+        "negative_prompt": "criticized, ignored, overlooked, disregarded"
+    },
+    {
+        "name": "Adored",
+        "prompt": "{prompt}, adored, cherished, beloved, treasured",
+        "negative_prompt": "disliked, hated, rejected, abandoned"
+    },
+    {
+        "name": "Affectionate",
+        "prompt": "{prompt}, affectionate, loving, tender, warm, caring",
+        "negative_prompt": "cold, distant, harsh, uncaring, indifferent"
+    },
+    {
+        "name": "Agitated",
+        "prompt": "{prompt}, agitated, restless, nervous, fidgety, on edge",
+        "negative_prompt": "calm, relaxed, peaceful, still, tranquil"
+    },
+    {
+        "name": "Amazed",
+        "prompt": "{prompt}, amazed, astonished, awestruck, surprised, stunned",
+        "negative_prompt": "bored, unimpressed, indifferent, apathetic, unfazed"
+    },
+    {
+        "name": "Angry",
+        "prompt": "{prompt}, angry, frustrated, enraged, furious, indignant",
+        "negative_prompt": "calm, peaceful, content, happy, pleased"
+    },
+    {
+        "name": "Anxious",
+        "prompt": "{prompt}, anxious, worried, apprehensive, fearful, uneasy",
+        "negative_prompt": "calm, relaxed, confident, secure, at ease"
+    },
+    {
+        "name": "Apathetic",
+        "prompt": "{prompt}, apathetic, indifferent, uninterested, listless, uncaring",
+        "negative_prompt": "interested, engaged, enthusiastic, passionate, caring"
+    },
+    {
+        "name": "Appreciated",
+        "prompt": "{prompt}, appreciated, grateful, thankful, valued, cherished",
+        "negative_prompt": "unappreciated, ungrateful, unthankful, disregarded, unimportant"
+    },
+    {
+        "name": "Ashamed",
+        "prompt": "{prompt}, ashamed, embarrassed, guilty, remorseful, humiliated",
+        "negative_prompt": "proud, confident, unashamed, unapologetic, shameless"
+    }, 
+    {
+        "name": "Befuddled",
+        "prompt": "{prompt}, befuddled, confused, bewildered, puzzled, disoriented",
+        "negative_prompt": "clear-headed, focused, understanding, oriented, aware"
+    },
+    {
+        "name": "Blissful",
+        "prompt": "{prompt}, blissful, ecstatic, euphoric, joyful, radiant",
+        "negative_prompt": "miserable, unhappy, sorrowful, depressed, dejected"
+    },
+    {
+        "name": "Bored",
+        "prompt": "{prompt}, bored, uninterested, listless, apathetic, weary",
+        "negative_prompt": "interested, engaged, excited, enthusiastic, entertained"
+    },
+    {
+        "name": "Broken-Hearted",
+        "prompt": "{prompt}, broken-hearted, heartbroken, devastated, crushed, sorrowful",
+        "negative_prompt": "happy, joyful, in love, content, fulfilled"
+    },
+    {
+        "name": "Calming",
+        "prompt": "{prompt}, calming, peaceful, soothing, tranquil, relaxing",
+        "negative_prompt": "agitating, stressful, chaotic, disturbing, upsetting"
+    },
+    {
+        "name": "Caring",
+        "prompt": "{prompt}, caring, compassionate, empathetic, kind, concerned",
+        "negative_prompt": "apathetic, heartless, uncaring, cruel, indifferent"
+    },
+    {
+        "name": "Cheerful",
+        "prompt": "{prompt}, cheerful, happy, joyful, optimistic, lighthearted",
+        "negative_prompt": "sad, gloomy, depressed, pessimistic, heavyhearted"
+    },
+    {
+        "name": "Cherished",
+        "prompt": "{prompt}, cherished, treasured, valued, adored, loved",
+        "negative_prompt": "abandoned, neglected, forgotten, unappreciated, disregarded"
+    },
+    {
+        "name": "Chilling",
+        "prompt": "{prompt}, chilling, eerie, creepy, spooky, unsettling",
+        "negative_prompt": "warm, comforting, pleasant, reassuring, safe"
+    },
+    {
+        "name": "Comforted",
+        "prompt": "{prompt}, comforted, consoled, soothed, reassured, supported",
+        "negative_prompt": "distressed, troubled, agitated, upset, scared"
+    },
+    {
+        "name": "Compassionate",
+        "prompt": "{prompt}, compassionate, empathetic, caring, kind, sympathetic",
+        "negative_prompt": "cold, heartless, uncaring, cruel, indifferent"
+    },
+    {
+        "name": "Contemplative",
+        "prompt": "{prompt}, contemplative, pensive, thoughtful, reflective, introspective",
+        "negative_prompt": "careless, thoughtless, unreflective, impulsive, rash"
+    },
+    {
+        "name": "Content",
+        "prompt": "{prompt}, content, satisfied, fulfilled, happy, peaceful",
+        "negative_prompt": "discontent, unsatisfied, unfulfilled, unhappy, restless"
+    },
+    {
+        "name": "Confident",
+        "prompt": "{prompt}, confident, self-assured, secure, empowered, bold",
+        "negative_prompt": "insecure, anxious, fearful, timid, hesitant" 
+    },
+    {
+        "name": "Confused",
+        "prompt": "{prompt}, confused, bewildered, disoriented, puzzled, perplexed",
+        "negative_prompt": "clear-headed, focused, understanding, oriented, certain"
+    },
+    {
+        "name": "Curious",
+        "prompt": "{prompt}, curious, inquisitive, interested, intrigued, fascinated",
+        "negative_prompt": "uninterested, bored, apathetic, indifferent, unengaged"
+    },
+    {
+        "name": "Dejected",
+        "prompt": "{prompt}, dejected, downcast, disheartened, disappointed, sad",
+        "negative_prompt": "happy, cheerful, encouraged, hopeful, optimistic"
+    },
+    {
+        "name": "Depressed",
+        "prompt": "{prompt}, depressed, sad, low, hopeless, despairing",
+        "negative_prompt": "happy, cheerful, elated, hopeful, optimistic"
+    }, 
+    {
+        "name": "Desolate",
+        "prompt": "{prompt}, desolate, lonely, empty, barren, deserted",
+        "negative_prompt": "crowded, busy, full, lively, vibrant"
+    },
+    {
+        "name": "Despondent",
+        "prompt": "{prompt}, despondent, hopeless, discouraged, disheartened, dejected",
+        "negative_prompt": "hopeful, encouraged, optimistic, determined, resilient"
+    }, 
+    {
+        "name": "Disgusted",
+        "prompt": "{prompt}, disgusted, repulsed, revolted, nauseated, offended",
+        "negative_prompt": "pleased, delighted, attracted, fascinated, intrigued"
+    },
+    {
+        "name": "Disheartened",
+        "prompt": "{prompt}, disheartened, discouraged, disappointed, disillusioned, sad",
+        "negative_prompt": "encouraged, hopeful, optimistic, motivated, inspired"
+    },
+    {
+        "name": "Disquieted",
+        "prompt": "{prompt}, disquieted, uneasy, anxious, disturbed, troubled",
+        "negative_prompt": "calm, relaxed, peaceful, content, reassured"
+    },
+    {
+        "name": "Disturbed",
+        "prompt": "{prompt}, disturbed, upset, troubled, agitated, shaken",
+        "negative_prompt": "calm, peaceful, content, relaxed, composed"
+    },
+    {
+        "name": "Downcast",
+        "prompt": "{prompt}, downcast, dejected, sad, depressed, gloomy",
+        "negative_prompt": "happy, cheerful, optimistic, hopeful, enthusiastic"
+    },
+    {
+        "name": "Dread",
+        "prompt": "{prompt}, dread, fear, terror, anxiety, apprehension",
+        "negative_prompt": "confidence, security, peace, excitement, anticipation"
+    },
+    {
+        "name": "Dreary",
+        "prompt": "{prompt}, dreary, bleak, gloomy, dull, depressing",
+        "negative_prompt": "bright, cheerful, sunny, vibrant, exciting"
+    },
+    {
+        "name": "Eager",
+        "prompt": "{prompt}, eager, enthusiastic, excited, keen, passionate",
+        "negative_prompt": "apathetic, indifferent, unenthusiastic, reluctant, hesitant"
+    },
+    {
+        "name": "Ecstatic",
+        "prompt": "{prompt}, ecstatic, overjoyed, thrilled, blissful, euphoric",
+        "negative_prompt": "sad, unhappy, disappointed, depressed, miserable"
+    },
+    {
+        "name": "Elated",
+        "prompt": "{prompt}, elated, overjoyed, thrilled, delighted, ecstatic",
+        "negative_prompt": "depressed, sad, disappointed, disheartened, dejected"
+    },
+    {
+        "name": "Embarrassed",
+        "prompt": "{prompt}, embarrassed, ashamed, humiliated, self-conscious, flustered",
+        "negative_prompt": "confident, proud, comfortable, composed, unfazed"
+    },
+    {
+        "name": "Empathetic",
+        "prompt": "{prompt}, empathetic, compassionate, understanding, sensitive, caring",
+        "negative_prompt": "cold, heartless, uncaring, indifferent, apathetic"
+    },
+    {
+        "name": "Empowered",
+        "prompt": "{prompt}, empowered, strong, confident, capable, determined",
+        "negative_prompt": "weak, powerless, insecure, helpless, discouraged"
+    },
+    {
+        "name": "Encouraged",
+        "prompt": "{prompt}, encouraged, inspired, motivated, hopeful, optimistic",
+        "negative_prompt": "discouraged, uninspired, unmotivated, hopeless, pessimistic"
+    },
+    {
+        "name": "Enthusiastic",
+        "prompt": "{prompt}, enthusiastic, excited, eager, passionate, zealous",
+        "negative_prompt": "apathetic, indifferent, unenthusiastic, bored, uninterested"
+    },
+    {
+        "name": "Envious",
+        "prompt": "{prompt}, envious, jealous, covetous, resentful, begrudging",
+        "negative_prompt": "content, satisfied, happy for, generous, appreciative"
+    },
+    {
+        "name": "Eerie",
+        "prompt": "{prompt}, eerie, creepy, spooky, unsettling, mysterious",
+        "negative_prompt": "comforting, familiar, normal, reassuring, safe"
+    },
+    {
+        "name": "Exhausted",
+        "prompt": "{prompt}, exhausted, tired, weary, drained, fatigued",
+        "negative_prompt": "energetic, refreshed, invigorated, lively, vibrant"
+    },
+    {
+        "name": "Excited",
+        "prompt": "{prompt}, excited, thrilled, enthusiastic, eager,  passionate",
+        "negative_prompt": "bored, apathetic, indifferent, unenthusiastic, calm"
+    }, 
+    {
+        "name": "Fear",
+        "prompt": "{prompt}, fear, terror, panic, dread, anxiety",
+        "negative_prompt": "courage, bravery, confidence, security, peace"
+    },
+    {
+        "name": "Forgiving",
+        "prompt": "{prompt}, forgiving, understanding, compassionate, merciful, tolerant",
+        "negative_prompt": "resentful, bitter, unforgiving, vengeful, judgmental"
+    },
+    {
+        "name": "Forlorn",
+        "prompt": "{prompt}, forlorn, lonely, abandoned, desolate, heartbroken",
+        "negative_prompt": "loved, cherished, accompanied, happy, content"
+    },
+    {
+        "name": "Frazzled",
+        "prompt": "{prompt}, frazzled, stressed, overwhelmed, exhausted, burnt out",
+        "negative_prompt": "relaxed, calm, in control, rested, refreshed"
+    },
+    {
+        "name": "Frightened",
+        "prompt": "{prompt}, frightened, scared, terrified, afraid, panicked",
+        "negative_prompt": "calm, brave, courageous, confident, secure"
+    },
+    {
+        "name": "Frustrated",
+        "prompt": "{prompt}, frustrated, angry, annoyed, irritated, exasperated",
+        "negative_prompt": "content, satisfied, pleased, calm, patient"
+    },
+    {
+        "name": "Fulfilled",
+        "prompt": "{prompt}, fulfilled, content, satisfied, complete, happy",
+        "negative_prompt": "unfulfilled, dissatisfied, incomplete, empty, longing"
+    }, 
+    {
+        "name": "Gentle",
+        "prompt": "{prompt}, gentle, kind, tender, soft, caring",
+        "negative_prompt": "rough, harsh, aggressive, cruel, uncaring"
+    },
+    {
+        "name": "Gloomy",
+        "prompt": "{prompt}, gloomy, dark, depressing, sad, pessimistic",
+        "negative_prompt": "bright, cheerful, happy, optimistic, hopeful"
+    },
+    {
+        "name": "Grateful",
+        "prompt": "{prompt}, grateful, thankful, appreciative, indebted, blessed",
+        "negative_prompt": "ungrateful, unthankful, unappreciative, entitled, resentful"
+    },
+    {
+        "name": "Grieving",
+        "prompt": "{prompt}, grieving, mourning, sorrowful, heartbroken, bereaved",
+        "negative_prompt": "happy, joyful, celebrating, content, peaceful"
+    },
+    {
+        "name": "Guilty",
+        "prompt": "{prompt}, guilty, ashamed, remorseful, regretful, responsible",
+        "negative_prompt": "innocent, blameless, unashamed, unrepentant, carefree"
+    },
+    {
+        "name": "Happy",
+        "prompt": "{prompt}, happy, joyful, cheerful, content, delighted",
+        "negative_prompt": "sad, unhappy, miserable, depressed, sorrowful"
+    },
+    {
+        "name": "Harmonious",
+        "prompt": "{prompt}, harmonious, peaceful, balanced, serene, tranquil",
+        "negative_prompt": "chaotic, discordant, unbalanced, stressful, conflicted"
+    },
+    {
+        "name": "Hateful",
+        "prompt": "{prompt}, hateful, resentful, bitter, angry, hostile",
+        "negative_prompt": "loving, compassionate, forgiving, kind, tolerant"
+    },
+    {
+        "name": "Haunted",
+        "prompt": "{prompt}, haunted, disturbed, troubled, obsessed, plagued",
+        "negative_prompt": "peaceful, serene, untroubled, free, liberated"
+    },
+    {
+        "name": "Heartbroken",
+        "prompt": "{prompt}, heartbroken, devastated, crushed, sorrowful, grieving",
+        "negative_prompt": "happy, joyful, in love, content, fulfilled"
+    },
+    {
+        "name": "Heavy-Hearted",
+        "prompt": "{prompt}, heavy-hearted, sad, burdened, sorrowful, grieving",
+        "negative_prompt": "lighthearted, carefree, happy, joyful, content"
+    },
+    {
+        "name": "Helpful",
+        "prompt": "{prompt}, helpful, supportive, assisting, caring, kind",
+        "negative_prompt": "unhelpful, unsupportive, hindering, selfish, indifferent"
+    },
+    {
+        "name": "Hopeful",
+        "prompt": "{prompt}, hopeful, optimistic, positive, expectant, encouraged",
+        "negative_prompt": "hopeless, pessimistic, negative, discouraged, despairing"
+    },
+    {
+        "name": "Honored",
+        "prompt": "{prompt}, honored, respected, esteemed, valued, admired",
+        "negative_prompt": "dishonored, disrespected, disregarded, unimportant, overlooked"
+    },
+    {
+        "name": "Humiliated",
+        "prompt": "{prompt}, humiliated, embarrassed, ashamed, degraded, mortified",
+        "negative_prompt": "proud, confident, respected, honored, dignified"
+    },
+    {
+        "name": "Hurt",
+        "prompt": "{prompt}, hurt, pained, wounded, injured, saddened",
+        "negative_prompt": "happy, healthy, healed, comforted, joyful"
+    },
+    {
+        "name": "Inspired",
+        "prompt": "{prompt}, inspired, motivated, creative, energized, enthusiastic",
+        "negative_prompt": "uninspired, unmotivated, uncreative, bored, apathetic"
+    },
+    {
+        "name": "Interested",
+        "prompt": "{prompt}, interested, curious, intrigued, fascinated, engaged",
+        "negative_prompt": "uninterested, bored, apathetic, indifferent, disengaged"
+    },
+    {
+        "name": "Introspective",
+        "prompt": "{prompt}, introspective, reflective, thoughtful, contemplative, self-aware",
+        "negative_prompt": "extroverted, outgoing, unreflective, impulsive, unaware"
+    },
+    {
+        "name": "Introverted",
+        "prompt": "{prompt}, introverted, reserved, quiet, shy, thoughtful",
+        "negative_prompt": "extroverted, outgoing, sociable, talkative, loud"
+    },
+    {
+        "name": "Irritated",
+        "prompt": "{prompt}, irritated, annoyed, frustrated, angry, agitated",
+        "negative_prompt": "calm, patient, content, pleased, relaxed"
+    },
+    {
+        "name": "Isolated",
+        "prompt": "{prompt}, isolated, lonely, alone, alienated, detached",
+        "negative_prompt": "connected, accompanied, surrounded, loved, supported"
+    },
+    {
+        "name": "Jealous",
+        "prompt": "{prompt}, jealous, envious, possessive, resentful, insecure",
+        "negative_prompt": "trusting, secure, confident, generous, happy"
+    },
+    {
+        "name": "Joyful",
+        "prompt": "{prompt}, joyful, happy, delighted, cheerful, ecstatic",
+        "negative_prompt": "sad, unhappy, sorrowful, depressed, miserable"
+    },
+    {
+        "name": "Kind",
+        "prompt": "{prompt}, kind, compassionate, caring, gentle, generous",
+        "negative_prompt": "cruel, unkind, heartless, selfish, mean"
+    },
+    {
+        "name": "Lonely",
+        "prompt": "{prompt}, lonely, isolated, alone, alienated, empty",
+        "negative_prompt": "accompanied, surrounded, connected, loved, supported"
+    },
+    {
+        "name": "Loved",
+        "prompt": "{prompt}, loved, cherished, adored, treasured, valued",
+        "negative_prompt": "unloved, rejected, abandoned, neglected, forgotten"
+    },
+    {
+        "name": "Loving",
+        "prompt": "{prompt}, loving, affectionate, caring, devoted, passionate",
+        "negative_prompt": "hateful, cold, indifferent, uncaring, apathetic"
+    }, 
+    {
+        "name": "Low",
+        "prompt": "{prompt}, low, depressed, down, sad, dejected",
+        "negative_prompt": "happy, cheerful, high, elated, optimistic"
+    },
+    {
+        "name": "Meditative",
+        "prompt": "{prompt}, meditative, contemplative, reflective, mindful, peaceful",
+        "negative_prompt": "distracted, unfocused, restless, agitated, stressed"
+    },
+    {
+        "name": "Melancholic",
+        "prompt": "{prompt}, melancholic, wistful, nostalgic, sentimental, thoughtful",
+        "negative_prompt": "happy, cheerful, optimistic, carefree, un Sentimental"
+    },
+    {
+        "name": "Miserable",
+        "prompt": "{prompt}, miserable, unhappy, sorrowful, depressed, wretched",
+        "negative_prompt": "happy, joyful, content, cheerful, delighted"
+    }, 
+    {
+        "name": "Motivated",
+        "prompt": "{prompt}, motivated, driven, inspired, determined, ambitious",
+        "negative_prompt": "unmotivated, lazy, apathetic, discouraged, resigned"
+    },
+    {
+        "name": "Mournful",
+        "prompt": "{prompt}, mournful, grieving, sorrowful, sad, heartbroken",
+        "negative_prompt": "happy, joyful, celebrating, content, peaceful"
+    },
+    {
+        "name": "Nauseated",
+        "prompt": "{prompt}, nauseated, disgusted, sickened, repulsed, revolted",
+        "negative_prompt": "pleased, delighted, attracted, fascinated, intrigued"
+    },
+    {
+        "name": "Nervous",
+        "prompt": "{prompt}, nervous, anxious, worried, agitated, tense",
+        "negative_prompt": "calm, relaxed, confident, secure, at ease"
+    },
+    {
+        "name": "Nostalgic",
+        "prompt": "{prompt}, nostalgic, wistful, sentimental, reminiscent, longing",
+        "negative_prompt": "forward-looking, present-focused, un Sentimental, indifferent, apathetic"
+    },
+    {
+        "name": "Nurtured",
+        "prompt": "{prompt}, nurtured, cared for, protected, loved, supported",
+        "negative_prompt": "neglected, abandoned, abused, unloved, unsupported"
+    },
+    {
+        "name": "Offended",
+        "prompt": "{prompt}, offended, insulted, hurt, angry, resentful",
+        "negative_prompt": "pleased, flattered, respected, understood, forgiven"
+    },
+    {
+        "name": "Optimistic",
+        "prompt": "{prompt}, optimistic, hopeful, positive, confident, cheerful",
+        "negative_prompt": "pessimistic, hopeless, negative, doubtful, cynical"
+    },
+    {
+        "name": "Overjoyed",
+        "prompt": "{prompt}, overjoyed, ecstatic, thrilled, delighted, blissful",
+        "negative_prompt": "sad, unhappy, disappointed, depressed, miserable"
+    },
+    {
+        "name": "Overwhelmed",
+        "prompt": "{prompt}, overwhelmed, stressed, anxious, exhausted, burdened",
+        "negative_prompt": "calm, relaxed, in control, capable, empowered"
+    },
+    {
+        "name": "Pained",
+        "prompt": "{prompt}, pained, hurting, suffering, aching, distressed",
+        "negative_prompt": "comfortable, happy, healthy, healed, relieved"
+    },
+    {
+        "name": "Passionate",
+        "prompt": "{prompt}, passionate, enthusiastic, fervent, intense, ardent",
+        "negative_prompt": "apathetic, indifferent, unenthusiastic, cold, detached"
+    },
+    {
+        "name": "Peaceful",
+        "prompt": "{prompt}, peaceful, serene, tranquil, calm, quiet",
+        "negative_prompt": "chaotic, violent, stressful, noisy, agitated"
+    },
+    {
+        "name": "Pensive",
+        "prompt": "{prompt}, pensive, thoughtful, contemplative, reflective, introspective",
+        "negative_prompt": "careless, thoughtless, unreflective, impulsive, distracted"
+    },
+    {
+        "name": "Pessimistic",
+        "prompt": "{prompt}, pessimistic, negative, cynical, hopeless, despairing",
+        "negative_prompt": "optimistic, hopeful, positive, confident, enthusiastic"
+    },
+    {
+        "name": "Playful",
+        "prompt": "{prompt}, playful, fun-loving, mischievous, lighthearted, joyful",
+        "negative_prompt": "serious, somber, solemn, grumpy, unhappy"
+    },
+    {
+        "name": "Pleased",
+        "prompt": "{prompt}, pleased, happy, satisfied, content, delighted",
+        "negative_prompt": "displeased, unhappy, dissatisfied, discontent, disappointed"
+    }, 
+    {
+        "name": "Proud",
+        "prompt": "{prompt}, proud, accomplished, self-respecting, dignified, pleased",
+        "negative_prompt": "ashamed, embarrassed, humiliated, disappointed, insecure"
+    }, 
+    {
+        "name": "Protected",
+        "prompt": "{prompt}, protected, safe, secure, defended, sheltered",
+        "negative_prompt": "vulnerable, endangered, threatened, exposed, unsafe"
+    },
+    {
+        "name": "Puzzled",
+        "prompt": "{prompt}, puzzled, confused, bewildered, perplexed, baffled",
+        "negative_prompt": "clear, obvious, understandable, certain, knowledgeable"
+    },
+    {
+        "name": "Quiet",
+        "prompt": "{prompt}, quiet, still, silent, peaceful, calm",
+        "negative_prompt": "loud, noisy, boisterous, chaotic, restless"
+    },
+    {
+        "name": "Radiant",
+        "prompt": "{prompt}, radiant, glowing, shining, bright, beautiful",
+        "negative_prompt": "dull, lifeless, faded, dark, gloomy"
+    },
+    {
+        "name": "Regretful",
+        "prompt": "{prompt}, regretful, remorseful, sorry, guilty, ashamed",
+        "negative_prompt": "happy, content, unremorseful, unashamed, proud"
+    },
+    {
+        "name": "Relaxed",
+        "prompt": "{prompt}, relaxed, calm, peaceful, tranquil, at ease",
+        "negative_prompt": "stressed, anxious, tense, agitated, restless"
+    },
+    {
+        "name": "Relieved",
+        "prompt": "{prompt}, relieved, comforted, reassured, grateful, thankful",
+        "negative_prompt": "anxious, worried, stressed, fearful, disappointed"
+    },
+    {
+        "name": "Remorseful",
+        "prompt": "{prompt}, remorseful, regretful, guilty, ashamed, sorry",
+        "negative_prompt": "unrepentant, unashamed, proud, indifferent, uncaring"
+    },
+    {
+        "name": "Reserved",
+        "prompt": "{prompt}, reserved, introverted, shy, quiet, cautious",
+        "negative_prompt": "extroverted, outgoing, sociable, talkative, bold"
+    },
+    {
+        "name": "Respected",
+        "prompt": "{prompt}, respected, honored, esteemed, valued, admired",
+        "negative_prompt": "disrespected, dishonored, disregarded, unimportant, overlooked"
+    },
+    {
+        "name": "Restless",
+        "prompt": "{prompt}, restless, agitated, fidgety, uneasy, bored",
+        "negative_prompt": "calm, still, relaxed, content, engaged"
+    }, 
+    {
+        "name": "Revolted",
+        "prompt": "{prompt}, revolted, disgusted, repulsed, nauseated, horrified",
+        "negative_prompt": "pleased, delighted, attracted, fascinated, intrigued"
+    },
+    {
+        "name": "Sad",
+        "prompt": "{prompt}, sad, unhappy, sorrowful, depressed, dejected",
+        "negative_prompt": "happy, joyful, cheerful, content, delighted"
+    },
+    {
+        "name": "Safe",
+        "prompt": "{prompt}, safe, secure, protected, sheltered, comfortable",
+        "negative_prompt": "unsafe, insecure, vulnerable, exposed, threatened"
+    },
+    {
+        "name": "Satisfied",
+        "prompt": "{prompt}, satisfied, content, fulfilled, pleased, happy",
+        "negative_prompt": "dissatisfied, discontent, unfulfilled, unhappy, frustrated"
+    },
+    {
+        "name": "Scared",
+        "prompt": "{prompt}, scared, frightened, terrified, afraid, panicked",
+        "negative_prompt": "calm, brave, courageous, confident, secure"
+    },
+    {
+        "name": "Secure",
+        "prompt": "{prompt}, secure, safe, protected, confident, stable",
+        "negative_prompt": "insecure, unsafe, vulnerable, anxious, unstable"
+    }, 
+    {
+        "name": "Self-Conscious",
+        "prompt": "{prompt}, self-conscious, embarrassed, insecure, shy, anxious",
+        "negative_prompt": "confident, self-assured, comfortable, outgoing, bold"
+    },
+    {
+        "name": "Serene",
+        "prompt": "{prompt}, serene, peaceful, tranquil, calm, content",
+        "negative_prompt": "chaotic, stressful, agitated, disturbed, upset"
+    },
+    {
+        "name": "Serious",
+        "prompt": "{prompt}, serious, solemn, grave, thoughtful, concerned",
+        "negative_prompt": "happy, cheerful, lighthearted, playful, carefree"
+    },
+    {
+        "name": "Shaken",
+        "prompt": "{prompt}, shaken, disturbed, upset, shocked, traumatized",
+        "negative_prompt": "calm, composed, peaceful, secure, confident"
+    },
+    {
+        "name": "Shy",
+        "prompt": "{prompt}, shy, timid, reserved, introverted, self-conscious",
+        "negative_prompt": "confident, outgoing, extroverted, bold, sociable"
+    },
+    {
+        "name": "Sick",
+        "prompt": "{prompt}, sick, ill, unwell, nauseated, weak",
+        "negative_prompt": "healthy, well, strong, energetic, vibrant"
+    },
+    {
+        "name": "Silly",
+        "prompt": "{prompt}, silly, playful, goofy, foolish, lighthearted",
+        "negative_prompt": "serious, somber, solemn, intelligent, wise"
+    },
+    {
+        "name": "Skeptical",
+        "prompt": "{prompt}, skeptical, doubtful, questioning, cynical, suspicious",
+        "negative_prompt": "trusting, believing, gullible, naive, optimistic"
+    }, 
+    {
+        "name": "Soft",
+        "prompt": "{prompt}, soft, gentle, tender, delicate, kind",
+        "negative_prompt": "rough, harsh, hard, tough, cruel"
+    },
+    {
+        "name": "Somber",
+        "prompt": "{prompt}, somber, dark, gloomy, serious, depressing",
+        "negative_prompt": "bright, cheerful, happy, lighthearted, joyful"
+    },
+    {
+        "name": "Sorrowful",
+        "prompt": "{prompt}, sorrowful, sad, grieving, heartbroken, mournful",
+        "negative_prompt": "happy, joyful, celebrating, content, peaceful"
+    },
+    {
+        "name": "Soothing",
+        "prompt": "{prompt}, soothing, calming, comforting, relaxing, peaceful",
+        "negative_prompt": "agitating, irritating, distressing, stressful, upsetting"
+    },
+    {
+        "name": "Stressed",
+        "prompt": "{prompt}, stressed, anxious, overwhelmed, pressured, tense",
+        "negative_prompt": "relaxed, calm, in control, peaceful, carefree"
+    },
+    {
+        "name": "Strong",
+        "prompt": "{prompt}, strong, powerful, resilient, determined, capable",
+        "negative_prompt": "weak, fragile, vulnerable, helpless, powerless"
+    },
+    {
+        "name": "Supported",
+        "prompt": "{prompt}, supported, encouraged, helped, loved, cared for",
+        "negative_prompt": "unsupported, discouraged, hindered, neglected, abandoned"
+    },
+    {
+        "name": "Surprised",
+        "prompt": "{prompt}, surprised, astonished, amazed, shocked, startled",
+        "negative_prompt": "expecting, anticipating, prepared, unsurprised, bored"
+    },
+    {
+        "name": "Suspicious",
+        "prompt": "{prompt}, suspicious, distrustful, skeptical, wary, cautious",
+        "negative_prompt": "trusting, naive, gullible, confident, carefree"
+    }, 
+    {
+        "name": "Tender",
+        "prompt": "{prompt}, tender, loving, gentle, soft, compassionate",
+        "negative_prompt": "rough, harsh, cold, cruel, indifferent"
+    },
+    {
+        "name": "Tense",
+        "prompt": "{prompt}, tense, nervous, anxious, stressed, uptight",
+        "negative_prompt": "relaxed, calm, at ease, peaceful, comfortable"
+    },
+    {
+        "name": "Terrified",
+        "prompt": "{prompt}, terrified, frightened, scared, horrified, panicked",
+        "negative_prompt": "calm, brave, courageous, confident, secure"
+    },
+    {
+        "name": "Thankful",
+        "prompt": "{prompt}, thankful, grateful, appreciative, indebted, blessed",
+        "negative_prompt": "ungrateful, unthankful, unappreciative, entitled, resentful"
+    },
+    {
+        "name": "Thoughtful",
+        "prompt": "{prompt}, thoughtful, considerate, kind, pensive, reflective",
+        "negative_prompt": "thoughtless, inconsiderate, selfish, careless, impulsive"
+    },
+    {
+        "name": "Thrilled",
+        "prompt": "{prompt}, thrilled, excited, overjoyed, delighted, ecstatic",
+        "negative_prompt": "bored, apathetic, disappointed, depressed, unhappy"
+    },
+    {
+        "name": "Tired",
+        "prompt": "{prompt}, tired, exhausted, weary, fatigued, drained",
+        "negative_prompt": "energetic, refreshed, invigorated, lively, rested"
+    },
+    {
+        "name": "Tranquil",
+        "prompt": "{prompt}, tranquil, peaceful, serene, calm, quiet",
+        "negative_prompt": "chaotic, stressful, agitated, disturbed, noisy"
+    },
+    {
+        "name": "Troubled",
+        "prompt": "{prompt}, troubled, worried, anxious, disturbed, distressed",
+        "negative_prompt": "calm, peaceful, content, happy, reassured"
+    },
+    {
+        "name": "Trusting",
+        "prompt": "{prompt}, trusting, faithful, believing, confident, secure",
+        "negative_prompt": "suspicious, distrustful, skeptical, wary, insecure"
+    },
+    {
+        "name": "Uncertain",
+        "prompt": "{prompt}, uncertain, unsure, doubtful, hesitant, indecisive",
+        "negative_prompt": "certain, sure, confident, decisive, resolute"
+    },
+    {
+        "name": "Understanding",
+        "prompt": "{prompt}, understanding, empathetic, compassionate, tolerant, patient",
+        "negative_prompt": "judgmental, intolerant, uncaring, impatient, unsympathetic"
+    },
+    {
+        "name": "Unhappy",
+        "prompt": "{prompt}, unhappy, sad, miserable, depressed, sorrowful",
+        "negative_prompt": "happy, joyful, content, cheerful, delighted"
+    },
+    {
+        "name": "Unnerved",
+        "prompt": "{prompt}, unnerved, rattled, shaken, anxious, uneasy",
+        "negative_prompt": "calm, composed, confident, secure, at ease"
+    },
+    {
+        "name": "Upset",
+        "prompt": "{prompt}, upset, disturbed, distressed, sad, angry",
+        "negative_prompt": "happy, content, peaceful, calm, pleased"
+    },
+    {
+        "name": "Valued",
+        "prompt": "{prompt}, valued, appreciated, respected, cherished, important",
+        "negative_prompt": "devalued, unappreciated, disrespected, neglected, unimportant"
+    },
+    {
+        "name": "Vulnerable",
+        "prompt": "{prompt}, vulnerable, fragile, exposed, weak, defenseless",
+        "negative_prompt": "strong, resilient, protected, secure, powerful"
+    },
+    {
+        "name": "Warm",
+        "prompt": "{prompt}, warm, loving, comforting, kind, friendly",
+        "negative_prompt": "cold, distant, uncaring, unfriendly, hostile"
+    },
+    {
+        "name": "Weary",
+        "prompt": "{prompt}, weary, tired, exhausted, drained, worn out",
+        "negative_prompt": "energetic, refreshed, invigorated, lively, enthusiastic"
+    },
+    {
+        "name": "Whimsical",
+        "prompt": "{prompt}, whimsical, playful, fanciful, imaginative, lighthearted",
+        "negative_prompt": "serious, somber, realistic, practical, dull"
+    },
+    {
+        "name": "Wistful",
+        "prompt": "{prompt}, wistful, nostalgic, longing, yearning, melancholic",
+        "negative_prompt": "content, satisfied, present-focused, happy, fulfilled"
+    },
+    {
+        "name": "Worried",
+        "prompt": "{prompt}, worried, anxious, concerned, stressed, fearful",
+        "negative_prompt": "calm, relaxed, unconcerned, confident, reassured"
+    }
+]

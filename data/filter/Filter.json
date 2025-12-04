@@ -1,0 +1,72 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "BlackAndWhite (Classic black and white photography)",
+        "prompt": "blackandwhite {prompt}",
+        "negative_prompt": "color"
+    },
+    {
+        "name": "Cool (Cool-toned color palette)",
+        "prompt": "cool {prompt}",
+        "negative_prompt": "warm"
+    },
+    {
+        "name": "HDR (High dynamic range)",
+        "prompt": "hdr {prompt}",
+        "negative_prompt": "ldr"
+    },
+    {
+        "name": "Monochrome (Single color scale)",
+        "prompt": "monochrome {prompt}",
+        "negative_prompt": "colorful"
+    },
+    {
+        "name": "Sepia (Warm brown tones)",
+        "prompt": "sepia {prompt}",
+        "negative_prompt": "bright"
+    },
+    {
+        "name": "Vintage (Retro aesthetic)",
+        "prompt": "vintage {prompt}",
+        "negative_prompt": "modern"
+    },
+    {
+        "name": "Warm (Warm-toned color palette)",
+        "prompt": "warm {prompt}",
+        "negative_prompt": "cool"
+    },
+    {
+        "name": "FilmGrain (Grainy texture)",
+        "prompt": "film grain {prompt}",
+        "negative_prompt": "smooth"
+    },
+    {
+        "name": "Cyberpunk (Futuristic neon-lit)",
+        "prompt": "cyberpunk {prompt}",
+        "negative_prompt": "traditional"
+    },
+    {
+        "name": "Surreal (Dreamy, fantastical)",
+        "prompt": "surreal {prompt}",
+        "negative_prompt": "realistic"
+    },
+    {
+        "name": "Minimalist (Simplicity and minimal design)",
+        "prompt": "minimalist {prompt}",
+        "negative_prompt": "complex"
+    },
+    {
+        "name": "PopArt (Bright, vibrant colors)",
+        "prompt": "pop art {prompt}",
+        "negative_prompt": "dull"
+    },
+    {
+        "name": "Impressionist (Painterly style)",
+        "prompt": "impressionist {prompt}",
+        "negative_prompt": "sharp"
+    }
+]

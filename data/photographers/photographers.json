@@ -1,0 +1,372 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Alessio Albi",
+        "prompt": "{prompt}, Alessio Albi style, moody portraits, natural light, earthy tones, intimate close-ups",
+        "negative_prompt": "bright colors, studio lighting, wide-angle shots"
+    },
+    {
+        "name": "Alvin Langdon Coburn",
+        "prompt": "{prompt}, Alvin Langdon Coburn style, pictorialist photography, soft focus, atmospheric cityscapes",
+        "negative_prompt": "sharp focus, modern urban scenes, digital clarity"
+    },
+    {
+        "name": "Anne Brigman",
+        "prompt": "{prompt}, Anne Brigman style, nude figures in nature, mystical themes, pioneering female photographer",
+        "negative_prompt": "urban settings, clothed subjects, mundane scenes"
+    },
+    {
+        "name": "Ansel Adams",
+        "prompt": "{prompt}, Ansel Adams style, high contrast black and white landscapes, sharp focus, deep depth of field",
+        "negative_prompt": "color photography, soft focus, shallow depth of field"
+    },
+    {
+        "name": "Anton Corbijn",
+        "prompt": "{prompt}, Anton Corbijn style, grainy black and white portraits, rock musicians, stark contrast",
+        "negative_prompt": "colorful images, smooth textures, non-musical subjects"
+    },
+    {
+        "name": "Berenice Abbott",
+        "prompt": "{prompt}, Berenice Abbott style, architectural photography, New York City, scientific imagery",
+        "negative_prompt": "rural scenes, soft focus, pictorialism"
+    },
+    {
+        "name": "Bill Brandt",
+        "prompt": "{prompt}, Bill Brandt style, high contrast nudes, distorted perspectives, surreal compositions",
+        "negative_prompt": "naturalistic lighting, conventional poses, documentary style"
+    },
+    {
+        "name": "Brooke DiDonato",
+        "prompt": "{prompt}, Brooke DiDonato style, surreal scenarios, pastel colors, conceptual self-portraits",
+        "negative_prompt": "realistic scenes, monochrome, documentary photography"
+    },
+    {
+        "name": "Bruce Davidson",
+        "prompt": "{prompt}, Bruce Davidson style, street photography, social documentation, intimate moments",
+        "negative_prompt": "staged scenes, studio portraits, nature photography"
+    },
+    {
+        "name": "Bruno Barbey",
+        "prompt": "{prompt}, Bruno Barbey style, vibrant color street scenes, global cultural documentation",
+        "negative_prompt": "black and white, studio shots, minimalist compositions"
+    },
+    {
+        "name": "Chris Burkard",
+        "prompt": "{prompt}, Chris Burkard style, adventure photography, vast landscapes, cold water surfing",
+        "negative_prompt": "urban scenes, studio portraits, warm climate settings"
+    },
+    {
+        "name": "Claude Cahun",
+        "prompt": "{prompt}, Claude Cahun style, surrealist self-portraits, gender ambiguity, theatrical setups",
+        "negative_prompt": "conventional portraits, naturalistic scenes, documentary style"
+    },
+    {
+        "name": "David Bailey",
+        "prompt": "{prompt}, David Bailey style, fashion photography, high contrast black and white portraits, 1960s London",
+        "negative_prompt": "color photography, rural scenes, pictorialism"
+    },
+    {
+        "name": "David Burdeny",
+        "prompt": "{prompt}, David Burdeny style, minimalist landscapes, long exposures, muted color palettes",
+        "negative_prompt": "busy compositions, vivid colors, fast shutter speeds"
+    },
+    {
+        "name": "Dawoud Bey",
+        "prompt": "{prompt}, Dawoud Bey style, portraiture of marginalized communities, large format, social engagement",
+        "negative_prompt": "candid street photography, nature scenes, abstract compositions"
+    },
+    {
+        "name": "Diane Arbus",
+        "prompt": "{prompt}, Diane Arbus style, portraits of marginalized people, square format, direct flash",
+        "negative_prompt": "glamour shots, nature photography, soft lighting"
+    },
+    {
+        "name": "Dirk Braeckman",
+        "prompt": "{prompt}, Dirk Braeckman style, monochrome, grainy textures, mysterious interiors",
+        "negative_prompt": "sharp focus, colorful images, outdoor scenes"
+    },
+    {
+        "name": "Edward Burtynsky",
+        "prompt": "{prompt}, Edward Burtynsky style, industrial landscapes, aerial views, environmental impact",
+        "negative_prompt": "intimate portraits, natural untouched landscapes, small scale scenes"
+    },
+    {
+        "name": "Edward S. Curtis",
+        "prompt": "{prompt}, Edward S. Curtis style, Native American portraits, sepia tones, early 20th century",
+        "negative_prompt": "modern subjects, vibrant colors, urban scenes"
+    },
+    {
+        "name": "Elina Brotherus",
+        "prompt": "{prompt}, Elina Brotherus style, autobiographical, minimalist compositions, bright colors",
+        "negative_prompt": "busy scenes, dark moody tones, street photography"
+    },
+    {
+        "name": "Elsa Bleda",
+        "prompt": "{prompt}, Elsa Bleda style, neon-lit cityscapes, moody night scenes, cinematic atmosphere",
+        "negative_prompt": "daylight photography, natural landscapes, cheerful mood"
+    },
+    {
+        "name": "Erwin Blumenfeld",
+        "prompt": "{prompt}, Erwin Blumenfeld style, experimental fashion photography, surreal elements, color experimentation",
+        "negative_prompt": "conventional portraits, documentary style, muted colors"
+    },
+    {
+        "name": "Flora Borsi",
+        "prompt": "{prompt}, Flora Borsi style, surreal self-portraits, digital manipulation, animal hybrids",
+        "negative_prompt": "straightforward portraits, unedited photos, natural scenes"
+    },
+    {
+        "name": "Gregory Colbert",
+        "prompt": "{prompt}, Gregory Colbert style, sepia-toned, humans with animals, dreamlike quality",
+        "negative_prompt": "vibrant colors, urban scenes, technological subjects"
+    },
+    {
+        "name": "Gregory Crewdson",
+        "prompt": "{prompt}, Gregory Crewdson style, cinematic scenes, suburban surrealism, elaborate staging",
+        "negative_prompt": "candid shots, minimalist compositions, bright daylight"
+    },
+    {
+        "name": "Guy Aroch",
+        "prompt": "{prompt}, Guy Aroch style, dreamy fashion photography, soft focus, warm color palette",
+        "negative_prompt": "sharp focus, cold colors, documentary style"
+    },
+    {
+        "name": "Guy Bourdin",
+        "prompt": "{prompt}, Guy Bourdin style, surreal fashion photography, bold colors, provocative scenes",
+        "negative_prompt": "natural looks, muted colors, conventional poses"
+    },
+    {
+        "name": "Hans Bellmer",
+        "prompt": "{prompt}, Hans Bellmer style, surrealist dolls, distorted bodies, unsettling compositions",
+        "negative_prompt": "realistic portraits, natural scenes, conventional beauty"
+    },
+    {
+        "name": "Harry Benson",
+        "prompt": "{prompt}, Harry Benson style, photojournalism, candid celebrity portraits, historical moments",
+        "negative_prompt": "staged scenes, studio portraits, abstract compositions"
+    },
+    {
+        "name": "Harry Callahan",
+        "prompt": "{prompt}, Harry Callahan style, high contrast, minimalist compositions, experimental techniques",
+        "negative_prompt": "busy scenes, low contrast, conventional subjects"
+    },
+    {
+        "name": "Henri Cartier-Bresson",
+        "prompt": "{prompt}, Henri Cartier-Bresson style, decisive moment, street photography, black and white",
+        "negative_prompt": "posed portraits, color photography, digital manipulation"
+    },
+    {
+        "name": "Ilse Bing",
+        "prompt": "{prompt}, Ilse Bing style, avant-garde angles, night photography, self-portraits",
+        "negative_prompt": "conventional perspectives, daytime scenes, portraits of others"
+    },
+    {
+        "name": "Imogen Cunningham",
+        "prompt": "{prompt}, Imogen Cunningham style, botanical close-ups, sharp focus, industrial forms",
+        "negative_prompt": "soft focus, wide landscapes, colorful scenes"
+    },
+    {
+        "name": "Iwan Baan",
+        "prompt": "{prompt}, Iwan Baan style, architectural photography, human interaction with spaces, aerial views",
+        "negative_prompt": "studio portraits, natural landscapes, macro photography"
+    },
+    {
+        "name": "James Balog",
+        "prompt": "{prompt}, James Balog style, environmental photography, time-lapse, climate change documentation",
+        "negative_prompt": "studio photography, static scenes, unrelated to nature"
+    },
+    {
+        "name": "Jamie Baldridge",
+        "prompt": "{prompt}, Jamie Baldridge style, surreal narratives, digital composites, fairytale aesthetics",
+        "negative_prompt": "documentary style, unmanipulated images, mundane subjects"
+    },
+    {
+        "name": "Julia Margaret Cameron",
+        "prompt": "{prompt}, Julia Margaret Cameron style, soft focus portraits, allegorical themes, Victorian era",
+        "negative_prompt": "sharp focus, modern subjects, minimalist composition"
+    },
+    {
+        "name": "Julie Blackmon",
+        "prompt": "{prompt}, Julie Blackmon style, staged domestic scenes, subtle humor, painterly quality",
+        "negative_prompt": "candid shots, urban landscapes, black and white photography"
+    },
+    {
+        "name": "Karl Blossfeldt",
+        "prompt": "{prompt}, Karl Blossfeldt style, close-up plant photography, intricate details, black and white",
+        "negative_prompt": "wide landscapes, color photography, human subjects"
+    },
+    {
+        "name": "Katia Chausheva",
+        "prompt": "{prompt}, Katia Chausheva style, dreamlike portraits, soft pastels, feminine subjects",
+        "negative_prompt": "harsh contrasts, urban scenes, masculine themes"
+    },
+    {
+        "name": "Keith Carter",
+        "prompt": "{prompt}, Keith Carter style, ethereal black and white, selective focus, Southern Gothic",
+        "negative_prompt": "sharp focus throughout, vibrant colors, urban themes"
+    },
+    {
+        "name": "Larry Burrows",
+        "prompt": "{prompt}, Larry Burrows style, war photography, vivid colors, human emotion in conflict",
+        "negative_prompt": "peaceful scenes, studio portraits, black and white"
+    },
+    {
+        "name": "Larry Clark",
+        "prompt": "{prompt}, Larry Clark style, raw youth culture, controversial subjects, documentary approach",
+        "negative_prompt": "glamorized scenes, elderly subjects, nature photography"
+    },
+    {
+        "name": "Laurent Baheux",
+        "prompt": "{prompt}, Laurent Baheux style, high contrast black and white wildlife, emotional animal portraits",
+        "negative_prompt": "color photography, domestic animals, urban scenes"
+    },
+    {
+        "name": "Lewis Baltz",
+        "prompt": "{prompt}, Lewis Baltz style, minimalist landscapes, man-altered environment, geometric compositions",
+        "negative_prompt": "lush nature scenes, busy compositions, portrait photography"
+    },
+    {
+        "name": "Lillian Bassman",
+        "prompt": "{prompt}, Lillian Bassman style, high contrast fashion photography, elegant femininity, experimental darkroom techniques",
+        "negative_prompt": "straightforward realism, masculine subjects, color photography"
+    },
+    {
+        "name": "Lynsey Addario",
+        "prompt": "{prompt}, Lynsey Addario style, conflict zone photojournalism, women's issues, cultural documentation",
+        "negative_prompt": "staged scenes, fashion photography, abstract compositions"
+    },
+    {
+        "name": "Margaret Bourke-White",
+        "prompt": "{prompt}, Margaret Bourke-White style, industrial photography, photojournalism, strong compositions",
+        "negative_prompt": "soft focus, abstract art, domestic scenes"
+    },
+    {
+        "name": "Marianne Breslauer",
+        "prompt": "{prompt}, Marianne Breslauer style, street scenes, portraits of women, 1930s aesthetics",
+        "negative_prompt": "modern subjects, highly staged shots, rural landscapes"
+    },
+    {
+        "name": "Marta Bevacqua",
+        "prompt": "{prompt}, Marta Bevacqua style, dreamy portraits, soft colors, feminine aesthetic",
+        "negative_prompt": "harsh lighting, urban grittiness, masculine themes"
+    },
+    {
+        "name": "Mathew Brady",
+        "prompt": "{prompt}, Mathew Brady style, Civil War era photography, daguerreotype aesthetic, historical documentation",
+        "negative_prompt": "modern subjects, color photography, abstract compositions"
+    },
+    {
+        "name": "Miki Asai",
+        "prompt": "{prompt}, Miki Asai style, macro nature photography, water droplets, miniature worlds",
+        "negative_prompt": "wide landscapes, urban scenes, human subjects"
+    },
+    {
+        "name": "Miles Aldridge",
+        "prompt": "{prompt}, Miles Aldridge style, hyper-saturated colors, staged scenes, pop art influence",
+        "negative_prompt": "natural colors, candid moments, black and white photography"
+    },
+    {
+        "name": "Nick Brandt",
+        "prompt": "{prompt}, Nick Brandt style, African wildlife portraiture, panoramic black and white, conservation themes",
+        "negative_prompt": "color photography, urban subjects, small format"
+    },
+    {
+        "name": "Nobuyoshi Araki",
+        "prompt": "{prompt}, Nobuyoshi Araki style, erotic imagery, everyday life in Japan, polaroid aesthetics",
+        "negative_prompt": "Western subjects, landscape photography, conventional portraiture"
+    },
+    {
+        "name": "Olive Cotton",
+        "prompt": "{prompt}, Olive Cotton style, modernist compositions, Australian landscapes, soft light",
+        "negative_prompt": "urban scenes, harsh contrast, digital manipulation"
+    },
+    {
+        "name": "Patrick Demarchelier",
+        "prompt": "{prompt}, Patrick Demarchelier style, fashion and celebrity portraiture, clean aesthetics, timeless elegance",
+        "negative_prompt": "gritty realism, amateur style, heavily manipulated images"
+    },
+    {
+        "name": "Paul Barson",
+        "prompt": "{prompt}, Paul Barson style, colorful street photography, humorous juxtapositions, British culture",
+        "negative_prompt": "studio portraits, black and white, serious tone"
+    },
+    {
+        "name": "Petra Collins",
+        "prompt": "{prompt}, Petra Collins style, dreamy feminine aesthetic, pastel colors, coming-of-age themes",
+        "negative_prompt": "high contrast, masculine subjects, corporate photography"
+    },
+    {
+        "name": "Richard Avedon",
+        "prompt": "{prompt}, Richard Avedon style, stark portraits, white background, emotional intensity",
+        "negative_prompt": "busy backgrounds, candid shots, soft focus"
+    },
+    {
+        "name": "Rineke Dijkstra",
+        "prompt": "{prompt}, Rineke Dijkstra style, stark portraits, beach scenes, adolescent subjects",
+        "negative_prompt": "busy compositions, heavily styled subjects, urban settings"
+    },
+    {
+        "name": "Robert Capa",
+        "prompt": "{prompt}, Robert Capa style, war photography, action shots, gritty realism",
+        "negative_prompt": "staged scenes, studio portraits, peaceful settings"
+    },
+    {
+        "name": "Robert Frank",
+        "prompt": "{prompt}, Robert Frank style, candid street photography, post-war America, high contrast black and white",
+        "negative_prompt": "posed portraits, color photography, non-American scenes"
+    },
+    {
+        "name": "Sally Mann",
+        "prompt": "{prompt}, Sally Mann style, intimate family portraits, Southern Gothic, large format photography",
+        "negative_prompt": "urban scenes, bright colors, conventional poses"
+    },
+    {
+        "name": "Saul Leiter",
+        "prompt": "{prompt}, Saul Leiter style, early color photography, abstract compositions, reflections and obstructions",
+        "negative_prompt": "sharp focus throughout, traditional compositions, rural scenes"
+    },
+    {
+        "name": "Sebastião Salgado",
+        "prompt": "{prompt}, Sebastião Salgado style, powerful black and white, social documentary, global issues",
+        "negative_prompt": "color photography, light-hearted subjects, small scale scenes"
+    },
+    {
+        "name": "Steve McCurry",
+        "prompt": "{prompt}, Steve McCurry style, vibrant colors, portrait photography, cultural documentation",
+        "negative_prompt": "black and white, Western subjects, studio settings"
+    },
+    {
+        "name": "Tim Walker",
+        "prompt": "{prompt}, Tim Walker style, fantastical fashion photography, whimsical sets, fairytale elements",
+        "negative_prompt": "realistic settings, documentary style, mundane subjects"
+    },
+    {
+        "name": "Vivian Maier",
+        "prompt": "{prompt}, Vivian Maier style, street photography, self-portraits, everyday American life",
+        "negative_prompt": "staged scenes, rural settings, digital photography"
+    },
+    {
+        "name": "Walker Evans",
+        "prompt": "{prompt}, Walker Evans style, Depression-era documentary, American vernacular, straight photography",
+        "negative_prompt": "glamorous subjects, manipulated images, non-American scenes"
+    },
+    {
+        "name": "William Eggleston",
+        "prompt": "{prompt}, William Eggleston style, everyday Americana, saturated colors, seemingly mundane subjects",
+        "negative_prompt": "black and white, exotic locations, conventional beauty"
+    },
+    {
+        "name": "William Klein",
+        "prompt": "{prompt}, William Klein style, gritty street photography, experimental techniques, high contrast",
+        "negative_prompt": "serene landscapes, traditional compositions, soft focus"
+    },
+    {
+        "name": "Yousuf Karsh",
+        "prompt": "{prompt}, Yousuf Karsh style, dramatic portraits, chiaroscuro lighting, famous personalities",
+        "negative_prompt": "candid shots, flat lighting, unknown subjects"
+    }
+]

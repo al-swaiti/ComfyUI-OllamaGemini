@@ -1,0 +1,182 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "3/4 shot",
+        "prompt": "Portrait of {prompt}, featuring (angled view, partial body visible)",
+        "negative_prompt": "full frontal view, only face visible, full body shot"
+    },
+    {
+        "name": "Against a wall",
+        "prompt": "Image of {prompt} leaning against a wall, showcasing (body posture, background interaction)",
+        "negative_prompt": "free-standing pose, absence of wall, floating in space"
+    },
+    {
+        "name": "Arms crossed",
+        "prompt": "Portrait of {prompt} with arms crossed, highlighting (confident stance, closed body language)",
+        "negative_prompt": "open arms, relaxed posture, hands at sides"
+    },
+    {
+        "name": "Close-up",
+        "prompt": "Detailed close-up of {prompt}, focusing on (facial features, intense expression)",
+        "negative_prompt": "full body shot, distant view, lack of detail"
+    },
+    {
+        "name": "Environmental portrait",
+        "prompt": "Image of {prompt} in their natural environment, showcasing (surroundings, personal context)",
+        "negative_prompt": "plain background, studio setting, isolated subject"
+    },
+    {
+        "name": "Full body shot",
+        "prompt": "Full body portrait of {prompt}, capturing (entire figure, head-to-toe view)",
+        "negative_prompt": "cropped image, partial body, close-up"
+    },
+    {
+        "name": "Head tilted to the side",
+        "prompt": "Portrait of {prompt} with head tilted to the side, emphasizing (curious expression, playful angle)",
+        "negative_prompt": "straight-on view, rigid posture, lack of tilt"
+    },
+    {
+        "name": "Headshot",
+        "prompt": "Professional headshot of {prompt}, focusing on (face and shoulders, engaging expression)",
+        "negative_prompt": "full body view, environmental context, casual pose"
+    },
+    {
+        "name": "Leaning forward",
+        "prompt": "Image of {prompt} leaning forward, highlighting (engaged posture, attentive stance)",
+        "negative_prompt": "leaning back, relaxed pose, disengaged body language"
+    },
+    {
+        "name": "Looking down",
+        "prompt": "Portrait of {prompt} looking down, showcasing (contemplative expression, downcast gaze)",
+        "negative_prompt": "looking up, direct eye contact, raised chin"
+    },
+    {
+        "name": "Looking off into the distance",
+        "prompt": "Image of {prompt} gazing into the distance, featuring (thoughtful expression, unfocused eyes)",
+        "negative_prompt": "direct eye contact, close focus, looking at camera"
+    },
+    {
+        "name": "Looking over one shoulder",
+        "prompt": "Portrait of {prompt} looking over their shoulder, emphasizing (mysterious aura, partial profile)",
+        "negative_prompt": "frontal view, direct gaze, full face visible"
+    },
+    {
+        "name": "Looking straight at the camera",
+        "prompt": "Direct portrait of {prompt} looking at the camera, highlighting (intense eye contact, engaged expression)",
+        "negative_prompt": "averted gaze, profile view, looking away"
+    },
+    {
+        "name": "Lying down",
+        "prompt": "Image of {prompt} lying down, showcasing (relaxed posture, horizontal orientation)",
+        "negative_prompt": "standing pose, vertical orientation, active stance"
+    },
+    {
+        "name": "Mid-range shot",
+        "prompt": "Mid-range portrait of {prompt}, capturing (upper body, balanced composition)",
+        "negative_prompt": "extreme close-up, full body shot, distant view"
+    },
+    {
+        "name": "Propped up on one elbow",
+        "prompt": "Image of {prompt} propped up on one elbow, featuring (casual pose, resting position)",
+        "negative_prompt": "formal stance, standing pose, both arms at sides"
+    },
+    {
+        "name": "Sitting with legs crossed",
+        "prompt": "Portrait of {prompt} sitting with legs crossed, highlighting (relaxed posture, casual setting)",
+        "negative_prompt": "standing pose, uncrossed legs, formal stance"
+    },
+    {
+        "name": "Wide shot",
+        "prompt": "Wide-angle shot of {prompt}, showcasing (full figure in context, environmental details)",
+        "negative_prompt": "close-up, cropped view, isolated subject"
+    },
+    {
+        "name": "Action pose",
+        "prompt": "Dynamic image of {prompt} in motion, featuring (athletic stance, captured movement)",
+        "negative_prompt": "static pose, stillness, lack of energy"
+    },
+    {
+        "name": "Candid moment",
+        "prompt": "Candid shot of {prompt}, capturing (natural expression, unposed authenticity)",
+        "negative_prompt": "staged pose, formal portrait, artificial setting"
+    },
+    {
+        "name": "Dramatic lighting",
+        "prompt": "Portrait of {prompt} with dramatic lighting, emphasizing (shadow play, mood enhancement)",
+        "negative_prompt": "flat lighting, even illumination, lack of contrast"
+    },
+    {
+        "name": "Expressive hands",
+        "prompt": "Image focusing on {prompt}'s hands, showcasing (gesture, emotional communication)",
+        "negative_prompt": "hidden hands, static pose, lack of hand focus"
+    },
+    {
+        "name": "From above",
+        "prompt": "Overhead shot of {prompt}, highlighting (unique perspective, top-down view)",
+        "negative_prompt": "eye-level shot, from below, standard angle"
+    },
+    {
+        "name": "Introspective",
+        "prompt": "Introspective portrait of {prompt}, featuring (thoughtful gaze, self-reflective posture)",
+        "negative_prompt": "outward focus, engaging with surroundings, animated expression"
+    },
+    {
+        "name": "Jump shot",
+        "prompt": "Action shot of {prompt} mid-jump, capturing (suspended motion, dynamic energy)",
+        "negative_prompt": "grounded pose, static position, lack of elevation"
+    },
+    {
+        "name": "Kneeling",
+        "prompt": "Image of {prompt} kneeling, showcasing (humble posture, lowered perspective)",
+        "negative_prompt": "standing tall, elevated position, upright stance"
+    },
+    {
+        "name": "Laughing",
+        "prompt": "Joyful portrait of {prompt} laughing, highlighting (genuine emotion, expressive features)",
+        "negative_prompt": "serious expression, stoic face, lack of emotion"
+    },
+    {
+        "name": "Mirrored reflection",
+        "prompt": "Creative shot of {prompt} with their reflection, featuring (symmetry, dual perspective)",
+        "negative_prompt": "single view, lack of reflection, asymmetrical composition"
+    },
+    {
+        "name": "Power pose",
+        "prompt": "Confident image of {prompt} in a power pose, emphasizing (strength, authoritative stance)",
+        "negative_prompt": "submissive posture, timid stance, lack of confidence"
+    },
+    {
+        "name": "Profile view",
+        "prompt": "Striking profile portrait of {prompt}, showcasing (facial silhouette, side perspective)",
+        "negative_prompt": "frontal view, full face visible, direct gaze"
+    },
+    {
+        "name": "Reaching out",
+        "prompt": "Dynamic shot of {prompt} reaching out, capturing (extended arm, gesture of connection)",
+        "negative_prompt": "arms at sides, closed off posture, lack of movement"
+    },
+    {
+        "name": "Silhouette",
+        "prompt": "Artistic silhouette of {prompt}, highlighting (shape and form, contrast against background)",
+        "negative_prompt": "detailed features, well-lit subject, lack of contrast"
+    },
+    {
+        "name": "Twirling",
+        "prompt": "Playful image of {prompt} twirling, featuring (circular motion, joyful movement)",
+        "negative_prompt": "static pose, rigid stance, lack of rotation"
+    },
+    {
+        "name": "Underwater",
+        "prompt": "Unique underwater portrait of {prompt}, showcasing (submerged pose, aquatic environment)",
+        "negative_prompt": "dry setting, above water, lack of liquid surroundings"
+    },
+    {
+        "name": "Yoga pose",
+        "prompt": "Serene image of {prompt} in a yoga pose, highlighting (flexibility, mindful posture)",
+        "negative_prompt": "rigid stance, non-athletic pose, lack of balance"
+    }
+]

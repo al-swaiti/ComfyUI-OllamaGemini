@@ -1,0 +1,26 @@
+# API providers
+google-generativeai
+google-genai>=1.50.0  # Required for types.ImageConfig (Gemini 3 Pro Image support)
+requests
+anthropic
+openai
+# For Qwen API
+dashscope
+
+# SVG conversion
+vtracer
+
+# Image processing
+numpy
+Pillow
+scipy # For gaussian_filter
+opencv-python # OpenCV for image processing
+
+# Machine learning
+transformers==4.55.4 # For CLIPSeg and BRIA_RMBG
+
+# For ComfyUI integration - these are usually provided by ComfyUI itself
+# torch
+# torchvision
+
+# Note: folder_paths is provided by ComfyUI

@@ -1,0 +1,204 @@
+{
+  "sizes": {
+    "768x768 (1:1)": {
+      "width": 768,
+      "height": 768,
+      "name": "Square Medium"
+    },
+    "768x1024 (3:4)": {
+      "width": 768,
+      "height": 1024,
+      "name": "Portrait Small"
+    },
+    "1024x768 (4:3)": {
+      "width": 1024,
+      "height": 768,
+      "name": "Landscape Small"
+    },
+    "1152x768 (3:2)": {
+      "width": 1152,
+      "height": 768,
+      "name": "Wide Small"
+    },
+    "768x1152 (2:3)": {
+      "width": 768,
+      "height": 1152,
+      "name": "Portrait Medium"
+    },
+    "1366x768 (16:9)": {
+      "width": 1366,
+      "height": 768,
+      "name": "Laptop Standard"
+    },
+    "1536x768 (2:1)": {
+      "width": 1536,
+      "height": 768,
+      "name": "Cinematic Wide"
+    },
+    "768x1536 (1:2)": {
+      "width": 768,
+      "height": 1536,
+      "name": "Portrait Large"
+    },
+    "1024x1024 (1:1)": {
+      "width": 1024,
+      "height": 1024,
+      "name": "Square Large"
+    },
+    "896x1280 (7:10)": {
+      "width": 896,
+      "height": 1280,
+      "name": "Portrait Small HD"
+    },
+    "1280x896 (10:7)": {
+      "width": 1280,
+      "height": 896,
+      "name": "Landscape Small HD"
+    },
+    "1536x896 (12:7)": {
+      "width": 1536,
+      "height": 896,
+      "name": "Wide Medium"
+    },
+    "896x1536 (7:12)": {
+      "width": 896,
+      "height": 1536,
+      "name": "Portrait HD"
+    },
+    "1600x900 (16:9)": {
+      "width": 1600,
+      "height": 900,
+      "name": "Laptop HD"
+    },
+    "2048x896 (8:7)": {
+      "width": 2048,
+      "height": 896,
+      "name": "Widescreen HD"
+    },
+    "896x2048 (7:8)": {
+      "width": 896,
+      "height": 2048,
+      "name": "Portrait Ultra HD"
+    },
+    "1280x1280 (1:1)": {
+      "width": 1280,
+      "height": 1280,
+      "name": "Square HD"
+    },
+    "1152x1664 (9:13)": {
+      "width": 1152,
+      "height": 1664,
+      "name": "Portrait Medium Plus"
+    },
+    "1664x1152 (13:9)": {
+      "width": 1664,
+      "height": 1152,
+      "name": "Landscape Medium Plus"
+    },
+    "1920x1080 (16:9)": {
+      "width": 1920,
+      "height": 1080,
+      "name": "FullHD (16:9)"
+    },
+    "1920x1152 (5:3)": {
+      "width": 1920,
+      "height": 1152,
+      "name": "Wide Large"
+    },
+    "1920x1200 (16:10)": {
+      "width": 1920,
+      "height": 1200,
+      "name": "Professional (16:10)"
+    },
+    "1152x1920 (3:5)": {
+      "width": 1152,
+      "height": 1920,
+      "name": "Portrait Large HD"
+    },
+    "1536x640 (21:9)": {
+      "width": 1536,
+      "height": 640,
+      "name": "Ultrawide Small"
+    },
+    "2560x1080 (21:9)": {
+      "width": 2560,
+      "height": 1080,
+      "name": "Ultrawide Standard"
+    },
+    "2560x1440 (16:9)": {
+      "width": 2560,
+      "height": 1440,
+      "name": "QHD (16:9)"
+    },
+    "2560x1600 (16:10)": {
+      "width": 2560,
+      "height": 1600,
+      "name": "Professional QHD"
+    },
+    "3440x1440 (21:9)": {
+      "width": 3440,
+      "height": 1440,
+      "name": "Ultrawide Large"
+    },
+    "3840x1600 (21:9)": {
+      "width": 3840,
+      "height": 1600,
+      "name": "Ultrawide Premium"
+    },
+    "1152x2560 (9:16)": {
+      "width": 1152,
+      "height": 2560,
+      "name": "Portrait Ultra Large"
+    },
+    "1536x1536 (1:1)": {
+      "width": 1536,
+      "height": 1536,
+      "name": "Square Extra Large"
+    },
+    "1408x1920 (11:15)": {
+      "width": 1408,
+      "height": 1920,
+      "name": "Portrait Extra HD"
+    },
+    "1920x1408 (15:11)": {
+      "width": 1920,
+      "height": 1408,
+      "name": "Landscape Extra HD"
+    },
+    "2304x1408 (12:7)": {
+      "width": 2304,
+      "height": 1408,
+      "name": "Wide Extra Large"
+    },
+    "1408x2304 (7:12)": {
+      "width": 1408,
+      "height": 2304,
+      "name": "Portrait Super HD"
+    },
+    "3840x1080 (32:9)": {
+      "width": 3840,
+      "height": 1080,
+      "name": "Super Ultrawide"
+    },
+    "3840x2160 (16:9)": {
+      "width": 3840,
+      "height": 2160,
+      "name": "4K UHD (16:9)"
+    },
+    "5120x1440 (32:9)": {
+      "width": 5120,
+      "height": 1440,
+      "name": "Super Ultrawide Large"
+    },
+    "1408x3072 (9:16)": {
+      "width": 1408,
+      "height": 3072,
+      "name": "Portrait Super Ultra HD"
+    },
+    "2160x3840 (9:16)": {
+      "width": 2160,
+      "height": 3840,
+      "name": "4K UHD Portrait"
+    }
+  }
+}
