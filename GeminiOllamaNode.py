@@ -41,6 +41,53 @@ If you encounter MP3 loading issues, make sure you have the necessary codecs:
 def apply_prompt_template(prompt, prompt_structure="Custom"):
     # Define prompt structure templates
     prompt_templates = {
+        "Veo3-TextToVideo": (
+            "Create an optimized Veo 3.1 text-to-video prompt following Google's official prompting guide. "
+            "Structure your prompt with these essential elements in order: "
+            "(1) COMPOSITION & CAMERA: Start with shot type (close-up, wide shot, medium shot, extreme close-up) and camera motion (dolly, tracking, pan, aerial view, POV shot, drone view). "
+            "(2) SUBJECT: Clearly define the main subject with specific details - person, animal, object, or scene with descriptive attributes. "
+            "(3) ACTION: Describe what the subject is doing with dynamic verbs and temporal flow. "
+            "(4) CONTEXT & ENVIRONMENT: Establish the setting, location, time of day, and atmospheric conditions. "
+            "(5) STYLE & AMBIANCE: Specify visual style (cinematic, film noir, documentary, animated), color tones (warm, cool, muted), and lighting (golden hour, dramatic side lighting, neon glow). "
+            "(6) AUDIO CUES (Veo 3 native audio): Include dialogue in quotes ('She whispers, \"Follow me.\"'), sound effects (footsteps on gravel, wind howling), and ambient sounds (distant traffic, birds chirping). "
+            "IMPORTANT TIPS: Use descriptive adjectives and adverbs. Avoid instructive language like 'no' or 'don't' - describe what you WANT. "
+            "Keep prompt between 50-150 words for optimal results. Be specific about facial details for portraits. "
+            "Return ONLY the video prompt as a flowing, cinematic paragraph."
+        ),
+
+        "Veo3-ReferenceImages": (
+            "Create an optimized Veo 3.1 reference image video prompt. Reference images preserve subject appearance (person, character, product) in the generated video. "
+            "CRITICAL: Your prompt must explicitly describe the reference image subjects and how they appear in the video. "
+            "Structure your prompt: "
+            "(1) SUBJECT IDENTIFICATION: Clearly describe each referenced subject from your images - be specific about their appearance, clothing, accessories, and distinguishing features that match your reference images. "
+            "(2) SCENE SETUP: Establish the environment where your referenced subjects will appear - location, setting, atmosphere. "
+            "(3) ACTION & MOVEMENT: Describe what the referenced subjects are doing - their movements, interactions, expressions. Use cinematic language. "
+            "(4) CAMERA & COMPOSITION: Specify shot type (medium shot, wide shot, close-up), camera movement (slow pan, tracking shot, dolly), and framing. "
+            "(5) STYLE & MOOD: Define the visual aesthetic, color palette, lighting conditions, and emotional tone. "
+            "(6) INTEGRATION: Describe how multiple referenced elements interact and relate to each other spatially. "
+            "EXAMPLE STRUCTURE: 'The video opens with a [shot type] of [subject from reference 1 with detailed description]. [Subject] [action] while wearing [clothing/accessories from reference 2]. The scene [camera movement] to reveal [environment]. [Lighting/mood description].' "
+            "NOTE: Reference images work best for single subjects (person, character, product) that you want to preserve consistently. Maximum 3 reference images. Duration must be 8 seconds with 16:9 aspect ratio. "
+            "Return ONLY the video prompt describing how your referenced subjects appear and act."
+        ),
+
+        "Veo3-Interpolation": (
+            "Create an optimized Veo 3.1 first-to-last frame interpolation prompt. This feature generates video that transitions between your specified start and end images. "
+            "CRITICAL: Your prompt must describe the TRANSFORMATION and JOURNEY between the two frames - what happens, how it changes, the motion path. "
+            "Structure your prompt: "
+            "(1) STARTING STATE: Briefly acknowledge the initial scene/subject position from your first frame image. "
+            "(2) TRANSFORMATION DESCRIPTION: This is the KEY element - describe the journey, motion, or change that occurs between frames. Use temporal language: 'slowly transitions,' 'gradually transforms,' 'smoothly morphs,' 'progressively moves.' "
+            "(3) MOTION PATH: Describe HOW the subject moves or changes - direction, speed, style of movement (graceful, dramatic, subtle). "
+            "(4) ATMOSPHERIC EVOLUTION: Describe any changes in lighting, mood, or environment during the transition. "
+            "(5) ENDING STATE: Reference the destination/final state shown in your last frame image. "
+            "(6) CINEMATIC STYLE: Include camera behavior, visual style, and emotional tone of the transition. "
+            "EXAMPLE PATTERNS: "
+            "- Morphing: 'A cinematic transformation as [subject] slowly morphs from [state A] into [state B], the change rippling across...' "
+            "- Movement: 'Smooth tracking shot following [subject] as they journey from [location A] to [location B], passing through...' "
+            "- Time-lapse: 'The scene gradually shifts from [time/state A] to [time/state B], with [elements] slowly changing...' "
+            "NOTE: Interpolation requires both first frame (image parameter) and last frame (last_frame config). Duration is fixed at 8 seconds. Works with both 16:9 and 9:16 aspect ratios. "
+            "Return ONLY the interpolation prompt describing the transformation journey between your two frames."
+        ),
+
         "VideoGen": "Create a professional cinematic video generation prompt based on my description. Structure your prompt in this precise order: (1) SUBJECT: Define main character(s)/object(s) with specific, vivid details (appearance, expressions, attributes); (2) CONTEXT/SCENE: Establish the detailed environment with atmosphere, time of day, weather, and spatial relationships; (3) ACTION: Describe precise movements and temporal flow using dynamic verbs and sequential language ('first... then...'); (4) CINEMATOGRAPHY: Specify exact camera movements (dolly, pan, tracking), shot types (close-up, medium, wide), lens choice (35mm, telephoto), and professional lighting terminology (Rembrandt, golden hour, backlit); (5) STYLE: Define the visual aesthetic using specific references to film genres, directors, or animation styles. For realistic scenes, emphasize photorealism with natural lighting and physics. For abstract/VFX, include stylistic terms (surreal, psychedelic) and dynamic descriptors (swirling, morphing). For animation, specify the exact style (anime, 3D cartoon, hand-drawn). Craft a single cohesive paragraph that flows naturally while maintaining technical precision. Return ONLY the prompt text itself no more 200 tokens.",
 
         "FLUX.1-dev": "As an elite text-to-image prompt engineer, craft an exceptional FLUX.1-dev prompt from my description. Create a hyper-detailed, cinematographic paragraph that includes: (1) precise subject characterization with emotional undertones, (2) specific artistic influences from legendary painters/photographers, (3) technical camera specifications (lens, aperture, perspective), (4) sophisticated lighting setup with exact quality and direction, (5) atmospheric elements and depth effects, (6) composition techniques, and (7) post-processing styles. Use language that balances technical precision with artistic vision. Return ONLY the prompt text itself - no explanations or formatting no more 200 tokens.",
@@ -454,6 +501,9 @@ class GeminiQwenAPI:
                 "structure_output": ("BOOLEAN", {"default": False}),
                 "prompt_structure": ([
                     "Custom",
+                    "Veo3-TextToVideo",
+                    "Veo3-ReferenceImages",
+                    "Veo3-Interpolation",
                     "HunyuanVideo",
                     "Wan2.1",
                     "FLUX.1-dev",
@@ -749,6 +799,9 @@ class GeminiClaudeAPI:
                 "structure_output": ("BOOLEAN", {"default": False}),
                 "prompt_structure": ([
                     "Custom",
+                    "Veo3-TextToVideo",
+                    "Veo3-ReferenceImages",
+                    "Veo3-Interpolation",
                     "HunyuanVideo",
                     "Wan2.1",
                     "FLUX.1-dev",
@@ -909,6 +962,9 @@ class GeminiLLMAPI:
                 "structure_output": ("BOOLEAN", {"default": False}),
                 "prompt_structure": ([
                     "Custom",
+                    "Veo3-TextToVideo",
+                    "Veo3-ReferenceImages",
+                    "Veo3-Interpolation",
                     "VideoGen",
                     "FLUX.1-dev",
                     "FLUX.2-dev",
@@ -1075,6 +1131,9 @@ class GeminiOllamaAPI:
                 "structure_output": ("BOOLEAN", {"default": False}),
                 "prompt_structure": ([
                     "Custom",
+                    "Veo3-TextToVideo",
+                    "Veo3-ReferenceImages",
+                    "Veo3-Interpolation",
                     "VideoGen",
                     "FLUX.1-dev",
                     "FLUX.2-dev",
@@ -1387,7 +1446,7 @@ class GeminiListAvailableModels:
 NODE_CLASS_MAPPINGS = {
     "GeminiAPI": GeminiLLMAPI,
     "OllamaAPI": GeminiOllamaAPI,
-    "OpenAIAPI": GeminiOpenAIAPI,
+    # "OpenAIAPI": GeminiOpenAIAPI,  # Disabled - class is broken
     "ClaudeAPI": GeminiClaudeAPI,
     "QwenAPI": GeminiQwenAPI,
     "GeminiTextSplitter": GeminiTextSplitByDelimiter,
@@ -1398,7 +1457,7 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "GeminiAPI": "Gemini API",
     "OllamaAPI": "Ollama API",
-    "OpenAIAPI": "OpenAI API",
+    # "OpenAIAPI": "OpenAI API",  # Disabled - class is broken
     "ClaudeAPI": "Claude API",
     "QwenAPI": "Qwen API",
     "GeminiTextSplitter": "Gemini Text Splitter",

@@ -109,4 +109,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     'GeminiComfyUIStyler': 'Gemini ComfyUI Styler'
 }
 
-__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']
+# Web directory for custom JavaScript widgets (video preview, upload, etc.)
+WEB_DIRECTORY = "./web"
+
+__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS', 'WEB_DIRECTORY']
