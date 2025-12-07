@@ -43,6 +43,8 @@ def pil_to_genai_image(pil_image):
     if pil_image is None:
         return None
     
+    _, types = get_genai()
+    
     # Convert PIL to bytes
     buffer = io.BytesIO()
     pil_image.save(buffer, format='PNG')
@@ -245,15 +247,14 @@ class VeoVideoGenerator:
             if negative_prompt and negative_prompt.strip():
                 config_kwargs["negative_prompt"] = negative_prompt.strip()
             
-            # Seed - available for Veo 3 models (slightly improves determinism)
-            # Note: May not be supported in all SDK versions
-            is_veo3 = "veo-3" in model or "veo-2" not in model
-            if seed > 0 and is_veo3:
-                try:
-                    config_kwargs["seed"] = seed
-                    print(f"🎲 Using seed: {seed}")
-                except Exception as e:
-                    print(f"⚠️ Seed not supported in this SDK version: {e}")
+            # Seed is only supported for Veo 3.0 models (not Veo 3.1 or Veo 2)
+            # Per docs: "Note that the seed parameter is also available for Veo 3 models"
+            is_veo3_not_31 = "veo-3.0" in model or "veo-3-" in model
+            if seed and seed > 0 and is_veo3_not_31:
+                config_kwargs["seed"] = seed
+                print(f"🎲 Using seed: {seed} (Veo 3.0 only)")
+            elif seed and seed > 0:
+                print(f"⚠️ Seed not supported for {model}, ignoring")
             
             print(f"📋 Config: {config_kwargs}")
             config = types.GenerateVideosConfig(**config_kwargs)
@@ -355,12 +356,6 @@ class VeoVideoGenerator:
             print(f"❌ Exception: {error_str}")
             import traceback
             traceback.print_exc()
-            
-            # If seed error, retry without seed
-            if "seed" in error_str.lower() and seed > 0:
-                print(f"⚠️ Retrying without seed...")
-                return self.generate_video(prompt, model, aspect_ratio, duration_seconds,
-                                          negative_prompt, 0, image)
             
             return self.empty_output(error_str)
 
@@ -488,8 +483,14 @@ class VeoVideoGeneratorAdvanced:
             if negative_prompt and negative_prompt.strip():
                 config_kwargs["negative_prompt"] = negative_prompt.strip()
             
-            if seed > 0:
+            # Seed is only supported for Veo 3.0 models (not Veo 3.1 or Veo 2)
+            # Per docs: "Note that the seed parameter is also available for Veo 3 models"
+            is_veo3_not_31 = "veo-3.0" in model or "veo-3-" in model
+            if seed and seed > 0 and is_veo3_not_31:
                 config_kwargs["seed"] = seed
+                print(f"🎲 Using seed: {seed} (Veo 3.0 only)")
+            elif seed and seed > 0:
+                print(f"⚠️ Seed not supported for {model}, ignoring")
             
             # Last frame for interpolation
             if last_frame is not None:
@@ -600,13 +601,6 @@ class VeoVideoGeneratorAdvanced:
             print(f"❌ Exception: {error_str}")
             import traceback
             traceback.print_exc()
-            
-            # If seed error, retry without seed
-            if "seed" in error_str.lower() and seed > 0:
-                print(f"⚠️ Retrying without seed...")
-                return self.generate_video(prompt, model, aspect_ratio, duration_seconds,
-                                          negative_prompt, 0, first_frame, last_frame,
-                                          reference_image_1, reference_image_2, reference_image_3)
             
             return self.empty_output(error_str)
 
