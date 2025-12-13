@@ -99,6 +99,40 @@ Tips:
 - Enable Google Search for weather, sports, news visualizations
     """
 
+    GEMINI_MODEL_CONFIGS = {
+        "gemini-3": {
+            "response_modalities": ["TEXT", "IMAGE"],
+            "support_image_size": True,
+            "max_reference_images": 14,
+            "support_google_search": True,
+        },
+        "gemini-2.5": {
+            "response_modalities": ["IMAGE"],
+            "support_image_size": False,
+            "max_reference_images": 3,
+            "support_google_search": False,
+        },
+        "gemini-2.0": {
+            "response_modalities": ["IMAGE"],
+            "support_image_size": False,
+            "max_reference_images": 3,
+            "support_google_search": False,
+        },
+        "default": {
+            "response_modalities": ["IMAGE"],
+            "support_image_size": False,
+            "max_reference_images": 1,
+            "support_google_search": False,
+        }
+    }
+
+    def _get_model_config(self, model_name):
+        """Helper to get configuration based on model name"""
+        for key, config in self.GEMINI_MODEL_CONFIGS.items():
+            if key in model_name:
+                return config
+        return self.GEMINI_MODEL_CONFIGS["default"]
+
     def get_gemini_api_key(self):
         try:
             config_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.json')
@@ -182,44 +216,46 @@ Tips:
             else:
                 print(f"Using 'generate_content' API for Gemini model: {model}")
 
-                # Support up to 14 reference images for Gemini 3 Pro
+                # Get model configuration
+                model_config = self._get_model_config(model)
+
+                # Support up to 14 reference images (based on model config)
                 all_images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14]
                 provided_images = [img for img in all_images if img is not None]
 
-                # Validate image count based on model
-                if 'gemini-2.5' in model and len(provided_images) > 3:
-                    print(f"Warning: Nano Banana (gemini-2.5) works best with up to 3 images. Using first 3.")
-                    provided_images = provided_images[:3]
-                elif 'gemini-3' in model and len(provided_images) > 14:
-                    print(f"Warning: Nano Banana Pro supports up to 14 images. Using first 14.")
-                    provided_images = provided_images[:14]
+                max_refs = model_config["max_reference_images"]
+                if len(provided_images) > max_refs:
+                    print(f"Warning: Model {model} supports up to {max_refs} images. Using first {max_refs}.")
+                    provided_images = provided_images[:max_refs]
 
                 contents = [full_prompt]
                 if provided_images:
                     for img in provided_images:
                         contents.append(tensor_to_pil_image(img))
 
-                # Build config for Gemini 3 Pro with advanced features
+                # Build dynamic image_config
+                image_config_args = {"aspect_ratio": aspect_ratio}
+                if model_config["support_image_size"]:
+                    image_config_args["image_size"] = image_size
+
+                # Build dynamic config_params
                 config_params = {
-                    "response_modalities": ['TEXT', 'IMAGE'],
-                    "image_config": types.ImageConfig(
-                        aspect_ratio=aspect_ratio,
-                        image_size=image_size
-                    )
+                    "response_modalities": model_config["response_modalities"],
+                    "image_config": types.ImageConfig(**image_config_args)
                 }
 
-                # Add Google Search grounding if enabled (Gemini 3 Pro feature)
+                # Add Google Search grounding if enabled and supported
                 if enable_google_search:
-                    if 'gemini-3' in model:
+                    if model_config["support_google_search"]:
                         config_params["tools"] = [{"google_search": {}}]
                         print(f"✅ Google Search grounding ENABLED for model: {model}")
                     else:
-                        print(f"⚠️ Google Search requested but model '{model}' doesn't support it. Use gemini-3-pro-image-preview.")
+                        print(f"⚠️ Google Search requested but model '{model}' doesn't support it.")
                 else:
                     print(f"ℹ️ Google Search grounding is DISABLED")
 
                 print(f"📤 Sending prompt: {full_prompt[:200]}...")
-                print(f"📐 Config: aspect_ratio={aspect_ratio}, image_size={image_size}")
+                print(f"📐 Config: {image_config_args}")
 
                 response = client.models.generate_content(
                     model=model,
