@@ -48,6 +48,7 @@ class GeminiImageGenerator:
                 "image_size": (["1K", "2K", "4K"], {"default": "1K"}),
                 "file_prefix": ("STRING", {"default": "gemini_image"}),
                 "enable_google_search": ("BOOLEAN", {"default": False}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 2147483647}),
             },
             "optional": {
                 "negative_prompt": ("STRING", {"multiline": True}),
@@ -177,7 +178,7 @@ Tips:
         # Create black RGB image with shape [batch, height, width, channels]
         return torch.zeros((1, height, width, 3), dtype=torch.float32)
 
-    def generate_image(self, prompt, model, aspect_ratio, image_size, file_prefix, enable_google_search=False, negative_prompt=None, image1=None, image2=None, image3=None, image4=None, image5=None, image6=None, image7=None, image8=None, image9=None, image10=None, image11=None, image12=None, image13=None, image14=None, **kwargs):
+    def generate_image(self, prompt, model, aspect_ratio, image_size, file_prefix, enable_google_search=False, seed=0, negative_prompt=None, image1=None, image2=None, image3=None, image4=None, image5=None, image6=None, image7=None, image8=None, image9=None, image10=None, image11=None, image12=None, image13=None, image14=None, **kwargs):
         api_key = self.get_gemini_api_key()
         if not api_key:
             return (self.create_empty_image(), "Error: Gemini API key is missing or invalid")
@@ -199,6 +200,7 @@ Tips:
                     number_of_images=1,
                     aspect_ratio=aspect_ratio,
                     image_size=image_size,
+                    seed=seed,
                 )
 
                 response = client.models.generate_images(
@@ -241,7 +243,8 @@ Tips:
                 # Build dynamic config_params
                 config_params = {
                     "response_modalities": model_config["response_modalities"],
-                    "image_config": types.ImageConfig(**image_config_args)
+                    "image_config": types.ImageConfig(**image_config_args),
+                    "seed": seed,
                 }
 
                 # Add Google Search grounding if enabled and supported
