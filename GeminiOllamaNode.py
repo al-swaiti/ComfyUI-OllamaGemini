@@ -1161,6 +1161,7 @@ class GeminiOllamaAPI:
                 "image5": ("IMAGE",),
                 "video": ("IMAGE",),  # Video is represented as a tensor with shape [frames, height, width, channels]
                 "audio": ("AUDIO",),  # Audio input
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True}),
             }
         }
 
@@ -1169,7 +1170,7 @@ class GeminiOllamaAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Ollama"
 
-    def generate_content(self, prompt, input_type, ollama_model, keep_alive, structure_output, prompt_structure, structure_format, output_format, image1=None, image2=None, image3=None, image4=None, image5=None, video=None, audio=None):
+    def generate_content(self, prompt, input_type, ollama_model, keep_alive, structure_output, prompt_structure, structure_format, output_format, image1=None, image2=None, image3=None, image4=None, image5=None, video=None, audio=None, seed=0):
         url = f"{self.ollama_url}/api/generate"
 
         # Apply prompt template
@@ -1186,7 +1187,8 @@ class GeminiOllamaAPI:
             "model": ollama_model,
             "prompt": modified_prompt,
             "stream": False,
-            "keep_alive": f"{keep_alive}m"
+            "keep_alive": f"{keep_alive}m",
+            "options": {"seed": seed}
         }
 
         try:
