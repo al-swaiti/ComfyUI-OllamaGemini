@@ -381,12 +381,22 @@ def process_audio(audio_data, target_sample_rate=16000):
         # Convert to WAV format
         buffer = io.BytesIO()
         try:
+            # Try torchaudio first
             torchaudio.save(buffer, waveform, target_sample_rate, format="WAV")
-            audio_bytes = buffer.getvalue()
-            return base64.b64encode(audio_bytes).decode('utf-8')
         except Exception as save_error:
-            print(f"Error saving audio to buffer: {str(save_error)}")
-            return None
+            print(f"torchaudio save failed: {str(save_error)}. Trying scipy fallback...")
+            try:
+                # Fallback to scipy
+                import scipy.io.wavfile
+                # Convert tensor to numpy
+                audio_np = waveform.squeeze().cpu().numpy()
+                scipy.io.wavfile.write(buffer, target_sample_rate, audio_np)
+            except Exception as scipy_error:
+                print(f"scipy save failed: {str(scipy_error)}")
+                return None
+
+        audio_bytes = buffer.getvalue()
+        return base64.b64encode(audio_bytes).decode('utf-8')
 
     except Exception as e:
         print(f"Error processing audio: {str(e)}")
@@ -956,7 +966,6 @@ class GeminiLLMAPI:
         return {
             "required": {
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
-                "input_type": (["text", "image", "video", "audio"], {"default": "text"}),
                 "gemini_model": (available_models,),
                 "stream": ("BOOLEAN", {"default": False}),
                 "structure_output": ("BOOLEAN", {"default": False}),
@@ -1001,7 +1010,7 @@ class GeminiLLMAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Gemini"
 
-    def generate_content(self, prompt, input_type, gemini_model, stream, structure_output, prompt_structure, structure_format, output_format, api_key="", image1=None, image2=None, image3=None, image4=None, image5=None, video=None, audio=None):
+    def generate_content(self, prompt, gemini_model, stream, structure_output, prompt_structure, structure_format, output_format, api_key="", image1=None, image2=None, image3=None, image4=None, image5=None, video=None, audio=None):
         if api_key:
             update_config_key("GEMINI_API_KEY", api_key)
             self.gemini_api_key = api_key
@@ -1022,22 +1031,49 @@ class GeminiLLMAPI:
 
             content = [modified_prompt]
 
-            if input_type == "image":
-                # Handle multiple images
-                all_images = [image1, image2, image3, image4, image5]
-                provided_images = [img for img in all_images if img is not None]
+            # Process inputs sequentially (additive)
+            
+            # 1. Process Images
+            # Always check for images
+            all_images = [image1, image2, image3, image4, image5]
+            provided_images = [img for img in all_images if img is not None]
 
-                if provided_images:
-                    for img in provided_images:
-                        pil_image = tensor_to_pil_image(img)
-                        content.append(pil_image)
-            elif input_type == "video" and video is not None:
+            if provided_images:
+                print(f"Processing {len(provided_images)} images")
+                for img in provided_images:
+                    pil_image = tensor_to_pil_image(img)
+                    content.append(pil_image)
+
+            # 2. Process Video
+            if video is not None:
+                print("Processing video input")
                 frames = sample_video_frames(video)
                 if frames:
                     content.extend(frames)
                 else:
                     return ("Error: Could not extract frames from video",)
-            # Audio processing would go here if the modern library supported it this way
+
+            # 3. Process Audio
+            if audio is not None:
+                print("Processing audio input")
+                # Process audio using the shared utility
+                if isinstance(audio, dict) and "path" in audio:
+                    audio_b64 = process_audio(audio["path"])
+                elif isinstance(audio, str):
+                    audio_b64 = process_audio(audio)
+                else:
+                    audio_b64 = process_audio(audio)
+                
+                if audio_b64:
+                    # Create the audio part for Gemini
+                    audio_part = {
+                        "mime_type": "audio/wav",
+                        "data": audio_b64
+                    }
+                    content.append(audio_part)
+                    print("Successfully added audio data to request")
+                else:
+                    return ("Error: Failed to process audio data",)
 
             print(f"Sending request to Gemini API with model: {gemini_model}")
 
