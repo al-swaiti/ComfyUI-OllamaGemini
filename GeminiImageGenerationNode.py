@@ -49,6 +49,7 @@ class GeminiImageGenerator:
                 "file_prefix": ("STRING", {"default": "gemini_image"}),
                 "enable_google_search": ("BOOLEAN", {"default": False}),
                 "seed": ("INT", {"default": 0, "min": 0, "max": 2147483647}),
+                "number_of_images": ("INT", {"default": 1, "min": 1, "max": 4, "step": 1}),
             },
             "optional": {
                 "negative_prompt": ("STRING", {"multiline": True}),
@@ -178,7 +179,7 @@ Tips:
         # Create black RGB image with shape [batch, height, width, channels]
         return torch.zeros((1, height, width, 3), dtype=torch.float32)
 
-    def generate_image(self, prompt, model, aspect_ratio, image_size, file_prefix, enable_google_search=False, seed=0, negative_prompt=None, image1=None, image2=None, image3=None, image4=None, image5=None, image6=None, image7=None, image8=None, image9=None, image10=None, image11=None, image12=None, image13=None, image14=None, **kwargs):
+    def generate_image(self, prompt, model, aspect_ratio, image_size, file_prefix, enable_google_search=False, seed=0, number_of_images=1, negative_prompt=None, image1=None, image2=None, image3=None, image4=None, image5=None, image6=None, image7=None, image8=None, image9=None, image10=None, image11=None, image12=None, image13=None, image14=None, **kwargs):
         api_key = self.get_gemini_api_key()
         if not api_key:
             return (self.create_empty_image(), "Error: Gemini API key is missing or invalid")
@@ -196,12 +197,19 @@ Tips:
             if 'imagen' in model:
                 print(f"Using 'generate_images' API for Imagen model: {model}")
 
-                config = types.GenerateImagesConfig(
-                    number_of_images=1,
-                    aspect_ratio=aspect_ratio,
-                    image_size=image_size,
-                    seed=seed,
-                )
+                config_args = {
+                    "number_of_images": number_of_images,
+                    "aspect_ratio": aspect_ratio,
+                    "image_size": image_size,
+                }
+
+                # Imagen 4.0 does not support seed currently
+                if "imagen-4.0" not in model:
+                    config_args["seed"] = seed
+                else:
+                    print(f"Warning: Seed parameter is not supported for {model}. Ignoring seed.")
+
+                config = types.GenerateImagesConfig(**config_args)
 
                 response = client.models.generate_images(
                     model=model,
@@ -212,7 +220,24 @@ Tips:
                 if not response.generated_images:
                     return (self.create_empty_image(), "Error: The API did not return any images.")
 
-                image_bytes = response.generated_images[0].image.image_bytes
+                # Process all generated images
+                image_tensors = []
+                for img_data in response.generated_images:
+                    image_bytes = img_data.image.image_bytes
+                    pil_image = Image.open(io.BytesIO(image_bytes))
+                    if pil_image.mode != 'RGB':
+                        pil_image = pil_image.convert('RGB')
+                    image_np = np.array(pil_image).astype(np.float32) / 255.0
+                    image_tensor = torch.from_numpy(image_np)[None,]
+                    image_tensors.append(image_tensor)
+
+                if not image_tensors:
+                    return (self.create_empty_image(), "Error: Failed to process generated images.")
+
+                # Concatenate into a batch [B, H, W, C]
+                final_tensor = torch.cat(image_tensors, dim=0)
+                response_text = f"Successfully generated {len(image_tensors)} images with {model}."
+                return (final_tensor, response_text)
 
             # Case 2: Use the 'generate_content' method via the client for Gemini models.
             else:
@@ -260,58 +285,83 @@ Tips:
                 print(f"📤 Sending prompt: {full_prompt[:200]}...")
                 print(f"📐 Config: {image_config_args}")
 
-                response = client.models.generate_content(
-                    model=model,
-                    contents=contents,
-                    config=types.GenerateContentConfig(**config_params)
-                )
-
-                # Add robust checks for the response object
-                if not response.candidates:
+                # Loop for number_of_images
+                image_tensors = []
+                response_texts = []
+                
+                for i in range(number_of_images):
+                    print(f"Generating image {i+1}/{number_of_images}...")
+                    # Adjust seed for each generation to ensure variety if seed is fixed
+                    current_seed = seed + i if seed != 0 else 0
+                    config_params["seed"] = current_seed
+                    
                     try:
-                        error_info = response.prompt_feedback
-                        return (self.create_empty_image(), f"Error: Prompt was blocked. Feedback: {error_info}")
-                    except (AttributeError, IndexError):
-                        return (self.create_empty_image(), "Error: The API did not return any candidates.")
+                        response = client.models.generate_content(
+                            model=model,
+                            contents=contents,
+                            config=types.GenerateContentConfig(**config_params)
+                        )
 
-                candidate = response.candidates[0]
-                if not candidate.content or not candidate.content.parts:
-                    return (self.create_empty_image(), "Error: The API response did not contain any image data.")
+                        # Add robust checks for the response object
+                        if not response.candidates:
+                            try:
+                                error_info = response.prompt_feedback
+                                print(f"Error: Prompt was blocked. Feedback: {error_info}")
+                                continue
+                            except (AttributeError, IndexError):
+                                print("Error: The API did not return any candidates.")
+                                continue
 
-                image_parts = [part for part in candidate.content.parts if part.inline_data]
-                if not image_parts:
-                    text_parts = [part.text for part in candidate.content.parts if part.text]
-                    if text_parts:
-                        return (self.create_empty_image(), f"API Error: {text_parts[0]}")
-                    return (self.create_empty_image(), "Error: The API response did not contain an image.")
+                        candidate = response.candidates[0]
+                        if not candidate.content or not candidate.content.parts:
+                            print("Error: The API response did not contain any image data.")
+                            continue
 
-                image_bytes = image_parts[0].inline_data.data
+                        image_parts = [part for part in candidate.content.parts if part.inline_data]
+                        if not image_parts:
+                            text_parts = [part.text for part in candidate.content.parts if part.text]
+                            if text_parts:
+                                print(f"API Error: {text_parts[0]}")
+                            else:
+                                print("Error: The API response did not contain an image.")
+                            continue
 
-            # --- Process the resulting image bytes ---
-            pil_image = Image.open(io.BytesIO(image_bytes))
-            if pil_image.mode != 'RGB':
-                pil_image = pil_image.convert('RGB')
+                        image_bytes = image_parts[0].inline_data.data
+                        
+                        # Process the resulting image bytes
+                        pil_image = Image.open(io.BytesIO(image_bytes))
+                        if pil_image.mode != 'RGB':
+                            pil_image = pil_image.convert('RGB')
 
-            image_np = np.array(pil_image).astype(np.float32) / 255.0
-            image_tensor = torch.from_numpy(image_np)[None,]
+                        image_np = np.array(pil_image).astype(np.float32) / 255.0
+                        image_tensor = torch.from_numpy(image_np)[None,]
+                        image_tensors.append(image_tensor)
+                        
+                        # Check for grounding metadata
+                        if hasattr(response, 'candidates') and response.candidates:
+                            candidate = response.candidates[0]
+                            if hasattr(candidate, 'grounding_metadata') and candidate.grounding_metadata:
+                                gm = candidate.grounding_metadata
+                                if hasattr(gm, 'grounding_chunks') and gm.grounding_chunks:
+                                    sources = [chunk.web.title if hasattr(chunk, 'web') and chunk.web else 'Unknown' for chunk in gm.grounding_chunks[:3]]
+                                    response_texts.append(f"Image {i+1}: Sources: {', '.join(sources)}")
 
-            # Check for grounding metadata (Google Search results)
-            response_text = "Image generated successfully."
-            try:
-                if hasattr(response, 'candidates') and response.candidates:
-                    candidate = response.candidates[0]
-                    if hasattr(candidate, 'grounding_metadata') and candidate.grounding_metadata:
-                        gm = candidate.grounding_metadata
-                        print(f"🔍 Google Search grounding was used!")
-                        if hasattr(gm, 'grounding_chunks') and gm.grounding_chunks:
-                            sources = [chunk.web.title if hasattr(chunk, 'web') and chunk.web else 'Unknown' for chunk in gm.grounding_chunks[:3]]
-                            response_text = f"Image generated with Google Search. Sources: {', '.join(sources)}"
-                            print(f"📚 Sources: {sources}")
-            except Exception as e:
-                print(f"Could not extract grounding metadata: {e}")
+                    except Exception as e:
+                        print(f"Error generating image {i+1}: {str(e)}")
+                        continue
 
-            print(f"Final tensor shape: {image_tensor.shape}")
-            return (image_tensor, response_text)
+                if not image_tensors:
+                    return (self.create_empty_image(), "Error: Failed to generate any images.")
+
+                # Concatenate into a batch [B, H, W, C]
+                final_tensor = torch.cat(image_tensors, dim=0)
+                
+                final_response_text = "Images generated successfully."
+                if response_texts:
+                    final_response_text += " " + " | ".join(response_texts)
+                
+                print(f"Final tensor shape: {final_tensor.shape}")
+                return (final_tensor, final_response_text)
 
         except Exception as e:
             error_message = f"Error generating image with {model}: {str(e)}"
