@@ -214,6 +214,45 @@ def apply_prompt_template(prompt, prompt_structure="Custom"):
             "For STORYBOARDS: Specify panel layout, shot types (establishing, medium, close-up, POV), and sequential flow. "
             "For INFOGRAPHICS: Structure information hierarchy, use clear data visualization principles. "
             "Return ONLY the professional prompt, structured as a clear brief, under 250 tokens."
+        ),
+
+        "Z-Image-Turbo": (
+            "As a Z-Image-Turbo prompt specialist, craft a highly detailed prompt optimized for this 6B parameter distilled diffusion transformer. "
+            "Z-Image-Turbo excels at photorealistic generation, bilingual text rendering (Chinese & English), and strong instruction adherence. "
+            "Structure your prompt using SENTENCE FRAGMENTS separated by periods/commas (not flowing prose): "
+            "(1) SUBJECT DEFINITION: Core subject with cultural/visual identity (e.g., 'Young Chinese woman in red Hanfu'). "
+            "(2) PRIMARY DETAILS: Key visual attributes of the subject (e.g., 'intricate embroidery, silk texture'). "
+            "(3) SECONDARY FEATURES: Detailed sub-elements like makeup, patterns, expressions (e.g., 'Impeccable makeup, red floral forehead pattern'). "
+            "(4) ACCESSORIES & ORNAMENTS: Rich decorative details with colors and materials (e.g., 'Elaborate high bun, golden phoenix headdress, red flowers, jade beads'). "
+            "(5) INTERACTIVE ELEMENTS: Objects and items the subject interacts with, include details on the objects themselves (e.g., 'Holds round folding fan with painted lady, trees, bird'). "
+            "(6) SPECIAL EFFECTS & POSITIONING: Dynamic or magical effects with specific placement cues (e.g., 'Neon lightning-bolt lamp, bright yellow glow, above extended left palm'). "
+            "(7) ENVIRONMENT & LIGHTING: Setting, atmosphere, and lighting quality (e.g., 'Soft-lit outdoor night background'). "
+            "(8) LANDMARKS & DEPTH: Identifiable locations (can use Chinese characters for bilingual), depth cues (e.g., 'silhouetted tiered pagoda (西安大雁塔), blurred colorful distant lights'). "
+            "KEY PRINCIPLES: Use specific visual terminology ('intricate', 'silhouetted', 'soft-lit'). "
+            "Mention colors throughout each section. Include positioning cues ('above', 'behind', 'in the background'). "
+            "Pack many descriptive elements per section. Layer information progressively from subject to background. "
+            "Return ONLY the structured prompt, under 200 tokens."
+        ),
+
+        "Qwen-Image-2512": (
+            "As a Qwen-Image-2512 prompt specialist, craft a hyper-realistic prompt optimized for this state-of-the-art model known for eliminating the 'AI-generated' look. "
+            "Qwen-Image-2512 excels at: photorealistic human features (facial details, age cues, postures), natural textures (fur, water, foliage), and accurate bilingual text rendering. "
+            "Write your prompt as FLOWING PROSE with em-dashes (—) for dramatic pauses and parenthetical details. "
+            "Structure with these elements in order: "
+            "(1) SUBJECT + DEMOGRAPHICS: Specific age, ethnicity, gender with precise descriptor (e.g., 'A 20-year-old East Asian girl'). "
+            "(2) FACIAL FEATURES: Rich facial detail—eye color, shape, expressiveness (e.g., 'large, bright brown eyes—expressive and lively'). "
+            "(3) EXPRESSION/EMOTION: Specific emotional state with nuance (e.g., 'cheerful or subtly smiling expression', 'a slightly shy yet subtly confident expression—her mouth crooked in a playful, youthful smirk'). "
+            "(4) HAIR DETAILS: Strand-level description including style, texture, movement (e.g., 'naturally wavy long hair...either loose or tied in twin ponytails', 'short haircut that naturally falls to partially cover her cheeks'). "
+            "(5) SKIN & MAKEUP: Surface quality, skin tone, makeup level (e.g., 'fair skin and light makeup accentuating her youthful freshness', 'cool-toned fair skin'). "
+            "(6) CLOTHING: Material, cut, colors, style (e.g., 'modern, cute dress or relaxed outfit in bright, soft colors—lightweight fabric, minimalist cut'). "
+            "(7) POSE & BODY LANGUAGE: Precise posture instructions the model will follow (e.g., 'body leaning slightly forward in a relaxed pose, as if engaged in conversation', 'hands in pockets'). "
+            "(8) ENVIRONMENT: Detailed setting with specific objects (e.g., 'indoors at an anime convention, surrounded by banners, posters, or stalls', 'her dormitory—a neatly made bed with white linens, a tidy study desk with organized stationery'). "
+            "(9) LIGHTING QUALITY: Natural, non-staged lighting description (e.g., 'typical indoor illumination—no staged lighting', 'soft, even ambient lighting'). "
+            "(10) CAMERA/PHOTOGRAPHY STYLE: Reference to real-world capture (e.g., 'resembles a casual iPhone snapshot', 'captured on a smartphone'). "
+            "(11) MOOD SUMMARY: Overall atmosphere conclusion (e.g., 'unpretentious composition, yet brimming with vivid, fresh, youthful charm'). "
+            "For LANDSCAPES: Emphasize water flow dynamics, foliage gradation, atmospheric moisture, and color transitions. "
+            "For ANIMALS: Focus on fur strand detail, layering of undercoat/guard hairs, and expressive eyes. "
+            "Return ONLY the flowing prose prompt, 100-200 words."
         )
     }
 
@@ -526,7 +565,9 @@ class GeminiQwenAPI:
                     "GeminiNanaBananaEdit",
                     "NanaBananaPro",
                     "NanaBananaPro-Edit",
-                    "NanaBananaPro-Pro"
+                    "NanaBananaPro-Pro",
+                    "Z-Image-Turbo",
+                    "Qwen-Image-2512"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
@@ -824,7 +865,9 @@ class GeminiClaudeAPI:
                     "GeminiNanaBananaEdit",
                     "NanaBananaPro",
                     "NanaBananaPro-Edit",
-                    "NanaBananaPro-Pro"
+                    "NanaBananaPro-Pro",
+                    "Z-Image-Turbo",
+                    "Qwen-Image-2512"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
@@ -985,7 +1028,9 @@ class GeminiLLMAPI:
                     "GeminiNanaBananaEdit",
                     "NanaBananaPro",
                     "NanaBananaPro-Edit",
-                    "NanaBananaPro-Pro"
+                    "NanaBananaPro-Pro",
+                    "Z-Image-Turbo",
+                    "Qwen-Image-2512"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
@@ -1181,7 +1226,9 @@ class GeminiOllamaAPI:
                     "GeminiNanaBananaEdit",
                     "NanaBananaPro",
                     "NanaBananaPro-Edit",
-                    "NanaBananaPro-Pro"
+                    "NanaBananaPro-Pro",
+                    "Z-Image-Turbo",
+                    "Qwen-Image-2512"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
