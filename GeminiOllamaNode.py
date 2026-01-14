@@ -11,6 +11,7 @@ import folder_paths
 import anthropic
 import io
 import numpy as np
+
 from .clipsegx import GeminiCLIPSeg, GeminiCombineSegMasks
 from .BRIA_RMBGx import GeminiBRIA_RMBG
 from .svgnodex import GeminiConvertRasterToVector, GeminiSaveSVG
@@ -217,21 +218,22 @@ def apply_prompt_template(prompt, prompt_structure="Custom"):
         ),
 
         "Z-Image-Turbo": (
-            "As a Z-Image-Turbo prompt specialist, craft a highly detailed prompt optimized for this 6B parameter distilled diffusion transformer. "
-            "Z-Image-Turbo excels at photorealistic generation, bilingual text rendering (Chinese & English), and strong instruction adherence. "
-            "Structure your prompt using SENTENCE FRAGMENTS separated by periods/commas (not flowing prose): "
-            "(1) SUBJECT DEFINITION: Core subject with cultural/visual identity (e.g., 'Young Chinese woman in red Hanfu'). "
-            "(2) PRIMARY DETAILS: Key visual attributes of the subject (e.g., 'intricate embroidery, silk texture'). "
-            "(3) SECONDARY FEATURES: Detailed sub-elements like makeup, patterns, expressions (e.g., 'Impeccable makeup, red floral forehead pattern'). "
-            "(4) ACCESSORIES & ORNAMENTS: Rich decorative details with colors and materials (e.g., 'Elaborate high bun, golden phoenix headdress, red flowers, jade beads'). "
-            "(5) INTERACTIVE ELEMENTS: Objects and items the subject interacts with, include details on the objects themselves (e.g., 'Holds round folding fan with painted lady, trees, bird'). "
-            "(6) SPECIAL EFFECTS & POSITIONING: Dynamic or magical effects with specific placement cues (e.g., 'Neon lightning-bolt lamp, bright yellow glow, above extended left palm'). "
-            "(7) ENVIRONMENT & LIGHTING: Setting, atmosphere, and lighting quality (e.g., 'Soft-lit outdoor night background'). "
-            "(8) LANDMARKS & DEPTH: Identifiable locations (can use Chinese characters for bilingual), depth cues (e.g., 'silhouetted tiered pagoda (西安大雁塔), blurred colorful distant lights'). "
-            "KEY PRINCIPLES: Use specific visual terminology ('intricate', 'silhouetted', 'soft-lit'). "
-            "Mention colors throughout each section. Include positioning cues ('above', 'behind', 'in the background'). "
-            "Pack many descriptive elements per section. Layer information progressively from subject to background. "
-            "Return ONLY the structured prompt, under 200 tokens."
+            "As a Z-Image-Turbo master prompt engineer, craft an extraordinarily detailed prompt for this 6B parameter distilled diffusion transformer with Qwen3-4B text encoder. "
+            "CRITICAL: Qwen3-4B excels with NATURAL LANGUAGE descriptions, not comma-separated tags. Write DESCRIPTIVE SENTENCES that flow naturally. "
+            "Z-Image-Turbo strengths: concept fusion, material realism, texture density, atmospheric depth, compositional grandeur. "
+            "STRUCTURE your prompt as FLOWING DESCRIPTIVE PROSE following this 10-layer architecture: "
+            "(1) CORE CONCEPT FUSION: Open with the PRIMARY subject as a MERGED/HYBRID concept in a complete sentence (e.g., 'A colossal fossilized space shuttle stack merged seamlessly with a jagged rock formation', 'An ancient temple fused with intricate cyberpunk machinery'). "
+            "(2) MATERIAL DESCRIPTION: Describe materials with colors and states as natural observations (e.g., 'The orbiter has become petrified white stone while the external tank shows rusted orange patina'). "
+            "(3) SURFACE TEXTURES: Weave texture descriptors into flowing description (e.g., 'Weathered stone surfaces blend aerospace engineering with geological strata, overgrown with moss patches showing erosion marks and cracked ceramic tiles'). "
+            "(4) STRUCTURAL TRANSFORMATION: Describe metamorphosis naturally (e.g., 'Jagged cliff-like edges have replaced the once-smooth mechanical surfaces, with decaying steel girders and scaffolding remnants embedded deep within the rock'). "
+            "(5) SCALE REFERENCE: Establish scale through narrative (e.g., 'A tiny silhouette of a lone rider on horseback stands in the foreground, gazing upward, emphasizing the monument\'s immense scale'). "
+            "(6) COMPOSITION + PERSPECTIVE: Describe the visual framing (e.g., 'The structure looms in central composition, captured from a low angle that emphasizes its grandeur and atmospheric depth'). "
+            "(7) SKY + LIGHTING: Paint the atmospheric conditions (e.g., 'An overcast slate-grey sky casts diffuse lighting across the scene, creating a misty atmosphere'). "
+            "(8) ENVIRONMENT: Ground the scene in its setting (e.g., 'The surrounding terrain is desolate and barren, rendered in muted earth tones with a fading horizon'). "
+            "(9) ATMOSPHERIC EFFECTS: Add depth and mood (e.g., 'Soft focus clouds drift in the background while volumetric mist and dust particles catch the light beams'). "
+            "(10) AESTHETIC CONCLUSION: End with the defining mood (e.g., 'The entire scene evokes a post-apocalyptic wasteland aesthetic'). "
+            "POWER TECHNIQUES: Merge opposites (organic+mechanical, ancient+futuristic), use vivid material vocabulary, layer textures through description, always include scale reference. "
+            "Return ONLY the flowing descriptive prompt, 100-200 words."
         ),
 
         "Qwen-Image-2512": (
@@ -253,6 +255,20 @@ def apply_prompt_template(prompt, prompt_structure="Custom"):
             "For LANDSCAPES: Emphasize water flow dynamics, foliage gradation, atmospheric moisture, and color transitions. "
             "For ANIMALS: Focus on fur strand detail, layering of undercoat/guard hairs, and expressive eyes. "
             "Return ONLY the flowing prose prompt, 100-200 words."
+        ),
+
+        "Upscale": (
+            "As an expert upscaling prompt specialist for Z-Image-Turbo (Qwen3-4B text encoder), craft a SHARPNESS-MAXIMIZING enhancement prompt using NATURAL LANGUAGE descriptions. "
+            "CRITICAL: Qwen3-4B understands descriptive sentences better than comma-separated tags. Write flowing descriptions that emphasize sharpness and detail. "
+            "STRUCTURE as flowing descriptive prose: "
+            "(1) SUBJECT + SHARPNESS OPENING: Begin with the subject and sharpness in natural language (e.g., 'An ultra-sharp portrait of a woman with flowing red hair, rendered with razor-sharp focus and extreme clarity at 8K resolution'). "
+            "(2) DETAIL DESCRIPTION: Describe the level of detail naturally (e.g., 'Every micro-detail is visible with hyper-detailed textures and intricate fine details throughout the image'). "
+            "(3) TEXTURE NARRATIVE: Describe textures to prevent artificial look (e.g., 'Natural skin texture with visible pores, realistic fabric weave patterns, individual hair strand definition, and authentic material surfaces'). "
+            "(4) QUALITY STATEMENT: Assert quality naturally (e.g., 'Masterpiece quality with photorealistic precision, professional studio photography standards, and pristine image clarity'). "
+            "(5) LIGHTING ENHANCEMENT: Describe refined lighting (e.g., 'Enhanced highlights with refined shadow detail, crisp contrast, and dynamic range that brings out every surface texture'). "
+            "POWER PHRASES to weave in: 'ultra-sharp', 'razor-sharp focus', 'tack-sharp details', 'pixel-perfect clarity', 'hyper-detailed', 'crystal clear', 'enhanced textures', 'maximum clarity', 'extreme detail'. "
+            "Write as if describing the IDEAL enhanced version of the image. Keep between 80-150 words. "
+            "Return ONLY the flowing descriptive upscaling prompt."
         )
     }
 
@@ -567,7 +583,8 @@ class GeminiQwenAPI:
                     "NanaBananaPro-Edit",
                     "NanaBananaPro-Pro",
                     "Z-Image-Turbo",
-                    "Qwen-Image-2512"
+                    "Qwen-Image-2512",
+                    "Upscale"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
@@ -867,7 +884,8 @@ class GeminiClaudeAPI:
                     "NanaBananaPro-Edit",
                     "NanaBananaPro-Pro",
                     "Z-Image-Turbo",
-                    "Qwen-Image-2512"
+                    "Qwen-Image-2512",
+                    "Upscale"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
@@ -1030,7 +1048,8 @@ class GeminiLLMAPI:
                     "NanaBananaPro-Edit",
                     "NanaBananaPro-Pro",
                     "Z-Image-Turbo",
-                    "Qwen-Image-2512"
+                    "Qwen-Image-2512",
+                    "Upscale"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
@@ -1208,7 +1227,9 @@ class GeminiOllamaAPI:
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
                 "input_type": (["text", "image", "video", "audio"], {"default": "text"}),
                 "ollama_model": (cls.get_ollama_models(),),
-                "keep_alive": ("INT", {"default": 0, "min": 0, "max": 60, "step": 1}),
+                "keep_alive": (["on", "off"], {"default": "on", "tooltip": "on = keep model loaded, off = unload after use"}),
+                "stream": ("BOOLEAN", {"default": True, "tooltip": "Stream response for faster perceived speed."}),
+                "think": ("BOOLEAN", {"default": False, "tooltip": "Enable thinking mode for qwen3 models. Slower but more detailed."}),
                 "structure_output": ("BOOLEAN", {"default": False}),
                 "prompt_structure": ([
                     "Custom",
@@ -1228,7 +1249,8 @@ class GeminiOllamaAPI:
                     "NanaBananaPro-Edit",
                     "NanaBananaPro-Pro",
                     "Z-Image-Turbo",
-                    "Qwen-Image-2512"
+                    "Qwen-Image-2512",
+                    "Upscale"
                 ], {"default": "Custom"}),
                 "structure_format": ("STRING", {"default": "Return only the prompt text itself. No explanations or formatting.", "multiline": True}),
                 "output_format": ([
@@ -1253,126 +1275,106 @@ class GeminiOllamaAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Ollama"
 
-    def generate_content(self, prompt, input_type, ollama_model, keep_alive, structure_output, prompt_structure, structure_format, output_format, image1=None, image2=None, image3=None, image4=None, image5=None, video=None, audio=None, seed=0):
-        url = f"{self.ollama_url}/api/generate"
-
-        # Apply prompt template
-        modified_prompt = apply_prompt_template(prompt, prompt_structure)
-
-        # Add structure format if requested
+    def generate_content(self, prompt, input_type, ollama_model, keep_alive, stream, think, structure_output, prompt_structure, structure_format, output_format, image1=None, image2=None, image3=None, image4=None, image5=None, video=None, audio=None, seed=0):
+        import time
+        start_time = time.time()
+        
+        # Only apply templates when structure_output is enabled
         if structure_output:
-            print(f"Requesting structured output from {ollama_model}")
-            # Add the structure format to the prompt
-            modified_prompt = f"{modified_prompt}\n\n{structure_format}"
-            print(f"Modified prompt with structure format")
+            if prompt_structure != "Custom":
+                # Apply the selected template
+                modified_prompt = apply_prompt_template(prompt, prompt_structure)
+            else:
+                # Custom mode - use the structure_format box content
+                modified_prompt = f"{prompt}\n\n{structure_format}"
+        else:
+            # structure_output disabled = raw prompt only, no templates
+            modified_prompt = prompt
 
+        # Collect and encode images to base64
+        image_data = []
+        if input_type == "image":
+            all_images = [image1, image2, image3, image4, image5]
+            for img in all_images:
+                if img is not None:
+                    pil_image = tensor_to_pil_image(img)
+                    buffered = io.BytesIO()
+                    pil_image.save(buffered, format='JPEG', quality=85)  # JPEG faster than PNG
+                    image_data.append(base64.b64encode(buffered.getvalue()).decode())
+            if image_data:
+                print(f"🖼️ Ollama: {len(image_data)} image(s)")
+
+        elif input_type == "video" and video is not None:
+            frames = sample_video_frames(video, num_samples=4)
+            if frames:
+                for frame in frames:
+                    buffered = io.BytesIO()
+                    frame.save(buffered, format='JPEG', quality=85)
+                    image_data.append(base64.b64encode(buffered.getvalue()).decode())
+                modified_prompt = f"Analyze these {len(frames)} video frames: {modified_prompt}"
+                print(f"🎬 Ollama: {len(frames)} video frames")
+
+        # Build payload - exactly like your fast script
+        options = {}
+        if seed > 0:
+            options["seed"] = seed
+        
+        # Check if thinking model
+        is_thinking_model = 'qwen3' in ollama_model.lower()
+        
+        message = {"role": "user", "content": modified_prompt}
+        if image_data:
+            message["images"] = image_data
+        
         payload = {
             "model": ollama_model,
-            "prompt": modified_prompt,
-            "stream": False,
-            "keep_alive": f"{keep_alive}m",
-            "options": {"seed": seed}
+            "messages": [message],
+            "stream": True,  # Always stream for speed
+            "keep_alive": -1 if keep_alive == "on" else 0,  # on = forever, off = unload
         }
+        if options:
+            payload["options"] = options
+        
+        # Add think parameter for qwen3 models
+        if is_thinking_model:
+            payload["think"] = think
+        
+        print(f"🚀 Ollama: {ollama_model} | stream: True | think: {think if is_thinking_model else 'N/A'}")
 
         try:
-            # Process different input types
-            if input_type == "text":
-                # Text-only input, no additional processing needed
-                print(f"Processing text input for Ollama API")
-
-            elif input_type == "image":
-                # Handle multiple images
-                all_images = [image1, image2, image3, image4, image5]
-                provided_images = [img for img in all_images if img is not None]
-
-                if provided_images:
-                    print(f"Processing {len(provided_images)} image(s) for Ollama API")
-                    image_data = []
-                    for img in provided_images:
-                        pil_image = tensor_to_pil_image(img)
-                        buffered = io.BytesIO()
-                        pil_image.save(buffered, format="PNG")
-                        image_data.append(base64.b64encode(buffered.getvalue()).decode())
-
-                    payload["images"] = image_data
-                    # Update prompt to indicate image analysis
-                    modified_prompt = f"Analyze these image(s): {modified_prompt}"
-                    payload["prompt"] = modified_prompt
-
-            elif input_type == "video" and video is not None:
-                # Process video input (extract frames)
-                print(f"Processing video input for Ollama API")
-                frames = sample_video_frames(video)
-                if frames:
-                    # Convert frames to base64
-                    frame_data = []
-                    for frame in frames:
-                        buffered = io.BytesIO()
-                        frame.save(buffered, format="PNG")
-                        frame_data.append(base64.b64encode(buffered.getvalue()).decode())
-
-                    # Add frames to payload
-                    payload["images"] = frame_data
-
-                    # Update prompt to indicate video analysis
-                    frame_count = len(frames)
-                    modified_prompt = f"Analyze these {frame_count} frames from a video: {modified_prompt}"
-                    payload["prompt"] = modified_prompt
-                else:
-                    print("Error: Could not extract frames from video")
-                    return ("Error: Could not extract frames from video",)
-
-            elif input_type == "audio" and audio is not None:
-                # Process audio input
-                print(f"Processing audio input for Ollama API")
-                if not TORCHAUDIO_AVAILABLE:
-                    return ("Error: torchaudio not available for audio processing",)
-
-                try:
-                    # Check different audio input formats
-                    if isinstance(audio, dict):
-                        if "path" in audio:
-                            # Direct path format
-                            audio_path = audio["path"]
-                            print(f"Processing audio from path: {audio_path}")
-                            audio_b64 = process_audio(audio_path)
-                        elif "waveform" in audio and "sample_rate" in audio:
-                            # ComfyUI audio node format
-                            print(f"Processing audio from waveform tensor")
-                            audio_b64 = process_audio(audio)
-                        else:
-                            # Unknown dictionary format
-                            print(f"Unknown audio dictionary format: {list(audio.keys())}")
-                            return ("Error: Unsupported audio format",)
-                    elif isinstance(audio, str) and os.path.exists(audio):
-                        # Direct file path
-                        print(f"Processing audio from direct path: {audio}")
-                        audio_b64 = process_audio(audio)
-                    else:
-                        # Try to process as tensor or other format
-                        print(f"Attempting to process audio as tensor")
-                        audio_b64 = process_audio(audio)
-
-                    if audio_b64:
-                        # Ollama doesn't directly support audio, so we'll include a note in the prompt
-                        modified_prompt = f"[This prompt includes audio data that has been processed] {modified_prompt}"
-                        payload["prompt"] = modified_prompt
-
-                        # Some Ollama models might support base64 encoded audio as an image
-                        # This is experimental and may not work with all models
-                        payload["images"] = [audio_b64]
-                    else:
-                        return ("Error: Failed to process audio data",)
-                except Exception as e:
-                    print(f"Error processing audio for Ollama: {str(e)}")
-                    return (f"Error processing audio: {str(e)}",)
-
-            # Send request to Ollama API
-            response = requests.post(url, json=payload)
-            response.raise_for_status()
-
-            # Get the response text
-            textoutput = response.json().get('response', '')
+            # Direct requests.post with streaming - exactly like your script
+            textoutput = ""
+            first_token_time = None
+            token_count = 0
+            
+            with requests.post(f"{self.ollama_url}/api/chat", json=payload, stream=True) as r:
+                for line in r.iter_lines():
+                    if line:
+                        try:
+                            data = json.loads(line)
+                            # Handle thinking (qwen3)
+                            thinking = data.get("message", {}).get("thinking", "")
+                            if thinking and not think:
+                                # Skip thinking output if think=False
+                                pass
+                            content = data.get("message", {}).get("content", "")
+                            if content:
+                                if first_token_time is None:
+                                    first_token_time = time.time()
+                                textoutput += content
+                                token_count += 1
+                            # Get final stats
+                            if data.get("done"):
+                                eval_count = data.get("eval_count", token_count)
+                                eval_duration = data.get("eval_duration", 0) / 1e9
+                                prompt_eval = data.get("prompt_eval_duration", 0) / 1e9
+                        except:
+                            pass
+            
+            total = time.time() - start_time
+            ttft = first_token_time - start_time if first_token_time else total
+            tps = eval_count / eval_duration if eval_duration > 0 else 0
+            print(f"✅ Total: {total:.2f}s | First token: {ttft:.2f}s | {eval_count} tokens @ {tps:.1f} tok/s")
 
             # Process the output based on the selected format
             if textoutput.strip():
@@ -1455,6 +1457,406 @@ class GeminiTextSplitByDelimiter:
         return (arr,)
 
 
+class GeminiLoadImagePath:
+    """
+    Load an image from a file path OR a directory (with index selection).
+    When given a directory, use 'index' to select which image to load.
+    Enable 'auto_increment' to automatically advance to next image each run.
+    Outputs: IMAGE tensor, MASK, filename, directory path, dimensions
+    """
+    
+    SUPPORTED_FORMATS = ('.png', '.jpg', '.jpeg', '.webp', '.bmp', '.gif', '.tiff', '.tif')
+    
+    # File to store persistent counters (like WAS Node Suite pattern)
+    _counter_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.image_loader_state.json')
+    
+    @classmethod
+    def _load_counters(cls):
+        """Load counters from persistent file"""
+        try:
+            if os.path.exists(cls._counter_file):
+                with open(cls._counter_file, 'r') as f:
+                    return json.load(f)
+        except Exception as e:
+            print(f"[Gemini Load Image] Warning: Could not load counters: {e}")
+        return {}
+    
+    @classmethod
+    def _save_counters(cls, counters):
+        """Save counters to persistent file"""
+        try:
+            with open(cls._counter_file, 'w') as f:
+                json.dump(counters, f, indent=2)
+        except Exception as e:
+            print(f"[Gemini Load Image] Warning: Could not save counters: {e}")
+    
+    @classmethod
+    def _get_counter(cls, path):
+        """Get current counter for a path"""
+        counters = cls._load_counters()
+        return counters.get(path, 0)
+    
+    @classmethod
+    def _set_counter(cls, path, value):
+        """Set counter for a path"""
+        counters = cls._load_counters()
+        counters[path] = value
+        cls._save_counters(counters)
+    
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "path": ("STRING", {
+                    "default": "",
+                    "multiline": False,
+                    "placeholder": "/path/to/image.png or /path/to/directory/"
+                }),
+            },
+            "optional": {
+                "index": ("INT", {"default": 0, "min": 0, "max": 99999, "step": 1}),
+                "auto_increment": ("BOOLEAN", {"default": False}),
+                "start_index": ("INT", {"default": 0, "min": 0, "max": 99999, "step": 1}),
+                "reset_counter": ("BOOLEAN", {"default": False}),
+                "sort_by": (["name", "date_modified", "date_created", "size"], {"default": "name"}),
+                "sort_order": (["ascending", "descending"], {"default": "ascending"}),
+                "RGBA_output": ("BOOLEAN", {"default": False}),
+            }
+        }
+
+    RETURN_TYPES = ("IMAGE", "MASK", "STRING", "STRING", "STRING", "INT", "INT", "INT", "INT")
+    RETURN_NAMES = ("image", "mask", "filename", "filename_with_ext", "directory", "width", "height", "current_index", "total_images")
+    FUNCTION = "load_image"
+    CATEGORY = "AI API/Image"
+
+    @classmethod
+    def IS_CHANGED(cls, path, index=0, auto_increment=False, start_index=0, reset_counter=False, sort_by="name", sort_order="ascending", **kwargs):
+        # When auto_increment is on, always return unique value to force re-execution
+        if auto_increment:
+            return float('nan')
+        
+        # Otherwise, include all parameters in hash
+        if os.path.isfile(path):
+            mtime = os.path.getmtime(path)
+            return hash((path, mtime, index, sort_by, sort_order))
+        elif os.path.isdir(path):
+            try:
+                files = [f for f in os.listdir(path) 
+                         if os.path.splitext(f)[1].lower() in cls.SUPPORTED_FORMATS]
+                return hash((path, tuple(sorted(files)), index, sort_by, sort_order))
+            except:
+                pass
+        return float('nan')
+
+    @classmethod
+    def VALIDATE_INPUTS(cls, path, **kwargs):
+        # Allow empty/invalid paths - will error at execution time
+        return True
+
+    def _get_sorted_images(self, directory, sort_by="name", sort_order="ascending"):
+        """Get sorted list of image files in directory"""
+        image_files = []
+        for f in os.listdir(directory):
+            ext = os.path.splitext(f)[1].lower()
+            if ext in self.SUPPORTED_FORMATS:
+                full_path = os.path.join(directory, f)
+                if os.path.isfile(full_path):
+                    image_files.append(full_path)
+        
+        if not image_files:
+            return []
+        
+        # Sort files
+        if sort_by == "name":
+            image_files.sort(key=lambda x: os.path.basename(x).lower())
+        elif sort_by == "date_modified":
+            image_files.sort(key=lambda x: os.path.getmtime(x))
+        elif sort_by == "date_created":
+            image_files.sort(key=lambda x: os.path.getctime(x))
+        elif sort_by == "size":
+            image_files.sort(key=lambda x: os.path.getsize(x))
+        
+        if sort_order == "descending":
+            image_files.reverse()
+        
+        return image_files
+
+    def load_image(self, path, index=0, auto_increment=False, start_index=0, reset_counter=False, sort_by="name", sort_order="ascending", RGBA_output=False):
+        """Load image from path (file or directory with index)"""
+        
+        # Validate path
+        if not path:
+            raise ValueError("Path is empty. Provide a file path or directory path.")
+        
+        if not os.path.exists(path):
+            raise ValueError(f"Path not found: {path}")
+        
+        # Determine if path is file or directory
+        total_images = 1
+        current_index = 0
+        
+        if os.path.isdir(path):
+            # Directory mode - get image at index
+            image_files = self._get_sorted_images(path, sort_by, sort_order)
+            if not image_files:
+                raise ValueError(f"No supported images found in: {path}")
+            
+            total_images = len(image_files)
+            
+            if auto_increment:
+                # Reset counter if requested
+                if reset_counter:
+                    GeminiLoadImagePath._set_counter(path, start_index)
+                    print(f"[Gemini Load Image] Counter reset to {start_index}")
+                
+                # Get current counter from persistent storage
+                current_index = GeminiLoadImagePath._get_counter(path)
+                
+                # Initialize if not set
+                if current_index == 0 and start_index > 0:
+                    current_index = start_index
+                
+                # Wrap around if needed
+                if current_index >= total_images:
+                    current_index = 0
+                
+                # Save incremented counter for next run
+                next_index = (current_index + 1) % total_images
+                GeminiLoadImagePath._set_counter(path, next_index)
+                
+                print(f"[Gemini Load Image] Auto-increment: Loading image {current_index + 1}/{total_images} (next will be {next_index + 1})")
+            else:
+                # Manual index mode
+                current_index = index % total_images if total_images > 0 else 0
+            
+            image_path = image_files[current_index]
+            directory = path
+        else:
+            # File mode
+            image_path = path
+            directory = os.path.dirname(path)
+            current_index = 0
+        
+        # Extract filename components
+        filename_with_ext = os.path.basename(image_path)
+        filename = os.path.splitext(filename_with_ext)[0]
+        
+        # Load image with PIL
+        img = Image.open(image_path)
+        
+        # Handle EXIF orientation
+        try:
+            from PIL import ImageOps
+            img = ImageOps.exif_transpose(img)
+        except Exception:
+            pass
+        
+        # Get dimensions
+        width, height = img.size
+        
+        # Handle different image modes
+        has_alpha = 'A' in img.mode or img.mode == 'PA'
+        
+        if RGBA_output and has_alpha:
+            img = img.convert("RGBA")
+            img_array = np.array(img).astype(np.float32) / 255.0
+            rgb_array = img_array[:, :, :3]
+            alpha_array = img_array[:, :, 3]
+        else:
+            if has_alpha:
+                background = Image.new("RGB", img.size, (255, 255, 255))
+                if img.mode == 'PA':
+                    img = img.convert("RGBA")
+                background.paste(img, mask=img.split()[-1])
+                img = background
+            else:
+                img = img.convert("RGB")
+            
+            img_array = np.array(img).astype(np.float32) / 255.0
+            rgb_array = img_array
+            alpha_array = np.ones((height, width), dtype=np.float32)
+        
+        # Convert to tensors
+        image_tensor = torch.from_numpy(rgb_array).unsqueeze(0)
+        mask_tensor = torch.from_numpy(alpha_array).unsqueeze(0)
+        mask_tensor = 1.0 - mask_tensor  # Invert for ComfyUI convention
+        
+        return (
+            image_tensor,
+            mask_tensor,
+            filename,
+            filename_with_ext,
+            directory,
+            width,
+            height,
+            current_index,
+            total_images
+        )
+
+
+class GeminiLoadImagesFromDirectory:
+    """
+    Load images from a directory ONE BY ONE.
+    Outputs same structure as Load Image Path - iterates through each image.
+    """
+    
+    SUPPORTED_FORMATS = ('.png', '.jpg', '.jpeg', '.webp', '.bmp', '.gif', '.tiff', '.tif')
+    
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "directory": ("STRING", {
+                    "default": "",
+                    "multiline": False,
+                    "placeholder": "/path/to/images/"
+                }),
+            },
+            "optional": {
+                "sort_by": (["name", "date_modified", "date_created", "size"], {"default": "name"}),
+                "sort_order": (["ascending", "descending"], {"default": "ascending"}),
+                "limit": ("INT", {"default": 0, "min": 0, "max": 10000, "step": 1}),
+                "offset": ("INT", {"default": 0, "min": 0, "max": 10000, "step": 1}),
+                "RGBA_output": ("BOOLEAN", {"default": False}),
+            }
+        }
+
+    # Same outputs as GeminiLoadImagePath - but as lists for iteration
+    RETURN_TYPES = ("IMAGE", "MASK", "STRING", "STRING", "STRING", "INT", "INT", "INT")
+    RETURN_NAMES = ("image", "mask", "filename", "filename_with_ext", "directory", "width", "height", "count")
+    OUTPUT_IS_LIST = (True, True, True, True, True, True, True, False)
+    FUNCTION = "load_images"
+    CATEGORY = "AI API/Image"
+
+    @classmethod
+    def IS_CHANGED(cls, directory, **kwargs):
+        if os.path.isdir(directory):
+            files = [f for f in os.listdir(directory) 
+                     if os.path.splitext(f)[1].lower() in cls.SUPPORTED_FORMATS]
+            return hash(tuple(sorted(files)))
+        return float('nan')
+
+    @classmethod
+    def VALIDATE_INPUTS(cls, directory, **kwargs):
+        return True
+
+    def load_images(self, directory, sort_by="name", sort_order="ascending", limit=0, offset=0, RGBA_output=False):
+        """Load images from directory one by one with same outputs as single image loader"""
+        
+        if not directory:
+            raise ValueError("Directory path is empty.")
+        if not os.path.isdir(directory):
+            raise ValueError(f"Directory not found: {directory}")
+        
+        # Get list of image files
+        image_files = []
+        for f in os.listdir(directory):
+            ext = os.path.splitext(f)[1].lower()
+            if ext in self.SUPPORTED_FORMATS:
+                full_path = os.path.join(directory, f)
+                if os.path.isfile(full_path):
+                    image_files.append(full_path)
+        
+        if not image_files:
+            raise ValueError(f"No supported images found in: {directory}")
+        
+        # Sort files
+        if sort_by == "name":
+            image_files.sort(key=lambda x: os.path.basename(x).lower())
+        elif sort_by == "date_modified":
+            image_files.sort(key=lambda x: os.path.getmtime(x))
+        elif sort_by == "date_created":
+            image_files.sort(key=lambda x: os.path.getctime(x))
+        elif sort_by == "size":
+            image_files.sort(key=lambda x: os.path.getsize(x))
+        
+        if sort_order == "descending":
+            image_files.reverse()
+        
+        # Apply offset and limit
+        if offset > 0:
+            image_files = image_files[offset:]
+        if limit > 0:
+            image_files = image_files[:limit]
+        
+        if not image_files:
+            raise ValueError(f"No images after applying offset/limit filters")
+        
+        # Prepare output lists - one entry per image
+        images_out = []
+        masks_out = []
+        filenames_out = []
+        filenames_ext_out = []
+        directories_out = []
+        widths_out = []
+        heights_out = []
+        
+        for img_path in image_files:
+            try:
+                # Load image
+                img = Image.open(img_path)
+                
+                # Handle EXIF orientation
+                try:
+                    from PIL import ImageOps
+                    img = ImageOps.exif_transpose(img)
+                except Exception:
+                    pass
+                
+                # Get dimensions
+                width, height = img.size
+                
+                # Handle different image modes
+                has_alpha = 'A' in img.mode or img.mode == 'PA'
+                
+                if RGBA_output and has_alpha:
+                    img = img.convert("RGBA")
+                    img_array = np.array(img).astype(np.float32) / 255.0
+                    rgb_array = img_array[:, :, :3]
+                    alpha_array = img_array[:, :, 3]
+                else:
+                    if has_alpha:
+                        background = Image.new("RGB", img.size, (255, 255, 255))
+                        if img.mode == 'PA':
+                            img = img.convert("RGBA")
+                        background.paste(img, mask=img.split()[-1])
+                        img = background
+                    else:
+                        img = img.convert("RGB")
+                    
+                    img_array = np.array(img).astype(np.float32) / 255.0
+                    rgb_array = img_array
+                    alpha_array = np.ones((height, width), dtype=np.float32)
+                
+                # Convert to tensors
+                image_tensor = torch.from_numpy(rgb_array).unsqueeze(0)
+                mask_tensor = torch.from_numpy(alpha_array).unsqueeze(0)
+                mask_tensor = 1.0 - mask_tensor  # Invert for ComfyUI convention
+                
+                # Extract path info
+                filename_with_ext = os.path.basename(img_path)
+                filename = os.path.splitext(filename_with_ext)[0]
+                
+                # Append to output lists
+                images_out.append(image_tensor)
+                masks_out.append(mask_tensor)
+                filenames_out.append(filename)
+                filenames_ext_out.append(filename_with_ext)
+                directories_out.append(directory)
+                widths_out.append(width)
+                heights_out.append(height)
+                
+            except Exception as e:
+                print(f"Warning: Failed to load {img_path}: {e}")
+                continue
+        
+        if not images_out:
+            raise ValueError(f"Failed to load any images from: {directory}")
+        
+        count = len(images_out)
+        
+        return (images_out, masks_out, filenames_out, filenames_ext_out, directories_out, widths_out, heights_out, count)
+
 
 class GeminiSaveTextFile:
     def __init__(self):
@@ -1536,6 +1938,8 @@ NODE_CLASS_MAPPINGS = {
     "QwenAPI": GeminiQwenAPI,
     "GeminiTextSplitter": GeminiTextSplitByDelimiter,
     "GeminiSaveText": GeminiSaveTextFile,
+    "GeminiLoadImagePath": GeminiLoadImagePath,
+    "GeminiLoadImagesFromDir": GeminiLoadImagesFromDirectory,
     "ListAvailableModels": GeminiListAvailableModels,
 }
 
@@ -1547,5 +1951,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "QwenAPI": "Qwen API",
     "GeminiTextSplitter": "Gemini Text Splitter",
     "GeminiSaveText": "Gemini Save Text",
+    "GeminiLoadImagePath": "Gemini Load Image Path",
+    "GeminiLoadImagesFromDir": "Gemini Load Images From Directory",
     "ListAvailableModels": "List Available Models",
 }

@@ -24,3 +24,4 @@ transformers==4.55.4 # For CLIPSeg and BRIA_RMBG
 # torchvision
 
 # Note: folder_paths is provided by ComfyUI
+
