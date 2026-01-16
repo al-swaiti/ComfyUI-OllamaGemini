@@ -139,15 +139,15 @@ https://github.com/user-attachments/assets/8_compressed_hq.mp4
 <img src="https://img.shields.io/badge/Gemini_Generation-667eea?style=flat-square&labelColor=0d1117"/>
 </td>
 <td align="center" width="270">
-<a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/blob/main/examples/6.png">
+<a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/blob/main/examples/6.png"
 <img src="https://raw.githubusercontent.com/al-swaiti/ComfyUI-OllamaGemini/main/examples/6.png" width="250" style="border-radius: 12px; border: 2px solid #764ba2;"/>
 </a>
 <br/><br/>
 <img src="https://img.shields.io/badge/Background_Removal-764ba2?style=flat-square&labelColor=0d1117"/>
 </td>
 <td align="center" width="270">
-<a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/blob/main/examples/smart_prompt.png">
-<img src="https://raw.githubusercontent.com/al-swaiti/ComfyUI-OllamaGemini/main/examples/smart_prompt.png" width="250" style="border-radius: 12px; border: 2px solid #f093fb;"/>
+<a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/blob/main/examples/4.png">
+<img src="https://raw.githubusercontent.com/al-swaiti/ComfyUI-OllamaGemini/main/examples/4.png" width="250" style="border-radius: 12px; border: 2px solid #f093fb;"/>
 </a>
 <br/><br/>
 <img src="https://img.shields.io/badge/Smart_Prompts-f093fb?style=flat-square&labelColor=0d1117"/>
@@ -318,7 +318,7 @@ https://github.com/user-attachments/assets/8_compressed_hq.mp4
 <tr>
 <td align="center" width="220">
 <br/>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Artist%20Palette.png" width="50"/>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Artist%20Palette.png" width="50"/>
 <br/><br/>
 <b>Image Generation</b>
 <br/>
@@ -356,7 +356,7 @@ https://github.com/user-attachments/assets/8_compressed_hq.mp4
 <tr>
 <td align="center" width="220">
 <br/>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Framed%20Picture.png" width="50"/>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Frame%20with%20Picture.png" width="50"/>
 <br/><br/>
 <b>FLUX Resolutions</b>
 <br/>
@@ -597,7 +597,7 @@ pip install -r requirements.txt
 </a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://paypal.me/abdallalswaiti">
-<img src="https://img.shields.io/badge/☕_BUY_COFFEE-ff6b6b?style=for-the-badge&logo=paypal&logoColor=white&labelColor=0d1117" height="45"/>
+<img src="https://img.shields.io/badge/☕_BUY_COFFEE-$5_🙏_THANKS-ff6b6b?style=for-the-badge&logo=paypal&logoColor=white&labelColor=0d1117" height="45"/>
 </a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/issues">
