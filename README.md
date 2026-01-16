@@ -124,7 +124,7 @@
 <br/>
 
 <!-- VIDEO EMBED -->
-https://github.com/user-attachments/assets/8_compressed_hq.mp4
+https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 
 <br/>
 
@@ -139,7 +139,7 @@ https://github.com/user-attachments/assets/8_compressed_hq.mp4
 <img src="https://img.shields.io/badge/Gemini_Generation-667eea?style=flat-square&labelColor=0d1117"/>
 </td>
 <td align="center" width="270">
-<a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/blob/main/examples/6.png"
+<a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/blob/main/examples/6.png">
 <img src="https://raw.githubusercontent.com/al-swaiti/ComfyUI-OllamaGemini/main/examples/6.png" width="250" style="border-radius: 12px; border: 2px solid #764ba2;"/>
 </a>
 <br/><br/>
@@ -356,7 +356,7 @@ https://github.com/user-attachments/assets/8_compressed_hq.mp4
 <tr>
 <td align="center" width="220">
 <br/>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Frame%20with%20Picture.png" width="50"/>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Television.png" width="50"/>
 <br/><br/>
 <b>FLUX Resolutions</b>
 <br/>
@@ -374,7 +374,7 @@ https://github.com/user-attachments/assets/8_compressed_hq.mp4
 </td>
 <td align="center" width="220">
 <br/>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Crystal%20Ball.png" width="50"/>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" width="50"/>
 <br/><br/>
 <b>Smart Prompts</b>
 <br/>
@@ -565,9 +565,11 @@ pip install -r requirements.txt
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=18&duration=4000&pause=1000&color=ffd700&center=true&vCenter=true&multiline=true&repeat=true&width=550&height=80&lines=500%2B+hours+of+development;Your+support+keeps+it+FREE+for+everyone;Every+star+%26+donation+means+the+world+💖" alt="Support"/>
+### ⏰ **500+ hours of development**
+### 💝 **Your support keeps it FREE for everyone**  
+### ⭐ **Every star & donation means the world** 💖
 
-<br/><br/>
+<br/>
 
 <!-- CREATOR CARD -->
 <table>
@@ -597,7 +599,7 @@ pip install -r requirements.txt
 </a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://paypal.me/abdallalswaiti">
-<img src="https://img.shields.io/badge/☕_BUY_COFFEE-$5_🙏_THANKS-ff6b6b?style=for-the-badge&logo=paypal&logoColor=white&labelColor=0d1117" height="45"/>
+<img src="https://img.shields.io/badge/☕_BUY_COFFEE-🙏_THANKS-ff6b6b?style=for-the-badge&logo=paypal&logoColor=white&labelColor=0d1117" height="45"/>
 </a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/issues">
