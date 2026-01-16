@@ -59,7 +59,7 @@
 
 <!-- 🚀 HERO CTA BUTTONS -->
 <a href="#-quick-start">
-<img src="https://img.shields.io/badge/GET_STARTED-▶-ff6b35?style=for-the-badge&logoColor=white&labelColor=0d1117" alt="Get Started"/>
+<img src="https://img.shields.io/badge/🚀_GET_STARTED-ff6b35?style=for-the-badge&logoColor=white&labelColor=0d1117" alt="Get Started"/>
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini">
@@ -67,8 +67,17 @@
 </a>
 &nbsp;&nbsp;
 <a href="https://paypal.me/abdallalswaiti">
-<img src="https://img.shields.io/badge/♥_SPONSOR-ff6b6b?style=for-the-badge&logo=paypal&logoColor=white&labelColor=0d1117" alt="Sponsor"/>
+<img src="https://img.shields.io/badge/☕_SUPPORT-c41e3a?style=for-the-badge&logo=paypal&logoColor=white&labelColor=0d1117" alt="Sponsor"/>
 </a>
+
+<br/><br/>
+
+<!-- ✨ VERCEL-STYLE FEATURE HIGHLIGHTS -->
+<img src="https://img.shields.io/badge/✅_Free_&_Open_Source-0d1117?style=flat-square&labelColor=7ed321"/>
+&nbsp;
+<img src="https://img.shields.io/badge/✅_No_Account_Required-0d1117?style=flat-square&labelColor=7ed321"/>
+&nbsp;
+<img src="https://img.shields.io/badge/✅_Works_Offline_(Ollama)-0d1117?style=flat-square&labelColor=7ed321"/>
 
 </div>
 
@@ -194,6 +203,15 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gem%20Stone.png" alt="Diamond" width="32" /> $\huge\textsf{\textcolor{c41e3a}{Why Creators Love Us}}$
 
+<br/>
+
+<!-- Vercel-style metrics bar -->
+<img src="https://img.shields.io/badge/⚡_10x_Faster_Workflow-ff6b35?style=for-the-badge&labelColor=0d1117"/>
+&nbsp;
+<img src="https://img.shields.io/badge/🔥_Zero_Config-c41e3a?style=for-the-badge&labelColor=0d1117"/>
+&nbsp;
+<img src="https://img.shields.io/badge/✨_One_Node_All_APIs-ffd700?style=for-the-badge&labelColor=0d1117"/>
+
 </div>
 
 <br/>
@@ -202,7 +220,7 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 <tr>
 <td width="450">
 
-### $\textsf{\textcolor{ff6b6b}{😫 Before}}$
+### $\textsf{\textcolor{c41e3a}{😫 Before}}$
 
 ```diff
 - 5 different extensions to manage
@@ -367,9 +385,9 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 <br/>
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Performing%20Arts.png" width="50"/>
 <br/><br/>
-<b>500+ Styles</b>
+<b>500+ Art Styles</b>
 <br/>
-<sub>Artistic presets for any mood</sub>
+<sub>🎨 Curated artistic presets</sub>
 <br/><br/>
 </td>
 <td align="center" width="220">
@@ -392,6 +410,76 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 </td>
 </tr>
 </table>
+
+</div>
+
+<br/><br/>
+
+---
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     🎨 ART STYLES SHOWCASE - Vercel-style animated gallery
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Artist%20Palette.png" alt="Art" width="32" /> $\huge\textsf{\textcolor{ffd700}{500+ Curated Art Styles}}$
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=18&duration=2000&pause=500&color=ff6b35&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=35&lines=Anime+%E2%9C%A8+Cyberpunk+%E2%9C%A8+Oil+Painting+%E2%9C%A8+Watercolor+%E2%9C%A8+Cinematic;Film+Noir+%E2%9C%A8+Studio+Ghibli+%E2%9C%A8+Baroque+%E2%9C%A8+Art+Nouveau+%E2%9C%A8+Synthwave;Van+Gogh+%E2%9C%A8+Monet+%E2%9C%A8+Picasso+%E2%9C%A8+Warhol+%E2%9C%A8+Banksy+%E2%9C%A8+Mucha;Steampunk+%E2%9C%A8+Vaporwave+%E2%9C%A8+Minimalist+%E2%9C%A8+Maximalist+%E2%9C%A8+Gothic" alt="Styles"/>
+
+<br/><br/>
+
+<!-- STYLE CATEGORIES - Vercel-style cards -->
+<table>
+<tr>
+<td align="center" width="160">
+<img src="https://img.shields.io/badge/🎬-ff6b35?style=for-the-badge&labelColor=0d1117" height="40"/>
+<br/><sub><b>Cinema</b></sub>
+<br/><sub>80+ styles</sub>
+</td>
+<td align="center" width="160">
+<img src="https://img.shields.io/badge/🖼️-c41e3a?style=for-the-badge&labelColor=0d1117" height="40"/>
+<br/><sub><b>Fine Art</b></sub>
+<br/><sub>120+ styles</sub>
+</td>
+<td align="center" width="160">
+<img src="https://img.shields.io/badge/🎮-ffd700?style=for-the-badge&labelColor=0d1117" height="40"/>
+<br/><sub><b>Gaming</b></sub>
+<br/><sub>60+ styles</sub>
+</td>
+<td align="center" width="160">
+<img src="https://img.shields.io/badge/📸-f5a623?style=for-the-badge&labelColor=0d1117" height="40"/>
+<br/><sub><b>Photo</b></sub>
+<br/><sub>90+ styles</sub>
+</td>
+<td align="center" width="160">
+<img src="https://img.shields.io/badge/✨-7ed321?style=for-the-badge&labelColor=0d1117" height="40"/>
+<br/><sub><b>Fantasy</b></sub>
+<br/><sub>100+ styles</sub>
+</td>
+</tr>
+</table>
+
+<br/>
+
+<details>
+<summary><b>🔥 View Popular Style Categories</b></summary>
+<br/>
+
+| Category | Styles | Examples |
+|:---------|:------:|:---------|
+| 🎬 **Cinematic** | 80+ | Film Noir, Blade Runner, Spielberg, Nolan, Wes Anderson |
+| 🖼️ **Fine Art** | 120+ | Van Gogh, Monet, Picasso, Rembrandt, Caravaggio |
+| 🎮 **Digital Art** | 60+ | Cyberpunk, Synthwave, Vaporwave, Pixel Art, 3D Render |
+| 📸 **Photography** | 90+ | Portrait, Landscape, Street, Fashion, Product |
+| ✨ **Fantasy** | 100+ | Epic Fantasy, Dark Fantasy, Fairy Tale, Mythological |
+| 🎌 **Anime** | 50+ | Studio Ghibli, Makoto Shinkai, Trigger, Mappa |
+
+</details>
 
 </div>
 
@@ -561,7 +649,7 @@ pip install -r requirements.txt
 
 <div align="center">
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Hearts.png" alt="Heart" width="32" /> $\huge\textsf{\textcolor{ff6b6b}{Support This Project}}$
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Hearts.png" alt="Heart" width="32" /> $\huge\textsf{\textcolor{c41e3a}{Support This Project}}$
 
 <br/>
 
