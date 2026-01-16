@@ -18,27 +18,27 @@
      🌟 HERO SECTION - Premium gradient header with glass effect
      ═══════════════════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:667eea,50:764ba2,100:f093fb&height=300&section=header&text=ComfyUI-OllamaGemini&fontSize=60&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=The%20Ultimate%20AI%20API%20Integration%20for%20ComfyUI&descAlignY=55&descSize=20&stroke=ffffff&strokeWidth=1" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:ff6b35,50:c41e3a,100:ffd700&height=300&section=header&text=ComfyUI-OllamaGemini&fontSize=60&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=The%20Ultimate%20AI%20API%20Integration%20for%20ComfyUI&descAlignY=55&descSize=20&stroke=ffffff&strokeWidth=1" width="100%"/>
 
 <br/>
 
 <!-- 🔮 ANIMATED TAGLINE -->
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=800&size=32&duration=3000&pause=1500&color=667EEA&center=true&vCenter=true&multiline=false&repeat=true&width=800&height=60&lines=One+Node.+Five+APIs.+Infinite+Possibilities." alt="Tagline"/>
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=800&size=32&duration=3000&pause=1500&color=FF6B35&center=true&vCenter=true&multiline=false&repeat=true&width=800&height=60&lines=One+Node.+Five+APIs.+Infinite+Possibilities." alt="Tagline"/>
 
 <br/><br/>
 
 <!-- ✨ GLASSMORPHISM STATS BAR -->
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/stargazers">
-<img src="https://img.shields.io/github/stars/al-swaiti/ComfyUI-OllamaGemini?style=for-the-badge&logo=starship&logoColor=white&label=STARS&color=667eea&labelColor=0d1117" alt="Stars"/>
+<img src="https://img.shields.io/github/stars/al-swaiti/ComfyUI-OllamaGemini?style=for-the-badge&logo=starship&logoColor=white&label=STARS&color=ff6b35&labelColor=0d1117" alt="Stars"/>
 </a>
 &nbsp;
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/network/members">
-<img src="https://img.shields.io/github/forks/al-swaiti/ComfyUI-OllamaGemini?style=for-the-badge&logo=git&logoColor=white&label=FORKS&color=764ba2&labelColor=0d1117" alt="Forks"/>
+<img src="https://img.shields.io/github/forks/al-swaiti/ComfyUI-OllamaGemini?style=for-the-badge&logo=git&logoColor=white&label=FORKS&color=c41e3a&labelColor=0d1117" alt="Forks"/>
 </a>
 &nbsp;
-<img src="https://img.shields.io/badge/VERSION-3.0.0-f093fb?style=for-the-badge&logo=semantic-release&logoColor=white&labelColor=0d1117" alt="Version"/>
+<img src="https://img.shields.io/badge/VERSION-3.0.0-ffd700?style=for-the-badge&logo=semantic-release&logoColor=white&labelColor=0d1117" alt="Version"/>
 &nbsp;
-<img src="https://img.shields.io/badge/LICENSE-MIT-00d9ff?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=0d1117" alt="License"/>
+<img src="https://img.shields.io/badge/LICENSE-MIT-f5a623?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=0d1117" alt="License"/>
 
 <br/><br/>
 
@@ -59,11 +59,11 @@
 
 <!-- 🚀 HERO CTA BUTTONS -->
 <a href="#-quick-start">
-<img src="https://img.shields.io/badge/GET_STARTED-▶-667eea?style=for-the-badge&logoColor=white&labelColor=0d1117" alt="Get Started"/>
+<img src="https://img.shields.io/badge/GET_STARTED-▶-ff6b35?style=for-the-badge&logoColor=white&labelColor=0d1117" alt="Get Started"/>
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini">
-<img src="https://img.shields.io/badge/⭐_STAR_ON_GITHUB-f093fb?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="Star"/>
+<img src="https://img.shields.io/badge/⭐_STAR_ON_GITHUB-ffd700?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="Star"/>
 </a>
 &nbsp;&nbsp;
 <a href="https://paypal.me/abdallalswaiti">
@@ -83,22 +83,22 @@
 <table>
 <tr>
 <td align="center" width="200">
-<img src="https://img.shields.io/badge/150+-667eea?style=flat-square&labelColor=0d1117" height="40"/>
+<img src="https://img.shields.io/badge/150+-ff6b35?style=flat-square&labelColor=0d1117" height="40"/>
 <br/>
 <sub><b>Happy Creators</b></sub>
 </td>
 <td align="center" width="200">
-<img src="https://img.shields.io/badge/500+-764ba2?style=flat-square&labelColor=0d1117" height="40"/>
+<img src="https://img.shields.io/badge/500+-c41e3a?style=flat-square&labelColor=0d1117" height="40"/>
 <br/>
 <sub><b>Hours Saved Daily</b></sub>
 </td>
 <td align="center" width="200">
-<img src="https://img.shields.io/badge/5-f093fb?style=flat-square&labelColor=0d1117" height="40"/>
+<img src="https://img.shields.io/badge/5-ffd700?style=flat-square&labelColor=0d1117" height="40"/>
 <br/>
 <sub><b>AI Providers</b></sub>
 </td>
 <td align="center" width="200">
-<img src="https://img.shields.io/badge/20+-00d9ff?style=flat-square&labelColor=0d1117" height="40"/>
+<img src="https://img.shields.io/badge/20+-f5a623?style=flat-square&labelColor=0d1117" height="40"/>
 <br/>
 <sub><b>Prompt Templates</b></sub>
 </td>
@@ -119,7 +119,7 @@
 
 <div align="center">
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Clapper%20Board.png" alt="Demo" width="32" /> $\huge\textsf{\textcolor{667eea}{See It In Action}}$
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Clapper%20Board.png" alt="Demo" width="32" /> $\huge\textsf{\textcolor{ff6b35}{See It In Action}}$
 
 <br/>
 
@@ -133,24 +133,24 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 <tr>
 <td align="center" width="270">
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/blob/main/examples/3.png">
-<img src="https://raw.githubusercontent.com/al-swaiti/ComfyUI-OllamaGemini/main/examples/3.png" width="250" style="border-radius: 12px; border: 2px solid #667eea;"/>
+<img src="https://raw.githubusercontent.com/al-swaiti/ComfyUI-OllamaGemini/main/examples/3.png" width="250" style="border-radius: 12px; border: 2px solid #ff6b35;"/>
 </a>
 <br/><br/>
-<img src="https://img.shields.io/badge/Gemini_Generation-667eea?style=flat-square&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/Gemini_Generation-ff6b35?style=flat-square&labelColor=0d1117"/>
 </td>
 <td align="center" width="270">
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/blob/main/examples/6.png">
-<img src="https://raw.githubusercontent.com/al-swaiti/ComfyUI-OllamaGemini/main/examples/6.png" width="250" style="border-radius: 12px; border: 2px solid #764ba2;"/>
+<img src="https://raw.githubusercontent.com/al-swaiti/ComfyUI-OllamaGemini/main/examples/6.png" width="250" style="border-radius: 12px; border: 2px solid #c41e3a;"/>
 </a>
 <br/><br/>
-<img src="https://img.shields.io/badge/Background_Removal-764ba2?style=flat-square&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/Background_Removal-c41e3a?style=flat-square&labelColor=0d1117"/>
 </td>
 <td align="center" width="270">
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/blob/main/examples/4.png">
-<img src="https://raw.githubusercontent.com/al-swaiti/ComfyUI-OllamaGemini/main/examples/4.png" width="250" style="border-radius: 12px; border: 2px solid #f093fb;"/>
+<img src="https://raw.githubusercontent.com/al-swaiti/ComfyUI-OllamaGemini/main/examples/4.png" width="250" style="border-radius: 12px; border: 2px solid #ffd700;"/>
 </a>
 <br/><br/>
-<img src="https://img.shields.io/badge/Smart_Prompts-f093fb?style=flat-square&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/Smart_Prompts-ffd700?style=flat-square&labelColor=0d1117"/>
 </td>
 </tr>
 </table>
@@ -192,7 +192,7 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 
 <div align="center">
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gem%20Stone.png" alt="Diamond" width="32" /> $\huge\textsf{\textcolor{764ba2}{Why Creators Love Us}}$
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gem%20Stone.png" alt="Diamond" width="32" /> $\huge\textsf{\textcolor{c41e3a}{Why Creators Love Us}}$
 
 </div>
 
@@ -246,7 +246,7 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 
 <div align="center">
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="32" /> $\huge\textsf{\textcolor{f093fb}{Powerful Features}}$
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="32" /> $\huge\textsf{\textcolor{ffd700}{Powerful Features}}$
 
 <br/>
 
@@ -255,7 +255,7 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 <tr>
 <td align="center" width="180">
 <br/>
-<img src="https://img.shields.io/badge/GOOGLE-667eea?style=for-the-badge&logo=google&logoColor=white&labelColor=0d1117" height="35"/>
+<img src="https://img.shields.io/badge/GOOGLE-ff6b35?style=for-the-badge&logo=google&logoColor=white&labelColor=0d1117" height="35"/>
 <br/><br/>
 <b>Gemini</b>
 <br/>
@@ -266,7 +266,7 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 </td>
 <td align="center" width="180">
 <br/>
-<img src="https://img.shields.io/badge/OPENAI-764ba2?style=for-the-badge&logo=openai&logoColor=white&labelColor=0d1117" height="35"/>
+<img src="https://img.shields.io/badge/OPENAI-c41e3a?style=for-the-badge&logo=openai&logoColor=white&labelColor=0d1117" height="35"/>
 <br/><br/>
 <b>ChatGPT</b>
 <br/>
@@ -277,7 +277,7 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 </td>
 <td align="center" width="180">
 <br/>
-<img src="https://img.shields.io/badge/ANTHROPIC-f093fb?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=0d1117" height="35"/>
+<img src="https://img.shields.io/badge/ANTHROPIC-ffd700?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=0d1117" height="35"/>
 <br/><br/>
 <b>Claude</b>
 <br/>
@@ -288,7 +288,7 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 </td>
 <td align="center" width="180">
 <br/>
-<img src="https://img.shields.io/badge/LOCAL-00d9ff?style=for-the-badge&logo=meta&logoColor=white&labelColor=0d1117" height="35"/>
+<img src="https://img.shields.io/badge/LOCAL-f5a623?style=for-the-badge&logo=meta&logoColor=white&labelColor=0d1117" height="35"/>
 <br/><br/>
 <b>Ollama</b>
 <br/>
@@ -318,11 +318,11 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 <tr>
 <td align="center" width="220">
 <br/>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Artist%20Palette.png" width="50"/>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Movie%20Camera.png" width="50"/>
 <br/><br/>
-<b>Image Generation</b>
+<b>Veo 3.1 Video</b>
 <br/>
-<sub>Gemini 2.0 Flash native</sub>
+<sub>Text/Image to Video + Extend</sub>
 <br/><br/>
 </td>
 <td align="center" width="220">
@@ -336,20 +336,20 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 </td>
 <td align="center" width="220">
 <br/>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Pencil.png" width="50"/>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Camera%20with%20Flash.png" width="50"/>
 <br/><br/>
-<b>SVG Conversion</b>
+<b>Imagen 4</b>
 <br/>
-<sub>Raster to vector with vtracer</sub>
+<sub>Google's latest image model</sub>
 <br/><br/>
 </td>
 <td align="center" width="220">
 <br/>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Film%20Frames.png" width="50"/>
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Banana.png" width="50"/>
 <br/><br/>
-<b>Video & Audio</b>
+<b>Gemini Banana Pro</b>
 <br/>
-<sub>Process multimedia with AI</sub>
+<sub>Advanced image editing</sub>
 <br/><br/>
 </td>
 </tr>
@@ -407,11 +407,11 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 
 <div align="center">
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="Bolt" width="32" /> $\huge\textsf{\textcolor{00d9ff}{Quick Start}}$
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="Bolt" width="32" /> $\huge\textsf{\textcolor{f5a623}{Quick Start}}$
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2000&pause=1000&color=00d9ff&center=true&vCenter=true&multiline=false&repeat=true&width=500&height=40&lines=Install+in+under+30+seconds+⚡" alt="Install"/>
+### ⚡ Install in under 30 seconds
 
 </div>
 
@@ -439,7 +439,7 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 </td>
 <td width="450">
 
-### $\textsf{\textcolor{667eea}{▷ Manual}}$
+### $\textsf{\textcolor{ff6b35}{▷ Manual}}$
 
 **Git Clone**
 
@@ -450,7 +450,7 @@ pip install -r requirements.txt
 ```
 
 <div align="center">
-<img src="https://img.shields.io/badge/Full_Control-✓-667eea?style=flat-square"/>
+<img src="https://img.shields.io/badge/Full_Control-✓-ff6b35?style=flat-square"/>
 </div>
 
 </td>
@@ -487,7 +487,7 @@ pip install -r requirements.txt
 
 <div align="center">
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Scroll.png" alt="Scroll" width="32" /> $\huge\textsf{\textcolor{764ba2}{20+ Prompt Templates}}$
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Scroll.png" alt="Scroll" width="32" /> $\huge\textsf{\textcolor{c41e3a}{20+ Prompt Templates}}$
 
 <sub>Extensively researched • Model-optimized • Professional results</sub>
 
@@ -595,7 +595,7 @@ pip install -r requirements.txt
 
 <!-- SUPPORT BUTTONS -->
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini">
-<img src="https://img.shields.io/badge/⭐_STAR_REPO-FREE-667eea?style=for-the-badge&labelColor=0d1117" height="45"/>
+<img src="https://img.shields.io/badge/⭐_STAR_REPO-FREE-ff6b35?style=for-the-badge&labelColor=0d1117" height="45"/>
 </a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://paypal.me/abdallalswaiti">
@@ -603,7 +603,7 @@ pip install -r requirements.txt
 </a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini/issues">
-<img src="https://img.shields.io/badge/🛠️_CONTRIBUTE-764ba2?style=for-the-badge&labelColor=0d1117" height="45"/>
+<img src="https://img.shields.io/badge/🛠️_CONTRIBUTE-c41e3a?style=for-the-badge&labelColor=0d1117" height="45"/>
 </a>
 
 </div>
@@ -620,7 +620,7 @@ pip install -r requirements.txt
 
 <div align="center">
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Link.png" alt="Link" width="28" /> $\large\textsf{\textcolor{00d9ff}{Connect}}$
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Link.png" alt="Link" width="28" /> $\large\textsf{\textcolor{f5a623}{Connect}}$
 
 <br/>
 
@@ -660,12 +660,12 @@ pip install -r requirements.txt
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=800&size=28&duration=3000&pause=2000&color=f093fb&center=true&vCenter=true&multiline=false&repeat=true&width=600&height=50&lines=Join+150%2B+Happy+Creators+Today!" alt="CTA"/>
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=800&size=28&duration=3000&pause=2000&color=ffd700&center=true&vCenter=true&multiline=false&repeat=true&width=600&height=50&lines=Join+150%2B+Happy+Creators+Today!" alt="CTA"/>
 
 <br/><br/>
 
 <a href="https://github.com/al-swaiti/ComfyUI-OllamaGemini">
-<img src="https://img.shields.io/badge/🚀_GET_STARTED_NOW-667eea?style=for-the-badge&labelColor=0d1117" height="55"/>
+<img src="https://img.shields.io/badge/🚀_GET_STARTED_NOW-ff6b35?style=for-the-badge&labelColor=0d1117" height="55"/>
 </a>
 
 <br/><br/>
@@ -673,7 +673,7 @@ pip install -r requirements.txt
 <sub>
 <b>FREE</b> • <b>Open Source</b> • <b>MIT License</b>
 <br/>
-Made with 💜 in Jordan 🇯🇴
+Made with ❤️ in Jordan 🇯🇴
 </sub>
 
 <br/><br/>
@@ -684,4 +684,4 @@ Made with 💜 in Jordan 🇯🇴
      FOOTER
      ═══════════════════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,50:764ba2,100:f093fb&height=120&section=footer&animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff6b35,50:c41e3a,100:ffd700&height=120&section=footer&animation=twinkling" width="100%"/>
