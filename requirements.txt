@@ -1,5 +1,4 @@
 # API providers
-google-generativeai
 google-genai>=1.50.0  # Required for types.ImageConfig (Gemini 3 Pro Image support)
 requests
 anthropic

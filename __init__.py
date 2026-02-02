@@ -83,6 +83,9 @@ NODE_CLASS_MAPPINGS = {
     "GeminiSVGPreview": GeminiSVGPreview,
     "GeminiFLUXResolutions": GeminiFLUXResolutions, # Renamed
     
+    # Legacy aliases for backward compatibility (Issue #51)
+    "FLUXResolutions": GeminiFLUXResolutions,
+    
     # Prompt styler nodes
     'GeminiComfyUIStyler': type('GeminiComfyUIStyler', (PromptStyler,), {'style_menus': NODES['Gemini ComfyUI Styler']})
 }
@@ -104,6 +107,9 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "GeminiSaveSVG": "Gemini Save SVG",
     "GeminiSVGPreview": "Gemini SVG Preview",
     "GeminiFLUXResolutions": "Gemini FLUX Resolutions", # Renamed
+    
+    # Legacy aliases for backward compatibility (Issue #51)
+    "FLUXResolutions": "FLUX Resolutions (Legacy)",
     
     # Prompt styler nodes
     'GeminiComfyUIStyler': 'Gemini ComfyUI Styler'

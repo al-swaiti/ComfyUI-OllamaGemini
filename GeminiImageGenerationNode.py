@@ -44,10 +44,14 @@ class GeminiImageGenerator:
             "required": {
                 "prompt": ("STRING", {"multiline": True, "default": "A cute cartoon animal in a forest landscape"}),
                 "model": (image_models, {"default": default_model}),
-                "aspect_ratio": (["1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9"], {"default": "1:1"}),
+                # All 10 supported aspect ratios from Gemini API
+                # Square: 1:1 | Landscape: 3:2, 4:3, 5:4, 16:9, 21:9 | Portrait: 2:3, 3:4, 4:5, 9:16
+                "aspect_ratio": (["Auto", "Match Input", "1:1", "3:2", "4:3", "5:4", "16:9", "21:9", "2:3", "3:4", "4:5", "9:16"], {"default": "Auto"}),
                 "image_size": (["1K", "2K", "4K"], {"default": "1K"}),
                 "file_prefix": ("STRING", {"default": "gemini_image"}),
                 "enable_google_search": ("BOOLEAN", {"default": False}),
+                "show_thinking": ("BOOLEAN", {"default": False}),  # Show thought process in output (Gemini 3 Pro only)
+                "image_only": ("BOOLEAN", {"default": False}),  # Return only images, no text
                 "seed": ("INT", {"default": 0, "min": 0, "max": 2147483647}),
                 "number_of_images": ("INT", {"default": 1, "min": 1, "max": 4, "step": 1}),
             },
@@ -179,7 +183,7 @@ Tips:
         # Create black RGB image with shape [batch, height, width, channels]
         return torch.zeros((1, height, width, 3), dtype=torch.float32)
 
-    def generate_image(self, prompt, model, aspect_ratio, image_size, file_prefix, enable_google_search=False, seed=0, number_of_images=1, negative_prompt=None, image1=None, image2=None, image3=None, image4=None, image5=None, image6=None, image7=None, image8=None, image9=None, image10=None, image11=None, image12=None, image13=None, image14=None, **kwargs):
+    def generate_image(self, prompt, model, aspect_ratio, image_size, file_prefix, enable_google_search=False, show_thinking=False, image_only=False, seed=0, number_of_images=1, negative_prompt=None, image1=None, image2=None, image3=None, image4=None, image5=None, image6=None, image7=None, image8=None, image9=None, image10=None, image11=None, image12=None, image13=None, image14=None, **kwargs):
         api_key = self.get_gemini_api_key()
         if not api_key:
             return (self.create_empty_image(), "Error: Gemini API key is missing or invalid")
@@ -191,6 +195,35 @@ Tips:
 
             client = genai.Client(api_key=api_key)
 
+            # Handle 'Match Input' aspect ratio - detect from first input image
+            effective_aspect_ratio = aspect_ratio
+            preserve_ratio_prompt = ""
+            if aspect_ratio == "Match Input":
+                all_images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14]
+                first_image = next((img for img in all_images if img is not None), None)
+                if first_image is not None:
+                    # Get image dimensions from tensor [B, H, W, C]
+                    h, w = first_image.shape[1], first_image.shape[2]
+                    ratio = w / h
+                    # Map to closest supported aspect ratio
+                    supported_ratios = {
+                        "1:1": 1.0, "2:3": 2/3, "3:2": 3/2, "3:4": 3/4, "4:3": 4/3,
+                        "4:5": 4/5, "5:4": 5/4, "9:16": 9/16, "16:9": 16/9, "21:9": 21/9
+                    }
+                    closest = min(supported_ratios.items(), key=lambda x: abs(x[1] - ratio))
+                    effective_aspect_ratio = closest[0]
+                    # Add prompt instruction to preserve aspect ratio (recommended by Gemini docs)
+                    preserve_ratio_prompt = f" Maintain the exact same aspect ratio as the input image ({effective_aspect_ratio}). Do not change the input aspect ratio."
+                    print(f"📐 Match Input: Image is {w}x{h} (ratio {ratio:.2f}) → Using {effective_aspect_ratio}")
+                else:
+                    print("⚠️ Match Input selected but no input image provided. Using Auto.")
+                    effective_aspect_ratio = "Auto"
+
+            # Append preserve ratio instruction to prompt if needed
+            if preserve_ratio_prompt:
+                full_prompt = full_prompt + preserve_ratio_prompt
+                print(f"📝 Added aspect ratio preservation instruction to prompt")
+
             # --- Smart API Method Selection ---
 
             # Case 1: Use the 'generate_images' method for Imagen models.
@@ -199,9 +232,11 @@ Tips:
 
                 config_args = {
                     "number_of_images": number_of_images,
-                    "aspect_ratio": aspect_ratio,
                     "image_size": image_size,
                 }
+                # Only add aspect_ratio if not 'Auto' (let Gemini decide from prompt)
+                if effective_aspect_ratio != "Auto":
+                    config_args["aspect_ratio"] = effective_aspect_ratio
 
                 # Imagen 4.0 does not support seed currently
                 if "imagen-4.0" not in model:
@@ -261,13 +296,23 @@ Tips:
                         contents.append(tensor_to_pil_image(img))
 
                 # Build dynamic image_config
-                image_config_args = {"aspect_ratio": aspect_ratio}
+                image_config_args = {}
+                # Only add aspect_ratio if not 'Auto' (let Gemini decide from prompt)
+                if effective_aspect_ratio != "Auto":
+                    image_config_args["aspect_ratio"] = effective_aspect_ratio
                 if model_config["support_image_size"]:
                     image_config_args["image_size"] = image_size
 
                 # Build dynamic config_params
+                # Use image_only to control response modalities
+                if image_only:
+                    response_mods = ["IMAGE"]
+                    print("📷 Image-only mode: Response will contain only images")
+                else:
+                    response_mods = model_config["response_modalities"]
+                
                 config_params = {
-                    "response_modalities": model_config["response_modalities"],
+                    "response_modalities": response_mods,
                     "image_config": types.ImageConfig(**image_config_args),
                     "seed": seed,
                 }
@@ -318,8 +363,20 @@ Tips:
                             continue
 
                         image_parts = [part for part in candidate.content.parts if part.inline_data]
+                        
+                        # Extract thinking process if show_thinking is enabled (Gemini 3 Pro only)
+                        if show_thinking and "gemini-3" in model:
+                            thought_texts = []
+                            for part in candidate.content.parts:
+                                if hasattr(part, 'thought') and part.thought:
+                                    if hasattr(part, 'text') and part.text:
+                                        thought_texts.append(f"💭 {part.text}")
+                            if thought_texts:
+                                response_texts.append(f"=== Thinking Process ===\n" + "\n".join(thought_texts))
+                                print(f"🧠 Captured {len(thought_texts)} thought(s) from model")
+                        
                         if not image_parts:
-                            text_parts = [part.text for part in candidate.content.parts if part.text]
+                            text_parts = [part.text for part in candidate.content.parts if hasattr(part, 'text') and part.text and not getattr(part, 'thought', False)]
                             if text_parts:
                                 print(f"API Error: {text_parts[0]}")
                             else:

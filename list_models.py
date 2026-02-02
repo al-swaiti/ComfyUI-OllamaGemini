@@ -1,8 +1,21 @@
 import os
 import json
 import requests
-from google import generativeai as genai
+import socket
+import httpx
+from google import genai
 from openai import OpenAI
+
+# Set a global timeout for faster fallback when offline
+NETWORK_TIMEOUT = 3  # seconds
+
+def is_network_available():
+    """Quick check if network is available - returns within 1 second"""
+    try:
+        socket.create_connection(("8.8.8.8", 53), timeout=1)
+        return True
+    except OSError:
+        return False
 
 def get_api_keys():
     try:
@@ -19,8 +32,14 @@ def get_api_keys():
 def get_gemini_models():
     # Default models if API call fails
     default_gemini_models = [
+        # Gemini 3.x Models (newest)
+        "gemini-3-pro-preview",
+        "gemini-3-pro-image-preview",
+        "gemini-3-flash-preview",
         # Gemini 2.5 Models
         "gemini-2.5-pro-exp-03-25",
+        "gemini-2.5-flash",
+        "gemini-2.5-flash-image-preview",
         # Gemini 2.0 Models
         "gemini-2.0-flash",
         "gemini-2.0-flash-lite",
@@ -30,17 +49,38 @@ def get_gemini_models():
         "gemini-1.5-flash",
         "gemini-1.5-flash-8b",
         # Image Generation Models
-        "imagen-3.0-generate-002"
+        "imagen-3.0-generate-002",
+        "imagen-4.0-generate-001",
     ]
 
+    # Quick network check first
+    if not is_network_available():
+        print("[OllamaGemini] Offline mode - using default Gemini models")
+        return default_gemini_models
+
     gemini_api_key, _ = get_api_keys()
-    if not gemini_api_key:
+    if not gemini_api_key or gemini_api_key == "your_gemini_api_key_here":
         print("Gemini API key is missing. Using default model list.")
         return default_gemini_models
 
     try:
-        genai.configure(api_key=gemini_api_key)
-        models = genai.list_models()
+        # Create client with api_key
+        client = genai.Client(api_key=gemini_api_key)
+        
+        # Use a timeout wrapper
+        import concurrent.futures
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            # Wrap client.models.list in a lambda or function
+            def fetch_models():
+                return list(client.models.list())
+            
+            future = executor.submit(fetch_models)
+            try:
+                models = future.result(timeout=NETWORK_TIMEOUT)
+            except concurrent.futures.TimeoutError:
+                print(f"[OllamaGemini] Gemini API timeout ({NETWORK_TIMEOUT}s) - using defaults")
+                return default_gemini_models
+        
         model_names = [model.name for model in models]
         # Extract just the model name from the full path
         model_names = [name.split('/')[-1] for name in model_names]
@@ -75,13 +115,22 @@ def get_openai_models():
         "deepseek-ai/deepseek-r1"
     ]
 
+    # Quick network check first
+    if not is_network_available():
+        print("[OllamaGemini] Offline mode - using default OpenAI models")
+        return default_openai_models
+
     _, openai_api_key = get_api_keys()
-    if not openai_api_key:
+    if not openai_api_key or openai_api_key == "your_openai_api_key_here":
         print("OpenAI API key is missing. Using default model list.")
         return default_openai_models
 
     try:
-        client = OpenAI(api_key=openai_api_key)
+        # Create client with timeout
+        client = OpenAI(
+            api_key=openai_api_key,
+            timeout=httpx.Timeout(NETWORK_TIMEOUT, connect=2.0)
+        )
         models = client.models.list()
         model_ids = [model.id for model in models.data]
         print(f"OpenAI models fetched: {len(model_ids)} models available")
@@ -103,23 +152,44 @@ def get_gemini_image_models():
     Models:
     - gemini-3-pro-image-preview (Nano Banana Pro): Professional asset production, 4K, 14 reference images
     - gemini-2.5-flash-image-preview (Nano Banana): Fast, efficient, 1024px
+    - imagen-3.0-generate-002: High quality image generation
     - imagen-4.0-generate-001: Specialized image generation
     """
-    gemini_api_key, _ = get_api_keys()
     fallback_models = ["gemini-3-pro-image-preview", "gemini-2.5-flash-image-preview", "imagen-4.0-generate-001"]
 
-    if not gemini_api_key:
+    # Quick network check first
+    if not is_network_available():
+        print("[OllamaGemini] Offline mode - using default image models")
+        return fallback_models
+
+    gemini_api_key, _ = get_api_keys()
+    if not gemini_api_key or gemini_api_key == "your_gemini_api_key_here":
         print("Gemini API key is missing. Using default image model list.")
         return fallback_models
 
     try:
-        genai.configure(api_key=gemini_api_key)
-        all_models = genai.list_models()
+        # Create client with api_key
+        client = genai.Client(api_key=gemini_api_key)
+        
+        # Use a timeout wrapper
+        import concurrent.futures
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            def fetch_models():
+                return list(client.models.list())
+                
+            future = executor.submit(fetch_models)
+            try:
+                all_models = future.result(timeout=NETWORK_TIMEOUT)
+            except concurrent.futures.TimeoutError:
+                print(f"[OllamaGemini] Gemini API timeout ({NETWORK_TIMEOUT}s) - using default image models")
+                return fallback_models
+        
         image_models = []
 
         # Simplified logic: Trust models with 'image' in the name, as the API
-        # is not returning the full list of supported methods.
+        # is not returning the full list of supported methods easily.
         for model in all_models:
+            # model.name in new API might be 'models/...' or just '...'
             model_name = model.name.split('/')[-1]
             if 'image' in model_name:
                 image_models.append(model_name)

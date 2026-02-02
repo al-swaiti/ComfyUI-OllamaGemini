@@ -1,6 +1,7 @@
 import os
 import json
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from PIL import Image
 import requests
 import torch
@@ -599,6 +600,15 @@ class GeminiQwenAPI:
                 "image3": ("IMAGE",),
                 "image4": ("IMAGE",),
                 "image5": ("IMAGE",),
+                "image6": ("IMAGE",),
+                "image7": ("IMAGE",),
+                "image8": ("IMAGE",),
+                "image9": ("IMAGE",),
+                "image10": ("IMAGE",),
+                "image11": ("IMAGE",),
+                "image12": ("IMAGE",),
+                "image13": ("IMAGE",),
+                "image14": ("IMAGE",),
             }
         }
 
@@ -607,7 +617,7 @@ class GeminiQwenAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Qwen"
 
-    def generate_content(self, prompt, qwen_model, max_tokens, temperature, top_p, structure_output, prompt_structure, structure_format, output_format, api_key="", image1=None, image2=None, image3=None, image4=None, image5=None):
+    def generate_content(self, prompt, qwen_model, max_tokens, temperature, top_p, structure_output, prompt_structure, structure_format, output_format, api_key="", **kwargs):
         if api_key:
             update_config_key("QWEN_API_KEY", api_key)
             self.qwen_api_key = api_key
@@ -635,12 +645,13 @@ class GeminiQwenAPI:
                 {"role": "system", "content": "You are a helpful assistant."},
             ]
 
-            # Handle multiple images
-            all_images = [image1, image2, image3, image4, image5]
+            # Handle images (supports dynamic image1-14)
+            all_images = [kwargs.get(f'image{i}') for i in range(1, 15)]
             provided_images = [img for img in all_images if img is not None]
 
             if provided_images:
                 content = [{"type": "text", "text": modified_prompt}]
+                print(f"Processing {len(provided_images)} images")
                 for img in provided_images:
                     image_b64 = self.tensor_to_base64(img)
                     content.append({"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image_b64}"}})
@@ -743,7 +754,7 @@ class GeminiOpenAIAPI:
             print(f"Modified prompt with structure format")
 
         # Handle multiple images
-        all_images = [image1, image2, image3, image4, image5]
+        all_images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10]
         provided_images = [img for img in all_images if img is not None]
 
         if provided_images:
@@ -900,6 +911,15 @@ class GeminiClaudeAPI:
                 "image3": ("IMAGE",),
                 "image4": ("IMAGE",),
                 "image5": ("IMAGE",),
+                "image6": ("IMAGE",),
+                "image7": ("IMAGE",),
+                "image8": ("IMAGE",),
+                "image9": ("IMAGE",),
+                "image10": ("IMAGE",),
+                "image11": ("IMAGE",),
+                "image12": ("IMAGE",),
+                "image13": ("IMAGE",),
+                "image14": ("IMAGE",),
             }
         }
 
@@ -908,7 +928,7 @@ class GeminiClaudeAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Claude"
 
-    def generate_content(self, prompt, model, max_tokens, structure_output, prompt_structure, structure_format, output_format, api_key="", image1=None, image2=None, image3=None, image4=None, image5=None):
+    def generate_content(self, prompt, model, max_tokens, structure_output, prompt_structure, structure_format, output_format, api_key="", **kwargs):
         if api_key:
             update_config_key("CLAUDE_API_KEY", api_key)
             self.claude_api_key = api_key
@@ -927,12 +947,13 @@ class GeminiClaudeAPI:
             modified_prompt = f"{modified_prompt}\n\n{structure_format}"
             print(f"Modified prompt with structure format")
 
-        # Handle multiple images
-        all_images = [image1, image2, image3, image4, image5]
+        # Handle images (supports dynamic image1-14)
+        all_images = [kwargs.get(f'image{i}') for i in range(1, 15)]
         provided_images = [img for img in all_images if img is not None]
 
         if provided_images:
             content = [{"type": "text", "text": modified_prompt}]
+            print(f"Processing {len(provided_images)} images")
             for img in provided_images:
                 image_b64 = tensor_to_base64(img)
                 content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": image_b64}})
@@ -1011,8 +1032,7 @@ class GeminiClaudeAPI:
 class GeminiLLMAPI:
     def __init__(self):
         self.gemini_api_key = get_gemini_api_key()
-        if self.gemini_api_key:
-            genai.configure(api_key=self.gemini_api_key, transport='rest')
+        # Note: New google.genai API uses Client() with api_key directly, no configure needed
 
         # Import model list from list_models.py
         from .list_models import get_gemini_models
@@ -1064,8 +1084,17 @@ class GeminiLLMAPI:
                 "image3": ("IMAGE",),
                 "image4": ("IMAGE",),
                 "image5": ("IMAGE",),
-                "video": ("IMAGE",),  # Video is represented as a tensor with shape [frames, height, width, channels]
-                "audio": ("AUDIO",),  # Audio input
+                "image6": ("IMAGE",),
+                "image7": ("IMAGE",),
+                "image8": ("IMAGE",),
+                "image9": ("IMAGE",),
+                "image10": ("IMAGE",),
+                "image11": ("IMAGE",),
+                "image12": ("IMAGE",),
+                "image13": ("IMAGE",),
+                "image14": ("IMAGE",),
+                "video": ("IMAGE",),
+                "audio": ("AUDIO",),
             }
         }
 
@@ -1074,16 +1103,18 @@ class GeminiLLMAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Gemini"
 
-    def generate_content(self, prompt, gemini_model, stream, structure_output, prompt_structure, structure_format, output_format, api_key="", image1=None, image2=None, image3=None, image4=None, image5=None, video=None, audio=None):
+    def generate_content(self, prompt, gemini_model, stream, structure_output, prompt_structure, structure_format, output_format, api_key="", video=None, audio=None, **kwargs):
         if api_key:
             update_config_key("GEMINI_API_KEY", api_key)
             self.gemini_api_key = api_key
-            genai.configure(api_key=self.gemini_api_key, transport='rest')
 
         if not self.gemini_api_key:
             return ("Gemini API key missing. Please provide it in the node's api_key input.",)
 
         try:
+            # Create client with api_key (new google.genai API)
+            client = genai.Client(api_key=self.gemini_api_key)
+            
             generation_config = {"temperature": 0.7, "top_p": 0.8, "top_k": 40}
             modified_prompt = apply_prompt_template(prompt, prompt_structure)
             if structure_output:
@@ -1091,15 +1122,12 @@ class GeminiLLMAPI:
                 modified_prompt = f"{modified_prompt}\n\n{structure_format}"
                 print(f"Modified prompt with structure format")
 
-            model = genai.GenerativeModel(gemini_model)
-
             content = [modified_prompt]
 
             # Process inputs sequentially (additive)
             
-            # 1. Process Images
-            # Always check for images
-            all_images = [image1, image2, image3, image4, image5]
+            # 1. Process Images (supports dynamic image1-14)
+            all_images = [kwargs.get(f'image{i}') for i in range(1, 15)]
             provided_images = [img for img in all_images if img is not None]
 
             if provided_images:
@@ -1141,29 +1169,46 @@ class GeminiLLMAPI:
 
             print(f"Sending request to Gemini API with model: {gemini_model}")
 
-            safety_settings = [
-                {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"}
-            ]
+            # Build config for new API (safety settings handled differently in new API)
+            config_params = {
+                "temperature": 0.7,
+                "top_p": 0.8,
+                "top_k": 40,
+            }
 
-            response = model.generate_content(
-                content,
-                generation_config=generation_config,
-                safety_settings=safety_settings,
-                stream=stream
+            response = client.models.generate_content(
+                model=gemini_model,
+                contents=content,
+                config=types.GenerateContentConfig(**config_params)
             )
 
-            if stream:
-                textoutput = "".join([chunk.text for chunk in response if hasattr(chunk, 'text')])
-            else:
-                if not hasattr(response, 'text'):
-                    if hasattr(response, 'prompt_feedback'):
-                        return (f"API Error: Content blocked - {response.prompt_feedback}",)
-                    else:
-                        return (f"API Error: Empty response from Gemini API",)
+            # Note: Streaming is handled differently in new API, using sync call
+            # Handle response that might contain inline_data (images) instead of text
+            try:
                 textoutput = response.text
+            except ValueError as e:
+                # Response contains inline_data (image) instead of text
+                # Extract text from candidates if available
+                if hasattr(response, 'candidates') and response.candidates:
+                    text_parts = []
+                    for candidate in response.candidates:
+                        if hasattr(candidate, 'content') and hasattr(candidate.content, 'parts'):
+                            for part in candidate.content.parts:
+                                if hasattr(part, 'text') and part.text:
+                                    text_parts.append(part.text)
+                    if text_parts:
+                        textoutput = "\n".join(text_parts)
+                    else:
+                        return ("API Error: Response contains only image data (inline_data), no text. Use GeminiImageGenerator for image generation.",)
+                elif hasattr(response, 'prompt_feedback'):
+                    return (f"API Error: Content blocked - {response.prompt_feedback}",)
+                else:
+                    return (f"API Error: {str(e)}",)
+            except AttributeError:
+                if hasattr(response, 'prompt_feedback'):
+                    return (f"API Error: Content blocked - {response.prompt_feedback}",)
+                else:
+                    return ("API Error: Empty response from Gemini API",)
 
             print("Gemini API response received successfully")
 
@@ -1211,13 +1256,14 @@ class GeminiOllamaAPI:
     def get_ollama_models(cls):
         ollama_url = get_ollama_url()
         try:
-            response = requests.get(f"{ollama_url}/api/tags")
+            # Add 2-second timeout to prevent hanging when Ollama isn't running
+            response = requests.get(f"{ollama_url}/api/tags", timeout=2)
             if response.status_code == 200:
                 models = response.json().get('models', [])
-                return [model['name'] for model in models]
+                return [model['name'] for model in models] if models else ["llama2"]
             return ["llama2"]
         except Exception as e:
-            print(f"Error fetching Ollama models: {str(e)}")
+            print(f"[OllamaGemini] Ollama not available: {str(e)}")
             return ["llama2"]
 
     @classmethod
@@ -1264,8 +1310,17 @@ class GeminiOllamaAPI:
                 "image3": ("IMAGE",),
                 "image4": ("IMAGE",),
                 "image5": ("IMAGE",),
-                "video": ("IMAGE",),  # Video is represented as a tensor with shape [frames, height, width, channels]
-                "audio": ("AUDIO",),  # Audio input
+                "image6": ("IMAGE",),
+                "image7": ("IMAGE",),
+                "image8": ("IMAGE",),
+                "image9": ("IMAGE",),
+                "image10": ("IMAGE",),
+                "image11": ("IMAGE",),
+                "image12": ("IMAGE",),
+                "image13": ("IMAGE",),
+                "image14": ("IMAGE",),
+                "video": ("IMAGE",),
+                "audio": ("AUDIO",),
                 "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True}),
             }
         }
@@ -1275,7 +1330,7 @@ class GeminiOllamaAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Ollama"
 
-    def generate_content(self, prompt, input_type, ollama_model, keep_alive, stream, think, structure_output, prompt_structure, structure_format, output_format, image1=None, image2=None, image3=None, image4=None, image5=None, video=None, audio=None, seed=0):
+    def generate_content(self, prompt, input_type, ollama_model, keep_alive, stream, think, structure_output, prompt_structure, structure_format, output_format, video=None, audio=None, seed=0, **kwargs):
         import time
         start_time = time.time()
         
@@ -1291,16 +1346,18 @@ class GeminiOllamaAPI:
             # structure_output disabled = raw prompt only, no templates
             modified_prompt = prompt
 
-        # Collect and encode images to base64
+        # Collect and encode images to base64 (supports dynamic image1-14)
         image_data = []
-        if input_type == "image":
-            all_images = [image1, image2, image3, image4, image5]
-            for img in all_images:
-                if img is not None:
-                    pil_image = tensor_to_pil_image(img)
-                    buffered = io.BytesIO()
-                    pil_image.save(buffered, format='JPEG', quality=85)  # JPEG faster than PNG
-                    image_data.append(base64.b64encode(buffered.getvalue()).decode())
+        all_images = [kwargs.get(f'image{i}') for i in range(1, 15)]
+        provided_images = [img for img in all_images if img is not None]
+        
+        if input_type == "image" and provided_images:
+            print(f"Processing {len(provided_images)} images")
+            for img in provided_images:
+                pil_image = tensor_to_pil_image(img)
+                buffered = io.BytesIO()
+                pil_image.save(buffered, format='JPEG', quality=85)
+                image_data.append(base64.b64encode(buffered.getvalue()).decode())
             if image_data:
                 print(f"🖼️ Ollama: {len(image_data)} image(s)")
 
