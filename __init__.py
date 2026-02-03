@@ -41,7 +41,7 @@ from .list_models import get_gemini_models, get_openai_models, get_gemini_image_
 from .BRIA_RMBGx import GeminiBRIA_RMBG
 
 # Import from BEN2_RMBG
-from .BEN2_RMBGx import GeminiBEN2_RMBG, GeminiBEN2_Video
+from .BEN2_RMBGx import GeminiBEN2_RMBG
 
 # Import from clipseg
 from .clipsegx import GeminiCLIPSeg, GeminiCombineSegMasks
@@ -80,7 +80,7 @@ NODE_CLASS_MAPPINGS = {
     # Additional nodes - renamed to avoid conflicts
     "GeminiBRIA_RMBG": GeminiBRIA_RMBG,
     "GeminiBEN2_RMBG": GeminiBEN2_RMBG,
-    "GeminiBEN2_Video": GeminiBEN2_Video,
+
     "GeminiCLIPSeg": GeminiCLIPSeg,
     "GeminiCombineSegMasks": GeminiCombineSegMasks, # Renamed from GeminiCombineMasks
     "GeminiConvertRasterToVector": GeminiConvertRasterToVector, # Renamed
@@ -107,7 +107,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     # Additional nodes - renamed to avoid conflicts
     "GeminiBRIA_RMBG": "Gemini BRIA RMBG",
     "GeminiBEN2_RMBG": "Gemini BEN2 Background Removal",
-    "GeminiBEN2_Video": "Gemini BEN2 Video Segmentation",
+
     "GeminiCLIPSeg": "Gemini CLIPSeg",
     "GeminiCombineSegMasks": "Gemini Combine Seg Masks", # Renamed from GeminiCombineMasks
     "GeminiConvertRasterToVector": "Gemini Convert Raster to Vector", # Renamed
