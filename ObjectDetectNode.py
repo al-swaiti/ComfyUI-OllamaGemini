@@ -198,10 +198,11 @@ class GeminiObjectDetect:
 
 class GeminiObjectDetectSegment:
     """
-    YOLOE Object Detection with Segmentation
+    YOLOv8 Segmentation Node
     
-    Similar to GeminiObjectDetect but outputs precise segmentation masks
-    instead of bounding box masks. Requires YOLOE-seg models.
+    Instance segmentation using standard YOLOv8-seg models.
+    Note: Unlike Object Detect, this uses fixed COCO classes (80 categories).
+    For text-based segmentation, use CLIPSeg or BEN2+ObjectDetect combo.
     """
     
     def __init__(self):
@@ -223,12 +224,12 @@ class GeminiObjectDetectSegment:
         return {
             "required": {
                 "image": ("IMAGE",),
-                "text_prompt": ("STRING", {
-                    "default": "person",
+                "class_filter": ("STRING", {
+                    "default": "",
                     "multiline": False,
-                    "placeholder": "Objects to segment (comma separated)"
+                    "placeholder": "Filter: person, car, dog (leave empty for all)"
                 }),
-                "model": (["yolov8x-worldv2-seg", "yolov8l-worldv2-seg", "yolov8m-worldv2-seg"],),
+                "model": (["yolov8x-seg", "yolov8l-seg", "yolov8m-seg", "yolov8s-seg", "yolov8n-seg"],),
                 "confidence": ("FLOAT", {"default": 0.25, "min": 0.01, "max": 1.0, "step": 0.01}),
             },
             "optional": {
@@ -253,15 +254,31 @@ class GeminiObjectDetectSegment:
             self.current_model_name = model_name
             print(f"[ObjectDetectSeg] Model loaded!")
 
-    def segment_objects(self, image, text_prompt, model, confidence, return_largest_only=True):
-        """Segment objects based on text prompt"""
+    # COCO class names for filtering
+    COCO_CLASSES = [
+        "person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat",
+        "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat",
+        "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack",
+        "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports ball",
+        "kite", "baseball bat", "baseball glove", "skateboard", "surfboard", "tennis racket",
+        "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "banana", "apple",
+        "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake", "chair",
+        "couch", "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse",
+        "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator",
+        "book", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"
+    ]
+
+    def segment_objects(self, image, class_filter, model, confidence, return_largest_only=True):
+        """Segment objects using standard YOLOv8-seg with optional class filtering"""
         self.load_model(model)
         
-        classes = [c.strip() for c in text_prompt.split(",") if c.strip()]
-        if not classes:
-            classes = ["object"]
-        
-        self.model.set_classes(classes)
+        # Parse class filter - match against COCO classes
+        filter_classes = []
+        if class_filter.strip():
+            filter_names = [c.strip().lower() for c in class_filter.split(",") if c.strip()]
+            for i, coco_class in enumerate(self.COCO_CLASSES):
+                if coco_class.lower() in filter_names:
+                    filter_classes.append(i)
         
         processed_extracted = []
         processed_masks = []
@@ -273,7 +290,12 @@ class GeminiObjectDetectSegment:
             if pil_image.mode != 'RGB':
                 pil_image = pil_image.convert('RGB')
             
-            results = self.model.predict(pil_image, conf=confidence, verbose=False)
+            # Run prediction with optional class filter
+            predict_kwargs = {"conf": confidence, "verbose": False}
+            if filter_classes:
+                predict_kwargs["classes"] = filter_classes
+            
+            results = self.model.predict(pil_image, **predict_kwargs)
             result = results[0]
             
             extracted_image = Image.new("RGBA", (w, h), (0, 0, 0, 0))
