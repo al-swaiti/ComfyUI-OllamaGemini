@@ -129,10 +129,10 @@ class GeminiBEN2_RMBG:
 
 class GeminiBEN2_Video:
     """
-    BEN2 Video Segmentation Node
+    BEN2 Video (Batch) Background Removal Node
     
-    Process video files with BEN2 for background removal.
-    Outputs WebM with alpha or MP4 with custom background color.
+    Process video frames (IMAGE batch) with BEN2 for background removal.
+    Accepts batched images (video frames) and outputs processed frames.
     """
     
     def __init__(self):
@@ -152,22 +152,14 @@ class GeminiBEN2_Video:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "video_path": ("STRING", {"default": "", "multiline": False}),
-                "output_path": ("STRING", {"default": "./", "multiline": False}),
+                "images": ("IMAGE",),  # Batch of video frames
                 "refine_foreground": ("BOOLEAN", {"default": False}),
-                "output_webm": ("BOOLEAN", {"default": True}),
-                "batch_size": ("INT", {"default": 1, "min": 1, "max": 3}),
-            },
-            "optional": {
-                "bg_r": ("INT", {"default": 0, "min": 0, "max": 255}),
-                "bg_g": ("INT", {"default": 255, "min": 0, "max": 255}),
-                "bg_b": ("INT", {"default": 0, "min": 0, "max": 255}),
             }
         }
 
-    RETURN_TYPES = ("STRING",)
-    RETURN_NAMES = ("output_video_path",)
-    FUNCTION = "process_video"
+    RETURN_TYPES = ("IMAGE", "MASK")
+    RETURN_NAMES = ("images", "masks")
+    FUNCTION = "process_video_frames"
     CATEGORY = "AI API"
 
     def load_model(self):
@@ -178,36 +170,61 @@ class GeminiBEN2_Video:
                     "pip install git+https://github.com/PramaLLC/BEN2.git"
                 )
             
-            print("[BEN2] Loading model for video processing...")
-            import BEN2 as ben2_module
+            print("[BEN2] Loading model for video/batch processing...")
+            from ben2 import AutoModel
             
-            self.model = ben2_module.BEN_Base().to(device).eval()
-            # Model weights are auto-downloaded
-            print("[BEN2] Video model loaded!")
+            self.model = AutoModel.from_pretrained("PramaLLC/BEN2")
+            self.model.to(device).eval()
+            print("[BEN2] Model loaded!")
 
-    def process_video(self, video_path, output_path, refine_foreground, 
-                      output_webm, batch_size, bg_r=0, bg_g=255, bg_b=0):
-        """Process video with BEN2"""
+    def process_video_frames(self, images, refine_foreground=False):
+        """Process video frames (batched images) through BEN2"""
         self.load_model()
         
-        print(f"[BEN2] Processing video: {video_path}")
+        processed_images = []
+        processed_masks = []
         
-        self.model.segment_video(
-            video_path=video_path,
-            output_path=output_path,
-            fps=0,  # Auto-detect
-            refine_foreground=refine_foreground,
-            batch=batch_size,
-            print_frames_processed=True,
-            webm=output_webm,
-            rgb_value=(bg_r, bg_g, bg_b)
-        )
-        
-        ext = "webm" if output_webm else "mp4"
-        output_file = f"{output_path}/foreground.{ext}"
-        print(f"[BEN2] Video saved to: {output_file}")
-        
-        return (output_file,)
+        total_frames = images.shape[0]
+        print(f"[BEN2] Processing {total_frames} frames...")
+
+        for i, img_tensor in enumerate(images):
+            if (i + 1) % 10 == 0 or i == 0:
+                print(f"[BEN2] Frame {i + 1}/{total_frames}")
+            
+            # Convert tensor to PIL
+            orig_image = tensor2pil(img_tensor)
+            w, h = orig_image.size
+            
+            # Ensure RGB
+            if orig_image.mode != 'RGB':
+                orig_image = orig_image.convert('RGB')
+            
+            # Run BEN2 inference
+            with torch.no_grad():
+                foreground = self.model.inference(
+                    orig_image, 
+                    refine_foreground=refine_foreground
+                )
+            
+            # Extract mask from alpha channel
+            if foreground.mode == 'RGBA':
+                r, g, b, a = foreground.split()
+                mask = a
+                new_im = foreground
+            else:
+                mask = Image.new('L', (w, h), 255)
+                new_im = Image.new("RGBA", orig_image.size, (0, 0, 0, 0))
+                new_im.paste(orig_image, mask=mask)
+            
+            # Convert to tensors
+            new_im_tensor = pil2tensor(new_im)
+            mask_tensor = pil2tensor(mask)
+
+            processed_images.append(new_im_tensor)
+            processed_masks.append(mask_tensor)
+
+        print(f"[BEN2] Completed processing {total_frames} frames!")
+        return torch.cat(processed_images, dim=0), torch.cat(processed_masks, dim=0)
 
 
 # Node mappings for ComfyUI
