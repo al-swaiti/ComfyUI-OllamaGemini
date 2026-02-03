@@ -143,13 +143,13 @@ class GeminiObjectDetect:
                 
                 # Get largest box if requested
                 if return_largest_only and len(boxes) > 1:
-                    areas = [(box.xyxy[0][2] - box.xyxy[0][0]) * (box.xyxy[0][3] - box.xyxy[0][1]) 
+                    areas = [(box.xyxy[0][2].cpu() - box.xyxy[0][0].cpu()) * (box.xyxy[0][3].cpu() - box.xyxy[0][1].cpu()) 
                              for box in boxes]
-                    largest_idx = np.argmax(areas)
+                    largest_idx = np.argmax([float(a) for a in areas])
                     boxes = [boxes[largest_idx]]
                 
                 for box in boxes:
-                    x1, y1, x2, y2 = map(int, box.xyxy[0].tolist())
+                    x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().tolist())
                     
                     # Apply padding
                     x1 = max(0, x1 - padding)
@@ -167,8 +167,8 @@ class GeminiObjectDetect:
                     draw_bbox.rectangle([x1, y1, x2, y2], outline="red", width=3)
                     
                     # Get class name and confidence
-                    conf = float(box.conf[0])
-                    cls_id = int(box.cls[0])
+                    conf = float(box.conf[0].cpu())
+                    cls_id = int(box.cls[0].cpu())
                     cls_name = classes[cls_id] if cls_id < len(classes) else "object"
                     label = f"{cls_name}: {conf:.2f}"
                     draw_bbox.text((x1, y1 - 15), label, fill="red")
