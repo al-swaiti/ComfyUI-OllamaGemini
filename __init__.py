@@ -43,6 +43,9 @@ from .BRIA_RMBGx import GeminiBRIA_RMBG
 # Import from BEN2_RMBG
 from .BEN2_RMBGx import GeminiBEN2_RMBG
 
+# Import from ObjectDetect
+from .ObjectDetectNode import GeminiObjectDetect, GeminiObjectDetectSegment
+
 # Import from clipseg
 from .clipsegx import GeminiCLIPSeg, GeminiCombineSegMasks
 
@@ -80,6 +83,8 @@ NODE_CLASS_MAPPINGS = {
     # Additional nodes - renamed to avoid conflicts
     "GeminiBRIA_RMBG": GeminiBRIA_RMBG,
     "GeminiBEN2_RMBG": GeminiBEN2_RMBG,
+    "GeminiObjectDetect": GeminiObjectDetect,
+    "GeminiObjectDetectSegment": GeminiObjectDetectSegment,
 
     "GeminiCLIPSeg": GeminiCLIPSeg,
     "GeminiCombineSegMasks": GeminiCombineSegMasks, # Renamed from GeminiCombineMasks
