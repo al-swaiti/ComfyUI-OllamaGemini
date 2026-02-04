@@ -143,10 +143,16 @@ class GeminiObjectDetect:
                 
                 # Get largest box if requested
                 if return_largest_only and len(boxes) > 1:
-                    areas = [(box.xyxy[0][2].cpu() - box.xyxy[0][0].cpu()) * (box.xyxy[0][3].cpu() - box.xyxy[0][1].cpu()) 
-                             for box in boxes]
-                    largest_idx = np.argmax([float(a) for a in areas])
-                    boxes = [boxes[largest_idx]]
+                    # Compute areas on CPU to avoid device mismatch
+                    areas = []
+                    for box in boxes:
+                        xyxy = box.xyxy[0].cpu()
+                        area = float((xyxy[2] - xyxy[0]) * (xyxy[3] - xyxy[1]))
+                        areas.append(area)
+                    largest_idx = int(np.argmax(areas))
+                    # Get the single largest box
+                    largest_box = boxes[largest_idx]
+                    boxes = [largest_box]
                 
                 for box in boxes:
                     x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().tolist())
