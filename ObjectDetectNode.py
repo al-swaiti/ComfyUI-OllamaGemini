@@ -143,19 +143,35 @@ class GeminiObjectDetect:
                 
                 # Get largest box if requested
                 if return_largest_only and len(boxes) > 1:
-                    # Compute areas on CPU to avoid device mismatch
-                    areas = []
-                    for box in boxes:
-                        xyxy = box.xyxy[0].cpu()
-                        area = float((xyxy[2] - xyxy[0]) * (xyxy[3] - xyxy[1]))
-                        areas.append(area)
-                    largest_idx = int(np.argmax(areas))
-                    # Get the single largest box
-                    largest_box = boxes[largest_idx]
-                    boxes = [largest_box]
+                    # Move all box data to CPU first to avoid device mismatch
+                    xyxy_cpu = boxes.xyxy.cpu()
+                    conf_cpu = boxes.conf.cpu()
+                    cls_cpu = boxes.cls.cpu()
+                    
+                    # Compute areas
+                    areas = (xyxy_cpu[:, 2] - xyxy_cpu[:, 0]) * (xyxy_cpu[:, 3] - xyxy_cpu[:, 1])
+                    largest_idx = int(torch.argmax(areas))
+                    
+                    # Create filtered data for single box
+                    boxes_data = {
+                        'xyxy': xyxy_cpu[largest_idx:largest_idx+1],
+                        'conf': conf_cpu[largest_idx:largest_idx+1],
+                        'cls': cls_cpu[largest_idx:largest_idx+1]
+                    }
+                else:
+                    # Move all data to CPU
+                    boxes_data = {
+                        'xyxy': boxes.xyxy.cpu(),
+                        'conf': boxes.conf.cpu(), 
+                        'cls': boxes.cls.cpu()
+                    }
                 
-                for box in boxes:
-                    x1, y1, x2, y2 = map(int, box.xyxy[0].cpu().tolist())
+                from PIL import ImageDraw
+                
+                # Iterate over CPU data
+                num_boxes = boxes_data['xyxy'].shape[0]
+                for i in range(num_boxes):
+                    x1, y1, x2, y2 = map(int, boxes_data['xyxy'][i].tolist())
                     
                     # Apply padding
                     x1 = max(0, x1 - padding)
@@ -164,7 +180,6 @@ class GeminiObjectDetect:
                     y2 = min(h, y2 + padding)
                     
                     # Create mask for this detection
-                    from PIL import ImageDraw
                     draw = ImageDraw.Draw(mask_image)
                     draw.rectangle([x1, y1, x2, y2], fill=255)
                     
@@ -173,8 +188,8 @@ class GeminiObjectDetect:
                     draw_bbox.rectangle([x1, y1, x2, y2], outline="red", width=3)
                     
                     # Get class name and confidence
-                    conf = float(box.conf[0].cpu())
-                    cls_id = int(box.cls[0].cpu())
+                    conf = float(boxes_data['conf'][i])
+                    cls_id = int(boxes_data['cls'][i])
                     cls_name = classes[cls_id] if cls_id < len(classes) else "object"
                     label = f"{cls_name}: {conf:.2f}"
                     draw_bbox.text((x1, y1 - 15), label, fill="red")
