@@ -411,6 +411,36 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 </tr>
 </table>
 
+<br/>
+
+<!-- ULTRA DETECT -->
+<table>
+<tr>
+<td colspan="4" align="center">
+<img src="https://img.shields.io/badge/🎯_ULTRA_DETECT-NEW_2026-ff6b35?style=for-the-badge&labelColor=0d1117"/>
+<br/><sub>Latest AI for Object Detection & Segmentation</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="220">
+<b>SAM3 Text Prompts</b><br/>
+<sub>Detect "sun", "lake", "shadow"</sub>
+</td>
+<td align="center" width="220">
+<b>YOLOE-26 + SAM2.1</b><br/>
+<sub>Auto-download detection</sub>
+</td>
+<td align="center" width="220">
+<b>BiRefNet Matting</b><br/>
+<sub>Hair-level edge quality</sub>
+</td>
+<td align="center" width="220">
+<b>Smart Model Paths</b><br/>
+<sub>Auto-finds in models/</sub>
+</td>
+</tr>
+</table>
+
 </div>
 
 <br/><br/>

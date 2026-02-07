@@ -44,7 +44,11 @@ from .BRIA_RMBGx import GeminiBRIA_RMBG
 from .BEN2_RMBGx import GeminiBEN2_RMBG
 
 # Import from ObjectDetect
-from .ObjectDetectNode import GeminiObjectDetect, GeminiObjectDetectSegment
+from .ObjectDetectNode import (
+    GeminiUltraDetect,
+    GeminiDrawBBoxMask,
+    GeminiBBoxJoin,
+)
 
 # Import from clipseg
 from .clipsegx import GeminiCLIPSeg, GeminiCombineSegMasks
@@ -83,8 +87,10 @@ NODE_CLASS_MAPPINGS = {
     # Additional nodes - renamed to avoid conflicts
     "GeminiBRIA_RMBG": GeminiBRIA_RMBG,
     "GeminiBEN2_RMBG": GeminiBEN2_RMBG,
-    "GeminiObjectDetect": GeminiObjectDetect,
-    "GeminiObjectDetectSegment": GeminiObjectDetectSegment,
+    # Object Detection
+    "GeminiUltraDetect": GeminiUltraDetect,
+    "GeminiDrawBBoxMask": GeminiDrawBBoxMask,
+    "GeminiBBoxJoin": GeminiBBoxJoin,
 
     "GeminiCLIPSeg": GeminiCLIPSeg,
     "GeminiCombineSegMasks": GeminiCombineSegMasks, # Renamed from GeminiCombineMasks
@@ -112,6 +118,10 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     # Additional nodes - renamed to avoid conflicts
     "GeminiBRIA_RMBG": "Gemini BRIA RMBG",
     "GeminiBEN2_RMBG": "Gemini BEN2 Background Removal",
+    # Object Detection
+    "GeminiUltraDetect": "Ultra Detect (Latest AI Models)",
+    "GeminiDrawBBoxMask": "Draw BBox Mask",
+    "GeminiBBoxJoin": "BBox Join",
 
     "GeminiCLIPSeg": "Gemini CLIPSeg",
     "GeminiCombineSegMasks": "Gemini Combine Seg Masks", # Renamed from GeminiCombineMasks
