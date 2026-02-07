@@ -59,6 +59,9 @@ from .svgnodex import GeminiConvertRasterToVector, GeminiSaveSVG, GeminiSVGPrevi
 # Import from FLUXResolutions
 from .FLUXResolutions import GeminiFLUXResolutions
 
+# Import Math Expression
+from .MathExpressionNode import GeminiMathExpression
+
 # GeminiTextToPrompt module is missing, creating empty mappings
 GEMINI_PROMPT_MAPPINGS = {}
 GEMINI_PROMPT_DISPLAY_MAPPINGS = {}
@@ -103,7 +106,10 @@ NODE_CLASS_MAPPINGS = {
     "FLUXResolutions": GeminiFLUXResolutions,
     
     # Prompt styler nodes
-    'GeminiComfyUIStyler': type('GeminiComfyUIStyler', (PromptStyler,), {'style_menus': NODES['Gemini ComfyUI Styler']})
+    'GeminiComfyUIStyler': type('GeminiComfyUIStyler', (PromptStyler,), {'style_menus': NODES['Gemini ComfyUI Styler']}),
+    
+    # Math Expression
+    "GeminiMathExpression": GeminiMathExpression,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -134,7 +140,10 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "FLUXResolutions": "FLUX Resolutions (Legacy)",
     
     # Prompt styler nodes
-    'GeminiComfyUIStyler': 'Gemini ComfyUI Styler'
+    'GeminiComfyUIStyler': 'Gemini ComfyUI Styler',
+    
+    # Math Expression
+    "GeminiMathExpression": "Math Expression ➕",
 }
 
 WEB_DIRECTORY = "./js"
