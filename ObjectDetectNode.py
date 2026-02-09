@@ -235,21 +235,16 @@ class ModelManager:
             
             # Check if model file exists
             if not os.path.exists(model_path):
-                log("=" * 60, 'error')
-                log("SAM3 MODEL NOT FOUND!", 'error')
-                log("=" * 60, 'error')
-                log(f"Expected path: {model_path}", 'error')
-                log("", 'error')
-                log("📥 HOW TO DOWNLOAD SAM3:", 'error')
-                log("1. Visit: https://huggingface.co/facebook/sam3", 'error')
-                log("2. ⚠️ ACCEPT THE LICENSE TERMS (required!)", 'error')
-                log("3. Download 'sam3.pt' from Files tab", 'error')
-                log("4. Place it in: ComfyUI/models/sams/", 'error')
-                log("", 'error')
-                log("Alternative (after accepting terms):", 'error')
-                log("  huggingface-cli download facebook/sam3 --local-dir ComfyUI/models/sams/", 'error')
-                log("=" * 60, 'error')
-                return None
+                raise RuntimeError(
+                    "❌ SAM3 MODEL NOT FOUND!\n\n"
+                    "📥 HOW TO DOWNLOAD:\n"
+                    "1. Visit: https://huggingface.co/facebook/sam3\n"
+                    "2. ⚠️ ACCEPT THE LICENSE TERMS (click 'Agree')\n"
+                    "3. Download model from 'Files' tab\n"
+                    "4. Place in: ComfyUI/models/sams/\n\n"
+                    f"Expected: {model_path}\n\n"
+                    "After downloading, restart ComfyUI."
+                )
             
             log(f"Loading SAM3 Semantic Predictor from {model_path}...")
             overrides = dict(
