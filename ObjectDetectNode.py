@@ -622,7 +622,9 @@ class GeminiUltraDetect:
                         h, w = pil_image.size[1], pil_image.size[0]
                         empty_mask = torch.zeros((h, w), dtype=torch.float32)
                         ret_masks.append(empty_mask)
-                        ret_images.append(pil2tensor(pil_image))
+                        # Add RGBA with transparent alpha for consistency
+                        rgba_empty = pil_image.convert('RGBA')
+                        ret_images.append(pil2tensor(rgba_empty))
                         continue
                     
                     log(f"SAM3 found {len(boxes)} object(s)!")
@@ -676,7 +678,9 @@ class GeminiUltraDetect:
                     h, w = pil_image.size[1], pil_image.size[0]
                     empty_mask = torch.zeros((h, w), dtype=torch.float32)
                     ret_masks.append(empty_mask)
-                    ret_images.append(pil2tensor(pil_image))
+                    # Add RGBA with transparent alpha for consistency
+                    rgba_empty = pil_image.convert('RGBA')
+                    ret_images.append(pil2tensor(rgba_empty))
                     all_bboxes.append([])
             except Exception as e:
                 error_msg = str(e)
@@ -697,7 +701,9 @@ class GeminiUltraDetect:
                 h, w = pil_image.size[1], pil_image.size[0]
                 empty_mask = torch.zeros((h, w), dtype=torch.float32)
                 ret_masks.append(empty_mask)
-                ret_images.append(pil2tensor(pil_image))
+                # Add RGBA with transparent alpha for consistency
+                rgba_empty = pil_image.convert('RGBA')
+                ret_images.append(pil2tensor(rgba_empty))
                 all_bboxes.append([])
         
         
