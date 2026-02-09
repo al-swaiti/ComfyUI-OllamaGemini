@@ -494,10 +494,8 @@ class GeminiUltraDetect:
                 "vitmatte_model": (list(VITMATTE_MODELS.keys()), {"default": list(VITMATTE_MODELS.keys())[0]}),
                 "detail_erode": ("INT", {"default": 6, "min": 1, "max": 50, "step": 1}),
                 "detail_dilate": ("INT", {"default": 6, "min": 1, "max": 50, "step": 1}),
-                "black_point": ("FLOAT", {"default": 0.15, "min": 0.0, "max": 0.98, "step": 0.01}),
-                "white_point": ("FLOAT", {"default": 0.99, "min": 0.02, "max": 1.0, "step": 0.01}),
                 "max_megapixels": ("FLOAT", {"default": 2.0, "min": 0.5, "max": 10.0, "step": 0.1}),
-                "confidence_threshold": ("FLOAT", {"default": 0.4, "min": 0.0, "max": 1.0, "step": 0.05}),
+                "confidence_threshold": ("FLOAT", {"default": 0.1, "min": 0.0, "max": 1.0, "step": 0.05}),
                 "edge_feather": ("INT", {"default": 0, "min": 0, "max": 100, "step": 1}),
                 "cache_models": ("BOOLEAN", {"default": True}),
             }
@@ -532,7 +530,7 @@ class GeminiUltraDetect:
             img_tensor = image[i]
             pil_image = tensor2pil(img_tensor).convert('RGB')
             
-            log(f"Detecting '{prompt}'...")
+            log(f"Detecting '{prompt}' with SAM3 (conf_thresh={confidence_threshold}, feather={edge_feather})...")
             
             # SAM3 Direct Text Segmentation - can detect concepts like "sun", "lake", etc.
             try:
@@ -554,10 +552,21 @@ class GeminiUltraDetect:
                         if result.boxes is not None:
                             for i, box in enumerate(result.boxes):
                                 # Filter by confidence
+                                conf = 1.0 # Default high confidence if score missing
                                 if hasattr(box, 'conf') and box.conf is not None:
-                                    conf = float(box.conf[0])
-                                    if conf < confidence_threshold:
-                                        continue
+                                    try:
+                                        if isinstance(box.conf, torch.Tensor):
+                                            conf = float(box.conf.item())
+                                        else:
+                                            conf = float(box.conf)
+                                    except Exception as e:
+                                        log(f"Error reading confidence: {e}", 'warning')
+                                
+                                log(f"Object {i} confidence: {conf:.2f} (Threshold: {confidence_threshold})")
+                                
+                                if conf < confidence_threshold:
+                                    log(f"Skipping object {i} due to low confidence.")
+                                    continue
                                 
                                 # Get box coordinates
                                 x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
