@@ -672,7 +672,19 @@ class GeminiUltraDetect:
                     ret_images.append(pil2tensor(pil_image))
                     all_bboxes.append([])
             except Exception as e:
-                log(f"SAM3 segmentation failed: {e}", 'error')
+                error_msg = str(e)
+                log(f"SAM3 segmentation failed: {error_msg}", 'error')
+                
+                # Check if it's a file not found error
+                if "No such file" in error_msg or "sam3" in error_msg.lower():
+                    log("=" * 60, 'error')
+                    log("📥 HOW TO DOWNLOAD SAM3:", 'error')
+                    log("1. Visit: https://huggingface.co/facebook/sam3", 'error')
+                    log("2. ⚠️ ACCEPT THE LICENSE TERMS (required!)", 'error')
+                    log("3. Download model from Files tab", 'error')
+                    log("4. Place in: ComfyUI/models/sams/", 'error')
+                    log("=" * 60, 'error')
+                
                 h, w = pil_image.size[1], pil_image.size[0]
                 empty_mask = torch.zeros((h, w), dtype=torch.float32)
                 ret_masks.append(empty_mask)
