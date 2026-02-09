@@ -497,6 +497,8 @@ class GeminiUltraDetect:
                 "black_point": ("FLOAT", {"default": 0.15, "min": 0.0, "max": 0.98, "step": 0.01}),
                 "white_point": ("FLOAT", {"default": 0.99, "min": 0.02, "max": 1.0, "step": 0.01}),
                 "max_megapixels": ("FLOAT", {"default": 2.0, "min": 0.5, "max": 10.0, "step": 0.1}),
+                "confidence_threshold": ("FLOAT", {"default": 0.4, "min": 0.0, "max": 1.0, "step": 0.05}),
+                "edge_feather": ("INT", {"default": 0, "min": 0, "max": 100, "step": 1}),
                 "cache_models": ("BOOLEAN", {"default": True}),
             }
         }
@@ -510,7 +512,8 @@ class GeminiUltraDetect:
                matting_method=None, 
                birefnet_model=None, vitmatte_model=None,
                detail_erode=6, detail_dilate=6,
-               black_point=0.15, white_point=0.99, max_megapixels=2.0, cache_models=True):
+               black_point=0.15, white_point=0.99, max_megapixels=2.0, 
+               confidence_threshold=0.4, edge_feather=0, cache_models=True):
         
         # Default values
         if matting_method is None:
@@ -547,22 +550,41 @@ class GeminiUltraDetect:
                     combined_mask = None
                     boxes = []
                     for result in results:
-                        if result.masks is not None:
+                        # Check if we have boxes with confidence scores
+                        if result.boxes is not None:
+                            for i, box in enumerate(result.boxes):
+                                # Filter by confidence
+                                if hasattr(box, 'conf') and box.conf is not None:
+                                    conf = float(box.conf[0])
+                                    if conf < confidence_threshold:
+                                        continue
+                                
+                                # Get box coordinates
+                                x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
+                                boxes.append([float(x1), float(y1), float(x2), float(y2)])
+                                
+                                # Get corresponding mask if available
+                                if result.masks is not None and len(result.masks.data) > i:
+                                    mask = result.masks.data[i]
+                                    mask_np = mask.cpu().numpy()
+                                    if combined_mask is None:
+                                        combined_mask = mask_np
+                                    else:
+                                        combined_mask = np.maximum(combined_mask, mask_np)
+                        
+                        # Fallback if no boxes but masks exist (rare for SAM3 text prompt)
+                        elif result.masks is not None:
                             for mask in result.masks.data:
                                 mask_np = mask.cpu().numpy()
                                 if combined_mask is None:
                                     combined_mask = mask_np
                                 else:
                                     combined_mask = np.maximum(combined_mask, mask_np)
-                        if result.boxes is not None:
-                            for box in result.boxes:
-                                x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
-                                boxes.append([float(x1), float(y1), float(x2), float(y2)])
                     
                     all_bboxes.append(boxes)
                     
                     if combined_mask is None:
-                        log(f"No objects found with SAM3.")
+                        log(f"No objects found with SAM3 (threshold: {confidence_threshold}).")
                         h, w = pil_image.size[1], pil_image.size[0]
                         empty_mask = torch.zeros((h, w), dtype=torch.float32)
                         ret_masks.append(empty_mask)
@@ -586,8 +608,9 @@ class GeminiUltraDetect:
                         birefnet_mask = refine_birefnet(pil_image, birefnet_model)
                         # Combine SAM3 detection with BiRefNet edge refinement
                         combined = combined_mask * birefnet_mask  # Intersection
-                        # If intersection is too small, use SAM3 with edge refinement
+                        # If intersection is too small, use SAM3 mask weighted
                         if combined.sum() < combined_mask.sum() * 0.3:
+                            # BiRefNet didn't find the same region, use SAM3 with edge refinement
                             refined = refine_guided_filter(pil_image, combined_mask)
                             mask_tensor = torch.from_numpy(refined).float()
                         else:
@@ -595,6 +618,16 @@ class GeminiUltraDetect:
                     elif matting_method == "Guided Filter (Fast)":
                         refined = refine_guided_filter(pil_image, combined_mask)
                         mask_tensor = torch.from_numpy(refined).float()
+                    
+                    # Edge Feathering
+                    if edge_feather > 0:
+                        log(f"Feathering edges by {edge_feather}px...")
+                        # Ensure kernel size is odd
+                        ksize = (edge_feather * 2) + 1
+                        mask_np = mask_tensor.numpy()
+                        # Apply Gaussian blur
+                        mask_blurred = cv2.GaussianBlur(mask_np, (ksize, ksize), 0)
+                        mask_tensor = torch.from_numpy(mask_blurred).float()
                     
                     ret_masks.append(mask_tensor)
                     
