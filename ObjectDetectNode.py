@@ -704,6 +704,7 @@ class GeminiUltraDetect:
             
             if not boxes:
                 log(f"No objects found.")
+                log(f"TIP: YOLO-World can't detect abstract concepts like 'sun', 'lake'. Try SAM3 for text-based segmentation!", 'warning')
                 # Return empty mask
                 h, w = pil_image.size[1], pil_image.size[0]
                 empty_mask = torch.zeros((h, w), dtype=torch.float32)
