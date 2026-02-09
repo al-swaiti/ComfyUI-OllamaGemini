@@ -235,13 +235,17 @@ class ModelManager:
             
             # Check if model file exists
             if not os.path.exists(model_path):
+                # Auto-open browser to download page
+                import webbrowser
+                webbrowser.open("https://huggingface.co/facebook/sam3")
+                
                 raise RuntimeError(
                     "❌ SAM3 MODEL NOT FOUND!\n\n"
-                    "📥 HOW TO DOWNLOAD:\n"
-                    "1. Visit: https://huggingface.co/facebook/sam3\n"
-                    "2. ⚠️ ACCEPT THE LICENSE TERMS (click 'Agree')\n"
-                    "3. Download model from 'Files' tab\n"
-                    "4. Place in: ComfyUI/models/sams/\n\n"
+                    "🌐 Browser opened to download page!\n\n"
+                    "📥 STEPS:\n"
+                    "1. ACCEPT the license terms (click 'Agree')\n"
+                    "2. Download model from 'Files' tab\n"
+                    "3. Place in: ComfyUI/models/sams/\n\n"
                     f"Expected: {model_path}\n\n"
                     "After downloading, restart ComfyUI."
                 )
