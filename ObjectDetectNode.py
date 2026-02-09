@@ -647,8 +647,18 @@ class GeminiUltraDetect:
                         # Skip to matting step
                         if matting_method == "BiRefNet-matting (Best Quality)":
                             log(f"Refining with {matting_method}...")
-                            refined_mask = refine_birefnet(pil_image, birefnet_model)
-                            mask_tensor = torch.from_numpy(refined_mask).float()
+                            # BiRefNet does full-image segmentation
+                            birefnet_mask = refine_birefnet(pil_image, birefnet_model)
+                            # Combine SAM3 detection with BiRefNet edge refinement
+                            # Use SAM3 as the region, BiRefNet for edge quality
+                            combined = combined_mask * birefnet_mask  # Intersection
+                            # If intersection is too small, use SAM3 mask weighted
+                            if combined.sum() < combined_mask.sum() * 0.3:
+                                # BiRefNet didn't find the same region, use SAM3 with edge refinement
+                                refined = refine_guided_filter(pil_image, combined_mask)
+                                mask_tensor = torch.from_numpy(refined).float()
+                            else:
+                                mask_tensor = torch.from_numpy(combined).float()
                         elif matting_method == "Guided Filter (Fast)":
                             refined = refine_guided_filter(pil_image, combined_mask)
                             mask_tensor = torch.from_numpy(refined).float()
