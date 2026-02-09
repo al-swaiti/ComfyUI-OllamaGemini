@@ -233,6 +233,24 @@ class ModelManager:
             model_file = SAM_MODELS.get(model_key, "sam3.pt")
             model_path = search_for_model(model_file, "sams")
             
+            # Check if model file exists
+            if not os.path.exists(model_path):
+                log("=" * 60, 'error')
+                log("SAM3 MODEL NOT FOUND!", 'error')
+                log("=" * 60, 'error')
+                log(f"Expected path: {model_path}", 'error')
+                log("", 'error')
+                log("📥 HOW TO DOWNLOAD SAM3:", 'error')
+                log("1. Visit: https://huggingface.co/facebook/sam3-hiera-large", 'error')
+                log("2. Download 'sam3.pt' (or convert from .pth)", 'error')
+                log("3. Place it in one of these folders:", 'error')
+                log(f"   - ComfyUI/models/sams/", 'error')
+                log(f"   - ComfyUI/models/ultralytics/", 'error')
+                log("", 'error')
+                log("Or run: huggingface-cli download facebook/sam3-hiera-large --local-dir ComfyUI/models/sams/", 'error')
+                log("=" * 60, 'error')
+                return None
+            
             log(f"Loading SAM3 Semantic Predictor from {model_path}...")
             overrides = dict(
                 conf=0.25,
