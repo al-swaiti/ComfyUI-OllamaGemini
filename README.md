@@ -423,20 +423,20 @@ https://github.com/user-attachments/assets/6ffba8bc-47e9-42c5-be98-5849ffb03547
 </tr>
 <tr>
 <td align="center" width="220">
-<b>SAM3 Text Prompts</b><br/>
-<sub>Detect "sun", "lake", "shadow"</sub>
+<b>SAM3 Direct Text</b><br/>
+<sub>Prompts: "sun", "face", "cat"</sub>
 </td>
 <td align="center" width="220">
-<b>YOLOE-26 + SAM2.1</b><br/>
-<sub>Auto-download detection</sub>
+<b>Auto-Install UI</b><br/>
+<sub>Popups & Browser Auto-Open</sub>
 </td>
 <td align="center" width="220">
 <b>BiRefNet Matting</b><br/>
 <sub>Hair-level edge quality</sub>
 </td>
 <td align="center" width="220">
-<b>Smart Model Paths</b><br/>
-<sub>Auto-finds in models/</sub>
+<b>Precision Controls</b><br/>
+<sub>Confidence & Feathering</sub>
 </td>
 </tr>
 </table>
