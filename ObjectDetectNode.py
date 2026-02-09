@@ -647,12 +647,10 @@ class GeminiUltraDetect:
                         # Skip to matting step
                         if matting_method == "BiRefNet-matting (Best Quality)":
                             log(f"Refining with {matting_method}...")
-                            mask_pil = Image.fromarray((combined_mask * 255).astype(np.uint8))
-                            birefnet = models.get_birefnet(birefnet_model)
-                            refined_mask = apply_birefnet_matting(pil_image, mask_pil, birefnet)
+                            refined_mask = refine_birefnet(pil_image, birefnet_model)
                             mask_tensor = torch.from_numpy(refined_mask).float()
                         elif matting_method == "Guided Filter (Fast)":
-                            refined = apply_guided_filter(pil_image, combined_mask)
+                            refined = refine_guided_filter(pil_image, combined_mask)
                             mask_tensor = torch.from_numpy(refined).float()
                         
                         ret_masks.append(mask_tensor)
