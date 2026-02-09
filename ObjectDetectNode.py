@@ -676,8 +676,16 @@ class GeminiUltraDetect:
                 target_device = 'cuda' if torch.cuda.is_available() else 'cpu'
                 yolo.to(target_device)
                 
-                # Set classes - this creates text embeddings
-                yolo.set_classes(classes)
+                # Set classes - YOLOE requires get_text_pe for text embeddings!
+                model_file = DETECTION_MODELS.get(detection_model, "")
+                if "yoloe" in model_file.lower() and hasattr(yolo, 'get_text_pe'):
+                    # YOLOE needs text prompt embeddings
+                    text_pe = yolo.get_text_pe(classes)
+                    yolo.set_classes(classes, text_pe)
+                    log(f"YOLOE: Set {len(classes)} classes with text embeddings")
+                else:
+                    # YOLO-World uses simpler set_classes
+                    yolo.set_classes(classes)
                 
                 # CRITICAL: Move text features to same device as model
                 # This fixes the "tensors on different devices" error
