@@ -98,27 +98,9 @@ def search_for_model(model_filename, model_type="ultralytics"):
 # Configuration
 # ============================================================================
 
-# Detection models - Open vocabulary with text prompts
-DETECTION_MODELS = {
-    # YOLOE-26 - Latest (Jan 2026) - Open vocab on YOLO26 architecture
-    "yoloe-26x-seg (Latest Best)": "yoloe-26x-seg.pt",
-    "yoloe-26l-seg (Latest Balanced)": "yoloe-26l-seg.pt",
-    # YOLO-World V2.1 - Proven stable
-    "yolov8x-worldv2 (Stable Best)": "yolov8x-worldv2.pt",
-    "yolov8l-worldv2 (Stable Balanced)": "yolov8l-worldv2.pt",
-    "yolov8m-worldv2 (Fast)": "yolov8m-worldv2.pt",
-    "yolov8s-worldv2 (Fastest)": "yolov8s-worldv2.pt",
-}
-
-# Segmentation models (SAM via ultralytics)
+# Segmentation models - SAM3 only (direct text-based segmentation)
 SAM_MODELS = {
-    # SAM3 - Latest (Nov 2025) - Requires manual download from HuggingFace
     "sam3 (Latest - needs HF download)": "sam3.pt",
-    # SAM2.1 - Stable, auto-downloads
-    "sam2.1-large (Stable Best)": "sam2.1_l.pt",
-    "sam2.1-base+ (Stable Balanced)": "sam2.1_b.pt",
-    "sam2.1-small (Fast)": "sam2.1_s.pt",
-    "sam2.1-tiny (Fastest)": "sam2.1_t.pt",
 }
 
 # Matting models (ViTMatte via transformers)
@@ -238,42 +220,6 @@ class ModelManager:
         self.birefnet_model = None
         self.birefnet_name = None
     
-    def get_yolo(self, model_key):
-        """Load YOLO detection model (YOLOE or YOLO-World)."""
-        if self.yolo_name != model_key:
-            model_file = DETECTION_MODELS[model_key]
-            
-            # Smart path search
-            model_path = search_for_model(model_file, "ultralytics")
-            
-            # Use YOLOE class for yoloe models, YOLO for yolo-world
-            if "yoloe" in model_file.lower():
-                from ultralytics import YOLOE
-                log(f"Loading YOLOE: {model_key} from {model_path}...")
-                self.yolo_model = YOLOE(model_path)
-            else:
-                from ultralytics import YOLO
-                log(f"Loading YOLO-World: {model_key} from {model_path}...")
-                self.yolo_model = YOLO(model_path)
-            
-            self.yolo_name = model_key
-            log(f"Detection model loaded!")
-        return self.yolo_model
-    
-    def get_sam(self, model_key):
-        """Load SAM model."""
-        if self.sam_name != model_key:
-            from ultralytics import SAM
-            model_file = SAM_MODELS[model_key]
-            
-            # Smart path search
-            model_path = search_for_model(model_file, "sams")
-            
-            log(f"Loading SAM: {model_key} from {model_path}...")
-            self.sam_model = SAM(model_path)
-            self.sam_name = model_key
-            log(f"SAM loaded!")
-        return self.sam_model
     
     def get_sam3_semantic(self, model_key="sam3 (Latest - needs HF download)"):
         """Load SAM3SemanticPredictor for direct text-based segmentation."""
@@ -543,12 +489,9 @@ class GeminiUltraDetect:
                 "prompt": ("STRING", {"default": "person", "multiline": False}),
             },
             "optional": {
-                "detection_model": (list(DETECTION_MODELS.keys()), {"default": list(DETECTION_MODELS.keys())[0]}),
-                "sam_model": (list(SAM_MODELS.keys()), {"default": list(SAM_MODELS.keys())[0]}),
                 "matting_method": (MATTING_METHODS, {"default": MATTING_METHODS[0]}),
                 "birefnet_model": (list(BIREFNET_MODELS.keys()), {"default": list(BIREFNET_MODELS.keys())[0]}),
                 "vitmatte_model": (list(VITMATTE_MODELS.keys()), {"default": list(VITMATTE_MODELS.keys())[0]}),
-                "detection_threshold": ("FLOAT", {"default": 0.25, "min": 0.01, "max": 1.0, "step": 0.01}),
                 "detail_erode": ("INT", {"default": 6, "min": 1, "max": 50, "step": 1}),
                 "detail_dilate": ("INT", {"default": 6, "min": 1, "max": 50, "step": 1}),
                 "black_point": ("FLOAT", {"default": 0.15, "min": 0.0, "max": 0.98, "step": 0.01}),
@@ -564,16 +507,12 @@ class GeminiUltraDetect:
     CATEGORY = "AI API/Detection"
     
     def detect(self, image, prompt,
-               detection_model=None, sam_model=None, matting_method=None, 
+               matting_method=None, 
                birefnet_model=None, vitmatte_model=None,
-               detection_threshold=0.25, detail_erode=6, detail_dilate=6,
+               detail_erode=6, detail_dilate=6,
                black_point=0.15, white_point=0.99, max_megapixels=2.0, cache_models=True):
         
         # Default values
-        if detection_model is None:
-            detection_model = list(DETECTION_MODELS.keys())[0]
-        if sam_model is None:
-            sam_model = list(SAM_MODELS.keys())[0]
         if matting_method is None:
             matting_method = MATTING_METHODS[0]
         if birefnet_model is None:
@@ -592,227 +531,94 @@ class GeminiUltraDetect:
             
             log(f"Detecting '{prompt}'...")
             
-            # Check if using SAM3 with direct text prompts (bypasses YOLO)
-            use_sam3_direct = "sam3" in sam_model.lower()
-            
-            if use_sam3_direct:
-                # SAM3 Direct Text Segmentation - can detect concepts like "sun", "lake", etc.
-                try:
-                    sam3_predictor = models.get_sam3_semantic(sam_model)
-                    if sam3_predictor is not None:
-                        log(f"Using SAM3 direct text segmentation...")
-                        classes = [c.strip() for c in prompt.split(",")]
-                        
-                        # Set image
-                        sam3_predictor.set_image(pil_image)
-                        
-                        # Segment with text prompts
-                        results = sam3_predictor(text=classes)
-                        
-                        combined_mask = None
-                        boxes = []
-                        for result in results:
-                            if result.masks is not None:
-                                for mask in result.masks.data:
-                                    mask_np = mask.cpu().numpy()
-                                    if combined_mask is None:
-                                        combined_mask = mask_np
-                                    else:
-                                        combined_mask = np.maximum(combined_mask, mask_np)
-                            if result.boxes is not None:
-                                for box in result.boxes:
-                                    x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
-                                    boxes.append([float(x1), float(y1), float(x2), float(y2)])
-                        
-                        all_bboxes.append(boxes)
-                        
-                        if combined_mask is None:
-                            log(f"No objects found with SAM3.")
-                            h, w = pil_image.size[1], pil_image.size[0]
-                            empty_mask = torch.zeros((h, w), dtype=torch.float32)
-                            ret_masks.append(empty_mask)
-                            ret_images.append(pil2tensor(pil_image))
-                            continue
-                        
-                        log(f"SAM3 found {len(boxes)} object(s)!")
-                        
-                        # Resize mask to image size if needed
+            # SAM3 Direct Text Segmentation - can detect concepts like "sun", "lake", etc.
+            try:
+                sam3_predictor = models.get_sam3_semantic()
+                if sam3_predictor is not None:
+                    log(f"Using SAM3 direct text segmentation...")
+                    classes = [c.strip() for c in prompt.split(",")]
+                    
+                    # Set image
+                    sam3_predictor.set_image(pil_image)
+                    
+                    # Segment with text prompts
+                    results = sam3_predictor(text=classes)
+                    
+                    combined_mask = None
+                    boxes = []
+                    for result in results:
+                        if result.masks is not None:
+                            for mask in result.masks.data:
+                                mask_np = mask.cpu().numpy()
+                                if combined_mask is None:
+                                    combined_mask = mask_np
+                                else:
+                                    combined_mask = np.maximum(combined_mask, mask_np)
+                        if result.boxes is not None:
+                            for box in result.boxes:
+                                x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
+                                boxes.append([float(x1), float(y1), float(x2), float(y2)])
+                    
+                    all_bboxes.append(boxes)
+                    
+                    if combined_mask is None:
+                        log(f"No objects found with SAM3.")
                         h, w = pil_image.size[1], pil_image.size[0]
-                        if combined_mask.shape != (h, w):
-                            combined_mask = cv2.resize(combined_mask, (w, h), interpolation=cv2.INTER_LINEAR)
-                        
-                        # Apply matting refinement
-                        mask_tensor = torch.from_numpy(combined_mask).float()
-                        
-                        # Skip to matting step
-                        if matting_method == "BiRefNet-matting (Best Quality)":
-                            log(f"Refining with {matting_method}...")
-                            # BiRefNet does full-image segmentation
-                            birefnet_mask = refine_birefnet(pil_image, birefnet_model)
-                            # Combine SAM3 detection with BiRefNet edge refinement
-                            # Use SAM3 as the region, BiRefNet for edge quality
-                            combined = combined_mask * birefnet_mask  # Intersection
-                            # If intersection is too small, use SAM3 mask weighted
-                            if combined.sum() < combined_mask.sum() * 0.3:
-                                # BiRefNet didn't find the same region, use SAM3 with edge refinement
-                                refined = refine_guided_filter(pil_image, combined_mask)
-                                mask_tensor = torch.from_numpy(refined).float()
-                            else:
-                                mask_tensor = torch.from_numpy(combined).float()
-                        elif matting_method == "Guided Filter (Fast)":
+                        empty_mask = torch.zeros((h, w), dtype=torch.float32)
+                        ret_masks.append(empty_mask)
+                        ret_images.append(pil2tensor(pil_image))
+                        continue
+                    
+                    log(f"SAM3 found {len(boxes)} object(s)!")
+                    
+                    # Resize mask to image size if needed
+                    h, w = pil_image.size[1], pil_image.size[0]
+                    if combined_mask.shape != (h, w):
+                        combined_mask = cv2.resize(combined_mask, (w, h), interpolation=cv2.INTER_LINEAR)
+                    
+                    # Apply matting refinement
+                    mask_tensor = torch.from_numpy(combined_mask).float()
+                    
+                    # Apply matting based on method
+                    if matting_method == "BiRefNet-matting (Best Quality)":
+                        log(f"Refining with {matting_method}...")
+                        # BiRefNet does full-image segmentation
+                        birefnet_mask = refine_birefnet(pil_image, birefnet_model)
+                        # Combine SAM3 detection with BiRefNet edge refinement
+                        combined = combined_mask * birefnet_mask  # Intersection
+                        # If intersection is too small, use SAM3 with edge refinement
+                        if combined.sum() < combined_mask.sum() * 0.3:
                             refined = refine_guided_filter(pil_image, combined_mask)
                             mask_tensor = torch.from_numpy(refined).float()
-                        
-                        ret_masks.append(mask_tensor)
-                        
-                        # Create RGBA output
-                        mask_pil = Image.fromarray((mask_tensor.numpy() * 255).astype(np.uint8))
-                        rgba = RGB2RGBA(pil_image, mask_pil)
-                        ret_images.append(pil2tensor(rgba))
-                        
-                        log(f"Done!")
-                        continue
-                    else:
-                        log("SAM3 predictor not available, falling back to YOLO+SAM...", 'warning')
-                except Exception as e:
-                    log(f"SAM3 direct segmentation failed: {e}, falling back to YOLO+SAM...", 'warning')
-            
-            # Step 1: Detection with YOLO-World (fallback or primary)
-            try:
-                yolo = models.get_yolo(detection_model)
-                classes = [c.strip() for c in prompt.split(",")]
-                
-                # Move model to device BEFORE set_classes
-                target_device = 'cuda' if torch.cuda.is_available() else 'cpu'
-                yolo.to(target_device)
-                
-                # Set classes - YOLOE requires get_text_pe for text embeddings!
-                model_file = DETECTION_MODELS.get(detection_model, "")
-                if "yoloe" in model_file.lower() and hasattr(yolo, 'get_text_pe'):
-                    # YOLOE needs text prompt embeddings
-                    text_pe = yolo.get_text_pe(classes)
-                    yolo.set_classes(classes, text_pe)
-                    log(f"YOLOE: Set {len(classes)} classes with text embeddings")
+                        else:
+                            mask_tensor = torch.from_numpy(combined).float()
+                    elif matting_method == "Guided Filter (Fast)":
+                        refined = refine_guided_filter(pil_image, combined_mask)
+                        mask_tensor = torch.from_numpy(refined).float()
+                    
+                    ret_masks.append(mask_tensor)
+                    
+                    # Create RGBA output
+                    mask_pil = Image.fromarray((mask_tensor.numpy() * 255).astype(np.uint8))
+                    rgba = RGB2RGBA(pil_image, mask_pil)
+                    ret_images.append(pil2tensor(rgba))
+                    
+                    log(f"Done!")
                 else:
-                    # YOLO-World uses simpler set_classes
-                    yolo.set_classes(classes)
-                
-                # CRITICAL: Move text features to same device as model
-                # This fixes the "tensors on different devices" error
-                if hasattr(yolo.model, 'txt_feats') and yolo.model.txt_feats is not None:
-                    yolo.model.txt_feats = yolo.model.txt_feats.to(target_device)
-                if hasattr(yolo.model, 'model') and hasattr(yolo.model.model, 'txt_feats'):
-                    if yolo.model.model.txt_feats is not None:
-                        yolo.model.model.txt_feats = yolo.model.model.txt_feats.to(target_device)
-                
-                # Run prediction with explicit device
-                results = yolo.predict(pil_image, conf=detection_threshold, verbose=False, device=target_device)
-                
-                boxes = []
-                for result in results:
-                    if result.boxes is not None:
-                        for box in result.boxes:
-                            x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
-                            boxes.append([float(x1), float(y1), float(x2), float(y2)])
+                    log("SAM3 predictor not available, please install it.", 'error')
+                    h, w = pil_image.size[1], pil_image.size[0]
+                    empty_mask = torch.zeros((h, w), dtype=torch.float32)
+                    ret_masks.append(empty_mask)
+                    ret_images.append(pil2tensor(pil_image))
+                    all_bboxes.append([])
             except Exception as e:
-                log(f"Detection failed: {e}", 'error')
-                boxes = []
-            
-            all_bboxes.append(boxes)
-            
-            if not boxes:
-                log(f"No objects found.")
-                log(f"TIP: YOLO-World can't detect abstract concepts like 'sun', 'lake'. Try SAM3 for text-based segmentation!", 'warning')
-                # Return empty mask
+                log(f"SAM3 segmentation failed: {e}", 'error')
                 h, w = pil_image.size[1], pil_image.size[0]
                 empty_mask = torch.zeros((h, w), dtype=torch.float32)
                 ret_masks.append(empty_mask)
                 ret_images.append(pil2tensor(pil_image))
-                continue
-            
-            log(f"Found {len(boxes)} object(s). Segmenting...")
-            
-            # Step 2: Segmentation with SAM2.1
-            try:
-                sam = models.get_sam(sam_model)
-                bboxes_tensor = torch.tensor(boxes, device=device)
-                results = sam.predict(pil_image, bboxes=bboxes_tensor, verbose=False)
-                
-                combined_mask = None
-                for result in results:
-                    if result.masks is not None:
-                        for mask in result.masks.data:
-                            mask_np = mask.cpu().numpy()
-                            if combined_mask is None:
-                                combined_mask = mask_np
-                            else:
-                                combined_mask = np.maximum(combined_mask, mask_np)
-            except Exception as e:
-                log(f"Segmentation failed: {e}", 'error')
-                combined_mask = None
-            
-            if combined_mask is None:
-                log(f"Segmentation failed.")
-                h, w = pil_image.size[1], pil_image.size[0]
-                empty_mask = torch.zeros((h, w), dtype=torch.float32)
-                ret_masks.append(empty_mask)
-                ret_images.append(pil2tensor(pil_image))
-                continue
-            
-            # Step 3: Matting/Refinement
-            log(f"Refining with {matting_method}...")
-            
-            try:
-                if "ViTMatte" in matting_method:
-                    # Load specific vitmatte model
-                    models.get_vitmatte(vitmatte_model)
-                    refined_mask = refine_vitmatte(
-                        pil_image, combined_mask,
-                        erode_size=detail_erode, dilate_size=detail_dilate,
-                        max_megapixels=max_megapixels
-                    )
-                    refined_mask = histogram_remap(refined_mask, black_point, white_point)
-                    
-                elif "BiRefNet" in matting_method:
-                    refined_mask = refine_birefnet(pil_image, birefnet_model)
-                    # Combine with SAM mask for better edge preservation
-                    refined_mask = np.maximum(refined_mask, combined_mask * 0.3)
-                    refined_mask = histogram_remap(refined_mask, black_point, white_point)
-                    
-                elif "Guided Filter" in matting_method:
-                    refined_mask = refine_guided_filter(pil_image, combined_mask, radius=detail_erode)
-                    refined_mask = histogram_remap(refined_mask, black_point, white_point)
-                    
-                else:  # None - raw mask
-                    refined_mask = combined_mask
-                    if refined_mask.max() <= 1:
-                        pass  # Already normalized
-                    else:
-                        refined_mask = refined_mask / 255.0
-            except Exception as e:
-                log(f"Matting failed: {e}, using raw mask", 'warning')
-                refined_mask = combined_mask
-                if refined_mask.max() > 1:
-                    refined_mask = refined_mask / 255.0
-            
-            # Convert to tensors
-            mask_tensor = torch.from_numpy(refined_mask.astype(np.float32))
-            
-            # Create RGBA image - ensure mask matches image size
-            mask_pil = Image.fromarray((refined_mask * 255).astype(np.uint8), mode='L')
-            
-            # Resize mask to match image if sizes differ
-            if mask_pil.size != pil_image.size:
-                mask_pil = mask_pil.resize(pil_image.size, Image.BILINEAR)
-                # Also update tensor
-                mask_tensor = torch.from_numpy(np.array(mask_pil).astype(np.float32) / 255.0)
-            
-            rgba_image = RGB2RGBA(pil_image, mask_pil)
-            
-            ret_masks.append(mask_tensor)
-            ret_images.append(pil2tensor(rgba_image))
-            
-            log(f"Done!")
+                all_bboxes.append([])
+        
         
         # Clear models if not caching
         if not cache_models:
