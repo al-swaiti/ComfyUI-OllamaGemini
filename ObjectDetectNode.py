@@ -675,15 +675,17 @@ class GeminiUltraDetect:
                 error_msg = str(e)
                 log(f"SAM3 segmentation failed: {error_msg}", 'error')
                 
-                # Check if it's a file not found error
+                # Check if it's a file not found error - raise with download instructions
                 if "No such file" in error_msg or "sam3" in error_msg.lower():
-                    log("=" * 60, 'error')
-                    log("📥 HOW TO DOWNLOAD SAM3:", 'error')
-                    log("1. Visit: https://huggingface.co/facebook/sam3", 'error')
-                    log("2. ⚠️ ACCEPT THE LICENSE TERMS (required!)", 'error')
-                    log("3. Download model from Files tab", 'error')
-                    log("4. Place in: ComfyUI/models/sams/", 'error')
-                    log("=" * 60, 'error')
+                    raise RuntimeError(
+                        "❌ SAM3 MODEL NOT FOUND!\n\n"
+                        "📥 HOW TO DOWNLOAD:\n"
+                        "1. Visit: https://huggingface.co/facebook/sam3\n"
+                        "2. ⚠️ ACCEPT THE LICENSE TERMS (click 'Agree')\n"
+                        "3. Download model from 'Files' tab\n"
+                        "4. Place in: ComfyUI/models/sams/\n\n"
+                        "After downloading, restart ComfyUI."
+                    )
                 
                 h, w = pil_image.size[1], pil_image.size[0]
                 empty_mask = torch.zeros((h, w), dtype=torch.float32)
