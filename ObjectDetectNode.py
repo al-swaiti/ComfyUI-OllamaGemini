@@ -235,19 +235,18 @@ class ModelManager:
             
             # Check if model file exists
             if not os.path.exists(model_path):
-                # Auto-open browser to download page
+                # Auto-open browser to direct download (requires license acceptance)
                 import webbrowser
-                webbrowser.open("https://huggingface.co/facebook/sam3")
+                webbrowser.open("https://huggingface.co/facebook/sam3/resolve/main/sam3.pt?download=true")
                 
                 raise RuntimeError(
                     "❌ SAM3 MODEL NOT FOUND!\n\n"
-                    "🌐 Browser opened to download page!\n\n"
+                    "🌐 Browser opened - downloading SAM3...\n\n"
                     "📥 STEPS:\n"
-                    "1. ACCEPT the license terms (click 'Agree')\n"
-                    "2. Download model from 'Files' tab\n"
-                    "3. Place in: ComfyUI/models/sams/\n\n"
-                    f"Expected: {model_path}\n\n"
-                    "After downloading, restart ComfyUI."
+                    "1. Accept the license if prompted\n"
+                    "2. Save sam3.pt to: ComfyUI/models/sams/\n"
+                    "3. Restart ComfyUI\n\n"
+                    f"Expected path: {model_path}"
                 )
             
             log(f"Loading SAM3 Semantic Predictor from {model_path}...")
