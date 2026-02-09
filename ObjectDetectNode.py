@@ -222,55 +222,82 @@ class ModelManager:
     
     
     def get_sam3_semantic(self, model_key="sam3 (Latest - needs HF download)"):
-        """Load SAM3SemanticPredictor for direct text-based segmentation."""
+        """Load SAM3 using HuggingFace transformers (official implementation).
+        
+        This uses the official facebook/sam3 model from transformers library
+        for better quality and video stability compared to ultralytics wrapper.
+        """
         if self.sam3_semantic_name != model_key:
             try:
-                from ultralytics.models.sam import SAM3SemanticPredictor
+                from transformers import Sam3Processor, Sam3Model
             except ImportError:
-                log("SAM3SemanticPredictor not available. Update ultralytics: pip install -U ultralytics", 'error')
+                log("SAM3 not available. Install: pip install transformers>=4.40", 'error')
+                
+                # Fallback: try ultralytics
+                try:
+                    from ultralytics.models.sam import SAM3SemanticPredictor
+                    log("Using ultralytics SAM3 fallback...", 'warning')
+                    
+                    model_file = SAM_MODELS.get(model_key, "sam3.pt")
+                    model_path = search_for_model(model_file, "sams")
+                    
+                    if not os.path.exists(model_path):
+                        self._show_sam3_download_error()
+                        return None
+                    
+                    overrides = dict(conf=0.5, task="segment", mode="predict", 
+                                    model=model_path, half=True, verbose=False)
+                    self.sam3_semantic = {"type": "ultralytics", 
+                                          "predictor": SAM3SemanticPredictor(overrides=overrides)}
+                    self.sam3_semantic_name = model_key
+                    return self.sam3_semantic
+                except ImportError:
+                    log("Neither transformers nor ultralytics SAM3 available!", 'error')
+                    return None
+            
+            # Use official HuggingFace transformers implementation
+            log(f"Loading SAM3 from HuggingFace transformers...")
+            device = "cuda" if torch.cuda.is_available() else "cpu"
+            
+            try:
+                model = Sam3Model.from_pretrained("facebook/sam3").to(device)
+                processor = Sam3Processor.from_pretrained("facebook/sam3")
+                
+                self.sam3_semantic = {
+                    "type": "transformers",
+                    "model": model,
+                    "processor": processor,
+                    "device": device
+                }
+                self.sam3_semantic_name = model_key
+                log(f"SAM3 loaded successfully (transformers, {device})!")
+            except Exception as e:
+                log(f"Failed to load SAM3 from HuggingFace: {e}", 'error')
+                self._show_sam3_download_error()
                 return None
-            
-            model_file = SAM_MODELS.get(model_key, "sam3.pt")
-            model_path = search_for_model(model_file, "sams")
-            
-            # Check if model file exists
-            if not os.path.exists(model_path):
-                # Get sams folder path for display
-                sams_folder = "ComfyUI/models/sams/"
-                if folder_paths is not None:
-                    sams_paths = folder_paths.get_folder_paths("sams")
-                    if sams_paths:
-                        sams_folder = sams_paths[0]
                 
-                # Open browser to download page
-                import webbrowser
-                webbrowser.open("https://huggingface.co/facebook/sam3")
-                
-                raise RuntimeError(
-                    "❌ SAM3 MODEL NOT FOUND!\n\n"
-                    "🌐 Browser opened to HuggingFace.\n\n"
-                    "📥 STEPS:\n"
-                    "1. Click 'Agree' to accept the license\n"
-                    "2. Wait for access to be granted\n"
-                    "3. Go to 'Files' tab and download sam3.pt\n"
-                    f"4. Save to: {sams_folder}\n"
-                    "5. Restart ComfyUI\n\n"
-                    "⚠️ License approval may take a few minutes!"
-                )
-            
-            log(f"Loading SAM3 Semantic Predictor from {model_path}...")
-            overrides = dict(
-                conf=0.25,
-                task="segment",
-                mode="predict",
-                model=model_path,
-                half=True,
-                verbose=False,
-            )
-            self.sam3_semantic = SAM3SemanticPredictor(overrides=overrides)
-            self.sam3_semantic_name = model_key
-            log(f"SAM3 Semantic Predictor loaded!")
         return self.sam3_semantic
+    
+    def _show_sam3_download_error(self):
+        """Show helpful error message for SAM3 download."""
+        sams_folder = "ComfyUI/models/sams/"
+        if folder_paths is not None:
+            sams_paths = folder_paths.get_folder_paths("sams")
+            if sams_paths:
+                sams_folder = sams_paths[0]
+        
+        import webbrowser
+        webbrowser.open("https://huggingface.co/facebook/sam3")
+        
+        raise RuntimeError(
+            "❌ SAM3 MODEL NOT FOUND!\n\n"
+            "🌐 Browser opened to HuggingFace.\n\n"
+            "📥 STEPS:\n"
+            "1. Click 'Agree' to accept the license\n"
+            "2. Wait for access to be granted\n"
+            "3. Model will auto-download on next run\n\n"
+            "⚠️ License approval may take a few minutes!"
+        )
     
     def get_vitmatte(self, model_key):
         """Load ViTMatte model."""
@@ -520,7 +547,7 @@ class GeminiUltraDetect:
                 "detail_erode": ("INT", {"default": 6, "min": 1, "max": 50, "step": 1}),
                 "detail_dilate": ("INT", {"default": 6, "min": 1, "max": 50, "step": 1}),
                 "max_megapixels": ("FLOAT", {"default": 2.0, "min": 0.5, "max": 10.0, "step": 0.1}),
-                "confidence_threshold": ("FLOAT", {"default": 0.1, "min": 0.0, "max": 1.0, "step": 0.05}),
+                "confidence_threshold": ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.05}),
                 "edge_feather": ("INT", {"default": 0, "min": 0, "max": 100, "step": 1}),
                 "cache_models": ("BOOLEAN", {"default": True}),
             }
@@ -559,61 +586,94 @@ class GeminiUltraDetect:
             
             # SAM3 Direct Text Segmentation - can detect concepts like "sun", "lake", etc.
             try:
-                sam3_predictor = models.get_sam3_semantic()
-                if sam3_predictor is not None:
+                sam3_data = models.get_sam3_semantic()
+                if sam3_data is not None:
                     log(f"Using SAM3 direct text segmentation...")
                     classes = [c.strip() for c in prompt.split(",")]
                     
-                    # Set image
-                    sam3_predictor.set_image(pil_image)
-                    
-                    # Segment with text prompts
-                    results = sam3_predictor(text=classes)
-                    
                     combined_mask = None
                     boxes = []
-                    for result in results:
-                        # Check if we have boxes with confidence scores
-                        if result.boxes is not None:
-                            for i, box in enumerate(result.boxes):
-                                # Filter by confidence
-                                conf = 1.0 # Default high confidence if score missing
-                                if hasattr(box, 'conf') and box.conf is not None:
-                                    try:
-                                        if isinstance(box.conf, torch.Tensor):
-                                            conf = float(box.conf.item())
+                    
+                    # Handle transformers-based SAM3 (official HuggingFace)
+                    if sam3_data.get("type") == "transformers":
+                        model = sam3_data["model"]
+                        processor = sam3_data["processor"]
+                        device = sam3_data["device"]
+                        
+                        # Process with transformers
+                        inputs = processor(images=pil_image, text=classes, return_tensors="pt")
+                        inputs = {k: v.to(device) for k, v in inputs.items()}
+                        
+                        with torch.no_grad():
+                            outputs = model(**inputs)
+                        
+                        # Post-process with official method
+                        results = processor.post_process_instance_segmentation(
+                            outputs,
+                            threshold=confidence_threshold,
+                            mask_threshold=0.5,
+                            target_sizes=[(pil_image.size[1], pil_image.size[0])]
+                        )
+                        
+                        if results and len(results) > 0:
+                            result = results[0]  # First image result
+                            if "masks" in result and len(result["masks"]) > 0:
+                                for idx, (mask, score) in enumerate(zip(result["masks"], result["scores"])):
+                                    score_val = float(score.item()) if hasattr(score, 'item') else float(score)
+                                    log(f"Object {idx} confidence: {score_val:.2f} (Threshold: {confidence_threshold})")
+                                    
+                                    if score_val >= confidence_threshold:
+                                        mask_np = mask.cpu().numpy().astype(np.float32)
+                                        if combined_mask is None:
+                                            combined_mask = mask_np
                                         else:
-                                            conf = float(box.conf)
-                                    except Exception as e:
-                                        log(f"Error reading confidence: {e}", 'warning')
-                                
-                                log(f"Object {i} confidence: {conf:.2f} (Threshold: {confidence_threshold})")
-                                
-                                if conf < confidence_threshold:
-                                    log(f"Skipping object {i} due to low confidence.")
-                                    continue
-                                
-                                # Get box coordinates
-                                x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
-                                boxes.append([float(x1), float(y1), float(x2), float(y2)])
-                                
-                                # Get corresponding mask if available
-                                if result.masks is not None and len(result.masks.data) > i:
-                                    mask = result.masks.data[i]
+                                            combined_mask = np.maximum(combined_mask, mask_np)
+                                        
+                                        # Get bounding box from mask
+                                        y_indices, x_indices = np.where(mask_np > 0.5)
+                                        if len(y_indices) > 0:
+                                            boxes.append([x_indices.min(), y_indices.min(), 
+                                                         x_indices.max(), y_indices.max()])
+                        
+                        log(f"SAM3 (transformers) found {len(boxes)} object(s)!")
+                    
+                    # Handle ultralytics fallback
+                    elif sam3_data.get("type") == "ultralytics":
+                        predictor = sam3_data["predictor"]
+                        predictor.set_image(pil_image)
+                        results = predictor(text=classes)
+                        
+                        for result in results:
+                            if result.boxes is not None:
+                                for i, box in enumerate(result.boxes):
+                                    conf = 1.0
+                                    if hasattr(box, 'conf') and box.conf is not None:
+                                        try:
+                                            conf = float(box.conf.item()) if isinstance(box.conf, torch.Tensor) else float(box.conf)
+                                        except: pass
+                                    
+                                    log(f"Object {i} confidence: {conf:.2f} (Threshold: {confidence_threshold})")
+                                    
+                                    if conf >= confidence_threshold:
+                                        x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
+                                        boxes.append([float(x1), float(y1), float(x2), float(y2)])
+                                        
+                                        if result.masks is not None and len(result.masks.data) > i:
+                                            mask_np = result.masks.data[i].cpu().numpy()
+                                            if combined_mask is None:
+                                                combined_mask = mask_np
+                                            else:
+                                                combined_mask = np.maximum(combined_mask, mask_np)
+                            
+                            elif result.masks is not None:
+                                for mask in result.masks.data:
                                     mask_np = mask.cpu().numpy()
                                     if combined_mask is None:
                                         combined_mask = mask_np
                                     else:
                                         combined_mask = np.maximum(combined_mask, mask_np)
                         
-                        # Fallback if no boxes but masks exist (rare for SAM3 text prompt)
-                        elif result.masks is not None:
-                            for mask in result.masks.data:
-                                mask_np = mask.cpu().numpy()
-                                if combined_mask is None:
-                                    combined_mask = mask_np
-                                else:
-                                    combined_mask = np.maximum(combined_mask, mask_np)
+                        log(f"SAM3 (ultralytics) found {len(boxes)} object(s)!")
                     
                     all_bboxes.append(boxes)
                     
