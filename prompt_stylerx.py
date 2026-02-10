@@ -81,7 +81,8 @@ NODES = {
     'Gemini ComfyUI Styler': (
         'general-arts', 'Anime', 'artist', 'camera', 'camera_angles', "Aesthetic", "Color_Grading", "movies", "digital_artform", "body_type", "reactions", "feelings", "photographers", "hair-style", "architecture-style", "architect", "vehicle", "poses", "science",
         'clothing_state', 'clothing_style', 'composition', 'depth', 'environment', 'face', 'Fantasy',
-        'filter', 'Gothic', 'Halloween','Line_Art' ,'lighting', 'milehigh', 'mood', 'Movie_Poster', 'Punk', 'Travel_Poster'
+        'filter', 'Gothic', 'Halloween', 'Line_Art', 'lighting', 'milehigh', 'mood', 'Movie_Poster', 'Punk', 'Travel_Poster',
+        'cinematic_direction', 'lens_optics', 'color_theory',
     ),
 }
 

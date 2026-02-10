@@ -5,53 +5,128 @@
         "negative_prompt": ""
     },
     {
-        "name": "Aggressive",
-        "prompt": "aggressive  {prompt}",
-        "negative_prompt": "calm"
+        "name": "Melancholic Nostalgia — Bittersweet Memory",
+        "prompt": "{prompt}, evoking (melancholic nostalgia), with atmosphere of (bittersweet longing for the past, faded memory quality, wistful golden light of remembrance, gentle sadness tinged with warmth, time's passage made visible)",
+        "negative_prompt": "cheerful, bright, energetic, modern, sharp, clinical, forward-looking"
     },
     {
-        "name": "Calm",
-        "prompt": "calm  {prompt}",
-        "negative_prompt": "energetic"
+        "name": "Ethereal Dreamscape — Floating Reverie",
+        "prompt": "{prompt}, evoking (ethereal dreamscape), with atmosphere of (weightless floating quality, soft-focus otherworldly beauty, gossamer light, translucent delicacy, between waking and sleeping, luminous and mystical)",
+        "negative_prompt": "harsh, grounded, realistic, heavy, dark, gritty, sharp, concrete"
     },
     {
-        "name": "Chaotic",
-        "prompt": "chaotic  {prompt}",
-        "negative_prompt": "serene"
+        "name": "Brooding Intensity — Storm Within",
+        "prompt": "{prompt}, evoking (brooding intensity), with atmosphere of (turbulent inner storm, dark contemplative power, suppressed emotion, gathering thunderstorm energy, heavy dramatic weight, barely contained force)",
+        "negative_prompt": "light, cheerful, playful, gentle, soft, whimsical, carefree"
     },
     {
-        "name": "Energetic",
-        "prompt": "energetic  {prompt}",
-        "negative_prompt": "relaxed"
+        "name": "Euphoric Liberation — Burst of Joy",
+        "prompt": "{prompt}, evoking (euphoric liberation), with atmosphere of (explosive joyful freedom, soaring release of constraints, golden burst of light, ecstatic peak moment, the first breath of freedom)",
+        "negative_prompt": "constrained, dark, oppressive, sad, heavy, containment, restricted"
     },
     {
-        "name": "Happy",
-        "prompt": "happy  {prompt}",
-        "negative_prompt": "sad"
+        "name": "Haunting Solitude — Echo of Absence",
+        "prompt": "{prompt}, evoking (haunting solitude), with atmosphere of (profound isolation, echoless empty space, the weight of absence, loneliness made tangible, cold still air, desolate beauty)",
+        "negative_prompt": "crowded, social, warm, bustling, cheerful, connected, company"
     },
     {
-        "name": "Mysterious",
-        "prompt": "mysterious  {prompt}",
-        "negative_prompt": "clear"
+        "name": "Primal Energy — Raw Elemental Force",
+        "prompt": "{prompt}, evoking (primal energy), with atmosphere of (raw untamed elemental force, volcanic intensity, prehistoric power, animalistic vitality, pure unfiltered energy, earth and fire)",
+        "negative_prompt": "refined, delicate, subtle, controlled, civilized, gentle, calm"
     },
     {
-        "name": "Relaxed",
-        "prompt": "relaxed  {prompt}",
-        "negative_prompt": "excited"
+        "name": "Wistful Contemplation — Quiet Reflection",
+        "prompt": "{prompt}, evoking (wistful contemplation), with atmosphere of (quiet pensive reflection, soft internal dialogue, gentle sigh quality, rain-on-window introspection, meditative stillness, thoughtful gaze into distance)",
+        "negative_prompt": "active, energetic, loud, chaotic, urgent, extroverted, bold"
     },
     {
-        "name": "Romantic",
-        "prompt": "romantic  {prompt}",
-        "negative_prompt": "depressed"
+        "name": "Electric Anticipation — Before the Storm",
+        "prompt": "{prompt}, evoking (electric anticipation), with atmosphere of (charged pre-storm energy, crackling potential, the moment before the drop, suspended tension, breath held, everything about to change)",
+        "negative_prompt": "resolved, calm, complete, settled, relaxed, aftermath, concluded"
     },
     {
-        "name": "Sad",
-        "prompt": "sad  {prompt}",
-        "negative_prompt": "happy"
+        "name": "Sacred Stillness — Divine Pause",
+        "prompt": "{prompt}, evoking (sacred stillness), with atmosphere of (divine meditative silence, cathedral-like reverence, the space between heartbeats, transcendent peace, holy quiet, spiritual serenity)",
+        "negative_prompt": "chaotic, loud, profane, busy, secular, aggressive, turbulent"
     },
     {
-        "name": "Serene",
-        "prompt": "serene  {prompt}",
-        "negative_prompt": "chaotic"
+        "name": "Uncanny Dread — Wrong Familiar",
+        "prompt": "{prompt}, evoking (uncanny dread), with atmosphere of (something deeply wrong beneath the familiar, almost-normal that isn't, skin-crawling wrongness, valley of unease, the familiar made alien)",
+        "negative_prompt": "comforting, safe, warm, normal, reassuring, cozy, inviting"
+    },
+    {
+        "name": "Romantic Yearning — Heart's Desire",
+        "prompt": "{prompt}, evoking (romantic yearning), with atmosphere of (deep passionate longing, warm golden intimacy, the ache of desire, sensual softness, rose and amber warmth, love's magnetic pull)",
+        "negative_prompt": "cold, clinical, detached, hostile, aggressive, sterile, mechanical"
+    },
+    {
+        "name": "Cosmic Wonder — Stargazing Awe",
+        "prompt": "{prompt}, evoking (cosmic wonder), with atmosphere of (overwhelming awe at the universe's vastness, starlit infinity, humbling scale, existential beauty, the sublime terror of space, celestial grandeur)",
+        "negative_prompt": "mundane, domestic, small scale, trivial, everyday, ordinary"
+    },
+    {
+        "name": "Defiant Rebellion — Rising Against",
+        "prompt": "{prompt}, evoking (defiant rebellion), with atmosphere of (fierce resistance against constraint, burning revolutionary spirit, raised fist energy, bold confrontational stance, unyielding strength against oppression)",
+        "negative_prompt": "obedient, passive, submissive, calm, accepting, gentle, yielding"
+    },
+    {
+        "name": "Serene Transcendence — Beyond the Veil",
+        "prompt": "{prompt}, evoking (serene transcendence), with atmosphere of (peace beyond understanding, enlightenment's soft glow, ego dissolution, infinite calm, lotus-like purity, spiritual elevation above worldly concern)",
+        "negative_prompt": "anxious, worldly, materialistic, stressed, chaotic, dark, heavy"
+    },
+    {
+        "name": "Visceral Horror — Existential Terror",
+        "prompt": "{prompt}, evoking (visceral horror), with atmosphere of (deep primal fear, existential terror, darkness that breathes, the unseen watching, cold sweat reality, survival instinct activated)",
+        "negative_prompt": "safe, warm, bright, comforting, cheerful, protected, daylight"
+    },
+    {
+        "name": "Bitter Irony — Dark Humor",
+        "prompt": "{prompt}, evoking (bitter irony), with atmosphere of (sardonic dark humor, absurdist truth, laughter at the tragedy, Kafkaesque absurdity, the cosmic joke, wry detachment from suffering)",
+        "negative_prompt": "sincere, earnest, straightforward, innocent, naive, serious"
+    },
+    {
+        "name": "Innocent Wonder — Child's Eyes",
+        "prompt": "{prompt}, evoking (innocent wonder), with atmosphere of (childlike discovery, first-time seeing the world, wide-eyed amazement, pure uncorrupted curiosity, fairy tale magic, everything is possible)",
+        "negative_prompt": "cynical, jaded, adult, world-weary, sophisticated, dark, complex"
+    },
+    {
+        "name": "Smoldering Danger — Contained Threat",
+        "prompt": "{prompt}, evoking (smoldering danger), with atmosphere of (controlled menace, coiled serpent tension, slow burn threat, femme fatale or homme fatal energy, silk over steel, beautiful and lethal)",
+        "negative_prompt": "safe, innocent, harmless, gentle, open, transparent, defenseless"
+    },
+    {
+        "name": "Autumnal Decay — Beautiful Ending",
+        "prompt": "{prompt}, evoking (autumnal decay), with atmosphere of (beautiful decomposition, golden falling leaves, the elegance of things ending, harvest moon amber, memento mori grace, gorgeous decline)",
+        "negative_prompt": "spring, renewal, fresh, new, beginning, blooming, green, growth"
+    },
+    {
+        "name": "Industrial Grit — Machine Age",
+        "prompt": "{prompt}, evoking (industrial grit), with atmosphere of (factory floor rawness, steel and concrete brutalism, machine age power, sparks and oil, blue-collar authenticity, urban industrial landscape)",
+        "negative_prompt": "pastoral, natural, organic, gentle, soft, rural, floral, delicate"
+    },
+    {
+        "name": "Tropical Paradise — Island Bliss",
+        "prompt": "{prompt}, evoking (tropical paradise), with atmosphere of (warm turquoise waters, coconut palm shade, golden sand warmth, island breeze tranquility, paradise found, eternal summer vacation)",
+        "negative_prompt": "cold, winter, urban, industrial, grey, harsh, stressful, cramped"
+    },
+    {
+        "name": "Midnight Jazz — Smoky Sophistication",
+        "prompt": "{prompt}, evoking (midnight jazz), with atmosphere of (smoky underground club, saxophone melancholy, bourbon warmth, dim spotlight intimacy, 1950s beatnik coolness, rhythmic shadow play)",
+        "negative_prompt": "bright, loud, pop, mainstream, daylight, cheerful, electronic"
+    },
+    {
+        "name": "Gothic Romance — Dark Beauty",
+        "prompt": "{prompt}, evoking (gothic romance), with atmosphere of (Victorian dark elegance, haunted manor beauty, candlelit shadows, velvet and thorn, Brontë-esque passion, beautiful darkness and forbidden love)",
+        "negative_prompt": "modern, bright, minimalist, cheerful, simple, contemporary, clean"
+    },
+    {
+        "name": "Post-Apocalyptic Hope — Light After Ruin",
+        "prompt": "{prompt}, evoking (post-apocalyptic hope), with atmosphere of (flowers growing through concrete, dawn after the longest night, survival's quiet triumph, beauty reclaiming ruin, the world rebuilding itself)",
+        "negative_prompt": "pristine, untouched, modern civilization, pre-disaster, clean city"
+    },
+    {
+        "name": "Cerebral Precision — Calculated Intelligence",
+        "prompt": "{prompt}, evoking (cerebral precision), with atmosphere of (cold intellectual clarity, calculated geometric order, chess-master intelligence, Kubrickian clinical perfection, the beauty of pure logic and control)",
+        "negative_prompt": "emotional, chaotic, warm, organic, rough, imprecise, intuitive"
     }
 ]

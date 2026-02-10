@@ -1,0 +1,107 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Anamorphic 2x — Cinematic Widescreen Flares",
+        "prompt": "{prompt}, shot with (anamorphic 2x squeeze lens), featuring (horizontal lens flares, oval bokeh, widescreen 2.39:1 perspective, cinematic edge distortion, blue or amber anamorphic streaks, Hollywood blockbuster visual signature)",
+        "negative_prompt": "spherical lens, round bokeh, no flares, standard aspect ratio, clinical"
+    },
+    {
+        "name": "Helios 44-2 — Soviet Swirly Bokeh",
+        "prompt": "{prompt}, shot with (Helios 44-2 58mm f/2 vintage lens), featuring (legendary swirly bokeh background, warm Soviet-era rendering, character-rich optical imperfections, dreamy background rotation, affordable vintage magic)",
+        "negative_prompt": "clinical sharpness, modern lens perfection, clean bokeh, sterile"
+    },
+    {
+        "name": "Petzval Lens — 19th Century Spiral",
+        "prompt": "{prompt}, shot with (Petzval portrait lens design), featuring (distinctive spiral background blur, sharp central subject with dramatic vignetting, swirling optical field curvature, Victorian-era optical character, artistic bokeh spirals)",
+        "negative_prompt": "flat field, even sharpness, modern correction, clinical, uniform"
+    },
+    {
+        "name": "Tilt-Shift — Miniature World",
+        "prompt": "{prompt}, shot with (tilt-shift lens), featuring (selective plane of focus creating miniature diorama effect, architectural perspective correction, toy-world aesthetic, Scheimpflug principle, technical camera movement on DSLR)",
+        "negative_prompt": "normal perspective, full depth of field, standard optics, no tilt"
+    },
+    {
+        "name": "Fisheye 8mm — Extreme Barrel",
+        "prompt": "{prompt}, shot with (8mm fisheye lens), featuring (extreme 180° barrel distortion, circular or full-frame fisheye projection, ultra-wide immersive perspective, dramatic spatial warping, skateboard and action aesthetic)",
+        "negative_prompt": "rectilinear, normal perspective, telephoto, flat, undistorted"
+    },
+    {
+        "name": "Zeiss Otus — Clinical German Precision",
+        "prompt": "{prompt}, shot with (Zeiss Otus lens), featuring (legendary corner-to-corner sharpness, supreme optical correction, clinical German precision engineering, smooth micro-contrast transitions, ultimate resolving power, reference-grade optics)",
+        "negative_prompt": "soft focus, optical character, vintage imperfections, lo-fi"
+    },
+    {
+        "name": "Cooke S4/i — Portrait Warmth & Speed Look",
+        "prompt": "{prompt}, shot with (Cooke S4/i cinema lens), featuring (legendary Cooke Look warm portrait rendering, gentle skin flattering, buttery smooth bokeh, warm color transmission, the most requested portrait cinema lens, British craftsmanship)",
+        "negative_prompt": "cold clinical, harsh, over-corrected, digital sharpness, sterile"
+    },
+    {
+        "name": "Leica Summilux 50mm f/1.4 — Drawing Authority",
+        "prompt": "{prompt}, shot with (Leica Summilux 50mm f/1.4 ASPH), featuring (Leica's signature 3D pop, legendary subject separation, beautiful Leica bokeh character, German optical authority, subtle warm rendering, decisive moment precision)",
+        "negative_prompt": "flat rendering, no subject separation, clinical digital, generic"
+    },
+    {
+        "name": "Canon FD 50mm f/1.2 L — Vintage Canon Dream",
+        "prompt": "{prompt}, shot with (Canon FD 50mm f/1.2 L vintage lens), featuring (dreamy wide-open softness with center sharpness, vintage Canon warm rendering, beautiful flare character, 1970s optical design charm, stopped-down sharpness warrior)",
+        "negative_prompt": "modern clinical, over-corrected, cold, digital perfection"
+    },
+    {
+        "name": "Nikon 105mm f/1.4 — Bokeh Master",
+        "prompt": "{prompt}, shot with (Nikon 105mm f/1.4E ED), featuring (extreme 105mm f/1.4 background separation, wafer-thin depth of field at any distance, creamy enormous bokeh circles, portrait compression with dreamlike blur, Nikon's bokeh masterpiece)",
+        "negative_prompt": "deep depth of field, wide angle, everything sharp, small bokeh"
+    },
+    {
+        "name": "Meyer-Optik Trioplan 100mm — Bubble Bokeh",
+        "prompt": "{prompt}, shot with (Meyer-Optik Trioplan 100mm f/2.8), featuring (legendary soap bubble bokeh effect, bright-ringed circular background highlights, vintage East German optical character, unique unmistakeable rendering, botanical photographer's dream)",
+        "negative_prompt": "smooth creamy bokeh, sharp background, modern rendering, clinical"
+    },
+    {
+        "name": "Super Takumar 50mm f/1.4 — Radioactive Warmth",
+        "prompt": "{prompt}, shot with (Super Takumar 50mm f/1.4 vintage lens), featuring (thorium-element warm golden rendering, classic vintage bokeh, beautiful flare characteristics, 1960s Japanese optical heritage, warm amber color cast, analog character)",
+        "negative_prompt": "cold tones, modern precise, clinical digital, neutral color"
+    },
+    {
+        "name": "Macro 1:1 — Life-Size Magnification",
+        "prompt": "{prompt}, shot with (true 1:1 macro lens), featuring (life-size magnification revealing invisible details, razor-thin depth of field at macro distances, scientific precision, nature's hidden architecture, insect and flower world revelation)",
+        "negative_prompt": "wide angle, landscape, normal perspective, deep focus, far distance"
+    },
+    {
+        "name": "400mm f/2.8 Telephoto — Compression & Isolation",
+        "prompt": "{prompt}, shot with (400mm f/2.8 super-telephoto lens), featuring (extreme background compression, subject isolation from surroundings, compressed perspective stacking, wildlife and sports distance, dramatic bokeh blur, atmospheric haze rendering)",
+        "negative_prompt": "wide angle, everything in focus, close proximity, normal perspective"
+    },
+    {
+        "name": "14mm Ultra-Wide — Architectural Immersion",
+        "prompt": "{prompt}, shot with (14mm ultra-wide-angle rectilinear lens), featuring (dramatic wide perspective, exaggerated foreground emphasis, soaring architectural interiors, leading line enhancement, environmental context, immersive spatial depth)",
+        "negative_prompt": "telephoto compression, tight crop, normal perspective, flat"
+    },
+    {
+        "name": "Lensbaby — Creative Selective Focus",
+        "prompt": "{prompt}, shot with (Lensbaby selective focus lens), featuring (sweet spot of sharpness surrounded by progressive blur, dreamy ethereal edge softness, creative optic swappable character, artistically blurred periphery, intentional imperfection)",
+        "negative_prompt": "uniform sharpness, clinical precision, edge-to-edge detail, conventional"
+    },
+    {
+        "name": "Panavision C-Series Anamorphic — Hollywood Legacy",
+        "prompt": "{prompt}, shot with (Panavision C-Series anamorphic lenses), featuring (classic Hollywood anamorphic character, warm organic flares, 2.39:1 widescreen format, gentle aberrations and breathing, the lenses that shaped cinema history, Panavision exclusivity)",
+        "negative_prompt": "spherical, standard aspect, modern clinical, over-corrected, digital"
+    },
+    {
+        "name": "Infrared Modified — Invisible Spectrum",
+        "prompt": "{prompt}, captured with (infrared-modified lens/sensor), featuring (foliage rendered ghostly white, dark dramatic skies, Wood effect, otherworldly tonal inversion, invisible spectrum made visible, surreal dreamlike alternate reality)",
+        "negative_prompt": "normal colors, green trees, blue sky, standard rendering, realistic"
+    },
+    {
+        "name": "Pinhole — Camera Obscura Primitive",
+        "prompt": "{prompt}, captured through (pinhole aperture), featuring (infinite depth of field, soft dreamy all-over focus, light-leak possibility, long exposure motion, primitive photographic essence, camera obscura poetry, no glass required)",
+        "negative_prompt": "sharp modern lens, selective focus, bokeh, high-tech, crisp"
+    },
+    {
+        "name": "Vintage Projection Lens — Dreamy Cinema",
+        "prompt": "{prompt}, shot with (adapted vintage cinema projection lens), featuring (ultra-fast aperture f/1.0 or faster, extremely shallow focus plane, swirling vintage aberrations, lo-fi cinema projection character, dreamlike quality, experimental adaptation)",
+        "negative_prompt": "modern sharp, corrected, clinical, conventional, standard lens"
+    }
+]

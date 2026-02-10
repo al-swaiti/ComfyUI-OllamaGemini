@@ -5,88 +5,223 @@
         "negative_prompt": ""
     },
     {
-        "name": "Ambient (Highlighting ambient lighting)",
-        "prompt": "ambient {prompt}",
-        "negative_prompt": "spotlight"
+        "name": "Chiaroscuro — Caravaggio's Legacy",
+        "prompt": "{prompt}, dramatic chiaroscuro lighting, extreme contrast between deep shadows and brilliant highlights, Caravaggio-inspired tenebrism, rich dark tones with selective illumination, painterly volumetric quality",
+        "negative_prompt": "flat lighting, even illumination, low contrast, washed out, overexposed"
     },
     {
-        "name": "Artificial (Highlighting artificial lighting)",
-        "prompt": "artificial {prompt}",
-        "negative_prompt": "natural"
+        "name": "Rembrandt Lighting — Classic Portrait Triangle",
+        "prompt": "{prompt}, Rembrandt lighting setup, distinctive triangle of light on the shadowed cheek, 45-degree key light at 30-degree elevation, warm golden tones, sculptural shadows defining facial contours, master portrait illumination",
+        "negative_prompt": "flat lighting, even illumination, harsh shadows, multiple light sources, cold tones"
     },
     {
-        "name": "Backlit (Highlighting backlit lighting)",
-        "prompt": "backlit {prompt}",
-        "negative_prompt": "frontlit"
+        "name": "Butterfly / Paramount — Hollywood Glamour",
+        "prompt": "{prompt}, butterfly lighting (Paramount lighting), overhead key light creating symmetrical shadow beneath the nose, glamorous Hollywood golden-age aesthetic, elegant cheekbone highlights, beauty dish quality",
+        "negative_prompt": "side lighting, harsh shadows, unflattering angles, dark mood, gritty"
     },
     {
-        "name": "Diffused (Highlighting diffused lighting)",
-        "prompt": "diffused {prompt}",
-        "negative_prompt": "direct"
+        "name": "Split Lighting — Half Shadow Mystery",
+        "prompt": "{prompt}, split lighting technique, face divided precisely into light and shadow halves, dramatic noir aesthetic, mysterious and intense, strong directional single source at 90 degrees",
+        "negative_prompt": "flat lighting, even illumination, soft shadows, bright, cheerful"
     },
     {
-        "name": "Flash (Highlighting flash lighting)",
-        "prompt": "flash {prompt}",
-        "negative_prompt": "natural"
+        "name": "Loop Lighting — Natural Portrait",
+        "prompt": "{prompt}, loop lighting setup, small shadow loop beside the nose, 30-45 degree key light position, natural and flattering portrait illumination, soft transition between light and shadow",
+        "negative_prompt": "harsh shadows, extreme contrast, flat lighting, overhead lighting"
     },
     {
-        "name": "Harsh (Highlighting harsh lighting)",
-        "prompt": "harsh {prompt}",
-        "negative_prompt": "soft"
+        "name": "Broad Lighting — Dimensional Width",
+        "prompt": "{prompt}, broad lighting technique, illuminating the side of the face turned toward camera, widening appearance, three-dimensional depth, soft fill on shadow side, commercial portrait quality",
+        "negative_prompt": "narrow lighting, harsh shadows, flat lighting, silhouette"
     },
     {
-        "name": "Natural (Highlighting natural lighting)",
-        "prompt": "natural {prompt}",
-        "negative_prompt": "artificial"
+        "name": "Short / Narrow Lighting — Sculpted Drama",
+        "prompt": "{prompt}, short lighting (narrow lighting), illuminating the far side of face from camera, sculpted dramatic shadows, slimming and dimensional, moody atmospheric quality",
+        "negative_prompt": "broad lighting, flat illumination, even exposure, bright and cheerful"
     },
     {
-        "name": "SideLit (Highlighting side lighting)",
-        "prompt": "sidelit {prompt}",
-        "negative_prompt": "backlit"
+        "name": "Clamshell Lighting — Beauty Perfection",
+        "prompt": "{prompt}, clamshell lighting setup, key light above and fill below creating wrap-around beauty illumination, minimal shadows, flawless skin rendering, high-end fashion and beauty photography quality",
+        "negative_prompt": "harsh shadows, dramatic contrast, single light source, moody, dark"
     },
     {
-        "name": "Soft (Highlighting soft lighting)",
-        "prompt": "soft {prompt}",
-        "negative_prompt": "harsh"
+        "name": "Rim Light / Edge Light — Ethereal Separation",
+        "prompt": "{prompt}, strong rim light (edge light) creating luminous outline around subject, backlit separation from background, ethereal glowing edges, hair light quality, cinematic depth",
+        "negative_prompt": "front-lit, flat lighting, no separation, ambient only, muddy"
     },
     {
-        "name": "Spotlight (Highlighting spotlight lighting)",
-        "prompt": "spotlight {prompt}",
-        "negative_prompt": "ambient"
+        "name": "Three-Point Lighting — Professional Standard",
+        "prompt": "{prompt}, three-point lighting system, balanced key light with fill light and back light, professional broadcast/cinema quality, dimensional yet controlled, clean separation from background",
+        "negative_prompt": "single light source, flat lighting, uncontrolled ambient, harsh"
     },
     {
-        "name": "LowKey (Highlighting low-key lighting)",
-        "prompt": "lowkey {prompt}",
-        "negative_prompt": "highkey"
+        "name": "High-Key — Bright Commercial Radiance",
+        "prompt": "{prompt}, high-key lighting setup, bright even illumination with minimal shadows, clean white aesthetic, optimistic and airy mood, commercial and fashion quality, low contrast ratio",
+        "negative_prompt": "dark, moody, shadowy, high contrast, dramatic, noir, low-key"
     },
     {
-        "name": "HighKey (Highlighting high-key lighting)",
-        "prompt": "highkey {prompt}",
-        "negative_prompt": "lowkey"
+        "name": "Low-Key — Noir Darkness",
+        "prompt": "{prompt}, low-key lighting, predominantly dark tones with selective highlights, film noir aesthetic, mysterious and dramatic, high contrast ratio, deep blacks, single motivated light source",
+        "negative_prompt": "bright, cheerful, even illumination, high-key, flat, washed out"
     },
     {
-        "name": "GoldenHour (Highlighting golden hour lighting)",
-        "prompt": "goldenhour {prompt}",
-        "negative_prompt": "harsh"
+        "name": "Golden Hour — Magic Hour Warmth",
+        "prompt": "{prompt}, golden hour lighting, warm amber-orange sunlight at low angle, long soft shadows, magical warm glow, skin rendered in honeyed tones, the most coveted natural light in photography",
+        "negative_prompt": "harsh midday sun, cool tones, blue cast, artificial lighting, flat"
     },
     {
-        "name": "BlueHour (Highlighting blue hour lighting)",
-        "prompt": "bluehour {prompt}",
-        "negative_prompt": "harsh"
+        "name": "Blue Hour — Twilight Melancholy",
+        "prompt": "{prompt}, blue hour lighting, deep cobalt and indigo ambient light of twilight, serene and melancholic atmosphere, residual warm horizon glow, contemplative mood, ethereal quality",
+        "negative_prompt": "warm tones, bright sunlight, harsh lighting, golden hour, midday"
     },
     {
-        "name": "Dramatic (Highlighting dramatic lighting)",
-        "prompt": "dramatic {prompt}",
-        "negative_prompt": "flat"
+        "name": "Volumetric / God Rays — Divine Shafts of Light",
+        "prompt": "{prompt}, volumetric lighting with visible god rays, atmospheric light shafts piercing through haze or dust particles, divine ethereal beams, dramatic depth, cathedral-quality illumination",
+        "negative_prompt": "clear atmosphere, flat lighting, no atmosphere, even illumination"
     },
     {
-        "name": "Flat (Highlighting flat lighting)",
-        "prompt": "flat {prompt}",
-        "negative_prompt": "dramatic"
+        "name": "Neon Noir — Cyberpunk Chromatic",
+        "prompt": "{prompt}, neon noir lighting, vivid neon colors (magenta, cyan, electric blue) reflecting off wet surfaces, cyberpunk atmosphere, chromatic urban night, moody high-contrast pools of color",
+        "negative_prompt": "natural lighting, daylight, warm tones, pastoral, soft, rustic"
     },
     {
-        "name": "Silhouette (Highlighting silhouette lighting)",
-        "prompt": "silhouette {prompt}",
-        "negative_prompt": "frontlit"
+        "name": "Practical Lighting — In-Scene Motivation",
+        "prompt": "{prompt}, practical lighting from visible in-scene sources (lamps, candles, screens, neon signs), naturally motivated illumination, cinematic authenticity, warm pools of light with natural falloff",
+        "negative_prompt": "studio lighting, obvious artificial setup, evenly lit, no visible source"
+    },
+    {
+        "name": "Natural Window Light — Vermeer's Gift",
+        "prompt": "{prompt}, natural window light illumination (Vermeer-inspired), soft directional daylight through window, beautiful gradual shadow falloff, painterly quality, the painter's favorite light source",
+        "negative_prompt": "artificial lighting, flash, harsh shadows, outdoor, even illumination"
+    },
+    {
+        "name": "Hard Light — Razor Shadow Definition",
+        "prompt": "{prompt}, hard directional light creating sharp well-defined shadows, strong contrast and texture emphasis, dramatic edge definition, small intense light source quality, confident and bold",
+        "negative_prompt": "soft light, diffused, gentle shadows, low contrast, even illumination"
+    },
+    {
+        "name": "Soft Diffused Light — Silk & Cloud",
+        "prompt": "{prompt}, beautifully soft diffused lighting, gentle wrap-around illumination, minimal harsh shadows, silk-like quality from large soft source, overcast or diffused light character, flattering and ethereal",
+        "negative_prompt": "hard light, harsh shadows, high contrast, sharp edges, specular"
+    },
+    {
+        "name": "Backlight — Halo & Silhouette",
+        "prompt": "{prompt}, dramatic backlighting creating luminous halo around subject, lens flare possibility, translucent edge glow, potential for silhouette or semi-silhouette, atmospheric depth",
+        "negative_prompt": "front-lit, flat lighting, no depth, even illumination, harsh flash"
+    },
+    {
+        "name": "Top Light / Overhead — Zenith Drama",
+        "prompt": "{prompt}, overhead top lighting casting dramatic downward shadows, eye socket shadows for intensity, theatrical and dramatic mood, interrogation or divine-light quality",
+        "negative_prompt": "bottom-up lighting, flat even light, side light, soft fill"
+    },
+    {
+        "name": "Under Lighting — Eerie Upcast",
+        "prompt": "{prompt}, dramatic under-lighting (uplighting) casting inverted shadows, eerie and unsettling quality, horror or supernatural atmosphere, face lit from below defying natural shadow expectations",
+        "negative_prompt": "natural overhead lighting, soft, flattering, beauty lighting"
+    },
+    {
+        "name": "Cross Lighting — Dual Dimension",
+        "prompt": "{prompt}, cross-lighting technique with two opposing light sources, textural depth revelation, dimensional complexity, each light creating shadows filled by the other, sculptural quality",
+        "negative_prompt": "single light source, flat lighting, even illumination, shadowless"
+    },
+    {
+        "name": "Ambient Light Only — Available Light Purity",
+        "prompt": "{prompt}, ambient available light only, natural environmental illumination, authentic atmosphere, documentary realism, no artificial modification, pure environmental character",
+        "negative_prompt": "studio lighting, flash, artificial, controlled setup, modified"
+    },
+    {
+        "name": "Candlelight — Intimate Flame",
+        "prompt": "{prompt}, warm candlelight illumination, flickering warm amber-orange glow, intimate atmosphere, Renaissance painterly quality, deep shadows beyond the flame's reach, romantic and contemplative",
+        "negative_prompt": "bright, cool tones, modern lighting, harsh, even illumination, daylight"
+    },
+    {
+        "name": "Moonlight — Silver Nocturne",
+        "prompt": "{prompt}, moonlight illumination, cool silvery-blue tones, soft nocturnal shadows, mysterious nighttime atmosphere, gentle and ethereal natural night light, dreamlike quality",
+        "negative_prompt": "warm tones, daylight, harsh lighting, golden hour, bright"
+    },
+    {
+        "name": "Stage / Theatrical Lighting — Dramatic Performance",
+        "prompt": "{prompt}, theatrical stage lighting with colored gels and spotlights, dramatic performance illumination, pool of light against darkness, theatrical intensity, mixed color temperatures",
+        "negative_prompt": "natural lighting, even illumination, documentary style, subtle"
+    },
+    {
+        "name": "Studio Strobe — Controlled Perfection",
+        "prompt": "{prompt}, professional studio strobe lighting, perfectly controlled exposure, crisp highlights, precise shadow placement, commercial photography quality, modified through softboxes and reflectors",
+        "negative_prompt": "natural light only, uncontrolled, ambient, available light, casual"
+    },
+    {
+        "name": "Ring Light — Even Beauty Glow",
+        "prompt": "{prompt}, ring light illumination, characteristic circular catchlight in eyes, even frontal illumination, beauty and makeup photography quality, minimal shadows, glamorous",
+        "negative_prompt": "harsh directional light, deep shadows, dramatic contrast, side light"
+    },
+    {
+        "name": "Bounce Light — Indirect Softness",
+        "prompt": "{prompt}, bounced indirect lighting, light reflected off surfaces for ultra-soft wrap, gentle fill, natural and flattering, eliminated harsh shadows, clean professional quality",
+        "negative_prompt": "direct flash, harsh specular, hard shadows, high contrast"
+    },
+    {
+        "name": "Silhouette — Pure Form & Shape",
+        "prompt": "{prompt}, pure silhouette lighting, subject as dark shape against bright background, form and outline emphasized, dramatic contrast, storytelling through shape alone, graphic quality",
+        "negative_prompt": "front-lit, detailed features visible, even illumination, flat"
+    },
+    {
+        "name": "Dappled Light — Forest Tapestry",
+        "prompt": "{prompt}, dappled light filtering through foliage or lattice, organic shadow patterns on subject, natural woodland or arbor quality, playful light-shadow dance, impressionist feeling",
+        "negative_prompt": "even illumination, studio controlled, harsh, uniform, artificial"
+    },
+    {
+        "name": "Contre-jour — Into the Light",
+        "prompt": "{prompt}, contre-jour (shooting into the light), luminous atmospheric backlight, lens flare and light wrap, translucent qualities revealed, artistic and atmospheric, dreamy haze",
+        "negative_prompt": "front-lit, flat, controlled studio, no flare, crisp clean"
+    },
+    {
+        "name": "Fill Flash — Shadow Rescue",
+        "prompt": "{prompt}, fill flash technique balancing ambient and artificial light, shadow detail preserved in bright conditions, balanced daylight-flash ratio, professional outdoor portrait quality",
+        "negative_prompt": "available light only, deep unrecoverable shadows, harsh flash, flat"
+    },
+    {
+        "name": "Bi-Color Temperature — Warm/Cool Tension",
+        "prompt": "{prompt}, mixed color temperature lighting with warm and cool sources creating chromatic tension, cinematic bi-color aesthetic, orange vs blue atmospheric interplay, emotionally complex",
+        "negative_prompt": "single color temperature, neutral white balance, flat color, monochromatic light"
+    },
+    {
+        "name": "Motivated Lighting — Story-Driven Source",
+        "prompt": "{prompt}, motivated lighting from logical story source (window, lamp, fire, screen), cinematic naturalism, the light tells the story, Roger Deakins-inspired authenticity, purposeful and narrative",
+        "negative_prompt": "unmotivated studio light, visible light stands, obvious artificial setup"
+    },
+    {
+        "name": "Fresnel Spotlight — Focused Theater Beam",
+        "prompt": "{prompt}, focused Fresnel spotlight beam, defined pool of light with soft edges, theatrical focus and drama, single subject isolation, classic cinema lighting instrument quality",
+        "negative_prompt": "diffused ambient, wide even illumination, multiple sources, flat"
+    },
+    {
+        "name": "LED Panel — Modern Continuous",
+        "prompt": "{prompt}, modern LED panel continuous lighting, clean even illumination, color-accurate rendering, contemporary videography and photography quality, adjustable color temperature",
+        "negative_prompt": "flickering, warm incandescent, vintage, strobe, flash"
+    },
+    {
+        "name": "Fluorescent / Industrial — Urban Realism",
+        "prompt": "{prompt}, overhead fluorescent industrial lighting, slightly green-tinged white light, sterile institutional atmosphere, noir realism, harsh overhead urban quality, unflattering but authentic",
+        "negative_prompt": "warm, flattering, golden, natural, beautiful, soft"
+    },
+    {
+        "name": "Fire Light — Primal Warmth",
+        "prompt": "{prompt}, fire light illumination from bonfire or hearth, deep warm orange-red glow, flickering dynamic shadows, primal and ancient atmosphere, cave-painting ancestral quality",
+        "negative_prompt": "cool tones, modern lighting, steady, even, blue, artificial"
+    },
+    {
+        "name": "Overcast Flat Light — Even Diffusion",
+        "prompt": "{prompt}, overcast sky creating giant natural softbox, even diffused illumination, no harsh shadows, muted tones, contemplative and quiet mood, flattering for portraits and detail",
+        "negative_prompt": "harsh sunlight, deep shadows, high contrast, dramatic, specular"
+    },
+    {
+        "name": "Harsh Midday Sun — Brutal Clarity",
+        "prompt": "{prompt}, harsh midday sun at zenith, extreme contrast, deep dark shadows, blown highlights, raw and unflattering brutal clarity, scorching intensity, brutal honesty of noon",
+        "negative_prompt": "soft light, golden hour, diffused, gentle, flattering, low contrast"
+    },
+    {
+        "name": "Stained Glass Light — Sacred Chromatic",
+        "prompt": "{prompt}, colored light filtered through stained glass windows, sacred chromatic illumination, rich jewel-toned light patterns on surfaces, cathedral atmosphere, divine and spiritual",
+        "negative_prompt": "neutral white light, outdoor, secular, modern, artificial"
     }
 ]

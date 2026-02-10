@@ -5,93 +5,173 @@
         "negative_prompt": ""
     },
     {
-        "name": "Canon EOS R5 (Professional photography and videography)",
-        "prompt": "Photograph of {prompt}, captured on a (Canon EOS R5)",
-        "negative_prompt": "inferior capture, lack of stabilization, amateur use"
+        "name": "ARRI ALEXA 35 — Cinema Reference Standard",
+        "prompt": "Photograph of {prompt}, captured on an (ARRI ALEXA 35) with (LogC4 color science, 4.6K Super 35 sensor, natural skin tones, unmatched highlight rolloff, cinema-grade dynamic range, organic filmic texture)",
+        "negative_prompt": "digital harshness, video look, amateur quality, flat colors, consumer camera"
     },
     {
-        "name": "Canon EOS 90D (Ideal for wildlife and sports photography)",
-        "prompt": "Photograph of {prompt}, captured on a (Canon EOS 90D)",
-        "negative_prompt": "slow shooting, inaccurate capture, static subjects"
+        "name": "ARRI ALEXA LF — Large Format Cinema",
+        "prompt": "Photograph of {prompt}, captured on an (ARRI ALEXA LF) with (large format sensor, shallow depth of field at working apertures, immersive cinematic perspective, ARRI color science, natural skin rendition)",
+        "negative_prompt": "small sensor look, excessive noise, amateur video, flat image"
     },
     {
-        "name": "Canon EOS-1D X Mark III (Perfect for sports and wildlife photography)",
-        "prompt": "Photograph of {prompt}, captured on a (Canon EOS-1D X Mark III)",
-        "negative_prompt": "slow speed, inaccuracy"
+        "name": "RED V-RAPTOR [X] 8K — Digital Precision",
+        "prompt": "Photograph of {prompt}, captured on a (RED V-RAPTOR [X] 8K VV) with (global shutter, 8K resolution, extreme detail retention, wide dynamic range, REDCODE RAW flexibility, clinical precision)",
+        "negative_prompt": "low resolution, motion artifacts, rolling shutter, consumer look"
     },
     {
-        "name": "Fujifilm GFX 100 (High-end commercial and studio photography)",
-        "prompt": "Photograph of {prompt}, captured on a (Fujifilm GFX 100)",
-        "negative_prompt": "low resolution, color inconsistency, amateurish quality"
+        "name": "Sony VENICE 2 — Dual ISO Cinema",
+        "prompt": "Photograph of {prompt}, captured on a (Sony VENICE 2) with (full-frame 8.6K sensor, dual base ISO for pristine low-light, natural color science, cinematic latitude, beautiful highlight rolloff)",
+        "negative_prompt": "noisy low-light, limited dynamic range, consumer video aesthetic"
     },
     {
-        "name": "Sony A7R IV (High-resolution landscape and studio work)",
-        "prompt": "Photograph of {prompt}, captured on a (Sony A7R IV), showcasing (extreme detail, rich color depth)",
-        "negative_prompt": "low megapixel count, poor dynamic range, noisy images"
+        "name": "Blackmagic URSA Cine 17K — Resolution Beyond",
+        "prompt": "Photograph of {prompt}, captured on a (Blackmagic URSA Cine 17K) with (extreme resolution, wide dynamic range, Blackmagic color science, Blackmagic RAW, future-proof acquisition)",
+        "negative_prompt": "low detail, limited resolution, consumer camera quality"
     },
     {
-        "name": "Sony A9 II (Ideal for sports and action photography)",
-        "prompt": "Photograph of {prompt}, captured on a (Sony A9 II), displaying (fast continuous shooting, precise autofocus)",
-        "negative_prompt": "slow capture, blurry motion, poor low-light performance"
+        "name": "Canon EOS R5 Mark II — Hybrid Mastery",
+        "prompt": "Photograph of {prompt}, captured on a (Canon EOS R5 Mark II) with (45MP full-frame stacked CMOS, Dual Pixel CMOS AF II, 8K RAW, Canon color science with rich warm tones, professional hybrid capability)",
+        "negative_prompt": "slow autofocus, limited resolution, poor color accuracy"
     },
     {
-        "name": "Nikon D850 (Landscape and studio photography)",
-        "prompt": "Photograph of {prompt}, captured on a (Nikon D850), characterized by (high resolution, wide dynamic range)",
-        "negative_prompt": "low detail, poor color accuracy, compact camera aesthetics"
+        "name": "Sony A7R V — Resolution King",
+        "prompt": "Photograph of {prompt}, captured on a (Sony A7R V) with (61MP full-frame sensor, AI-based autofocus, extraordinary detail, exceptional dynamic range, pixel-level precision)",
+        "negative_prompt": "low megapixel, soft details, poor dynamic range, noisy images"
     },
     {
-        "name": "Nikon Z7 II (Professional mirrorless photography)",
-        "prompt": "Photograph of {prompt}, captured on a (Nikon Z7 II), featuring (high resolution, excellent low-light performance)",
-        "negative_prompt": "bulky design, slow autofocus, limited dynamic range"
+        "name": "Nikon Z9 — Flagship Precision",
+        "prompt": "Photograph of {prompt}, captured on a (Nikon Z9) with (45.7MP stacked CMOS, zero blackout shooting, exceptional EXPEED 7 processing, Nikon color accuracy, professional reliability)",
+        "negative_prompt": "amateur quality, slow processing, limited dynamic range"
     },
     {
-        "name": "DJI Mavic 3 Pro (Professional aerial photography and videography)",
-        "prompt": "Photograph of {prompt}, captured on a (DJI Mavic 3 Pro), showcasing (high-altitude clarity, stable footage)",
-        "negative_prompt": "shaky footage, low-resolution images, ground-level perspective"
+        "name": "Hasselblad X2D 100C — Medium Format Perfection",
+        "prompt": "Photograph of {prompt}, captured on a (Hasselblad X2D 100C) with (100MP medium format CMOS sensor, 16-bit color depth, Hasselblad Natural Colour Solution, extraordinary tonal separation, medium format perspective compression, unmatched detail)",
+        "negative_prompt": "small sensor, limited color depth, consumer quality, harsh tones"
     },
     {
-        "name": "RED DSMC2 with MONSTRO 8K VV (High-end digital cinematography)",
-        "prompt": "Photograph of {prompt}, captured on a (RED DSMC2 with MONSTRO 8K VV), characterized by (cinematic look, extreme detail, wide dynamic range)",
-        "negative_prompt": "low resolution, limited color depth, consumer camera aesthetics"
+        "name": "Fujifilm GFX100 II — Medium Format Cinema",
+        "prompt": "Photograph of {prompt}, captured on a (Fujifilm GFX100 II) with (102MP medium format sensor, Fujifilm color science with film simulation heritage, incredible dynamic range, larger-than-life detail and perspective)",
+        "negative_prompt": "small sensor look, limited dynamic range, flat color"
     },
     {
-        "name": "ARRI ALEXA LF (Feature film production)",
-        "prompt": "Photograph of {prompt}, captured on an (ARRI ALEXA LF), featuring (cinematic quality, natural color science, excellent low-light performance)",
-        "negative_prompt": "amateur video look, limited dynamic range, poor color reproduction"
+        "name": "Phase One IQ4 150MP — Ultimate Resolution",
+        "prompt": "Photograph of {prompt}, captured on a (Phase One IQ4 150MP) with (150-megapixel medium format back-illuminated CMOS, 15+ stops dynamic range, unparalleled resolution, absolute color fidelity, studio perfection)",
+        "negative_prompt": "low detail, limited resolution, consumer camera aesthetics"
     },
     {
-        "name": "Blackmagic URSA Mini Pro 12K (High-resolution digital film production)",
-        "prompt": "Photograph of {prompt}, captured on a (Blackmagic URSA Mini Pro 12K), showcasing (extreme resolution, wide dynamic range, filmic quality)",
-        "negative_prompt": "low detail, limited color depth, consumer video aesthetics"
+        "name": "Leica M11-P — Rangefinder Soul",
+        "prompt": "Photograph of {prompt}, captured on a (Leica M11-P) with (60MP full-frame BSI CMOS, Leica Maestro III processing, legendary Leica color rendering, manual rangefinder character, photographic soul and intention)",
+        "negative_prompt": "autofocus clinical sharpness, automated settings, generic look"
     },
     {
-        "name": "Leica M10-R (Street and documentary photography)",
-        "prompt": "Photograph of {prompt}, captured on a (Leica M10-R), characterized by (classic aesthetics, exceptional sharpness)",
-        "negative_prompt": "modern camera design, automated settings, lack of character"
+        "name": "Leica M6 + Tri-X 400 — Street Legend",
+        "prompt": "Photograph of {prompt}, shot on a (Leica M6 with Kodak Tri-X 400 film), featuring (classic black and white film grain, manual rangefinder precision, decisive moment aesthetic, Henri Cartier-Bresson heritage, authentic analog soul)",
+        "negative_prompt": "digital clarity, smooth gradients, color, automated, sterile"
     },
     {
-        "name": "Phase One XF IQ4 150MP (High-end studio and landscape photography)",
-        "prompt": "Photograph of {prompt}, captured on a (Phase One XF IQ4 150MP), featuring (unparalleled resolution, exceptional color accuracy)",
-        "negative_prompt": "low detail, limited dynamic range, consumer-grade quality"
+        "name": "Contax T2 — Point & Shoot Luxury",
+        "prompt": "Photograph of {prompt}, captured on a (Contax T2) with (Carl Zeiss Sonnar 38mm f/2.8 lens, warm analog rendering, luxurious compact character, 1990s aesthetic, beloved by artists and musicians)",
+        "negative_prompt": "digital sharpness, modern look, clinical, sterile"
     },
     {
-        "name": "Olympus Tough TG-6 (Underwater and adventure photography)",
-        "prompt": "Photograph of {prompt}, captured on an (Olympus Tough TG-6), showcasing (waterproof design, shockproof body)",
-        "negative_prompt": "limited resolution, slow shutter speed"
+        "name": "Mamiya RZ67 Pro II — Medium Format Film",
+        "prompt": "Photograph of {prompt}, shot on a (Mamiya RZ67 Pro II) with (6x7 medium format film, extraordinary negative size, lush tonal range, legendary portrait rendering, beautiful shallow depth of field on medium format)",
+        "negative_prompt": "small format, digital, sharp pixel edges, limited dynamic range"
     },
     {
-        "name": "Panasonic Lumix GH5 (Hybrid photography and videography)",
-        "prompt": "Photograph of {prompt}, captured on a (Panasonic Lumix GH5), featuring (excellent video quality, strong stabilization)",
-        "negative_prompt": "poor autofocus, low image resolution, amateurs"
+        "name": "Pentax 67 — The Gentle Giant",
+        "prompt": "Photograph of {prompt}, shot on a (Pentax 67) with (6x7 medium format film, legendary 105mm f/2.4 rendering, buttery smooth bokeh, warm analog tones, revered portrait and landscape character)",
+        "negative_prompt": "digital sharpness, small sensor, sterile, clinical"
     },
     {
-        "name": "Sony RX100 VII (Compact travel photography)",
-        "prompt": "Photograph of {prompt}, captured on a (Sony RX100 VII), characterized by (small form factor, excellent zoom range)",
-        "negative_prompt": "limited dynamic range, compact camera limitations"
+        "name": "Rolleiflex 2.8F — Twin Lens Classic",
+        "prompt": "Photograph of {prompt}, shot on a (Rolleiflex 2.8F TLR) with (6x6 square format, Zeiss Planar 80mm rendering, waist-level viewfinder perspective, classic medium format character, timeless photographic quality)",
+        "negative_prompt": "rectangular format, digital, modern, auto-everything"
     },
     {
-        "name": "Canon EOS Rebel T8i (Beginner and hobbyist photography)",
-        "prompt": "Photograph of {prompt}, captured on a (Canon EOS Rebel T8i), featuring (intuitive controls, vibrant colors)",
-        "negative_prompt": "professional-level quality, complex setups"
+        "name": "Nikon FM2 + Kodak Portra 400 — Color Film Classic",
+        "prompt": "Photograph of {prompt}, shot on a (Nikon FM2 with Kodak Portra 400 film), featuring (beautiful skin tones, fine grain color film, warm pastel rendering, mechanical camera precision, analog photographic charm)",
+        "negative_prompt": "digital sharpness, oversaturated, harsh contrast, clinical"
+    },
+    {
+        "name": "Canon AE-1 + Fuji Superia — Nostalgic 35mm",
+        "prompt": "Photograph of {prompt}, shot on a (Canon AE-1 with Fuji Superia 400), featuring (warm nostalgic color cast, consumer film grain and character, 1980s photographic aesthetic, authentic vintage feel)",
+        "negative_prompt": "modern digital, clinical sharpness, accurate colors, sterile"
+    },
+    {
+        "name": "Large Format 4x5 — View Camera Grandeur",
+        "prompt": "Photograph of {prompt}, captured on a (large format 4x5 view camera) with (extraordinary resolution from massive negative, tilt-shift perspective control, Ansel Adams zone system quality, supreme detail and tonal range)",
+        "negative_prompt": "small format, digital noise, limited detail, consumer camera"
+    },
+    {
+        "name": "8x10 Large Format — Ultimate Negative",
+        "prompt": "Photograph of {prompt}, captured on an (8x10 large format camera) with (the largest practical negative size, absolute resolution and detail, fine art museum quality, contact print potential, photographic ultimate)",
+        "negative_prompt": "small format, digital, limited resolution, casual snapshot"
+    },
+    {
+        "name": "Polaroid SX-70 — Instant Art",
+        "prompt": "Photograph of {prompt}, shot on a (Polaroid SX-70) with (instant integral film, dreamy soft colors, characteristic Polaroid border, imperfect analog charm, singular unique print, artistic expression)",
+        "negative_prompt": "digital precision, sharp, clinical, reproducible, sterile"
+    },
+    {
+        "name": "Holga 120 — Lo-Fi Dream",
+        "prompt": "Photograph of {prompt}, shot on a (Holga 120) with (plastic lens softness, dramatic vignetting, light leaks, unpredictable medium format character, lo-fi dream aesthetic, happy accidents)",
+        "negative_prompt": "sharp, clinical, precise, controlled, digital perfection"
+    },
+    {
+        "name": "DJI Mavic 3 Pro — Aerial Perspective",
+        "prompt": "Photograph of {prompt}, captured on a (DJI Mavic 3 Pro) with (Hasselblad camera system, 4/3 CMOS sensor, high-altitude clarity, stable aerial perspective, drone cinematography quality)",
+        "negative_prompt": "ground-level, shaky footage, low resolution, consumer drone"
+    },
+    {
+        "name": "GoPro HERO 13 — Action Immersion",
+        "prompt": "Photograph of {prompt}, captured on a (GoPro HERO 13 Black) with (ultra-wide 155° FOV, HyperSmooth stabilization, dynamic action perspective, extreme sport immersion, first-person kinetic energy)",
+        "negative_prompt": "static composition, telephoto, studio setup, controlled environment"
+    },
+    {
+        "name": "iPhone 16 Pro — Computational Photography",
+        "prompt": "Photograph of {prompt}, captured on an (iPhone 16 Pro) with (48MP main sensor, computational photography HDR, Smart HDR 5, cinematic mode depth, Deep Fusion detail, modern smartphone aesthetic)",
+        "negative_prompt": "traditional camera, film grain, manual exposure, vintage"
+    },
+    {
+        "name": "Fujifilm X-T5 — Film Simulation Heritage",
+        "prompt": "Photograph of {prompt}, captured on a (Fujifilm X-T5) with (40MP X-Trans CMOS 5 HR, legendary Fujifilm film simulations, beautiful JPEG colors, retro mechanical controls, APS-C excellence)",
+        "negative_prompt": "flat colors, generic processing, poor color science"
+    },
+    {
+        "name": "Sony A1 — Speed & Resolution Unified",
+        "prompt": "Photograph of {prompt}, captured on a (Sony A1) with (50.1MP stacked CMOS, 30fps continuous shooting, 8K video, real-time tracking AF, professional sports and wildlife capabilities, no-compromise flagship)",
+        "negative_prompt": "slow capture, limited resolution, amateur quality"
+    },
+    {
+        "name": "Panasonic LUMIX S1H — Full-Frame Cinema Hybrid",
+        "prompt": "Photograph of {prompt}, captured on a (Panasonic LUMIX S1H) with (24.2MP full-frame, V-Log/V-Gamut for cinema-grade color, 6K recording, internal anamorphic support, Netflix-approved acquisition)",
+        "negative_prompt": "consumer video quality, limited dynamic range, flat color"
+    },
+    {
+        "name": "Medium Format Digital Back — Technical Perfection",
+        "prompt": "Photograph of {prompt}, captured with a (digital medium format back) on (technical camera system), featuring (extraordinary resolution, architectural perspective correction, tilt-shift movements, absolute technical perfection)",
+        "negative_prompt": "handheld, casual, low resolution, consumer quality"
+    },
+    {
+        "name": "35mm Film — Analog Soul",
+        "prompt": "Photograph of {prompt}, shot on (35mm analog film), featuring (authentic film grain texture, organic color rendering, chemical development character, analog photographic soul, tangible photographic medium)",
+        "negative_prompt": "digital clarity, pixel-perfect, smooth gradients, clinical sharpness"
+    },
+    {
+        "name": "120 Medium Format Film — Negative Grandeur",
+        "prompt": "Photograph of {prompt}, shot on (120 medium format film), featuring (larger negative for superior detail and tonality, beautiful medium format rendering, smooth tonal transitions, gallery-quality analog)",
+        "negative_prompt": "small format grain, digital noise, limited tonal range"
+    },
+    {
+        "name": "Kodachrome 64 — Lost Legend",
+        "prompt": "Photograph of {prompt}, shot on (Kodachrome 64 film), featuring (legendary saturated colors, warm reds and rich blues, archival permanence, K-14 process character, the most iconic film stock ever made)",
+        "negative_prompt": "flat colors, muted tones, modern digital, neutral rendering"
+    },
+    {
+        "name": "CineStill 800T — Tungsten Cinema Film",
+        "prompt": "Photograph of {prompt}, shot on (CineStill 800T film), featuring (tungsten-balanced cinema film stock, red halation glow around highlights, night photography specialist, Kodak Vision3 500T heritage, cinematic color)",
+        "negative_prompt": "daylight-balanced, no halation, digital, clinical"
     }
 ]

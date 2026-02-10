@@ -5,98 +5,108 @@
         "negative_prompt": ""
     },
     {
-        "name": "Architecture Depth of Field (f/11, 24mm focal length)",
-        "prompt": "(f_stop 11.0), (focal_length 35.0) f/11, 24mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Extreme Shallow f/1.2 85mm — Razor-Thin Dream",
+        "prompt": "{prompt}, shot at (f/1.2 aperture, 85mm focal length), with (razor-thin depth of field, extreme subject isolation, luminous creamy bokeh, dream-like background dissolution, single-eye sharpness precision, portrait lens perfection)",
+        "negative_prompt": "deep depth of field, everything sharp, small aperture, wide angle, landscape"
     },
     {
-        "name": "Close-Up Depth of Field (f/4, 60mm focal length)",
-        "prompt": "(f_stop 4.0), (focal_length 60.0) f/4, 60mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Shallow f/1.8 50mm — Classic Portrait Separation",
+        "prompt": "{prompt}, shot at (f/1.8 aperture, 50mm focal length), with (beautiful shallow depth of field, natural subject separation, pleasing circular bokeh, the nifty fifty classic look, Cartier-Bresson's favorite focal length)",
+        "negative_prompt": "deep focus, everything sharp, landscape, wide angle, f/16"
     },
     {
-        "name": "Creative or Abstract Depth of Field (f/2, 50mm focal length)",
-        "prompt": "(f_stop 2.0), (focal_length 50.0) f/2, 50mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Moderate f/4 35mm — Environmental Context",
+        "prompt": "{prompt}, shot at (f/4 aperture, 35mm focal length), with (moderate depth of field, subject sharp with softly blurred context, environmental portrait balance, storytelling background presence, photojournalistic standard)",
+        "negative_prompt": "extreme bokeh, razor shallow, everything blurred, telephoto compression"
     },
     {
-        "name": "Deep Depth of Field (f/11, 18mm focal length)",
-        "prompt": "(f_stop 11.0), (focal_length 18.0) f/11, 18mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Deep f/8 24mm — Sharp Storytelling",
+        "prompt": "{prompt}, shot at (f/8 aperture, 24mm focal length), with (deep depth of field, front-to-back sharpness, environmental context fully visible, wide-angle storytelling perspective, street photography standard)",
+        "negative_prompt": "shallow depth, blurred background, bokeh, subject isolation, telephoto"
     },
     {
-        "name": "Environmental Portraits Depth of Field (f/5.6, 35mm focal length)",
-        "prompt": "(f_stop 5.6), (focal_length 35.0) f/5.6, 35mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Maximum f/16 14mm — Infinite Focus",
+        "prompt": "{prompt}, shot at (f/16 aperture, 14mm focal length), with (maximum depth of field, hyperfocal distance sharpness from foreground to infinity, ultra-wide perspective immersion, landscape master technique, Ansel Adams zone system clarity)",
+        "negative_prompt": "shallow depth, bokeh, blurred, subject isolation, soft background"
     },
     {
-        "name": "Extreme Shallow Depth of Field (f/1.2, 85mm focal length)",
-        "prompt": "(f_stop 1.2), (focal_length 85.0) f/1.2, 85mm focal length {prompt}",
-        "negative_prompt": "(f_stop 22.0), (focal_length 14.0)"
+        "name": "Macro f/8 100mm — Life-Size Revelation",
+        "prompt": "{prompt}, shot at (f/8 aperture, 100mm macro lens), with (1:1 life-size magnification, paper-thin depth of field at macro distances, extreme detail revelation, insect-wing precision, hidden world made visible)",
+        "negative_prompt": "wide angle, landscape, deep focus, normal perspective, distant subject"
     },
     {
-        "name": "Landscape Depth of Field (f/16, 18mm focal length)",
-        "prompt": "(f_stop 16.0), (focal_length 35.0) f/16, 18mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Telephoto f/2.8 200mm — Compressed Isolation",
+        "prompt": "{prompt}, shot at (f/2.8 aperture, 200mm telephoto), with (extreme background compression, powerful subject isolation, large distant bokeh circles, atmospheric perspective haze, wildlife and sport distance mastery)",
+        "negative_prompt": "wide angle, deep focus, environmental context, foreground emphasis"
     },
     {
-        "name": "Limited Depth of Field (f/2.8, macro lens)",
-        "prompt": "(f_stop None), (focal_length None) f/2.8, macro lens {prompt}",
-        "negative_prompt": "(f_stop None), (focal_length None)"
+        "name": "Super Telephoto f/4 400mm — Distance Mastery",
+        "prompt": "{prompt}, shot at (f/4 aperture, 400mm super-telephoto), with (extreme distance compression stacking background layers, atmospheric haze between planes, massive bokeh, wildlife photography reach, subject plucked from environment)",
+        "negative_prompt": "wide angle, close proximity, deep focus, foreground, normal perspective"
     },
     {
-        "name": "Macro Depth of Field (f/8, macro lens)",
-        "prompt": "(f_stop None), (focal_length None) f/8, macro lens {prompt}",
-        "negative_prompt": "(f_stop None), (focal_length None)"
+        "name": "Portrait f/1.4 105mm — Ultimate Bokeh Master",
+        "prompt": "{prompt}, shot at (f/1.4 aperture, 105mm), with (ultimate portrait bokeh, extreme background dissolution into pure color wash, wafer-thin focus plane, creamy gradient from sharp to blur, the most coveted portrait rendering)",
+        "negative_prompt": "deep focus, landscape, wide angle, everything sharp, small aperture"
     },
     {
-        "name": "Moderate Depth of Field (f/5.6, 28mm focal length)",
-        "prompt": "(f_stop 5.6), (focal_length 28.0) f/5.6, 28mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Architecture f/11 24mm — Structural Clarity",
+        "prompt": "{prompt}, shot at (f/11 aperture, 24mm tilt-shift), with (architectural depth of field, structural clarity from base to apex, perspective-corrected verticals, maximum building detail, architectural photography standard)",
+        "negative_prompt": "shallow depth, tilted verticals, soft, bokeh, blurred structure"
     },
     {
-        "name": "Moderate Shallow Depth of Field (f/4, 35mm focal length)",
-        "prompt": "(f_stop 4.0), (focal_length 35.0) f/4, 35mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Environmental Portrait f/5.6 35mm — Context & Subject",
+        "prompt": "{prompt}, shot at (f/5.6 aperture, 35mm), with (balanced environmental portrait depth, subject sharp within readable context, workplace or location storytelling, Annie Leibovitz environmental approach, subject in their world)",
+        "negative_prompt": "extreme bokeh, isolated subject, blurred context, telephoto compression"
     },
     {
-        "name": "Night Photography Depth of Field (f/2.8, 35mm focal length)",
-        "prompt": "(f_stop 2.8), (focal_length 35.0) f/2.8, 35mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Street f/8 28mm — Decisive Moment Depth",
+        "prompt": "{prompt}, shot at (f/8 aperture, 28mm), with (zone-focused street photography depth, everything sharp within decisive moment zone, urban storytelling, Henri Cartier-Bresson technique, pre-focused capture readiness)",
+        "negative_prompt": "shallow depth, blurred surroundings, telephoto, studio, posed"
     },
     {
-        "name": "Panoramic Depth of Field (f/16, wide-angle lens)",
-        "prompt": "(f_stop None), (focal_length None) f/16, wide-angle lens {prompt}",
-        "negative_prompt": "(f_stop None), (focal_length None)"
+        "name": "Creative f/2 50mm — Abstract Separation",
+        "prompt": "{prompt}, shot at (f/2 aperture, 50mm), with (creative shallow depth for abstract emphasis, foreground or background blur as compositional element, selective focus as artistic statement, intentional visual hierarchy through optics)",
+        "negative_prompt": "deep focus, everything sharp, documentary, clinical, f/16"
     },
     {
-        "name": "Slightly Deep Depth of Field (f/8, 24mm focal length)",
-        "prompt": "(f_stop 8.0), (focal_length 24.0) f/8, 24mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Night f/2.8 35mm — Low Light Gathering",
+        "prompt": "{prompt}, shot at (f/2.8 aperture, 35mm), with (wide aperture for low-light gathering, manageable depth of field at moderate distance, nighttime cityscape capability, available darkness shooting, open aperture necessity)",
+        "negative_prompt": "stopped down, deep focus, daylight, flash, small aperture"
     },
     {
-        "name": "Still Life Depth of Field (f/5.6, 50mm focal length)",
-        "prompt": "(f_stop 5.6), (focal_length 50.0) f/5.6, 50mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Still Life f/5.6 50mm — Product Precision",
+        "prompt": "{prompt}, shot at (f/5.6 aperture, 50mm), with (controlled still life depth, product photography precision, front-to-back product sharpness with soft background falloff, tabletop photography standard, commercial clarity)",
+        "negative_prompt": "extreme shallow, blurred product, landscape, wide angle"
     },
     {
-        "name": "Street Photography Depth of Field (f/8, 35mm focal length)",
-        "prompt": "(f_stop 8.0), (focal_length 85.0) f/8, 35mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Landscape Foreground f/11 16mm — Near-Far Sharpness",
+        "prompt": "{prompt}, shot at (f/11 aperture, 16mm ultra-wide), with (hyperfocal technique for near-far sharpness, dramatic foreground rock or flower leading to sharp distant mountains, landscape photography gold standard, vast depth perception)",
+        "negative_prompt": "shallow depth, blurred foreground, telephoto, close-up, portrait"
     },
     {
-        "name": "Subject in Motion Depth of Field (f/4, 24mm focal length)",
-        "prompt": "(f_stop 4.0), (focal_length 24.0) f/4, 24mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Panoramic f/8 Wide — Sweeping Vista",
+        "prompt": "{prompt}, shot at (f/8 aperture, panoramic wide-angle), with (sweeping panoramic depth, edge-to-edge sharpness across ultra-wide field, stitched multi-frame clarity, epic vista capturing, grand landscape immersion)",
+        "negative_prompt": "tight crop, telephoto, shallow depth, portrait, close-up"
     },
     {
-        "name": "Very Deep Depth of Field (f/16, 14mm focal length)",
-        "prompt": "(f_stop 16.0), (focal_length 14.0) f/16, 14mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 85.0)"
+        "name": "Motion Blur f/4 24mm — Kinetic Energy",
+        "prompt": "{prompt}, shot at (f/4 aperture, 24mm, slow shutter), with (intentional motion blur for kinetic energy, sharp static elements against moving blur, panning technique, dynamic movement storytelling, time made visible through blur)",
+        "negative_prompt": "frozen sharp, fast shutter, static, no movement, everything crisp"
     },
     {
-        "name": "Very Shallow Depth of Field (f/1.8, 50mm focal length)",
-        "prompt": "(f_stop 1.8), (focal_length 50.0) f/1.8, 50mm focal length {prompt}",
-        "negative_prompt": "(f_stop 1.2), (focal_length 14.0)"
+        "name": "Deep Space f/22 — Maximum Depth",
+        "prompt": "{prompt}, shot at (f/22 aperture), with (absolute maximum depth of field, everything from inches to infinity in focus, diffraction-limited sharpness, group photograph certainty, nothing escapes focus)",
+        "negative_prompt": "shallow depth, bokeh, subject isolation, blurred, soft background"
+    },
+    {
+        "name": "Bokeh Wall f/1.2 135mm — Light Orb Canvas",
+        "prompt": "{prompt}, shot at (f/1.2 aperture, 135mm), with (city lights transformed into enormous bokeh orbs, background as abstract pointillist canvas of colored circles, extreme telephoto compression creating bokeh wall, decorative light dissolution)",
+        "negative_prompt": "sharp background, deep focus, daytime, no lights, wide angle"
+    },
+    {
+        "name": "Tilt-Shift Miniature — Selective Plane",
+        "prompt": "{prompt}, shot with (tilt-shift lens creating selective focus plane), with (miniature diorama effect on real scenes, Scheimpflug principle diagonal focus, toy-world illusion, architecture rendered as model, surreal scale manipulation)",
+        "negative_prompt": "normal perspective, full depth of field, standard optics, no tilt"
     }
 ]

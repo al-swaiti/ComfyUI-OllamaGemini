@@ -5,233 +5,188 @@
         "negative_prompt": ""
     },
     {
-        "name": "2001: A Space Odyssey",
-        "prompt": "2001: A Space Odyssey (1968) movie likeness",
-        "negative_prompt": ""
+        "name": "2001: A Space Odyssey — Kubrick's Cosmic Precision",
+        "prompt": "{prompt}, in the visual style of 2001: A Space Odyssey (1968), featuring (symmetrical one-point perspective, cold sterile white interiors, vast cosmic scale, Geoffrey Unsworth cinematography, clinical precision, futuristic minimalism, monolithic grandeur)",
+        "negative_prompt": "chaotic framing, warm tones, organic textures, handheld shaky, cluttered"
     },
     {
-        "name": "Amélie",
-        "prompt": "Amélie (2001) movie likeness",
-        "negative_prompt": ""
+        "name": "Blade Runner — Ridley Scott's Neon Dystopia",
+        "prompt": "{prompt}, in the visual style of Blade Runner (1982), featuring (neon-soaked rain, smoky atmospheric haze, retrofuturistic noir, Jordan Cronenweth cinematography, teal and amber palette, Syd Mead production design, dystopian grandeur)",
+        "negative_prompt": "bright daylight, clean environments, pastoral, cheerful, modern minimal"
     },
     {
-        "name": "Blade Runner",
-        "prompt": "Blade Runner (1982) movie likeness",
-        "negative_prompt": ""
+        "name": "The Grand Budapest Hotel — Wes Anderson Palette",
+        "prompt": "{prompt}, in the visual style of The Grand Budapest Hotel (2014), featuring (obsessive symmetrical framing, pastel pink and lilac palette, whimsical miniature aesthetic, Robert Yeoman cinematography, planimetric composition, storybook charm)",
+        "negative_prompt": "asymmetrical, dark moody, gritty realism, handheld, desaturated"
     },
     {
-        "name": "The Grand Budapest Hotel",
-        "prompt": "The Grand Budapest Hotel (2014) movie likeness",
-        "negative_prompt": ""
+        "name": "Mad Max: Fury Road — Kinetic Fire",
+        "prompt": "{prompt}, in the visual style of Mad Max: Fury Road (2015), featuring (desaturated teal-orange grade, explosive kinetic action, John Seale cinematography, practical stunts, desert wasteland intensity, axis-centered framing for motion)",
+        "negative_prompt": "static, calm, pastoral, soft, gentle, indoor, minimal"
     },
     {
-        "name": "The Matrix",
-        "prompt": "The Matrix (1999) movie likeness",
-        "negative_prompt": ""
+        "name": "The Matrix — Bullet Time Reality",
+        "prompt": "{prompt}, in the visual style of The Matrix (1999), featuring (green-tinted color grade, Bill Pope cinematography, bullet-time frozen motion, dark leather and chrome aesthetic, digital rain influence, philosophical cyberpunk)",
+        "negative_prompt": "warm tones, natural colors, outdoor nature, simple, low-tech"
     },
     {
-        "name": "Mad Max: Fury Road",
-        "prompt": "Mad Max: Fury Road (2015) movie likeness",
-        "negative_prompt": ""
+        "name": "Inception — Nolan's Architectural Dreams",
+        "prompt": "{prompt}, in the visual style of Inception (2010), featuring (Wally Pfister cinematography, cool steel-blue tones, architectural impossibility, M.C. Escher-inspired geometry, layered reality, IMAX scale grandeur, Hans Zimmer intensity)",
+        "negative_prompt": "simple flat composition, warm cozy, small scale, documentary style"
     },
     {
-        "name": "Inception",
-        "prompt": "Inception (2010) movie likeness",
-        "negative_prompt": ""
+        "name": "Stalker — Tarkovsky's Sacred Ruins",
+        "prompt": "{prompt}, in the visual style of Stalker (1979), featuring (Tarkovsky's meditative pacing, Alexander Knyazhinsky cinematography, post-industrial decay, sepia to color transitions, water and reflection motifs, spiritual desolation, haunting beauty in ruins)",
+        "negative_prompt": "fast-paced, bright colors, clean modern, commercial, cheerful"
     },
     {
-        "name": "Pulp Fiction",
-        "prompt": "Pulp Fiction (1994) movie likeness",
-        "negative_prompt": ""
+        "name": "Amélie — Jeunet's Golden Whimsy",
+        "prompt": "{prompt}, in the visual style of Amélie (2001), featuring (warm golden-green color palette, Bruno Delbonnel cinematography, whimsical Parisian atmosphere, saturated jewel tones, magical realist aesthetic, charming vintage warmth)",
+        "negative_prompt": "cold tones, desaturated, gritty, harsh, industrial, monochrome"
     },
     {
-        "name": "Sin City",
-        "prompt": "Sin City (2005) movie likeness",
-        "negative_prompt": ""
+        "name": "Dune: Part Two — Villeneuve's Desert Epic",
+        "prompt": "{prompt}, in the visual style of Dune: Part Two (2024), featuring (Greig Fraser cinematography, vast desert landscape scale, infrared black-and-white sequences, golden amber desert tones, monumental architecture, epic cinematic grandeur)",
+        "negative_prompt": "small scale, urban, bright cheerful, compact, intimate"
     },
     {
-        "name": "Scott Pilgrim vs. the World",
-        "prompt": "Scott Pilgrim vs. the World (2010) movie likeness",
-        "negative_prompt": ""
+        "name": "In the Mood for Love — Wong Kar-wai's Neon Longing",
+        "prompt": "{prompt}, in the visual style of In the Mood for Love (2000), featuring (Christopher Doyle cinematography, slow-motion elegance, warm saturated reds and greens, tight corridor framing, neon-lit Hong Kong nights, romantic melancholy and longing)",
+        "negative_prompt": "bright daylight, wide open spaces, cheerful, fast-paced, cold tones"
     },
     {
-        "name": "Eternal Sunshine of the Spotless Mind",
-        "prompt": "Eternal Sunshine of the Spotless Mind (2004) movie likeness",
-        "negative_prompt": ""
+        "name": "The Revenant — Iñárritu's Natural Light Epic",
+        "prompt": "{prompt}, in the visual style of The Revenant (2015), featuring (Emmanuel Lubezki natural light cinematography, sweeping tracking shots, cold blue-grey winter palette, raw survival intensity, wide-angle immersive landscapes)",
+        "negative_prompt": "studio lighting, warm tones, controlled setup, cozy interior, artificial"
     },
     {
-        "name": "Donnie Darko",
-        "prompt": "Donnie Darko (2001) movie likeness",
-        "negative_prompt": ""
+        "name": "Her — Spike Jonze's Warm Futurism",
+        "prompt": "{prompt}, in the visual style of Her (2013), featuring (Hoyte van Hoytema cinematography, warm peach and coral palette, soft diffused lighting, minimalist futuristic interiors, gentle and melancholic atmosphere, tender loneliness)",
+        "negative_prompt": "cold tones, dark moody, gritty, industrial, harsh contrast"
     },
     {
-        "name": "The Fall",
-        "prompt": "The Fall (2006) movie likeness",
-        "negative_prompt": ""
+        "name": "The Neon Demon — Refn's Chrome Decadence",
+        "prompt": "{prompt}, in the visual style of The Neon Demon (2016), featuring (Natasha Braier cinematography, extreme neon saturation, electric reds and blues, fashion industry horror, mirror symmetry, clinical beauty as weapon)",
+        "negative_prompt": "natural tones, warm cozy, documentary realistic, low saturation"
     },
     {
-        "name": "The Cabinet of Dr. Caligari",
-        "prompt": "The Cabinet of Dr. Caligari (1920) movie likeness",
-        "negative_prompt": ""
+        "name": "Pan's Labyrinth — del Toro's Dark Fairy Tale",
+        "prompt": "{prompt}, in the visual style of Pan's Labyrinth (2006), featuring (Guillermo Navarro cinematography, golden amber and deep shadow, dark fairy tale aesthetic, intricate creature design, war-torn fantasy, beautiful grotesque)",
+        "negative_prompt": "bright cheerful, modern clean, simple, minimalist, sunny"
     },
     {
-        "name": "The Shape of Water",
-        "prompt": "The Shape of Water (2017) movie likeness",
-        "negative_prompt": ""
+        "name": "Moonlight — Jenkins' Poetic Intimacy",
+        "prompt": "{prompt}, in the visual style of Moonlight (2016), featuring (James Laxton cinematography, cool oceanic blues and warm amber contrasts, intimate close-up portraits, poetic visual storytelling, dreamlike sequences, emotional vulnerability)",
+        "negative_prompt": "harsh lighting, wide establishing shots, cold clinical, fast-paced action"
     },
     {
-        "name": "A Clockwork Orange",
-        "prompt": "A Clockwork Orange (1971) movie likeness",
-        "negative_prompt": ""
+        "name": "Spirited Away — Miyazaki's Painted World",
+        "prompt": "{prompt}, in the visual style of Spirited Away (2001), featuring (Studio Ghibli hand-painted animation, watercolor sky backgrounds, fantastical creature design, Japanese supernatural aesthetic, vibrant lush colors, Miyazaki's magical worldbuilding)",
+        "negative_prompt": "photorealistic, CGI, dark gritty, monochrome, western animation style"
     },
     {
-        "name": "Brazil",
-        "prompt": "Brazil (1985) movie likeness",
-        "negative_prompt": ""
+        "name": "Eternal Sunshine of the Spotless Mind — Memory Erosion",
+        "prompt": "{prompt}, in the visual style of Eternal Sunshine of the Spotless Mind (2004), featuring (Ellen Kuras cinematography, desaturated winter palette, memory-dissolving transitions, handheld intimacy, fading and decaying visuals, emotional rawness)",
+        "negative_prompt": "crisp sharp, vibrant saturated, perfect composition, studio controlled"
     },
     {
-        "name": "Her",
-        "prompt": "Her (2013) movie likeness",
-        "negative_prompt": ""
+        "name": "The Tree of Life — Malick's Transcendence",
+        "prompt": "{prompt}, in the visual style of The Tree of Life (2011), featuring (Emmanuel Lubezki natural light, magic hour golden warmth, whispered fragmented memories, cosmic creation sequences, transcendent spiritual beauty, Malick's poetic visual language)",
+        "negative_prompt": "artificial lighting, dark moody, urban, tight framing, commercial"
     },
     {
-        "name": "Akira",
-        "prompt": "Akira (1988) movie likeness",
-        "negative_prompt": ""
+        "name": "Sin City — Miller's Graphic Noir",
+        "prompt": "{prompt}, in the visual style of Sin City (2005), featuring (extreme high-contrast black and white, selective color splashes, graphic novel aesthetic, harsh shadows, comic panel composition, noir stylization)",
+        "negative_prompt": "full color, soft lighting, gentle, realistic, low contrast"
     },
     {
-        "name": "The Fountain",
-        "prompt": "The Fountain (2006) movie likeness",
-        "negative_prompt": ""
+        "name": "Interstellar — Nolan's Cosmic Awe",
+        "prompt": "{prompt}, in the visual style of Interstellar (2014), featuring (Hoyte van Hoytema 65mm IMAX cinematography, vast cosmic scale, scientific visualization, warm earthly tones contrasted with cold space, gravitational light bending, tesseract geometry)",
+        "negative_prompt": "small scale, urban, flat, low budget, handheld, casual"
     },
     {
-        "name": "The Neon Demon",
-        "prompt": "The Neon Demon (2016) movie likeness",
-        "negative_prompt": ""
+        "name": "The Godfather — Gordon Willis's Darkness",
+        "prompt": "{prompt}, in the visual style of The Godfather (1972), featuring (Gordon Willis 'Prince of Darkness' cinematography, deep underexposure, warm amber-brown palette, top-lit faces with shadowed eyes, Old World opulence, Italian-American darkness)",
+        "negative_prompt": "bright, even illumination, cold tones, modern, minimal"
     },
     {
-        "name": "Memento",
-        "prompt": "Memento (2000) movie likeness",
-        "negative_prompt": ""
+        "name": "Barbie — Robbie's Hyperreal Pop",
+        "prompt": "{prompt}, in the visual style of Barbie (2023), featuring (Rodrigo Prieto cinematography, hyper-saturated pinks and pastels, candy-colored production design, gleaming plastic perfection, pop culture maximalism, Technicolor dreamworld)",
+        "negative_prompt": "dark moody, gritty, desaturated, realistic, noir, minimal"
     },
     {
-        "name": "Waking Life",
-        "prompt": "Waking Life (2001) movie likeness",
-        "negative_prompt": ""
+        "name": "Oppenheimer — Nolan's Monochrome Weight",
+        "prompt": "{prompt}, in the visual style of Oppenheimer (2023), featuring (Hoyte van Hoytema 65mm/IMAX black-and-white and color, extreme close-ups of faces, scientific intensity, moral weight, shifting between Kodak Ektachrome color and custom B&W IMAX)",
+        "negative_prompt": "wide establishing, bright cheerful, simple composition, low stakes"
     },
     {
-        "name": "Paprika",
-        "prompt": "Paprika (2006) movie likeness",
-        "negative_prompt": ""
+        "name": "Akira — Neo-Tokyo Neon",
+        "prompt": "{prompt}, in the visual style of Akira (1988), featuring (hand-drawn animation, neon-lit Neo-Tokyo at night, light trail motorcycle streaks, cyberpunk urban decay, psychic energy glow, 1988 anime masterwork detail)",
+        "negative_prompt": "CGI, daylight pastoral, simple design, western cartoon style"
     },
     {
-        "name": "The Holy Mountain",
-        "prompt": "The Holy Mountain (1973) movie likeness",
-        "negative_prompt": ""
+        "name": "Ghost in the Shell — Cybernetic Melancholy",
+        "prompt": "{prompt}, in the visual style of Ghost in the Shell (1995), featuring (Mamoru Oshii direction, rain-soaked Hong Kong-inspired cyberpunk city, philosophical contemplation, muted blue-green palette, technological melancholy, anime noir)",
+        "negative_prompt": "bright cheerful, sunny, simple, childlike, warm"
     },
     {
-        "name": "Pan's Labyrinth",
-        "prompt": "Pan's Labyrinth (2006) movie likeness",
-        "negative_prompt": ""
+        "name": "The Fall — Tarsem's Visual Opulence",
+        "prompt": "{prompt}, in the visual style of The Fall (2006), featuring (Colin Watkinson cinematography, filmed in 24 countries, extraordinary real-world locations as sets, vivid saturated colors, surreal visual storytelling, every frame a painting)",
+        "negative_prompt": "studio-bound, limited palette, urban, simple, mundane"
     },
     {
-        "name": "Metropolis",
-        "prompt": "Metropolis (1927) movie likeness",
-        "negative_prompt": ""
+        "name": "Drive — Refn's Neon Noir Elegance",
+        "prompt": "{prompt}, in the visual style of Drive (2011), featuring (Newton Thomas Sigel cinematography, neon pink and electric blue, Los Angeles night noir, slow-burn tension, 1980s synth aesthetic, stylish violence and silence)",
+        "negative_prompt": "bright daylight, warm cozy, fast dialogue, natural tones"
     },
     {
-        "name": "Spirited Away",
-        "prompt": "Spirited Away (2001) movie likeness",
-        "negative_prompt": ""
+        "name": "Everything Everywhere All at Once — Multiverse Maximalism",
+        "prompt": "{prompt}, in the visual style of Everything Everywhere All at Once (2022), featuring (Larkin Seiple cinematography, multiverse visual chaos, rapid reality shifts, eclectic visual styles within one frame, creative practical effects, emotional maximalism)",
+        "negative_prompt": "static, single style, minimal, restrained, conventional"
     },
     {
-        "name": "Ghost in the Shell",
-        "prompt": "Ghost in the Shell (1995) movie likeness",
-        "negative_prompt": ""
+        "name": "Blade Runner 2049 — Villeneuve's Monumental Sequel",
+        "prompt": "{prompt}, in the visual style of Blade Runner 2049 (2017), featuring (Roger Deakins Oscar-winning cinematography, monumental architectural scale, fog and haze atmosphere, orange wasteland, cold blue interiors, clean dystopian beauty)",
+        "negative_prompt": "cluttered, chaotic, bright sunny, small scale, documentary"
     },
     {
-        "name": "Alice in Wonderland",
-        "prompt": "Alice in Wonderland (1951) movie likeness",
-        "negative_prompt": ""
+        "name": "The Dark Knight — Nolan's Urban Realism",
+        "prompt": "{prompt}, in the visual style of The Dark Knight (2008), featuring (Wally Pfister IMAX cinematography, realistic urban noir, practical Chicago locations, cold steel-blue nightscapes, moral grey area visual language, grounded superhero)",
+        "negative_prompt": "fantastical, colorful, bright, campy, studio-bound"
     },
     {
-        "name": "Fight Club",
-        "prompt": "Fight Club (1999) movie likeness",
-        "negative_prompt": ""
+        "name": "Midsommar — Aster's Daylight Horror",
+        "prompt": "{prompt}, in the visual style of Midsommar (2019), featuring (Pawel Pogorzelski cinematography, bright daylight horror, flower-adorned Swedish commune, oversaturated pastoral beauty hiding terror, hallucinatory warping, folk horror sunshine)",
+        "negative_prompt": "dark, nighttime, urban, conventional horror, shadows"
     },
     {
-        "name": "The Seventh Seal",
-        "prompt": "The Seventh Seal (1957) movie likeness",
-        "negative_prompt": ""
+        "name": "Spider-Verse — Animated Comic Revolution",
+        "prompt": "{prompt}, in the visual style of Spider-Man: Into the Spider-Verse (2018), featuring (comic book panel aesthetic, Ben-Day dots, mixed animation styles, chromatic aberration, hand-drawn action lines, revolutionary CG-2D hybrid, smeared frames for motion)",
+        "negative_prompt": "photorealistic, live action, smooth animation, traditional CGI"
     },
     {
-        "name": "The Nightmare Before Christmas",
-        "prompt": "The Nightmare Before Christmas (1993) movie likeness",
-        "negative_prompt": ""
+        "name": "The Lord of the Rings — Jackson's Epic Fantasy",
+        "prompt": "{prompt}, in the visual style of The Lord of the Rings Trilogy (2001-2003), featuring (Andrew Lesnie cinematography, New Zealand landscapes as Middle-earth, epic sweeping helicopter shots, golden Shire warmth vs Mordor darkness, mythic scale)",
+        "negative_prompt": "urban, modern, small scale, minimalist, studio-bound"
     },
     {
-        "name": "Breaking Bad",
-        "prompt": "Breaking Bad (2008-2013) series likeness",
-        "negative_prompt": "No series references"
+        "name": "Parasite — Bong's Architectural Class Divide",
+        "prompt": "{prompt}, in the visual style of Parasite (2019), featuring (Hong Kyung-pyo cinematography, architectural spaces as class metaphor, split-level composition, rain as social equalizer, warm above vs cold below, Korean social realism)",
+        "negative_prompt": "fantasy, sci-fi, bright cheerful throughout, no subtext, simple"
     },
     {
-        "name": "Game of Thrones",
-        "prompt": "Game of Thrones (2011-2019) series likeness",
-        "negative_prompt": "No series references"
+        "name": "The Lighthouse — Eggers' Monochrome Madness",
+        "prompt": "{prompt}, in the visual style of The Lighthouse (2019), featuring (Jarin Blaschke cinematography, 1.19:1 aspect ratio, vintage orthochromatic B&W film, extreme textures, claustrophobic framing, salt-air grain, 19th century maritime horror)",
+        "negative_prompt": "widescreen, color, modern, bright, open spaces, clean"
     },
     {
-        "name": "Big Fish",
-        "prompt": "Big Fish (2003) movie likeness",
-        "negative_prompt": ""
+        "name": "Breaking Bad — Gilligan's Desert Chemistry",
+        "prompt": "{prompt}, in the visual style of Breaking Bad (2008-2013), featuring (Michael Slovis cinematography, New Mexico desert amber, extreme wide-angle POV shots, time-lapse chemistry sequences, moral decay reflected in desaturating palette)",
+        "negative_prompt": "lush green, urban east coast, bright cheerful, conventional framing"
     },
     {
-        "name": "Stranger Things",
-        "prompt": "Stranger Things (2016-present) series likeness",
-        "negative_prompt": "No series references"
-    },
-    {
-        "name": "Friends",
-        "prompt": "Friends (1994-2004) series likeness",
-        "negative_prompt": "No series references"
-    },
-    {
-        "name": "Harry Potter",
-        "prompt": "Harry Potter series (2001-2011) movie likeness",
-        "negative_prompt": ""
-    },
-    {
-        "name": "Star Wars",
-        "prompt": "Star Wars: Episode IV - A New Hope (1977) movie likeness",
-        "negative_prompt": ""
-    },
-    {
-        "name": "The Mandalorian",
-        "prompt": "The Mandalorian (2019-present) series likeness",
-        "negative_prompt": "No series references"
-    },
-    {
-        "name": "The Office",
-        "prompt": "The Office (2005-2013) series likeness",
-        "negative_prompt": "No series references"
-    },
-    {
-        "name": "Sherlock",
-        "prompt": "Sherlock (2010-2017) series likeness",
-        "negative_prompt": "No series references"
-    },
-    {
-        "name": "The Lord of the Rings",
-        "prompt": "The Lord of the Rings Trilogy (2001-2003) movie likeness",
-        "negative_prompt": ""
-    },
-    {
-        "name": "The Godfather",
-        "prompt": "The Godfather (1972) movie likeness",
-        "negative_prompt": ""
-    },
-    {
-        "name": "The Dark Knight",
-        "prompt": "The Dark Knight (2008) movie likeness",
-        "negative_prompt": ""
+        "name": "Stranger Things — Duffer Brothers' 80s Nostalgia",
+        "prompt": "{prompt}, in the visual style of Stranger Things (2016-present), featuring (1980s suburban nostalgia, Spielberg and Carpenter influences, Christmas lights and walkie-talkies, Upside Down red lightning atmosphere, warm golden Americana vs cold blue parallel dimension)",
+        "negative_prompt": "modern technology, urban, bright clean, futuristic, minimal"
     }
 ]

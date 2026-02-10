@@ -1,0 +1,127 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Complementary Contrast — Opposite Tension",
+        "prompt": "{prompt}, with (complementary color scheme), featuring (colors directly opposite on the color wheel creating maximum chromatic tension, vibrant visual energy from contrast, eye-catching dynamic balance, blue-orange or red-green or purple-yellow opposition)",
+        "negative_prompt": "monochrome, muted, low saturation, no color contrast, neutral"
+    },
+    {
+        "name": "Analogous Harmony — Neighboring Serenity",
+        "prompt": "{prompt}, with (analogous color harmony), featuring (colors neighboring on the color wheel creating unified serene palette, gentle gradual transitions, nature-inspired cohesion, harmonious and calming visual flow)",
+        "negative_prompt": "jarring contrast, complementary clash, extreme saturation, chaotic color"
+    },
+    {
+        "name": "Triadic Vibrancy — Three-Point Balance",
+        "prompt": "{prompt}, with (triadic color scheme), featuring (three colors equally spaced on the color wheel, vibrant balanced composition, dynamic yet harmonious, primary triad or secondary triad energy, playful chromatic richness)",
+        "negative_prompt": "monochrome, two-tone, muted, desaturated, single color dominance"
+    },
+    {
+        "name": "Monochromatic Depth — Single Hue Mastery",
+        "prompt": "{prompt}, with (monochromatic color depth), featuring (single hue explored through full range of tints shades and tones, sophisticated tonal variation, elegant minimalist palette, depth through value not hue, refined restraint)",
+        "negative_prompt": "multicolor, rainbow, clashing, complementary, vivid variety"
+    },
+    {
+        "name": "Split-Complementary — Sophisticated Contrast",
+        "prompt": "{prompt}, with (split-complementary color scheme), featuring (a base color plus two colors adjacent to its complement, softer contrast than full complementary, sophisticated chromatic tension, more nuanced visual interest)",
+        "negative_prompt": "monotone, no contrast, single color, flat, neutral grey"
+    },
+    {
+        "name": "Warm Dominance — Fire & Ember",
+        "prompt": "{prompt}, with (warm color dominance), featuring (reds, oranges, yellows, and warm browns dominating the palette, fire and sunset energy, advancing colors creating intimacy, emotional warmth and passion, amber golden atmosphere)",
+        "negative_prompt": "cool blue, cold, ice, winter, clinical, sterile, grey"
+    },
+    {
+        "name": "Cool Dominance — Ice & Ocean",
+        "prompt": "{prompt}, with (cool color dominance), featuring (blues, teals, cool greens, and lavenders dominating the palette, ocean and ice serenity, receding colors creating depth, intellectual calm, moonlit atmosphere)",
+        "negative_prompt": "warm, hot, fiery, red, orange, amber, golden, intense heat"
+    },
+    {
+        "name": "Warm-Cool Tension — Chromatic Dialogue",
+        "prompt": "{prompt}, with (warm-cool chromatic tension), featuring (deliberate contrast between warm and cool color regions, emotional duality expressed through color temperature, cinematic teal-orange influence, psychological push-pull dynamic)",
+        "negative_prompt": "single temperature, uniform color warmth, monochromatic, neutral"
+    },
+    {
+        "name": "Earth Tones — Organic Palette",
+        "prompt": "{prompt}, with (earth tone color palette), featuring (ochres, siennas, umbers, olive greens, terracotta, warm browns, organic natural pigments, grounded and authentic, Andrew Wyeth warmth, the colors of clay and soil and stone)",
+        "negative_prompt": "neon, artificial, synthetic, bright primary, electric, cyber"
+    },
+    {
+        "name": "Jewel Tones — Royal Opulence",
+        "prompt": "{prompt}, with (jewel tone color palette), featuring (deep sapphire blue, emerald green, ruby red, amethyst purple, topaz gold, gemstone-inspired richness, royal opulence, luxurious saturated depth, regal and magnificent)",
+        "negative_prompt": "pastel, muted, washed out, desaturated, light, neutral, plain"
+    },
+    {
+        "name": "Pastel Dreamscape — Soft Chromatic",
+        "prompt": "{prompt}, with (pastel color palette), featuring (soft high-key tinted colors, gentle lavender rose mint cream peach, dreamy ethereal quality, cotton candy softness, Wes Anderson influence, delicate and whimsical)",
+        "negative_prompt": "dark, saturated, bold, harsh, high contrast, deep tones, moody"
+    },
+    {
+        "name": "Neon Futurism — Electric Chromatic",
+        "prompt": "{prompt}, with (neon futuristic color palette), featuring (electric magenta, cyan, bright green, UV violet, hot pink neon glow, digital future aesthetic, cyberpunk chromatic identity, bioluminescent intensity, synthwave energy)",
+        "negative_prompt": "natural, earth tones, muted, vintage, warm, pastoral, organic"
+    },
+    {
+        "name": "Desaturated Muted — Whispered Color",
+        "prompt": "{prompt}, with (desaturated muted color palette), featuring (low chroma colors with elegant restraint, ash and sage and dusty tones, Scandinavian design influence, quiet sophistication, colors spoken in whispers not shouts, editorial elegance)",
+        "negative_prompt": "vivid, saturated, bold, bright, neon, primary, intense"
+    },
+    {
+        "name": "High Saturation Maximalism — Color Explosion",
+        "prompt": "{prompt}, with (maximum saturation color approach), featuring (vivid intense pure colors at maximum chroma, bold unapologetic chromatic excess, pop art and carnival energy, Frida Kahlo or David LaChapelle intensity, color as emotional assault)",
+        "negative_prompt": "muted, subdued, desaturated, gentle, neutral, calm, minimal"
+    },
+    {
+        "name": "Black & Gold — Luxury Minimal",
+        "prompt": "{prompt}, with (black and gold color palette), featuring (deep matte black with metallic gold accents, luxury brand aesthetic, Art Deco elegance, premium minimal opulence, Versace and Chanel influence, timeless sophistication)",
+        "negative_prompt": "multicolor, casual, cheap-looking, bright, rainbow, plastic"
+    },
+    {
+        "name": "Teal & Coral — Modern Complementary",
+        "prompt": "{prompt}, with (teal and coral color palette), featuring (modern complementary duo of deep teal-turquoise and warm coral-salmon, contemporary design favorite, fresh and inviting, social media aesthetic, millennial design influence)",
+        "negative_prompt": "monochrome, dark, heavy, gothic, cold, industrial"
+    },
+    {
+        "name": "Blood Red & White — Stark Power",
+        "prompt": "{prompt}, with (red and white stark palette), featuring (pure white with bold blood red accents, maximum visual impact, Japanese flag influence, surgical precision, power and purity contrast, visceral and clean simultaneously)",
+        "negative_prompt": "multicolor, soft, muted, gentle, pastel, complex palette"
+    },
+    {
+        "name": "Sepia & Cream — Aged Warmth",
+        "prompt": "{prompt}, with (sepia and cream aged palette), featuring (warm brown-golden sepia tones with ivory cream highlights, antique photograph warmth, nostalgic temporal patina, Victorian daguerreotype influence, timeworn elegance)",
+        "negative_prompt": "modern, bright, cool, blue, vivid, neon, contemporary"
+    },
+    {
+        "name": "Sunset Gradient — Golden to Violet",
+        "prompt": "{prompt}, with (sunset gradient color palette), featuring (warm gradient from golden yellow through tangerine orange to deep magenta and violet, atmospheric sky color transition, romantic natural spectacle, nature's most beautiful color gradient)",
+        "negative_prompt": "monochrome, cold blue, grey, flat color, overcast, monotone"
+    },
+    {
+        "name": "Forest & Moss — Botanical Green",
+        "prompt": "{prompt}, with (forest green botanical palette), featuring (deep forest green, sage, moss, emerald, fern tones, natural botanical richness, woodland canopy depth, chlorophyll energy, biophilic design, nature's most abundant color family)",
+        "negative_prompt": "urban, concrete, neon, synthetic, artificial, desert, arid"
+    },
+    {
+        "name": "Midnight & Electric Blue — Deep Digital",
+        "prompt": "{prompt}, with (midnight and electric blue palette), featuring (deep midnight navy to vivid electric blue spectrum, digital technology aesthetic, screen-glow illumination, oceanic depth meets digital future, contemplative and high-tech)",
+        "negative_prompt": "warm, red, orange, earthy, rustic, analog, natural"
+    },
+    {
+        "name": "Vaporwave A E S T H E T I C — Retro Digital",
+        "prompt": "{prompt}, with (vaporwave aesthetic color palette), featuring (hot pink to cyan gradient, Greek bust marble, vintage Japanese text, Windows 95 nostalgia, retro-futuristic pastels, lo-fi digital nostalgia, palm trees and sunsets, ironic 1990s consumer culture)",
+        "negative_prompt": "natural, realistic, modern, minimalist, understated, neutral"
+    },
+    {
+        "name": "Terracotta & Sage — Mediterranean Clay",
+        "prompt": "{prompt}, with (terracotta and sage color palette), featuring (warm terracotta clay orange-brown with muted sage green, Mediterranean architectural influence, tuscan warmth, natural material colors, organic earth and herb palette)",
+        "negative_prompt": "cold, bright neon, artificial, digital, urban grey, synthetic"
+    },
+    {
+        "name": "Champagne & Blush — Bridal Elegance",
+        "prompt": "{prompt}, with (champagne and blush color palette), featuring (soft golden champagne with delicate blush pink, bridal and luxury aesthetic, romantic warmth and femininity, editorial elegance, haute couture subtle beauty)",
+        "negative_prompt": "bold, dark, harsh, industrial, cold, stark, masculine"
+    }
+]

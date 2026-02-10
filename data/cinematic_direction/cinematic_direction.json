@@ -1,0 +1,132 @@
+[
+    {
+        "name": "None",
+        "prompt": "{prompt}",
+        "negative_prompt": ""
+    },
+    {
+        "name": "Stanley Kubrick — Obsessive Symmetry & Control",
+        "prompt": "{prompt}, directed in the style of (Stanley Kubrick), featuring (obsessive one-point perspective symmetry, cold methodical precision, geometric compositions, unsettling visual perfection, wide-angle lens distortion, classical music juxtaposition, the uncanny valley of total control)",
+        "negative_prompt": "asymmetrical, warm, organic, casual, handheld, spontaneous, imprecise"
+    },
+    {
+        "name": "Andrei Tarkovsky — Temporal Poetry",
+        "prompt": "{prompt}, directed in the style of (Andrei Tarkovsky), featuring (meditative long takes, water and reflection motifs, natural elements (rain, fire, wind), spiritual contemplation, sepia-to-color transitions, dreams within dreams, time made visible and sculptural)",
+        "negative_prompt": "fast-paced, commercial, bright, action-oriented, shallow, quick cuts"
+    },
+    {
+        "name": "Wes Anderson — Dollhouse Precision",
+        "prompt": "{prompt}, directed in the style of (Wes Anderson), featuring (perfectly centered planimetric composition, pastel color palette, dollhouse miniature aesthetic, symmetrical framing, whimsical typography integration, kitsch elevated to art, meticulous production design)",
+        "negative_prompt": "dark moody, gritty realism, asymmetrical, handheld, desaturated, chaotic"
+    },
+    {
+        "name": "Christopher Nolan — IMAX Scale & Temporal Architecture",
+        "prompt": "{prompt}, directed in the style of (Christopher Nolan), featuring (IMAX large-format grandeur, non-linear temporal structure, architectural scale and geometric spaces, practical effects preference, cold steel-blue palette, intellectual complexity, Hans Zimmer sonic weight)",
+        "negative_prompt": "small scale, intimate, simple narrative, warm cozy, handheld, lo-fi"
+    },
+    {
+        "name": "Denis Villeneuve — Monumental Silence",
+        "prompt": "{prompt}, directed in the style of (Denis Villeneuve), featuring (monumental architectural scale, vast empty landscapes, silence as dramatic tool, muted earth tones, negative space dominance, existential weight, Roger Deakins or Greig Fraser visual grandeur)",
+        "negative_prompt": "cluttered, small, chatty, bright cheerful, busy, claustrophobic"
+    },
+    {
+        "name": "David Fincher — Clinical Darkness",
+        "prompt": "{prompt}, directed in the style of (David Fincher), featuring (clinical precise framing, desaturated cold palette, dark green-brown shadow tones, meticulous camera movement, digital perfection, obsessive detail, controlled menace, Jeff Cronenweth darkness)",
+        "negative_prompt": "warm, bright, imprecise, handheld, cheerful, rough, organic"
+    },
+    {
+        "name": "Terrence Malick — Transcendent Nature",
+        "prompt": "{prompt}, directed in the style of (Terrence Malick), featuring (magic hour golden natural light, flowing whispered voiceover, Emmanuel Lubezki Steadicam through nature, fragmented poetic memory, cosmic creation wonder, spiritual transcendence through landscape)",
+        "negative_prompt": "artificial lighting, urban, controlled studio, dark, night, mechanical"
+    },
+    {
+        "name": "David Lynch — Surrealist Nightmare",
+        "prompt": "{prompt}, directed in the style of (David Lynch), featuring (surrealist logic, red velvet and darkness, industrial ambient drones, suburban normal hiding cosmic horror, dream logic editing, uncanny juxtaposition, Angelo Badalamenti atmosphere)",
+        "negative_prompt": "logical, conventional, bright, simple, realistic, straightforward"
+    },
+    {
+        "name": "Wong Kar-wai — Neon Nostalgia & Longing",
+        "prompt": "{prompt}, directed in the style of (Wong Kar-wai), featuring (Christopher Doyle neon-lit cinematography, step-printed slow motion, expired film stock colors, warm saturated reds and greens, romantic yearning and loss, tight corridor framing, Hong Kong urban poetry)",
+        "negative_prompt": "wide open spaces, natural lighting, conventional framing, cold clinical"
+    },
+    {
+        "name": "Akira Kurosawa — Epic Composition Master",
+        "prompt": "{prompt}, directed in the style of (Akira Kurosawa), featuring (masterful multi-plane deep-focus composition, weather as dramatic character (rain, wind, fog), wipe transitions, telephoto lens compression for battle scenes, classical epic storytelling, movement as poetry)",
+        "negative_prompt": "static, minimal, close-up only, calm weather, tight framing"
+    },
+    {
+        "name": "Alfonso Cuarón — Immersive Long Take",
+        "prompt": "{prompt}, directed in the style of (Alfonso Cuarón), featuring (virtuoso unbroken long takes, Emmanuel Lubezki Steadicam following subjects through chaos, immersive first-person proximity, documentary immediacy, desaturated blue-grey palette, social reality layered beneath drama)",
+        "negative_prompt": "quick cuts, montage editing, static camera, isolated from environment"
+    },
+    {
+        "name": "Ridley Scott — Atmospheric World-Builder",
+        "prompt": "{prompt}, directed in the style of (Ridley Scott), featuring (atmospheric smoke and haze, industrial lived-in world design, shafts of light through darkness, backlit silhouettes, tactile surface detail, franchise-scale immersive worldbuilding)",
+        "negative_prompt": "clean sterile, minimal, simple, no atmosphere, flat lighting"
+    },
+    {
+        "name": "Guillermo del Toro — Romantic Grotesque",
+        "prompt": "{prompt}, directed in the style of (Guillermo del Toro), featuring (dark fairy tale aesthetic, golden amber vs cold blue palette, intricate creature design, Victorian gothic beauty, monsters as sympathetic beings, lush ornate production design)",
+        "negative_prompt": "realistic mundane, minimal, modern clean, bright cheerful, simple"
+    },
+    {
+        "name": "Spike Lee — Bold Confrontation",
+        "prompt": "{prompt}, directed in the style of (Spike Lee), featuring (bold Dutch angles, confrontational direct-to-camera addresses, floating dolly double-dolly shots, saturated primary colors, political visual language, Brooklyn energy and rhythm)",
+        "negative_prompt": "passive, neutral, muted, conventional, subtle, withdrawn"
+    },
+    {
+        "name": "Hayao Miyazaki — Living Animation",
+        "prompt": "{prompt}, directed in the style of (Hayao Miyazaki / Studio Ghibli), featuring (hand-painted watercolor backgrounds, lovingly animated natural details, flying and wind motifs, environmental wonder, magical creature design, warm humanist storytelling through visuals)",
+        "negative_prompt": "CGI, dark gritty, photorealistic, violent, cynical, urban decay"
+    },
+    {
+        "name": "Tarsem Singh — Visual Opulence",
+        "prompt": "{prompt}, directed in the style of (Tarsem Singh), featuring (extraordinary real-world locations as sets, vivid saturated color explosions, costume as art installation, every frame a painting, cultural mythology visualization, operatic visual maximalism)",
+        "negative_prompt": "studio-bound, minimal, desaturated, simple, mundane, basic"
+    },
+    {
+        "name": "Nicolas Winding Refn — Neon Slowburn",
+        "prompt": "{prompt}, directed in the style of (Nicolas Winding Refn), featuring (extreme neon saturation (magenta, electric blue), slow-burn tension, violence as ballet, 1980s synth aesthetic, extreme stylization over realism, silence as dramatic weapon)",
+        "negative_prompt": "fast dialogue, natural colors, warm, realistic, conventional pacing"
+    },
+    {
+        "name": "Bong Joon-ho — Social Architecture",
+        "prompt": "{prompt}, directed in the style of (Bong Joon-ho), featuring (architectural spaces as social metaphor, split-level class commentary, genre-blending tonal shifts, meticulous staging, weather as class equalizer, Korean social realism with universal themes)",
+        "negative_prompt": "monotone genre, superficial, decorative without meaning, no subtext"
+    },
+    {
+        "name": "Quentin Tarantino — Pop Culture Pulp",
+        "prompt": "{prompt}, directed in the style of (Quentin Tarantino), featuring (Robert Richardson high-contrast cinematography, trunk shot POV, extreme close-ups, bold primary color moments, 1970s exploitation aesthetic elevated, extended dialogue tension, foot-level angles)",
+        "negative_prompt": "subtle, understated, minimal, quiet, gentle, conventional, restrained"
+    },
+    {
+        "name": "Yorgos Lanthimos — Absurdist Discomfort",
+        "prompt": "{prompt}, directed in the style of (Yorgos Lanthimos), featuring (ultra-wide fisheye lens distortion, natural light interiors, deadpan absurdist framing, uncomfortable compositions, extreme low and high angles, baroque architecture as character, Greek weird wave)",
+        "negative_prompt": "conventional framing, warm approachable, comfortable, normal perspective"
+    },
+    {
+        "name": "Greta Gerwig — Warm Humanism",
+        "prompt": "{prompt}, directed in the style of (Greta Gerwig), featuring (warm golden Californian light, handheld intimate proximity, empathetic close-up portraiture, literary visual references, joyful movement and dance, warm humanist color palette, coming-of-age tenderness)",
+        "negative_prompt": "cold, dark, clinical, distant, cynical, harsh, mechanical"
+    },
+    {
+        "name": "Roger Deakins — Light as Language",
+        "prompt": "{prompt}, cinematography in the style of (Roger Deakins), featuring (motivated natural light mastery, precise controlled lighting that appears effortless, beautiful shadow gradation, motivated practical sources, oscar-defining visual language, the world's greatest living cinematographer)",
+        "negative_prompt": "unmotivated lighting, flat even illumination, harsh artificial, amateur"
+    },
+    {
+        "name": "Emmanuel Lubezki — Breathing Camera",
+        "prompt": "{prompt}, cinematography in the style of (Emmanuel Lubezki / Chivo), featuring (natural light only religion, unbroken flowing Steadicam, magic hour worship, wide-angle immersive perspective, Earth's light as sole illumination, spiritual visual poetry)",
+        "negative_prompt": "artificial lighting, static tripod, quick cuts, controlled studio, flash"
+    },
+    {
+        "name": "Robert Richardson — Chiaroscuro Intensity",
+        "prompt": "{prompt}, cinematography in the style of (Robert Richardson), featuring (extreme chiaroscuro contrast, bold unmotivated colored light, aggressive camera movements, infrared and mixed stocks, high contrast dramatic lighting, visual intensity at maximum)",
+        "negative_prompt": "soft even light, muted, gentle, subtle, low contrast, calm"
+    },
+    {
+        "name": "Vittorio Storaro — Light as Philosophy",
+        "prompt": "{prompt}, cinematography in the style of (Vittorio Storaro), featuring (light and color as philosophical expression, Apocalypse Now golden hellfire, The Conformist architectural shadow play, color theory applied to narrative, Italian visual mastery)",
+        "negative_prompt": "flat lighting, arbitrary color, no thematic purpose, conventional"
+    }
+]

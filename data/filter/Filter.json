@@ -5,68 +5,153 @@
         "negative_prompt": ""
     },
     {
-        "name": "BlackAndWhite (Classic black and white photography)",
-        "prompt": "blackandwhite {prompt}",
-        "negative_prompt": "color"
+        "name": "Kodak Portra 400 — Skin Tone Perfection",
+        "prompt": "{prompt}, rendered in (Kodak Portra 400 film emulation), featuring (beautiful natural skin tones, fine grain, warm pastel color palette, subtle peach highlights, soft contrast, the world's most beloved portrait film stock)",
+        "negative_prompt": "harsh colors, oversaturated, digital clinical, cold tones, extreme contrast"
     },
     {
-        "name": "Cool (Cool-toned color palette)",
-        "prompt": "cool {prompt}",
-        "negative_prompt": "warm"
+        "name": "Kodak Portra 160 — Daylight Elegance",
+        "prompt": "{prompt}, rendered in (Kodak Portra 160 film emulation), featuring (ultra-fine grain, delicate skin tones, low saturation pastels, elegant daylight rendering, creamy smooth gradients, wedding and fashion favorite)",
+        "negative_prompt": "heavy grain, oversaturated, harsh contrast, noisy, dark"
     },
     {
-        "name": "HDR (High dynamic range)",
-        "prompt": "hdr {prompt}",
-        "negative_prompt": "ldr"
+        "name": "Kodak Ektar 100 — Vivid Landscape",
+        "prompt": "{prompt}, rendered in (Kodak Ektar 100 film emulation), featuring (ultra-vivid saturated colors, finest grain color negative, punchy reds and blues, landscape photographer's choice, high color purity, extreme sharpness)",
+        "negative_prompt": "muted tones, desaturated, soft focus, low contrast, pastel"
     },
     {
-        "name": "Monochrome (Single color scale)",
-        "prompt": "monochrome {prompt}",
-        "negative_prompt": "colorful"
+        "name": "Fuji Velvia 50 — Hyper-Saturated Slide",
+        "prompt": "{prompt}, rendered in (Fuji Velvia 50 slide film emulation), featuring (extreme color saturation, vivid greens and reds, fine grain transparency, landscape legend, punchy contrast, jewel-like colors)",
+        "negative_prompt": "muted tones, flat contrast, desaturated, neutral colors, soft"
     },
     {
-        "name": "Sepia (Warm brown tones)",
-        "prompt": "sepia {prompt}",
-        "negative_prompt": "bright"
+        "name": "Fuji Provia 100F — Balanced Transparency",
+        "prompt": "{prompt}, rendered in (Fuji Provia 100F slide film emulation), featuring (accurate balanced colors, fine grain, neutral skin tones for slide film, professional-grade transparency, versatile and reliable)",
+        "negative_prompt": "oversaturated, extreme contrast, heavy grain, unnatural colors"
     },
     {
-        "name": "Vintage (Retro aesthetic)",
-        "prompt": "vintage {prompt}",
-        "negative_prompt": "modern"
+        "name": "CineStill 800T — Tungsten Night Magic",
+        "prompt": "{prompt}, rendered in (CineStill 800T film emulation), featuring (tungsten white balance, red halation glow around bright lights, night photography specialist, Kodak Vision3 cinema stock heritage, dreamy nocturnal colors)",
+        "negative_prompt": "daylight, no halation, clinical digital, neutral tones"
     },
     {
-        "name": "Warm (Warm-toned color palette)",
-        "prompt": "warm {prompt}",
-        "negative_prompt": "cool"
+        "name": "Kodak Tri-X 400 — Black & White Legend",
+        "prompt": "{prompt}, rendered in (Kodak Tri-X 400 black and white film emulation), featuring (iconic grain structure, rich deep blacks, beautiful tonal range, photojournalism heritage, pushed processing capability, timeless B&W aesthetic)",
+        "negative_prompt": "color, smooth digital, no grain, clinical, oversaturated"
     },
     {
-        "name": "FilmGrain (Grainy texture)",
-        "prompt": "film grain {prompt}",
-        "negative_prompt": "smooth"
+        "name": "Ilford HP5 Plus — British B&W Character",
+        "prompt": "{prompt}, rendered in (Ilford HP5 Plus 400 black and white film emulation), featuring (pushable to 3200, slightly softer grain than Tri-X, smooth tonal gradation, European B&W character, versatile and forgiving)",
+        "negative_prompt": "color, digital smooth, no grain, harsh"
     },
     {
-        "name": "Cyberpunk (Futuristic neon-lit)",
-        "prompt": "cyberpunk {prompt}",
-        "negative_prompt": "traditional"
+        "name": "Kodak T-MAX 100 — Precision Monochrome",
+        "prompt": "{prompt}, rendered in (Kodak T-MAX 100 black and white film emulation), featuring (tabular grain technology, extreme fine detail, smooth gradation, technical precision, studio portrait B&W, maximum sharpness)",
+        "negative_prompt": "heavy grain, color, soft focus, noisy, pushed processing"
     },
     {
-        "name": "Surreal (Dreamy, fantastical)",
-        "prompt": "surreal {prompt}",
-        "negative_prompt": "realistic"
+        "name": "Fuji Pro 400H — Discontinued Pastel Dream",
+        "prompt": "{prompt}, rendered in (Fuji Pro 400H film emulation), featuring (soft pastel rendering, subtle overexposure-friendly, dreamy highlights, gentle blues and greens, romantic and ethereal, mourned by wedding photographers worldwide)",
+        "negative_prompt": "harsh contrast, oversaturated, punchy colors, clinical digital"
     },
     {
-        "name": "Minimalist (Simplicity and minimal design)",
-        "prompt": "minimalist {prompt}",
-        "negative_prompt": "complex"
+        "name": "Kodachrome 64 — The Lost Icon",
+        "prompt": "{prompt}, rendered in (Kodachrome 64 film emulation), featuring (legendary saturated warm colors, rich reds and deep blues, archival slide film look, slightly warm cast, unmatched color memory, the most iconic film stock ever produced)",
+        "negative_prompt": "flat colors, modern digital, neutral, desaturated, cool tones"
     },
     {
-        "name": "PopArt (Bright, vibrant colors)",
-        "prompt": "pop art {prompt}",
-        "negative_prompt": "dull"
+        "name": "Teal and Orange — Hollywood Color Grade",
+        "prompt": "{prompt}, with (Hollywood teal and orange color grading), featuring (complementary color contrast between cool cyan-teal shadows and warm orange highlights, blockbuster cinematic grade, skin tones pushed warm against cool backgrounds)",
+        "negative_prompt": "monochrome, single tone, neutral grading, flat color, pastel"
     },
     {
-        "name": "Impressionist (Painterly style)",
-        "prompt": "impressionist {prompt}",
-        "negative_prompt": "sharp"
+        "name": "Bleach Bypass — Desaturated Grit",
+        "prompt": "{prompt}, with (bleach bypass film processing look), featuring (reduced color saturation, increased contrast, silver-retained grain, gritty metallic quality, war film and thriller aesthetic, Saving Private Ryan influence)",
+        "negative_prompt": "vivid saturated colors, soft contrast, glamorous, clean, bright"
+    },
+    {
+        "name": "Cross-Processed — Chromatic Shift",
+        "prompt": "{prompt}, with (cross-processing film look), featuring (shifted color palette, increased saturation in unexpected hues, punchy greens and magentas, experimental alternative processing, high contrast, lo-fi film aesthetic)",
+        "negative_prompt": "neutral accurate colors, low saturation, digital precision, natural"
+    },
+    {
+        "name": "Infrared Film — Invisible Spectrum",
+        "prompt": "{prompt}, rendered in (infrared film emulation), featuring (white foliage and dark skies, otherworldly tonal inversion, Wood effect on vegetation, ethereal dreamlike quality, glowing skin, surreal landscape rendering)",
+        "negative_prompt": "normal colors, green foliage, blue sky, standard rendering"
+    },
+    {
+        "name": "Duotone — Two-Color Harmony",
+        "prompt": "{prompt}, with (duotone color treatment), featuring (image rendered in two harmonious ink tones, graphic design aesthetic, editorial print quality, Andy Warhol silkscreen influence, bold chromatic simplicity)",
+        "negative_prompt": "full color spectrum, natural colors, subtle tones, photorealistic"
+    },
+    {
+        "name": "Vintage Polaroid — Instant Nostalgia",
+        "prompt": "{prompt}, with (vintage Polaroid color treatment), featuring (faded washed colors, warm golden-yellow cast, soft vignette, slightly overexposed highlights, instant film imperfections, nostalgic 1970s aesthetic)",
+        "negative_prompt": "crisp digital, vivid saturated, modern clean, sharp, precise"
+    },
+    {
+        "name": "Matte Film — Lifted Shadows",
+        "prompt": "{prompt}, with (matte film look), featuring (lifted shadow detail creating milky blacks, faded vintage aesthetic, reduced dynamic range, softened contrast, film blog aesthetic, dreamy matte finish)",
+        "negative_prompt": "deep blacks, high contrast, vivid, punchy, clinical digital"
+    },
+    {
+        "name": "HDR Tone Mapping — Dynamic Range",
+        "prompt": "{prompt}, with (HDR tone mapping), featuring (extended dynamic range, visible detail in both highlights and shadows, luminous quality, hyper-detailed tonal information, no crushed blacks or blown whites)",
+        "negative_prompt": "clipped highlights, crushed blacks, limited range, high contrast"
+    },
+    {
+        "name": "Cyanotype — Blueprint Blue",
+        "prompt": "{prompt}, rendered as (cyanotype print), featuring (Prussian blue monochrome, photogram aesthetic, 19th century alternative process, architectural blueprint quality, Anna Atkins botanical influence, handmade print character)",
+        "negative_prompt": "full color, modern digital, warm tones, high-tech"
+    },
+    {
+        "name": "Sepia Gold — Antique Print",
+        "prompt": "{prompt}, with (sepia gold tone treatment), featuring (warm golden-brown antique photograph aesthetic, 19th century photographic print quality, daguerreotype warmth, aged patina, historical gravitas and timelessness)",
+        "negative_prompt": "modern, bright colors, cool tones, digital, contemporary"
+    },
+    {
+        "name": "Split Toning — Shadow/Highlight Color",
+        "prompt": "{prompt}, with (split toning color treatment), featuring (different color applied to shadows vs highlights, cool blue shadows with warm amber highlights, editorial color separation, sophisticated dual-tone aesthetic)",
+        "negative_prompt": "neutral monochrome, single tone, flat even color, no separation"
+    },
+    {
+        "name": "Pantone Living Coral — 2019 Trend",
+        "prompt": "{prompt}, with (Pantone Living Coral 16-1546 color emphasis), featuring (warm coral-peach dominant tone, energizing yet soft, nature-inspired warmth, social media aesthetic, contemporary color trending)",
+        "negative_prompt": "cold blue, muted grey, dark moody, desaturated"
+    },
+    {
+        "name": "Film Noir B&W — Hard Boiled",
+        "prompt": "{prompt}, with (classic film noir black and white grade), featuring (extreme high contrast, deep impenetrable shadows, venetian blind light patterns, 1940s detective aesthetic, hard-boiled dramatic lighting, expressionist angles)",
+        "negative_prompt": "color, soft lighting, gentle, cheerful, even illumination, pastel"
+    },
+    {
+        "name": "Lomo / Lomography — Experimental Analog",
+        "prompt": "{prompt}, with (Lomography aesthetic), featuring (heavy vignetting, saturated crossed colors, light leaks, lens distortion, experimental analog imperfection, shoot-from-the-hip spontaneity, cheerful lo-fi)",
+        "negative_prompt": "precise, clinical, sharp, controlled, professional perfection"
+    },
+    {
+        "name": "Technicolor — Golden Age Splendor",
+        "prompt": "{prompt}, with (Technicolor three-strip process emulation), featuring (hyper-saturated reds greens and blues, Golden Age Hollywood Technicolor splendor, larger-than-life color intensity, Wizard of Oz and Singin' in the Rain palette)",
+        "negative_prompt": "muted, desaturated, modern neutral, monochrome, flat color"
+    },
+    {
+        "name": "Faded Ektachrome — Nostalgic Slide",
+        "prompt": "{prompt}, with (faded Kodak Ektachrome emulation), featuring (slightly desaturated warm tones, faded slide film aesthetic, cool blue shadow shift, 1960s-1970s documentary photography look, gentle vintage patina)",
+        "negative_prompt": "vivid saturated, modern digital, punchy contrast, sharp clean"
+    },
+    {
+        "name": "Day for Night — Artificial Moonlight",
+        "prompt": "{prompt}, with (day-for-night color grading), featuring (deep blue color wash simulating moonlit night, underexposed with selective highlights, classic cinema technique, mysterious nocturnal atmosphere shot in daylight)",
+        "negative_prompt": "bright daylight, warm tones, normal exposure, obvious sunlight"
+    },
+    {
+        "name": "Desaturated Pastel — Muted Elegance",
+        "prompt": "{prompt}, with (desaturated pastel color treatment), featuring (muted washed tones, low chroma elegance, editorial fashion aesthetic, Scandinavian design influence, quiet sophistication, whispered color)",
+        "negative_prompt": "vivid saturated, high contrast, neon, bold, punchy"
+    },
+    {
+        "name": "High Contrast B&W — Graphic Power",
+        "prompt": "{prompt}, with (high contrast black and white treatment), featuring (pure blacks and bright whites with minimal midtones, graphic stark power, silhouette emphasis, bold shadow play, Helmut Newton or Daido Moriyama influence)",
+        "negative_prompt": "color, low contrast, gentle gradation, soft grey, midtone heavy"
     }
 ]
