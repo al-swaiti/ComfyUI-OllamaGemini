@@ -500,6 +500,21 @@ def update_config_key(key, value):
     except Exception as e:
         print(f"Error writing to config.json: {str(e)}")
 
+# Models that support the thinking/reasoning feature.
+# For these models, a thinking_budget can be set to control latency vs quality.
+# thinking_budget=0 disables thinking (fastest), higher values allow more reasoning.
+THINKING_MODELS = [
+    "gemini-2.5-pro",
+    "gemini-2.5-flash",
+    "gemini-3-pro",
+    "gemini-3-flash",
+]
+
+def is_thinking_model(model_name):
+    """Return True if the given model name supports thinking/reasoning config."""
+    model_lower = model_name.lower()
+    return any(tm in model_lower for tm in THINKING_MODELS)
+
 # ================== API SERVICES ==================
 
 
@@ -1049,6 +1064,11 @@ class GeminiLLMAPI:
                 "prompt": ("STRING", {"default": "What is the meaning of life?", "multiline": True}),
                 "gemini_model": (available_models,),
                 "stream": ("BOOLEAN", {"default": False}),
+                "thinking_budget": ("INT", {"default": 0, "min": -1, "max": 24576, "step": 256,
+                                            "tooltip": "Controls the reasoning/thinking budget for 2.5-pro and 3-pro models. "
+                                                       "0 = disabled (fastest), -1 = dynamic (model decides), "
+                                                       "higher values = more thinking (slower but potentially better quality). "
+                                                       "Only affects thinking-capable models."}),
                 "structure_output": ("BOOLEAN", {"default": False}),
                 "prompt_structure": ([
                     "Custom",
@@ -1103,7 +1123,7 @@ class GeminiLLMAPI:
     FUNCTION = "generate_content"
     CATEGORY = "AI API/Gemini"
 
-    def generate_content(self, prompt, gemini_model, stream, structure_output, prompt_structure, structure_format, output_format, api_key="", video=None, audio=None, **kwargs):
+    def generate_content(self, prompt, gemini_model, stream, thinking_budget=0, structure_output=False, prompt_structure="Custom", structure_format="", output_format="raw_text", api_key="", video=None, audio=None, **kwargs):
         if api_key:
             update_config_key("GEMINI_API_KEY", api_key)
             self.gemini_api_key = api_key
@@ -1175,6 +1195,12 @@ class GeminiLLMAPI:
                 "top_p": 0.8,
                 "top_k": 40,
             }
+
+            # Apply thinking budget for models that support it.
+            # thinking_budget=0 disables thinking (fastest), -1 lets the model decide dynamically.
+            if is_thinking_model(gemini_model):
+                config_params["thinking_config"] = types.ThinkingConfig(thinking_budget=thinking_budget)
+                print(f"Thinking budget set to {thinking_budget} for {gemini_model}")
 
             response = client.models.generate_content(
                 model=gemini_model,
