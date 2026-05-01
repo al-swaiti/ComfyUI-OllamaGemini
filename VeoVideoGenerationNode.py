@@ -43,8 +43,6 @@ def pil_to_genai_image(pil_image):
     if pil_image is None:
         return None
     
-    _, types = get_genai()
-    
     # Convert PIL to bytes
     buffer = io.BytesIO()
     pil_image.save(buffer, format='PNG')

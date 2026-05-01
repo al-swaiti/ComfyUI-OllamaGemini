@@ -1177,11 +1177,11 @@ class GeminiLLMAPI:
                     audio_b64 = process_audio(audio)
                 
                 if audio_b64:
-                    # Create the audio part for Gemini
-                    audio_part = {
-                        "mime_type": "audio/wav",
-                        "data": audio_b64
-                    }
+                    # Create the audio part for Gemini using proper SDK type
+                    audio_bytes = base64.b64decode(audio_b64)
+                    audio_part = types.Part(
+                        inline_data=types.Blob(mime_type="audio/wav", data=audio_bytes)
+                    )
                     content.append(audio_part)
                     print("Successfully added audio data to request")
                 else:
