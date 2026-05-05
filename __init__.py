@@ -6,17 +6,32 @@ from pathlib import Path
 current_dir = Path(__file__).parent
 config_file = current_dir / "config.json"
 
+# Default configuration values
+DEFAULT_CONFIG = {
+    "GEMINI_API_KEY": "your_gemini_api_key_here",
+    "OPENAI_API_KEY": "your_openai_api_key_here",
+    "CLAUDE_API_KEY": "your_claude_api_key_here",
+    "QWEN_API_KEY": "your_qwen_api_key_here",
+    "NVIDIA_API_KEY": "your_nvidia_api_key_here",
+    "OLLAMA_URL": "http://localhost:11434"
+}
+
 # Create or load config
 if not config_file.exists():
-    config = {
-        "GEMINI_API_KEY": "your_gemini_api_key_here",
-        "OPENAI_API_KEY": "your_openai_api_key_here",
-        "OLLAMA_URL": "http://localhost:11434"
-    }
-    config_file.write_text(json.dumps(config, indent=4))
+    config_file.write_text(json.dumps(DEFAULT_CONFIG, indent=4))
+    config = dict(DEFAULT_CONFIG)
     print("Created config.json with default values. Please update with your API keys.")
 else:
     config = json.loads(config_file.read_text())
+    # Ensure all required keys exist (for upgrades from older versions)
+    updated = False
+    for key, default in DEFAULT_CONFIG.items():
+        if key not in config:
+            config[key] = default
+            updated = True
+    if updated:
+        config_file.write_text(json.dumps(config, indent=4))
+        print("Updated config.json with new API key fields.")
 
 # Import node mappings from renamed node classes
 from .GeminiOllamaNode import NODE_CLASS_MAPPINGS as GEMINI_OLLAMA_MAPPINGS

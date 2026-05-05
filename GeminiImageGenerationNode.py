@@ -230,9 +230,15 @@ Tips:
             if 'imagen' in model:
                 print(f"Using 'generate_images' API for Imagen model: {model}")
 
+                # Imagen models only support 1K and 2K (not 4K)
+                effective_image_size = image_size
+                if image_size == "4K":
+                    effective_image_size = "2K"
+                    print(f"Warning: Imagen models do not support 4K image size. Using 2K instead.")
+
                 config_args = {
                     "number_of_images": number_of_images,
-                    "image_size": image_size,
+                    "image_size": effective_image_size,
                 }
                 # Only add aspect_ratio if not 'Auto' (let Gemini decide from prompt)
                 if effective_aspect_ratio != "Auto":
