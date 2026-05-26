@@ -30,27 +30,33 @@ def get_api_keys():
         return None, None
 
 def get_gemini_models():
-    # Default models if API call fails
+    # Default models if API call fails. Sourced from
+    # https://ai.google.dev/gemini-api/docs/deprecations — last reviewed
+    # 2026-05-26. Entries that have already passed their shutdown date
+    # (gemini-1.5-*, gemini-3-pro-preview, gemini-2.5-pro-exp-03-25,
+    # gemini-2.5-flash-image-preview, gemini-2.0-flash-exp-image-generation,
+    # imagen-3.0-generate-002) have been removed. When updating this list,
+    # cross-check the deprecation page and annotate each entry with its
+    # earliest shutdown date so the next maintainer knows what to refresh.
     default_gemini_models = [
-        # Gemini 3.x Models (newest)
-        "gemini-3-pro-preview",
-        "gemini-3-pro-image-preview",
-        "gemini-3-flash-preview",
-        # Gemini 2.5 Models
-        "gemini-2.5-pro-exp-03-25",
+        # Gemini 3.x
+        "gemini-3.1-pro-preview",          # no shutdown date announced
+        "gemini-3-pro-image-preview",      # no shutdown date announced
+        "gemini-3.1-flash-image-preview",  # no shutdown date announced
+        "gemini-3.5-flash",                # GA, no shutdown date announced
+        "gemini-3-flash-preview",          # replacement: gemini-3.5-flash
+        # Gemini 2.5 GA (shutdown 2026-10-16)
+        "gemini-2.5-pro",
         "gemini-2.5-flash",
-        "gemini-2.5-flash-image-preview",
-        # Gemini 2.0 Models
+        "gemini-2.5-flash-lite",
+        "gemini-2.5-flash-image",          # shutdown 2026-10-02
+        # Gemini 2.0 (shutdown 2026-06-01 — replacement: gemini-2.5-flash / -lite)
         "gemini-2.0-flash",
         "gemini-2.0-flash-lite",
-        "gemini-2.0-flash-exp-image-generation",
-        # Gemini 1.5 Models
-        "gemini-1.5-pro",
-        "gemini-1.5-flash",
-        "gemini-1.5-flash-8b",
-        # Image Generation Models
-        "imagen-3.0-generate-002",
+        # Imagen 4 (shutdown 2026-06-24 — replacement: gemini-3-pro-image-preview or gemini-2.5-flash-image)
         "imagen-4.0-generate-001",
+        "imagen-4.0-ultra-generate-001",
+        "imagen-4.0-fast-generate-001",
     ]
 
     # Quick network check first
@@ -148,14 +154,21 @@ def get_openai_models():
 def get_gemini_image_models():
     """
     Dynamically fetches a list of Gemini models that support image generation.
-    
-    Models:
-    - gemini-3-pro-image-preview (Nano Banana Pro): Professional asset production, 4K, 14 reference images
-    - gemini-2.5-flash-image-preview (Nano Banana): Fast, efficient, 1024px
-    - imagen-3.0-generate-002: High quality image generation
-    - imagen-4.0-generate-001: Specialized image generation
+
+    Models (verified against the deprecation schedule on 2026-05-26):
+    - gemini-2.5-flash-image (Nano Banana, GA): shutdown 2026-10-02
+    - gemini-3-pro-image-preview (Nano Banana Pro, Preview): no shutdown date
+    - gemini-3.1-flash-image-preview (Nano Banana 2, Preview): no shutdown date
+    - imagen-4.0-generate-001: shutdown 2026-06-24
     """
-    fallback_models = ["gemini-3-pro-image-preview", "gemini-2.5-flash-image-preview", "imagen-4.0-generate-001"]
+    # gemini-2.5-flash-image-preview was shut down 2026-01-15; the GA name is
+    # gemini-2.5-flash-image. imagen-3.0-generate-002 was shut down 2025-11-10.
+    fallback_models = [
+        "gemini-2.5-flash-image",          # shutdown 2026-10-02
+        "gemini-3-pro-image-preview",      # no shutdown date announced
+        "gemini-3.1-flash-image-preview",  # no shutdown date announced
+        "imagen-4.0-generate-001",         # shutdown 2026-06-24
+    ]
 
     # Quick network check first
     if not is_network_available():
