@@ -30,19 +30,42 @@ _model_list_cache = {}
 _model_list_lock = threading.Lock()
 _fetch_locks = {}
 _fetch_locks_meta = threading.Lock()
+_last_config_mtime = 0
+
+
+def _check_config_changed():
+    global _last_config_mtime
+    config_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.json')
+    try:
+        mtime = os.path.getmtime(config_path)
+        # Initialize on first run so we don't clear an empty cache unnecessarily
+        if _last_config_mtime == 0:
+            _last_config_mtime = mtime
+            return False
+        if mtime > _last_config_mtime:
+            _last_config_mtime = mtime
+            return True
+    except OSError:
+        pass
+    return False
 
 
 def _get_cached(key):
     with _model_list_lock:
+        if _check_config_changed():
+            _model_list_cache.clear()
+            
         entry = _model_list_cache.get(key)
-        if entry and time.time() < entry["expires_at"]:
-            return entry["value"]
+        if entry and time.monotonic() < entry["expires_at"]:
+            value = entry["value"]
+            return list(value) if isinstance(value, list) else value
     return None
 
 
 def _set_cached(key, value):
     with _model_list_lock:
-        _model_list_cache[key] = {"value": value, "expires_at": time.time() + _MODEL_LIST_TTL}
+        cached_value = list(value) if isinstance(value, list) else value
+        _model_list_cache[key] = {"value": cached_value, "expires_at": time.monotonic() + _MODEL_LIST_TTL}
 
 
 def _fetch_lock_for(key):
@@ -123,27 +146,26 @@ def _fetch_gemini_models_live(default_gemini_models):
 
 
 def get_gemini_models():
-    # Default models if API call fails
+    # Default models if API call fails. Sourced from
+    # https://ai.google.dev/gemini-api/docs/deprecations — last reviewed 2026-05-26.
     default_gemini_models = [
         # Gemini 3.x Models (newest)
-        "gemini-3-pro-preview",
-        "gemini-3-pro-image-preview",
-        "gemini-3-flash-preview",
+        "gemini-3.1-pro-preview",
+        "gemini-3-pro-image-preview",      # no shutdown date announced
+        "gemini-3.1-flash-image-preview",  # no shutdown date announced
+        "gemini-3.5-flash",                # GA, no shutdown date announced
         # Gemini 2.5 Models
-        "gemini-2.5-pro-exp-03-25",
+        "gemini-2.5-pro",
         "gemini-2.5-flash",
-        "gemini-2.5-flash-image-preview",
+        "gemini-2.5-flash-lite",
+        "gemini-2.5-flash-image",
         # Gemini 2.0 Models
-        "gemini-2.0-flash",
-        "gemini-2.0-flash-lite",
-        "gemini-2.0-flash-exp-image-generation",
-        # Gemini 1.5 Models
-        "gemini-1.5-pro",
-        "gemini-1.5-flash",
-        "gemini-1.5-flash-8b",
+        "gemini-2.0-flash",                # shutdown 2026-06-01
+        "gemini-2.0-flash-lite",           # shutdown 2026-06-01
         # Image Generation Models
-        "imagen-3.0-generate-002",
-        "imagen-4.0-generate-001",
+        "imagen-4.0-generate-001",         # shutdown 2026-06-24
+        "imagen-4.0-ultra-generate-001",
+        "imagen-4.0-fast-generate-001",
     ]
 
     cached = _get_cached("gemini")
@@ -283,20 +305,18 @@ def get_gemini_image_models():
     """
     Dynamically fetches a list of Gemini models that support image generation.
 
-    Models:
-    - gemini-3-pro-image-preview (Nano Banana Pro): Professional asset production, 4K, 14 reference images
-    - gemini-2.5-flash-image-preview (Nano Banana): Fast, efficient, 1024px
-    - imagen-3.0-generate-002: High quality image generation
-    - imagen-4.0-generate-001: Specialized image generation
+    Models (verified against the deprecation schedule on 2026-05-26):
+    - gemini-2.5-flash-image (Nano Banana, GA): shutdown 2026-10-02
+    - gemini-3-pro-image-preview (Nano Banana Pro, Preview): no shutdown date
+    - gemini-3.1-flash-image-preview (Nano Banana 2, Preview): no shutdown date
+    - imagen-4.0-generate-001: shutdown 2026-06-24
     """
-    # Keep both the `-image` (GA) and `-image-preview` aliases — both names are
-    # returned by /v1beta/models and both appear in deployed workflow JSON.
-    # Missing names cause ComfyUI to silently strip the node at prompt
-    # validation when this fallback is used.
+    # gemini-2.5-flash-image-preview was shut down 2026-01-15; the GA name is
+    # now canonical.
     fallback_models = [
         "gemini-2.5-flash-image",
-        "gemini-2.5-flash-image-preview",
         "gemini-3-pro-image-preview",
+        "gemini-3.1-flash-image-preview",
         "imagen-4.0-generate-001",
     ]
 
