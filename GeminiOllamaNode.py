@@ -1049,15 +1049,15 @@ class GeminiLLMAPI:
         self.gemini_api_key = get_gemini_api_key()
         # Note: New google.genai API uses Client() with api_key directly, no configure needed
 
-        # Import model list from list_models.py
-        from .list_models import get_gemini_models
-        self.available_models = get_gemini_models()
-
     @classmethod
     def INPUT_TYPES(cls):
-        # Create an instance to get the models
-        instance = cls()
-        available_models = instance.available_models
+        # Resolve the model list directly. get_gemini_models() has its own TTL
+        # cache, so calling it on every prompt validation is cheap. Previously
+        # this method built a fresh `cls()` instance per call, which read the
+        # API key from disk and refetched the model list every time —
+        # contributing to Google's per-project /v1beta/models 429 under load.
+        from .list_models import get_gemini_models
+        available_models = get_gemini_models()
 
         return {
             "required": {
